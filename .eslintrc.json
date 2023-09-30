@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:perfectionist/recommended-alphabetical",
+    "plugin:yml/recommended",
+    "plugin:yml/prettier",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "files": "ui-kits/*.yml",
+      "rules": {
+        "yml/sort-keys": ["error", "asc"]
+      }
+    }
+  ]
+}

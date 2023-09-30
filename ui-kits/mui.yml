@@ -1,0 +1,10 @@
+description: MUI provides a simple, customizable, and accessible library of
+  React components. Follow your own design system, or start with Material
+  Design.
+homepage: https://mui.com/
+image: https://repository-images.githubusercontent.com/23083156/79a1d61e-2309-4313-82bc-e5aa96ad0969
+name: MUI
+repository: https://github.com/mui/material-ui
+web:
+  react:
+    package: "@mui/material"

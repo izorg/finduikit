@@ -1,0 +1,7 @@
+# Common directories
+out
+
+# Common files
+next-env.d.ts
+
+# Specific directories & files
