@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "out"
+  },
+  "emulators": {
+    "hosting": {
+      "port": 3000
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}

@@ -19,6 +19,7 @@
   "dependencies": {
     "@adobe/react-spectrum": "3.30.0",
     "@react-spectrum/card": "3.0.0-alpha.22",
+    "@sentry/nextjs": "7.72.0",
     "clsx": "2.0.0",
     "next": "13.5.3",
     "react": "18.2.0",
