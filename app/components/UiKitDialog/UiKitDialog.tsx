@@ -45,15 +45,6 @@ export const UiKitDialog = (props: UiKitDialogProps) => {
     <DialogContainer isDismissable onDismiss={onClose}>
       {uiKit && (
         <Dialog>
-          {uiKit.image && (
-            <Image
-              alt=""
-              height="size-2400"
-              objectFit="cover"
-              slot="hero"
-              src={uiKit.image}
-            />
-          )}
           <Heading>{uiKit.name}</Heading>
           <Divider />
           <Content>

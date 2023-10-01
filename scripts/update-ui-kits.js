@@ -19,6 +19,7 @@ const getGitHubRepository = async (url) => {
             ... on Repository {
               description
               descriptionHTML
+              homepageUrl
               latestRelease {
                 name
                 tagName
@@ -95,6 +96,8 @@ const updateUiKit = async (dirent) => {
     filePath,
     stringify({
       ...data,
+      description: github.description ?? data.description,
+      homepage: github.homepageUrl ?? data.homepage,
       image: github.openGraphImageUrl?.startsWith(
         "https://repository-images.githubusercontent.com/",
       )
