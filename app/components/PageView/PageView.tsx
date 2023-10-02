@@ -8,12 +8,13 @@ import {
   Header,
   Heading,
   Image,
-  Text,
+  SearchField,
   View,
 } from "@adobe/react-spectrum";
 import { Card, CardView, WaterfallLayout } from "@react-spectrum/card";
+import Fuse from "fuse.js";
 import dynamic from "next/dynamic";
-import { Suspense, useState } from "react";
+import { Suspense, useDeferredValue, useMemo, useState } from "react";
 
 import { type UiKit } from "../../getUiKits";
 
@@ -32,7 +33,26 @@ type PageViewProps = {
 //   key in obj;
 
 export const PageView = (props: PageViewProps) => {
-  const [uiKits, setUiKits] = useState(props.uiKits);
+  // const [uiKits, setUiKits] = useState(props.uiKits);
+  const [search, setSearch] = useState("");
+
+  const fuse = useMemo(
+    () =>
+      new Fuse(props.uiKits, {
+        keys: ["name"],
+      }),
+    [props.uiKits],
+  );
+
+  const deferredSearch = useDeferredValue(search);
+
+  const uiKits = useMemo(() => {
+    if (!deferredSearch) {
+      return props.uiKits;
+    }
+
+    return fuse.search(deferredSearch).map(({ item }) => item);
+  }, [deferredSearch, fuse, props.uiKits]);
 
   return (
     <>
@@ -40,6 +60,7 @@ export const PageView = (props: PageViewProps) => {
         <View paddingX="size-300">
           <Heading level={1}>Find UI kit</Heading>
           <View elementType="p">Explore UI kits for rapid development</View>
+          <SearchField label="Search by name" onChange={setSearch} />
         </View>
       </Header>
       <CardView<UiKit>

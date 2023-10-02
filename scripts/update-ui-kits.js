@@ -5,33 +5,25 @@ import path from "node:path";
 import { parse, stringify } from "yaml";
 
 /**
+ * @typedef {object} GitHubRepositoryResource
+ * @property {string} [description]
+ * @property {string} [homepageUrl]
+ * @property {string} [openGraphImageUrl]
+ */
+
+/**
  * @param {string} url
- * @returns {Promise<any>}
+ * @returns {Promise<GitHubRepositoryResource>}
  */
 const getGitHubRepository = async (url) => {
-  url = url.replaceAll(/^git\+|\.git$/g, "");
-
   const response = await fetch("https://api.github.com/graphql", {
     body: JSON.stringify({
       query: /* GraphQL */ `
-        query getGithubRepository($url: URI!) {
+        query getGitHubRepository($url: URI!) {
           resource(url: $url) {
             ... on Repository {
               description
-              descriptionHTML
               homepageUrl
-              latestRelease {
-                name
-                tagName
-              }
-              name
-              repositoryTopics(first: 1) {
-                nodes {
-                  topic {
-                    name
-                  }
-                }
-              }
               openGraphImageUrl
             }
           }
@@ -95,9 +87,9 @@ const updateUiKit = async (dirent) => {
   await fs.promises.writeFile(
     filePath,
     stringify({
+      description: github.description,
+      homepage: github.homepageUrl,
       ...data,
-      description: github.description ?? data.description,
-      homepage: github.homepageUrl ?? data.homepage,
       image: github.openGraphImageUrl?.startsWith(
         "https://repository-images.githubusercontent.com/",
       )
