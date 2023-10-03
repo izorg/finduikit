@@ -4,6 +4,19 @@ import fs from "node:fs";
 import path from "node:path";
 import { parse, stringify } from "yaml";
 
+import { getHomepageData } from "../lib/getHomepageData.js";
+
+const CHECK_COUNT = 50;
+
+/**
+ * @typedef {object} UiKit
+ * @property {string} [description]
+ * @property {string} homepage
+ * @property {string} [image]
+ * @property {string} name
+ * @property {string} repository
+ */
+
 /**
  * @typedef {object} GitHubRepositoryResource
  * @property {string} [description]
@@ -74,29 +87,27 @@ const updateUiKit = async (dirent) => {
 
   const buffer = await fs.promises.readFile(filePath);
 
+  /**
+   * @type {UiKit}
+   */
   const data = parse(buffer.toString());
 
   const github = await getGitHubRepository(data.repository);
 
-  console.log(JSON.stringify(github, null, 2));
+  const homepage = await getHomepageData(data.homepage);
 
-  // const npmPackage = await getNpmPackage(data.npmPackageName);
-
-  // const repository = npmPackage.repository.url.replaceAll(/^git\+|\.git$/g, "");
+  console.log("=== homepage ===", data.name, homepage);
 
   await fs.promises.writeFile(
     filePath,
     stringify({
       description: github.description,
-      homepage: github.homepageUrl,
       ...data,
       image: github.openGraphImageUrl?.startsWith(
         "https://repository-images.githubusercontent.com/",
       )
         ? github.openGraphImageUrl
         : data.image,
-      // lastChecked: new Date().toISOString(),
-      // repository,
     }),
   );
 };
@@ -134,9 +145,9 @@ const checkUiKits = async () => {
   const checkEntries = entries
     .filter((dirent) => dirent.isFile())
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
-    .slice(0, 100);
+    .slice(0, CHECK_COUNT);
 
-  await Promise.all(checkEntries.map((dirent) => updateUiKit(dirent)));
+  await Promise.all(checkEntries.map(updateUiKit));
 
   await fs.promises.writeFile(
     checkCacheFile,
