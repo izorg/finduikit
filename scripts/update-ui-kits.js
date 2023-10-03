@@ -101,16 +101,52 @@ const updateUiKit = async (dirent) => {
   );
 };
 
-// await getGitHubRepository("git+https://github.com/adobe/react-spectrum.git");
-// await getNpmPackage("@adobe/react-spectrum");
+const checkUiKits = async () => {
+  const checkCacheFile = path.join(process.cwd(), ".uikitcache");
 
-const entries = await fs.promises.readdir(path.join(process.cwd(), "ui-kits"), {
-  withFileTypes: true,
-});
+  /**
+   * @type {Record<string,string>}
+   */
+  let checkCache;
 
-await Promise.all(
-  entries
-    // .slice(0, 3)
+  try {
+    const buffer = await fs.promises.readFile(checkCacheFile);
+
+    checkCache = JSON.parse(buffer.toString());
+  } catch {
+    checkCache = {};
+  }
+
+  const entries = await fs.promises.readdir(
+    path.join(process.cwd(), "ui-kits"),
+    {
+      withFileTypes: true,
+    },
+  );
+
+  /**
+   * @param {import('node:fs').Dirent} dirent
+   * @returns {number}
+   */
+  const getSortCacheTime = (dirent) =>
+    dirent.name in checkCache ? new Date(checkCache[dirent.name]).getTime() : 0;
+
+  const checkEntries = entries
     .filter((dirent) => dirent.isFile())
-    .map((dirent) => updateUiKit(dirent)),
-);
+    .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
+    .slice(0, 100);
+
+  await Promise.all(checkEntries.map((dirent) => updateUiKit(dirent)));
+
+  await fs.promises.writeFile(
+    checkCacheFile,
+    JSON.stringify({
+      ...checkCache,
+      ...Object.fromEntries(
+        checkEntries.map((dirent) => [dirent.name, new Date().toISOString()]),
+      ),
+    }),
+  );
+};
+
+await checkUiKits();
