@@ -10,6 +10,8 @@ init({
 
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
 
+  enabled: process.env.NEXT_PUBLIC_SENTRY_ENABLED === "true",
+
   // You can remove this option if you're not planning to use the Sentry Session Replay feature:
   integrations: [
     new Replay({

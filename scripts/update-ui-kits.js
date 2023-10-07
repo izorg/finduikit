@@ -96,7 +96,7 @@ const updateUiKit = async (dirent) => {
 
   const homepage = await getHomepageData(data.homepage);
 
-  console.log("=== homepage ===", data.name, homepage);
+  // console.log("=== homepage ===", data.name, homepage);
 
   await fs.promises.writeFile(
     filePath,
@@ -145,7 +145,10 @@ const checkUiKits = async () => {
   const checkEntries = entries
     .filter((dirent) => dirent.isFile())
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
+    // .slice(6, 7);
     .slice(0, CHECK_COUNT);
+
+  // console.log("=== checkEntries ===", checkEntries);
 
   await Promise.all(checkEntries.map(updateUiKit));
 

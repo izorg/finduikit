@@ -11,6 +11,8 @@ init({
 
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
 
+  enabled: process.env.NEXT_PUBLIC_SENTRY_ENABLED === "true",
+
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,
 });
