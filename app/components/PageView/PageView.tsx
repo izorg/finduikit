@@ -18,6 +18,7 @@ import dynamic from "next/dynamic";
 import { Suspense, useEffect, useMemo, useState } from "react";
 
 import { type UiKit } from "../../getUiKits";
+import { useDebounce } from "../useDebounce";
 
 const UiKitDialog = dynamic(
   () => import("../UiKitDialog").then((mod) => mod.UiKitDialog),
@@ -32,20 +33,6 @@ type PageViewProps = {
 
 // const isObjKey = <T extends object>(key: PropertyKey, obj: T): key is keyof T =>
 //   key in obj;
-
-const useDebounce = <T extends any>(value: T, delay?: number): T => {
-  const [debouncedValue, setDebouncedValue] = useState<T>(value);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setDebouncedValue(value), delay || 500);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [value, delay]);
-
-  return debouncedValue;
-};
 
 export const PageView = (props: PageViewProps) => {
   const [search, setSearch] = useState("");
@@ -80,9 +67,21 @@ export const PageView = (props: PageViewProps) => {
     <>
       <Header>
         <View paddingX="size-300">
-          <Heading level={1}>Find UI kit</Heading>
-          <View elementType="p">Explore UI kits for rapid development</View>
-          <SearchField label="Search by name" onChange={setSearch} />
+          <Flex
+            alignItems={{ base: "center", S: "baseline" }}
+            columnGap="size-300"
+            direction={{ base: "column", S: "row" }}
+          >
+            <Heading level={1}>Find UI kit</Heading>
+            <View elementType="p">
+              Explore UI kits for rapid web development
+            </View>
+          </Flex>
+          <SearchField
+            label="Search by name"
+            onChange={setSearch}
+            width={{ base: "100%", S: "size-3600" }}
+          />
         </View>
       </Header>
       <CardView<UiKit> aria-label="UI kits" items={uiKits} layout={layout}>
@@ -100,7 +99,6 @@ export const PageView = (props: PageViewProps) => {
                 <Button
                   elementType="a"
                   href={item.homepage}
-                  style="fill"
                   target="_blank"
                   variant="primary"
                 >
