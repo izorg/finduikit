@@ -1,31 +1,12 @@
 "use client";
 
-import {
-  Button,
-  Content,
-  Divider,
-  Flex,
-  Header,
-  Heading,
-  Image,
-  SearchField,
-  View,
-} from "@adobe/react-spectrum";
-import { Card, CardView, WaterfallLayout } from "@react-spectrum/card";
-import { Size } from "@react-stately/virtualizer";
 import Fuse from "fuse.js";
-import dynamic from "next/dynamic";
-import { Suspense, useEffect, useMemo, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useMemo, useState } from "react";
 
 import { type UiKit } from "../../getUiKits";
 import { useDebounce } from "../useDebounce";
-
-const UiKitDialog = dynamic(
-  () => import("../UiKitDialog").then((mod) => mod.UiKitDialog),
-  {
-    ssr: false,
-  },
-);
 
 type PageViewProps = {
   uiKits: UiKit[];
@@ -55,63 +36,41 @@ export const PageView = (props: PageViewProps) => {
     return fuse.search(debouncedSearch).map(({ item }) => item);
   }, [debouncedSearch, fuse, props.uiKits]);
 
-  const layout = useMemo(
-    () =>
-      new WaterfallLayout<UiKit>({
-        minSpace: new Size(24, 24),
-      }),
-    [],
-  );
-
   return (
-    <>
-      <Header>
-        <View paddingX="size-300">
-          <Flex
-            alignItems={{ base: "center", S: "baseline" }}
-            columnGap="size-300"
-            direction={{ base: "column", S: "row" }}
-          >
-            <Heading level={1}>Find UI kit</Heading>
-            <View elementType="p">
-              Explore UI kits for rapid web development
-            </View>
-          </Flex>
-          <SearchField
-            label="Search by name"
-            onChange={setSearch}
-            width={{ base: "100%", S: "size-3600" }}
-          />
-        </View>
-      </Header>
-      <CardView<UiKit> aria-label="UI kits" items={uiKits} layout={layout}>
-        {(item) => (
-          <Card key={item.name}>
-            {item.image && <Image alt={item.name} src={item.image} />}
-            <Heading>{item.name}</Heading>
-            <Content>
-              {item.description}
-              <Divider marginY="size-200" size="S" />
-              <Flex justifyContent="space-between">
-                {/*<Button elementType="a" href={`#${item.key}`} variant="primary">*/}
-                {/*  Details*/}
-                {/*</Button>*/}
-                <Button
-                  elementType="a"
-                  href={item.homepage}
-                  target="_blank"
-                  variant="primary"
-                >
-                  Visit
-                </Button>
-              </Flex>
-            </Content>
-          </Card>
-        )}
-      </CardView>
-      <Suspense>
-        <UiKitDialog uiKits={uiKits} />
-      </Suspense>
-    </>
+    <div className="flex flex-col gap-4 p-4">
+      <div>
+        <div className="text-display-large">Find UI kit</div>
+        <p>Explore UI kits for rapid web development</p>
+      </div>
+      <input
+        aria-label="Search by name"
+        className="h-[3.5rem] self-start rounded border border-outline p-[0.25rem_0rem_0.25rem_1rem]"
+        onChange={(event) => {
+          setSearch(event.currentTarget.value);
+        }}
+        placeholder="Search by name"
+      />
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 supports-[grid-template-rows:masonry]:grid-rows-[masonry]">
+        {uiKits.map((item) => (
+          <div className="relative rounded-[0.75rem] border" key={item.name}>
+            <div className="p-[0.75rem_0.25rem_0.75rem_1rem]">
+              <Link
+                className="text-title-medium after:absolute after:inset-0"
+                href={item.homepage}
+                target="_blank"
+              >
+                {item.name}
+              </Link>
+            </div>
+            {item.image && (
+              <div className="relative -z-10 aspect-[2/1]">
+                <Image alt={item.name} fill src={item.image} />
+              </div>
+            )}
+            <div className="p-4 text-body-medium">{item.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };

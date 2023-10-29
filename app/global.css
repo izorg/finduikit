@@ -1,38 +1,4 @@
-@font-face {
-  font-display: swap;
-  font-family: adobe-clean;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/AdobeClean-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: adobe-clean;
-  font-style: normal;
-  font-weight: 700;
-  src: url("./fonts/AdobeClean-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Source Code Pro";
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/SourceCodePro-Regular.otf") format("opentype");
-}
-
-body {
-  height: 100dvh;
-  margin: 0;
-}
-
-#spectrum-provider {
-  height: 100%;
-  overflow: auto;
-}
-
-pre {
-  font-family: "Source Code Pro", monospace;
-}
+@import url("tailwindcss/base.css");
+@import url("./base.css") layer(base);
+@import url("tailwindcss/components.css");
+@import url("tailwindcss/utilities.css");

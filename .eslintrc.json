@@ -1,6 +1,7 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
     "plugin:perfectionist/recommended-alphabetical",
     "plugin:yml/recommended",
     "plugin:yml/prettier",
@@ -13,5 +14,12 @@
         "yml/sort-keys": ["error", "asc"]
       }
     }
-  ]
+  ],
+  "root": true,
+  "rules": {
+    /**
+     * `prettier-plugin-tailwindcss` does it
+     */
+    "tailwindcss/classnames-order": "off"
+  }
 }

@@ -1,0 +1,39 @@
+:root {
+  --primary-40: 0 99 151;
+  --primary-80: 146 204 255;
+
+  --neutral-6: 17 20 22;
+  --neutral-10: 26 28 30;
+  --neutral-90: 198 198 201;
+  --neutral-98: 249 249 252;
+
+  --neutral-variant-50: 114 120 126;
+  --neutral-variant-60: 140 145 152;
+
+  @media (prefers-color-scheme: light) {
+    --primary: var(--primary-40);
+
+    --outline: var(--neutral-variant-50);
+
+    --surface: var(--neutral-98);
+    --on-surface: var(--neutral-10);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --primary: var(--primary-80);
+
+    --outline: var(--neutral-variant-60);
+
+    --surface: var(--neutral-6);
+    --on-surface: var(--neutral-90);
+  }
+}
+
+html {
+  @apply text-body-large;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
