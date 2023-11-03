@@ -7,13 +7,17 @@
   --neutral-90: 198 198 201;
   --neutral-98: 249 249 252;
 
+  --neutral-variant-30: 66 71 78;
   --neutral-variant-50: 114 120 126;
   --neutral-variant-60: 140 145 152;
+  --neutral-variant-80: 194 199 206;
 
   @media (prefers-color-scheme: light) {
     --primary: var(--primary-40);
 
     --outline: var(--neutral-variant-50);
+
+    --outline-variant: var(--neutral-variant-80);
 
     --surface: var(--neutral-98);
     --on-surface: var(--neutral-10);
@@ -23,6 +27,8 @@
     --primary: var(--primary-80);
 
     --outline: var(--neutral-variant-60);
+
+    --outline-variant: var(--neutral-variant-30);
 
     --surface: var(--neutral-6);
     --on-surface: var(--neutral-90);

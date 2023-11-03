@@ -14,6 +14,7 @@ const tailwindConfig = {
       colors: {
         "on-surface": "rgb(var(--on-surface) / <alpha-value>)",
         outline: "rgb(var(--outline) / <alpha-value>)",
+        "outline-variant": "rgb(var(--outline-variant) / <alpha-value>)",
         primary: "rgb(var(--primary) / <alpha-value>)",
         surface: "rgb(var(--surface) / <alpha-value>)",
       },

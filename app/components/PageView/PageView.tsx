@@ -52,7 +52,10 @@ export const PageView = (props: PageViewProps) => {
       />
       <div className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 supports-[grid-template-rows:masonry]:grid-rows-[masonry]">
         {uiKits.map((item) => (
-          <div className="relative rounded-[0.75rem] border" key={item.name}>
+          <div
+            className="border-outline-variant relative rounded-[0.75rem] border"
+            key={item.name}
+          >
             <div className="p-[0.75rem_0.25rem_0.75rem_1rem]">
               <Link
                 className="text-title-medium after:absolute after:inset-0"
