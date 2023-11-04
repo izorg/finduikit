@@ -14,7 +14,7 @@
     "format": "prettier --cache --ignore-unknown --write .",
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-js": "eslint --cache \"**/*.{js,ts,tsx,yml}\"",
-    "start": "npx http-server out --port=3000",
+    "start": "next start",
     "update-ui-kits": "node --env-file=.env.local ./scripts/update-ui-kits.js && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
   },
   "dependencies": {
