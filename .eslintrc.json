@@ -21,5 +21,10 @@
      * `prettier-plugin-tailwindcss` does it
      */
     "tailwindcss/classnames-order": "off"
+  },
+  "settings": {
+    "tailwindcss": {
+      "cssFiles": ["app/**/*.css"]
+    }
   }
 }

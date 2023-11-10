@@ -12,9 +12,6 @@ type PageViewProps = {
   uiKits: UiKit[];
 };
 
-// const isObjKey = <T extends object>(key: PropertyKey, obj: T): key is keyof T =>
-//   key in obj;
-
 export const PageView = (props: PageViewProps) => {
   const [search, setSearch] = useState("");
 
@@ -66,8 +63,13 @@ export const PageView = (props: PageViewProps) => {
               </Link>
             </div>
             {item.image && (
-              <div className="relative -z-10 aspect-[2/1]">
-                <Image alt={item.name} fill src={item.image} />
+              <div className="relative -z-10 aspect-[2/1] overflow-hidden">
+                <Image
+                  alt={item.name}
+                  className="object-cover"
+                  fill
+                  src={item.image}
+                />
               </div>
             )}
             <div className="p-4 text-body-medium">{item.description}</div>

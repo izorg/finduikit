@@ -23,8 +23,7 @@ export default withSentryConfig(
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
-    dryRun:
-      process.env.NODE_ENV === "development" || process.env.ANALYZE === "true",
+    dryRun: process.env.CI !== "true",
     org: "viacheslav",
     project: "finduikit",
     // Suppresses source map uploading logs during build
