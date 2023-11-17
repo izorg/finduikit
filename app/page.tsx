@@ -1,7 +1,7 @@
 import { type Metadata } from "next";
 
-import { PageView } from "./components";
 import { getUiKits } from "./getUiKits";
+import { UiKits } from "./UiKits";
 
 export const metadata: Metadata = {
   description: "Explore UI kits for rapid development",
@@ -17,7 +17,7 @@ const Page = async () => {
         <div className="text-display-large">Find UI kit</div>
         <p>Explore UI kits for rapid web development</p>
       </div>
-      <PageView uiKits={uiKits} />
+      <UiKits uiKits={uiKits} />
     </div>
   );
 };

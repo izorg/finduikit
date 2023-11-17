@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import { type UiKit } from "../../getUiKits";
-import { useDebounce } from "../useDebounce";
+import { type UiKit } from "./getUiKits";
+import { useDebounce } from "./useDebounce";
 
 type PageViewProps = {
   uiKits: UiKit[];
 };
 
-export const PageView = (props: PageViewProps) => {
+export const UiKits = (props: PageViewProps) => {
   const [search, setSearch] = useState("");
 
   const fuse = useMemo(
