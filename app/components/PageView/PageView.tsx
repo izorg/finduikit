@@ -35,13 +35,13 @@ export const PageView = (props: PageViewProps) => {
 
   return (
     <div className="flex flex-col gap-4 p-4">
-      <div>
+      <div className="mx-auto text-center">
         <div className="text-display-large">Find UI kit</div>
         <p>Explore UI kits for rapid web development</p>
       </div>
       <input
         aria-label="Search by name"
-        className="h-[3.5rem] self-start rounded border border-outline p-[0.25rem_0rem_0.25rem_1rem]"
+        className="mx-auto h-[3.5rem] self-start rounded border border-outline p-[0.25rem_0rem_0.25rem_1rem]"
         onChange={(event) => {
           setSearch(event.currentTarget.value);
         }}
