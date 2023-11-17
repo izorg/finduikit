@@ -11,7 +11,15 @@ export const metadata: Metadata = {
 const Page = async () => {
   const uiKits = await getUiKits();
 
-  return <PageView uiKits={uiKits} />;
+  return (
+    <div className="flex flex-col gap-4 p-4">
+      <div className="mx-auto text-center">
+        <div className="text-display-large">Find UI kit</div>
+        <p>Explore UI kits for rapid web development</p>
+      </div>
+      <PageView uiKits={uiKits} />
+    </div>
+  );
 };
 
 export default Page;
