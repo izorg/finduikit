@@ -1,6 +1,8 @@
 import { type Metadata } from "next";
 
 import { getUiKits } from "./getUiKits";
+import { SearchInput } from "./SearchInput";
+import { SearchProvider } from "./SearchProvider";
 import { UiKits } from "./UiKits";
 
 export const metadata: Metadata = {
@@ -17,7 +19,10 @@ const Page = async () => {
         <div className="text-display-large">Find UI kit</div>
         <p>Explore UI kits for rapid web development</p>
       </div>
-      <UiKits uiKits={uiKits} />
+      <SearchProvider>
+        <SearchInput />
+        <UiKits uiKits={uiKits} />
+      </SearchProvider>
     </div>
   );
 };
