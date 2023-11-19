@@ -1,32 +1,19 @@
 // @ts-check
 
+import { parse as parseHtml } from "node-html-parser";
 import fs from "node:fs";
 import path from "node:path";
-import { parse, stringify } from "yaml";
+import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
-import { getHomepageData } from "../lib/getHomepageData.js";
+const CHECK_COUNT = 1;
 
-const CHECK_COUNT = 50;
-
-/**
- * @typedef {object} UiKit
- * @property {string} [description]
- * @property {string} homepage
- * @property {string} [image]
- * @property {string} name
- * @property {string} repository
- */
-
-/**
- * @typedef {object} GitHubRepositoryResource
- * @property {string} [description]
- * @property {string} [homepageUrl]
- * @property {string} [openGraphImageUrl]
- */
+const ANGULAR = /** @type {const} */ ("angular");
+const REACT = /** @type {const} */ ("react");
+const VUE = /** @type {const} */ ("vue");
 
 /**
  * @param {string} url
- * @returns {Promise<GitHubRepositoryResource>}
+ * @returns {Promise<Exclude<import('./update-ui-kits.generated.ts').GetGitHubRepositoryQuery['resource'], null>>}
  */
 const getGitHubRepository = async (url) => {
   const response = await fetch("https://api.github.com/graphql", {
@@ -38,6 +25,13 @@ const getGitHubRepository = async (url) => {
               description
               homepageUrl
               openGraphImageUrl
+              repositoryTopics(first: 100) {
+                nodes {
+                  topic {
+                    name
+                  }
+                }
+              }
             }
           }
         }
@@ -79,6 +73,51 @@ const getNpmPackage = async (name) => {
 };
 
 /**
+ * @typedef {object} HomepageData
+ * @property {string} [description]
+ */
+
+/**
+ * @param {string} homepage
+ * @returns {Promise<HomepageData>}
+ */
+const getHomepageData = async (homepage) => {
+  /**
+   * @type {HomepageData}
+   */
+  const data = {};
+
+  const response = await fetch(homepage);
+
+  const html = await response.text();
+
+  const root = parseHtml(html);
+
+  const description =
+    root
+      .querySelector('head > meta[name="description"]')
+      ?.getAttribute("content") ??
+    root
+      .querySelector('head > meta[name="og:description"]')
+      ?.getAttribute("content");
+
+  if (description) {
+    data.description = description;
+  }
+
+  return data;
+};
+
+/**
+ * @typedef {object} UiKit
+ * @property {string} [description]
+ * @property {string} homepage
+ * @property {string} [image]
+ * @property {string} name
+ * @property {string} repository
+ */
+
+/**
  * @param {import('node:fs').Dirent} dirent
  * @returns {Promise<void>}
  */
@@ -90,7 +129,7 @@ const updateUiKit = async (dirent) => {
   /**
    * @type {UiKit}
    */
-  const data = parse(buffer.toString());
+  const data = parseYaml(buffer.toString());
 
   const github = await getGitHubRepository(data.repository);
 
@@ -98,9 +137,13 @@ const updateUiKit = async (dirent) => {
 
   // console.log("=== homepage ===", data.name, homepage);
 
+  if (github.__typename !== "Repository") {
+    return;
+  }
+
   await fs.promises.writeFile(
     filePath,
-    stringify({
+    stringifyYaml({
       description: github.description,
       ...data,
       image: github.openGraphImageUrl?.startsWith(

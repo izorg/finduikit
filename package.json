@@ -12,6 +12,7 @@
     "deploy": "npx firebase-tools deploy",
     "dev": "next dev --turbo",
     "format": "prettier --cache --ignore-unknown --write .",
+    "graphql-codegen": "graphql-codegen",
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-js": "eslint --cache \"**/*.{js,ts,tsx,yml}\"",
     "start": "next start",
@@ -25,8 +26,11 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/near-operation-file-preset": "3.0.0",
+    "@graphql-codegen/typescript-operations": "4.0.1",
     "@next/bundle-analyzer": "14.0.3",
-    "@types/node": "20.9.1",
+    "@types/node": "20.9.2",
     "@types/react": "18.2.37",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.3",
@@ -35,6 +39,7 @@
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-tailwindcss": "3.13.0",
     "eslint-plugin-yml": "1.10.0",
+    "graphql": "16.8.1",
     "node-html-parser": "6.1.11",
     "postcss": "8.4.31",
     "postcss-import": "15.1.0",

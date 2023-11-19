@@ -11,10 +11,16 @@ const withBundleAnalyzer = bundleAnalyzer({
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true, // Using project root ESLint check
+  },
   images: {
     unoptimized: true,
   },
   productionBrowserSourceMaps: true,
+  typescript: {
+    ignoreBuildErrors: true, // Using project root TypeScript check
+  },
 };
 
 export default withSentryConfig(

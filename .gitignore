@@ -12,6 +12,7 @@ node_modules
 out
 
 # Common files
+*.generated.ts
 *.tsbuildinfo
 .DS_Store
 .env*.local
