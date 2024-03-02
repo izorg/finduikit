@@ -1,37 +1,138 @@
-:root {
-  --primary-40: 0 99 151;
-  --primary-80: 146 204 255;
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Color */
+    --primary: 104 84 142;
+    --surface-tint: 104 84 142;
+    --on-primary: 255 255 255;
+    --primary-container: 235 221 255;
+    --on-primary-container: 35 15 70;
+    --secondary: 99 91 112;
+    --on-secondary: 255 255 255;
+    --secondary-container: 233 222 248;
+    --on-secondary-container: 31 24 43;
+    --tertiary: 126 82 93;
+    --on-tertiary: 255 255 255;
+    --tertiary-container: 255 217 225;
+    --on-tertiary-container: 49 16 27;
+    --error: 186 26 26;
+    --on-error: 255 255 255;
+    --error-container: 255 218 214;
+    --on-error-container: 65 0 2;
+    --background: 254 247 255;
+    --on-background: 29 27 32;
+    --surface: 254 247 255;
+    --on-surface: 29 27 32;
+    --surface-variant: 231 224 235;
+    --on-surface-variant: 73 69 78;
+    --outline: 122 117 127;
+    --outline-variant: 203 196 207;
+    --shadow: 0 0 0;
+    --scrim: 0 0 0;
+    --inverse-surface: 50 47 53;
+    --inverse-on-surface: 245 239 247;
+    --inverse-primary: 211 188 253;
+    --primary-fixed: 235 221 255;
+    --on-primary-fixed: 35 15 70;
+    --primary-fixed-dim: 211 188 253;
+    --on-primary-fixed-variant: 79 61 116;
+    --secondary-fixed: 233 222 248;
+    --on-secondary-fixed: 31 24 43;
+    --secondary-fixed-dim: 205 194 219;
+    --on-secondary-fixed-variant: 75 67 88;
+    --tertiary-fixed: 255 217 225;
+    --on-tertiary-fixed: 49 16 27;
+    --tertiary-fixed-dim: 240 183 197;
+    --on-tertiary-fixed-variant: 100 59 70;
+    --surface-dim: 222 216 224;
+    --surface-bright: 254 247 255;
+    --surface-container-lowest: 255 255 255;
+    --surface-container-low: 248 241 250;
+    --surface-container: 242 236 244;
+    --surface-container-high: 237 230 238;
+    --surface-container-highest: 231 224 232;
 
-  --neutral-6: 17 20 22;
-  --neutral-10: 26 28 30;
-  --neutral-90: 198 198 201;
-  --neutral-98: 249 249 252;
+    /* Elevation */
+    --elevation-1: 0px 1px 2px rgb(0 0 0 / 30%),
+      0px 1px 3px 1px rgb(0 0 0 / 15%);
+    --elevation-2: 0px 1px 2px rgb(0 0 0 / 30%),
+      0px 2px 6px 2px rgb(0 0 0 / 15%);
+    --elevation-3: 0px 4px 8px 3px rgb(0 0 0 / 15%),
+      0px 1px 3px rgb(0 0 0 / 30%);
+    --elevation-4: 0px 6px 10px 4px rgb(0 0 0 / 15%),
+      0px 2px 3px rgb(0 0 0 / 30%);
+    --elevation-5: 0px 8px 12px 6px rgb(0 0 0 / 15%),
+      0px 4px 4px rgb(0 0 0 / 30%);
 
-  --neutral-variant-30: 66 71 78;
-  --neutral-variant-50: 114 120 126;
-  --neutral-variant-60: 140 145 152;
-  --neutral-variant-80: 194 199 206;
-
-  @media (prefers-color-scheme: light) {
-    --primary: var(--primary-40);
-
-    --outline: var(--neutral-variant-50);
-
-    --outline-variant: var(--neutral-variant-80);
-
-    --surface: var(--neutral-98);
-    --on-surface: var(--neutral-10);
+    color-scheme: light;
   }
+}
 
-  @media (prefers-color-scheme: dark) {
-    --primary: var(--primary-80);
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Color */
+    --primary: 211 188 253;
+    --surface-tint: 211 188 253;
+    --on-primary: 56 38 92;
+    --primary-container: 79 61 116;
+    --on-primary-container: 235 221 255;
+    --secondary: 205 194 219;
+    --on-secondary: 52 45 64;
+    --secondary-container: 75 67 88;
+    --on-secondary-container: 233 222 248;
+    --tertiary: 240 183 197;
+    --on-tertiary: 74 37 48;
+    --tertiary-container: 100 59 70;
+    --on-tertiary-container: 255 217 225;
+    --error: 255 180 171;
+    --on-error: 105 0 5;
+    --error-container: 147 0 10;
+    --on-error-container: 255 218 214;
+    --background: 21 18 24;
+    --on-background: 231 224 232;
+    --surface: 21 18 24;
+    --on-surface: 231 224 232;
+    --surface-variant: 73 69 78;
+    --on-surface-variant: 203 196 207;
+    --outline: 148 143 153;
+    --outline-variant: 73 69 78;
+    --shadow: 0 0 0;
+    --scrim: 0 0 0;
+    --inverse-surface: 231 224 232;
+    --inverse-on-surface: 50 47 53;
+    --inverse-primary: 104 84 142;
+    --primary-fixed: 235 221 255;
+    --on-primary-fixed: 35 15 70;
+    --primary-fixed-dim: 211 188 253;
+    --on-primary-fixed-variant: 79 61 116;
+    --secondary-fixed: 233 222 248;
+    --on-secondary-fixed: 31 24 43;
+    --secondary-fixed-dim: 205 194 219;
+    --on-secondary-fixed-variant: 75 67 88;
+    --tertiary-fixed: 255 217 225;
+    --on-tertiary-fixed: 49 16 27;
+    --tertiary-fixed-dim: 240 183 197;
+    --on-tertiary-fixed-variant: 100 59 70;
+    --surface-dim: 21 18 24;
+    --surface-bright: 59 56 62;
+    --surface-container-lowest: 15 13 19;
+    --surface-container-low: 29 27 32;
+    --surface-container: 33 31 36;
+    --surface-container-high: 44 41 47;
+    --surface-container-highest: 54 52 58;
 
-    --outline: var(--neutral-variant-60);
+    /* Elevation */
+    --elevation-1: 0px 1px 3px 1px rgb(var(--shadow) / 15%),
+      0px 1px 2px rgb(var(--shadow) / 30%);
+    --elevation-2: 0px 2px 6px 2px rgb(var(--shadow) / 15%),
+      0px 1px 2px rgb(var(--shadow) / 30%);
+    --elevation-3: 0px 4px 8px 3px rgb(var(--shadow) / 15%),
+      0px 1px 3px rgb(var(--shadow) / 30%);
+    --elevation-4: 0px 6px 10px 4px rgb(var(--shadow) / 15%),
+      0px 2px 3px rgb(var(--shadow) / 30%);
+    --elevation-5: 0px 8px 12px 6px rgb(var(--shadow) / 15%),
+      0px 4px 4px rgb(var(--shadow) / 30%);
 
-    --outline-variant: var(--neutral-variant-30);
-
-    --surface: var(--neutral-6);
-    --on-surface: var(--neutral-90);
+    color-scheme: dark;
   }
 }
 
