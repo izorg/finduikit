@@ -6,6 +6,9 @@ const config: CodegenConfig = {
     "github.generated.ts": {
       config: {
         avoidOptionals: true,
+        scalars: {
+          URI: "string",
+        },
       },
       plugins: ["typescript"],
     },
