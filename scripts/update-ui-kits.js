@@ -21,6 +21,7 @@ const getGitHubRepository = async (url) => {
       query: /* GraphQL */ `
         query getGitHubRepository($url: URI!) {
           resource(url: $url) {
+            __typename
             ... on Repository {
               description
               homepageUrl
