@@ -11,9 +11,9 @@ const UiKitSchema = z.object({
   repository: z.string(),
 });
 
-export type UiKit = z.infer<typeof UiKitSchema> & {
+export type UiKit = {
   key: string;
-};
+} & z.infer<typeof UiKitSchema>;
 
 export const getUiKits = async () => {
   const entries = await fs.promises.readdir(

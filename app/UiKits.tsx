@@ -35,7 +35,7 @@ export const UiKits = (props: PageViewProps) => {
     <div className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 supports-[grid-template-rows:masonry]:grid-rows-[masonry]">
       {uiKits.map((item) => (
         <div
-          className="relative rounded-[0.75rem] border border-outline-variant"
+          className="relative rounded-xl border border-outline-variant"
           key={item.name}
         >
           <div className="p-[0.75rem_0.25rem_0.75rem_1rem]">
