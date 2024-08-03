@@ -28,7 +28,7 @@ export const getUiKits = async () => {
       .filter((dirent) => dirent.isFile())
       .map(async (dirent) => {
         const buffer = await fs.promises.readFile(
-          path.join(dirent.path, dirent.name),
+          path.join(dirent.parentPath, dirent.name),
         );
 
         return [dirent.name.slice(0, dirent.name.lastIndexOf(".")), buffer];
