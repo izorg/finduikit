@@ -2,7 +2,7 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:tailwindcss/recommended",
-    "plugin:perfectionist/recommended-alphabetical",
+    "plugin:perfectionist/recommended-alphabetical-legacy",
     "plugin:yml/recommended",
     "plugin:yml/prettier",
     "plugin:prettier/recommended"
