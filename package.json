@@ -16,7 +16,7 @@
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-js": "eslint --cache \"**/*.{js,ts,tsx,yml}\"",
     "start": "next start",
-    "update-ui-kits": "node --env-file=.env.local ./scripts/update-ui-kits.js && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
+    "update-ui-kits": "node ./scripts/update-ui-kits.js && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
   },
   "dependencies": {
     "@sentry/nextjs": "8.34.0",
