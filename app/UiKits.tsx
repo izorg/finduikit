@@ -3,7 +3,7 @@
 import Fuse from "fuse.js";
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 
 import { type UiKit } from "./getUiKits";
 import { useSearch } from "./SearchProvider";
