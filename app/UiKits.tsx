@@ -32,7 +32,7 @@ export const UiKits = (props: PageViewProps) => {
   }, [search, fuse, props.uiKits]);
 
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 supports-[grid-template-rows:masonry]:grid-rows-[masonry]">
+    <main className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 supports-[grid-template-rows:masonry]:grid-rows-[masonry]">
       {uiKits.map((item) => (
         <div
           className="relative rounded-xl border border-outline-variant"
@@ -60,6 +60,6 @@ export const UiKits = (props: PageViewProps) => {
           <div className="p-4 text-body-medium">{item.description}</div>
         </div>
       ))}
-    </div>
+    </main>
   );
 };
