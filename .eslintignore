@@ -1,8 +1,0 @@
-# Common directories
-out
-
-# Common files
-*.generated.*
-next-env.d.ts
-
-# Specific directories & files

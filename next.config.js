@@ -14,9 +14,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Using project root ESLint check
   },
-  experimental: {
-    instrumentationHook: true,
-  },
   images: {
     unoptimized: true,
   },
