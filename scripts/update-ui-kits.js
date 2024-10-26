@@ -7,9 +7,11 @@ import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 const CHECK_COUNT = 1;
 
+/* eslint-disable no-unused-vars */
 const ANGULAR = /** @type {const} */ ("angular");
 const REACT = /** @type {const} */ ("react");
 const VUE = /** @type {const} */ ("vue");
+/* eslint-enable no-unused-vars */
 
 /**
  * @param {string} url
@@ -63,6 +65,7 @@ const getGitHubRepository = async (url) => {
  * @param {string} name
  * @returns {Promise<NpmPackage>}
  */
+// eslint-disable-next-line no-unused-vars
 const getNpmPackage = async (name) => {
   const response = await fetch(`https://registry.npmjs.org/${name}`);
 
@@ -134,6 +137,7 @@ const updateUiKit = async (dirent) => {
 
   const github = await getGitHubRepository(data.repository);
 
+  // eslint-disable-next-line no-unused-vars
   const homepage = await getHomepageData(data.homepage);
 
   // console.log("=== homepage ===", data.name, homepage);

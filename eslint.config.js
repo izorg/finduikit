@@ -1,20 +1,32 @@
+import js from '@eslint/js';
 import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier";
 import perfectionist from "eslint-plugin-perfectionist";
 import tailwind from "eslint-plugin-tailwindcss";
 import yml from "eslint-plugin-yml";
+import globals from "globals";
+import ts from 'typescript-eslint';
 
-export default [
-  gitignore({
-    files: ["next-env.d.ts"],
-  }),
+export default ts.config(
+  gitignore(),
+  {
+    ignores: [
+      '.next'
+    ]
+  },
+  js.configs.recommended,
   perfectionist.configs["recommended-alphabetical"],
   ...tailwind.configs["flat/recommended"],
   ...yml.configs["flat/recommended"],
   ...yml.configs["flat/prettier"],
   prettier,
   {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
     plugins: {
       "@next/next": next,
     },
@@ -39,4 +51,4 @@ export default [
       "yml/sort-keys": ["error", "asc"],
     },
   },
-];
+);
