@@ -1,7 +1,7 @@
 import { type CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  documents: ["scripts/update-ui-kits.js"],
+  documents: ["scripts/update-ui-kits.ts"],
   generates: {
     "github.generated.ts": {
       config: {

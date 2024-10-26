@@ -1,23 +1,20 @@
-// @ts-check
-
 import { parse as parseHtml } from "node-html-parser";
-import fs from "node:fs";
+import fs, { type Dirent } from "node:fs";
 import path from "node:path";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
+import type { GetGitHubRepositoryQuery } from "./update-ui-kits.generated";
 
 const CHECK_COUNT = 1;
 
 /* eslint-disable no-unused-vars */
-const ANGULAR = /** @type {const} */ ("angular");
-const REACT = /** @type {const} */ ("react");
-const VUE = /** @type {const} */ ("vue");
+const ANGULAR = /** @type {const} */ "angular";
+const REACT = /** @type {const} */ "react";
+const VUE = /** @type {const} */ "vue";
 /* eslint-enable no-unused-vars */
 
-/**
- * @param {string} url
- * @returns {Promise<Exclude<import('./update-ui-kits.generated.ts').GetGitHubRepositoryQuery['resource'], null>>}
- */
-const getGitHubRepository = async (url) => {
+const getGitHubRepository = async (
+  url: string,
+): Promise<Exclude<GetGitHubRepositoryQuery["resource"], null>> => {
   const response = await fetch("https://api.github.com/graphql", {
     body: JSON.stringify({
       query: /* GraphQL */ `
@@ -55,18 +52,14 @@ const getGitHubRepository = async (url) => {
   return json.data.resource;
 };
 
-/**
- * @typedef {object} NpmPackage
- * @property {object} repository
- * @property {string} repository.url
- */
-
-/**
- * @param {string} name
- * @returns {Promise<NpmPackage>}
- */
 // eslint-disable-next-line no-unused-vars
-const getNpmPackage = async (name) => {
+const getNpmPackage = async (
+  name: string,
+): Promise<{
+  repository: {
+    url: string;
+  };
+}> => {
   const response = await fetch(`https://registry.npmjs.org/${name}`);
 
   const json = await response.json();
@@ -76,20 +69,16 @@ const getNpmPackage = async (name) => {
   return json;
 };
 
-/**
- * @typedef {object} HomepageData
- * @property {string} [description]
- */
+type HomepageData = {
+  description?: string;
+};
 
 /**
  * @param {string} homepage
  * @returns {Promise<HomepageData>}
  */
-const getHomepageData = async (homepage) => {
-  /**
-   * @type {HomepageData}
-   */
-  const data = {};
+const getHomepageData = async (homepage: string): Promise<HomepageData> => {
+  const data: HomepageData = {};
 
   const response = await fetch(homepage);
 
@@ -112,28 +101,20 @@ const getHomepageData = async (homepage) => {
   return data;
 };
 
-/**
- * @typedef {object} UiKit
- * @property {string} [description]
- * @property {string} homepage
- * @property {string} [image]
- * @property {string} name
- * @property {string} repository
- */
+type UiKit = {
+  description?: string;
+  homepage: string;
+  image?: string;
+  name: string;
+  repository: string;
+};
 
-/**
- * @param {import('node:fs').Dirent} dirent
- * @returns {Promise<void>}
- */
-const updateUiKit = async (dirent) => {
-  const filePath = path.join(dirent.path, dirent.name);
+const updateUiKit = async (dirent: Dirent) => {
+  const filePath = path.join(dirent.parentPath, dirent.name);
 
   const buffer = await fs.promises.readFile(filePath);
 
-  /**
-   * @type {UiKit}
-   */
-  const data = parseYaml(buffer.toString());
+  const data: UiKit = parseYaml(buffer.toString());
 
   const github = await getGitHubRepository(data.repository);
 
@@ -183,11 +164,7 @@ const checkUiKits = async () => {
     },
   );
 
-  /**
-   * @param {import('node:fs').Dirent} dirent
-   * @returns {number}
-   */
-  const getSortCacheTime = (dirent) =>
+  const getSortCacheTime = (dirent: Dirent) =>
     dirent.name in checkCache ? new Date(checkCache[dirent.name]).getTime() : 0;
 
   const checkEntries = entries

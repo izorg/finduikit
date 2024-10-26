@@ -16,7 +16,7 @@
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-js": "eslint --cache \"**/*.{js,ts,tsx,yml}\"",
     "start": "next start",
-    "update-ui-kits": "node ./scripts/update-ui-kits.js && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
+    "update-ui-kits": "node --experimental-strip-types scripts/update-ui-kits.ts && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
   },
   "dependencies": {
     "@sentry/nextjs": "8.35.0",
@@ -32,7 +32,7 @@
     "@graphql-codegen/typescript-operations": "4.3.0",
     "@next/bundle-analyzer": "15.0.1",
     "@next/eslint-plugin-next": "15.0.1",
-    "@types/node": "20.17.1",
+    "@types/node": "22.8.1",
     "@types/react": "18.3.12",
     "eslint": "9.13.0",
     "eslint-config-flat-gitignore": "0.3.0",
