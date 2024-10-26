@@ -1,5 +1,4 @@
-// @ts-check
-
+import { type NextConfig} from 'next'
 import bundleAnalyzer from "@next/bundle-analyzer";
 import { withSentryConfig } from "@sentry/nextjs";
 
@@ -7,10 +6,7 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
+const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Using project root ESLint check
   },
@@ -21,7 +17,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true, // Using project root TypeScript check
   },
-};
+} ;
 
 export default withSentryConfig(withBundleAnalyzer(nextConfig), {
   disableLogger: true,
