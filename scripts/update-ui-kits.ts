@@ -2,15 +2,16 @@ import { parse as parseHtml } from "node-html-parser";
 import fs, { type Dirent } from "node:fs";
 import path from "node:path";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
+
 import type { GetGitHubRepositoryQuery } from "./update-ui-kits.generated";
 
 const CHECK_COUNT = 1;
 
-/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const ANGULAR = /** @type {const} */ "angular";
 const REACT = /** @type {const} */ "react";
 const VUE = /** @type {const} */ "vue";
-/* eslint-enable no-unused-vars */
+/* eslint-enable @typescript-eslint/no-unused-vars */
 
 const getGitHubRepository = async (
   url: string,
@@ -52,7 +53,7 @@ const getGitHubRepository = async (
   return json.data.resource;
 };
 
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getNpmPackage = async (
   name: string,
 ): Promise<{
@@ -73,10 +74,6 @@ type HomepageData = {
   description?: string;
 };
 
-/**
- * @param {string} homepage
- * @returns {Promise<HomepageData>}
- */
 const getHomepageData = async (homepage: string): Promise<HomepageData> => {
   const data: HomepageData = {};
 
@@ -118,7 +115,7 @@ const updateUiKit = async (dirent: Dirent) => {
 
   const github = await getGitHubRepository(data.repository);
 
-  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const homepage = await getHomepageData(data.homepage);
 
   // console.log("=== homepage ===", data.name, homepage);
@@ -175,7 +172,7 @@ const checkUiKits = async () => {
 
   // console.log("=== checkEntries ===", checkEntries);
 
-  await Promise.all(checkEntries.map(updateUiKit));
+  await Promise.all(checkEntries.map((entry) => updateUiKit(entry)));
 
   await fs.promises.writeFile(
     checkCacheFile,

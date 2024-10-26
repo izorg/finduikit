@@ -6,7 +6,7 @@ export const useDebounce = <T>(value: T, delay?: number): T => {
   const [debouncedValue, setDebouncedValue] = useState<T>(value);
 
   useEffect(() => {
-    const timer = window.setTimeout(
+    const timer = globalThis.setTimeout(
       () => setDebouncedValue(value),
       delay ?? 500,
     );

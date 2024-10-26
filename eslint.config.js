@@ -4,6 +4,7 @@ import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier";
 import perfectionist from "eslint-plugin-perfectionist";
 import tailwind from "eslint-plugin-tailwindcss";
+import unicorn from "eslint-plugin-unicorn";
 import yml from "eslint-plugin-yml";
 import globals from "globals";
 import ts from 'typescript-eslint';
@@ -16,6 +17,8 @@ export default ts.config(
     ]
   },
   js.configs.recommended,
+  ...ts.configs.recommended,
+  unicorn.configs["flat/recommended"],
   perfectionist.configs["recommended-alphabetical"],
   ...tailwind.configs["flat/recommended"],
   ...yml.configs["flat/recommended"],
@@ -38,6 +41,10 @@ export default ts.config(
        * `prettier-plugin-tailwindcss` does it
        */
       "tailwindcss/classnames-order": "off",
+
+      "unicorn/filename-case": "off",
+
+      "unicorn/prevent-abbreviations": "off",
     },
     settings: {
       tailwindcss: {
