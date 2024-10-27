@@ -1,6 +1,6 @@
 import bundleAnalyzer from "@next/bundle-analyzer";
 import { withSentryConfig } from "@sentry/nextjs";
-import { type NextConfig} from 'next'
+import { type NextConfig } from "next";
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true, // Using project root TypeScript check
   },
-} ;
+};
 
 export default withSentryConfig(withBundleAnalyzer(nextConfig), {
   disableLogger: true,

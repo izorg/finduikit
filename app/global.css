@@ -1,4 +1,1 @@
-@import url("tailwindcss/base.css");
-@import url("./base.css") layer(base);
-@import url("tailwindcss/components.css");
-@import url("tailwindcss/utilities.css");
+@import url("@radix-ui/themes/styles.css");

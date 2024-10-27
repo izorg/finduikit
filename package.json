@@ -19,9 +19,11 @@
     "update-ui-kits": "node --experimental-strip-types scripts/update-ui-kits.ts && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
   },
   "dependencies": {
+    "@radix-ui/themes": "3.1.4",
     "@sentry/nextjs": "8.35.0",
     "fuse.js": "7.0.0",
     "next": "15.0.1",
+    "next-themes": "0.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -39,7 +41,6 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-perfectionist": "3.9.1",
     "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-tailwindcss": "3.17.5",
     "eslint-plugin-unicorn": "56.0.0",
     "eslint-plugin-yml": "1.14.0",
     "globals": "15.11.0",
@@ -47,17 +48,15 @@
     "node-html-parser": "6.1.13",
     "postcss": "8.4.47",
     "postcss-import": "16.1.0",
-    "postcss-nesting": "13.0.1",
     "postcss-preset-env": "10.0.8",
     "prettier": "3.3.3",
-    "prettier-plugin-tailwindcss": "0.6.8",
     "stylelint": "16.10.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-standard": "36.0.1",
     "stylelint-order": "6.0.4",
-    "tailwindcss": "3.4.14",
     "typescript": "5.6.3",
     "typescript-eslint": "8.11.0",
+    "typescript-plugin-css-modules": "5.1.0",
     "webpack": "5.95.0",
     "yaml": "2.6.0",
     "zod": "3.23.8"

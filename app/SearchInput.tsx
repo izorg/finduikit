@@ -1,18 +1,23 @@
 "use client";
 
+import { TextField } from "@radix-ui/themes";
+
 import { useSearch } from "./SearchProvider";
+
+const placeholder = "Search by name";
 
 export const SearchInput = () => {
   const { setSearch } = useSearch();
 
   return (
-    <input
-      aria-label="Search by name"
-      className="mx-auto h-14 self-start rounded border border-outline p-[0.25rem_0rem_0.25rem_1rem]"
+    <TextField.Root
+      aria-label={placeholder}
+      mx="auto"
       onChange={(event) => {
         setSearch(event.currentTarget.value);
       }}
-      placeholder="Search by name"
+      placeholder={placeholder}
+      size="3"
     />
   );
 };

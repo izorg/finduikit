@@ -1,17 +1,7 @@
 // @ts-check
 
 const postcssConfig = {
-  plugins: [
-    "postcss-import",
-    ["tailwindcss/nesting", "postcss-nesting"],
-    "tailwindcss",
-    [
-      "postcss-preset-env",
-      {
-        features: { "nesting-rules": false },
-      },
-    ],
-  ],
+  plugins: ["postcss-import", "postcss-preset-env"],
 };
 
 module.exports = postcssConfig;
