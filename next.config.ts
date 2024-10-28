@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Using project root ESLint check
   },
+  experimental: {
+    reactCompiler: true,
+  },
   images: {
     unoptimized: true,
   },
