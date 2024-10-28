@@ -2347,6 +2347,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdn/browser-compat-data@npm:^5.2.34, @mdn/browser-compat-data@npm:^5.5.35":
+  version: 5.6.10
+  resolution: "@mdn/browser-compat-data@npm:5.6.10"
+  checksum: 10/a9d3a4d55b7a07c08b44419f275094487dab604dfdd448ecc251e7786d7000771cd763cc3be09f87ca3f23f0ed69b66c55a4618333f7c1ae84a4996b7bf27ac8
+  languageName: node
+  linkType: hard
+
 "@next/bundle-analyzer@npm:15.0.1":
   version: 15.0.1
   resolution: "@next/bundle-analyzer@npm:15.0.1"
@@ -5339,6 +5346,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ast-metadata-inferer@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "ast-metadata-inferer@npm:0.8.0"
+  dependencies:
+    "@mdn/browser-compat-data": "npm:^5.2.34"
+  checksum: 10/8dd299c5b317dc210553951a35536ab98c63d787077d1e83799675f26617848288524a48051d2a9821304da3046f9e4331aee8b0ef3c2026722e6f11a66ecfbd
+  languageName: node
+  linkType: hard
+
 "astral-regex@npm:^2.0.0":
   version: 2.0.0
   resolution: "astral-regex@npm:2.0.0"
@@ -5632,6 +5648,13 @@ __metadata:
   version: 1.0.30001638
   resolution: "caniuse-lite@npm:1.0.30001638"
   checksum: 10/f30c80a5a33e659c990909046d5299af1584441059785460b012d10a58f0885da25fde08ab655ed0cf76b2695d0b3a32c41875bb9b7a730b34f992ec2512d430
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001639":
+  version: 1.0.30001673
+  resolution: "caniuse-lite@npm:1.0.30001673"
+  checksum: 10/e2e053faa5d424a57204a8631b015ef51415c12bcb85622643ea41aff4d5127114017d27df7391d46737e1bbcd9bd8ed004cf370920c9f264f63fca60303a81d
   languageName: node
   linkType: hard
 
@@ -6632,6 +6655,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-compat@npm:6.0.1":
+  version: 6.0.1
+  resolution: "eslint-plugin-compat@npm:6.0.1"
+  dependencies:
+    "@mdn/browser-compat-data": "npm:^5.5.35"
+    ast-metadata-inferer: "npm:^0.8.0"
+    browserslist: "npm:^4.23.1"
+    caniuse-lite: "npm:^1.0.30001639"
+    find-up: "npm:^5.0.0"
+    globals: "npm:^15.7.0"
+    lodash.memoize: "npm:^4.1.2"
+    semver: "npm:^7.6.2"
+  peerDependencies:
+    eslint: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+  checksum: 10/e0a2927db8d8594537d0d5aeda41577fe3d82c631a5a951daea4aac4efe66f45f88011ae9f8bd094f8bb88d4007d1eb1765456b66f8a4e4975e9a6cacca1dc5e
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-perfectionist@npm:3.9.1":
   version: 3.9.1
   resolution: "eslint-plugin-perfectionist@npm:3.9.1"
@@ -7099,6 +7140,7 @@ __metadata:
     eslint: "npm:9.13.0"
     eslint-config-flat-gitignore: "npm:0.3.0"
     eslint-config-prettier: "npm:9.1.0"
+    eslint-plugin-compat: "npm:6.0.1"
     eslint-plugin-perfectionist: "npm:3.9.1"
     eslint-plugin-prettier: "npm:5.2.1"
     eslint-plugin-unicorn: "npm:56.0.0"
@@ -7367,7 +7409,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:15.11.0, globals@npm:^15.9.0":
+"globals@npm:15.11.0, globals@npm:^15.7.0, globals@npm:^15.9.0":
   version: 15.11.0
   resolution: "globals@npm:15.11.0"
   checksum: 10/14009ef1906ac929d930ed1c896a47159e7d11b4d201901ca5f3827766519191a3f5fb45124de43c4511fee04018704e7ed5a097fb37d23abf39523d1d41c85f
@@ -8364,6 +8406,13 @@ __metadata:
   version: 4.3.0
   resolution: "lodash.camelcase@npm:4.3.0"
   checksum: 10/c301cc379310441dc73cd6cebeb91fb254bea74e6ad3027f9346fc43b4174385153df420ffa521654e502fd34c40ef69ca4e7d40ee7129a99e06f306032bfc65
+  languageName: node
+  linkType: hard
+
+"lodash.memoize@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "lodash.memoize@npm:4.1.2"
+  checksum: 10/192b2168f310c86f303580b53acf81ab029761b9bd9caa9506a019ffea5f3363ea98d7e39e7e11e6b9917066c9d36a09a11f6fe16f812326390d8f3a54a1a6da
   languageName: node
   linkType: hard
 
@@ -10647,7 +10696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.6.3":
+"semver@npm:^7.6.2, semver@npm:^7.6.3":
   version: 7.6.3
   resolution: "semver@npm:7.6.3"
   bin:

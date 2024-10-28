@@ -2,6 +2,7 @@ import js from "@eslint/js";
 import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier";
+import compat from "eslint-plugin-compat";
 import perfectionist from "eslint-plugin-perfectionist";
 import unicorn from "eslint-plugin-unicorn";
 import yml from "eslint-plugin-yml";
@@ -15,6 +16,7 @@ export default ts.config(
   },
   js.configs.recommended,
   ...ts.configs.recommended,
+  compat.configs["flat/recommended"],
   unicorn.configs["flat/recommended"],
   perfectionist.configs["recommended-alphabetical"],
   ...yml.configs["flat/recommended"],
@@ -36,6 +38,9 @@ export default ts.config(
       "unicorn/filename-case": "off",
 
       "unicorn/prevent-abbreviations": "off",
+    },
+    settings: {
+      lintAllEsApis: true,
     },
   },
   {
