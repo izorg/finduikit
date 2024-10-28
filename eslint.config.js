@@ -44,4 +44,10 @@ export default ts.config(
       "yml/sort-keys": ["error", "asc"],
     },
   },
+  {
+    files: ["stylelint.config.js"],
+    rules: {
+      "unicorn/no-null": "off",
+    },
+  },
 );
