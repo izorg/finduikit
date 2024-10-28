@@ -20,8 +20,10 @@
     "update-ui-kits": "node --experimental-strip-types scripts/update-ui-kits.ts && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
   },
   "dependencies": {
+    "@mdi/js": "7.4.47",
     "@radix-ui/themes": "3.1.4",
     "@sentry/nextjs": "8.35.0",
+    "classnames": "2.5.1",
     "fuse.js": "7.0.0",
     "next": "15.0.1",
     "next-themes": "0.3.0",
