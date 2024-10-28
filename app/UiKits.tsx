@@ -36,7 +36,7 @@ export const UiKits = (props: PageViewProps) => {
     <Grid
       asChild
       className={styles.grid}
-      columns="repeat(auto-fill, minmax(15rem, 1fr))"
+      columns="repeat(auto-fill, minmax(240px, 1fr))"
       gap="4"
     >
       <main>

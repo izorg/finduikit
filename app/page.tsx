@@ -7,7 +7,7 @@ import { SearchProvider } from "./SearchProvider";
 import { UiKits } from "./UiKits";
 
 const title = "Find UI kit";
-const description = "Explore UI kits for rapid development";
+const description = "Explore UI kits for rapid web development";
 
 export const metadata: Metadata = {
   description,
