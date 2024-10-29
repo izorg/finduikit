@@ -1,4 +1,4 @@
-import "@radix-ui/themes/styles.css";
+import "./global.css";
 import { Theme } from "@radix-ui/themes";
 import { type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
