@@ -4,4 +4,4 @@ const postcssConfig = {
   plugins: ["postcss-import", "postcss-preset-env"],
 };
 
-module.exports = postcssConfig;
+export default postcssConfig;
