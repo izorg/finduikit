@@ -18,20 +18,28 @@ const Page = async () => {
   const uiKits = await getUiKits();
 
   return (
-    <Flex direction="column" gap="4" p="4">
-      <Box asChild mx="auto">
-        <Text align="center" as="div">
-          <Text as="div" size="9">
-            {title}
+    <SearchProvider>
+      <Flex direction="column" gap="8" p="4">
+        <Flex asChild direction="column" gap="2">
+          <Text align="center" asChild>
+            <header>
+              <Text asChild size="9" weight="medium">
+                <h1>{title}</h1>
+              </Text>
+              <Text as="p">{description}</Text>
+            </header>
           </Text>
-          <Text as="p">{description}</Text>
-        </Text>
-      </Box>
-      <SearchProvider>
-        <SearchInput />
-        <UiKits uiKits={uiKits} />
-      </SearchProvider>
-    </Flex>
+        </Flex>
+        <Flex asChild direction="column" gap="4">
+          <main>
+            <Box asChild maxWidth="400px" mx="auto" width="100%">
+              <SearchInput />
+            </Box>
+            <UiKits uiKits={uiKits} />
+          </main>
+        </Flex>
+      </Flex>
+    </SearchProvider>
   );
 };
 
