@@ -9,17 +9,19 @@ import { useSearch } from "./SearchProvider";
 import { UiKitCard } from "./UiKitCard";
 import styles from "./UiKits.module.css";
 
-type PageViewProps = {
+type UiKitsProps = {
   uiKits: UiKit[];
 };
 
-export const UiKits = (props: PageViewProps) => {
+const keys = ["name"] satisfies (keyof UiKit)[];
+
+export const UiKits = (props: UiKitsProps) => {
   const { search } = useSearch();
 
   const fuse = useMemo(
     () =>
       new Fuse(props.uiKits, {
-        keys: ["name"],
+        keys,
       }),
     [props.uiKits],
   );
