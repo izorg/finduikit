@@ -5,6 +5,7 @@ import prettier from "eslint-config-prettier";
 import compat from "eslint-plugin-compat";
 import perfectionist from "eslint-plugin-perfectionist";
 import reactCompiler from "eslint-plugin-react-compiler";
+import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
 import yml from "eslint-plugin-yml";
 import globals from "globals";
@@ -32,8 +33,10 @@ export default ts.config(
     plugins: {
       "@next/next": next,
       "react-compiler": reactCompiler,
+      "react-hooks": reactHooks,
     },
     rules: {
+      ...reactHooks.configs.recommended.rules,
       ...next.configs.recommended.rules,
       ...next.configs["core-web-vitals"].rules,
 
