@@ -1,8 +1,9 @@
 "use client";
 
+import type { RootProps } from "@radix-ui/themes/dist/esm/components/text-field.d.ts";
+
 import { mdiMagnify } from "@mdi/js";
 import { TextField } from "@radix-ui/themes";
-import { type RootProps } from "@radix-ui/themes/dist/esm/components/text-field.d.ts";
 
 import { useSearch } from "./SearchProvider";
 import { SvgIcon } from "./SvgIcon";
