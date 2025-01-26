@@ -1,5 +1,5 @@
 @supports (grid-template-rows: masonry) {
   .grid {
-    grid-template-rows: masonry;
+    grid-template-rows: masonry; /* stylelint-disable-line declaration-property-value-no-unknown */
   }
 }
