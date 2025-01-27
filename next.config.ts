@@ -1,5 +1,5 @@
 import bundleAnalyzer from "@next/bundle-analyzer";
-import { withSentryConfig } from "@sentry/nextjs";
+import { type SentryBuildOptions, withSentryConfig } from "@sentry/nextjs";
 import { type NextConfig } from "next";
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -16,18 +16,24 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  productionBrowserSourceMaps: true,
   typescript: {
     ignoreBuildErrors: true, // Using project root TypeScript check
   },
 };
 
-export default withSentryConfig(withBundleAnalyzer(nextConfig), {
+const sentryBuildOptions: SentryBuildOptions = {
   disableLogger: true,
-  hideSourceMaps: true,
   org: "viacheslav",
   project: "finduikit",
   silent: true,
+  sourcemaps: {
+    deleteSourcemapsAfterUpload: true,
+  },
   telemetry: false,
   widenClientFileUpload: true,
-});
+};
+
+export default withSentryConfig(
+  withBundleAnalyzer(nextConfig),
+  sentryBuildOptions,
+);
