@@ -14,26 +14,32 @@ export const UiKitCard = (props: UiKitCardProps) => {
   const { uiKit } = props;
 
   return (
-    <Card>
-      <Flex direction="column" gap="4" position="relative">
-        <Box>
-          <Text asChild weight="medium">
-            <Link className={styles.link} href={uiKit.homepage} target="_blank">
-              {uiKit.name}
-            </Link>
+    <Box asChild position="relative">
+      <Card>
+        <Flex direction="column" gap="4">
+          <Box>
+            <Text asChild weight="medium">
+              <Link
+                className={styles.link}
+                href={uiKit.homepage}
+                target="_blank"
+              >
+                {uiKit.name}
+              </Link>
+            </Text>
+          </Box>
+          {uiKit.image && (
+            <Inset asChild side="x">
+              <Box className={styles.imageContainer} position="relative">
+                <Image alt="" className={styles.image} fill src={uiKit.image} />
+              </Box>
+            </Inset>
+          )}
+          <Text asChild size="2">
+            <Box>{uiKit.description}</Box>
           </Text>
-        </Box>
-        {uiKit.image && (
-          <Inset asChild side="x">
-            <Box className={styles.imageContainer} position="relative">
-              <Image alt="" className={styles.image} fill src={uiKit.image} />
-            </Box>
-          </Inset>
-        )}
-        <Text asChild size="2">
-          <Box>{uiKit.description}</Box>
-        </Text>
-      </Flex>
-    </Card>
+        </Flex>
+      </Card>
+    </Box>
   );
 };
