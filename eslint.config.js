@@ -36,14 +36,22 @@ export default ts.config(
       "react-hooks": reactHooks,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        {
+          fixStyle: "inline-type-imports",
+          prefer: "type-imports",
+        },
+      ],
+
       ...next.configs.recommended.rules,
       ...next.configs["core-web-vitals"].rules,
 
       "react-compiler/react-compiler": "error",
 
-      "unicorn/filename-case": "off",
+      ...reactHooks.configs.recommended.rules,
 
+      "unicorn/filename-case": "off",
       "unicorn/prevent-abbreviations": "off",
     },
     settings: {
