@@ -7,6 +7,7 @@ import { useMemo } from "react";
 import { type UiKit } from "./getUiKits";
 import { useSearch } from "./SearchProvider";
 import { UiKitCard } from "./UiKitCard";
+
 import styles from "./UiKits.module.css";
 
 type UiKitsProps = {

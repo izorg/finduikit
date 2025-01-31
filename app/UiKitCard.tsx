@@ -2,7 +2,7 @@ import { Box, Card, Flex, Inset, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 
-import type { UiKit } from "./getUiKits";
+import { type UiKit } from "./getUiKits";
 
 import styles from "./UiKitCard.module.css";
 

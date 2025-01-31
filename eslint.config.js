@@ -36,14 +36,6 @@ export default ts.config(
       "react-hooks": reactHooks,
     },
     rules: {
-      "@typescript-eslint/consistent-type-imports": [
-        "error",
-        {
-          fixStyle: "inline-type-imports",
-          prefer: "type-imports",
-        },
-      ],
-
       ...next.configs.recommended.rules,
       ...next.configs["core-web-vitals"].rules,
 
@@ -51,11 +43,40 @@ export default ts.config(
 
       ...reactHooks.configs.recommended.rules,
 
+      "perfectionist/sort-imports": [
+        "error",
+        {
+          groups: [
+            "side-effect",
+            "builtin",
+            "external",
+            "parent",
+            "sibling",
+            "index",
+            "side-effect-style",
+            "style",
+            "unknown",
+          ],
+        },
+      ],
+
       "unicorn/filename-case": "off",
       "unicorn/prevent-abbreviations": "off",
     },
     settings: {
       lintAllEsApis: true,
+    },
+  },
+  {
+    files: ["**/*.ts?(x)"],
+    rules: {
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        {
+          fixStyle: "inline-type-imports",
+          prefer: "type-imports",
+        },
+      ],
     },
   },
   {
