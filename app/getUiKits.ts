@@ -2,24 +2,13 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { parse } from "yaml";
-import { z } from "zod";
+import { type z } from "zod";
 
-const UiKitSchema = z.object({
-  description: z.string(),
-  frameworks: z
-    .array(
-      z.enum(["Angular", "React", "Solid", "Svelte", "Vue", "Web Components"]),
-    )
-    .optional(),
-  homepage: z.string(),
-  image: z.string().optional(),
-  name: z.string(),
-  repository: z.string(),
-});
+import { uiKitSchema } from "./uiKitSchema";
 
 export type UiKit = {
   key: string;
-} & z.infer<typeof UiKitSchema>;
+} & z.infer<typeof uiKitSchema>;
 
 export const getUiKits = async () => {
   const entries = await fs.promises.readdir(
@@ -43,6 +32,6 @@ export const getUiKits = async () => {
 
   return fileEntries.map(([key, buffer]) => ({
     key,
-    ...UiKitSchema.parse(parse(buffer.toString())),
+    ...uiKitSchema.parse(parse(buffer.toString())),
   }));
 };
