@@ -1,4 +1,6 @@
 description: Material Design 3(Material You) UI components using Web Components.
+frameworks:
+  - Web Components
 homepage: https://www.mdui.org/
 name: MDUI
 repository: https://github.com/zdhxiong/mdui

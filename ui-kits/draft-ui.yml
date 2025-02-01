@@ -1,5 +1,7 @@
 description: A collection of simply designed React components focused on making
   web accessibility as easy as copy & paste.
+frameworks:
+  - React
 homepage: https://draft-ui.com/
 image: https://repository-images.githubusercontent.com/614960622/8f48af9d-a359-452b-bf38-023b6c972488
 name: Draft UI

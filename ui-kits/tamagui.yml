@@ -1,5 +1,7 @@
 description: Style React fast with 100% parity on React Native, an optional UI
   kit, and optimizing compiler.
+frameworks:
+  - React
 homepage: https://tamagui.dev/
 image: https://repository-images.githubusercontent.com/304740870/09800717-954e-4bac-bd3c-c8dc7836adbc
 name: Tamagui

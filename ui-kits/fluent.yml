@@ -1,6 +1,7 @@
-description: Explore the next evolution of Microsoft’s design system, enabling
-  more seamless collaboration and creativity than ever. Move fluidly from design
-  to development, between apps, and across platforms.
+description: Fluent UI web represents a collection of utilities, React
+  components, and web components for building web applications.
+frameworks:
+  - React
 homepage: https://fluent2.microsoft.design/
 image: https://fluent2websitecdn.azureedge.net/cdn/fluent-logo-metadata.Cwa-_8F7.png
 name: Fluent

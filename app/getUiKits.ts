@@ -2,13 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { parse } from "yaml";
-import { type z } from "zod";
 
-import { uiKitSchema } from "./uiKitSchema";
+import { uiKitSchema, type UiKitSchema } from "./uiKitSchema";
 
 export type UiKit = {
   key: string;
-} & z.infer<typeof uiKitSchema>;
+} & UiKitSchema;
 
 export const getUiKits = async () => {
   const entries = await fs.promises.readdir(

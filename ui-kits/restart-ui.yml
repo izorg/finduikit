@@ -1,5 +1,7 @@
 description: A set of full featured, extensible, and accessible UI components,
   designed to integrate into any styling framework or system.
+frameworks:
+  - React
 homepage: https://react-restart.github.io/ui/
 name: Restart UI
 repository: https://github.com/react-restart/ui

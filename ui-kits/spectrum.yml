@@ -1,5 +1,7 @@
-description: Spectrum provides interface components, resources, and tools to
-  help teams work more efficiently and to make applications more consistent.
+description: A collection of libraries and tools that help you build adaptive,
+  accessible, and robust user experiences.
+frameworks:
+  - React
 homepage: https://spectrum.adobe.com/
 image: https://spectrum.adobe.com/static/images/spectrum_illustration_desktop@2x_6NmmXXCcRJFEA27mTCzU9V_1619628374963.png
 name: Spectrum

@@ -1,4 +1,6 @@
 description: A set of headless, accessible component builders for Svelte.
+frameworks:
+  - Svelte
 homepage: https://www.melt-ui.com/
 image: https://www.melt-ui.com/banner.png
 name: Melt UI

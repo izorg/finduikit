@@ -1,4 +1,6 @@
 description: 🚀 Beautiful, fast and modern React UI library. (Previously NextUI)
+frameworks:
+  - React
 homepage: https://www.heroui.com/
 image: https://repository-images.githubusercontent.com/360522116/0ed308b4-8099-4f12-8903-68267087e808
 name: HeroUI

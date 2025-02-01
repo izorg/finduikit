@@ -1,17 +1,33 @@
-import { parse as parseHtml } from "node-html-parser";
 import fs, { type Dirent } from "node:fs";
 import path from "node:path";
+
+import { parse as parseHtml } from "node-html-parser";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
-import type { GetGitHubRepositoryQuery } from "./update-ui-kits.generated";
+import { type UiKitFrameworkSchema, uiKitSchema } from "../app/uiKitSchema.ts";
+
+import type { GetGitHubRepositoryQuery } from "./update-ui-kits.generated.ts";
 
 const CHECK_COUNT = 1;
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
-const ANGULAR = /** @type {const} */ "angular";
-const REACT = /** @type {const} */ "react";
-const VUE = /** @type {const} */ "vue";
-/* eslint-enable @typescript-eslint/no-unused-vars */
+const frameworkTopicMap = new Map<string, UiKitFrameworkSchema>([
+  ["angular", "Angular"],
+  ["react", "React"],
+  ["reactjs", "React"],
+  ["solid", "Solid"],
+  ["solidjs", "Solid"],
+  ["svelte", "Svelte"],
+  ["vue", "Vue"],
+  ["web-components", "Web Components"],
+]);
+
+const getFrameworksFromTopics = (topics: string[]) => {
+  const frameworks = topics
+    .map((topic) => frameworkTopicMap.get(topic))
+    .filter((framework) => framework !== undefined);
+
+  return frameworks.length > 0 ? frameworks : undefined;
+};
 
 const getGitHubRepository = async (
   url: string,
@@ -65,8 +81,6 @@ const getNpmPackage = async (
 
   const json = await response.json();
 
-  // console.log(JSON.stringify(json, null, 2));
-
   return json;
 };
 
@@ -74,6 +88,7 @@ type HomepageData = {
   description?: string;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getHomepageData = async (homepage: string): Promise<HomepageData> => {
   const data: HomepageData = {};
 
@@ -98,53 +113,47 @@ const getHomepageData = async (homepage: string): Promise<HomepageData> => {
   return data;
 };
 
-type UiKit = {
-  description?: string;
-  homepage: string;
-  image?: string;
-  name: string;
-  repository: string;
-};
-
 const updateUiKit = async (dirent: Dirent) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
 
   const buffer = await fs.promises.readFile(filePath);
 
-  const data: UiKit = parseYaml(buffer.toString());
+  const data = uiKitSchema.parse(parseYaml(buffer.toString()));
 
   const github = await getGitHubRepository(data.repository);
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const homepage = await getHomepageData(data.homepage);
-
-  // console.log("=== homepage ===", data.name, homepage);
 
   if (github.__typename !== "Repository") {
     return;
   }
 
+  const topics = github.repositoryTopics.nodes
+    ?.map((repositoryTopic) => repositoryTopic?.topic.name)
+    .filter((topic) => topic !== undefined);
+
   await fs.promises.writeFile(
     filePath,
-    stringifyYaml({
-      description: github.description,
-      ...data,
-      image: github.openGraphImageUrl?.startsWith(
-        "https://repository-images.githubusercontent.com/",
-      )
-        ? github.openGraphImageUrl
-        : data.image,
-    }),
+    stringifyYaml(
+      uiKitSchema.parse({
+        ...data,
+        description:
+          github.description?.replaceAll(/\s+/gu, " ").trim() ??
+          data.description,
+        frameworks:
+          (topics && getFrameworksFromTopics(topics)) ?? data.frameworks,
+        image: github.openGraphImageUrl?.startsWith(
+          "https://repository-images.githubusercontent.com/",
+        )
+          ? github.openGraphImageUrl
+          : data.image,
+      }),
+    ),
   );
 };
 
 const checkUiKits = async () => {
   const checkCacheFile = path.join(process.cwd(), ".uikitcache");
 
-  /**
-   * @type {Record<string,string>}
-   */
-  let checkCache;
+  let checkCache: Record<string, string>;
 
   try {
     const buffer = await fs.promises.readFile(checkCacheFile);
@@ -167,10 +176,7 @@ const checkUiKits = async () => {
   const checkEntries = entries
     .filter((dirent) => dirent.isFile())
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
-    // .slice(6, 7);
     .slice(0, CHECK_COUNT);
-
-  // console.log("=== checkEntries ===", checkEntries);
 
   await Promise.all(checkEntries.map((entry) => updateUiKit(entry)));
 

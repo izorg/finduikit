@@ -1,6 +1,7 @@
-description: MUI provides a simple, customizable, and accessible library of
-  React components. Follow your own design system, or start with Material
-  Design.
+description: "Material UI: Comprehensive React component library that implements
+  Google's Material Design. Free forever."
+frameworks:
+  - React
 homepage: https://mui.com/
 image: https://repository-images.githubusercontent.com/23083156/b55af535-7ebd-488d-a63a-cc902e0619d3
 name: MUI

@@ -1,5 +1,7 @@
 description: UI Library for Design Engineers. Animated components and effects
   you can copy and paste into your apps. Free. Open Source.
+frameworks:
+  - React
 homepage: https://magicui.design/
 image: https://magicui.design/og
 name: Magic UI

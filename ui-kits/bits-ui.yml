@@ -1,4 +1,6 @@
 description: The headless components for Svelte.
+frameworks:
+  - Svelte
 homepage: https://bits-ui.com/
 image: https://www.bits-ui.com/og.png
 name: Bits UI

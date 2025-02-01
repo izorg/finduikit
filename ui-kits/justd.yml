@@ -1,6 +1,8 @@
 description: Justd is a chill set of React components, built on top of React
   Aria Components and Tailwind CSS. Easy to customize and just copy & paste into
   your React projects.
+frameworks:
+  - React
 homepage: https://getjustd.com/
 image: https://repository-images.githubusercontent.com/824433284/0451f4e8-09f1-4923-9234-c1f058f83c7d
 name: Justd

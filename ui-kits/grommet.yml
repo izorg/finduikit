@@ -1,5 +1,7 @@
 description: a react-based framework that provides accessibility, modularity,
   responsiveness, and theming in a tidy package
+frameworks:
+  - React
 homepage: https://v2.grommet.io/
 image: https://repository-images.githubusercontent.com/32787174/df991780-daec-11e9-8b9c-d5bcdc59fbad
 name: Grommet

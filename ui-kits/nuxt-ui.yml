@@ -1,4 +1,6 @@
-description: Fully styled and customizable components for Nuxt.
+description: A UI Library for Modern Web Apps, powered by Vue & Tailwind CSS.
+frameworks:
+  - Vue
 homepage: https://ui.nuxt.com/
 image: https://ui.nuxt.com/social-card.png
 name: Nuxt UI

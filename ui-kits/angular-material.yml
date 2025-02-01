@@ -1,5 +1,6 @@
-description: UI component infrastructure and Material Design components for
-  Angular web applications.
+description: Component infrastructure and Material Design components for Angular
+frameworks:
+  - Angular
 homepage: https://material.angular.io/
 image: https://repository-images.githubusercontent.com/49016322/0a1e8bee-99b1-4044-9b83-4bdb6befcde9
 name: Angular Material

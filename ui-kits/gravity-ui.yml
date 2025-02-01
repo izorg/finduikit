@@ -1,4 +1,6 @@
 description: Build modern interfaces with the Gravity design system and libraries
+frameworks:
+  - React
 homepage: https://gravity-ui.com/
 image: https://gravity-ui.com/index-social.png
 name: Gravity UI

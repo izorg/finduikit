@@ -1,5 +1,8 @@
 description: Completely unstyled, fully accessible UI components, designed to
   integrate beautifully with Tailwind CSS.
+frameworks:
+  - React
+  - Vue
 homepage: https://headlessui.com/
 image: https://repository-images.githubusercontent.com/295992065/4bd52200-0043-11eb-9711-359a3854d4dc
 name: Headless UI

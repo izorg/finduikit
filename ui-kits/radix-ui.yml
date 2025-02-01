@@ -1,6 +1,7 @@
-description: An open source component library for building modern React apps
-  that helps you build faster and makes it easy to create beautiful, accessible
-  interfaces that are a breeze to maintain.
+description: Radix Themes is an open-source component library optimized for fast
+  development, easy maintenance, and accessibility. Maintained by @workos.
+frameworks:
+  - React
 homepage: https://www.radix-ui.com/
 image: https://www.radix-ui.com/social/themes.png
 name: Radix UI

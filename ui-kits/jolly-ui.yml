@@ -1,5 +1,7 @@
 description: shadcn/ui compatible react aria components that you can copy and
   paste into your apps. Accessible. Customizable. Open Source.
+frameworks:
+  - React
 homepage: https://www.jollyui.dev/
 image: https://www.jollyui.dev/og.jpg
 name: JollyUI
