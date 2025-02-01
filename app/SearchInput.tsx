@@ -3,8 +3,9 @@
 import { mdiMagnify } from "@mdi/js";
 import { TextField } from "@radix-ui/themes";
 
+import { SvgIcon } from "../components/SvgIcon";
+
 import { useSearch } from "./SearchProvider";
-import { SvgIcon } from "./SvgIcon";
 
 const placeholder = "Search by name";
 
