@@ -10,6 +10,8 @@ import type { GetGitHubRepositoryQuery } from "./update-ui-kits.generated.ts";
 
 const CHECK_COUNT = 1;
 
+const frameworkCompare = new Intl.Collator("en").compare;
+
 const frameworkTopicMap = new Map<string, UiKitFrameworkSchema>([
   ["angular", "Angular"],
   ["react", "React"],
@@ -24,9 +26,10 @@ const frameworkTopicMap = new Map<string, UiKitFrameworkSchema>([
 const getFrameworksFromTopics = (topics: string[]) => {
   const frameworks = topics
     .map((topic) => frameworkTopicMap.get(topic))
-    .filter((framework) => framework !== undefined);
+    .filter((framework) => framework !== undefined)
+    .sort(frameworkCompare);
 
-  return frameworks.length > 0 ? frameworks : undefined;
+  return frameworks.length > 0 ? [...new Set(frameworks)] : undefined;
 };
 
 const getGitHubRepository = async (

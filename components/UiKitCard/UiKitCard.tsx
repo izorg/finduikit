@@ -1,8 +1,9 @@
-import { Box, Card, Flex, Inset, Text } from "@radix-ui/themes";
+import { Box, Card, Flex, Inset, Separator, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 
 import { type UiKit } from "../../app/getUiKits.ts";
+import { FrameworkList } from "../FrameworkList/FrameworkList.tsx";
 
 import styles from "./UiKitCard.module.css";
 
@@ -38,6 +39,12 @@ export const UiKitCard = (props: UiKitCardProps) => {
           <Text asChild size="2">
             <Box>{uiKit.description}</Box>
           </Text>
+          {uiKit.frameworks && uiKit.frameworks.length > 0 && (
+            <>
+              <Separator size="4" />
+              <FrameworkList frameworks={uiKit.frameworks} />
+            </>
+          )}
         </Flex>
       </Card>
     </Box>

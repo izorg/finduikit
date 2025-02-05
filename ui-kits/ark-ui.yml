@@ -2,9 +2,9 @@ description: Build your design system with React, Svelte, Vue, and Solid.
   Powered by State Machines
 frameworks:
   - React
-  - Vue
   - Solid
   - Svelte
+  - Vue
 homepage: https://ark-ui.com/
 image: https://ark-ui.com/opengraph-image.png?0b173734bffff5ac
 name: Ark UI
