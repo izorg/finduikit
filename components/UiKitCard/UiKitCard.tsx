@@ -17,7 +17,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
   return (
     <Box asChild position="relative">
       <Card>
-        <Flex direction="column" gap="4">
+        <Flex direction="column" gap="4" height="100%">
           <Box>
             <Text asChild weight="medium">
               <Link
@@ -37,7 +37,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
             </Inset>
           )}
           <Text asChild size="2">
-            <Box>{uiKit.description}</Box>
+            <Box flexGrow="1">{uiKit.description}</Box>
           </Text>
           {uiKit.frameworks && uiKit.frameworks.length > 0 && (
             <>
