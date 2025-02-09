@@ -12,7 +12,7 @@ export const uiKitFrameworkSchema = z.enum([
 export type UiKitFrameworkSchema = z.infer<typeof uiKitFrameworkSchema>;
 
 export const uiKitSchema = z.object({
-  description: z.string(),
+  description: z.string().optional(),
   frameworks: z.array(uiKitFrameworkSchema).optional(),
   homepage: z.string(),
   image: z.string().optional(),
