@@ -20,6 +20,7 @@ const frameworkTopicMap = new Map<string, UiKitFrameworkSchema>([
   ["solidjs", "Solid"],
   ["svelte", "Svelte"],
   ["vue", "Vue"],
+  ["web-component", "Web Components"],
   ["web-components", "Web Components"],
 ]);
 
@@ -142,7 +143,10 @@ const updateUiKit = async (dirent: Dirent) => {
           github.description?.replaceAll(/\s+/gu, " ").trim() ??
           data.description,
         frameworks:
-          (topics && getFrameworksFromTopics(topics)) ?? data.frameworks,
+          (topics &&
+            data.frameworks?.length !== 0 &&
+            getFrameworksFromTopics(topics)) ||
+          data.frameworks,
         image: github.openGraphImageUrl?.startsWith(
           "https://repository-images.githubusercontent.com/",
         )
