@@ -1,18 +1,9 @@
 import { type CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  documents: ["scripts/update-ui-kits.ts"],
+  documents: ["data-handlers/fetchGitHubRepositoryData.ts"],
   generates: {
-    "github.generated.ts": {
-      config: {
-        avoidOptionals: true,
-        scalars: {
-          URI: "string",
-        },
-      },
-      plugins: ["typescript"],
-    },
-    "scripts/": {
+    "data-handlers/": {
       config: {
         avoidOptionals: true,
       },
@@ -22,6 +13,15 @@ const config: CodegenConfig = {
         baseTypesPath: "../github.generated.ts",
         extension: ".generated.ts",
       },
+    },
+    "github.generated.ts": {
+      config: {
+        avoidOptionals: true,
+        scalars: {
+          URI: "string",
+        },
+      },
+      plugins: ["typescript"],
     },
   },
   hooks: {
