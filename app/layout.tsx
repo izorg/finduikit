@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Theme } from "@radix-ui/themes";
 import { type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
@@ -19,6 +20,7 @@ const RootLayout = (props: PropsWithChildren) => {
           <Theme>{children}</Theme>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-58PGJQJFHL" />
     </html>
   );
 };

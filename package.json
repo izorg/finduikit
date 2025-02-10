@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@mdi/js": "7.4.47",
+    "@next/third-parties": "15.1.6",
     "@radix-ui/themes": "3.2.0",
     "@sentry/nextjs": "9.0.0",
     "classnames": "2.5.1",

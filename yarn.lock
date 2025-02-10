@@ -2454,6 +2454,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/third-parties@npm:15.1.6":
+  version: 15.1.6
+  resolution: "@next/third-parties@npm:15.1.6"
+  dependencies:
+    third-party-capital: "npm:1.0.20"
+  peerDependencies:
+    next: ^13.0.0 || ^14.0.0 || ^15.0.0
+    react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+  checksum: 10/71ab23080acacbb9292df70608de8592b752e0ee289e02aa2953a7f00cd6d1f642e6a1df05ac0577a80a7e8d0cd656c17f18b89c73864390345b49131bb4b38f
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -6772,6 +6784,7 @@ __metadata:
     "@mdi/js": "npm:7.4.47"
     "@next/bundle-analyzer": "npm:15.1.6"
     "@next/eslint-plugin-next": "npm:15.1.6"
+    "@next/third-parties": "npm:15.1.6"
     "@radix-ui/themes": "npm:3.2.0"
     "@sentry/nextjs": "npm:9.0.0"
     "@types/node": "npm:22.13.1"
@@ -10821,6 +10834,13 @@ __metadata:
     mkdirp: "npm:^3.0.1"
     yallist: "npm:^5.0.0"
   checksum: 10/12a2a4fc6dee23e07cc47f1aeb3a14a1afd3f16397e1350036a8f4cdfee8dcac7ef5978337a4e7b2ac2c27a9a6d46388fc2088ea7c80cb6878c814b1425f8ecf
+  languageName: node
+  linkType: hard
+
+"third-party-capital@npm:1.0.20":
+  version: 1.0.20
+  resolution: "third-party-capital@npm:1.0.20"
+  checksum: 10/40e2531b428a21f05531fc62ef82859c0071211eff09588baf75d4b525096bbdb4f93e17e2d538849db8d4fc3cceb074933d7be59fddc26f86718fbbe852a97f
   languageName: node
   linkType: hard
 
