@@ -1,15 +1,3 @@
-.link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.link::after {
-  content: "";
-  inset: 0;
-  position: absolute;
-  z-index: 1;
-}
-
 .imageContainer {
   aspect-ratio: 2 / 1;
 }
