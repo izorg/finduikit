@@ -23,13 +23,14 @@
     "@mdi/js": "7.4.47",
     "@next/third-parties": "15.1.7",
     "@radix-ui/themes": "3.2.0",
-    "@sentry/nextjs": "9.0.0",
+    "@sentry/nextjs": "9.0.1",
     "classnames": "2.5.1",
     "fuse.js": "7.1.0",
     "next": "15.1.7",
     "next-themes": "0.4.4",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "simple-icons": "14.6.0"
   },
   "devDependencies": {
     "@eslint/js": "9.20.0",
@@ -40,14 +41,14 @@
     "@next/eslint-plugin-next": "15.1.7",
     "@types/node": "22.13.1",
     "@types/react": "19.0.8",
-    "babel-plugin-react-compiler": "19.0.0-beta-714736e-20250131",
-    "eslint": "9.20.0",
+    "babel-plugin-react-compiler": "19.0.0-beta-30d8a17-20250209",
+    "eslint": "9.20.1",
     "eslint-config-flat-gitignore": "2.0.0",
     "eslint-config-prettier": "10.0.1",
     "eslint-plugin-compat": "6.0.2",
     "eslint-plugin-perfectionist": "4.8.0",
     "eslint-plugin-prettier": "5.2.3",
-    "eslint-plugin-react-compiler": "19.0.0-beta-714736e-20250131",
+    "eslint-plugin-react-compiler": "19.0.0-beta-30d8a17-20250209",
     "eslint-plugin-react-hooks": "5.1.0",
     "eslint-plugin-unicorn": "56.0.1",
     "eslint-plugin-yml": "1.16.0",
@@ -67,6 +68,6 @@
     "typescript-eslint": "8.24.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.7.0",
-    "zod": "3.24.1"
+    "zod": "3.24.2"
   }
 }

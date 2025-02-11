@@ -6,7 +6,7 @@ import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 import { type UiKitFrameworkSchema, uiKitSchema } from "../app/uiKitSchema.ts";
 import { fetchGitHubRepositoryData } from "../data-handlers/fetchGitHubRepositoryData.ts";
 
-const CHECK_COUNT = 1;
+const CHECK_COUNT = 100;
 
 const frameworkCompare = new Intl.Collator("en").compare;
 
@@ -18,8 +18,6 @@ const frameworkTopicMap = new Map<string, UiKitFrameworkSchema>([
   ["solidjs", "Solid"],
   ["svelte", "Svelte"],
   ["vue", "Vue"],
-  ["web-component", "Web Components"],
-  ["web-components", "Web Components"],
 ]);
 
 const getFrameworksFromTopics = (topics: string[]) => {

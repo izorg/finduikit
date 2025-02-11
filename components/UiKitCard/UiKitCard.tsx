@@ -2,6 +2,7 @@ import {
   Box,
   Card,
   Flex,
+  Heading,
   Inset,
   Link,
   Separator,
@@ -24,36 +25,33 @@ export const UiKitCard = (props: UiKitCardProps) => {
   const { uiKit } = props;
 
   return (
-    <Card>
-      <Flex direction="column" gap="4" height="100%">
-        <Box>
-          <Text asChild weight="medium">
-            <Link asChild color="gray" highContrast underline="hover">
-              <NextLink href={uiKit.homepage} target="_blank">
-                {uiKit.name}
-              </NextLink>
-            </Link>
-          </Text>
-        </Box>
-        {uiKit.image && (
-          <Inset asChild side="x">
-            <Box className={styles.imageContainer} position="relative">
-              <Image alt="" className={styles.image} fill src={uiKit.image} />
-            </Box>
-          </Inset>
-        )}
-        <Text asChild size="2">
-          <Box flexGrow="1">{uiKit.description}</Box>
-        </Text>
-        <Separator size="4" />
-        <Resources uiKit={uiKit} />
-        {uiKit.frameworks && uiKit.frameworks.length > 0 && (
-          <>
-            <Separator size="4" />
+    <Box asChild height="100%">
+      <Card>
+        <Flex direction="column" gap="4" height="100%">
+          <Flex align="center" gap="2">
+            <Heading as="h2" size={{ initial: "5", sm: "4" }} weight="medium">
+              <Link asChild color="gray" highContrast underline="hover">
+                <NextLink href={uiKit.homepage} target="_blank">
+                  {uiKit.name}
+                </NextLink>
+              </Link>
+            </Heading>
             <FrameworkList frameworks={uiKit.frameworks} />
-          </>
-        )}
-      </Flex>
-    </Card>
+          </Flex>
+          {uiKit.image && (
+            <Inset asChild side="x">
+              <Box className={styles.imageContainer} position="relative">
+                <Image alt="" className={styles.image} fill src={uiKit.image} />
+              </Box>
+            </Inset>
+          )}
+          <Text asChild size="2">
+            <Box flexGrow="1">{uiKit.description}</Box>
+          </Text>
+          <Separator size="4" />
+          <Resources uiKit={uiKit} />
+        </Flex>
+      </Card>
+    </Box>
   );
 };

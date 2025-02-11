@@ -38,13 +38,18 @@ export const UiKits = (props: UiKitsProps) => {
 
   return (
     <Grid
+      asChild
       className={styles.grid}
       columns="repeat(auto-fill, minmax(240px, 1fr))"
       gap="4"
     >
-      {uiKits.map((item) => (
-        <UiKitCard key={item.name} uiKit={item} />
-      ))}
+      <ul>
+        {uiKits.map((item) => (
+          <li key={item.name}>
+            <UiKitCard uiKit={item} />
+          </li>
+        ))}
+      </ul>
     </Grid>
   );
 };

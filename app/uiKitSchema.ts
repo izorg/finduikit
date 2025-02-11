@@ -6,7 +6,6 @@ export const uiKitFrameworkSchema = z.enum([
   "Solid",
   "Svelte",
   "Vue",
-  "Web Components",
 ]);
 
 export type UiKitFrameworkSchema = z.infer<typeof uiKitFrameworkSchema>;
