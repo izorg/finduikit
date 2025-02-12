@@ -1,7 +1,10 @@
+import { mdiWeb } from "@mdi/js";
 import { Badge, Flex, Heading } from "@radix-ui/themes";
 import NextLink from "next/link";
+import { siGithub } from "simple-icons";
 
 import type { UiKit } from "../../app/getUiKits.ts";
+import { SvgIcon } from "../SvgIcon";
 
 import styles from "./Resources.module.css";
 
@@ -22,6 +25,7 @@ export const Resources = (props: ResourcesProps) => {
           <li>
             <Badge asChild>
               <NextLink href={uiKit.homepage} target="_blank">
+                <SvgIcon path={mdiWeb} />
                 Homepage
               </NextLink>
             </Badge>
@@ -29,6 +33,7 @@ export const Resources = (props: ResourcesProps) => {
           <li>
             <Badge asChild>
               <NextLink href={uiKit.repository} target="_blank">
+                <SvgIcon path={siGithub.path} />
                 GitHub
               </NextLink>
             </Badge>

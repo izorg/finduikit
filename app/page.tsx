@@ -1,10 +1,11 @@
 import { Box, Flex, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 
+import { UiKits } from "../components/UiKits";
+
 import { getUiKits } from "./getUiKits";
 import { SearchInput } from "./SearchInput";
 import { SearchProvider } from "./SearchProvider";
-import { UiKits } from "./UiKits";
 
 const title = "Find UI kit";
 const description = "Explore UI kits for rapid web development";
