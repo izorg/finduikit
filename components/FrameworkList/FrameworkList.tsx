@@ -23,8 +23,6 @@ const frameworkColor: Record<UiKitFrameworkSchema, BadgeProps["color"]> = {
   Vue: "green",
 };
 
-console.log("=== siReact ===", siReact);
-
 const frameworkIcon: Record<UiKitFrameworkSchema, SimpleIcon> = {
   Angular: siAngular,
   React: siReact,
