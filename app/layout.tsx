@@ -17,7 +17,7 @@ const RootLayout = (props: PropsWithChildren) => {
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class">
-          <Theme>{children}</Theme>
+          <Theme accentColor="blue">{children}</Theme>
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-58PGJQJFHL" />
