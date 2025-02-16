@@ -59,7 +59,6 @@ export const FrameworkList = (props: FrameworkListProps) => {
               <IconButton
                 asChild
                 color={frameworkColor[framework]}
-                size="1"
                 variant="ghost"
               >
                 <Link href={frameworkLink[framework]} target="_blank">

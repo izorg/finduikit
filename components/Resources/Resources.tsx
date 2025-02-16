@@ -1,5 +1,5 @@
 import { mdiWeb } from "@mdi/js";
-import { Badge, Flex, Heading } from "@radix-ui/themes";
+import { Flex, Heading, IconButton, Text, Tooltip } from "@radix-ui/themes";
 import NextLink from "next/link";
 import { siGithub } from "simple-icons";
 
@@ -17,28 +17,32 @@ export const Resources = (props: ResourcesProps) => {
 
   return (
     <div>
-      <Heading as="h3" mb="1" size="2" weight="medium">
+      <Heading as="h3" mb="2" size="2" weight="medium">
         Resources
       </Heading>
-      <Flex asChild gap="1">
-        <ul className={styles.list}>
-          <li>
-            <Badge asChild>
-              <NextLink href={uiKit.homepage} target="_blank">
-                <SvgIcon path={mdiWeb} />
-                Homepage
-              </NextLink>
-            </Badge>
-          </li>
-          <li>
-            <Badge asChild>
-              <NextLink href={uiKit.repository} target="_blank">
-                <SvgIcon path={siGithub.path} />
-                GitHub
-              </NextLink>
-            </Badge>
-          </li>
-        </ul>
+      <Flex asChild gap="3">
+        <Text asChild size="5">
+          <ul className={styles.list}>
+            <li>
+              <Tooltip content="Homepage">
+                <IconButton asChild variant="ghost">
+                  <NextLink href={uiKit.homepage} target="_blank">
+                    <SvgIcon path={mdiWeb} />
+                  </NextLink>
+                </IconButton>
+              </Tooltip>
+            </li>
+            <li>
+              <Tooltip content="GitHub">
+                <IconButton asChild color="gray" highContrast variant="ghost">
+                  <NextLink href={uiKit.repository} target="_blank">
+                    <SvgIcon path={siGithub.path} />
+                  </NextLink>
+                </IconButton>
+              </Tooltip>
+            </li>
+          </ul>
+        </Text>
       </Flex>
     </div>
   );
