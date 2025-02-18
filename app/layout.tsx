@@ -4,6 +4,8 @@ import { type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { type PropsWithChildren } from "react";
 
+import { SearchProvider } from "./SearchProvider.tsx";
+
 import "./global.css";
 
 export const viewport: Viewport = {
@@ -17,7 +19,9 @@ const RootLayout = (props: PropsWithChildren) => {
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class">
-          <Theme accentColor="blue">{children}</Theme>
+          <Theme accentColor="blue">
+            <SearchProvider>{children}</SearchProvider>
+          </Theme>
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-58PGJQJFHL" />

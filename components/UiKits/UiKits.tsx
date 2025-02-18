@@ -4,10 +4,9 @@ import { Grid } from "@radix-ui/themes";
 import Fuse from "fuse.js";
 import { useMemo } from "react";
 
-import { UiKitCard } from "../UiKitCard";
-
 import { type UiKit } from "../../app/getUiKits.ts";
 import { useSearch } from "../../app/SearchProvider.tsx";
+import { UiKitCard } from "../UiKitCard";
 
 import styles from "./UiKits.module.css";
 

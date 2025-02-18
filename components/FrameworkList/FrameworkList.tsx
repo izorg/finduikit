@@ -1,35 +1,13 @@
 import { Flex, IconButton, Tooltip } from "@radix-ui/themes";
-import type { BadgeProps } from "@radix-ui/themes/components/badge";
 import Link from "next/link";
-import {
-  siAngular,
-  type SimpleIcon,
-  siReact,
-  siSolid,
-  siSvelte,
-  siVuedotjs,
-} from "simple-icons";
 
 import type { UiKitFrameworkSchema } from "../../app/uiKitSchema";
 import { SvgIcon } from "../SvgIcon";
 
+import { frameworkColor } from "./frameworkColor.ts";
+import { frameworkIcon } from "./frameworkIcon.ts";
+
 import styles from "./FrameworkList.module.css";
-
-const frameworkColor: Record<UiKitFrameworkSchema, BadgeProps["color"]> = {
-  Angular: "red",
-  React: "cyan",
-  Solid: "blue",
-  Svelte: "orange",
-  Vue: "green",
-};
-
-const frameworkIcon: Record<UiKitFrameworkSchema, SimpleIcon> = {
-  Angular: siAngular,
-  React: siReact,
-  Solid: siSolid,
-  Svelte: siSvelte,
-  Vue: siVuedotjs,
-};
 
 const frameworkLink: Record<UiKitFrameworkSchema, string> = {
   Angular: "https://angular.dev/",
@@ -51,7 +29,7 @@ export const FrameworkList = (props: FrameworkListProps) => {
   }
 
   return (
-    <Flex asChild gap="1">
+    <Flex asChild gap="2">
       <ul aria-label="Framework list" className={styles.list}>
         {frameworks.map((framework) => (
           <li className={styles.listItem} key={framework}>

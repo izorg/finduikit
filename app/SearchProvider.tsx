@@ -12,15 +12,15 @@ import {
 
 import { useDebounce } from "./useDebounce";
 
-type Search = string;
-
 type SearchContextValue = {
-  search: Search;
-  setSearch: Dispatch<SetStateAction<Search>>;
+  search: string;
+  searchInputValue: string;
+  setSearch: Dispatch<SetStateAction<string>>;
 };
 
 const SearchContext = createContext<SearchContextValue>({
   search: "",
+  searchInputValue: "",
   setSearch: () => {
     throw new Error("No <SearchProvider />");
   },
@@ -34,9 +34,10 @@ export const SearchProvider = ({ children }: PropsWithChildren) => {
   const value = useMemo(
     () => ({
       search: debouncedSearch,
+      searchInputValue: search,
       setSearch,
     }),
-    [debouncedSearch],
+    [debouncedSearch, search],
   );
 
   return (
