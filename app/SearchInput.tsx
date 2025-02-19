@@ -10,7 +10,12 @@ import { useSearch } from "./SearchProvider";
 
 const placeholder = "Search by name";
 
-export const SearchInput = (props: TextField.RootProps) => {
+type SearchInputProps = Omit<
+  TextField.RootProps,
+  "onChange" | "size" | "value"
+>;
+
+export const SearchInput = (props: SearchInputProps) => {
   const { searchInputValue, setSearch } = useSearch();
 
   return (

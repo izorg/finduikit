@@ -57,7 +57,16 @@ const Page = async (props: PageProps) => {
       </Flex>
       <Flex asChild direction="column" gap="4">
         <main>
-          <Flex gap="2" maxWidth="400px" mx="auto" width="100%">
+          <Flex
+            direction={{
+              initial: "column",
+              xs: "row",
+            }}
+            gap="2"
+            maxWidth="520px"
+            mx="auto"
+            width="100%"
+          >
             <Box asChild flexGrow="1">
               <SearchInput />
             </Box>
