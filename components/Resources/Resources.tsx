@@ -1,7 +1,7 @@
 import { mdiWeb } from "@mdi/js";
 import { Flex, Heading, IconButton, Text, Tooltip } from "@radix-ui/themes";
 import NextLink from "next/link";
-import { siGithub } from "simple-icons";
+import { siGithub, siStorybook } from "simple-icons";
 
 import type { UiKit } from "../../app/getUiKits.ts";
 import { SvgIcon } from "../SvgIcon";
@@ -41,6 +41,17 @@ export const Resources = (props: ResourcesProps) => {
                 </IconButton>
               </Tooltip>
             </li>
+            {uiKit.storybook && (
+              <li>
+                <Tooltip content="Storybook">
+                  <IconButton asChild color="ruby" variant="ghost">
+                    <NextLink href={uiKit.storybook} target="_blank">
+                      <SvgIcon path={siStorybook.path} />
+                    </NextLink>
+                  </IconButton>
+                </Tooltip>
+              </li>
+            )}
           </ul>
         </Text>
       </Flex>
