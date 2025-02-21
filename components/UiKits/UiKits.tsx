@@ -14,7 +14,7 @@ type UiKitsProps = {
   uiKits: UiKit[];
 };
 
-const keys = ["name"] satisfies (keyof UiKit)[];
+const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
 
 export const UiKits = (props: UiKitsProps) => {
   const { search } = useSearch();
@@ -22,6 +22,7 @@ export const UiKits = (props: UiKitsProps) => {
   const fuse = useMemo(
     () =>
       new Fuse(props.uiKits, {
+        ignoreLocation: true,
         keys,
       }),
     [props.uiKits],

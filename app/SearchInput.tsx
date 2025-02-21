@@ -8,7 +8,7 @@ import { SvgIcon } from "../components/SvgIcon";
 
 import { useSearch } from "./SearchProvider";
 
-const placeholder = "Search by name";
+const placeholder = "Search";
 
 type SearchInputProps = Omit<
   TextField.RootProps,

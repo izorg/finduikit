@@ -28,7 +28,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
     <Box asChild height="100%">
       <Card>
         <Flex direction="column" gap="4" height="100%">
-          <Flex align="center" gap="2">
+          <Flex align="center" gap="3">
             <Heading as="h2" size={{ initial: "5", sm: "4" }} weight="medium">
               <Link asChild color="gray" highContrast underline="hover">
                 <NextLink href={uiKit.homepage} target="_blank">
