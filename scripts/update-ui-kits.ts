@@ -1,6 +1,8 @@
 import fs, { type Dirent } from "node:fs";
 import path from "node:path";
 
+import { ESLint } from "eslint";
+import prettier from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 import { type UiKitFrameworkSchema, uiKitSchema } from "../app/uiKitSchema.ts";
@@ -29,6 +31,8 @@ const getFrameworksFromTopics = (topics: string[]) => {
   return frameworks.length > 0 ? [...new Set(frameworks)] : undefined;
 };
 
+const eslint = new ESLint({ fix: true });
+
 const updateUiKit = async (dirent: Dirent) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
 
@@ -46,27 +50,32 @@ const updateUiKit = async (dirent: Dirent) => {
     ?.map((repositoryTopic) => repositoryTopic?.topic.name)
     .filter((topic) => topic !== undefined);
 
-  await fs.promises.writeFile(
-    filePath,
-    stringifyYaml(
-      uiKitSchema.parse({
-        ...data,
-        description:
-          github.description?.replaceAll(/\s+/gu, " ").trim() ??
-          data.description,
-        frameworks:
-          (topics &&
-            data.frameworks?.length !== 0 &&
-            getFrameworksFromTopics(topics)) ||
-          data.frameworks,
-        image: github.openGraphImageUrl?.startsWith(
-          "https://repository-images.githubusercontent.com/",
-        )
-          ? github.openGraphImageUrl
-          : data.image,
-      }),
-    ),
+  const output = stringifyYaml(
+    uiKitSchema.parse({
+      ...data,
+      description:
+        github.description?.replaceAll(/\s+/gu, " ").trim() ?? data.description,
+      frameworks:
+        (topics &&
+          data.frameworks?.length !== 0 &&
+          getFrameworksFromTopics(topics)) ||
+        data.frameworks,
+      image: github.openGraphImageUrl?.startsWith(
+        "https://repository-images.githubusercontent.com/",
+      )
+        ? github.openGraphImageUrl
+        : data.image,
+    }),
   );
+
+  const lintResults = await eslint.lintText(output, { filePath });
+  const fixedOutput = lintResults[0].output ?? output;
+
+  const formattedOutput = await prettier.format(fixedOutput, {
+    filepath: filePath,
+  });
+
+  await fs.promises.writeFile(filePath, formattedOutput);
 };
 
 const checkUiKits = async () => {

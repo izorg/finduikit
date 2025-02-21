@@ -17,7 +17,7 @@
     "lint-js": "eslint --cache \"**/*.{js,ts,tsx,yml}\"",
     "lint-types": "tsc",
     "start": "next start",
-    "update-ui-kits": "node --experimental-strip-types scripts/update-ui-kits.ts && eslint --cache --fix \"ui-kits/*.yml\" && prettier --write ui-kits"
+    "update-ui-kits": "node --experimental-strip-types scripts/update-ui-kits.ts"
   },
   "dependencies": {
     "@mdi/js": "7.4.47",
