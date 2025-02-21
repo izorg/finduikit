@@ -1,7 +1,7 @@
 "use client";
 
-import { mdiMagnify } from "@mdi/js";
-import { TextField } from "@radix-ui/themes";
+import { mdiClose, mdiMagnify } from "@mdi/js";
+import { IconButton, TextField } from "@radix-ui/themes";
 import { startTransition } from "react";
 
 import { SvgIcon } from "../components/SvgIcon";
@@ -37,6 +37,18 @@ export const SearchInput = (props: SearchInputProps) => {
       <TextField.Slot>
         <SvgIcon path={mdiMagnify} />
       </TextField.Slot>
+      {searchInputValue ? (
+        <TextField.Slot>
+          <IconButton
+            onClick={() => {
+              setSearch("");
+            }}
+            variant="ghost"
+          >
+            <SvgIcon path={mdiClose} />
+          </IconButton>
+        </TextField.Slot>
+      ) : undefined}
     </TextField.Root>
   );
 };
