@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import {
   type UiKitFrameworkSchema,
   uiKitFrameworkSchema,
-} from "../../app/uiKitSchema.ts";
+} from "../../domains/ui-kit";
 
 import { frameworkParam } from "./frameworkParam.ts";
 

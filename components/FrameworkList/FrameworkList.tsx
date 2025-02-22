@@ -1,7 +1,7 @@
 import { Flex, IconButton, Tooltip } from "@radix-ui/themes";
 import Link from "next/link";
 
-import type { UiKitFrameworkSchema } from "../../app/uiKitSchema";
+import type { UiKitFrameworkSchema } from "../../domains/ui-kit";
 import { SvgIcon } from "../SvgIcon";
 
 import { frameworkColor } from "./frameworkColor.ts";

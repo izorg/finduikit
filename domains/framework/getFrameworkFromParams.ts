@@ -1,8 +1,8 @@
 import { cache } from "react";
 
-import { uiKitFrameworkSchema } from "../../app/uiKitSchema.ts";
 import { frameworkParam } from "../../components/FrameworkSelect";
 import type { DynamicRouteParams } from "../next";
+import { uiKitFrameworkSchema } from "../ui-kit";
 
 export const getFrameworkFromParams = cache(
   async (params: DynamicRouteParams) => {

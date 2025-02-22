@@ -5,8 +5,11 @@ import { ESLint } from "eslint";
 import prettier from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
-import { type UiKitFrameworkSchema, uiKitSchema } from "../app/uiKitSchema.ts";
 import { fetchGitHubRepositoryData } from "../data-handlers/fetchGitHubRepositoryData.ts";
+import {
+  type UiKitFrameworkSchema,
+  uiKitSchema,
+} from "../domains/ui-kit/uiKitSchema.ts";
 
 const CHECK_COUNT = 100;
 

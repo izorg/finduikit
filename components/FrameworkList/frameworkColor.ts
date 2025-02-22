@@ -1,6 +1,6 @@
 import type { BadgeProps } from "@radix-ui/themes/components/badge";
 
-import type { UiKitFrameworkSchema } from "../../app/uiKitSchema.ts";
+import type { UiKitFrameworkSchema } from "../../domains/ui-kit";
 
 export const frameworkColor: Record<UiKitFrameworkSchema, BadgeProps["color"]> =
   {

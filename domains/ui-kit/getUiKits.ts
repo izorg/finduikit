@@ -3,7 +3,7 @@ import path from "node:path";
 
 import { parse } from "yaml";
 
-import { uiKitSchema, type UiKitSchema } from "./uiKitSchema";
+import { uiKitSchema, type UiKitSchema } from "./uiKitSchema.ts";
 
 export type UiKit = {
   key: string;

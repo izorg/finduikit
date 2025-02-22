@@ -11,9 +11,9 @@ import {
 import Image from "next/image";
 import NextLink from "next/link";
 
-import { type UiKit } from "../../app/getUiKits.ts";
-import { FrameworkList } from "../FrameworkList";
-import { Resources } from "../Resources";
+import { FrameworkList } from "../../../components/FrameworkList";
+import { Resources } from "../../../components/Resources";
+import type { UiKit } from "../getUiKits.ts";
 
 import styles from "./UiKitCard.module.css";
 

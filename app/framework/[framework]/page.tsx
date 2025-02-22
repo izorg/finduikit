@@ -1,5 +1,5 @@
 import { frameworkParam } from "../../../components/FrameworkSelect";
-import { uiKitFrameworkSchema } from "../../uiKitSchema.ts";
+import { uiKitFrameworkSchema } from "../../../domains/ui-kit";
 
 export const dynamicParams = false;
 

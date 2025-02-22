@@ -3,7 +3,7 @@ import { Flex, Heading, IconButton, Text, Tooltip } from "@radix-ui/themes";
 import NextLink from "next/link";
 import { siGithub, siStorybook } from "simple-icons";
 
-import type { UiKit } from "../../app/getUiKits.ts";
+import type { UiKit } from "../../domains/ui-kit";
 import { SvgIcon } from "../SvgIcon";
 
 import styles from "./Resources.module.css";

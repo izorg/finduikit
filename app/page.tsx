@@ -2,11 +2,9 @@ import { Box, Flex, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 
 import { frameworkParam, FrameworkSelect } from "../components/FrameworkSelect";
-import { UiKits } from "../components/UiKits";
+import { getUiKits, uiKitFrameworkSchema, UiKits } from "../domains/ui-kit";
 
-import { getUiKits } from "./getUiKits";
 import { SearchInput } from "./SearchInput";
-import { uiKitFrameworkSchema } from "./uiKitSchema.ts";
 
 const title = "Find UI kit";
 const description = "Explore UI kits for rapid web development";
