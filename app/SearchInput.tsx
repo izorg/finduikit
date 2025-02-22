@@ -16,7 +16,7 @@ type SearchInputProps = Omit<
 >;
 
 export const SearchInput = (props: SearchInputProps) => {
-  const { searchInputValue, setSearch } = useSearch();
+  const { search, setSearch } = useSearch();
 
   return (
     <TextField.Root
@@ -31,13 +31,12 @@ export const SearchInput = (props: SearchInputProps) => {
       placeholder={placeholder}
       size="3"
       type="search"
-      value={searchInputValue}
       {...props}
     >
       <TextField.Slot>
         <SvgIcon path={mdiMagnify} />
       </TextField.Slot>
-      {searchInputValue ? (
+      {search ? (
         <TextField.Slot>
           <IconButton
             onClick={() => {

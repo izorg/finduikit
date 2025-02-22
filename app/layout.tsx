@@ -4,6 +4,8 @@ import { type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { type PropsWithChildren } from "react";
 
+import type { DynamicRouteParams } from "../domains/next";
+
 import { SearchProvider } from "./SearchProvider.tsx";
 
 import "./global.css";
@@ -12,7 +14,11 @@ export const viewport: Viewport = {
   colorScheme: "light dark",
 };
 
-const RootLayout = (props: PropsWithChildren) => {
+type RootLayoutProps = PropsWithChildren<{
+  params: DynamicRouteParams;
+}>;
+
+const RootLayout = async (props: RootLayoutProps) => {
   const { children } = props;
 
   return (
