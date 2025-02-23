@@ -7,7 +7,6 @@ import { Link } from "@radix-ui/themes/components/link";
 import { Separator } from "@radix-ui/themes/components/separator";
 import { Text } from "@radix-ui/themes/components/text";
 import Image from "next/image";
-import NextLink from "next/link";
 
 import { FrameworkList } from "../../../components/FrameworkList";
 import { Resources } from "../../../components/Resources";
@@ -29,9 +28,9 @@ export const UiKitCard = (props: UiKitCardProps) => {
           <Flex align="center" gap="3">
             <Heading as="h2" size={{ initial: "5", sm: "4" }} weight="medium">
               <Link asChild color="gray" highContrast underline="hover">
-                <NextLink href={uiKit.homepage} target="_blank">
+                <a href={uiKit.homepage} target="_blank">
                   {uiKit.name}
-                </NextLink>
+                </a>
               </Link>
             </Heading>
             <FrameworkList frameworks={uiKit.frameworks} />
@@ -43,14 +42,14 @@ export const UiKitCard = (props: UiKitCardProps) => {
                 className={styles.imageContainer}
                 position="relative"
               >
-                <NextLink href={uiKit.homepage} target="_blank">
+                <a href={uiKit.homepage} target="_blank">
                   <Image
                     alt=""
                     className={styles.image}
                     fill
                     src={uiKit.image}
                   />
-                </NextLink>
+                </a>
               </Box>
             </Inset>
           )}

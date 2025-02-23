@@ -4,7 +4,6 @@ import { Heading } from "@radix-ui/themes/components/heading";
 import { IconButton } from "@radix-ui/themes/components/icon-button";
 import { Text } from "@radix-ui/themes/components/text";
 import { Tooltip } from "@radix-ui/themes/components/tooltip";
-import NextLink from "next/link";
 import { siGithub, siStorybook } from "simple-icons";
 
 import type { UiKit } from "../../domains/ui-kit";
@@ -30,18 +29,18 @@ export const Resources = (props: ResourcesProps) => {
             <li>
               <Tooltip content="Homepage">
                 <IconButton asChild variant="ghost">
-                  <NextLink href={uiKit.homepage} target="_blank">
+                  <a href={uiKit.homepage} target="_blank">
                     <SvgIcon path={mdiWeb} />
-                  </NextLink>
+                  </a>
                 </IconButton>
               </Tooltip>
             </li>
             <li>
               <Tooltip content="GitHub">
                 <IconButton asChild color="gray" highContrast variant="ghost">
-                  <NextLink href={uiKit.repository} target="_blank">
+                  <a href={uiKit.repository} target="_blank">
                     <SvgIcon path={siGithub.path} />
-                  </NextLink>
+                  </a>
                 </IconButton>
               </Tooltip>
             </li>
@@ -49,9 +48,9 @@ export const Resources = (props: ResourcesProps) => {
               <li>
                 <Tooltip content="Storybook">
                   <IconButton asChild color="ruby" variant="ghost">
-                    <NextLink href={uiKit.storybook} target="_blank">
+                    <a href={uiKit.storybook} target="_blank">
                       <SvgIcon path={siStorybook.path} />
-                    </NextLink>
+                    </a>
                   </IconButton>
                 </Tooltip>
               </li>

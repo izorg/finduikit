@@ -1,7 +1,6 @@
 import { Flex } from "@radix-ui/themes/components/flex";
 import { IconButton } from "@radix-ui/themes/components/icon-button";
 import { Tooltip } from "@radix-ui/themes/components/tooltip";
-import Link from "next/link";
 
 import { Framework } from "../../domains/framework";
 import { SvgIcon } from "../SvgIcon";
@@ -41,9 +40,9 @@ export const FrameworkList = (props: FrameworkListProps) => {
                 color={frameworkColor[framework]}
                 variant="ghost"
               >
-                <Link href={frameworkLink[framework]} target="_blank">
+                <a href={frameworkLink[framework]} target="_blank">
                   <SvgIcon path={frameworkIcon[framework].path} />
-                </Link>
+                </a>
               </IconButton>
             </Tooltip>
           </li>

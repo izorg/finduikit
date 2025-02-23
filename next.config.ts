@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     reactCompiler: true,
+    typedRoutes: true,
   },
   images: {
     unoptimized: true,
