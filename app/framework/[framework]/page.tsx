@@ -1,10 +1,10 @@
 import { frameworkParam } from "../../../components/FrameworkSelect";
-import { uiKitFrameworkSchema } from "../../../domains/ui-kit";
+import { Framework } from "../../../domains/framework";
 
 export const dynamicParams = false;
 
 export const generateStaticParams = async () =>
-  uiKitFrameworkSchema.options.map((framework) => ({
+  Object.values(Framework).map((framework) => ({
     framework: frameworkParam[framework],
   }));
 

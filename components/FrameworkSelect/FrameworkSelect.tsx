@@ -3,15 +3,12 @@
 import { Select } from "@radix-ui/themes";
 import { useRouter } from "next/navigation";
 
-import {
-  type UiKitFrameworkSchema,
-  uiKitFrameworkSchema,
-} from "../../domains/ui-kit";
+import { Framework } from "../../domains/framework";
 
 import { frameworkParam } from "./frameworkParam.ts";
 
 type FrameworkSelectProps = {
-  framework?: UiKitFrameworkSchema;
+  framework?: Framework;
 } & Omit<Select.RootProps, "children" | "onValueChange" | "size" | "value">;
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
@@ -25,7 +22,7 @@ export const FrameworkSelect = (props: FrameworkSelectProps) => {
     <Select.Root
       {...rest}
       onValueChange={(value) => {
-        const frameworkValue = uiKitFrameworkSchema.options.find(
+        const frameworkValue = Object.values(Framework).find(
           (option) => option === value,
         );
 
@@ -43,7 +40,7 @@ export const FrameworkSelect = (props: FrameworkSelectProps) => {
         <Select.Item value={ANY_FRAMEWORK_LABEL}>
           {ANY_FRAMEWORK_LABEL}
         </Select.Item>
-        {uiKitFrameworkSchema.options.map((option) => (
+        {Object.values(Framework).map((option) => (
           <Select.Item key={option} value={option}>
             {option}
           </Select.Item>

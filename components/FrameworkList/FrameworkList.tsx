@@ -1,7 +1,7 @@
 import { Flex, IconButton, Tooltip } from "@radix-ui/themes";
 import Link from "next/link";
 
-import type { UiKitFrameworkSchema } from "../../domains/ui-kit";
+import { Framework } from "../../domains/framework";
 import { SvgIcon } from "../SvgIcon";
 
 import { frameworkColor } from "./frameworkColor.ts";
@@ -9,16 +9,16 @@ import { frameworkIcon } from "./frameworkIcon.ts";
 
 import styles from "./FrameworkList.module.css";
 
-const frameworkLink: Record<UiKitFrameworkSchema, string> = {
-  Angular: "https://angular.dev/",
-  React: "https://react.dev/",
-  Solid: "https://www.solidjs.com/",
-  Svelte: "https://svelte.dev/",
-  Vue: "https://vuejs.org/",
+const frameworkLink: Record<Framework, string> = {
+  [Framework.Angular]: "https://angular.dev/",
+  [Framework.React]: "https://react.dev/",
+  [Framework.Solid]: "https://www.solidjs.com/",
+  [Framework.Svelte]: "https://svelte.dev/",
+  [Framework.Vue]: "https://vuejs.org/",
 };
 
 type FrameworkListProps = {
-  frameworks?: UiKitFrameworkSchema[];
+  frameworks?: Framework[];
 };
 
 export const FrameworkList = (props: FrameworkListProps) => {

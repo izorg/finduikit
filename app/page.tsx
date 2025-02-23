@@ -2,7 +2,8 @@ import { Box, Flex, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 
 import { frameworkParam, FrameworkSelect } from "../components/FrameworkSelect";
-import { getUiKits, uiKitFrameworkSchema, UiKits } from "../domains/ui-kit";
+import { Framework } from "../domains/framework";
+import { getUiKits, UiKits } from "../domains/ui-kit";
 
 import { SearchInput } from "./SearchInput";
 
@@ -25,7 +26,7 @@ const getFrameworkFromParams = async (params: PageProps["params"]) => {
 
   const { framework } = await params;
 
-  return uiKitFrameworkSchema.options.find(
+  return Object.values(Framework).find(
     (option) => frameworkParam[option] === framework,
   );
 };

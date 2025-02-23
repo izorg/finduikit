@@ -30,7 +30,7 @@
     "next-themes": "0.4.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "simple-icons": "14.7.0"
+    "simple-icons": "14.8.0"
   },
   "devDependencies": {
     "@eslint/js": "9.21.0",
@@ -67,6 +67,7 @@
     "typescript": "5.7.3",
     "typescript-eslint": "8.24.1",
     "typescript-plugin-css-modules": "5.1.0",
+    "webpack": "5.98.0",
     "yaml": "2.7.0",
     "zod": "3.24.2"
   }

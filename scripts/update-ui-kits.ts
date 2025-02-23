@@ -6,23 +6,21 @@ import prettier from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 import { fetchGitHubRepositoryData } from "../data-handlers/fetchGitHubRepositoryData.ts";
-import {
-  type UiKitFrameworkSchema,
-  uiKitSchema,
-} from "../domains/ui-kit/uiKitSchema.ts";
+import { Framework } from "../domains/framework/Framework.ts";
+import { uiKitSchema } from "../domains/ui-kit/uiKitSchema.ts";
 
 const CHECK_COUNT = 100;
 
 const frameworkCompare = new Intl.Collator("en").compare;
 
-const frameworkTopicMap = new Map<string, UiKitFrameworkSchema>([
-  ["angular", "Angular"],
-  ["react", "React"],
-  ["reactjs", "React"],
-  ["solid", "Solid"],
-  ["solidjs", "Solid"],
-  ["svelte", "Svelte"],
-  ["vue", "Vue"],
+const frameworkTopicMap = new Map<string, Framework>([
+  ["angular", Framework.Angular],
+  ["react", Framework.React],
+  ["reactjs", Framework.React],
+  ["solid", Framework.Solid],
+  ["solidjs", Framework.Solid],
+  ["svelte", Framework.Svelte],
+  ["vue", Framework.Vue],
 ]);
 
 const getFrameworksFromTopics = (topics: string[]) => {

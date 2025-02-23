@@ -7,12 +7,12 @@ import {
   siVuedotjs,
 } from "simple-icons";
 
-import type { UiKitFrameworkSchema } from "../../domains/ui-kit";
+import { Framework } from "../../domains/framework";
 
-export const frameworkIcon: Record<UiKitFrameworkSchema, SimpleIcon> = {
-  Angular: siAngular,
-  React: siReact,
-  Solid: siSolid,
-  Svelte: siSvelte,
-  Vue: siVuedotjs,
+export const frameworkIcon: Record<Framework, SimpleIcon> = {
+  [Framework.Angular]: siAngular,
+  [Framework.React]: siReact,
+  [Framework.Solid]: siSolid,
+  [Framework.Svelte]: siSvelte,
+  [Framework.Vue]: siVuedotjs,
 };

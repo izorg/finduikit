@@ -1,9 +1,9 @@
-import type { UiKitFrameworkSchema } from "../../domains/ui-kit";
+import { Framework } from "../../domains/framework";
 
-export const frameworkParam: Record<UiKitFrameworkSchema, string> = {
-  Angular: "angular",
-  React: "react",
-  Solid: "solid",
-  Svelte: "svelte",
-  Vue: "vue",
+export const frameworkParam: Record<Framework, string> = {
+  [Framework.Angular]: "angular",
+  [Framework.React]: "react",
+  [Framework.Solid]: "solid",
+  [Framework.Svelte]: "svelte",
+  [Framework.Vue]: "vue",
 };

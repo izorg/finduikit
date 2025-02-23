@@ -1,12 +1,11 @@
 import type { BadgeProps } from "@radix-ui/themes/components/badge";
 
-import type { UiKitFrameworkSchema } from "../../domains/ui-kit";
+import { Framework } from "../../domains/framework";
 
-export const frameworkColor: Record<UiKitFrameworkSchema, BadgeProps["color"]> =
-  {
-    Angular: "red",
-    React: "cyan",
-    Solid: "blue",
-    Svelte: "orange",
-    Vue: "green",
-  };
+export const frameworkColor: Record<Framework, BadgeProps["color"]> = {
+  [Framework.Angular]: "red",
+  [Framework.React]: "cyan",
+  [Framework.Solid]: "blue",
+  [Framework.Svelte]: "orange",
+  [Framework.Vue]: "green",
+};
