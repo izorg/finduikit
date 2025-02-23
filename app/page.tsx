@@ -3,34 +3,28 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
-import { frameworkParam, FrameworkSelect } from "../components/FrameworkSelect";
-import { Framework } from "../domains/framework";
+import { FrameworkSelect } from "../components/FrameworkSelect";
+import { getFrameworkFromParams } from "../domains/framework";
 import { getUiKits, UiKits } from "../domains/ui-kit";
 
 import { SearchInput } from "./SearchInput";
 
-const title = "Find UI kit";
+const title = "UI Kits";
 const description = "Explore UI kits for rapid web development";
 
-export const metadata: Metadata = {
-  description,
-  title,
-};
-
 type PageProps = {
-  params?: Promise<{ framework: string }>;
+  params: Promise<{ framework?: string }>;
 };
 
-const getFrameworkFromParams = async (params: PageProps["params"]) => {
-  if (!params) {
-    return;
-  }
+export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
+  const { params } = props;
 
-  const { framework } = await params;
+  const framework = await getFrameworkFromParams(params);
 
-  return Object.values(Framework).find(
-    (option) => frameworkParam[option] === framework,
-  );
+  return {
+    description,
+    title: framework ? `${title} for ${framework}` : title,
+  };
 };
 
 const Page = async (props: PageProps) => {
@@ -50,7 +44,7 @@ const Page = async (props: PageProps) => {
         <Text align="center" asChild>
           <header>
             <Text asChild size="9" weight="medium">
-              <h1>{title}</h1>
+              <h1>{framework ? `${title} for ${framework}` : title}</h1>
             </Text>
             <Text as="p">{description}</Text>
           </header>

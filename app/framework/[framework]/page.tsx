@@ -8,4 +8,4 @@ export const generateStaticParams = async () =>
     framework: frameworkParam[framework],
   }));
 
-export { default, metadata } from "../../page";
+export { default, generateMetadata } from "../../page";
