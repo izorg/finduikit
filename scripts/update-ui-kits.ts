@@ -9,7 +9,7 @@ import { fetchGitHubRepositoryData } from "../data-handlers/fetchGitHubRepositor
 import { Framework } from "../domains/framework/Framework";
 import { uiKitSchema } from "../domains/ui-kit/uiKitSchema";
 
-const CHECK_COUNT = 100;
+const CHECK_COUNT = 1;
 
 const frameworkCompare = new Intl.Collator("en").compare;
 
