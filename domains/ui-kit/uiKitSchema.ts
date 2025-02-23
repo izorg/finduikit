@@ -1,7 +1,7 @@
 import { z } from "zod";
 
-import { getEnumValues } from "../enum/index.ts";
-import { Framework } from "../framework/index.ts";
+import { getEnumValues } from "../enum";
+import { Framework } from "../framework";
 
 export const uiKitSchema = z.object({
   description: z.string().optional(),

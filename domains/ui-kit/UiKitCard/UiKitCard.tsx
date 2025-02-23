@@ -13,7 +13,7 @@ import NextLink from "next/link";
 
 import { FrameworkList } from "../../../components/FrameworkList";
 import { Resources } from "../../../components/Resources";
-import type { UiKit } from "../getUiKits.ts";
+import type { UiKit } from "../getUiKits";
 
 import styles from "./UiKitCard.module.css";
 

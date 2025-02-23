@@ -1,2 +1,2 @@
-export * from "./frameworkParam.ts";
-export * from "./FrameworkSelect.tsx";
+export * from "./frameworkParam";
+export * from "./FrameworkSelect";

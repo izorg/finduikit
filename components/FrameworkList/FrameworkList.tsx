@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Framework } from "../../domains/framework";
 import { SvgIcon } from "../SvgIcon";
 
-import { frameworkColor } from "./frameworkColor.ts";
-import { frameworkIcon } from "./frameworkIcon.ts";
+import { frameworkColor } from "./frameworkColor";
+import { frameworkIcon } from "./frameworkIcon";
 
 import styles from "./FrameworkList.module.css";
 

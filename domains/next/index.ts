@@ -1,1 +1,1 @@
-export * from "./DynamicRouteParams.ts";
+export * from "./DynamicRouteParams";

@@ -1,3 +1,3 @@
-export * from "./frameworkColor.ts";
-export * from "./frameworkIcon.ts";
-export * from "./FrameworkList.tsx";
+export * from "./frameworkColor";
+export * from "./frameworkIcon";
+export * from "./FrameworkList";

@@ -1,1 +1,1 @@
-export * from "./getEnumValues.ts";
+export * from "./getEnumValues";

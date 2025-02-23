@@ -1,2 +1,2 @@
-export * from "./Framework.ts";
-export * from "./getFrameworkFromParams.ts";
+export * from "./Framework";
+export * from "./getFrameworkFromParams";

@@ -1,4 +1,4 @@
-import type { GetGitHubRepositoryQuery } from "./fetchGitHubRepositoryData.generated.ts";
+import type { GetGitHubRepositoryQuery } from "./fetchGitHubRepositoryData.generated";
 
 export const fetchGitHubRepositoryData = async (
   url: string,

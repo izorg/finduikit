@@ -17,7 +17,7 @@
     "lint-js": "eslint --cache \"**/*.{js,ts,tsx,yml}\"",
     "lint-types": "tsc",
     "start": "next start",
-    "update-ui-kits": "node --experimental-strip-types scripts/update-ui-kits.ts"
+    "update-ui-kits": "node --import tsx scripts/update-ui-kits.ts"
   },
   "dependencies": {
     "@mdi/js": "7.4.47",
@@ -64,6 +64,7 @@
     "stylelint-config-standard": "37.0.0",
     "stylelint-no-unsupported-browser-features": "8.0.4",
     "stylelint-order": "6.0.4",
+    "tsx": "4.19.3",
     "typescript": "5.7.3",
     "typescript-eslint": "8.24.1",
     "typescript-plugin-css-modules": "5.1.0",

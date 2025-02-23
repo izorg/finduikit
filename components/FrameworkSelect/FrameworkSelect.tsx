@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import { Framework } from "../../domains/framework";
 
-import { frameworkParam } from "./frameworkParam.ts";
+import { frameworkParam } from "./frameworkParam";
 
 type FrameworkSelectProps = {
   framework?: Framework;

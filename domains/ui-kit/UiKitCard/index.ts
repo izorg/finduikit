@@ -1,1 +1,1 @@
-export * from "./UiKitCard.tsx";
+export * from "./UiKitCard";
