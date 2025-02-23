@@ -1,6 +1,6 @@
 "use client";
 
-import { Grid } from "@radix-ui/themes";
+import { Grid } from "@radix-ui/themes/components/grid";
 import Fuse from "fuse.js";
 import { useMemo } from "react";
 

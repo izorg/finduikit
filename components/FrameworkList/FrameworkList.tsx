@@ -1,4 +1,6 @@
-import { Flex, IconButton, Tooltip } from "@radix-ui/themes";
+import { Flex } from "@radix-ui/themes/components/flex";
+import { IconButton } from "@radix-ui/themes/components/icon-button";
+import { Tooltip } from "@radix-ui/themes/components/tooltip";
 import Link from "next/link";
 
 import { Framework } from "../../domains/framework";

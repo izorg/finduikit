@@ -1,5 +1,9 @@
 import { mdiWeb } from "@mdi/js";
-import { Flex, Heading, IconButton, Text, Tooltip } from "@radix-ui/themes";
+import { Flex } from "@radix-ui/themes/components/flex";
+import { Heading } from "@radix-ui/themes/components/heading";
+import { IconButton } from "@radix-ui/themes/components/icon-button";
+import { Text } from "@radix-ui/themes/components/text";
+import { Tooltip } from "@radix-ui/themes/components/tooltip";
 import NextLink from "next/link";
 import { siGithub, siStorybook } from "simple-icons";
 

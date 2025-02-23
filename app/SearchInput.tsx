@@ -1,7 +1,8 @@
 "use client";
 
 import { mdiClose, mdiMagnify } from "@mdi/js";
-import { IconButton, TextField } from "@radix-ui/themes";
+import { IconButton } from "@radix-ui/themes/components/icon-button";
+import * as TextField from "@radix-ui/themes/components/text-field";
 import { startTransition, useRef } from "react";
 
 import { SvgIcon } from "../components/SvgIcon";

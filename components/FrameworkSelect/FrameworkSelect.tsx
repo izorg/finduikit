@@ -1,6 +1,6 @@
 "use client";
 
-import { Select } from "@radix-ui/themes";
+import * as Select from "@radix-ui/themes/components/select";
 import { useRouter } from "next/navigation";
 
 import { Framework } from "../../domains/framework";

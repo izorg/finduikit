@@ -1,4 +1,6 @@
-import { Box, Flex, Text } from "@radix-ui/themes";
+import { Box } from "@radix-ui/themes/components/box";
+import { Flex } from "@radix-ui/themes/components/flex";
+import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
 import { frameworkParam, FrameworkSelect } from "../components/FrameworkSelect";

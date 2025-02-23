@@ -1,5 +1,5 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Theme } from "@radix-ui/themes";
+import { Theme } from "@radix-ui/themes/components/theme";
 import { type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { type PropsWithChildren } from "react";

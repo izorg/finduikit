@@ -19,7 +19,7 @@ export default ts.config(
   js.configs.recommended,
   ...ts.configs.recommended,
   compat.configs["flat/recommended"],
-  unicorn.configs["flat/recommended"],
+  unicorn.configs["recommended"],
   perfectionist.configs["recommended-alphabetical"],
   ...yml.configs["flat/recommended"],
   ...yml.configs["flat/prettier"],
@@ -38,6 +38,21 @@ export default ts.config(
     rules: {
       ...next.configs.recommended.rules,
       ...next.configs["core-web-vitals"].rules,
+
+      "no-restricted-imports": [
+        "error",
+        {
+          paths: [
+            /**
+             * Use direct component imports for better tree-shaking
+             */
+            {
+              message: "Please use `@radix-ui/themes/components/*` instead.",
+              name: "@radix-ui/themes",
+            },
+          ],
+        },
+      ],
 
       "react-compiler/react-compiler": "error",
 
