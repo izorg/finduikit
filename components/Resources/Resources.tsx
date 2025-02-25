@@ -4,7 +4,7 @@ import { Heading } from "@radix-ui/themes/components/heading";
 import { IconButton } from "@radix-ui/themes/components/icon-button";
 import { Text } from "@radix-ui/themes/components/text";
 import { Tooltip } from "@radix-ui/themes/components/tooltip";
-import { siGithub, siStorybook } from "simple-icons";
+import { siFigma, siGithub, siStorybook } from "simple-icons";
 
 import type { UiKit } from "../../domains/ui-kit";
 import { SvgIcon } from "../SvgIcon";
@@ -50,6 +50,17 @@ export const Resources = (props: ResourcesProps) => {
                   <IconButton asChild color="ruby" variant="ghost">
                     <a href={uiKit.storybook} target="_blank">
                       <SvgIcon path={siStorybook.path} />
+                    </a>
+                  </IconButton>
+                </Tooltip>
+              </li>
+            )}
+            {uiKit.figma && (
+              <li>
+                <Tooltip content="Figma">
+                  <IconButton asChild color="crimson" variant="ghost">
+                    <a href={uiKit.figma} target="_blank">
+                      <SvgIcon path={siFigma.path} />
                     </a>
                   </IconButton>
                 </Tooltip>

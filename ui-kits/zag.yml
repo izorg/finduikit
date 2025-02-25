@@ -1,5 +1,5 @@
-description: Finite state machines for building accessible design systems and UI
-  components. Works with modern frameworks, and even just Vanilla JS
+description: Build accessible design systems and component library using finite
+  state machines. Compatible with React, Vue, Svelte, Solid, and Preact.
 frameworks:
   - React
   - Solid
