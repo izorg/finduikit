@@ -6,8 +6,8 @@ import prettier from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 import { fetchGitHubRepositoryData } from "../data-handlers/fetchGitHubRepositoryData";
-import { Framework } from "../domains/framework/Framework";
-import { uiKitSchema } from "../domains/ui-kit/uiKitSchema";
+import { Framework } from "../domains/framework";
+import { uiKitSchema } from "../domains/ui-kit";
 
 const CHECK_COUNT = 1;
 
