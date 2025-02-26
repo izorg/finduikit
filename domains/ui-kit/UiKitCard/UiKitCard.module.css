@@ -1,3 +1,7 @@
+.card {
+  height: 100%;
+}
+
 .imageContainer {
   aspect-ratio: 2 / 1;
 }

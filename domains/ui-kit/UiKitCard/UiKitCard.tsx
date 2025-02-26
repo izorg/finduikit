@@ -22,44 +22,33 @@ export const UiKitCard = (props: UiKitCardProps) => {
   const { uiKit } = props;
 
   return (
-    <Box asChild height="100%">
-      <Card>
-        <Flex direction="column" gap="4" height="100%">
-          <Flex align="center" gap="3">
-            <Heading as="h2" size={{ initial: "5", sm: "4" }} weight="medium">
-              <Link asChild color="gray" highContrast underline="hover">
-                <a href={uiKit.homepage} target="_blank">
-                  {uiKit.name}
-                </a>
-              </Link>
-            </Heading>
-            <FrameworkList frameworks={uiKit.frameworks} />
-          </Flex>
-          {uiKit.image && (
-            <Inset asChild side="x">
-              <Box
-                asChild
-                className={styles.imageContainer}
-                position="relative"
-              >
-                <a href={uiKit.homepage} target="_blank">
-                  <Image
-                    alt=""
-                    className={styles.image}
-                    fill
-                    src={uiKit.image}
-                  />
-                </a>
-              </Box>
-            </Inset>
-          )}
-          <Text asChild size="2">
-            <Box flexGrow="1">{uiKit.description}</Box>
-          </Text>
-          <Separator size="4" />
-          <Resources uiKit={uiKit} />
+    <Card className={styles.card}>
+      <Flex direction="column" gap="4" height="100%">
+        <Flex align="center" gap="3">
+          <Heading as="h2" size={{ initial: "5", sm: "4" }} weight="medium">
+            <Link asChild color="gray" highContrast underline="hover">
+              <a href={uiKit.homepage} target="_blank">
+                {uiKit.name}
+              </a>
+            </Link>
+          </Heading>
+          <FrameworkList frameworks={uiKit.frameworks} />
         </Flex>
-      </Card>
-    </Box>
+        {uiKit.image && (
+          <Inset asChild side="x">
+            <Box asChild className={styles.imageContainer} position="relative">
+              <a href={uiKit.homepage} target="_blank">
+                <Image alt="" className={styles.image} fill src={uiKit.image} />
+              </a>
+            </Box>
+          </Inset>
+        )}
+        <Text asChild size="2">
+          <Box flexGrow="1">{uiKit.description}</Box>
+        </Text>
+        <Separator size="4" />
+        <Resources uiKit={uiKit} />
+      </Flex>
+    </Card>
   );
 };
