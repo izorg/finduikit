@@ -1,4 +1,4 @@
-import { Framework } from "../../domains/framework";
+import { Framework } from "../index";
 
 export const frameworkParam: Record<Framework, string> = {
   [Framework.Angular]: "angular",

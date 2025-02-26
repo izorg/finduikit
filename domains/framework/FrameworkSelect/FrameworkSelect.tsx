@@ -3,7 +3,7 @@
 import * as Select from "@radix-ui/themes/components/select";
 import { useRouter } from "next/navigation";
 
-import { Framework } from "../../domains/framework";
+import { Framework } from "../index";
 
 import { frameworkParam } from "./frameworkParam";
 

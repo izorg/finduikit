@@ -1,9 +1,9 @@
 import { cache } from "react";
 
-import { frameworkParam } from "../../components/FrameworkSelect";
 import type { DynamicRouteParams } from "../next";
 
 import { Framework } from "./Framework";
+import { frameworkParam } from "./FrameworkSelect";
 
 export const getFrameworkFromParams = cache(
   async (params: DynamicRouteParams) => {

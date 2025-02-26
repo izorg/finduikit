@@ -1,5 +1,4 @@
-import { frameworkParam } from "../../../components/FrameworkSelect";
-import { Framework } from "../../../domains/framework";
+import { Framework, frameworkParam } from "../../../domains/framework";
 
 export const dynamicParams = false;
 

@@ -1,6 +1,6 @@
 import type { BadgeProps } from "@radix-ui/themes/components/badge";
 
-import { Framework } from "../../domains/framework";
+import { Framework } from "../index";
 
 export const frameworkColor: Record<Framework, BadgeProps["color"]> = {
   [Framework.Angular]: "red",

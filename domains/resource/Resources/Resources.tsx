@@ -6,8 +6,8 @@ import { Text } from "@radix-ui/themes/components/text";
 import { Tooltip } from "@radix-ui/themes/components/tooltip";
 import { siFigma, siGithub, siStorybook } from "simple-icons";
 
-import type { UiKit } from "../../domains/ui-kit";
-import { SvgIcon } from "../SvgIcon";
+import { SvgIcon } from "../../icon";
+import type { UiKit } from "../../ui-kit";
 
 import styles from "./Resources.module.css";
 

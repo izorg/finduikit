@@ -3,8 +3,7 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
-import { FrameworkSelect } from "../components/FrameworkSelect";
-import { getFrameworkFromParams } from "../domains/framework";
+import { FrameworkSelect, getFrameworkFromParams } from "../domains/framework";
 import { getUiKits, UiKits } from "../domains/ui-kit";
 
 import { SearchInput } from "./SearchInput";
