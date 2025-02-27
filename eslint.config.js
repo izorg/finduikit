@@ -15,21 +15,24 @@ export default ts.config(
   gitignore(),
   {
     ignores: [".next"],
+    name: "ignore",
   },
-  js.configs.recommended,
-  ...ts.configs.recommended,
-  compat.configs["flat/recommended"],
-  unicorn.configs["recommended"],
-  perfectionist.configs["recommended-alphabetical"],
-  ...yml.configs["flat/recommended"],
-  ...yml.configs["flat/prettier"],
-  prettier,
   {
+    extends: [perfectionist.configs["recommended-alphabetical"]],
+    name: "Perfectionist",
+  },
+  {
+    extends: [
+      js.configs.recommended,
+      ts.configs.recommended,
+      compat.configs["flat/recommended"],
+      unicorn.configs["recommended"],
+    ],
+    files: ["**/*.js", "**/*.ts?(x)"],
     languageOptions: {
-      globals: {
-        ...globals.node,
-      },
+      globals: globals.node,
     },
+    name: "JavaScript & TypeScript",
     plugins: {
       "@next/next": next,
       "react-compiler": reactCompiler,
@@ -84,6 +87,7 @@ export default ts.config(
   },
   {
     files: ["**/*.ts?(x)"],
+    name: "TypeScript",
     rules: {
       "@typescript-eslint/consistent-type-imports": [
         "error",
@@ -95,15 +99,22 @@ export default ts.config(
     },
   },
   {
-    files: ["ui-kits/*.yml"],
+    extends: [yml.configs["flat/recommended"], yml.configs["flat/prettier"]],
+    files: ["**/*.y?(a)ml"],
+    name: "YAML",
     rules: {
       "yml/sort-keys": ["error", "asc"],
     },
   },
   {
     files: ["stylelint.config.js"],
+    name: "Stylelint",
     rules: {
       "unicorn/no-null": "off",
     },
+  },
+  {
+    extends: [prettier],
+    name: "Prettier",
   },
 );
