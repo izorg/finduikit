@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/ui-kit.schema.json",
+  "title": "UI Kit",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "figma": {
+      "type": "string",
+      "format": "uri"
+    },
+    "frameworks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
+      }
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
+    "image": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri"
+    },
+    "storybook": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": ["homepage", "name", "repository"]
+}
