@@ -24,7 +24,9 @@ const RootLayout = async (props: PropsWithChildren) => {
           </Theme>
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId="G-58PGJQJFHL" />
+      {process.env.NODE_ENV === "production" && (
+        <GoogleAnalytics gaId="G-58PGJQJFHL" />
+      )}
     </html>
   );
 };
