@@ -2581,96 +2581,96 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/bundle-analyzer@npm:15.1.7"
+"@next/bundle-analyzer@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/bundle-analyzer@npm:15.2.0"
   dependencies:
     webpack-bundle-analyzer: "npm:4.10.1"
-  checksum: 10/8b5c927e04cc42391b0f1d410dda9beb45bd53b35fd6d8b762f5c2a5e6037becd8851558359164571e178307292d73137e73c5738c6cf3043f836fe2bcbf7ced
+  checksum: 10/e7779604da370a696040f8a3ca7f2859c8e85510176b275f4b7bf712a85bd30bceb83045d2647617390c84018dc1414cf6fb52a1f0a8583c1572941e9f4e4326
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/env@npm:15.1.7"
-  checksum: 10/57d9bd0d820a6f292b52bd513b3f00b4eee46d5a855c185380ad442c9825f6a1db7e8a2fa26d02fff0847cd9b50c3f83a471d19a98c05c275dba04080100c28f
+"@next/env@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/env@npm:15.2.0"
+  checksum: 10/8fa52c92f8370df72ca2a2f9a90169549707eae4e463fd395e5616dd843fc2faf4c74e82dd47ce0ab967fa6dc815a26ba5077e095dd90d998d9868ab07c47000
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/eslint-plugin-next@npm:15.1.7"
+"@next/eslint-plugin-next@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/eslint-plugin-next@npm:15.2.0"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10/94b8fdcb5e98211b3dd7923a736c7e078d49217c7870aba254ed917f403a0bc0aabe75de550fddb206dfb3734f2922af2afc746d540e059362d95e9be0f5267b
+  checksum: 10/d0635fa7667b50a4c515b2d1117b7a63c6371d5de6518801c2b9099028cebb0663e2201982780d596743c9c0af9ce44148914770f8ed6395b9dea1dc1a14eada
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-darwin-arm64@npm:15.1.7"
+"@next/swc-darwin-arm64@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-darwin-arm64@npm:15.2.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-darwin-x64@npm:15.1.7"
+"@next/swc-darwin-x64@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-darwin-x64@npm:15.2.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-linux-arm64-gnu@npm:15.1.7"
+"@next/swc-linux-arm64-gnu@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-linux-arm64-gnu@npm:15.2.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-linux-arm64-musl@npm:15.1.7"
+"@next/swc-linux-arm64-musl@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-linux-arm64-musl@npm:15.2.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-linux-x64-gnu@npm:15.1.7"
+"@next/swc-linux-x64-gnu@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-linux-x64-gnu@npm:15.2.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-linux-x64-musl@npm:15.1.7"
+"@next/swc-linux-x64-musl@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-linux-x64-musl@npm:15.2.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-win32-arm64-msvc@npm:15.1.7"
+"@next/swc-win32-arm64-msvc@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-win32-arm64-msvc@npm:15.2.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/swc-win32-x64-msvc@npm:15.1.7"
+"@next/swc-win32-x64-msvc@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/swc-win32-x64-msvc@npm:15.2.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/third-parties@npm:15.1.7":
-  version: 15.1.7
-  resolution: "@next/third-parties@npm:15.1.7"
+"@next/third-parties@npm:15.2.0":
+  version: 15.2.0
+  resolution: "@next/third-parties@npm:15.2.0"
   dependencies:
     third-party-capital: "npm:1.0.20"
   peerDependencies:
     next: ^13.0.0 || ^14.0.0 || ^15.0.0
     react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
-  checksum: 10/efdee642cea9fffcb5a221d4def90a2d4a6fefcddb4b6ef1ceb5f73da3576271e217b273a1e4cf77aceb4a521ca15ea7b02b118f78dbc5387b7520b6370d92b2
+  checksum: 10/7713a5d6e51bcbbfb7f499f905770a4cfe25638a39e99fcdaefafaa343e71ae0596802584df776c5029c4879c73adc9a04be511e920f8618e793f0fb9f726b7f
   languageName: node
   linkType: hard
 
@@ -4564,13 +4564,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/themes@npm:3.2.0":
-  version: 3.2.0
-  resolution: "@radix-ui/themes@npm:3.2.0"
+"@radix-ui/themes@npm:3.2.1":
+  version: 3.2.1
+  resolution: "@radix-ui/themes@npm:3.2.1"
   dependencies:
     "@radix-ui/colors": "npm:^3.0.0"
     classnames: "npm:^2.3.2"
-    radix-ui: "npm:^1.1.2"
+    radix-ui: "npm:^1.1.3"
     react-remove-scroll-bar: "npm:^2.3.8"
   peerDependencies:
     "@types/react": "*"
@@ -4582,7 +4582,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/a203f0cab4bfea56fb3316466429d086607b83fe891716277687fc7b12afa9d236bbf439875d53f0f7404862486374607d71ba53fef169d6d95bc0864038fa84
+  checksum: 10/e026d86ce301df296524c0891d2e5fcc30906dda75e5f9aa8de259eab9d2fa8ca58897d0c51077bb55f3344e58bb839bdde88251b400c4d8f0c62eb712b6b8a9
   languageName: node
   linkType: hard
 
@@ -7753,10 +7753,10 @@ __metadata:
     "@graphql-codegen/near-operation-file-preset": "npm:3.0.0"
     "@graphql-codegen/typescript-operations": "npm:4.5.1"
     "@mdi/js": "npm:7.4.47"
-    "@next/bundle-analyzer": "npm:15.1.7"
-    "@next/eslint-plugin-next": "npm:15.1.7"
-    "@next/third-parties": "npm:15.1.7"
-    "@radix-ui/themes": "npm:3.2.0"
+    "@next/bundle-analyzer": "npm:15.2.0"
+    "@next/eslint-plugin-next": "npm:15.2.0"
+    "@next/third-parties": "npm:15.2.0"
+    "@radix-ui/themes": "npm:3.2.1"
     "@sentry/nextjs": "npm:9.2.0"
     "@types/node": "npm:22.13.5"
     "@types/react": "npm:19.0.10"
@@ -7776,7 +7776,7 @@ __metadata:
     fuse.js: "npm:7.1.0"
     globals: "npm:16.0.0"
     graphql: "npm:16.10.0"
-    next: "npm:15.1.7"
+    next: "npm:15.2.0"
     next-themes: "npm:0.4.4"
     node-html-parser: "npm:7.0.1"
     postcss: "npm:8.5.3"
@@ -9847,19 +9847,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.1.7":
-  version: 15.1.7
-  resolution: "next@npm:15.1.7"
+"next@npm:15.2.0":
+  version: 15.2.0
+  resolution: "next@npm:15.2.0"
   dependencies:
-    "@next/env": "npm:15.1.7"
-    "@next/swc-darwin-arm64": "npm:15.1.7"
-    "@next/swc-darwin-x64": "npm:15.1.7"
-    "@next/swc-linux-arm64-gnu": "npm:15.1.7"
-    "@next/swc-linux-arm64-musl": "npm:15.1.7"
-    "@next/swc-linux-x64-gnu": "npm:15.1.7"
-    "@next/swc-linux-x64-musl": "npm:15.1.7"
-    "@next/swc-win32-arm64-msvc": "npm:15.1.7"
-    "@next/swc-win32-x64-msvc": "npm:15.1.7"
+    "@next/env": "npm:15.2.0"
+    "@next/swc-darwin-arm64": "npm:15.2.0"
+    "@next/swc-darwin-x64": "npm:15.2.0"
+    "@next/swc-linux-arm64-gnu": "npm:15.2.0"
+    "@next/swc-linux-arm64-musl": "npm:15.2.0"
+    "@next/swc-linux-x64-gnu": "npm:15.2.0"
+    "@next/swc-linux-x64-musl": "npm:15.2.0"
+    "@next/swc-win32-arm64-msvc": "npm:15.2.0"
+    "@next/swc-win32-x64-msvc": "npm:15.2.0"
     "@swc/counter": "npm:0.1.3"
     "@swc/helpers": "npm:0.5.15"
     busboy: "npm:1.6.0"
@@ -9904,7 +9904,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10/e3ff4ecdac704d03787c1d51dbc7fef13ff55f38877e597604ac8df9cff2f2c4e3f15d26fabf9badbfda3f7254b267fb513ae24b7bb081f07fd979f8fd4ccf56
+  checksum: 10/017858b8469c2a2d22843254279b8cb7ce54279127e70ba361b80de1759b2922bfb75bbd1b60e25e0236ccecd9d804cd8657569c0368d20890e6cfa64efae6f0
   languageName: node
   linkType: hard
 
@@ -11220,7 +11220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"radix-ui@npm:^1.1.2":
+"radix-ui@npm:^1.1.3":
   version: 1.1.3
   resolution: "radix-ui@npm:1.1.3"
   dependencies:
