@@ -1,6 +1,7 @@
 {
-  "$id": "https://example.com/ui-kit.schema.json",
+  "$id": "https://finduikit.com/UiKit.schema.json",
   "$schema": "https://json-schema.org/draft-07/schema",
+  "additionalProperties": false,
   "properties": {
     "description": {
       "type": "string"
