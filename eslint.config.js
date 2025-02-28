@@ -3,6 +3,7 @@ import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier";
 import compat from "eslint-plugin-compat";
+import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsonc from "eslint-plugin-jsonc";
 import perfectionist from "eslint-plugin-perfectionist";
 import reactCompiler from "eslint-plugin-react-compiler";
@@ -114,6 +115,23 @@ export default ts.config(
     name: "YAML",
     rules: {
       "yml/sort-keys": ["error", "asc"],
+    },
+  },
+  {
+    extends: [jsonSchemaValidator.configs["flat/recommended"]],
+    name: "JSON Schema",
+    rules: {
+      "json-schema-validator/no-invalid": [
+        "error",
+        {
+          schemas: [
+            {
+              fileMatch: ["ui-kits/*.yml"],
+              schema: "domains/ui-kit/UiKit.schema.json",
+            },
+          ],
+        },
+      ],
     },
   },
   {
