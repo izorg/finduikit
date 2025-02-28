@@ -4,7 +4,7 @@ import { type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { type PropsWithChildren } from "react";
 
-import { SearchProvider } from "./SearchProvider";
+import { SearchProvider } from "../domains/search";
 
 import "./global.css";
 

@@ -10,7 +10,7 @@ import {
   useState,
 } from "react";
 
-import { useDebounce } from "./useDebounce";
+import { useDebounce } from "../hooks";
 
 type SearchContextValue = {
   search: string;

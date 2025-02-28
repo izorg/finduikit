@@ -4,9 +4,8 @@ import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
 import { FrameworkSelect, getFrameworkFromParams } from "../domains/framework";
+import { SearchInput } from "../domains/search";
 import { getUiKits, UiKits } from "../domains/ui-kit";
-
-import { SearchInput } from "./SearchInput";
 
 const title = "UI Kits";
 const description = "Explore UI kits for rapid web development";

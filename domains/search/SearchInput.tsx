@@ -5,7 +5,7 @@ import { IconButton } from "@radix-ui/themes/components/icon-button";
 import * as TextField from "@radix-ui/themes/components/text-field";
 import { startTransition, useRef } from "react";
 
-import { SvgIcon } from "../domains/icon";
+import { SvgIcon } from "../icon";
 
 import { useSearch } from "./SearchProvider";
 
