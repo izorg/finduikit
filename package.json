@@ -14,7 +14,7 @@
     "lint": "yarn lint-format && yarn lint-types && yarn lint-js && yarn lint-css",
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-format": "prettier --cache --check --ignore-unknown .",
-    "lint-js": "eslint --cache \"**/*.{js,json,ts,tsx,yml}\"",
+    "lint-js": "eslint --cache",
     "lint-types": "tsc",
     "start": "next start",
     "update-ui-kits": "node --import tsx --loader esm-loader-css scripts/update-ui-kits.ts"
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.21.0",
+    "@eslint/json": "0.10.0",
     "@graphql-codegen/cli": "5.0.5",
     "@graphql-codegen/near-operation-file-preset": "3.0.0",
     "@graphql-codegen/typescript-operations": "4.5.1",
@@ -46,6 +47,7 @@
     "eslint-config-flat-gitignore": "2.1.0",
     "eslint-config-prettier": "10.0.2",
     "eslint-plugin-compat": "6.0.2",
+    "eslint-plugin-jsonc": "2.19.1",
     "eslint-plugin-perfectionist": "4.9.0",
     "eslint-plugin-prettier": "5.2.3",
     "eslint-plugin-react-compiler": "19.0.0-beta-21e868a-20250216",

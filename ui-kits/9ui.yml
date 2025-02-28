@@ -1,4 +1,4 @@
-$schema: "../domains/ui-kit/ui-kit-schema.json"
+$schema: ../domains/ui-kit/ui-kit-schema.json
 description: Beautiful, customizable components built with Base UI and Tailwind CSS.
 frameworks:
   - React

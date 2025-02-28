@@ -3,6 +3,7 @@ import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier";
 import compat from "eslint-plugin-compat";
+import jsonc from "eslint-plugin-jsonc";
 import perfectionist from "eslint-plugin-perfectionist";
 import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -14,12 +15,8 @@ import ts from "typescript-eslint";
 export default ts.config(
   gitignore(),
   {
-    ignores: [".next"],
+    ignores: [".next", ".yarn"],
     name: "ignore",
-  },
-  {
-    extends: [perfectionist.configs["recommended-alphabetical"]],
-    name: "Perfectionist",
   },
   {
     extends: [
@@ -27,6 +24,7 @@ export default ts.config(
       ts.configs.recommended,
       compat.configs["flat/recommended"],
       unicorn.configs["recommended"],
+      perfectionist.configs["recommended-alphabetical"],
     ],
     files: ["**/*.js", "**/*.ts?(x)"],
     languageOptions: {
@@ -96,6 +94,18 @@ export default ts.config(
           prefer: "type-imports",
         },
       ],
+    },
+  },
+  {
+    extends: [
+      jsonc.configs["flat/recommended-with-json"],
+      jsonc.configs["flat/prettier"],
+    ],
+    files: ["**/*.json"],
+    ignores: ["package.json", "tsconfig.json"],
+    name: "JSON",
+    rules: {
+      "jsonc/sort-keys": ["error", "asc"],
     },
   },
   {

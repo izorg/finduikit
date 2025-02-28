@@ -1,26 +1,24 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/ui-kit.schema.json",
-  "title": "UI Kit",
-  "type": "object",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "properties": {
     "description": {
       "type": "string"
     },
     "figma": {
-      "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "type": "string"
     },
     "frameworks": {
-      "type": "array",
       "items": {
-        "type": "string",
-        "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
-      }
+        "enum": ["Angular", "React", "Solid", "Svelte", "Vue"],
+        "type": "string"
+      },
+      "type": "array"
     },
     "homepage": {
-      "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "type": "string"
     },
     "image": {
       "type": "string"
@@ -29,13 +27,15 @@
       "type": "string"
     },
     "repository": {
-      "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "type": "string"
     },
     "storybook": {
-      "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "type": "string"
     }
   },
-  "required": ["homepage", "name", "repository"]
+  "required": ["homepage", "name", "repository"],
+  "title": "UI Kit",
+  "type": "object"
 }
