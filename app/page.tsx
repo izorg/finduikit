@@ -5,7 +5,7 @@ import { type Metadata } from "next";
 
 import { FrameworkSelect, getFrameworkFromParams } from "../domains/framework";
 import { SearchInput } from "../domains/search";
-import { getUiKits, UiKits } from "../domains/ui-kit";
+import { getUiKits, UiKitGrid } from "../domains/ui-kit";
 
 const title = "UI Kits";
 const description = "Explore UI kits for rapid web development";
@@ -65,7 +65,7 @@ const Page = async (props: PageProps) => {
             </Box>
             <FrameworkSelect framework={framework} />
           </Flex>
-          <UiKits uiKits={uiKits} />
+          <UiKitGrid uiKits={uiKits} />
         </main>
       </Flex>
     </Flex>

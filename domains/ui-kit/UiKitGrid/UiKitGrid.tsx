@@ -8,15 +8,15 @@ import { useSearch } from "../../search";
 import type { UiKit } from "../getUiKits";
 import { UiKitCard } from "../UiKitCard";
 
-import styles from "./UiKits.module.css";
+import styles from "./UiKitGrid.module.css";
 
-type UiKitsProps = {
+type UiKitGridProps = {
   uiKits: UiKit[];
 };
 
 const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
 
-export const UiKits = (props: UiKitsProps) => {
+export const UiKitGrid = (props: UiKitGridProps) => {
   const { search } = useSearch();
 
   const fuse = useMemo(
