@@ -30,6 +30,9 @@ export default ts.config(
     files: ["**/*.js", "**/*.ts?(x)"],
     languageOptions: {
       globals: globals.node,
+      parserOptions: {
+        warnOnUnsupportedTypeScriptVersion: false,
+      },
     },
     name: "JavaScript & TypeScript",
     plugins: {

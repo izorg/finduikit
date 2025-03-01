@@ -40,7 +40,7 @@
     "@graphql-codegen/typescript-operations": "4.5.1",
     "@next/bundle-analyzer": "15.2.0",
     "@next/eslint-plugin-next": "15.2.0",
-    "@types/node": "22.13.7",
+    "@types/node": "22.13.8",
     "@types/react": "19.0.10",
     "babel-plugin-react-compiler": "19.0.0-beta-e1e972c-20250221",
     "eslint": "9.21.0",
@@ -72,7 +72,6 @@
     "typescript": "5.8.2",
     "typescript-eslint": "8.25.0",
     "typescript-plugin-css-modules": "5.1.0",
-    "webpack": "5.98.0",
     "yaml": "2.7.0",
     "zod": "3.24.2"
   }
