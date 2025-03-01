@@ -5,9 +5,7 @@ import { parse } from "yaml";
 
 import { uiKitSchema, type UiKitSchema } from "./uiKitSchema";
 
-export type UiKit = {
-  key: string;
-} & UiKitSchema;
+export type UiKit = UiKitSchema;
 
 export const getUiKits = async () => {
   const entries = await fs.promises.readdir(
@@ -17,7 +15,7 @@ export const getUiKits = async () => {
     },
   );
 
-  const fileEntries: [key: string, buffer: Buffer][] = await Promise.all(
+  return await Promise.all(
     entries
       .filter((dirent) => dirent.isFile())
       .map(async (dirent) => {
@@ -25,12 +23,7 @@ export const getUiKits = async () => {
           path.join(dirent.parentPath, dirent.name),
         );
 
-        return [dirent.name.slice(0, dirent.name.lastIndexOf(".")), buffer];
+        return uiKitSchema.parse(parse(buffer.toString()));
       }),
   );
-
-  return fileEntries.map(([key, buffer]) => ({
-    key,
-    ...uiKitSchema.parse(parse(buffer.toString())),
-  }));
 };
