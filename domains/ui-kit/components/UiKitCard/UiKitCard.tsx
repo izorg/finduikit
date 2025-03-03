@@ -8,9 +8,9 @@ import { Separator } from "@radix-ui/themes/components/separator";
 import { Text } from "@radix-ui/themes/components/text";
 import Image from "next/image";
 
-import { FrameworkList } from "../../framework";
-import { Resources } from "../../resource";
-import type { UiKit } from "../getUiKits";
+import { FrameworkList } from "../../../framework";
+import { Resources } from "../../../resource";
+import type { UiKit } from "../../getUiKits";
 
 import styles from "./UiKitCard.module.css";
 

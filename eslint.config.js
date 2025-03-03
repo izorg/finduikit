@@ -101,6 +101,15 @@ export default ts.config(
     },
   },
   {
+    files: ["**/scripts/*.ts"],
+    name: "Scripts",
+    settings: {
+      browserslistOpts: {
+        env: "script",
+      },
+    },
+  },
+  {
     extends: [
       jsonc.configs["flat/recommended-with-json"],
       jsonc.configs["flat/prettier"],

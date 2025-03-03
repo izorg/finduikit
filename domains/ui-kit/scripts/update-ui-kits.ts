@@ -5,9 +5,9 @@ import { ESLint } from "eslint";
 import prettier from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
-import { fetchGitHubRepositoryData } from "../data-handlers/fetchGitHubRepositoryData";
-import { Framework } from "../domains/framework";
-import { uiKitSchema } from "../domains/ui-kit";
+import { fetchGitHubRepositoryData } from "../../../data-handlers/fetchGitHubRepositoryData";
+import { Framework } from "../../framework";
+import { uiKitSchema } from "../uiKitSchema";
 
 const CHECK_COUNT = 1;
 
