@@ -10,6 +10,7 @@
     "build": "next build",
     "dev": "next dev",
     "format": "prettier --cache --ignore-unknown --write .",
+    "generate-json-schema": "node --import tsx --loader esm-loader-css domains/ui-kit/scripts/generate-json-schema.ts",
     "graphql-codegen": "graphql-codegen",
     "lint": "yarn lint-unused && yarn lint-format && yarn lint-types && yarn lint-js && yarn lint-css",
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
@@ -73,6 +74,7 @@
     "typescript-eslint": "8.26.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.7.0",
-    "zod": "3.24.2"
+    "zod": "3.24.2",
+    "zod-to-json-schema": "3.24.3"
   }
 }

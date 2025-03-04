@@ -1,42 +1,45 @@
 {
-  "$id": "https://finduikit.com/UiKit.schema.json",
-  "$schema": "https://json-schema.org/draft-07/schema",
-  "additionalProperties": false,
-  "properties": {
-    "description": {
-      "type": "string"
-    },
-    "figma": {
-      "format": "uri",
-      "type": "string"
-    },
-    "frameworks": {
-      "items": {
-        "enum": ["Angular", "React", "Solid", "Svelte", "Vue"],
-        "type": "string"
+  "$ref": "#/definitions/UiKit",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "UiKit": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "figma": {
+          "format": "uri",
+          "type": "string"
+        },
+        "frameworks": {
+          "items": {
+            "enum": ["Angular", "React", "Solid", "Svelte", "Vue"],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "homepage": {
+          "format": "uri",
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "repository": {
+          "format": "uri",
+          "type": "string"
+        },
+        "storybook": {
+          "format": "uri",
+          "type": "string"
+        }
       },
-      "type": "array"
-    },
-    "homepage": {
-      "format": "uri",
-      "type": "string"
-    },
-    "image": {
-      "type": "string"
-    },
-    "name": {
-      "type": "string"
-    },
-    "repository": {
-      "format": "uri",
-      "type": "string"
-    },
-    "storybook": {
-      "format": "uri",
-      "type": "string"
+      "required": ["homepage", "name", "repository"],
+      "type": "object"
     }
-  },
-  "required": ["homepage", "name", "repository"],
-  "title": "UI Kit",
-  "type": "object"
+  }
 }
