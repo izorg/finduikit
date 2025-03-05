@@ -9,7 +9,7 @@ export const generateMetadata = getGenerateMetadata({ unstyled: true });
 const HomePage = async (props: PageProps) => {
   const { params } = props;
 
-  return <Page params={params} />;
+  return <Page params={params} unstyled />;
 };
 
 export default HomePage;
