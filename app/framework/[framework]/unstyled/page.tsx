@@ -1,9 +1,9 @@
-import { Framework, frameworkParam } from "../../../domains/framework";
+import { Framework, frameworkParam } from "../../../../domains/framework";
 import {
   getGenerateMetadata,
   Page,
   type PageProps,
-} from "../../../domains/page";
+} from "../../../../domains/page";
 
 export const dynamicParams = false;
 
@@ -12,12 +12,12 @@ export const generateStaticParams = async () =>
     framework: frameworkParam[framework],
   }));
 
-export const generateMetadata = getGenerateMetadata({ unstyled: false });
+export const generateMetadata = getGenerateMetadata({ unstyled: true });
 
 const FrameworkPage = async (props: Omit<PageProps, "unstyled">) => {
   const { params } = props;
 
-  return <Page params={params} />;
+  return <Page params={params} unstyled />;
 };
 
 export default FrameworkPage;

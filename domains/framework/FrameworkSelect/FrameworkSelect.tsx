@@ -1,7 +1,7 @@
 "use client";
 
 import * as Select from "@radix-ui/themes/components/select";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import { Framework } from "../index";
 
@@ -9,33 +9,41 @@ import { frameworkParam } from "./frameworkParam";
 
 type FrameworkSelectProps = {
   framework?: Framework;
-} & Omit<Select.RootProps, "children" | "onValueChange" | "size" | "value">;
+} & Select.TriggerProps;
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
+
+const unstyledSlug = "/unstyled";
 
 export const FrameworkSelect = (props: FrameworkSelectProps) => {
   const { framework, ...rest } = props;
 
+  const pathname = usePathname();
   const router = useRouter();
 
   return (
     <Select.Root
-      {...rest}
       onValueChange={(value) => {
         const frameworkValue = Object.values(Framework).find(
           (option) => option === value,
         );
 
+        const unstyled = pathname.endsWith(unstyledSlug);
+
         if (frameworkValue) {
-          router.push(`/framework/${frameworkParam[frameworkValue]}`);
+          router.push(
+            `/framework/${frameworkParam[frameworkValue]}${unstyled ? unstyledSlug : ""}`,
+          );
         } else {
-          router.push("/");
+          router.push(unstyled ? unstyledSlug : "/");
         }
       }}
       size="3"
       value={framework ?? ANY_FRAMEWORK_LABEL}
     >
-      <Select.Trigger>{framework ?? ANY_FRAMEWORK_LABEL}</Select.Trigger>
+      <Select.Trigger {...rest}>
+        {framework ?? ANY_FRAMEWORK_LABEL}
+      </Select.Trigger>
       <Select.Content>
         <Select.Item value={ANY_FRAMEWORK_LABEL}>
           {ANY_FRAMEWORK_LABEL}
