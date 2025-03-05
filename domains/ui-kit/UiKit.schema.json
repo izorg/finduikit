@@ -36,6 +36,9 @@
         "storybook": {
           "format": "uri",
           "type": "string"
+        },
+        "unstyled": {
+          "type": "boolean"
         }
       },
       "required": ["homepage", "name", "repository"],

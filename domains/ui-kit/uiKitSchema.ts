@@ -12,6 +12,7 @@ export const uiKitSchema = z.object({
   name: z.string(),
   repository: z.string().url(),
   storybook: z.string().url().optional(),
+  unstyled: z.boolean().optional(),
 });
 
 export type UiKitSchema = z.infer<typeof uiKitSchema>;

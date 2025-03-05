@@ -5,3 +5,4 @@ frameworks:
 homepage: https://react-restart.github.io/ui/
 name: Restart UI
 repository: https://github.com/react-restart/ui
+unstyled: true

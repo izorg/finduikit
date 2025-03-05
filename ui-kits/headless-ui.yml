@@ -7,3 +7,4 @@ homepage: https://headlessui.com/
 image: https://repository-images.githubusercontent.com/295992065/4bd52200-0043-11eb-9711-359a3854d4dc
 name: Headless UI
 repository: https://github.com/tailwindlabs/headlessui
+unstyled: true
