@@ -1,0 +1,8 @@
+description: A collection of libraries and tools that help you build adaptive,
+  accessible, and robust user experiences.
+frameworks:
+  - React
+homepage: https://react-spectrum.adobe.com/react-aria/index.html
+name: React Aria
+repository: https://github.com/adobe/react-spectrum
+unstyled: true

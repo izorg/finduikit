@@ -21,21 +21,17 @@ export const getGenerateMetadata =
   async (props: Pick<PageProps, "params">): Promise<Metadata> => {
     const { params } = props;
 
-    let title = defaultTitle;
-
     const framework = await getFrameworkFromParams(params);
 
-    if (framework) {
-      title = `${title} for ${framework}`;
-    }
-
-    if (unstyled) {
-      title = `Unstyled ${title}`;
-    }
+    const title = [
+      unstyled && "Unstyled ",
+      defaultTitle,
+      framework && ` for ${framework}`,
+    ];
 
     return {
       description,
-      title,
+      title: title.filter(Boolean).join(""),
     };
   };
 
@@ -54,23 +50,24 @@ export const Page = async (props: PageProps) => {
     uiKits = uiKits.filter((uiKit) => uiKit.unstyled);
   }
 
-  let title = defaultTitle;
-
-  if (framework) {
-    title = `${title} for ${framework}`;
-  }
-
-  if (unstyled) {
-    title = `Unstyled ${title}`;
-  }
-
   return (
     <Flex direction="column" gap="8" p="4">
       <Flex asChild direction="column" gap="2">
         <Text align="center" asChild>
           <header>
-            <Text asChild size="9" weight="medium">
-              <h1>{title}</h1>
+            <Text
+              asChild
+              size={{
+                initial: "6",
+                sm: "9",
+              }}
+              weight="medium"
+            >
+              <h1>
+                {unstyled && <>Unstyled </>}
+                {defaultTitle}
+                {Boolean(framework) && <> for {framework}</>}
+              </h1>
             </Text>
             <Text as="p">{description}</Text>
           </header>
