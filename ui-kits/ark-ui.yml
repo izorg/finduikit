@@ -1,5 +1,6 @@
-description: Build your design system with React, Svelte, Vue, and Solid.
-  Powered by State Machines
+description: A headless UI library with over 45+ components designed to build
+  reusable, scalable Design Systems that works for a wide range of JS
+  frameworks.
 frameworks:
   - React
   - Solid

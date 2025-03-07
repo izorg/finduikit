@@ -6,6 +6,7 @@ import prettier from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 import { fetchGitHubRepositoryData } from "../../../data-handlers/fetchGitHubRepositoryData";
+import { fetchHomepageData } from "../../../data-handlers/fetchHomepageData";
 import { getDescription } from "../../../data-handlers/getDescription";
 import { getFrameworks } from "../../../data-handlers/getFrameworks";
 import { getImage } from "../../../data-handlers/getImage";
@@ -22,12 +23,15 @@ const updateUiKit = async (dirent: Dirent) => {
 
   const data = uiKitSchema.parse(parseYaml(buffer.toString()));
 
-  const github = await fetchGitHubRepositoryData(data.repository);
+  const [github, homepage] = await Promise.all([
+    fetchGitHubRepositoryData(data.repository),
+    fetchHomepageData(data.homepage),
+  ]);
 
   const output = stringifyYaml(
     uiKitSchema.parse({
       ...data,
-      description: getDescription({ data, github }),
+      description: getDescription({ data, github, homepage }),
       frameworks: getFrameworks({ data, github }),
       image: getImage({ data, github }),
     }),

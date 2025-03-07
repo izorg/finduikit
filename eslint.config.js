@@ -1,7 +1,7 @@
 import js from "@eslint/js";
 import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
-import prettier from "eslint-config-prettier";
+import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsonc from "eslint-plugin-jsonc";
@@ -101,7 +101,7 @@ export default ts.config(
     },
   },
   {
-    files: ["**/scripts/*.ts"],
+    files: ["**/scripts/*.ts", "data-handlers/**"],
     name: "Scripts",
     settings: {
       browserslistOpts: {

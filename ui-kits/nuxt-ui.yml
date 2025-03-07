@@ -1,4 +1,7 @@
-description: The Intuitive Vue UI Library powered by Reka UI & Tailwind CSS.
+description: It provides everything related to UI when building your Nuxt app.
+  This includes components, icons, colors, dark mode but also keyboard
+  shortcuts. Built with Headless UI and Tailwind CSS, published under MIT
+  License.
 figma: https://www.figma.com/community/file/1436401057300493073
 frameworks:
   - Vue

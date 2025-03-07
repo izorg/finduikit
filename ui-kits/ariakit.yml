@@ -1,4 +1,5 @@
-description: Toolkit with accessible components, styles, and examples for your next web app
+description: Lower-level component library for building accessible higher-level
+  UI libraries, design systems and web applications with React.
 frameworks:
   - React
 homepage: https://ariakit.org/
