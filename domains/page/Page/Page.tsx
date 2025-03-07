@@ -80,15 +80,15 @@ export const Page = async (props: PageProps) => {
               initial: "column",
               xs: "row",
             }}
-            gap="2"
-            maxWidth="520px"
+            gap="4"
+            maxWidth="640px"
             mx="auto"
             width="100%"
           >
             <Box asChild flexGrow="1">
               <SearchInput />
             </Box>
-            <Flex gap="2">
+            <Flex gap="4">
               <Box asChild flexGrow="1">
                 <FrameworkSelect framework={framework} />
               </Box>
