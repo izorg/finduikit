@@ -17,6 +17,7 @@ const config: CodegenConfig = {
     "github.generated.ts": {
       config: {
         avoidOptionals: true,
+        enumsAsConst: true,
         scalars: {
           URI: "string",
         },
