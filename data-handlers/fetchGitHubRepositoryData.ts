@@ -1,8 +1,6 @@
 import type { GetGitHubRepositoryQuery } from "./fetchGitHubRepositoryData.generated";
 
-export const fetchGitHubRepositoryData = async (
-  url: string,
-): Promise<Exclude<GetGitHubRepositoryQuery["resource"], null>> => {
+export const fetchGitHubRepositoryData = async (url: string) => {
   const response = await fetch("https://api.github.com/graphql", {
     body: JSON.stringify({
       query: /* GraphQL */ `
@@ -37,5 +35,9 @@ export const fetchGitHubRepositoryData = async (
 
   const json = await response.json();
 
-  return json.data.resource;
+  const data = json.data as GetGitHubRepositoryQuery;
+
+  if (data.resource?.__typename === "Repository") {
+    return data.resource;
+  }
 };
