@@ -1,0 +1,10 @@
+description: Radix Primitives is an open-source UI component library for
+  building high-quality, accessible design systems and web apps. Maintained by
+  @workos.
+frameworks:
+  - React
+homepage: https://www.radix-ui.com/primitives
+image: https://repository-images.githubusercontent.com/273499522/81e7eb24-e83c-4f48-9400-e8cd9212cabd
+name: Radix Primitives
+repository: https://github.com/radix-ui/primitives
+unstyled: true
