@@ -10,6 +10,9 @@ export const fetchGitHubRepositoryData = async (url: string) => {
             ... on Repository {
               description
               homepageUrl
+              issues(states: [OPEN]) {
+                totalCount
+              }
               openGraphImageUrl
               repositoryTopics(first: 100) {
                 nodes {
@@ -18,6 +21,7 @@ export const fetchGitHubRepositoryData = async (url: string) => {
                   }
                 }
               }
+              stargazerCount
             }
           }
         }

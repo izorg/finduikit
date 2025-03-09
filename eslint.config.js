@@ -101,6 +101,15 @@ export default ts.config(
     },
   },
   {
+    files: ["app/**/route.ts"],
+    name: "Server",
+    settings: {
+      browserslistOpts: {
+        env: "server",
+      },
+    },
+  },
+  {
     files: ["**/scripts/*.ts", "data-handlers/**"],
     name: "Scripts",
     settings: {

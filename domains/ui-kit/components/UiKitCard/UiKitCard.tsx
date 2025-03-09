@@ -11,6 +11,7 @@ import Image from "next/image";
 import { FrameworkList } from "../../../framework";
 import { Resources } from "../../../resource";
 import type { UiKit } from "../../getUiKits";
+import { UiKitStats } from "../UiKitStats";
 
 import styles from "./UiKitCard.module.css";
 
@@ -43,9 +44,10 @@ export const UiKitCard = (props: UiKitCardProps) => {
             </Box>
           </Inset>
         )}
-        <Text asChild size="2">
-          <Box flexGrow="1">{uiKit.description}</Box>
-        </Text>
+        <Box asChild flexGrow="1">
+          <Text size="2">{uiKit.description}</Text>
+        </Box>
+        <UiKitStats uiKit={uiKit} />
         <Separator size="4" />
         <Resources uiKit={uiKit} />
       </Flex>

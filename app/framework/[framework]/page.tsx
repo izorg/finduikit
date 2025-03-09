@@ -5,6 +5,8 @@ import {
   type PageProps,
 } from "../../../domains/page";
 
+export const revalidate = 3600;
+
 export const dynamicParams = false;
 
 export const generateStaticParams = async () =>

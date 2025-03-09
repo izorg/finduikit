@@ -1,5 +1,7 @@
 import { getGenerateMetadata, Page } from "../../domains/page";
 
+export const revalidate = 3600;
+
 type PageProps = {
   params: Promise<{ framework?: string }>;
 };
