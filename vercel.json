@@ -1,8 +1,0 @@
-{
-  "crons": [
-    {
-      "path": "/api/update-ui-kits",
-      "schedule": "0 * * * *"
-    }
-  ]
-}
