@@ -8,6 +8,8 @@ import { SearchInput } from "../../search";
 import { getUiKits, UiKitGrid } from "../../ui-kit";
 import { UnstyledSwitch } from "../UnstyledSwitch";
 
+import styles from "./Page.module.css";
+
 const defaultTitle = "UI Kits";
 const description = "Explore UI kits for rapid web development";
 
@@ -51,8 +53,8 @@ export const Page = async (props: PageProps) => {
   }
 
   return (
-    <Flex direction="column" gap="8" p="4">
-      <Flex asChild direction="column" gap="2">
+    <Flex direction="column" gap="4" py="4">
+      <Flex asChild direction="column" gap="2" px="4">
         <Text align="center" asChild>
           <header>
             <Text
@@ -75,30 +77,32 @@ export const Page = async (props: PageProps) => {
       </Flex>
       <Flex asChild direction="column" gap="4">
         <main>
-          <Flex
-            direction={{
-              initial: "column",
-              xs: "row",
-            }}
-            gap="4"
-            maxWidth="640px"
-            mx="auto"
-            width="100%"
-          >
-            <Box asChild flexGrow="1">
-              <SearchInput />
-            </Box>
-            <Flex gap="4">
+          <Box className={styles.search} p="4" position="sticky" top="0">
+            <Flex
+              direction={{
+                initial: "column",
+                xs: "row",
+              }}
+              gap="4"
+              maxWidth="640px"
+              mx="auto"
+              width="100%"
+            >
               <Box asChild flexGrow="1">
-                <FrameworkSelect framework={framework} />
+                <SearchInput />
               </Box>
-              <Text as="label" size="3" style={{ alignSelf: "center" }}>
-                <Flex gap="2">
-                  <UnstyledSwitch size="2" /> Unstyled
-                </Flex>
-              </Text>
+              <Flex gap="4">
+                <Box asChild flexGrow="1">
+                  <FrameworkSelect framework={framework} />
+                </Box>
+                <Text as="label" size="3" style={{ alignSelf: "center" }}>
+                  <Flex gap="2">
+                    <UnstyledSwitch size="2" /> Unstyled
+                  </Flex>
+                </Text>
+              </Flex>
             </Flex>
-          </Flex>
+          </Box>
           <UiKitGrid uiKits={uiKits} />
         </main>
       </Flex>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Box } from "@radix-ui/themes/components/box";
 import { Grid } from "@radix-ui/themes/components/grid";
 import Fuse from "fuse.js";
 import { useMemo } from "react";
@@ -37,19 +38,21 @@ export const UiKitGrid = (props: UiKitGridProps) => {
   }, [search, fuse, props.uiKits]);
 
   return (
-    <Grid
-      asChild
-      className={styles.grid}
-      columns="repeat(auto-fill, minmax(240px, 1fr))"
-      gap="4"
-    >
-      <ul>
-        {uiKits.map((item) => (
-          <li key={item.name}>
-            <UiKitCard uiKit={item} />
-          </li>
-        ))}
-      </ul>
-    </Grid>
+    <Box px="4">
+      <Grid
+        asChild
+        className={styles.grid}
+        columns="repeat(auto-fill, minmax(240px, 1fr))"
+        gap="4"
+      >
+        <ul>
+          {uiKits.map((item) => (
+            <li key={item.name}>
+              <UiKitCard uiKit={item} />
+            </li>
+          ))}
+        </ul>
+      </Grid>
+    </Box>
   );
 };

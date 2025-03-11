@@ -1,0 +1,5 @@
+.search {
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-4);
+  z-index: 1;
+}
