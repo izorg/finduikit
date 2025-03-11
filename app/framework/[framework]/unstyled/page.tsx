@@ -5,7 +5,7 @@ import {
   type PageProps,
 } from "../../../../domains/page";
 
-export const revalidate = 3600;
+export const revalidate = 86_400;
 
 export const dynamicParams = false;
 
