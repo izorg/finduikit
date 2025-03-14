@@ -37,7 +37,15 @@ export const UiKitCard = (props: UiKitCardProps) => {
         </Flex>
         {uiKit.image && (
           <Inset asChild side="x">
-            <Box asChild className={styles.imageContainer} position="relative">
+            <Box
+              asChild
+              className={styles.imageContainer}
+              display={{
+                initial: "none",
+                xs: "block",
+              }}
+              position="relative"
+            >
               <a href={uiKit.homepage} target="_blank">
                 <Image alt="" className={styles.image} fill src={uiKit.image} />
               </a>
