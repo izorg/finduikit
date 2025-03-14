@@ -3,23 +3,20 @@
 import * as Select from "@radix-ui/themes/components/select";
 import { usePathname, useRouter } from "next/navigation";
 
-import { Framework } from "../index";
+import { Framework } from "../Framework";
+import { useFrameworkFromParams } from "../useFrameworkFromParams";
 
 import { frameworkParam } from "./frameworkParam";
-
-type FrameworkSelectProps = {
-  framework?: Framework;
-} & Select.TriggerProps;
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
 
 const unstyledSlug = "/unstyled";
 
-export const FrameworkSelect = (props: FrameworkSelectProps) => {
-  const { framework, ...rest } = props;
-
+export const FrameworkSelect = (props: Select.TriggerProps) => {
   const pathname = usePathname();
   const router = useRouter();
+
+  const framework = useFrameworkFromParams();
 
   return (
     <Select.Root
@@ -41,7 +38,7 @@ export const FrameworkSelect = (props: FrameworkSelectProps) => {
       size="3"
       value={framework ?? ANY_FRAMEWORK_LABEL}
     >
-      <Select.Trigger {...rest}>
+      <Select.Trigger {...props}>
         {framework ?? ANY_FRAMEWORK_LABEL}
       </Select.Trigger>
       <Select.Content>

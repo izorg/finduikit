@@ -1,16 +1,9 @@
-import { cache } from "react";
-
-import type { DynamicRouteParams } from "../next";
+import { type useParams } from "next/navigation";
 
 import { Framework } from "./Framework";
 import { frameworkParam } from "./FrameworkSelect";
 
-export const getFrameworkFromParams = cache(
-  async (params: DynamicRouteParams) => {
-    const { framework } = await params;
-
-    return Object.values(Framework).find(
-      (option) => frameworkParam[option] === framework,
-    );
-  },
-);
+export const getFrameworkFromParams = (params: ReturnType<typeof useParams>) =>
+  Object.values(Framework).find(
+    (option) => frameworkParam[option] === params.framework,
+  );

@@ -3,7 +3,10 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
-import { FrameworkSelect, getFrameworkFromParams } from "../../framework";
+import {
+  FrameworkSelect,
+  getFrameworkFromParamsPromise,
+} from "../../framework";
 import { SearchInput } from "../../search";
 import { getUiKits, UiKitGrid } from "../../ui-kit";
 import { UnstyledSwitch } from "../UnstyledSwitch";
@@ -23,7 +26,7 @@ export const getGenerateMetadata =
   async (props: Pick<PageProps, "params">): Promise<Metadata> => {
     const { params } = props;
 
-    const framework = await getFrameworkFromParams(params);
+    const framework = await getFrameworkFromParamsPromise(params);
 
     const title = [
       unstyled && "Unstyled ",
@@ -40,7 +43,7 @@ export const getGenerateMetadata =
 export const Page = async (props: PageProps) => {
   const { params, unstyled } = props;
 
-  const framework = await getFrameworkFromParams(params);
+  const framework = await getFrameworkFromParamsPromise(params);
 
   let uiKits = await getUiKits();
 
@@ -93,7 +96,7 @@ export const Page = async (props: PageProps) => {
               </Box>
               <Flex gap="4">
                 <Box asChild flexGrow="1">
-                  <FrameworkSelect framework={framework} />
+                  <FrameworkSelect />
                 </Box>
                 <Text as="label" size="3" style={{ alignSelf: "center" }}>
                   <Flex gap="2">
