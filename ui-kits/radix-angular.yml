@@ -1,0 +1,9 @@
+description: Unstyled, accessible components for building high-quality design
+  systems and web apps in Angular.
+frameworks:
+  - Angular
+homepage: https://www.radix-ng.com/
+name: Radix Angular
+repository: https://github.com/radix-ng/primitives/
+storybook: https://sb-primitives.radix-ng.com/
+unstyled: true
