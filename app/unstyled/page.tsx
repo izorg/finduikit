@@ -4,8 +4,8 @@ export const revalidate = 3600;
 
 export const generateMetadata = getGenerateMetadata({ unstyled: true });
 
-const HomePage = (props: Omit<PageProps, "unstyled">) => (
+const UnstyledPage = (props: Omit<PageProps, "unstyled">) => (
   <Page {...props} unstyled />
 );
 
-export default HomePage;
+export default UnstyledPage;

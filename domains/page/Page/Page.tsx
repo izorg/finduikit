@@ -10,7 +10,7 @@ import {
 import type { DynamicRouteParams } from "../../next";
 import { SearchInput } from "../../search";
 import { getUiKits, UiKitGrid } from "../../ui-kit";
-import { UnstyledSwitch } from "../UnstyledSwitch";
+import { UnstyledSwitch } from "../../unstyled";
 
 import styles from "./Page.module.css";
 

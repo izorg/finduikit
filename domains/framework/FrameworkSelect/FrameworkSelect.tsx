@@ -1,8 +1,9 @@
 "use client";
 
 import * as Select from "@radix-ui/themes/components/select";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
+import { useUnstyledSlug } from "../../unstyled";
 import { Framework } from "../Framework";
 import { useFrameworkFromParams } from "../useFrameworkFromParams";
 
@@ -10,13 +11,11 @@ import { frameworkParam } from "./frameworkParam";
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
 
-const unstyledSlug = "/unstyled";
-
 export const FrameworkSelect = (props: Select.TriggerProps) => {
-  const pathname = usePathname();
   const router = useRouter();
 
   const framework = useFrameworkFromParams();
+  const unstyledSlug = useUnstyledSlug();
 
   return (
     <Select.Root
@@ -25,15 +24,11 @@ export const FrameworkSelect = (props: Select.TriggerProps) => {
           (option) => option === value,
         );
 
-        const unstyled = pathname.endsWith(unstyledSlug);
+        const frameworkSlug: "" | `/framework/${string}` = frameworkValue
+          ? `/framework/${frameworkParam[frameworkValue]}`
+          : "";
 
-        if (frameworkValue) {
-          router.push(
-            `/framework/${frameworkParam[frameworkValue]}${unstyled ? unstyledSlug : ""}`,
-          );
-        } else {
-          router.push(unstyled ? unstyledSlug : "/");
-        }
+        router.push(`${frameworkSlug}${unstyledSlug}` || "/");
       }}
       size="3"
       value={framework ?? ANY_FRAMEWORK_LABEL}
