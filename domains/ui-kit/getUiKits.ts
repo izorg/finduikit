@@ -1,11 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { signInAnonymously } from "firebase/auth";
 import { collection, getDocs } from "firebase/firestore/lite";
 import { parse } from "yaml";
 
-import { firebaseGetAuth, firebaseGetFirestore } from "../firebase";
+import { firebaseGetFirestore, firebaseSignIn } from "../firebase";
 
 import {
   type UiKitDynamicDataSchema,
@@ -23,7 +22,7 @@ export const getUiKits = async () => {
     },
   );
 
-  await signInAnonymously(firebaseGetAuth());
+  await firebaseSignIn();
 
   const uiKitsCollection = collection(
     firebaseGetFirestore(),
