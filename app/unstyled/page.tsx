@@ -1,17 +1,11 @@
-import { getGenerateMetadata, Page } from "../../domains/page";
+import { getGenerateMetadata, Page, type PageProps } from "../../domains/page";
 
 export const revalidate = 3600;
 
-type PageProps = {
-  params: Promise<{ framework?: string }>;
-};
-
 export const generateMetadata = getGenerateMetadata({ unstyled: true });
 
-const HomePage = async (props: PageProps) => {
-  const { params } = props;
-
-  return <Page params={params} unstyled />;
-};
+const HomePage = (props: Omit<PageProps, "unstyled">) => (
+  <Page {...props} unstyled />
+);
 
 export default HomePage;

@@ -9,17 +9,15 @@ export const revalidate = 3600;
 
 export const dynamicParams = false;
 
-export const generateStaticParams = async () =>
+export const generateStaticParams = () =>
   Object.values(Framework).map((framework) => ({
     framework: frameworkParam[framework],
   }));
 
 export const generateMetadata = getGenerateMetadata({ unstyled: true });
 
-const FrameworkPage = async (props: Omit<PageProps, "unstyled">) => {
-  const { params } = props;
-
-  return <Page params={params} unstyled />;
-};
+const FrameworkPage = (props: Omit<PageProps, "unstyled">) => (
+  <Page {...props} unstyled />
+);
 
 export default FrameworkPage;

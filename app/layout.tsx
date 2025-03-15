@@ -12,7 +12,7 @@ export const viewport: Viewport = {
   colorScheme: "light dark",
 };
 
-const RootLayout = async (props: PropsWithChildren) => {
+const RootLayout = (props: PropsWithChildren) => {
   const { children } = props;
 
   return (

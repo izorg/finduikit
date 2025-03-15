@@ -7,6 +7,7 @@ import {
   FrameworkSelect,
   getFrameworkFromParamsPromise,
 } from "../../framework";
+import type { DynamicRouteParams } from "../../next";
 import { SearchInput } from "../../search";
 import { getUiKits, UiKitGrid } from "../../ui-kit";
 import { UnstyledSwitch } from "../UnstyledSwitch";
@@ -17,7 +18,7 @@ const defaultTitle = "UI Kits";
 const description = "Explore UI kits for rapid web development";
 
 export type PageProps = {
-  params: Promise<{ framework?: string }>;
+  params: DynamicRouteParams;
   unstyled?: boolean;
 };
 
