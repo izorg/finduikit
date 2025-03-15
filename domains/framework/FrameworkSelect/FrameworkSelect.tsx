@@ -7,7 +7,7 @@ import { useUnstyledSlug } from "../../unstyled";
 import { Framework } from "../Framework";
 import { useFrameworkFromParams } from "../useFrameworkFromParams";
 
-import { frameworkParam } from "./frameworkParam";
+import { frameworkParams } from "./frameworkParams";
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
 
@@ -25,7 +25,7 @@ export const FrameworkSelect = (props: Select.TriggerProps) => {
         );
 
         const frameworkSlug: "" | `/framework/${string}` = frameworkValue
-          ? `/framework/${frameworkParam[frameworkValue]}`
+          ? `/framework/${frameworkParams[frameworkValue]}`
           : "";
 
         router.push(`${frameworkSlug}${unstyledSlug}` || "/");

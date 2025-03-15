@@ -3,7 +3,7 @@
 import { Switch, type SwitchProps } from "@radix-ui/themes/components/switch";
 import { useRouter } from "next/navigation";
 
-import { frameworkParam, useFrameworkFromParams } from "../../framework";
+import { frameworkParams, useFrameworkFromParams } from "../../framework";
 import { useUnstyledSlug } from "../useUnstyledSlug";
 
 export const UnstyledSwitch = (props: SwitchProps) => {
@@ -20,7 +20,7 @@ export const UnstyledSwitch = (props: SwitchProps) => {
       checked={checked}
       onCheckedChange={() => {
         const frameworkSlug: "" | `/framework/${string}` = framework
-          ? `/framework/${frameworkParam[framework]}`
+          ? `/framework/${frameworkParams[framework]}`
           : "";
 
         router.push(`${frameworkSlug}${checked ? "" : "/unstyled"}` || "/");

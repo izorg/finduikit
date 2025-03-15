@@ -9,7 +9,7 @@ import {
 
 import { Framework } from "../index";
 
-export const frameworkIcon: Record<Framework, SimpleIcon> = {
+export const frameworkIcons: Record<Framework, SimpleIcon> = {
   [Framework.Angular]: siAngular,
   [Framework.React]: siReact,
   [Framework.Solid]: siSolid,

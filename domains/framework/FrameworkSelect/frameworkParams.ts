@@ -1,6 +1,6 @@
 import { Framework } from "../index";
 
-export const frameworkParam: Record<Framework, string> = {
+export const frameworkParams: Record<Framework, string> = {
   [Framework.Angular]: "angular",
   [Framework.React]: "react",
   [Framework.Solid]: "solid",

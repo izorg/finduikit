@@ -5,8 +5,8 @@ import { Tooltip } from "@radix-ui/themes/components/tooltip";
 import { SvgIcon } from "../../icon";
 import { Framework } from "../Framework";
 
-import { frameworkColor } from "./frameworkColor";
-import { frameworkIcon } from "./frameworkIcon";
+import { frameworkColors } from "./frameworkColors";
+import { frameworkIcons } from "./frameworkIcons";
 
 import styles from "./FrameworkList.module.css";
 
@@ -37,11 +37,11 @@ export const FrameworkList = (props: FrameworkListProps) => {
             <Tooltip content={framework}>
               <IconButton
                 asChild
-                color={frameworkColor[framework]}
+                color={frameworkColors[framework]}
                 variant="ghost"
               >
                 <a href={frameworkLink[framework]} target="_blank">
-                  <SvgIcon path={frameworkIcon[framework].path} />
+                  <SvgIcon path={frameworkIcons[framework].path} />
                 </a>
               </IconButton>
             </Tooltip>

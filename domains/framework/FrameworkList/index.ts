@@ -1,3 +1,3 @@
-export * from "./frameworkColor";
-export * from "./frameworkIcon";
+export * from "./frameworkColors";
+export * from "./frameworkIcons";
 export * from "./FrameworkList";

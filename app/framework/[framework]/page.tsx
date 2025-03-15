@@ -1,4 +1,4 @@
-import { Framework, frameworkParam } from "../../../domains/framework";
+import { Framework, frameworkParams } from "../../../domains/framework";
 import {
   getGenerateMetadata,
   Page,
@@ -11,7 +11,7 @@ export const dynamicParams = false;
 
 export const generateStaticParams = () =>
   Object.values(Framework).map((framework) => ({
-    framework: frameworkParam[framework],
+    framework: frameworkParams[framework],
   }));
 
 export const generateMetadata = getGenerateMetadata({ unstyled: false });

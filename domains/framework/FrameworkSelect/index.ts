@@ -1,2 +1,2 @@
-export * from "./frameworkParam";
+export * from "./frameworkParams";
 export * from "./FrameworkSelect";
