@@ -10,41 +10,44 @@ import {
 import type { DynamicRouteParams } from "../../next";
 import { SearchInput } from "../../search";
 import { getUiKits, UiKitGrid } from "../../ui-kit";
-import { UnstyledSwitch } from "../../unstyled";
+import { getUnstyledFromParamsPromise, UnstyledSwitch } from "../../unstyled";
 
 import styles from "./Page.module.css";
 
 const defaultTitle = "UI Kits";
 const description = "Explore UI kits for rapid web development";
 
-export type PageProps = {
+type PageProps = {
   params: DynamicRouteParams;
-  unstyled?: boolean;
 };
 
-export const getGenerateMetadata =
-  ({ unstyled }: Pick<PageProps, "unstyled">) =>
-  async (props: Pick<PageProps, "params">): Promise<Metadata> => {
-    const { params } = props;
+export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
+  const { params } = props;
 
-    const framework = await getFrameworkFromParamsPromise(params);
+  const [framework, unstyled] = await Promise.all([
+    getFrameworkFromParamsPromise(params),
+    getUnstyledFromParamsPromise(params),
+  ]);
 
-    const title = [
-      unstyled && "Unstyled ",
-      defaultTitle,
-      framework && ` for ${framework}`,
-    ];
+  const title = [
+    unstyled && "Unstyled ",
+    defaultTitle,
+    framework && ` for ${framework}`,
+  ];
 
-    return {
-      description,
-      title: title.filter(Boolean).join(""),
-    };
+  return {
+    description,
+    title: title.filter(Boolean).join(""),
   };
+};
 
 export const Page = async (props: PageProps) => {
-  const { params, unstyled } = props;
+  const { params } = props;
 
-  const framework = await getFrameworkFromParamsPromise(params);
+  const [framework, unstyled] = await Promise.all([
+    getFrameworkFromParamsPromise(params),
+    getUnstyledFromParamsPromise(params),
+  ]);
 
   let uiKits = await getUiKits();
 

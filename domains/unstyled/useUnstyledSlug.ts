@@ -1,14 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { getUnstyledSlug } from "./getUnstyledSlug";
+import { useUnstyledFromParams } from "./useUnstyledFromParams";
 
-const unstyledSLug = "/unstyled";
+export const useUnstyledSlug = () => {
+  const unstyled = useUnstyledFromParams();
 
-export const useUnstyledSlug = (): "" | typeof unstyledSLug => {
-  const pathname = usePathname();
-
-  return pathname.endsWith(unstyledSLug) ||
-    pathname.includes(`${unstyledSLug}/`)
-    ? unstyledSLug
-    : "";
+  return getUnstyledSlug(unstyled);
 };

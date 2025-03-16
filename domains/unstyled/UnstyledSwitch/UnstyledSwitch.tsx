@@ -3,27 +3,23 @@
 import { Switch, type SwitchProps } from "@radix-ui/themes/components/switch";
 import { useRouter } from "next/navigation";
 
-import { frameworkParams, useFrameworkFromParams } from "../../framework";
-import { useUnstyledSlug } from "../useUnstyledSlug";
+import { useFrameworkSlug } from "../../framework";
+import { getUnstyledSlug } from "../getUnstyledSlug";
+import { useUnstyledFromParams } from "../useUnstyledFromParams";
 
 export const UnstyledSwitch = (props: SwitchProps) => {
   const router = useRouter();
 
-  const framework = useFrameworkFromParams();
-  const unstyledSlug = useUnstyledSlug();
-
-  const checked = Boolean(unstyledSlug);
+  const frameworkSlug = useFrameworkSlug();
 
   return (
     <Switch
       {...props}
-      checked={checked}
-      onCheckedChange={() => {
-        const frameworkSlug: "" | `/framework/${string}` = framework
-          ? `/framework/${frameworkParams[framework]}`
-          : "";
+      checked={useUnstyledFromParams()}
+      onCheckedChange={(checked) => {
+        const slug = [frameworkSlug, getUnstyledSlug(checked)].filter(Boolean);
 
-        router.push(`${frameworkSlug}${checked ? "" : "/unstyled"}` || "/");
+        router.push(`/${slug.join("/")}`);
       }}
     />
   );
