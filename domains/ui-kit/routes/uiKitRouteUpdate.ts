@@ -1,7 +1,6 @@
 import fs, { type Dirent } from "node:fs";
 import path from "node:path";
 
-import { signInAnonymously } from "firebase/auth";
 import {
   collection,
   doc,
@@ -16,11 +15,10 @@ import { z } from "zod";
 import { fetchGitHubRepositoryData } from "../../../data-handlers/fetchGitHubRepositoryData";
 import { getIssues } from "../../../data-handlers/getIssues";
 import { getStars } from "../../../data-handlers/getStars";
-import { firebaseGetAuth, firebaseGetFirestore } from "../../firebase";
+import { firebaseGetFirestore, firebaseSignIn } from "../../firebase";
 import { uiKitDynamicDataSchema } from "../uiKitDynamicDataSchema";
 import { uiKitSchema } from "../uiKitSchema";
 
-const auth = firebaseGetAuth();
 const firestore = firebaseGetFirestore();
 
 const CHECK_COUNT = Number.parseInt(process.env.CHECK_COUNT ?? "", 10) || 1;
@@ -57,7 +55,7 @@ export const uiKitRouteUpdate = async (request: Request) => {
     notFound();
   }
 
-  await signInAnonymously(auth);
+  await firebaseSignIn();
 
   const uiKitCacheCollection = collection(
     firestore,
