@@ -8,8 +8,6 @@ declare global {
 
 export const firebaseGetApp = () => {
   if (!globalThis.app) {
-    console.log("=== app ===");
-
     globalThis.app = initializeApp({
       credential: admin.credential.cert(
         JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY),

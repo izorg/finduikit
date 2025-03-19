@@ -66,10 +66,8 @@ export const uiKitRouteUpdate = async (request: Request) => {
     checkCache = Object.fromEntries(
       snapshot.docs.map((doc) => [doc.id, doc.data()]),
     );
-  } catch (error) {
+  } catch {
     checkCache = {};
-
-    console.log("=== catch ===", error);
   }
 
   const entries = await fs.promises.readdir(
