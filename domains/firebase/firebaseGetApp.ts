@@ -1,16 +1,21 @@
-import { type FirebaseApp, initializeApp } from "firebase/app";
+import admin from "firebase-admin";
+import { type App, initializeApp } from "firebase-admin/app";
 
-let app: FirebaseApp | undefined;
+declare global {
+  // eslint-disable-next-line no-var
+  var app: App | undefined;
+}
 
 export const firebaseGetApp = () => {
-  if (!app) {
-    app = initializeApp({
-      apiKey: process.env.FIREBASE_API_KEY,
-      appId: process.env.FIREBASE_APP_ID,
-      authDomain: "finduikit.firebaseapp.com",
-      projectId: "finduikit",
+  if (!globalThis.app) {
+    console.log("=== app ===");
+
+    globalThis.app = initializeApp({
+      credential: admin.credential.cert(
+        JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY),
+      ),
     });
   }
 
-  return app;
+  return globalThis.app;
 };

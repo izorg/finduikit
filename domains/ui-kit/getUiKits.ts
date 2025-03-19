@@ -1,10 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { collection, getDocs } from "firebase/firestore/lite";
 import { parse } from "yaml";
 
-import { firebaseGetFirestore, firebaseSignIn } from "../firebase";
+import { firebaseGetFirestore } from "../firebase";
 
 import {
   type UiKitDynamicDataSchema,
@@ -22,12 +21,9 @@ export const getUiKits = async () => {
     },
   );
 
-  await firebaseSignIn();
+  const firestore = firebaseGetFirestore();
 
-  const uiKitsCollection = collection(
-    firebaseGetFirestore(),
-    "ui-kits",
-  ).withConverter({
+  const uiKitsCollection = firestore.collection("ui-kits").withConverter({
     fromFirestore: (snapshot) => uiKitDynamicDataSchema.parse(snapshot.data()),
     toFirestore: (data) => uiKitDynamicDataSchema.parse(data),
   });
@@ -35,7 +31,7 @@ export const getUiKits = async () => {
   let uiKitsDynamicData: Partial<Record<string, UiKitDynamicDataSchema>>;
 
   try {
-    const snapshot = await getDocs(uiKitsCollection);
+    const snapshot = await uiKitsCollection.get();
 
     // eslint-disable-next-line compat/compat
     uiKitsDynamicData = Object.fromEntries(
