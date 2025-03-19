@@ -1,0 +1,38 @@
+import { Box } from "@radix-ui/themes/components/box";
+import { Flex } from "@radix-ui/themes/components/flex";
+import { Text } from "@radix-ui/themes/components/text";
+
+import { FrameworkSelect } from "../../framework";
+import { SearchInput } from "../../search";
+import { UnstyledSwitch } from "../../unstyled";
+
+import styles from "./PageTopBar.module.css";
+
+export const PageTopBar = () => (
+  <Box className={styles.topBar} p="4" position="sticky" top="0">
+    <Flex
+      direction={{
+        initial: "column",
+        xs: "row",
+      }}
+      gap="4"
+      maxWidth="640px"
+      mx="auto"
+      width="100%"
+    >
+      <Box asChild flexGrow="1">
+        <SearchInput />
+      </Box>
+      <Flex gap="4">
+        <Box asChild flexGrow="1">
+          <FrameworkSelect />
+        </Box>
+        <Text as="label" size="3" style={{ alignSelf: "center" }}>
+          <Flex gap="2">
+            <UnstyledSwitch size="2" /> Unstyled
+          </Flex>
+        </Text>
+      </Flex>
+    </Flex>
+  </Box>
+);

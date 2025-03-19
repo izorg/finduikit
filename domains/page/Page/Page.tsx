@@ -1,18 +1,12 @@
-import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
-import {
-  FrameworkSelect,
-  getFrameworkFromParamsPromise,
-} from "../../framework";
+import { getFrameworkFromParamsPromise } from "../../framework";
 import type { DynamicRouteParams } from "../../next";
-import { SearchInput } from "../../search";
 import { getUiKits, UiKitGrid } from "../../ui-kit";
-import { getUnstyledFromParamsPromise, UnstyledSwitch } from "../../unstyled";
-
-import styles from "./Page.module.css";
+import { getUnstyledFromParamsPromise } from "../../unstyled";
+import { PageTopBar } from "../PageTopBar";
 
 const defaultTitle = "UI Kits";
 const description = "Explore UI kits for rapid web development";
@@ -84,32 +78,7 @@ export const Page = async (props: PageProps) => {
       </Flex>
       <Flex asChild direction="column" gap="4">
         <main>
-          <Box className={styles.search} p="4" position="sticky" top="0">
-            <Flex
-              direction={{
-                initial: "column",
-                xs: "row",
-              }}
-              gap="4"
-              maxWidth="640px"
-              mx="auto"
-              width="100%"
-            >
-              <Box asChild flexGrow="1">
-                <SearchInput />
-              </Box>
-              <Flex gap="4">
-                <Box asChild flexGrow="1">
-                  <FrameworkSelect />
-                </Box>
-                <Text as="label" size="3" style={{ alignSelf: "center" }}>
-                  <Flex gap="2">
-                    <UnstyledSwitch size="2" /> Unstyled
-                  </Flex>
-                </Text>
-              </Flex>
-            </Flex>
-          </Box>
+          <PageTopBar />
           <UiKitGrid uiKits={uiKits} />
         </main>
       </Flex>
