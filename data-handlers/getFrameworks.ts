@@ -31,6 +31,10 @@ export const getFrameworks = ({
   data: UiKitSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
 }) => {
+  if (data.name === "Ant Design Vue") {
+    return [Framework.Vue];
+  }
+
   if (data.frameworks?.length === 0) {
     return [];
   }
