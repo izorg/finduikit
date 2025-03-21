@@ -6,6 +6,7 @@ import Fuse from "fuse.js";
 import { useMemo } from "react";
 
 import { useSearch } from "../../../search";
+import { Sorting } from "../../../sorting";
 import type { UiKit } from "../../getUiKits";
 import { UiKitCard } from "../UiKitCard";
 
@@ -18,7 +19,7 @@ type UiKitGridProps = {
 const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
 
 export const UiKitGrid = (props: UiKitGridProps) => {
-  const { search } = useSearch();
+  const { search, sorting } = useSearch();
 
   const fuse = useMemo(
     () =>
@@ -30,12 +31,16 @@ export const UiKitGrid = (props: UiKitGridProps) => {
   );
 
   const uiKits = useMemo(() => {
-    if (!search) {
-      return props.uiKits;
+    if (search) {
+      return fuse.search(search).map(({ item }) => item);
     }
 
-    return fuse.search(search).map(({ item }) => item);
-  }, [search, fuse, props.uiKits]);
+    if (sorting === Sorting.ByStars) {
+      return props.uiKits.toSorted((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
+    }
+
+    return props.uiKits;
+  }, [search, sorting, props.uiKits, fuse]);
 
   return (
     <Box px="4">

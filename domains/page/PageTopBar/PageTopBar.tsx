@@ -4,6 +4,7 @@ import { Text } from "@radix-ui/themes/components/text";
 
 import { FrameworkSelect } from "../../framework";
 import { SearchInput } from "../../search";
+import { SortingSelect } from "../../sorting";
 import { UnstyledSwitch } from "../../unstyled";
 
 import styles from "./PageTopBar.module.css";
@@ -16,14 +17,24 @@ export const PageTopBar = () => (
         xs: "row",
       }}
       gap="4"
-      maxWidth="640px"
+      maxWidth="800px"
       mx="auto"
       width="100%"
+      wrap={{
+        initial: "wrap",
+        sm: "nowrap",
+      }}
     >
       <Box asChild flexGrow="1">
         <SearchInput />
       </Box>
-      <Flex gap="4">
+      <Flex
+        gap="4"
+        wrap={{
+          initial: "wrap",
+          xs: "nowrap",
+        }}
+      >
         <Box asChild flexGrow="1">
           <FrameworkSelect />
         </Box>
@@ -32,6 +43,7 @@ export const PageTopBar = () => (
             <UnstyledSwitch size="2" /> Unstyled
           </Flex>
         </Text>
+        <SortingSelect />
       </Flex>
     </Flex>
   </Box>
