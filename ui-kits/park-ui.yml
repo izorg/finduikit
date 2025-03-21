@@ -1,6 +1,10 @@
 description: Beautifully designed components built with Ark UI and Panda CSS
   that work with a variety of JS frameworks.
 figma: https://www.figma.com/community/file/1268615283036362769
+frameworks:
+  - React
+  - Solid
+  - Vue
 homepage: https://park-ui.com/
 image: https://park-ui.com/opengraph-image.png?6ef21ceed77a7a06
 name: Park UI

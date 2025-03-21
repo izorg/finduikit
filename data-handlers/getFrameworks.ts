@@ -24,6 +24,12 @@ const getFrameworksFromTopics = (topics: string[]) => {
   return frameworks.length > 0 ? [...new Set(frameworks)] : undefined;
 };
 
+const hardcodedFrameworksByName: Partial<Record<string, Framework[]>> = {
+  "Ant Design Vue": [Framework.Vue],
+  daisyUI: [],
+  "Park UI": [Framework.React, Framework.Solid, Framework.Vue],
+};
+
 export const getFrameworks = ({
   data,
   github,
@@ -31,12 +37,10 @@ export const getFrameworks = ({
   data: UiKitSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
 }) => {
-  if (data.name === "Ant Design Vue") {
-    return [Framework.Vue];
-  }
+  const hardcodedFrameworks = hardcodedFrameworksByName[data.name];
 
-  if (data.frameworks?.length === 0) {
-    return [];
+  if (hardcodedFrameworks) {
+    return hardcodedFrameworks;
   }
 
   const topics = github?.repositoryTopics.nodes
