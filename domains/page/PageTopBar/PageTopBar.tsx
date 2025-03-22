@@ -16,7 +16,8 @@ export const PageTopBar = () => (
         initial: "column",
         xs: "row",
       }}
-      gap="4"
+      gapX="4"
+      gapY="2"
       maxWidth="800px"
       mx="auto"
       width="100%"
@@ -29,7 +30,9 @@ export const PageTopBar = () => (
         <SearchInput />
       </Box>
       <Flex
-        gap="4"
+        align="center"
+        gapX="4"
+        gapY="2"
         wrap={{
           initial: "wrap",
           xs: "nowrap",
@@ -38,7 +41,7 @@ export const PageTopBar = () => (
         <Box asChild flexGrow="1">
           <FrameworkSelect />
         </Box>
-        <Text as="label" size="3" style={{ alignSelf: "center" }}>
+        <Text as="label" size="3">
           <Flex gap="2">
             <UnstyledSwitch size="2" /> Unstyled
           </Flex>
