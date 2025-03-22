@@ -6,6 +6,7 @@ import compat from "eslint-plugin-compat";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsonc from "eslint-plugin-jsonc";
 import perfectionist from "eslint-plugin-perfectionist";
+import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
@@ -13,6 +14,9 @@ import yml from "eslint-plugin-yml";
 import globals from "globals";
 import ts from "typescript-eslint";
 
+/**
+ * Run `npx @eslint/config-inspector` to visualise the config
+ */
 export default ts.config(
   gitignore(),
   {
@@ -25,6 +29,10 @@ export default ts.config(
       ts.configs.recommended,
       compat.configs["flat/recommended"],
       unicorn.configs["recommended"],
+      react.configs.flat.recommended,
+      react.configs.flat["jsx-runtime"],
+      reactHooks.configs["recommended-latest"],
+      reactCompiler.configs.recommended,
       perfectionist.configs["recommended-alphabetical"],
     ],
     files: ["**/*.js", "**/*.ts?(x)"],
@@ -37,8 +45,6 @@ export default ts.config(
     name: "JavaScript & TypeScript",
     plugins: {
       "@next/next": next,
-      "react-compiler": reactCompiler,
-      "react-hooks": reactHooks,
     },
     rules: {
       ...next.configs.recommended.rules,
@@ -58,10 +64,6 @@ export default ts.config(
           ],
         },
       ],
-
-      "react-compiler/react-compiler": "error",
-
-      ...reactHooks.configs.recommended.rules,
 
       "perfectionist/sort-imports": [
         "error",
@@ -85,6 +87,9 @@ export default ts.config(
     },
     settings: {
       lintAllEsApis: true,
+      react: {
+        version: "detect",
+      },
     },
   },
   {

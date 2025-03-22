@@ -40,7 +40,11 @@ export const FrameworkList = (props: FrameworkListProps) => {
                 color={frameworkColors[framework]}
                 variant="ghost"
               >
-                <a href={frameworkLink[framework]} target="_blank">
+                <a
+                  href={frameworkLink[framework]}
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <SvgIcon path={frameworkIcons[framework].path} />
                 </a>
               </IconButton>

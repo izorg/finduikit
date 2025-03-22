@@ -28,7 +28,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
         <Flex align="center" gap="3">
           <Heading as="h2" size={{ initial: "5", sm: "4" }} weight="medium">
             <Link asChild color="gray" highContrast underline="hover">
-              <a href={uiKit.homepage} target="_blank">
+              <a href={uiKit.homepage} rel="noreferrer" target="_blank">
                 {uiKit.name}
               </a>
             </Link>
@@ -46,7 +46,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
               }}
               position="relative"
             >
-              <a href={uiKit.homepage} target="_blank">
+              <a href={uiKit.homepage} rel="noreferrer" target="_blank">
                 <Image alt="" className={styles.image} fill src={uiKit.image} />
               </a>
             </Box>
