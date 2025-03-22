@@ -38,9 +38,7 @@ export const PageTopBar = () => (
           xs: "nowrap",
         }}
       >
-        <Box asChild flexGrow="1">
-          <FrameworkSelect />
-        </Box>
+        <FrameworkSelect />
         <Text as="label" size="3">
           <Flex gap="2">
             <UnstyledSwitch size="2" /> Unstyled

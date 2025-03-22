@@ -25,7 +25,14 @@ export const SortingSelect = (props: Select.TriggerProps) => {
       size="3"
       value={sorting}
     >
-      <Select.Trigger aria-label="Sort" {...props}>
+      <Select.Trigger
+        aria-label="Sort"
+        {...props}
+        style={{
+          minWidth: 120,
+          ...props.style,
+        }}
+      >
         {sortingLabels[sorting]}
       </Select.Trigger>
       <Select.Content>

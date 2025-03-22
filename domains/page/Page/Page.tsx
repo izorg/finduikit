@@ -9,7 +9,8 @@ import { getUnstyledFromParamsPromise } from "../../unstyled";
 import { PageTopBar } from "../PageTopBar";
 
 const defaultTitle = "UI Kits";
-const description = "Explore UI kits for rapid web development";
+const description =
+  "Discover a curated collection of web UI kits with high-quality component libraries and templates for developers";
 
 type PageProps = {
   params: DynamicRouteParams;
