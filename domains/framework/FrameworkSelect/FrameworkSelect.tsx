@@ -1,5 +1,6 @@
 "use client";
 
+import { Box } from "@radix-ui/themes/components/box";
 import * as Select from "@radix-ui/themes/components/select";
 import { useRouter } from "next/navigation";
 
@@ -10,7 +11,11 @@ import { useFrameworkFromParams } from "../useFrameworkFromParams";
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
 
-export const FrameworkSelect = (props: Select.TriggerProps) => {
+export const FrameworkSelect = (
+  props: Pick<Select.RootProps, "size"> & Select.TriggerProps,
+) => {
+  const { size, ...triggerProps } = props;
+
   const router = useRouter();
 
   const unstyledSlug = useUnstyledSlug();
@@ -30,19 +35,17 @@ export const FrameworkSelect = (props: Select.TriggerProps) => {
 
         router.push(`/${slug.join("/")}`);
       }}
-      size="3"
+      size={size}
       value={value}
     >
-      <Select.Trigger
-        aria-label="Select supported framework"
-        {...props}
-        style={{
-          minWidth: 170,
-          ...props.style,
-        }}
-      >
-        {value}
-      </Select.Trigger>
+      <Box asChild minWidth={{ initial: "140px", sm: "170px" }}>
+        <Select.Trigger
+          aria-label="Select supported framework"
+          {...triggerProps}
+        >
+          {value}
+        </Select.Trigger>
+      </Box>
       <Select.Content>
         <Select.Item value={ANY_FRAMEWORK_LABEL}>
           {ANY_FRAMEWORK_LABEL}

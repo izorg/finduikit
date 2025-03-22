@@ -14,7 +14,7 @@ export const PageTopBar = () => (
     <Flex
       direction={{
         initial: "column",
-        xs: "row",
+        sm: "row",
       }}
       gapX="4"
       gapY="2"
@@ -27,7 +27,7 @@ export const PageTopBar = () => (
       }}
     >
       <Box asChild flexGrow="1">
-        <SearchInput />
+        <SearchInput size="3" />
       </Box>
       <Flex
         align="center"
@@ -35,16 +35,16 @@ export const PageTopBar = () => (
         gapY="2"
         wrap={{
           initial: "wrap",
-          xs: "nowrap",
+          sm: "nowrap",
         }}
       >
-        <FrameworkSelect />
-        <Text as="label" size="3">
+        <FrameworkSelect size={{ initial: "2", sm: "3" }} />
+        <Text as="label" size={{ initial: "2", sm: "3" }}>
           <Flex gap="2">
-            <UnstyledSwitch size="2" /> Unstyled
+            <UnstyledSwitch size={{ initial: "1", sm: "2" }} /> Unstyled
           </Flex>
         </Text>
-        <SortingSelect />
+        <SortingSelect size={{ initial: "2", sm: "3" }} />
       </Flex>
     </Flex>
   </Box>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Box } from "@radix-ui/themes/components/box";
 import * as Select from "@radix-ui/themes/components/select";
 
 import { useSearch } from "../../search";
@@ -10,7 +11,11 @@ const sortingLabels: Record<Sorting, string> = {
   [Sorting.ByStars]: "By stars",
 };
 
-export const SortingSelect = (props: Select.TriggerProps) => {
+export const SortingSelect = (
+  props: Pick<Select.RootProps, "size"> & Select.TriggerProps,
+) => {
+  const { size, ...triggerProps } = props;
+
   const { setSorting, sorting } = useSearch();
 
   return (
@@ -22,19 +27,14 @@ export const SortingSelect = (props: Select.TriggerProps) => {
 
         setSorting(sorting);
       }}
-      size="3"
+      size={size}
       value={sorting}
     >
-      <Select.Trigger
-        aria-label="Sort"
-        {...props}
-        style={{
-          minWidth: 120,
-          ...props.style,
-        }}
-      >
-        {sortingLabels[sorting]}
-      </Select.Trigger>
+      <Box asChild minWidth={{ initial: "100px", sm: "120px" }}>
+        <Select.Trigger aria-label="Sort" {...triggerProps}>
+          {sortingLabels[sorting]}
+        </Select.Trigger>
+      </Box>
       <Select.Content>
         {Object.values(Sorting).map((option) => (
           <Select.Item key={option} value={option}>

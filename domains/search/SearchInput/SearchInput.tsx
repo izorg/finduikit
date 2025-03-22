@@ -12,10 +12,7 @@ const placeholder = "Search";
 
 let defaultValue = "";
 
-type SearchInputProps = Omit<
-  TextField.RootProps,
-  "onChange" | "size" | "value"
->;
+type SearchInputProps = Omit<TextField.RootProps, "onChange" | "value">;
 
 export const SearchInput = (props: SearchInputProps) => {
   const { search, setSearch } = useSearch();
@@ -38,7 +35,6 @@ export const SearchInput = (props: SearchInputProps) => {
       }}
       placeholder={placeholder}
       ref={ref}
-      size="3"
       type="search"
     >
       <TextField.Slot>
