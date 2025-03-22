@@ -5,6 +5,7 @@ import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsonc from "eslint-plugin-jsonc";
+import jsxA11y from "eslint-plugin-jsx-a11y";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
@@ -28,11 +29,12 @@ export default ts.config(
       js.configs.recommended,
       ts.configs.recommended,
       compat.configs["flat/recommended"],
-      unicorn.configs["recommended"],
+      jsxA11y.flatConfigs.recommended,
       react.configs.flat.recommended,
       react.configs.flat["jsx-runtime"],
       reactHooks.configs["recommended-latest"],
       reactCompiler.configs.recommended,
+      unicorn.configs["recommended"],
       perfectionist.configs["recommended-alphabetical"],
     ],
     files: ["**/*.js", "**/*.ts?(x)"],
