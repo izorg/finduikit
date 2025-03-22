@@ -46,7 +46,12 @@ export const UiKitCard = (props: UiKitCardProps) => {
               }}
               position="relative"
             >
-              <a href={uiKit.homepage} rel="noreferrer" target="_blank">
+              <a
+                aria-label={uiKit.name}
+                href={uiKit.homepage}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Image alt="" className={styles.image} fill src={uiKit.image} />
               </a>
             </Box>
