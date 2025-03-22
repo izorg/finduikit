@@ -5297,7 +5297,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint-plugin-jsx-a11y@npm:^6":
+"@types/eslint-plugin-jsx-a11y@npm:6.10.0":
   version: 6.10.0
   resolution: "@types/eslint-plugin-jsx-a11y@npm:6.10.0"
   dependencies:
@@ -8320,7 +8320,7 @@ __metadata:
     "@next/third-parties": "npm:15.2.3"
     "@radix-ui/themes": "npm:3.2.1"
     "@sentry/nextjs": "npm:9.8.0"
-    "@types/eslint-plugin-jsx-a11y": "npm:^6"
+    "@types/eslint-plugin-jsx-a11y": "npm:6.10.0"
     "@types/node": "npm:22.13.11"
     "@types/react": "npm:19.0.12"
     babel-plugin-react-compiler: "npm:19.0.0-beta-3229e95-20250315"

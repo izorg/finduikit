@@ -43,7 +43,7 @@
     "@graphql-codegen/typescript-operations": "4.5.1",
     "@next/bundle-analyzer": "15.2.3",
     "@next/eslint-plugin-next": "15.2.3",
-    "@types/eslint-plugin-jsx-a11y": "^6",
+    "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@types/node": "22.13.11",
     "@types/react": "19.0.12",
     "babel-plugin-react-compiler": "19.0.0-beta-3229e95-20250315",
