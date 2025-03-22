@@ -25,7 +25,9 @@ export const SortingSelect = (props: Select.TriggerProps) => {
       size="3"
       value={sorting}
     >
-      <Select.Trigger {...props}>{sortingLabels[sorting]}</Select.Trigger>
+      <Select.Trigger aria-label="Sort" {...props}>
+        {sortingLabels[sorting]}
+      </Select.Trigger>
       <Select.Content>
         {Object.values(Sorting).map((option) => (
           <Select.Item key={option} value={option}>

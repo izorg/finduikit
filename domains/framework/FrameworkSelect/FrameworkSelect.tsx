@@ -33,7 +33,9 @@ export const FrameworkSelect = (props: Select.TriggerProps) => {
       size="3"
       value={value}
     >
-      <Select.Trigger {...props}>{value}</Select.Trigger>
+      <Select.Trigger aria-label="Select supported framework" {...props}>
+        {value}
+      </Select.Trigger>
       <Select.Content>
         <Select.Item value={ANY_FRAMEWORK_LABEL}>
           {ANY_FRAMEWORK_LABEL}

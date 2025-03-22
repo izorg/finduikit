@@ -29,7 +29,12 @@ export const Resources = (props: ResourcesProps) => {
             <li>
               <Tooltip content="Homepage">
                 <IconButton asChild variant="ghost">
-                  <a href={uiKit.homepage} rel="noreferrer" target="_blank">
+                  <a
+                    aria-label="Homepage"
+                    href={uiKit.homepage}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     <SvgIcon path={mdiWeb} />
                   </a>
                 </IconButton>
@@ -38,7 +43,12 @@ export const Resources = (props: ResourcesProps) => {
             <li>
               <Tooltip content="GitHub">
                 <IconButton asChild color="gray" highContrast variant="ghost">
-                  <a href={uiKit.repository} rel="noreferrer" target="_blank">
+                  <a
+                    aria-label="GitHub"
+                    href={uiKit.repository}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     <SvgIcon path={siGithub.path} />
                   </a>
                 </IconButton>
@@ -48,7 +58,12 @@ export const Resources = (props: ResourcesProps) => {
               <li>
                 <Tooltip content="Storybook">
                   <IconButton asChild color="ruby" variant="ghost">
-                    <a href={uiKit.storybook} rel="noreferrer" target="_blank">
+                    <a
+                      aria-label="Storybook"
+                      href={uiKit.storybook}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <SvgIcon path={siStorybook.path} />
                     </a>
                   </IconButton>
@@ -59,7 +74,12 @@ export const Resources = (props: ResourcesProps) => {
               <li>
                 <Tooltip content="Figma">
                   <IconButton asChild color="crimson" variant="ghost">
-                    <a href={uiKit.figma} rel="noreferrer" target="_blank">
+                    <a
+                      aria-label="Figma"
+                      href={uiKit.figma}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <SvgIcon path={siFigma.path} />
                     </a>
                   </IconButton>

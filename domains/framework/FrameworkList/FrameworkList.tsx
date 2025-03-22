@@ -41,6 +41,7 @@ export const FrameworkList = (props: FrameworkListProps) => {
                 variant="ghost"
               >
                 <a
+                  aria-label={framework}
                   href={frameworkLink[framework]}
                   rel="noreferrer"
                   target="_blank"
