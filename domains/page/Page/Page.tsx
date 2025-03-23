@@ -1,12 +1,14 @@
 import { Flex } from "@radix-ui/themes/components/flex";
-import { Text } from "@radix-ui/themes/components/text";
 import { type Metadata } from "next";
 
 import { getFrameworkFromParamsPromise } from "../../framework";
 import type { DynamicRouteParams } from "../../next";
-import { getUiKits, UiKitGrid } from "../../ui-kit";
+import { getUiKits } from "../../ui-kit";
 import { getUnstyledFromParamsPromise } from "../../unstyled";
-import { PageTopBar } from "../PageTopBar";
+
+import { PageFooter } from "./PageFooter";
+import { PageHeader } from "./PageHeader";
+import { PageMain } from "./PageMain";
 
 const defaultTitle = "UI Kits";
 const description =
@@ -56,33 +58,14 @@ export const Page = async (props: PageProps) => {
 
   return (
     <Flex direction="column" gap="4" py="4">
-      <Flex asChild direction="column" gap="2" px="4">
-        <Text align="center" asChild>
-          <header>
-            <Text
-              asChild
-              size={{
-                initial: "6",
-                sm: "9",
-              }}
-              weight="medium"
-            >
-              <h1>
-                {unstyled && <>Unstyled </>}
-                {defaultTitle}
-                {Boolean(framework) && <> for {framework}</>}
-              </h1>
-            </Text>
-            <Text as="p">{description}</Text>
-          </header>
-        </Text>
-      </Flex>
-      <Flex asChild direction="column" gap="4">
-        <main>
-          <PageTopBar />
-          <UiKitGrid uiKits={uiKits} />
-        </main>
-      </Flex>
+      <PageHeader
+        defaultTitle={defaultTitle}
+        description={description}
+        framework={framework}
+        unstyled={unstyled}
+      />
+      <PageMain uiKits={uiKits} />
+      <PageFooter />
     </Flex>
   );
 };
