@@ -12,7 +12,7 @@ import { PageMain } from "./PageMain";
 
 const defaultTitle = "UI Kits";
 const description =
-  "Discover a curated collection of web UI kits with high-quality component libraries and templates for developers";
+  "Discover a curated collection of web UI kits with high-quality components and templates for developers";
 
 type PageProps = {
   params: DynamicRouteParams;
