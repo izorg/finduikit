@@ -18,7 +18,12 @@ export const UiKitSuggestIconButton = () => {
     <Dialog.Root onOpenChange={setOpen} open={open}>
       <Tooltip content="Suggest a UI kit">
         <Dialog.Trigger>
-          <IconButton radius="full" size="4" variant="surface">
+          <IconButton
+            aria-label="Suggest a UI kit"
+            radius="full"
+            size="4"
+            variant="surface"
+          >
             <SvgIcon path={mdiPlus} />
           </IconButton>
         </Dialog.Trigger>
