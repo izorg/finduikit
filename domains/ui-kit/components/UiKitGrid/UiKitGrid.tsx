@@ -1,6 +1,7 @@
 "use client";
 
 import { Box } from "@radix-ui/themes/components/box";
+import { Flex } from "@radix-ui/themes/components/flex";
 import { Grid } from "@radix-ui/themes/components/grid";
 import Fuse from "fuse.js";
 import { useMemo } from "react";
@@ -9,6 +10,7 @@ import { useSearch } from "../../../search";
 import { Sorting } from "../../../sorting";
 import type { UiKit } from "../../getUiKits";
 import { UiKitCard } from "../UiKitCard";
+import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
 
 import styles from "./UiKitGrid.module.css";
 
@@ -42,6 +44,16 @@ export const UiKitGrid = (props: UiKitGridProps) => {
     return props.uiKits;
   }, [search, sorting, props.uiKits, fuse]);
 
+  if (uiKits.length === 0) {
+    return (
+      <Flex align="center" asChild justify="center">
+        <Box p="4">
+          <UiKitSuggestIconButton />
+        </Box>
+      </Flex>
+    );
+  }
+
   return (
     <Box px="4">
       <Grid
@@ -56,6 +68,13 @@ export const UiKitGrid = (props: UiKitGridProps) => {
               <UiKitCard uiKit={item} />
             </li>
           ))}
+          <Flex align="center" asChild justify="center">
+            <Box asChild p="4">
+              <li key="suugest-ui-kit">
+                <UiKitSuggestIconButton />
+              </li>
+            </Box>
+          </Flex>
         </ul>
       </Grid>
     </Box>

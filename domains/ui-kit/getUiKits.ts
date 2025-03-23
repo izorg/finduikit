@@ -33,7 +33,6 @@ export const getUiKits = async () => {
   try {
     const snapshot = await uiKitsCollection.get();
 
-    // eslint-disable-next-line compat/compat
     uiKitsDynamicData = Object.fromEntries(
       snapshot.docs.map((doc) => [doc.id, doc.data()]),
     );

@@ -21,7 +21,7 @@ import ts from "typescript-eslint";
 export default ts.config(
   gitignore(),
   {
-    ignores: [".next", ".yarn"],
+    ignores: [".yarn"],
     name: "ignore",
   },
   {
@@ -89,6 +89,7 @@ export default ts.config(
     },
     settings: {
       lintAllEsApis: true,
+      polyfills: ["Object.fromEntries"],
       react: {
         version: "detect",
       },
