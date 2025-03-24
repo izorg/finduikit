@@ -1,11 +1,18 @@
 import { type CodegenConfig } from "@graphql-codegen/cli";
 
+const scalars = {
+  DateTime: "string",
+  URI: "string",
+};
+
 const config: CodegenConfig = {
   documents: ["data-handlers/fetchGitHubRepositoryData.ts"],
   generates: {
     "data-handlers/": {
       config: {
         avoidOptionals: true,
+        enumsAsConst: true,
+        scalars,
       },
       plugins: ["typescript-operations"],
       preset: "near-operation-file",
@@ -18,9 +25,7 @@ const config: CodegenConfig = {
       config: {
         avoidOptionals: true,
         enumsAsConst: true,
-        scalars: {
-          URI: "string",
-        },
+        scalars,
       },
       plugins: ["typescript"],
     },

@@ -8,6 +8,14 @@ export const fetchGitHubRepositoryData = async (url: string) => {
           resource(url: $url) {
             __typename
             ... on Repository {
+              defaultBranchRef {
+                target {
+                  ... on Commit {
+                    __typename
+                    committedDate
+                  }
+                }
+              }
               description
               homepageUrl
               issues(states: [OPEN]) {

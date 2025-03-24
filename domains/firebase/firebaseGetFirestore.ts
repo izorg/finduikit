@@ -2,12 +2,19 @@ import { type Firestore, getFirestore } from "firebase-admin/firestore";
 
 import { firebaseGetApp } from "./firebaseGetApp";
 
-let firestore: Firestore | undefined;
+declare global {
+  // eslint-disable-next-line no-var
+  var firestore: Firestore | undefined;
+}
 
 export const firebaseGetFirestore = () => {
-  if (!firestore) {
-    firestore = getFirestore(firebaseGetApp());
+  if (!globalThis.firestore) {
+    globalThis.firestore = getFirestore(firebaseGetApp());
+
+    globalThis.firestore.settings({
+      ignoreUndefinedProperties: true,
+    });
   }
 
-  return firestore;
+  return globalThis.firestore;
 };

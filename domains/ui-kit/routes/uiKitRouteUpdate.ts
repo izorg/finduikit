@@ -9,8 +9,8 @@ import { z } from "zod";
 import { fetchGitHubRepositoryData } from "../../../data-handlers/fetchGitHubRepositoryData";
 import { getIssues } from "../../../data-handlers/getIssues";
 import { getStars } from "../../../data-handlers/getStars";
+import { getUpdatedAt } from "../../../data-handlers/getUpdatedAt";
 import { firebaseGetFirestore } from "../../firebase";
-import { uiKitDynamicDataSchema } from "../uiKitDynamicDataSchema";
 import { uiKitSchema } from "../uiKitSchema";
 
 const firestore = firebaseGetFirestore();
@@ -29,15 +29,22 @@ const updateUiKit = async (dirent: Dirent) => {
   const github = await fetchGitHubRepositoryData(fileData.repository);
 
   if (github) {
-    await firestore
-      .collection("ui-kits")
-      .doc(dirent.name)
-      .set(
-        uiKitDynamicDataSchema.parse({
-          issues: getIssues({ github }),
-          stars: getStars({ github }),
-        }),
-      );
+    const data: {
+      issues?: number;
+      stars?: number;
+      updatedAt?: Timestamp;
+    } = {
+      issues: getIssues({ github }),
+      stars: getStars({ github }),
+    };
+
+    const updatedAt = getUpdatedAt({ github });
+
+    if (updatedAt) {
+      data.updatedAt = Timestamp.fromDate(updatedAt);
+    }
+
+    await firestore.collection("ui-kits").doc(dirent.name).set(data);
   }
 };
 

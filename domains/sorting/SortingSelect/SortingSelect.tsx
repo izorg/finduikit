@@ -9,6 +9,7 @@ import { Sorting } from "../Sorting";
 const sortingLabels: Record<Sorting, string> = {
   [Sorting.ByName]: "By name",
   [Sorting.ByStars]: "By stars",
+  [Sorting.ByUpdate]: "By update",
 };
 
 export const SortingSelect = (
@@ -30,7 +31,7 @@ export const SortingSelect = (
       size={size}
       value={sorting}
     >
-      <Box asChild minWidth={{ initial: "100px", sm: "120px" }}>
+      <Box asChild minWidth={{ initial: "110px", sm: "130px" }}>
         <Select.Trigger aria-label="Sort" {...triggerProps}>
           {sortingLabels[sorting]}
         </Select.Trigger>

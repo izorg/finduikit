@@ -41,6 +41,12 @@ export const UiKitGrid = (props: UiKitGridProps) => {
       return props.uiKits.toSorted((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
     }
 
+    if (sorting === Sorting.ByUpdate) {
+      return props.uiKits.toSorted(
+        (a, b) => (b.updatedAt?.getTime() ?? 0) - (a.updatedAt?.getTime() ?? 0),
+      );
+    }
+
     return props.uiKits;
   }, [search, sorting, props.uiKits, fuse]);
 
