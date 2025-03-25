@@ -1,15 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { Timestamp } from "firebase-admin/firestore";
 import { parse } from "yaml";
 
-import { firebaseGetFirestore } from "../firebase";
+import { firebaseGetFirestoreUiKitsCollection } from "../firebase";
 
-import {
-  type UiKitDynamicDataSchema,
-  uiKitDynamicDataSchema,
-} from "./uiKitDynamicDataSchema";
+import { type UiKitDynamicDataSchema } from "./uiKitDynamicDataSchema";
 import { uiKitSchema, type UiKitSchema } from "./uiKitSchema";
 
 export type UiKit = UiKitDynamicDataSchema & UiKitSchema;
@@ -22,22 +18,7 @@ export const getUiKits = async () => {
     },
   );
 
-  const firestore = firebaseGetFirestore();
-
-  const uiKitsCollection = firestore.collection("ui-kits").withConverter({
-    fromFirestore: (snapshot) => {
-      const { updatedAt, ...data } = snapshot.data();
-
-      if (updatedAt instanceof Timestamp) {
-        data.updatedAt = updatedAt.toDate();
-      }
-
-      return uiKitDynamicDataSchema.parse(data);
-    },
-    toFirestore: (data) => {
-      return uiKitDynamicDataSchema.parse(data);
-    },
-  });
+  const uiKitsCollection = firebaseGetFirestoreUiKitsCollection();
 
   let uiKitsDynamicData: Partial<Record<string, UiKitDynamicDataSchema>>;
 

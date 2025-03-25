@@ -10,12 +10,10 @@ import { getIssues } from "../../../data-handlers/getIssues";
 import { getStars } from "../../../data-handlers/getStars";
 import { getUpdatedAt } from "../../../data-handlers/getUpdatedAt";
 import {
-  firebaseGetFirestore,
   firebaseGetFirestoreUiKitCacheCollection,
+  firebaseGetFirestoreUiKitsCollection,
 } from "../../firebase";
 import { uiKitSchema } from "../uiKitSchema";
-
-const firestore = firebaseGetFirestore();
 
 const CHECK_COUNT = Number.parseInt(process.env.CHECK_COUNT ?? "", 10) || 1;
 
@@ -42,7 +40,9 @@ const updateUiKit = async (dirent: Dirent) => {
       data.updatedAt = Timestamp.fromDate(updatedAt);
     }
 
-    await firestore.collection("ui-kits").doc(dirent.name).set(data);
+    const uiKitsCollection = firebaseGetFirestoreUiKitsCollection();
+
+    await uiKitsCollection.doc(dirent.name).set(data);
   }
 };
 
