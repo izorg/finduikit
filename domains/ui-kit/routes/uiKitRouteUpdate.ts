@@ -25,24 +25,13 @@ const updateUiKit = async (dirent: Dirent) => {
   const github = await fetchGitHubRepositoryData(fileData.repository);
 
   if (github) {
-    const data: {
-      issues?: number;
-      stars?: number;
-      updatedAt?: Timestamp;
-    } = {
-      issues: getIssues({ github }),
-      stars: getStars({ github }),
-    };
-
-    const updatedAt = getUpdatedAt({ github });
-
-    if (updatedAt) {
-      data.updatedAt = Timestamp.fromDate(updatedAt);
-    }
-
     const uiKitsCollection = firebaseGetFirestoreUiKitsCollection();
 
-    await uiKitsCollection.doc(dirent.name).set(data);
+    await uiKitsCollection.doc(dirent.name).set({
+      issues: getIssues({ github }),
+      stars: getStars({ github }),
+      updatedAt: getUpdatedAt({ github }),
+    });
   }
 };
 
