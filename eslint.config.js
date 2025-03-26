@@ -3,6 +3,7 @@ import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
+import importPlugin from "eslint-plugin-import";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsonc from "eslint-plugin-jsonc";
 import jsxA11y from "eslint-plugin-jsx-a11y";
@@ -13,7 +14,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
 import yml from "eslint-plugin-yml";
 import globals from "globals";
-import ts from "typescript-eslint";
+import * as ts from "typescript-eslint";
 
 /**
  * Run `npx @eslint/config-inspector` to visualise the config
@@ -30,6 +31,8 @@ export default ts.config(
       ts.configs.recommended,
       compat.configs["flat/recommended"],
       jsxA11y.flatConfigs.recommended,
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
       react.configs.flat.recommended,
       react.configs.flat["jsx-runtime"],
       reactHooks.configs["recommended-latest"],
@@ -88,6 +91,10 @@ export default ts.config(
       "unicorn/prevent-abbreviations": "off",
     },
     settings: {
+      "import/resolver": {
+        node: true,
+        typescript: true,
+      },
       lintAllEsApis: true,
       polyfills: ["Object.fromEntries"],
       react: {

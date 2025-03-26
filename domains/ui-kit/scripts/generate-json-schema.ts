@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { ESLint } from "eslint";
-import prettier from "prettier";
+import { format } from "prettier";
 import { zodToJsonSchema } from "zod-to-json-schema";
 
 import { uiKitSchema } from "../uiKitSchema";
@@ -16,7 +16,7 @@ const lintResults = await eslint.lintText(output, {
   filePath,
 });
 const fixedOutput = lintResults[0].output ?? output;
-const formattedOutput = await prettier.format(fixedOutput, {
+const formattedOutput = await format(fixedOutput, {
   filepath: filePath,
 });
 

@@ -2,7 +2,7 @@ import fs, { type Dirent } from "node:fs";
 import path from "node:path";
 
 import { ESLint } from "eslint";
-import prettier from "prettier";
+import { format } from "prettier";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 import { fetchGitHubRepositoryData } from "../../../data-handlers/fetchGitHubRepositoryData";
@@ -40,7 +40,7 @@ const updateUiKit = async (dirent: Dirent) => {
   const lintResults = await eslint.lintText(output, { filePath });
   const fixedOutput = lintResults[0].output ?? output;
 
-  const formattedOutput = await prettier.format(fixedOutput, {
+  const formattedOutput = await format(fixedOutput, {
     filepath: filePath,
   });
 
