@@ -52,6 +52,8 @@ export default ts.config(
       "@next/next": next,
     },
     rules: {
+      "import/no-cycle": "error",
+
       ...next.configs.recommended.rules,
       ...next.configs["core-web-vitals"].rules,
 

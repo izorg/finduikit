@@ -7,7 +7,7 @@ import {
   siVuedotjs,
 } from "simple-icons";
 
-import { Framework } from "../index";
+import { Framework } from "../Framework";
 
 export const frameworkIcons: Record<Framework, SimpleIcon> = {
   [Framework.Angular]: siAngular,
