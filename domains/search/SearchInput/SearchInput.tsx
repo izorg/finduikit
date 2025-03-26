@@ -3,7 +3,7 @@
 import { mdiClose, mdiMagnify } from "@mdi/js";
 import { IconButton } from "@radix-ui/themes/components/icon-button";
 import * as TextField from "@radix-ui/themes/components/text-field";
-import { startTransition, useRef } from "react";
+import { useRef } from "react";
 
 import { SvgIcon } from "../../icon";
 import { useSearch } from "../SearchProvider";
@@ -12,16 +12,16 @@ const placeholder = "Search";
 
 let defaultValue = "";
 
-type SearchInputProps = Omit<TextField.RootProps, "onChange" | "value">;
+export const SearchInput = (props: TextField.RootProps) => {
+  const { onChange, ...rest } = props;
 
-export const SearchInput = (props: SearchInputProps) => {
   const { search, setSearch } = useSearch();
 
   const ref = useRef<HTMLInputElement>(null);
 
   return (
     <TextField.Root
-      {...props}
+      {...rest}
       aria-label={placeholder}
       defaultValue={defaultValue}
       onChange={(event) => {
@@ -29,9 +29,7 @@ export const SearchInput = (props: SearchInputProps) => {
 
         defaultValue = value;
 
-        startTransition(() => {
-          setSearch(value);
-        });
+        onChange?.(event);
       }}
       placeholder={placeholder}
       ref={ref}

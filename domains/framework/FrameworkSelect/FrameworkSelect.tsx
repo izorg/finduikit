@@ -1,43 +1,23 @@
-"use client";
-
 import { Box } from "@radix-ui/themes/components/box";
 import * as Select from "@radix-ui/themes/components/select";
-import { useRouter } from "next/navigation";
 
-import { useUnstyledSlug } from "../../unstyled";
 import { Framework } from "../Framework";
-import { getFrameworkSlug } from "../getFrameworkSlug";
-import { useFrameworkFromParams } from "../useFrameworkFromParams";
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
 
 export const FrameworkSelect = (
-  props: Pick<Select.RootProps, "size"> & Select.TriggerProps,
+  props: Pick<Select.RootProps, "onValueChange" | "size" | "value"> &
+    Select.TriggerProps,
 ) => {
-  const { size, ...triggerProps } = props;
-
-  const router = useRouter();
-
-  const unstyledSlug = useUnstyledSlug();
-
-  const value = useFrameworkFromParams() ?? ANY_FRAMEWORK_LABEL;
+  const {
+    onValueChange,
+    size,
+    value = ANY_FRAMEWORK_LABEL,
+    ...triggerProps
+  } = props;
 
   return (
-    <Select.Root
-      onValueChange={(value) => {
-        const framework = Object.values(Framework).find(
-          (option) => option === value,
-        );
-
-        const frameworkSlug = getFrameworkSlug(framework);
-
-        const slug = [frameworkSlug, unstyledSlug].filter(Boolean);
-
-        router.push(`/${slug.join("/")}`);
-      }}
-      size={size}
-      value={value}
-    >
+    <Select.Root onValueChange={onValueChange} size={size} value={value}>
       <Box asChild minWidth={{ initial: "140px", sm: "170px" }}>
         <Select.Trigger
           aria-label="Select supported framework"
