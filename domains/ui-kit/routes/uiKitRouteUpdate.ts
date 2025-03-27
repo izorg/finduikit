@@ -15,8 +15,6 @@ import {
 } from "../../firebase";
 import { uiKitSchema } from "../uiKitSchema";
 
-const CHECK_COUNT = Number.parseInt(process.env.CHECK_COUNT ?? "", 10) || 1;
-
 const updateUiKit = async (dirent: Dirent) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
   const buffer = await fs.promises.readFile(filePath);
@@ -71,10 +69,16 @@ export const uiKitRouteUpdate = async (request: Request) => {
       ? checkCache[dirent.name].lastUpdated.toMillis()
       : 0;
 
+  const checkCount =
+    Number.parseInt(
+      url.searchParams.get("check-count") ?? process.env.CHECK_COUNT ?? "",
+      10,
+    ) || 1;
+
   const checkEntries = entries
     .filter((dirent) => dirent.isFile())
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
-    .slice(0, CHECK_COUNT);
+    .slice(0, checkCount);
 
   for await (const checkEntry of checkEntries) {
     await updateUiKit(checkEntry);

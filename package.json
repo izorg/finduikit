@@ -10,7 +10,9 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn run build",
     "build": "next build",
-    "dev": "next dev",
+    "dev": "concurrently --names=\"firebase,next\" \"npm run dev-firebase\" \"npm run dev-next\"",
+    "dev-firebase": "npx firebase-tools emulators:start",
+    "dev-next": "next dev",
     "format": "prettier --cache --ignore-unknown --write .",
     "generate-json-schema": "node --import tsx --loader esm-loader-css domains/ui-kit/scripts/generate-json-schema.ts",
     "graphql-codegen": "graphql-codegen",
@@ -50,6 +52,7 @@
     "@types/node": "22.13.13",
     "@types/react": "19.0.12",
     "babel-plugin-react-compiler": "19.0.0-beta-aeaed83-20250323",
+    "concurrently": "9.1.2",
     "eslint": "9.23.0",
     "eslint-config-flat-gitignore": "2.1.0",
     "eslint-config-prettier": "10.1.1",
