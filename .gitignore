@@ -1,5 +1,4 @@
 # Common directories
-.firebase
 .idea/
 .next/
 .yarn/*
@@ -21,4 +20,5 @@ node_modules/
 .stylelintcache
 
 # Specific directories & files
+.firebase/
 .uikitcache

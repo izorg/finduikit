@@ -11,7 +11,7 @@
     "analyze": "ANALYZE=true yarn run build",
     "build": "next build",
     "dev": "concurrently --names=\"firebase,next\" \"npm run dev-firebase\" \"npm run dev-next\"",
-    "dev-firebase": "npx firebase-tools emulators:start",
+    "dev-firebase": "npx firebase-tools emulators:start --export-on-exit --import=.firebase",
     "dev-next": "next dev",
     "format": "prettier --cache --ignore-unknown --write .",
     "generate-json-schema": "node --import tsx --loader esm-loader-css domains/ui-kit/scripts/generate-json-schema.ts",
