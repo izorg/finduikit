@@ -5,6 +5,7 @@ A hobby project that helps developers discover and compare UI component librarie
 The searchable interface allows filtering and comparison of UI libraries based on various criteria, helping developers make informed decisions about which UI kit best fits their project requirements.
 
 Built with:
+
 - React
 - TypeScript
 - Radix UI for components
