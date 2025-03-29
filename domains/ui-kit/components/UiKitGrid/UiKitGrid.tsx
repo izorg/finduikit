@@ -14,11 +14,20 @@ import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
 
 import styles from "./UiKitGrid.module.css";
 
+const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
+
+const nameCompare = new Intl.Collator("en").compare;
+
+const sorters: Record<Sorting, (a: UiKit, b: UiKit) => number> = {
+  [Sorting.ByName]: (a, b) => nameCompare(a.name, b.name),
+  [Sorting.ByStars]: (a, b) => (b.stars ?? 0) - (a.stars ?? 0),
+  [Sorting.ByUpdate]: (a, b) =>
+    (b.updatedAt?.getTime() ?? 0) - (a.updatedAt?.getTime() ?? 0),
+};
+
 type UiKitGridProps = {
   uiKits: UiKit[];
 };
-
-const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
 
 export const UiKitGrid = (props: UiKitGridProps) => {
   const { search, sorting } = useSearch();
@@ -37,18 +46,8 @@ export const UiKitGrid = (props: UiKitGridProps) => {
       return fuse.search(search).map(({ item }) => item);
     }
 
-    if (sorting === Sorting.ByStars) {
-      return props.uiKits.toSorted((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
-    }
-
-    if (sorting === Sorting.ByUpdate) {
-      return props.uiKits.toSorted(
-        (a, b) => (b.updatedAt?.getTime() ?? 0) - (a.updatedAt?.getTime() ?? 0),
-      );
-    }
-
-    return props.uiKits;
-  }, [search, sorting, props.uiKits, fuse]);
+    return props.uiKits.toSorted(sorters[sorting]);
+  }, [fuse, props.uiKits, search, sorting]);
 
   if (uiKits.length === 0) {
     return (

@@ -56,22 +56,20 @@ const getUiKitDynamicDataMapFromFirestore = async () => {
   return uiKitsDynamicDataMap;
 };
 
-const nameCompare = new Intl.Collator("en").compare;
-
 export const getUiKits = async () => {
   const [uiKitFileDataEntries, uiKitDynamicDataMap] = await Promise.all([
     getUiKitFileDataEntriesFromFiles(),
     getUiKitDynamicDataMapFromFirestore(),
   ]);
 
-  return uiKitFileDataEntries
-    .map(([key, fileData]) => {
+  return new Set<UiKit>(
+    uiKitFileDataEntries.map(([key, fileData]) => {
       const dynamicData = uiKitDynamicDataMap.get(key);
 
       return {
         ...fileData,
         ...dynamicData,
       };
-    })
-    .toSorted((a, b) => nameCompare(a.name, b.name));
+    }),
+  );
 };

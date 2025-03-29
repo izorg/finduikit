@@ -46,7 +46,9 @@ export const Page = async (props: PageProps) => {
     getUnstyledFromParamsPromise(params),
   ]);
 
-  let uiKits = await getUiKits();
+  const uiKitMap = await getUiKits();
+
+  let uiKits = [...uiKitMap];
 
   if (framework) {
     uiKits = uiKits.filter((uiKit) => uiKit.frameworks?.includes(framework));
