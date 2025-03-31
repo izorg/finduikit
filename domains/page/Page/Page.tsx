@@ -38,6 +38,8 @@ export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
   };
 };
 
+const uiKitsResource = getUiKits();
+
 export const Page = async (props: PageProps) => {
   const { params } = props;
 
@@ -46,7 +48,7 @@ export const Page = async (props: PageProps) => {
     getUnstyledFromParamsPromise(params),
   ]);
 
-  const uiKitMap = await getUiKits();
+  const uiKitMap = await uiKitsResource;
 
   let uiKits = [...uiKitMap];
 
