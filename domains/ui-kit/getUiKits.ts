@@ -2,17 +2,26 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { captureException } from "@sentry/nextjs";
+import {
+  type FirestoreDataConverter,
+  Timestamp,
+} from "firebase-admin/firestore";
 import { parse } from "yaml";
+import { z } from "zod";
 
 import { firebaseGetFirestoreUiKitsCollection } from "../firebase";
 
-import {
-  uiKitDynamicDataSchema,
-  type UiKitDynamicDataSchema,
-} from "./uiKitDynamicDataSchema";
 import { uiKitSchema, type UiKitSchema } from "./uiKitSchema";
 
+const uiKitDynamicDataSchema = z.object({
+  issues: z.number().optional(),
+  stars: z.number().optional(),
+  updatedAt: z.date().optional(),
+});
+
 export type UiKit = UiKitDynamicDataSchema & UiKitSchema;
+
+type UiKitDynamicDataSchema = z.infer<typeof uiKitDynamicDataSchema>;
 
 const getUiKitFileDataEntriesFromFiles = async () => {
   const entries = await fs.promises.readdir(
@@ -35,8 +44,24 @@ const getUiKitFileDataEntriesFromFiles = async () => {
   );
 };
 
+const uiKitConverter: FirestoreDataConverter<UiKitDynamicDataSchema, never> = {
+  fromFirestore: (snapshot) => {
+    const { updatedAt, ...data } = snapshot.data();
+
+    return uiKitDynamicDataSchema.parse({
+      ...data,
+      updatedAt:
+        updatedAt instanceof Timestamp ? updatedAt.toDate() : undefined,
+    });
+  },
+  toFirestore: () => {
+    throw new Error("This collection is only for Firestore read");
+  },
+};
+
 const getUiKitDynamicDataMapFromFirestore = async () => {
-  const uiKitsCollection = firebaseGetFirestoreUiKitsCollection();
+  const uiKitsCollection =
+    firebaseGetFirestoreUiKitsCollection().withConverter(uiKitConverter);
 
   const uiKitsDynamicDataMap = new Map<string, UiKitDynamicDataSchema>();
 
