@@ -50,7 +50,7 @@
     "@next/eslint-plugin-next": "15.2.4",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@types/node": "22.13.17",
-    "@types/react": "19.0.12",
+    "@types/react": "19.0.13",
     "babel-plugin-react-compiler": "19.0.0-beta-aeaed83-20250323",
     "concurrently": "9.1.2",
     "eslint": "9.23.0",
