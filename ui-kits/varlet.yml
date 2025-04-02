@@ -1,0 +1,10 @@
+description: Varlet UI is a Material design component library developed based on
+  Vue3, supporting mobile and desktop, developed and maintained by varletjs
+  organization. Support Typescript, import on demand, dark mode, theme
+  customization, internationalization, and provide VSCode plugin to ensure a
+  good development experience.
+frameworks:
+  - Vue
+homepage: https://varletjs.org/
+name: Varlet
+repository: https://github.com/varletjs/varlet
