@@ -1,0 +1,9 @@
+description: Garden is the design system by Zendesk. It’s where we grow the
+  components, standards, and tools that product designers use every day.
+frameworks:
+  - React
+homepage: https://garden.zendesk.com/
+image: https://repository-images.githubusercontent.com/132498655/d853b700-15cf-11ea-99d1-f2c340da645a
+name: Garden
+repository: https://github.com/zendeskgarden/react-components
+storybook: https://zendeskgarden.github.io/react-components/

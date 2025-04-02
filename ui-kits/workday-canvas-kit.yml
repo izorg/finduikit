@@ -1,0 +1,8 @@
+description: A documentation site dedicated to the Workday Canvas Design System
+frameworks:
+  - React
+homepage: https://canvas.workday.com/
+image: https://canvas.workday.com/static/home-open-graph-5d875bbea1b8f551b73d06cea0e668e4.png
+name: Workday Canvas Kit
+repository: https://github.com/Workday/canvas-kit
+storybook: https://workday.github.io/canvas-kit/

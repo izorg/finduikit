@@ -1,0 +1,8 @@
+description: Design your service using GOV.UK styles, components and patterns
+frameworks:
+  - React
+homepage: https://design-system.service.gov.uk/
+image: https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png
+name: GOV.UK
+repository: https://github.com/govuk-react/govuk-react/
+storybook: https://govuk-react.github.io/govuk-react/

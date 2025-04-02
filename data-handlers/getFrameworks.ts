@@ -27,7 +27,9 @@ const getFrameworksFromTopics = (topics: string[]) => {
 const hardcodedFrameworksByName: Partial<Record<string, Framework[]>> = {
   "Ant Design Vue": [Framework.Vue],
   daisyUI: [],
+  Garden: [Framework.React],
   "Park UI": [Framework.React, Framework.Solid, Framework.Vue],
+  "Workday Canvas Kit": [Framework.React],
 };
 
 export const getFrameworks = ({
