@@ -1,6 +1,13 @@
-import type { GetGitHubRepositoryQuery } from "./fetchGitHubRepositoryData.generated";
+import type {
+  GetGitHubRepositoryQuery,
+  GetGitHubRepositoryQueryVariables,
+} from "./fetchGitHubRepositoryData.generated";
 
 export const fetchGitHubRepositoryData = async (url: string) => {
+  const variables: GetGitHubRepositoryQueryVariables = {
+    url,
+  };
+
   const response = await fetch("https://api.github.com/graphql", {
     body: JSON.stringify({
       query: /* GraphQL */ `
@@ -34,9 +41,7 @@ export const fetchGitHubRepositoryData = async (url: string) => {
           }
         }
       `,
-      variables: {
-        url,
-      },
+      variables,
     }),
     headers: {
       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
