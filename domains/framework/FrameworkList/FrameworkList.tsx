@@ -4,9 +4,8 @@ import { Tooltip } from "@radix-ui/themes/components/tooltip";
 
 import { SvgIcon } from "../../icon";
 import { Framework } from "../Framework";
-
-import { frameworkColors } from "./frameworkColors";
-import { frameworkIcons } from "./frameworkIcons";
+import { frameworkColors } from "../frameworkColors";
+import { frameworkIcons } from "../frameworkIcons";
 
 import styles from "./FrameworkList.module.css";
 
