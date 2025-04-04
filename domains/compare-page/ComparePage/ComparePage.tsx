@@ -1,10 +1,14 @@
-import { IconButton } from "@radix-ui/themes/components/icon-button";
+import { Flex } from "@radix-ui/themes/components/flex";
 import { Link } from "@radix-ui/themes/components/link";
 import * as Table from "@radix-ui/themes/components/table";
+import { Text } from "@radix-ui/themes/components/text";
 import { siFigma, siStorybook } from "simple-icons";
 
+import { frameworkColors, frameworkIcons } from "../../framework";
 import { SvgIcon } from "../../icon";
 import { getUiKits } from "../../ui-kit";
+
+import styles from "../../framework/FrameworkList/FrameworkList.module.css";
 
 const nameCompare = new Intl.Collator("en").compare;
 
@@ -21,6 +25,7 @@ export const ComparePage = async () => {
       <Table.Header>
         <Table.Row>
           <Table.ColumnHeaderCell>Name</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell>Framework</Table.ColumnHeaderCell>
           <Table.ColumnHeaderCell>Figma</Table.ColumnHeaderCell>
           <Table.ColumnHeaderCell>Storybook</Table.ColumnHeaderCell>
         </Table.Row>
@@ -37,8 +42,23 @@ export const ComparePage = async () => {
               </Link>
             </Table.RowHeaderCell>
             <Table.Cell>
+              {uiKit.frameworks && uiKit.frameworks.length > 0 && (
+                <Flex asChild gap="2">
+                  <ul aria-label="Framework list" className={styles.list}>
+                    {uiKit.frameworks.map((framework) => (
+                      <li className={styles.listItem} key={framework}>
+                        <Text asChild color={frameworkColors[framework]}>
+                          <SvgIcon path={frameworkIcons[framework].path} />
+                        </Text>
+                      </li>
+                    ))}
+                  </ul>
+                </Flex>
+              )}
+            </Table.Cell>
+            <Table.Cell>
               {uiKit.figma && (
-                <IconButton asChild color="crimson" variant="ghost">
+                <Text asChild color="crimson">
                   <a
                     aria-label="Figma"
                     href={uiKit.figma}
@@ -47,12 +67,12 @@ export const ComparePage = async () => {
                   >
                     <SvgIcon path={siFigma.path} />
                   </a>
-                </IconButton>
+                </Text>
               )}
             </Table.Cell>
             <Table.Cell>
               {uiKit.storybook && (
-                <IconButton asChild color="ruby" variant="ghost">
+                <Text asChild color="ruby">
                   <a
                     aria-label="Storybook"
                     href={uiKit.storybook}
@@ -61,7 +81,7 @@ export const ComparePage = async () => {
                   >
                     <SvgIcon path={siStorybook.path} />
                   </a>
-                </IconButton>
+                </Text>
               )}
             </Table.Cell>
           </Table.Row>
