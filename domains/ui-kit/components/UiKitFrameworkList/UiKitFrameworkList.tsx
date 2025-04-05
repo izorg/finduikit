@@ -15,28 +15,12 @@ const frameworkLink: Record<Framework, string> = {
   [Framework.Vue]: "https://vuejs.org/",
 };
 
-const getFrameworkLink = (
-  framework: Framework,
-  packageName?: Partial<Record<Framework, string>> | string,
-) => {
-  if (
-    !packageName ||
-    typeof packageName === "string" ||
-    !packageName[framework]
-  ) {
-    return frameworkLink[framework];
-  }
-
-  return `https://www.npmjs.com/package/${packageName[framework]}`;
-};
-
 type FrameworkListProps = {
   frameworks?: Framework[];
-  package?: Partial<Record<Framework, string>> | string;
 };
 
 export const UiKitFrameworkList = (props: FrameworkListProps) => {
-  const { frameworks, package: packageName } = props;
+  const { frameworks } = props;
 
   if (!frameworks || frameworks.length === 0) {
     return;
@@ -55,7 +39,7 @@ export const UiKitFrameworkList = (props: FrameworkListProps) => {
               >
                 <a
                   aria-label={framework}
-                  href={getFrameworkLink(framework, packageName)}
+                  href={frameworkLink[framework]}
                   rel="noreferrer"
                   target="_blank"
                 >

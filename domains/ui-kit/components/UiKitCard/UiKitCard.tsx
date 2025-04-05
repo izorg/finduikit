@@ -33,10 +33,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
               </a>
             </Link>
           </Heading>
-          <UiKitFrameworkList
-            frameworks={uiKit.frameworks}
-            package={uiKit.package}
-          />
+          <UiKitFrameworkList frameworks={uiKit.frameworks} />
         </Flex>
         {uiKit.image && (
           <Inset asChild side="x">
