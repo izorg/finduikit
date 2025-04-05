@@ -8,9 +8,9 @@ import { Separator } from "@radix-ui/themes/components/separator";
 import { Text } from "@radix-ui/themes/components/text";
 import Image from "next/image";
 
-import { FrameworkList } from "../../../framework";
 import { Resources } from "../../../resource";
 import type { UiKit } from "../../getUiKits";
+import { UiKitFrameworkList } from "../UiKitFrameworkList";
 import { UiKitStats } from "../UiKitStats";
 
 import styles from "./UiKitCard.module.css";
@@ -33,7 +33,10 @@ export const UiKitCard = (props: UiKitCardProps) => {
               </a>
             </Link>
           </Heading>
-          <FrameworkList frameworks={uiKit.frameworks} />
+          <UiKitFrameworkList
+            frameworks={uiKit.frameworks}
+            package={uiKit.package}
+          />
         </Flex>
         {uiKit.image && (
           <Inset asChild side="x">

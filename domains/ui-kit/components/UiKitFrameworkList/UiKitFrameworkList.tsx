@@ -2,12 +2,10 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { IconButton } from "@radix-ui/themes/components/icon-button";
 import { Tooltip } from "@radix-ui/themes/components/tooltip";
 
-import { SvgIcon } from "../../icon";
-import { Framework } from "../Framework";
-import { frameworkColors } from "../frameworkColors";
-import { frameworkIcons } from "../frameworkIcons";
+import { Framework, frameworkColors, frameworkIcons } from "../../../framework";
+import { SvgIcon } from "../../../icon";
 
-import styles from "./FrameworkList.module.css";
+import styles from "./UiKitFrameworkList.module.css";
 
 const frameworkLink: Record<Framework, string> = {
   [Framework.Angular]: "https://angular.dev/",
@@ -17,12 +15,28 @@ const frameworkLink: Record<Framework, string> = {
   [Framework.Vue]: "https://vuejs.org/",
 };
 
-type FrameworkListProps = {
-  frameworks?: Framework[];
+const getFrameworkLink = (
+  framework: Framework,
+  packageName?: Partial<Record<Framework, string>> | string,
+) => {
+  if (
+    !packageName ||
+    typeof packageName === "string" ||
+    !packageName[framework]
+  ) {
+    return frameworkLink[framework];
+  }
+
+  return `https://www.npmjs.com/package/${packageName[framework]}`;
 };
 
-export const FrameworkList = (props: FrameworkListProps) => {
-  const { frameworks } = props;
+type FrameworkListProps = {
+  frameworks?: Framework[];
+  package?: Partial<Record<Framework, string>> | string;
+};
+
+export const UiKitFrameworkList = (props: FrameworkListProps) => {
+  const { frameworks, package: packageName } = props;
 
   if (!frameworks || frameworks.length === 0) {
     return;
@@ -41,7 +55,7 @@ export const FrameworkList = (props: FrameworkListProps) => {
               >
                 <a
                   aria-label={framework}
-                  href={frameworkLink[framework]}
+                  href={getFrameworkLink(framework, packageName)}
                   rel="noreferrer"
                   target="_blank"
                 >
