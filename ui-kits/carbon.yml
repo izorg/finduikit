@@ -5,7 +5,7 @@ frameworks:
 homepage: https://carbondesignsystem.com/
 image: https://repository-images.githubusercontent.com/84835535/fcf20280-73e3-11e9-834d-fd5f5fe83699
 name: Carbon
-package:
-  React: "@carbon/react"
+packages:
+  - name: "@carbon/react"
 repository: https://github.com/carbon-design-system/carbon
 storybook: https://react.carbondesignsystem.com/

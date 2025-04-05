@@ -29,21 +29,22 @@
         "name": {
           "type": "string"
         },
-        "package": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "additionalProperties": {
+        "packages": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "framework": {
+                "enum": ["Angular", "React", "Solid", "Svelte", "Vue"],
                 "type": "string"
               },
-              "propertyNames": {
-                "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
-              },
-              "type": "object"
-            }
-          ]
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": ["name"],
+            "type": "object"
+          },
+          "type": "array"
         },
         "repository": {
           "format": "uri",

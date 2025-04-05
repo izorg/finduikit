@@ -5,4 +5,6 @@ frameworks:
 homepage: https://material.angular.io/
 image: https://repository-images.githubusercontent.com/49016322/0a1e8bee-99b1-4044-9b83-4bdb6befcde9
 name: Angular Material
+packages:
+  - name: "@angular/material"
 repository: https://github.com/angular/components

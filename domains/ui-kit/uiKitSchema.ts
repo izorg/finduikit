@@ -10,8 +10,13 @@ export const uiKitSchema = z.object({
   homepage: z.string().url(),
   image: z.string().optional(),
   name: z.string(),
-  package: z
-    .union([z.string(), z.record(z.enum(getEnumValues(Framework)), z.string())])
+  packages: z
+    .array(
+      z.object({
+        framework: z.enum(getEnumValues(Framework)).optional(),
+        name: z.string(),
+      }),
+    )
     .optional(),
   repository: z.string().url(),
   storybook: z.string().url().optional(),

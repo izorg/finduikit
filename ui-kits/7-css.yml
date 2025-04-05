@@ -2,4 +2,6 @@ description: A design system for building faithful recreations of the Windows 7 
 homepage: https://khang-nd.github.io/7.css/
 image: https://repository-images.githubusercontent.com/325447896/50d4e85b-ed27-4a0a-ac18-f8cc984709f6
 name: 7.css
+packages:
+  - name: 7.css
 repository: https://github.com/khang-nd/7.css
