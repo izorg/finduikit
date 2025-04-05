@@ -29,6 +29,22 @@
         "name": {
           "type": "string"
         },
+        "package": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "propertyNames": {
+                "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
+              },
+              "type": "object"
+            }
+          ]
+        },
         "repository": {
           "format": "uri",
           "type": "string"
