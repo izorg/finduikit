@@ -16,7 +16,7 @@ export const ComparePageFrameworkList = (
   const { frameworks } = props;
 
   return (
-    <Flex asChild gap="2">
+    <Flex asChild display="inline-flex" gap="2">
       <ul aria-label="Framework list" className={styles.list}>
         {Object.values(Framework).map((framework) => (
           <li key={framework}>

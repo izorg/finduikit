@@ -1,12 +1,12 @@
 import { Flex } from "@radix-ui/themes/components/flex";
 import { type Metadata } from "next";
 
+import { Footer } from "../../footer";
 import { getFrameworkFromParamsPromise } from "../../framework";
 import type { DynamicRouteParams } from "../../next";
 import { getUiKits } from "../../ui-kit";
 import { getUnstyledFromParamsPromise } from "../../unstyled";
 
-import { PageFooter } from "./PageFooter";
 import { PageHeader } from "./PageHeader";
 import { PageMain } from "./PageMain";
 
@@ -69,7 +69,7 @@ export const Page = async (props: PageProps) => {
         unstyled={unstyled}
       />
       <PageMain uiKits={uiKits} />
-      <PageFooter />
+      <Footer />
     </Flex>
   );
 };

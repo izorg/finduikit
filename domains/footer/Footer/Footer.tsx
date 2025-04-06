@@ -2,7 +2,7 @@ import { Box } from "@radix-ui/themes/components/box";
 import { Link } from "@radix-ui/themes/components/link";
 import { Text } from "@radix-ui/themes/components/text";
 
-export const PageFooter = () => (
+export const Footer = () => (
   <Box asChild px="4">
     <footer>
       <Text align="center" as="p" color="gray" size="2">
