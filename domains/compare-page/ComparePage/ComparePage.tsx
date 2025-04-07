@@ -49,7 +49,7 @@ export const ComparePage = async () => {
       </Box>
 
       <Container size="2">
-        <Table.Root variant="surface">
+        <Table.Root size="3" variant="surface">
           <Table.Header>
             <Table.Row>
               <Table.ColumnHeaderCell>Name</Table.ColumnHeaderCell>
