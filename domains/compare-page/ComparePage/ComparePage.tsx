@@ -1,3 +1,4 @@
+import { mdiCheck } from "@mdi/js";
 import { Box } from "@radix-ui/themes/components/box";
 import { Container } from "@radix-ui/themes/components/container";
 import { Flex } from "@radix-ui/themes/components/flex";
@@ -57,6 +58,9 @@ export const ComparePage = async () => {
                 Framework
               </Table.ColumnHeaderCell>
               <Table.ColumnHeaderCell justify="center">
+                Styled
+              </Table.ColumnHeaderCell>
+              <Table.ColumnHeaderCell justify="center">
                 Figma
               </Table.ColumnHeaderCell>
               <Table.ColumnHeaderCell justify="center">
@@ -77,6 +81,13 @@ export const ComparePage = async () => {
                 </Table.RowHeaderCell>
                 <Table.Cell justify="center">
                   <ComparePageFrameworkList frameworks={uiKit.frameworks} />
+                </Table.Cell>
+                <Table.Cell justify="center">
+                  {!uiKit.unstyled && (
+                    <Text color="jade">
+                      <SvgIcon path={mdiCheck} />
+                    </Text>
+                  )}
                 </Table.Cell>
                 <Table.Cell justify="center">
                   {uiKit.figma && (
