@@ -12,7 +12,7 @@ import { SvgIcon } from "../../icon";
 import { getUiKits } from "../../ui-kit";
 import { ComparePageFrameworkList } from "../ComparePageFrameworkList";
 
-const title = "UI Kit Compare Table";
+const title = "UI Kits Comparison Table";
 
 export const metadata: Metadata = {
   description:
