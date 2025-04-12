@@ -1,10 +1,10 @@
-description: Copy-paste universal, accessible and beautifully designed
-  components & patterns crafted with Tailwind CSS (NativeWind) for React Native,
-  Next.js, Expo & React.
+description: A powerful React & React Native component library with customizable
+  Tailwind UI components & patterns. Works seamlessly with shadcn React Native
+  for web & mobile apps!
 figma: https://www.figma.com/community/file/1358053104938234615
 frameworks:
   - React
 homepage: https://gluestack.io/
 image: https://gluestack.io/images/og-image.png
-name: Gluestack UI
+name: gluestack-ui
 repository: https://github.com/gluestack/gluestack-ui
