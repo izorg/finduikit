@@ -167,8 +167,5 @@ export default ts.config(
       ],
     },
   },
-  {
-    extends: [prettier],
-    name: "Prettier",
-  },
+  prettier,
 );
