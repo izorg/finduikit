@@ -5474,16 +5474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=13.7.0, @types/node@npm:^22.8.7":
-  version: 22.14.0
-  resolution: "@types/node@npm:22.14.0"
-  dependencies:
-    undici-types: "npm:~6.21.0"
-  checksum: 10/d0669a8a37a18532c886ccfa51eb3fe1e46088deb4d3d27ebcd5d7d68bd6343ad1c7a3fcb85164780a57629359c33a6c917ecff748ea232bceac7692acc96537
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:22.14.1":
+"@types/node@npm:*, @types/node@npm:22.14.1, @types/node@npm:>=13.7.0, @types/node@npm:^22.8.7":
   version: 22.14.1
   resolution: "@types/node@npm:22.14.1"
   dependencies:
@@ -5893,6 +5884,13 @@ __metadata:
   dependencies:
     tslib: "npm:^2.6.3"
   checksum: 10/4971319c340f4c16755dd3fe84772e28bcc550e1f723ae10f94e02910ded545f88e65da0a44499912e23c27ed5f7458e1303a99cdd5818792c5958205ee386b4
+  languageName: node
+  linkType: hard
+
+"@zod/core@npm:0.4.6":
+  version: 0.4.6
+  resolution: "@zod/core@npm:0.4.6"
+  checksum: 10/1592cb1ce303f739221ffb32eaada3fe4be58200eb3f8bcd918f0dc008974e351535fde97c9d1dd3ea6782af947dd3835c550257e43376512abc36f88964aa3e
   languageName: node
   linkType: hard
 
@@ -8624,7 +8622,7 @@ __metadata:
     prettier: "npm:3.5.3"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
-    simple-icons: "npm:14.12.1"
+    simple-icons: "npm:14.12.2"
     stylelint: "npm:16.18.0"
     stylelint-config-css-modules: "npm:4.4.0"
     stylelint-config-standard: "npm:38.0.0"
@@ -8635,8 +8633,7 @@ __metadata:
     typescript-eslint: "npm:8.29.1"
     typescript-plugin-css-modules: "npm:5.1.0"
     yaml: "npm:2.7.1"
-    zod: "npm:3.24.2"
-    zod-to-json-schema: "npm:3.24.5"
+    zod: "npm:4.0.0-beta.20250412T085909"
   languageName: unknown
   linkType: soft
 
@@ -13556,10 +13553,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:14.12.1":
-  version: 14.12.1
-  resolution: "simple-icons@npm:14.12.1"
-  checksum: 10/5e6277a9c7edbccbc62175dbb0af3142633f76592fc212e34e09336ef007b00bcbbab79f213286d5718eb106fa7d7b96a5d28a2a968b980ca1d616c55c934c36
+"simple-icons@npm:14.12.2":
+  version: 14.12.2
+  resolution: "simple-icons@npm:14.12.2"
+  checksum: 10/0394c70144a5a5c953b10547a1e663d4f69dc146b452cd72cb5a04c57f1f6eda0f058b9be24cad9fa6e3f5eb9b9b1d9d83a882f800394611caaa330a76048085
   languageName: node
   linkType: hard
 
@@ -15260,15 +15257,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod-to-json-schema@npm:3.24.5":
-  version: 3.24.5
-  resolution: "zod-to-json-schema@npm:3.24.5"
-  peerDependencies:
-    zod: ^3.24.1
-  checksum: 10/1af291b4c429945c9568c2e924bdb7c66ab8d139cbeb9a99b6e9fc9e1b02863f85d07759b9303714f07ceda3993dcaf0ebcb80d2c18bb2aaf5502b2c1016affd
-  languageName: node
-  linkType: hard
-
 "zod-validation-error@npm:^3.0.3":
   version: 3.4.0
   resolution: "zod-validation-error@npm:3.4.0"
@@ -15278,7 +15266,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:3.24.2, zod@npm:^3.22.4":
+"zod@npm:4.0.0-beta.20250412T085909":
+  version: 4.0.0-beta.20250412T085909
+  resolution: "zod@npm:4.0.0-beta.20250412T085909"
+  dependencies:
+    "@zod/core": "npm:0.4.6"
+  checksum: 10/6d780dc1301a0d14d295bf39407e97d349f8e17906e0ee7d414a72f541dbeaa4ca455ab51adaa24588f0cef454c77b7188536e7793ded176258d59d641780cb6
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.4":
   version: 3.24.2
   resolution: "zod@npm:3.24.2"
   checksum: 10/604c62a8cf8e330d78b106a557f4b44f5d14845d20b1360a423ccc09b58cb8525ccf7e4b40cf1bd4852d22393d2c67774b5817ec5a2fedab25f543b36ed15943

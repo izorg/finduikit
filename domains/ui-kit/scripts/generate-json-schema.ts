@@ -3,11 +3,13 @@ import path from "node:path";
 
 import { ESLint } from "eslint";
 import { format } from "prettier";
-import { zodToJsonSchema } from "zod-to-json-schema";
+import { z } from "zod";
 
 import { uiKitSchema } from "../uiKitSchema";
 
-const jsonSchema = zodToJsonSchema(uiKitSchema, "UiKit");
+const jsonSchema = z.toJSONSchema(uiKitSchema, {
+  target: "draft-7",
+});
 const output = JSON.stringify(jsonSchema, undefined, 2);
 const eslint = new ESLint({ fix: true });
 const filePath = path.join(process.cwd(), "domains/ui-kit/UiKit.schema.json");

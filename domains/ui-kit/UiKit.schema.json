@@ -1,41 +1,70 @@
 {
-  "$ref": "#/definitions/UiKit",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "definitions": {
-    "UiKit": {
-      "additionalProperties": false,
-      "properties": {
-        "description": {
+  "properties": {
+    "description": {
+      "oneOf": [
+        {
           "type": "string"
         },
-        "figma": {
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "figma": {
+      "oneOf": [
+        {
           "format": "uri",
           "type": "string"
         },
-        "frameworks": {
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "frameworks": {
+      "oneOf": [
+        {
           "items": {
-            "enum": ["Angular", "React", "Solid", "Svelte", "Vue"],
-            "type": "string"
+            "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
           },
           "type": "array"
         },
-        "homepage": {
-          "format": "uri",
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "homepage": {
+      "format": "uri",
+      "type": "string"
+    },
+    "image": {
+      "oneOf": [
+        {
           "type": "string"
         },
-        "image": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "packages": {
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "packages": {
+      "oneOf": [
+        {
           "items": {
-            "additionalProperties": false,
             "properties": {
               "framework": {
-                "enum": ["Angular", "React", "Solid", "Svelte", "Vue"],
-                "type": "string"
+                "oneOf": [
+                  {
+                    "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
               },
               "name": {
                 "type": "string"
@@ -46,20 +75,37 @@
           },
           "type": "array"
         },
-        "repository": {
-          "format": "uri",
-          "type": "string"
-        },
-        "storybook": {
-          "format": "uri",
-          "type": "string"
-        },
-        "unstyled": {
-          "type": "boolean"
+        {
+          "type": "null"
         }
-      },
-      "required": ["homepage", "name", "repository"],
-      "type": "object"
+      ]
+    },
+    "repository": {
+      "format": "uri",
+      "type": "string"
+    },
+    "storybook": {
+      "oneOf": [
+        {
+          "format": "uri",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "unstyled": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
-  }
+  },
+  "required": ["homepage", "name", "repository"],
+  "type": "object"
 }
