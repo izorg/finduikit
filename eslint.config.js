@@ -168,13 +168,6 @@ export default ts.config(
     },
   },
   {
-    files: ["stylelint.config.js"],
-    name: "Stylelint",
-    rules: {
-      "unicorn/no-null": "off",
-    },
-  },
-  {
     extends: [prettier],
     name: "Prettier",
   },
