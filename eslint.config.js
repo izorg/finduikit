@@ -1,3 +1,4 @@
+import css from "@eslint/css";
 import js from "@eslint/js";
 import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
@@ -152,6 +153,7 @@ export default ts.config(
   },
   {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
+    ignores: ["**/*.css"],
     name: "JSON Schema",
     rules: {
       "json-schema-validator/no-invalid": [
@@ -166,6 +168,12 @@ export default ts.config(
         },
       ],
     },
+  },
+  {
+    extends: [css.configs.recommended],
+    files: ["**/*.css"],
+    language: "css/css",
+    name: "CSS",
   },
   prettier,
 );

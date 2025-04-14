@@ -1443,6 +1443,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/core@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "@eslint/core@npm:0.10.0"
+  dependencies:
+    "@types/json-schema": "npm:^7.0.15"
+  checksum: 10/de41d7fa5dc468b70fb15c72829096939fc0217c41b8519af4620bc1089cb42539a15325c4c3ee3832facac1836c8c944c4a0c4d0cc8b33ffd8e95962278ae14
+  languageName: node
+  linkType: hard
+
 "@eslint/core@npm:^0.12.0":
   version: 0.12.0
   resolution: "@eslint/core@npm:0.12.0"
@@ -1458,6 +1467,27 @@ __metadata:
   dependencies:
     "@types/json-schema": "npm:^7.0.15"
   checksum: 10/737fd1c237405b62592e8daa4b7e25b45ab22108bfec65258cabd091d5717b7c9573acea1f27c4ee7198cefc5a0874f5caefe3d9636851227b1f12d28ef52cf2
+  languageName: node
+  linkType: hard
+
+"@eslint/css-tree@npm:^3.3.1":
+  version: 3.3.4
+  resolution: "@eslint/css-tree@npm:3.3.4"
+  dependencies:
+    mdn-data: "npm:2.20.0"
+    source-map-js: "npm:^1.0.1"
+  checksum: 10/7892c9f5cd8e2a53e91770fda5fd4ae4136c5f09900714cac38668f241268db853e2520a64bd0faabb06350f488faca140c62cbeb6fd5bcf542467b986e6643d
+  languageName: node
+  linkType: hard
+
+"@eslint/css@npm:0.6.0":
+  version: 0.6.0
+  resolution: "@eslint/css@npm:0.6.0"
+  dependencies:
+    "@eslint/core": "npm:^0.10.0"
+    "@eslint/css-tree": "npm:^3.3.1"
+    "@eslint/plugin-kit": "npm:^0.2.5"
+  checksum: 10/f0d8a4639d489b5834c6dc8be0ec29044fa86cbd398b21a31292f82b164da82410c038d8288c481ee9dd5a28b488ef304bbd8d942dd0e028c13f90ef8ced9700
   languageName: node
   linkType: hard
 
@@ -1492,7 +1522,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/plugin-kit@npm:^0.2.7":
+"@eslint/plugin-kit@npm:^0.2.5, @eslint/plugin-kit@npm:^0.2.7":
   version: 0.2.8
   resolution: "@eslint/plugin-kit@npm:0.2.8"
   dependencies:
@@ -8634,6 +8664,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "finduikit@workspace:."
   dependencies:
+    "@eslint/css": "npm:0.6.0"
     "@eslint/js": "npm:9.24.0"
     "@graphql-codegen/cli": "npm:5.0.5"
     "@graphql-codegen/near-operation-file-preset": "npm:3.0.0"
@@ -10834,6 +10865,13 @@ __metadata:
   version: 2.12.2
   resolution: "mdn-data@npm:2.12.2"
   checksum: 10/854e41715a9358e69f9a530117cd6ca7e71d06176469de8d70b1e629753b6827f5bd730995c16ad3750f3c9bad92230f8e4e178de2b34926b05f5205d27d76af
+  languageName: node
+  linkType: hard
+
+"mdn-data@npm:2.20.0":
+  version: 2.20.0
+  resolution: "mdn-data@npm:2.20.0"
+  checksum: 10/0c1072a2b7beeafe198cfe246184e3f14f4be409eef510f46cea2308420d19c61819078f9cc93e3ee45f85f03db7888b2eaf9b94fbeade3679aaca91086503db
   languageName: node
   linkType: hard
 
