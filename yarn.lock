@@ -1506,6 +1506,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/json@npm:0.12.0":
+  version: 0.12.0
+  resolution: "@eslint/json@npm:0.12.0"
+  dependencies:
+    "@eslint/core": "npm:^0.12.0"
+    "@eslint/plugin-kit": "npm:^0.2.7"
+    "@humanwhocodes/momoa": "npm:^3.3.4"
+    natural-compare: "npm:^1.4.0"
+  checksum: 10/b19c00b981dbcde8645dbc6c1c206f095ac1a85ee4c9ea9962402740712d747772994d032c3865289efd51deeab5f4a27b434126da682c2db278428ee96c41d5
+  languageName: node
+  linkType: hard
+
 "@eslint/object-schema@npm:^2.1.6":
   version: 2.1.6
   resolution: "@eslint/object-schema@npm:2.1.6"
@@ -2504,6 +2516,13 @@ __metadata:
   version: 1.0.1
   resolution: "@humanwhocodes/module-importer@npm:1.0.1"
   checksum: 10/e993950e346331e5a32eefb27948ecdee2a2c4ab3f072b8f566cd213ef485dd50a3ca497050608db91006f5479e43f91a439aef68d2a313bd3ded06909c7c5b3
+  languageName: node
+  linkType: hard
+
+"@humanwhocodes/momoa@npm:^3.3.4":
+  version: 3.3.8
+  resolution: "@humanwhocodes/momoa@npm:3.3.8"
+  checksum: 10/315162905f49f2054539d24859a75838c24f1468929fae250914f62a19149a7cf5770c0f2b58d5c970c5982113047b0987625f20d65dc6e38a747a8315742c77
   languageName: node
   linkType: hard
 
@@ -7886,7 +7905,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-compat-utils@npm:^0.6.0, eslint-compat-utils@npm:^0.6.4, eslint-compat-utils@npm:^0.6.5":
+"eslint-compat-utils@npm:^0.6.0, eslint-compat-utils@npm:^0.6.5":
   version: 0.6.5
   resolution: "eslint-compat-utils@npm:0.6.5"
   dependencies:
@@ -8046,24 +8065,6 @@ __metadata:
   peerDependencies:
     eslint: ">=6.0.0"
   checksum: 10/7686cd9d27d7df444830d183146074cadd4d678d1735c0599f58d87ce034338f8c1cafa221c8f5fae9635040d888214299f8075139626bceb289aa863d5629f2
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-jsonc@npm:2.20.0":
-  version: 2.20.0
-  resolution: "eslint-plugin-jsonc@npm:2.20.0"
-  dependencies:
-    "@eslint-community/eslint-utils": "npm:^4.5.1"
-    eslint-compat-utils: "npm:^0.6.4"
-    eslint-json-compat-utils: "npm:^0.2.1"
-    espree: "npm:^9.6.1 || ^10.3.0"
-    graphemer: "npm:^1.4.0"
-    jsonc-eslint-parser: "npm:^2.4.0"
-    natural-compare: "npm:^1.4.0"
-    synckit: "npm:^0.6.2 || ^0.7.3 || ^0.10.3"
-  peerDependencies:
-    eslint: ">=6.0.0"
-  checksum: 10/655c98ceb91e002e365255e20ee8a985b450b9f1b2e5302db205bb55507ac021366a87aef4aee3692f5536c797aa320234d3275c3809adbe87b1a9529ae74354
   languageName: node
   linkType: hard
 
@@ -8285,7 +8286,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^10.0.1, espree@npm:^10.3.0, espree@npm:^9.6.1 || ^10.3.0":
+"espree@npm:^10.0.1, espree@npm:^10.3.0":
   version: 10.3.0
   resolution: "espree@npm:10.3.0"
   dependencies:
@@ -8597,6 +8598,7 @@ __metadata:
   dependencies:
     "@eslint/css": "npm:0.7.0"
     "@eslint/js": "npm:9.24.0"
+    "@eslint/json": "npm:0.12.0"
     "@graphql-codegen/cli": "npm:5.0.5"
     "@graphql-codegen/near-operation-file-preset": "npm:3.0.0"
     "@graphql-codegen/typescript": "npm:4.1.6"
@@ -8621,7 +8623,6 @@ __metadata:
     eslint-plugin-compat: "npm:6.0.2"
     eslint-plugin-import: "npm:2.31.0"
     eslint-plugin-json-schema-validator: "npm:5.4.0"
-    eslint-plugin-jsonc: "npm:2.20.0"
     eslint-plugin-jsx-a11y: "npm:6.10.2"
     eslint-plugin-perfectionist: "npm:4.11.0"
     eslint-plugin-react: "npm:7.37.5"
@@ -10242,7 +10243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-eslint-parser@npm:^2.0.0, jsonc-eslint-parser@npm:^2.4.0":
+"jsonc-eslint-parser@npm:^2.0.0":
   version: 2.4.0
   resolution: "jsonc-eslint-parser@npm:2.4.0"
   dependencies:
@@ -14227,16 +14228,6 @@ __metadata:
     "@pkgr/core": "npm:^0.2.0"
     tslib: "npm:^2.8.1"
   checksum: 10/8dbf20a9f1cb9f168062b505302f87b434b6f808d61af94183583b1201f33ba0026469fb81dd20074c980bc56237c6bd4ccb640433b5734eef14f5a90c1bbf18
-  languageName: node
-  linkType: hard
-
-"synckit@npm:^0.6.2 || ^0.7.3 || ^0.10.3":
-  version: 0.10.3
-  resolution: "synckit@npm:0.10.3"
-  dependencies:
-    "@pkgr/core": "npm:^0.2.0"
-    tslib: "npm:^2.8.1"
-  checksum: 10/bab2193585139f972b3725a9db8fedb6a93fe50bb5db06c0e8d3c93dbf83157e1eeba9fbd9c4922a1a41e9912b754ffe3906a3a7fa639ed502105de67d888207
   languageName: node
   linkType: hard
 

@@ -1,12 +1,12 @@
 import css from "@eslint/css";
 import js from "@eslint/js";
+import json from "@eslint/json";
 import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
 import importPlugin from "eslint-plugin-import";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
-import jsonc from "eslint-plugin-jsonc";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
@@ -132,15 +132,12 @@ export default ts.config(
     },
   },
   {
-    extends: [
-      jsonc.configs["flat/recommended-with-json"],
-      jsonc.configs["flat/prettier"],
-    ],
+    extends: [json.configs.recommended],
     files: ["**/*.json"],
-    ignores: ["package.json", "tsconfig.json"],
+    language: "json/json",
     name: "JSON",
     rules: {
-      "jsonc/sort-keys": ["error", "asc"],
+      "json/sort-keys": "error",
     },
   },
   {
@@ -152,8 +149,14 @@ export default ts.config(
     },
   },
   {
+    extends: [css.configs.recommended],
+    files: ["**/*.css"],
+    language: "css/css",
+    name: "CSS",
+  },
+  {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
-    ignores: ["**/*.css"],
+    ignores: ["**/*.css", "**/*.json"],
     name: "JSON Schema",
     rules: {
       "json-schema-validator/no-invalid": [
@@ -170,10 +173,11 @@ export default ts.config(
     },
   },
   {
-    extends: [css.configs.recommended],
-    files: ["**/*.css"],
-    language: "css/css",
-    name: "CSS",
+    files: ["package.json"],
+    name: "package.json",
+    rules: {
+      "json/sort-keys": "off",
+    },
   },
   prettier,
 );
