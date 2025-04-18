@@ -21,6 +21,10 @@ import { useUnstyledFromParams } from "../../unstyled/useUnstyledFromParams";
 
 import styles from "./PageTopBar.module.css";
 
+const scrollToTop = () => {
+  document.querySelector("main")?.scrollIntoView();
+};
+
 export const PageTopBar = () => {
   const router = useRouter();
 
@@ -37,6 +41,8 @@ export const PageTopBar = () => {
 
     startTransition(() => {
       setSearch(value);
+
+      scrollToTop();
     });
   };
 
@@ -49,13 +55,21 @@ export const PageTopBar = () => {
 
     const slug = [frameworkSlug, unstyledSlug].filter(Boolean);
 
-    router.push(`/${slug.join("/")}`);
+    router.push(`/${slug.join("/")}`, {
+      scroll: false,
+    });
+
+    scrollToTop();
   };
 
   const onUnstyledChange = (checked: boolean) => {
     const slug = [frameworkSlug, getUnstyledSlug(checked)].filter(Boolean);
 
-    router.push(`/${slug.join("/")}`);
+    router.push(`/${slug.join("/")}`, {
+      scroll: false,
+    });
+
+    scrollToTop();
   };
 
   const onSortingChange = (value: string) => {
@@ -64,6 +78,8 @@ export const PageTopBar = () => {
       Sorting.ByName;
 
     setSorting(sorting);
+
+    scrollToTop();
   };
 
   return (
