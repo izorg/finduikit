@@ -1436,7 +1436,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-helpers@npm:^0.2.0":
+"@eslint/config-helpers@npm:^0.2.1":
   version: 0.2.1
   resolution: "@eslint/config-helpers@npm:0.2.1"
   checksum: 10/7627d01a654c61a71387edd235e663fea50a23f0f521a174b77d94e3d1f6834a5da9205a101ffbe4ee5cf6fab1f384693c7b47080f059debdf338dd9b590aadf
@@ -1499,10 +1499,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.24.0":
-  version: 9.24.0
-  resolution: "@eslint/js@npm:9.24.0"
-  checksum: 10/d210114c147a1c1ebfaed5f32734e7c1f8ef551a5ea48ea67f9469668aa4079565ccd038412437bca87515d51dc9e8b8c788473dcf3d08e35dfb27e92cb3ce1b
+"@eslint/js@npm:9.25.0":
+  version: 9.25.0
+  resolution: "@eslint/js@npm:9.25.0"
+  checksum: 10/c00b5abc952d8d45efec12f7b84f143f168261f548cc218451fe14cbfcd801cae05e63013d26c3f7e255a85a164d95225b97441bb32ae1be6162473f3a2d9c71
   languageName: node
   linkType: hard
 
@@ -1525,7 +1525,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/plugin-kit@npm:^0.2.5, @eslint/plugin-kit@npm:^0.2.7":
+"@eslint/plugin-kit@npm:^0.2.5, @eslint/plugin-kit@npm:^0.2.7, @eslint/plugin-kit@npm:^0.2.8":
   version: 0.2.8
   resolution: "@eslint/plugin-kit@npm:0.2.8"
   dependencies:
@@ -5927,10 +5927,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zod/core@npm:0.7.1":
-  version: 0.7.1
-  resolution: "@zod/core@npm:0.7.1"
-  checksum: 10/524810c2af21af09b512b6ea557de988fb6c5e4a3187c76d807577f0cc88b6e8ab988d7529a8629f04d49227cb5a324d6f631284bd20c91ab71c542e77afe805
+"@zod/core@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@zod/core@npm:0.8.0"
+  checksum: 10/351d16e296daea34330de22353e9bb0c796cbad763a0192740bae11853b057580d4410254d66377d74d76144f9596539f2a480ce7decf1c38658fc68f705e1ba
   languageName: node
   linkType: hard
 
@@ -8225,18 +8225,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.24.0":
-  version: 9.24.0
-  resolution: "eslint@npm:9.24.0"
+"eslint@npm:9.25.0":
+  version: 9.25.0
+  resolution: "eslint@npm:9.25.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
     "@eslint/config-array": "npm:^0.20.0"
-    "@eslint/config-helpers": "npm:^0.2.0"
-    "@eslint/core": "npm:^0.12.0"
+    "@eslint/config-helpers": "npm:^0.2.1"
+    "@eslint/core": "npm:^0.13.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.24.0"
-    "@eslint/plugin-kit": "npm:^0.2.7"
+    "@eslint/js": "npm:9.25.0"
+    "@eslint/plugin-kit": "npm:^0.2.8"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@humanwhocodes/retry": "npm:^0.4.2"
@@ -8271,7 +8271,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10/05810e135c1f429be451a4be92283c0be204010bb0ea71edfeae1d25ff917cbc5a229144ee55853a085088c7e4092e59a28c0dae87a865ef9600ad4438861d4a
+  checksum: 10/deae86e719193e00d3c03bd17eb0b7c602a0ab7de676dec878d3be54d97b9095fe52270644a473beb4965c7632733cc6003834e56dd11f78c8b8ef41e0ac4f11
   languageName: node
   linkType: hard
 
@@ -8597,7 +8597,7 @@ __metadata:
   resolution: "finduikit@workspace:."
   dependencies:
     "@eslint/css": "npm:0.7.0"
-    "@eslint/js": "npm:9.24.0"
+    "@eslint/js": "npm:9.25.0"
     "@eslint/json": "npm:0.12.0"
     "@graphql-codegen/cli": "npm:5.0.5"
     "@graphql-codegen/near-operation-file-preset": "npm:3.0.0"
@@ -8616,7 +8616,7 @@ __metadata:
     classnames: "npm:2.5.1"
     concurrently: "npm:9.1.2"
     core-js: "npm:3.41.0"
-    eslint: "npm:9.24.0"
+    eslint: "npm:9.25.0"
     eslint-config-flat-gitignore: "npm:2.1.0"
     eslint-config-prettier: "npm:10.1.2"
     eslint-import-resolver-typescript: "npm:4.3.2"
@@ -8656,7 +8656,7 @@ __metadata:
     typescript-eslint: "npm:8.30.1"
     typescript-plugin-css-modules: "npm:5.1.0"
     yaml: "npm:2.7.1"
-    zod: "npm:4.0.0-beta.20250418T073619"
+    zod: "npm:4.0.0-beta.20250418T202744"
   languageName: unknown
   linkType: soft
 
@@ -15279,12 +15279,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:4.0.0-beta.20250418T073619":
-  version: 4.0.0-beta.20250418T073619
-  resolution: "zod@npm:4.0.0-beta.20250418T073619"
+"zod@npm:4.0.0-beta.20250418T202744":
+  version: 4.0.0-beta.20250418T202744
+  resolution: "zod@npm:4.0.0-beta.20250418T202744"
   dependencies:
-    "@zod/core": "npm:0.7.1"
-  checksum: 10/f4b92f9b06f9318578129744dc8a9483bd2463b97fafe5e1346c97dd966db83ec3b669232fd3c6b702c875bb36121b517e7100f6371108956bf8dd7ef074ba0f
+    "@zod/core": "npm:0.8.0"
+  checksum: 10/87e7588cb3948f46ebe0a171595af11763272dd4b2fce200b4af358b4fbea4654917d4b813ee98bf45d1d40dc31c2cc0e4d0e169d71a6fef4664590e43d2efa2
   languageName: node
   linkType: hard
 

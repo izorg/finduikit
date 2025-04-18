@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@eslint/css": "0.7.0",
-    "@eslint/js": "9.24.0",
+    "@eslint/js": "9.25.0",
     "@eslint/json": "0.12.0",
     "@graphql-codegen/cli": "5.0.5",
     "@graphql-codegen/near-operation-file-preset": "3.0.0",
@@ -55,7 +55,7 @@
     "@types/react": "19.1.2",
     "babel-plugin-react-compiler": "19.0.0-beta-ebf51a3-20250411",
     "concurrently": "9.1.2",
-    "eslint": "9.24.0",
+    "eslint": "9.25.0",
     "eslint-config-flat-gitignore": "2.1.0",
     "eslint-config-prettier": "10.1.2",
     "eslint-import-resolver-typescript": "4.3.2",
@@ -88,6 +88,6 @@
     "typescript-eslint": "8.30.1",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.7.1",
-    "zod": "4.0.0-beta.20250418T073619"
+    "zod": "4.0.0-beta.20250418T202744"
   }
 }
