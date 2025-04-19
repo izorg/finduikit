@@ -10,15 +10,19 @@ const sortingLabels: Record<Sorting, string> = {
 };
 
 export const SortingSelect = (
-  props: Pick<Select.RootProps, "onValueChange" | "size" | "value"> &
+  props: Pick<Select.RootProps, "onValueChange" | "value"> &
     Select.TriggerProps,
 ) => {
-  const { onValueChange, size, value, ...triggerProps } = props;
+  const { onValueChange, value, ...triggerProps } = props;
 
   const sorting = Object.values(Sorting).find((option) => option === value);
 
   return (
-    <Select.Root onValueChange={onValueChange} size={size} value={value}>
+    <Select.Root
+      onValueChange={onValueChange}
+      size={{ initial: "2", sm: "3" }}
+      value={value}
+    >
       <Box asChild minWidth={{ initial: "110px", sm: "130px" }}>
         <Select.Trigger aria-label="Sort" {...triggerProps}>
           {sorting && sortingLabels[sorting]}
