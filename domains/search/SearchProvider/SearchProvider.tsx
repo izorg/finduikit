@@ -47,9 +47,7 @@ export const SearchProvider = ({ children }: PropsWithChildren) => {
     [debouncedSearch, sorting],
   );
 
-  return (
-    <SearchContext.Provider value={value}>{children}</SearchContext.Provider>
-  );
+  return <SearchContext value={value}>{children}</SearchContext>;
 };
 
 export const useSearch = () => useContext(SearchContext);

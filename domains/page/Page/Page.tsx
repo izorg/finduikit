@@ -4,6 +4,7 @@ import { type Metadata } from "next";
 import { Footer } from "../../footer";
 import { getFrameworkFromParamsPromise } from "../../framework";
 import type { DynamicRouteParams } from "../../next";
+import { SearchProvider } from "../../search";
 import { getUiKits } from "../../ui-kit";
 import { getUnstyledFromParamsPromise } from "../../unstyled";
 
@@ -61,15 +62,17 @@ export const Page = async (props: PageProps) => {
   }
 
   return (
-    <Flex direction="column" gap="4" py="4">
-      <PageHeader
-        defaultTitle={defaultTitle}
-        description={description}
-        framework={framework}
-        unstyled={unstyled}
-      />
-      <PageMain uiKits={uiKits} />
-      <Footer />
-    </Flex>
+    <SearchProvider>
+      <Flex direction="column" gap="4" py="4">
+        <PageHeader
+          defaultTitle={defaultTitle}
+          description={description}
+          framework={framework}
+          unstyled={unstyled}
+        />
+        <PageMain uiKits={uiKits} />
+        <Footer />
+      </Flex>
+    </SearchProvider>
   );
 };
