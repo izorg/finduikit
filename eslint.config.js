@@ -10,7 +10,6 @@ import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
-import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
 import yml from "eslint-plugin-yml";
@@ -36,8 +35,7 @@ export default ts.config(
       importPlugin.flatConfigs.typescript,
       react.configs.flat.recommended,
       react.configs.flat["jsx-runtime"],
-      reactHooks.configs["recommended-latest"],
-      reactCompiler.configs.recommended,
+      reactHooks.configs.recommended,
       unicorn.configs["recommended"],
       perfectionist.configs["recommended-alphabetical"],
     ],
