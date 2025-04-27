@@ -63,7 +63,7 @@ export const Page = async (props: PageProps) => {
 
   return (
     <SearchProvider>
-      <Flex direction="column" gap="4" py="4">
+      <Flex direction="column" gap="6" minHeight="100dvh" py="4">
         <PageHeader
           defaultTitle={defaultTitle}
           description={description}

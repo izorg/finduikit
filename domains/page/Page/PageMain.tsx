@@ -8,7 +8,7 @@ type PageMainProps = {
 };
 
 export const PageMain = ({ uiKits }: PageMainProps) => (
-  <Flex asChild direction="column" gap="4">
+  <Flex asChild direction="column" flexGrow="1" gap="4">
     <main>
       <PageTopBar />
       <UiKitGrid uiKits={uiKits} />

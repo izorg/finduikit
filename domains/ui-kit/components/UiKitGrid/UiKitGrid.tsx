@@ -65,6 +65,7 @@ export const UiKitGrid = (props: UiKitGridProps) => {
         asChild
         className={styles.grid}
         columns="repeat(auto-fill, minmax(240px, 1fr))"
+        flexGrow="1"
         gap="4"
       >
         <ul>
@@ -75,7 +76,7 @@ export const UiKitGrid = (props: UiKitGridProps) => {
           ))}
           <Flex align="center" asChild justify="center">
             <Box asChild p="4">
-              <li key="suugest-ui-kit">
+              <li>
                 <UiKitSuggestIconButton />
               </li>
             </Box>
