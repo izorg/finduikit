@@ -1,7 +1,4 @@
-description: The Elastic UI framework (EUI) is a design library in use at
-  Elastic to build internal products that need to share our aesthetics. It
-  distributes UI React components and static assets for use in building web
-  layouts.
+description: The framework powering the Elastic Stack
 figma: https://www.figma.com/community/file/964536385682658129
 frameworks:
   - React
