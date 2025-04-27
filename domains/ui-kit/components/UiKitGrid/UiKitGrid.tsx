@@ -75,7 +75,7 @@ export const UiKitGrid = (props: UiKitGridProps) => {
             </li>
           ))}
           <Flex align="center" asChild justify="center">
-            <Box asChild p="4">
+            <Box asChild minHeight={{ initial: "240px", xs: "320px" }} p="4">
               <li>
                 <UiKitSuggestIconButton />
               </li>
