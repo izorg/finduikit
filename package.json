@@ -51,7 +51,7 @@
     "@next/bundle-analyzer": "15.3.1",
     "@next/eslint-plugin-next": "15.3.1",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.15.2",
+    "@types/node": "22.15.3",
     "@types/react": "19.1.2",
     "babel-plugin-react-compiler": "19.1.0-rc.1",
     "concurrently": "9.1.2",
@@ -85,7 +85,7 @@
     "stylelint-order": "7.0.0",
     "tsx": "4.19.3",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.31.0",
+    "typescript-eslint": "8.31.1",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.7.1",
     "zod": "4.0.0-beta.20250424T163858"
