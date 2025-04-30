@@ -1,111 +1,55 @@
 {
+  "type": "object",
   "properties": {
     "description": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "figma": {
-      "oneOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "frameworks": {
-      "oneOf": [
-        {
-          "items": {
-            "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
-          },
-          "type": "array"
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "homepage": {
-      "format": "uri",
       "type": "string"
     },
+    "figma": {
+      "type": "string",
+      "format": "uri"
+    },
+    "frameworks": {
+      "type": "array",
+      "items": {
+        "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
+      }
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
     "image": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
+      "type": "string"
     },
     "name": {
       "type": "string"
     },
     "packages": {
-      "oneOf": [
-        {
-          "items": {
-            "properties": {
-              "framework": {
-                "oneOf": [
-                  {
-                    "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
-                  },
-                  {
-                    "type": "null"
-                  }
-                ]
-              },
-              "name": {
-                "type": "string"
-              }
-            },
-            "required": ["name"],
-            "type": "object"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "framework": {
+            "enum": ["Angular", "React", "Solid", "Svelte", "Vue"]
           },
-          "type": "array"
+          "name": {
+            "type": "string"
+          }
         },
-        {
-          "type": "null"
-        }
-      ]
+        "required": ["name"]
+      }
     },
     "repository": {
-      "format": "uri",
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "storybook": {
-      "oneOf": [
-        {
-          "format": "uri",
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
+      "type": "string",
+      "format": "uri"
     },
     "unstyled": {
-      "oneOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "null"
-        }
-      ]
+      "type": "boolean"
     }
   },
-  "required": ["homepage", "name", "repository"],
-  "type": "object"
+  "required": ["homepage", "name", "repository"]
 }

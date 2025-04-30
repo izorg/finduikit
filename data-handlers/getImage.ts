@@ -8,9 +8,14 @@ export const getImage = ({
 }: {
   data: UiKitSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
-}) =>
-  github?.openGraphImageUrl?.startsWith(
+}) => {
+  if (data?.image === "") {
+    return "";
+  }
+
+  return github?.openGraphImageUrl?.startsWith(
     "https://repository-images.githubusercontent.com/",
   )
     ? github.openGraphImageUrl
     : data.image;
+};

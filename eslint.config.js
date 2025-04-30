@@ -171,6 +171,13 @@ export default ts.config(
     },
   },
   {
+    files: ["**/*.schema.json"],
+    name: "JSON Schema",
+    rules: {
+      "json/sort-keys": "off",
+    },
+  },
+  {
     files: ["package.json"],
     name: "package.json",
     rules: {
