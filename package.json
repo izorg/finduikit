@@ -14,7 +14,7 @@
     "dev-firebase": "firebase emulators:start --export-on-exit --import=.firebase",
     "dev-next": "next dev",
     "format": "prettier --cache --ignore-unknown --write .",
-    "generate-json-schema": "node --import=tsx --loader=esm-loader-css domains/ui-kit/scripts/generate-json-schema.ts",
+    "generate-json-schema": "node --import=tsx --import=@nodejs-loaders/css-module domains/ui-kit/scripts/generate-json-schema.ts",
     "graphql-codegen": "graphql-codegen",
     "lint": "yarn lint-unused && yarn lint-format && yarn lint-types && yarn lint-js && yarn lint-css",
     "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
@@ -23,7 +23,7 @@
     "lint-types": "tsc",
     "lint-unused": "knip --cache",
     "start": "next start",
-    "update-ui-kits": "node --env-file-if-exists=.env.local --import=tsx --loader=esm-loader-css domains/ui-kit/scripts/update-ui-kits.ts"
+    "update-ui-kits": "node --env-file-if-exists=.env.local --import=tsx --import=@nodejs-loaders/css-module domains/ui-kit/scripts/update-ui-kits.ts"
   },
   "dependencies": {
     "@mdi/js": "7.4.47",
@@ -50,6 +50,7 @@
     "@graphql-codegen/typescript-operations": "4.6.0",
     "@next/bundle-analyzer": "15.3.1",
     "@next/eslint-plugin-next": "15.3.1",
+    "@nodejs-loaders/css-module": "1.1.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@types/node": "22.15.3",
     "@types/react": "19.1.2",
@@ -68,7 +69,6 @@
     "eslint-plugin-react-hooks": "6.0.0-rc1",
     "eslint-plugin-unicorn": "59.0.0",
     "eslint-plugin-yml": "1.18.0",
-    "esm-loader-css": "1.0.6",
     "firebase-tools": "14.2.2",
     "globals": "16.0.0",
     "graphql": "16.11.0",
