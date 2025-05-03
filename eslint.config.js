@@ -36,6 +36,8 @@ export default ts.config(
       react.configs.flat.recommended,
       react.configs.flat["jsx-runtime"],
       reactHooks.configs.recommended,
+      next.flatConfig.recommended,
+      next.flatConfig.coreWebVitals,
       unicorn.configs["recommended"],
       perfectionist.configs["recommended-alphabetical"],
     ],
@@ -46,15 +48,9 @@ export default ts.config(
         warnOnUnsupportedTypeScriptVersion: false,
       },
     },
-    name: "JavaScript & TypeScript",
-    plugins: {
-      "@next/next": next,
-    },
+    name: "javascript-and-typescript",
     rules: {
       "import/no-cycle": "error",
-
-      ...next.configs.recommended.rules,
-      ...next.configs["core-web-vitals"].rules,
 
       "no-restricted-imports": [
         "error",
@@ -105,7 +101,7 @@ export default ts.config(
   },
   {
     files: ["**/*.ts?(x)"],
-    name: "TypeScript",
+    name: "typescript",
     rules: {
       "@typescript-eslint/consistent-type-imports": [
         "error",
@@ -122,7 +118,7 @@ export default ts.config(
       "domains/**/routes/*.ts",
       "domains/**/scripts/*.ts",
     ],
-    name: "Server",
+    name: "server",
     settings: {
       browserslistOpts: {
         env: "server",
@@ -133,7 +129,7 @@ export default ts.config(
     extends: [json.configs.recommended],
     files: ["**/*.json"],
     language: "json/json",
-    name: "JSON",
+    name: "json",
     rules: {
       "json/sort-keys": "error",
     },
@@ -141,7 +137,7 @@ export default ts.config(
   {
     extends: [yml.configs["flat/recommended"], yml.configs["flat/prettier"]],
     files: ["**/*.y?(a)ml"],
-    name: "YAML",
+    name: "yaml",
     rules: {
       "yml/sort-keys": ["error", "asc"],
     },
@@ -150,12 +146,12 @@ export default ts.config(
     extends: [css.configs.recommended],
     files: ["**/*.css"],
     language: "css/css",
-    name: "CSS",
+    name: "css",
   },
   {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
     ignores: ["**/*.css", "**/*.json"],
-    name: "JSON Schema",
+    name: "json-schema",
     rules: {
       "json-schema-validator/no-invalid": [
         "error",
@@ -172,14 +168,14 @@ export default ts.config(
   },
   {
     files: ["**/*.schema.json"],
-    name: "JSON Schema",
+    name: "json-schema",
     rules: {
       "json/sort-keys": "off",
     },
   },
   {
     files: ["package.json"],
-    name: "package.json",
+    name: "package-json",
     rules: {
       "json/sort-keys": "off",
     },
