@@ -4,6 +4,8 @@ import type { UiKitSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
+const preservedDescriptions = new Set(["NG-ZORRO"]);
+
 export const getDescription = ({
   data,
   github,
@@ -13,6 +15,10 @@ export const getDescription = ({
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
   homepage: HTMLElement;
 }) => {
+  if (preservedDescriptions.has(data.name)) {
+    return data.description;
+  }
+
   const homepageDescription = homepage
     .querySelector('head > meta[name="description"]')
     ?.getAttribute("content")
