@@ -7,7 +7,7 @@ import {
   Timestamp,
 } from "firebase-admin/firestore";
 import { parse } from "yaml";
-import { z } from "zod";
+import { z } from "zod/v4";
 
 import { firebaseGetFirestoreUiKitsCollection } from "../firebase";
 
