@@ -1,4 +1,4 @@
-import { frameworkParams } from "../../domains/framework";
+import { frameworkParams } from "../../../domains/framework";
 
 export const revalidate = 3600;
 
@@ -18,4 +18,7 @@ export const generateStaticParams = () => [
   },
 ];
 
-export { Page as default, generateMetadata } from "../../domains/page";
+export {
+  Page as default,
+  generateMetadata,
+} from "../../../domains/search-page";

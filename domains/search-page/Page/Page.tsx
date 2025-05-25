@@ -8,7 +8,6 @@ import { SearchProvider } from "../../search";
 import { getUiKits } from "../../ui-kit";
 import { getUnstyledFromParamsPromise } from "../../unstyled";
 
-import { PageHeader } from "./PageHeader";
 import { PageMain } from "./PageMain";
 
 const defaultTitle = "UI Kits";
@@ -63,13 +62,7 @@ export const Page = async (props: PageProps) => {
 
   return (
     <SearchProvider>
-      <Flex direction="column" gap="6" minHeight="100dvh" py="4">
-        <PageHeader
-          defaultTitle={defaultTitle}
-          description={description}
-          framework={framework}
-          unstyled={unstyled}
-        />
+      <Flex direction="column" gap="6" minHeight="100dvh" pb="4">
         <PageMain uiKits={uiKits} />
         <Footer />
       </Flex>
