@@ -1,5 +1,4 @@
 import { mdiCheck } from "@mdi/js";
-import { Box } from "@radix-ui/themes/components/box";
 import { Container } from "@radix-ui/themes/components/container";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Link } from "@radix-ui/themes/components/link";
@@ -32,25 +31,9 @@ export const ComparePage = async () => {
   const sortedUiKits = uiKits.toSorted((a, b) => nameCompare(a.name, b.name));
 
   return (
-    <Flex direction="column" gap="4" py="4">
-      <Box asChild px="4">
-        <header>
-          <Text
-            align="center"
-            asChild
-            size={{
-              initial: "6",
-              sm: "9",
-            }}
-            weight="medium"
-          >
-            <h1>{title}</h1>
-          </Text>
-        </header>
-      </Box>
-
+    <Flex direction="column" gap="4" pb="4">
       <Container size="2">
-        <Table.Root size="3" variant="surface">
+        <Table.Root size="3">
           <Table.Header>
             <Table.Row>
               <Table.ColumnHeaderCell>Name</Table.ColumnHeaderCell>
