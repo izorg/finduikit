@@ -1,4 +1,6 @@
-description: The headless components for Svelte.
+description: Headless components for Svelte - flexible, unstyled, and accessible
+  primitives that provide the foundation for building your own high-quality
+  component library.
 figma: https://www.figma.com/community/file/1430229712135910564
 frameworks:
   - Svelte
