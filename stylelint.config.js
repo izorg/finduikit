@@ -22,7 +22,14 @@ export default {
     "plugin/no-unsupported-browser-features": [
       true,
       {
-        ignore: ["css-logical-props"],
+        ignore: [
+          "css-logical-props",
+
+          /**
+           * Covered by autoprefixer
+           */
+          "css-sticky",
+        ],
       },
     ],
   },
