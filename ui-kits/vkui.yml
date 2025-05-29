@@ -1,0 +1,10 @@
+description: VKUI – это набор React-компонентов, с помощью которых можно
+  создавать интерфейсы, внешне неотличимые от наших iOS и Android приложений.
+figma: https://www.figma.com/community/file/878586874888565148/vkui-web-library-beta
+frameworks:
+  - React
+homepage: https://vkcom.github.io/VKUI/
+image: https://repository-images.githubusercontent.com/79114815/ce38aa00-318a-11eb-8b89-8f8b6df2476d
+name: VKUI
+repository: https://github.com/VKCOM/VKUI
+storybook: https://vkcom.github.io/VKUI/playground/
