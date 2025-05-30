@@ -29,7 +29,7 @@
     "@mdi/js": "7.4.47",
     "@next/third-parties": "15.3.3",
     "@radix-ui/themes": "3.2.1",
-    "@sentry/nextjs": "9.23.0",
+    "@sentry/nextjs": "9.24.0",
     "classnames": "2.5.1",
     "core-js": "3.42.0",
     "firebase-admin": "13.4.0",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@eslint/css": "0.8.1",
-    "@eslint/js": "9.27.0",
+    "@eslint/js": "9.28.0",
     "@eslint/json": "0.12.0",
     "@graphql-codegen/cli": "5.0.6",
     "@graphql-codegen/near-operation-file-preset": "3.0.1",
@@ -52,11 +52,11 @@
     "@next/eslint-plugin-next": "15.3.3",
     "@nodejs-loaders/css-module": "1.1.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.15.24",
+    "@types/node": "22.15.29",
     "@types/react": "19.1.6",
     "babel-plugin-react-compiler": "19.1.0-rc.2",
     "concurrently": "9.1.2",
-    "eslint": "9.27.0",
+    "eslint": "9.28.0",
     "eslint-config-flat-gitignore": "2.1.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-import-resolver-typescript": "4.4.1",
@@ -69,7 +69,7 @@
     "eslint-plugin-react-hooks": "6.0.0-rc1",
     "eslint-plugin-unicorn": "59.0.1",
     "eslint-plugin-yml": "1.18.0",
-    "firebase-tools": "14.4.0",
+    "firebase-tools": "14.5.1",
     "globals": "16.2.0",
     "graphql": "16.11.0",
     "knip": "5.59.1",
@@ -88,6 +88,6 @@
     "typescript-eslint": "8.33.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.36"
+    "zod": "3.25.42"
   }
 }
