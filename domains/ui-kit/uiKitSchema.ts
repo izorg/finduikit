@@ -1,19 +1,18 @@
 import { z } from "zod/v4";
 
-import { getEnumValues } from "../enum";
 import { Framework } from "../framework";
 
 export const uiKitSchema = z.object({
   description: z.string().optional(),
   figma: z.url().optional(),
-  frameworks: z.array(z.enum(getEnumValues(Framework))).optional(),
+  frameworks: z.array(z.enum(Framework)).optional(),
   homepage: z.url(),
   image: z.string().optional(),
   name: z.string(),
   packages: z
     .array(
       z.object({
-        framework: z.enum(getEnumValues(Framework)).optional(),
+        framework: z.enum(Framework).optional(),
         name: z.string(),
       }),
     )
