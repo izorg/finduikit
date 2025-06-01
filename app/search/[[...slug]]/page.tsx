@@ -1,4 +1,1 @@
-export {
-  Page as default,
-  generateMetadata,
-} from "../../../domains/search-page";
+export { Page as default, metadata } from "../../../domains/search-page";

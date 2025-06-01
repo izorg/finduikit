@@ -8,6 +8,7 @@ import { useMemo } from "react";
 
 import { useSearch } from "../../../search";
 import { Sorting, useSorting } from "../../../sorting";
+import { useUnstyled } from "../../../unstyled";
 import type { UiKit } from "../../getUiKits";
 import { UiKitCard } from "../UiKitCard";
 import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
@@ -30,25 +31,38 @@ type UiKitGridProps = {
 };
 
 export const UiKitGrid = (props: UiKitGridProps) => {
+  const { uiKits: uiKitsProp } = props;
+
   const { search } = useSearch();
   const { sorting } = useSorting();
+  const { unstyled } = useUnstyled();
 
   const fuse = useMemo(
     () =>
-      new Fuse(props.uiKits, {
+      new Fuse(uiKitsProp, {
         ignoreLocation: true,
         keys,
       }),
-    [props.uiKits],
+    [uiKitsProp],
   );
 
   const uiKits = useMemo(() => {
+    let uiKits = uiKitsProp;
+
     if (search) {
-      return fuse.search(search).map(({ item }) => item);
+      uiKits = fuse.search(search).map(({ item }) => item);
     }
 
-    return props.uiKits.toSorted(sorters[sorting]);
-  }, [fuse, props.uiKits, search, sorting]);
+    if (unstyled) {
+      uiKits = uiKits.filter((uiKit) => uiKit.unstyled);
+    }
+
+    if (!search) {
+      uiKits = uiKits.toSorted(sorters[sorting]);
+    }
+
+    return uiKits;
+  }, [fuse, search, sorting, uiKitsProp, unstyled]);
 
   if (uiKits.length === 0) {
     return (

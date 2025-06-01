@@ -11,13 +11,10 @@ import {
   FrameworkSelect,
   getFrameworkSlug,
   useFrameworkFromParams,
-  useFrameworkSlug,
 } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
 import { Sorting, SortingSelect, useSorting } from "../../sorting";
-import { UnstyledSwitch, useUnstyledSlug } from "../../unstyled";
-import { getUnstyledSlug } from "../../unstyled/getUnstyledSlug";
-import { useUnstyledFromParams } from "../../unstyled/useUnstyledFromParams";
+import { UnstyledSwitch, useUnstyled } from "../../unstyled";
 
 import styles from "./PageTopBar.module.css";
 
@@ -34,12 +31,9 @@ export const PageTopBar = () => {
 
   const { setSearch } = useSearch();
   const { setSorting, sorting } = useSorting();
-
-  const frameworkSlug = useFrameworkSlug();
-  const unstyledSlug = useUnstyledSlug();
+  const { setUnstyled, unstyled } = useUnstyled();
 
   const framework = useFrameworkFromParams();
-  const unstyled = useUnstyledFromParams();
 
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.currentTarget;
@@ -58,7 +52,7 @@ export const PageTopBar = () => {
 
     const frameworkSlug = getFrameworkSlug(framework);
 
-    const slug = [frameworkSlug, unstyledSlug].filter(Boolean);
+    const slug = [frameworkSlug].filter(Boolean);
 
     router.push(`/search/${slug.join("/")}${searchString}`, {
       scroll: false,
@@ -68,11 +62,7 @@ export const PageTopBar = () => {
   };
 
   const onUnstyledChange = (checked: boolean) => {
-    const slug = [frameworkSlug, getUnstyledSlug(checked)].filter(Boolean);
-
-    router.push(`/search/${slug.join("/")}${searchString}`, {
-      scroll: false,
-    });
+    setUnstyled(checked);
 
     scrollToTop();
   };

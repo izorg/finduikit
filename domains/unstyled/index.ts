@@ -1,3 +1,2 @@
-export * from "./getUnstyledFromParamsPromise";
 export * from "./UnstyledSwitch";
-export * from "./useUnstyledSlug";
+export * from "./useUnstyled";
