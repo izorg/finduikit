@@ -6,6 +6,7 @@ import { Grid } from "@radix-ui/themes/components/grid";
 import Fuse from "fuse.js";
 import { useMemo } from "react";
 
+import { useFramework } from "../../../framework";
 import { useSearch } from "../../../search";
 import { Sorting, useSorting } from "../../../sorting";
 import { useUnstyled } from "../../../unstyled";
@@ -33,6 +34,7 @@ type UiKitGridProps = {
 export const UiKitGrid = (props: UiKitGridProps) => {
   const { uiKits: uiKitsProp } = props;
 
+  const { framework } = useFramework();
   const { search } = useSearch();
   const { sorting } = useSorting();
   const { unstyled } = useUnstyled();
@@ -53,6 +55,10 @@ export const UiKitGrid = (props: UiKitGridProps) => {
       uiKits = fuse.search(search).map(({ item }) => item);
     }
 
+    if (framework) {
+      uiKits = uiKits.filter((uiKit) => uiKit.frameworks?.includes(framework));
+    }
+
     if (unstyled) {
       uiKits = uiKits.filter((uiKit) => uiKit.unstyled);
     }
@@ -62,7 +68,7 @@ export const UiKitGrid = (props: UiKitGridProps) => {
     }
 
     return uiKits;
-  }, [fuse, search, sorting, uiKitsProp, unstyled]);
+  }, [framework, fuse, search, sorting, uiKitsProp, unstyled]);
 
   if (uiKits.length === 0) {
     return (

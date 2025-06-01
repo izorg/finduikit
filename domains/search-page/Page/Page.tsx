@@ -2,8 +2,6 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { type Metadata } from "next";
 
 import { Footer } from "../../footer";
-import { getFrameworkFromParamsPromise } from "../../framework";
-import type { DynamicRouteParams } from "../../next";
 import { SearchProvider } from "../../search";
 import { getUiKits } from "../../ui-kit";
 
@@ -20,22 +18,10 @@ export const metadata: Metadata = {
 
 const uiKitsResource = getUiKits();
 
-type PageProps = {
-  params: DynamicRouteParams;
-};
-
-export const Page = async (props: PageProps) => {
-  const { params } = props;
-
-  const framework = await getFrameworkFromParamsPromise(params);
-
+export const Page = async () => {
   const uiKitSet = await uiKitsResource;
 
-  let uiKits = [...uiKitSet];
-
-  if (framework) {
-    uiKits = uiKits.filter((uiKit) => uiKit.frameworks?.includes(framework));
-  }
+  const uiKits = [...uiKitSet];
 
   return (
     <SearchProvider>

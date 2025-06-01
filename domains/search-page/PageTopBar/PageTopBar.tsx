@@ -3,15 +3,9 @@
 import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
-import { useRouter, useSearchParams } from "next/navigation";
 import { type ChangeEvent, startTransition } from "react";
 
-import {
-  Framework,
-  FrameworkSelect,
-  getFrameworkSlug,
-  useFrameworkFromParams,
-} from "../../framework";
+import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
 import { Sorting, SortingSelect, useSorting } from "../../sorting";
 import { UnstyledSwitch, useUnstyled } from "../../unstyled";
@@ -23,17 +17,10 @@ const scrollToTop = () => {
 };
 
 export const PageTopBar = () => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const searchString =
-    searchParams.size > 0 ? `?${searchParams.toString()}` : "";
-
+  const { framework, setFramework } = useFramework();
   const { setSearch } = useSearch();
   const { setSorting, sorting } = useSorting();
   const { setUnstyled, unstyled } = useUnstyled();
-
-  const framework = useFrameworkFromParams();
 
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.currentTarget;
@@ -50,13 +37,7 @@ export const PageTopBar = () => {
       (option) => option === value,
     );
 
-    const frameworkSlug = getFrameworkSlug(framework);
-
-    const slug = [frameworkSlug].filter(Boolean);
-
-    router.push(`/search/${slug.join("/")}${searchString}`, {
-      scroll: false,
-    });
+    setFramework(framework);
 
     scrollToTop();
   };

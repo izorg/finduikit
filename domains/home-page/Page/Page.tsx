@@ -31,7 +31,7 @@ export const Page = () => (
       justify="center"
     >
       <Button asChild size="3">
-        <NextLink href="/search/">
+        <NextLink href="/search">
           <SvgIcon path={mdiMagnify} />
           Search
         </NextLink>
