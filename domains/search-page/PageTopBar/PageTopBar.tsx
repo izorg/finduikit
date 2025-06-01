@@ -3,7 +3,7 @@
 import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { type ChangeEvent, startTransition } from "react";
 
 import {
@@ -14,7 +14,7 @@ import {
   useFrameworkSlug,
 } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
-import { Sorting, SortingSelect } from "../../sorting";
+import { Sorting, SortingSelect, useSorting } from "../../sorting";
 import { UnstyledSwitch, useUnstyledSlug } from "../../unstyled";
 import { getUnstyledSlug } from "../../unstyled/getUnstyledSlug";
 import { useUnstyledFromParams } from "../../unstyled/useUnstyledFromParams";
@@ -27,8 +27,13 @@ const scrollToTop = () => {
 
 export const PageTopBar = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const { setSearch, setSorting, sorting } = useSearch();
+  const searchString =
+    searchParams.size > 0 ? `?${searchParams.toString()}` : "";
+
+  const { setSearch } = useSearch();
+  const { setSorting, sorting } = useSorting();
 
   const frameworkSlug = useFrameworkSlug();
   const unstyledSlug = useUnstyledSlug();
@@ -55,7 +60,7 @@ export const PageTopBar = () => {
 
     const slug = [frameworkSlug, unstyledSlug].filter(Boolean);
 
-    router.push(`/search/${slug.join("/")}`, {
+    router.push(`/search/${slug.join("/")}${searchString}`, {
       scroll: false,
     });
 
@@ -65,7 +70,7 @@ export const PageTopBar = () => {
   const onUnstyledChange = (checked: boolean) => {
     const slug = [frameworkSlug, getUnstyledSlug(checked)].filter(Boolean);
 
-    router.push(`/search/${slug.join("/")}`, {
+    router.push(`/search/${slug.join("/")}${searchString}`, {
       scroll: false,
     });
 

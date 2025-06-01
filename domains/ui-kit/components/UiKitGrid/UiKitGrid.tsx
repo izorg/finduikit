@@ -7,7 +7,7 @@ import Fuse from "fuse.js";
 import { useMemo } from "react";
 
 import { useSearch } from "../../../search";
-import { Sorting } from "../../../sorting";
+import { Sorting, useSorting } from "../../../sorting";
 import type { UiKit } from "../../getUiKits";
 import { UiKitCard } from "../UiKitCard";
 import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
@@ -30,7 +30,8 @@ type UiKitGridProps = {
 };
 
 export const UiKitGrid = (props: UiKitGridProps) => {
-  const { search, sorting } = useSearch();
+  const { search } = useSearch();
+  const { sorting } = useSorting();
 
   const fuse = useMemo(
     () =>
