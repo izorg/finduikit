@@ -126,11 +126,7 @@ export const PageTopBar = () => {
               Unstyled
             </Flex>
           </Text>
-          <SortingSelect
-            onValueChange={onSortingChange}
-            size={{ initial: "2", sm: "3" }}
-            value={sorting}
-          />
+          <SortingSelect onValueChange={onSortingChange} value={sorting} />
         </Flex>
       </Flex>
     </Box>
