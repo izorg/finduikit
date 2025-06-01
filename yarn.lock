@@ -6111,16 +6111,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=13.7.0, @types/node@npm:^22.8.7":
-  version: 22.15.24
-  resolution: "@types/node@npm:22.15.24"
-  dependencies:
-    undici-types: "npm:~6.21.0"
-  checksum: 10/249f8206b2da5faf621e200757a15ca936a3d72d84fb31dfbc4021f83b577e3be591b29ba322f832790eeb5bdfa3674b8fd0a0e81059b99f129973250ab7ec04
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:22.15.29":
+"@types/node@npm:*, @types/node@npm:22.15.29, @types/node@npm:>=13.7.0, @types/node@npm:^22.8.7":
   version: 22.15.29
   resolution: "@types/node@npm:22.15.29"
   dependencies:
@@ -9265,9 +9256,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:4.4.1":
-  version: 4.4.1
-  resolution: "eslint-import-resolver-typescript@npm:4.4.1"
+"eslint-import-resolver-typescript@npm:4.4.2":
+  version: 4.4.2
+  resolution: "eslint-import-resolver-typescript@npm:4.4.2"
   dependencies:
     debug: "npm:^4.4.1"
     eslint-import-context: "npm:^0.1.5"
@@ -9285,7 +9276,7 @@ __metadata:
       optional: true
     eslint-plugin-import-x:
       optional: true
-  checksum: 10/6fc8a16060c5423c8f53587f4c2d57ff2f87db11c78ae9579d9c81638029c319a0217a07abb86a445e8e45a2863920bbface9659310ef0c501ed72e2aaeb9020
+  checksum: 10/87302b2a6a93d5137333aaf9ad30900ff4ec6d88f673398d9cac951262bcd67f43466f0ff85228320e8e70b174920d06b645b6cb474053be9b4004e4c6b25608
   languageName: node
   linkType: hard
 
@@ -10154,7 +10145,7 @@ __metadata:
     eslint: "npm:9.28.0"
     eslint-config-flat-gitignore: "npm:2.1.0"
     eslint-config-prettier: "npm:10.1.5"
-    eslint-import-resolver-typescript: "npm:4.4.1"
+    eslint-import-resolver-typescript: "npm:4.4.2"
     eslint-plugin-compat: "npm:6.0.2"
     eslint-plugin-import: "npm:2.31.0"
     eslint-plugin-json-schema-validator: "npm:5.4.0"
@@ -10179,7 +10170,7 @@ __metadata:
     prettier: "npm:3.5.3"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
-    simple-icons: "npm:14.15.0"
+    simple-icons: "npm:15.0.0"
     stylelint: "npm:16.20.0"
     stylelint-config-css-modules: "npm:4.4.0"
     stylelint-config-standard: "npm:38.0.0"
@@ -10190,7 +10181,7 @@ __metadata:
     typescript-eslint: "npm:8.33.0"
     typescript-plugin-css-modules: "npm:5.1.0"
     yaml: "npm:2.8.0"
-    zod: "npm:3.25.42"
+    zod: "npm:3.25.46"
   languageName: unknown
   linkType: soft
 
@@ -16326,10 +16317,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:14.15.0":
-  version: 14.15.0
-  resolution: "simple-icons@npm:14.15.0"
-  checksum: 10/893af38e591c815070ce23d977a6c0c374fe90b51793209e417ae7b9cdf0a91d3e6b90a18f3ecb492094b536fac805c8d3143ec941bd37490e7fbf9fd31dc58c
+"simple-icons@npm:15.0.0":
+  version: 15.0.0
+  resolution: "simple-icons@npm:15.0.0"
+  checksum: 10/baf0fa1718c26c0241f6b22899072495ffbb226ec8c603b69b6086025bf58217c06b2a9076e6405a6b118de4a88d99a78a3599f9eefc14edcea8639aa4f6651a
   languageName: node
   linkType: hard
 
@@ -18473,16 +18464,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:3.25.42":
-  version: 3.25.42
-  resolution: "zod@npm:3.25.42"
-  checksum: 10/eb1f86ef6c29f1cb35245b671a1f2a6ad1a40b3b56acd98d72afb1775c12d72631ad161fdf5e5041bcc78560df6a135096244f74734885458ee0aeec8ccb288d
-  languageName: node
-  linkType: hard
-
-"zod@npm:^3.22.4, zod@npm:^3.23.8, zod@npm:^3.24.3":
-  version: 3.25.36
-  resolution: "zod@npm:3.25.36"
-  checksum: 10/c649e997fdc8463d2e61efb6cf835789b20e02d2122c70ffcef4eac2f716650b791c53b0d330c6d831b17ac52cfd33df6ac3ce6e9b90c6720b1f37d844d87079
+"zod@npm:3.25.46, zod@npm:^3.22.4, zod@npm:^3.23.8, zod@npm:^3.24.3":
+  version: 3.25.46
+  resolution: "zod@npm:3.25.46"
+  checksum: 10/04ffe7d8806e4b3949886d176420610535b0acdafe2bd7e6d171e22e6e744c4d60388f74586454666bc758e0fc434e8ce1dfb8937b8f4394d71d651829aca3d4
   languageName: node
   linkType: hard

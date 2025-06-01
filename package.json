@@ -38,7 +38,7 @@
     "next-themes": "0.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "simple-icons": "14.15.0"
+    "simple-icons": "15.0.0"
   },
   "devDependencies": {
     "@eslint/css": "0.8.1",
@@ -59,7 +59,7 @@
     "eslint": "9.28.0",
     "eslint-config-flat-gitignore": "2.1.0",
     "eslint-config-prettier": "10.1.5",
-    "eslint-import-resolver-typescript": "4.4.1",
+    "eslint-import-resolver-typescript": "4.4.2",
     "eslint-plugin-compat": "6.0.2",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-json-schema-validator": "5.4.0",
@@ -88,6 +88,6 @@
     "typescript-eslint": "8.33.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.42"
+    "zod": "3.25.46"
   }
 }
