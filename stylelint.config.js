@@ -6,7 +6,7 @@ export default {
       files: ["**/*.module.css"],
       rules: {
         "selector-class-pattern": [
-          "^[a-z]+(?:[A-Z][a-z]*)*$",
+          "^[a-z]+(?:[A-Z][a-z]*)*$|^rt-",
           {
             message: "Class selectors should be written in camelCase.",
             resolveNestedSelectors: true,
