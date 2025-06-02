@@ -3,7 +3,6 @@
 import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
-import { type ChangeEvent, startTransition } from "react";
 
 import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
@@ -18,18 +17,14 @@ const scrollToTop = () => {
 
 export const PageTopBar = () => {
   const { framework, setFramework } = useFramework();
-  const { setSearch } = useSearch();
+  const { search, setSearch } = useSearch();
   const { setSorting, sorting } = useSorting();
   const { setUnstyled, unstyled } = useUnstyled();
 
-  const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.currentTarget;
+  const onSearchChange = (value: string) => {
+    setSearch(value);
 
-    startTransition(() => {
-      setSearch(value);
-
-      scrollToTop();
-    });
+    scrollToTop();
   };
 
   const onFrameworkChange = (value: string) => {
@@ -76,7 +71,11 @@ export const PageTopBar = () => {
         }}
       >
         <Box asChild flexGrow="1">
-          <SearchInput onChange={onSearchChange} size="3" />
+          <SearchInput
+            defaultValue={search}
+            onChange={onSearchChange}
+            size="3"
+          />
         </Box>
         <Flex
           align="center"

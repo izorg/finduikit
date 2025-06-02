@@ -1,2 +1,2 @@
 export * from "./SearchInput";
-export * from "./SearchProvider";
+export * from "./useSearch";

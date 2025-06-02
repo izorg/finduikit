@@ -2,7 +2,6 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { type Metadata } from "next";
 
 import { Footer } from "../../footer";
-import { SearchProvider } from "../../search";
 import { getUiKits } from "../../ui-kit";
 
 import { PageMain } from "./PageMain";
@@ -24,11 +23,9 @@ export const Page = async () => {
   const uiKits = [...uiKitSet];
 
   return (
-    <SearchProvider>
-      <Flex direction="column" gap="6" minHeight="100dvh" pb="4">
-        <PageMain uiKits={uiKits} />
-        <Footer />
-      </Flex>
-    </SearchProvider>
+    <Flex direction="column" gap="6" minHeight="100dvh" pb="4">
+      <PageMain uiKits={uiKits} />
+      <Footer />
+    </Flex>
   );
 };

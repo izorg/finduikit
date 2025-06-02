@@ -4,32 +4,34 @@ import { mdiClose, mdiMagnify } from "@mdi/js";
 import { IconButton } from "@radix-ui/themes/components/icon-button";
 import * as TextField from "@radix-ui/themes/components/text-field";
 import { useRef } from "react";
+import { useDebounceCallback } from "usehooks-ts";
 
 import { SvgIcon } from "../../icon";
-import { useSearch } from "../SearchProvider";
 
-const placeholder = "Search";
+import styles from "./SearchInput.module.css";
 
-let defaultValue = "";
+type SearchInputProps = {
+  onChange: (value: string) => void;
+} & Omit<TextField.RootProps, "onChange">;
 
-export const SearchInput = (props: TextField.RootProps) => {
-  const { onChange, ...rest } = props;
-
-  const { search, setSearch } = useSearch();
+export const SearchInput = (props: SearchInputProps) => {
+  const { onChange: onChangeProp, ...rest } = props;
 
   const ref = useRef<HTMLInputElement>(null);
+
+  const placeholder = "Search";
+
+  const onChange = useDebounceCallback(onChangeProp, 200);
 
   return (
     <TextField.Root
       {...rest}
       aria-label={placeholder}
-      defaultValue={defaultValue}
+      name="search"
       onChange={(event) => {
         const { value } = event.currentTarget;
 
-        defaultValue = value;
-
-        onChange?.(event);
+        onChange(value);
       }}
       placeholder={placeholder}
       ref={ref}
@@ -38,25 +40,22 @@ export const SearchInput = (props: TextField.RootProps) => {
       <TextField.Slot>
         <SvgIcon path={mdiMagnify} />
       </TextField.Slot>
-      {search ? (
-        <TextField.Slot>
-          <IconButton
-            onClick={() => {
-              defaultValue = "";
+      <TextField.Slot className={styles.clearSlot}>
+        <IconButton
+          onClick={() => {
+            if (ref.current) {
+              ref.current.value = "";
+              ref.current.focus();
+            }
 
-              if (ref.current) {
-                ref.current.value = defaultValue;
-                ref.current.focus();
-              }
-
-              setSearch("");
-            }}
-            variant="ghost"
-          >
-            <SvgIcon path={mdiClose} />
-          </IconButton>
-        </TextField.Slot>
-      ) : undefined}
+            onChange("");
+            onChange.flush();
+          }}
+          variant="ghost"
+        >
+          <SvgIcon path={mdiClose} />
+        </IconButton>
+      </TextField.Slot>
     </TextField.Root>
   );
 };
