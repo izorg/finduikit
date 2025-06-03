@@ -1,16 +1,16 @@
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
 
-import { Framework, frameworkColors, frameworkIcons } from "../../framework";
-import { SvgIcon } from "../../icon";
+import { Framework, frameworkColors, frameworkIcons } from "../../../framework";
+import { SvgIcon } from "../../../icon";
 
-import styles from "./ComparePageFrameworkList.module.css";
+import styles from "./UiKitTableFrameworkList.module.css";
 
 type ComparePageFrameworkListProps = {
   frameworks?: Framework[];
 };
 
-export const ComparePageFrameworkList = (
+export const UiKitTableFrameworkList = (
   props: ComparePageFrameworkListProps,
 ) => {
   const { frameworks } = props;
