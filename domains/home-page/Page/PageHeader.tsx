@@ -16,7 +16,7 @@ export const PageHeader = (props: PageHeaderProps) => {
           <Text
             asChild
             size={{
-              initial: "6",
+              initial: "8",
               sm: "9",
             }}
             weight="medium"
