@@ -29,7 +29,7 @@
     "@mdi/js": "7.4.47",
     "@next/third-parties": "15.3.3",
     "@radix-ui/themes": "3.2.1",
-    "@sentry/nextjs": "9.24.0",
+    "@sentry/nextjs": "9.25.1",
     "classnames": "2.5.1",
     "core-js": "3.42.0",
     "firebase-admin": "13.4.0",
@@ -89,6 +89,6 @@
     "typescript-eslint": "8.33.1",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.48"
+    "zod": "3.25.49"
   }
 }
