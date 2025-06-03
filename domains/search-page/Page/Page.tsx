@@ -1,5 +1,6 @@
 import { Flex } from "@radix-ui/themes/components/flex";
 import { type Metadata } from "next";
+import { Suspense } from "react";
 
 import { Footer } from "../../footer";
 import { getUiKits } from "../../ui-kit";
@@ -24,8 +25,10 @@ export const Page = async () => {
 
   return (
     <Flex direction="column" gap="6" minHeight="100dvh" pb="4">
-      <PageMain uiKits={uiKits} />
-      <Footer />
+      <Suspense>
+        <PageMain uiKits={uiKits} />
+        <Footer />
+      </Suspense>
     </Flex>
   );
 };
