@@ -159,7 +159,7 @@ export default ts.config(
           schemas: [
             {
               fileMatch: ["ui-kits/*.yml"],
-              schema: "domains/ui-kit/UiKit.schema.json",
+              schema: "domains/ui-kit/UiKitStaticData.schema.json",
             },
           ],
         },

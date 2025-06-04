@@ -1,4 +1,4 @@
-import type { UiKitSchema } from "../domains/ui-kit";
+import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
@@ -6,7 +6,7 @@ export const getImage = ({
   data,
   github,
 }: {
-  data: UiKitSchema;
+  data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
 }) => {
   if (data?.image === "") {

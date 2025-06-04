@@ -5,7 +5,7 @@ import { Text } from "@radix-ui/themes/components/text";
 import { Tooltip } from "@radix-ui/themes/components/tooltip";
 
 import { SvgIcon } from "../../../icon";
-import type { UiKit } from "../../getUiKits";
+import type { UiKit } from "../../UiKit";
 
 import styles from "./UiKitStats.module.css";
 

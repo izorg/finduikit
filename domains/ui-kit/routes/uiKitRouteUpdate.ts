@@ -15,7 +15,7 @@ import { getIssues } from "../../../data-handlers/getIssues";
 import { getStars } from "../../../data-handlers/getStars";
 import { getUpdatedAt } from "../../../data-handlers/getUpdatedAt";
 import { firebaseGetFirestoreUiKitsCollection } from "../../firebase";
-import { uiKitSchema } from "../uiKitSchema";
+import { uiKitStaticDataSchema } from "../uiKitStaticDataSchema";
 
 const uiKitDynamicDataSchema = z.object({
   checkedAt: z.date().optional(),
@@ -72,7 +72,7 @@ const updateUiKit = async (
 ) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
   const buffer = await fs.promises.readFile(filePath);
-  const fileData = uiKitSchema.parse(parseYaml(buffer.toString()));
+  const fileData = uiKitStaticDataSchema.parse(parseYaml(buffer.toString()));
 
   const github = await fetchGitHubRepositoryData(fileData.repository);
 
@@ -132,7 +132,7 @@ export const uiKitRouteUpdate = async (request: Request) => {
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, checkCount);
 
-  for await (const checkEntry of checkEntries) {
+  for (const checkEntry of checkEntries) {
     await updateUiKit(checkEntry, uiKitsCollection);
   }
 

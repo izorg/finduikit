@@ -10,7 +10,7 @@ import { useFramework } from "../../../framework";
 import { useSearch } from "../../../search";
 import { Sorting, useSorting } from "../../../sorting";
 import { useUnstyled } from "../../../unstyled";
-import type { UiKit } from "../../getUiKits";
+import type { UiKit } from "../../UiKit";
 import { UiKitCard } from "../UiKitCard";
 import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
 

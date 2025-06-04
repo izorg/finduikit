@@ -9,7 +9,7 @@ import { Text } from "@radix-ui/themes/components/text";
 import Image from "next/image";
 
 import { Resources } from "../../../resource";
-import type { UiKit } from "../../getUiKits";
+import type { UiKit } from "../../UiKit";
 import { UiKitFrameworkList } from "../UiKitFrameworkList";
 import { UiKitStats } from "../UiKitStats";
 

@@ -10,7 +10,7 @@ import { fetchHomepageData } from "../../../data-handlers/fetchHomepageData";
 import { getDescription } from "../../../data-handlers/getDescription";
 import { getFrameworks } from "../../../data-handlers/getFrameworks";
 import { getImage } from "../../../data-handlers/getImage";
-import { uiKitSchema } from "../uiKitSchema";
+import { uiKitStaticDataSchema } from "../uiKitStaticDataSchema";
 
 const CHECK_COUNT = Number.parseInt(process.env.CHECK_COUNT ?? "", 10) || 1;
 
@@ -21,7 +21,7 @@ const updateUiKit = async (dirent: Dirent) => {
 
   const buffer = await fs.promises.readFile(filePath);
 
-  const data = uiKitSchema.parse(parseYaml(buffer.toString()));
+  const data = uiKitStaticDataSchema.parse(parseYaml(buffer.toString()));
 
   const [github, homepage] = await Promise.all([
     fetchGitHubRepositoryData(data.repository),
@@ -29,7 +29,7 @@ const updateUiKit = async (dirent: Dirent) => {
   ]);
 
   const output = stringifyYaml(
-    uiKitSchema.parse({
+    uiKitStaticDataSchema.parse({
       ...data,
       description: getDescription({ data, github, homepage }),
       frameworks: getFrameworks({ data, github }),

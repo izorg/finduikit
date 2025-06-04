@@ -5,7 +5,7 @@ import { Text } from "@radix-ui/themes/components/text";
 import { siFigma, siStorybook } from "simple-icons";
 
 import { SvgIcon } from "../../../icon";
-import type { UiKit } from "../../getUiKits";
+import type { UiKit } from "../../UiKit";
 
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 

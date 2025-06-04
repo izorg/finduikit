@@ -1,5 +1,5 @@
 import { Framework } from "../domains/framework";
-import type { UiKitSchema } from "../domains/ui-kit";
+import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
@@ -36,7 +36,7 @@ export const getFrameworks = ({
   data,
   github,
 }: {
-  data: UiKitSchema;
+  data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
 }) => {
   const hardcodedFrameworks = hardcodedFrameworksByName[data.name];

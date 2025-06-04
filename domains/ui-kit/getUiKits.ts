@@ -7,21 +7,18 @@ import {
   Timestamp,
 } from "firebase-admin/firestore";
 import { parse } from "yaml";
-import { z } from "zod/v4";
 
 import { firebaseGetFirestoreUiKitsCollection } from "../firebase";
 
-import { uiKitSchema, type UiKitSchema } from "./uiKitSchema";
-
-const uiKitDynamicDataSchema = z.object({
-  issues: z.number().optional(),
-  stars: z.number().optional(),
-  updatedAt: z.date().optional(),
-});
-
-export type UiKit = UiKitDynamicDataSchema & UiKitSchema;
-
-type UiKitDynamicDataSchema = z.infer<typeof uiKitDynamicDataSchema>;
+import type { UiKit } from "./UiKit";
+import {
+  uiKitDynamicDataSchema,
+  type UiKitDynamicDataSchema,
+} from "./uiKitDynamicDataSchema";
+import {
+  uiKitStaticDataSchema,
+  type UiKitStaticDataSchema,
+} from "./uiKitStaticDataSchema";
 
 const getUiKitFileDataEntriesFromFiles = async () => {
   const entries = await fs.promises.readdir(
@@ -34,13 +31,18 @@ const getUiKitFileDataEntriesFromFiles = async () => {
   return await Promise.all(
     entries
       .filter((dirent) => dirent.isFile())
-      .map(async (dirent): Promise<[key: string, data: UiKitSchema]> => {
-        const buffer = await fs.promises.readFile(
-          path.join(dirent.parentPath, dirent.name),
-        );
+      .map(
+        async (dirent): Promise<[key: string, data: UiKitStaticDataSchema]> => {
+          const buffer = await fs.promises.readFile(
+            path.join(dirent.parentPath, dirent.name),
+          );
 
-        return [dirent.name, uiKitSchema.parse(parse(buffer.toString()))];
-      }),
+          return [
+            dirent.name,
+            uiKitStaticDataSchema.parse(parse(buffer.toString())),
+          ];
+        },
+      ),
   );
 };
 

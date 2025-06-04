@@ -2,7 +2,7 @@ import { z } from "zod/v4";
 
 import { Framework } from "../framework";
 
-export const uiKitSchema = z.object({
+export const uiKitStaticDataSchema = z.object({
   description: z.string().optional(),
   figma: z.url().optional(),
   frameworks: z.array(z.enum(Framework)).optional(),
@@ -22,4 +22,4 @@ export const uiKitSchema = z.object({
   unstyled: z.boolean().optional(),
 });
 
-export type UiKitSchema = z.infer<typeof uiKitSchema>;
+export type UiKitStaticDataSchema = z.infer<typeof uiKitStaticDataSchema>;

@@ -5,14 +5,17 @@ import { ESLint } from "eslint";
 import { format } from "prettier";
 import { z } from "zod/v4";
 
-import { uiKitSchema } from "../uiKitSchema";
+import { uiKitStaticDataSchema } from "../uiKitStaticDataSchema";
 
-const jsonSchema = z.toJSONSchema(uiKitSchema, {
+const jsonSchema = z.toJSONSchema(uiKitStaticDataSchema, {
   target: "draft-7",
 });
 const output = JSON.stringify(jsonSchema, undefined, 2);
 const eslint = new ESLint({ fix: true });
-const filePath = path.join(process.cwd(), "domains/ui-kit/UiKit.schema.json");
+const filePath = path.join(
+  process.cwd(),
+  "domains/ui-kit/UiKitStaticData.schema.json",
+);
 
 const lintResults = await eslint.lintText(output, {
   filePath,

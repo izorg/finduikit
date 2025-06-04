@@ -1,6 +1,6 @@
 import { type HTMLElement } from "node-html-parser";
 
-import type { UiKitSchema } from "../domains/ui-kit";
+import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
@@ -11,7 +11,7 @@ export const getDescription = ({
   github,
   homepage,
 }: {
-  data: UiKitSchema;
+  data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
   homepage: HTMLElement;
 }) => {
