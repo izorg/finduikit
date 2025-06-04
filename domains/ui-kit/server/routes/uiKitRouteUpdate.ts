@@ -10,12 +10,12 @@ import { notFound } from "next/navigation";
 import { parse as parseYaml } from "yaml";
 import { z } from "zod/v4";
 
-import { fetchGitHubRepositoryData } from "../../../data-handlers/fetchGitHubRepositoryData";
-import { getIssues } from "../../../data-handlers/getIssues";
-import { getStars } from "../../../data-handlers/getStars";
-import { getUpdatedAt } from "../../../data-handlers/getUpdatedAt";
-import { firebaseGetFirestoreUiKitsCollection } from "../../firebase";
-import { uiKitStaticDataSchema } from "../uiKitStaticDataSchema";
+import { fetchGitHubRepositoryData } from "../../../../data-handlers/fetchGitHubRepositoryData";
+import { getIssues } from "../../../../data-handlers/getIssues";
+import { getStars } from "../../../../data-handlers/getStars";
+import { getUpdatedAt } from "../../../../data-handlers/getUpdatedAt";
+import { firebaseGetFirestoreUiKitsCollection } from "../../../firebase";
+import { uiKitStaticDataSchema } from "../../uiKitStaticDataSchema";
 
 const uiKitDynamicDataSchema = z.object({
   checkedAt: z.date().optional(),

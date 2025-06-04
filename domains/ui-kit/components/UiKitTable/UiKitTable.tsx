@@ -9,8 +9,6 @@ import type { UiKit } from "../../UiKit";
 
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 
-import styles from "./UiKitTable.module.css";
-
 type UiKitTableProps = {
   uiKits: UiKit[];
 };
@@ -21,7 +19,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
   return (
     <div className="rt-TableRoot rt-r-size-3 rt-variant-ghost">
       <table className="rt-TableRootTable">
-        <Table.Header className={styles.tableHead}>
+        <Table.Header>
           <Table.Row>
             <Table.ColumnHeaderCell>Name</Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell justify="center">

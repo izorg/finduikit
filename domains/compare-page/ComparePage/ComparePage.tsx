@@ -3,7 +3,8 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import type { Metadata } from "next";
 
 import { Footer } from "../../footer";
-import { getUiKits, UiKitTable } from "../../ui-kit";
+import { UiKitTable } from "../../ui-kit";
+import { getUiKits } from "../../ui-kit/server";
 
 const title = "UI Kits Comparison Table";
 

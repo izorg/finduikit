@@ -1,1 +1,1 @@
-export { uiKitRouteUpdate as GET } from "../../../domains/ui-kit";
+export { uiKitRouteUpdate as GET } from "../../../domains/ui-kit/server";

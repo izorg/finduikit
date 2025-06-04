@@ -7,7 +7,7 @@ import NextLink from "next/link";
 
 import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
-import { getUiKits } from "../../ui-kit";
+import { getUiKits } from "../../ui-kit/server";
 
 import { PageHeader } from "./PageHeader";
 

@@ -2,11 +2,13 @@
 
 import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
+import * as SegmentedControl from "@radix-ui/themes/components/segmented-control";
 import { Text } from "@radix-ui/themes/components/text";
 
 import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
 import { Sorting, SortingSelect, useSorting } from "../../sorting";
+import { useUiKitView } from "../../ui-kit";
 import { UnstyledSwitch, useUnstyled } from "../../unstyled";
 
 import styles from "./PageTopBar.module.css";
@@ -20,6 +22,7 @@ export const PageTopBar = () => {
   const { search, setSearch } = useSearch();
   const { setSorting, sorting } = useSorting();
   const { setUnstyled, unstyled } = useUnstyled();
+  const { setUiKitView, uiKitView } = useUiKitView();
 
   const onSearchChange = (value: string) => {
     setSearch(value);
@@ -58,11 +61,11 @@ export const PageTopBar = () => {
       <Flex
         direction={{
           initial: "column",
-          sm: "row",
+          md: "row",
         }}
         gapX="4"
         gapY="2"
-        maxWidth="800px"
+        maxWidth="var(--container-3)"
         mx="auto"
         width="100%"
         wrap={{
@@ -97,11 +100,19 @@ export const PageTopBar = () => {
                 checked={unstyled}
                 onCheckedChange={onUnstyledChange}
                 size={{ initial: "1", sm: "2" }}
-              />{" "}
+              />
               Unstyled
             </Flex>
           </Text>
           <SortingSelect onValueChange={onSortingChange} value={sorting} />
+          <SegmentedControl.Root
+            onValueChange={setUiKitView}
+            size={{ initial: "2", sm: "3" }}
+            value={uiKitView}
+          >
+            <SegmentedControl.Item value="grid">Grid</SegmentedControl.Item>
+            <SegmentedControl.Item value="table">Table</SegmentedControl.Item>
+          </SegmentedControl.Root>
         </Flex>
       </Flex>
     </Box>

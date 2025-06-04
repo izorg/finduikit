@@ -8,17 +8,17 @@ import {
 } from "firebase-admin/firestore";
 import { parse } from "yaml";
 
-import { firebaseGetFirestoreUiKitsCollection } from "../firebase";
+import { firebaseGetFirestoreUiKitsCollection } from "../../firebase";
 
-import type { UiKit } from "./UiKit";
+import type { UiKit } from "../UiKit";
 import {
   uiKitDynamicDataSchema,
   type UiKitDynamicDataSchema,
-} from "./uiKitDynamicDataSchema";
+} from "../uiKitDynamicDataSchema";
 import {
   uiKitStaticDataSchema,
   type UiKitStaticDataSchema,
-} from "./uiKitStaticDataSchema";
+} from "../uiKitStaticDataSchema";
 
 const getUiKitFileDataEntriesFromFiles = async () => {
   const entries = await fs.promises.readdir(

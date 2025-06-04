@@ -3,7 +3,7 @@ import { type Metadata } from "next";
 import { Suspense } from "react";
 
 import { Footer } from "../../footer";
-import { getUiKits } from "../../ui-kit";
+import { getUiKits } from "../../ui-kit/server";
 
 import { PageMain } from "./PageMain";
 

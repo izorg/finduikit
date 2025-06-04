@@ -1,74 +1,19 @@
-"use client";
-
 import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Grid } from "@radix-ui/themes/components/grid";
-import Fuse from "fuse.js";
-import { useMemo } from "react";
 
-import { useFramework } from "../../../framework";
-import { useSearch } from "../../../search";
-import { Sorting, useSorting } from "../../../sorting";
-import { useUnstyled } from "../../../unstyled";
 import type { UiKit } from "../../UiKit";
 import { UiKitCard } from "../UiKitCard";
 import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
 
 import styles from "./UiKitGrid.module.css";
 
-const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
-
-const nameCompare = new Intl.Collator("en").compare;
-
-const sorters: Record<Sorting, (a: UiKit, b: UiKit) => number> = {
-  [Sorting.ByName]: (a, b) => nameCompare(a.name, b.name),
-  [Sorting.ByStars]: (a, b) => (b.stars ?? 0) - (a.stars ?? 0),
-  [Sorting.ByUpdate]: (a, b) =>
-    (b.updatedAt?.getTime() ?? 0) - (a.updatedAt?.getTime() ?? 0),
-};
-
 type UiKitGridProps = {
   uiKits: UiKit[];
 };
 
 export const UiKitGrid = (props: UiKitGridProps) => {
-  const { uiKits: uiKitsProp } = props;
-
-  const { framework } = useFramework();
-  const { search } = useSearch();
-  const { sorting } = useSorting();
-  const { unstyled } = useUnstyled();
-
-  const fuse = useMemo(
-    () =>
-      new Fuse(uiKitsProp, {
-        ignoreLocation: true,
-        keys,
-      }),
-    [uiKitsProp],
-  );
-
-  const uiKits = useMemo(() => {
-    let uiKits = uiKitsProp;
-
-    if (search) {
-      uiKits = fuse.search(search).map(({ item }) => item);
-    }
-
-    if (framework) {
-      uiKits = uiKits.filter((uiKit) => uiKit.frameworks?.includes(framework));
-    }
-
-    if (unstyled) {
-      uiKits = uiKits.filter((uiKit) => uiKit.unstyled);
-    }
-
-    if (!search) {
-      uiKits = uiKits.toSorted(sorters[sorting]);
-    }
-
-    return uiKits;
-  }, [framework, fuse, search, sorting, uiKitsProp, unstyled]);
+  const { uiKits } = props;
 
   if (uiKits.length === 0) {
     return (
