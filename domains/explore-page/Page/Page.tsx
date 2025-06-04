@@ -2,17 +2,13 @@ import { Flex } from "@radix-ui/themes/components/flex";
 import { type Metadata } from "next";
 import { Suspense } from "react";
 
-import { Footer } from "../../footer";
 import { getUiKits } from "../../ui-kit/server";
+import { PageTopBar } from "../PageTopBar";
+import { PageView } from "../PageView";
 
-import { PageMain } from "./PageMain";
-
-const title = "UI Kits";
-const description =
-  "Discover a curated collection of web UI kits with high-quality components and templates for developers";
+const title = "Explore UI Kits";
 
 export const metadata: Metadata = {
-  description,
   title,
 };
 
@@ -24,11 +20,13 @@ export const Page = async () => {
   const uiKits = [...uiKitSet];
 
   return (
-    <Flex direction="column" gap="6" minHeight="100dvh" pb="4">
-      <Suspense>
-        <PageMain uiKits={uiKits} />
-        <Footer />
-      </Suspense>
+    <Flex asChild direction="column" height="100dvh">
+      <main>
+        <Suspense>
+          <PageTopBar />
+          <PageView uiKits={uiKits} />
+        </Suspense>
+      </main>
     </Flex>
   );
 };

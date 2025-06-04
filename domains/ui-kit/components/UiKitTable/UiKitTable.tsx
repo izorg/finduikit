@@ -1,7 +1,9 @@
 import { mdiCheck } from "@mdi/js";
+import { Flex } from "@radix-ui/themes/components/flex";
 import { Link } from "@radix-ui/themes/components/link";
 import * as Table from "@radix-ui/themes/components/table";
 import { Text } from "@radix-ui/themes/components/text";
+import type { ComponentProps } from "react";
 import { siFigma, siStorybook } from "simple-icons";
 
 import { SvgIcon } from "../../../icon";
@@ -9,17 +11,19 @@ import type { UiKit } from "../../UiKit";
 
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 
+import styles from "./UiKitTable.module.css";
+
 type UiKitTableProps = {
   uiKits: UiKit[];
-};
+} & ComponentProps<"div">;
 
 export const UiKitTable = (props: UiKitTableProps) => {
-  const { uiKits } = props;
+  const { uiKits, ...rest } = props;
 
   return (
-    <div className="rt-TableRoot rt-r-size-3 rt-variant-ghost">
-      <table className="rt-TableRootTable">
-        <Table.Header>
+    <Flex asChild flexGrow="1" overflow="auto">
+      <Table.Root {...rest}>
+        <Table.Header className={styles.tableHead}>
           <Table.Row>
             <Table.ColumnHeaderCell>Name</Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell justify="center">
@@ -88,7 +92,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
             </Table.Row>
           ))}
         </Table.Body>
-      </table>
-    </div>
+      </Table.Root>
+    </Flex>
   );
 };

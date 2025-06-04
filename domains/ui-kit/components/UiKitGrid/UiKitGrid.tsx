@@ -1,6 +1,7 @@
 import { Box } from "@radix-ui/themes/components/box";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Grid } from "@radix-ui/themes/components/grid";
+import type { ComponentProps } from "react";
 
 import type { UiKit } from "../../UiKit";
 import { UiKitCard } from "../UiKitCard";
@@ -10,31 +11,15 @@ import styles from "./UiKitGrid.module.css";
 
 type UiKitGridProps = {
   uiKits: UiKit[];
-};
+} & ComponentProps<"div">;
 
 export const UiKitGrid = (props: UiKitGridProps) => {
-  const { uiKits } = props;
-
-  if (uiKits.length === 0) {
-    return (
-      <Flex align="center" asChild justify="center">
-        <Box p="4">
-          <UiKitSuggestIconButton />
-        </Box>
-      </Flex>
-    );
-  }
+  const { uiKits, ...rest } = props;
 
   return (
-    <Box px="4">
-      <Grid
-        asChild
-        className={styles.grid}
-        columns="repeat(auto-fill, minmax(240px, 1fr))"
-        flexGrow="1"
-        gap="4"
-      >
-        <ul>
+    <Box flexGrow="1" overflowY="auto" p="4" {...rest}>
+      <Grid asChild columns="repeat(auto-fill, minmax(240px, 1fr))" gap="4">
+        <ul className={styles.grid}>
           {uiKits.map((item) => (
             <li key={item.name}>
               <UiKitCard uiKit={item} />

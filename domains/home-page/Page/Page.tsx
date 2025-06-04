@@ -1,4 +1,4 @@
-import { mdiMagnify, mdiTableLarge } from "@mdi/js";
+import { mdiTelescope } from "@mdi/js";
 import { Button } from "@radix-ui/themes/components/button";
 import { Flex } from "@radix-ui/themes/components/flex";
 import { Text } from "@radix-ui/themes/components/text";
@@ -44,15 +44,9 @@ export const Page = async () => {
         justify="center"
       >
         <Button asChild size="3">
-          <NextLink href="/search">
-            <SvgIcon path={mdiMagnify} />
-            Search
-          </NextLink>
-        </Button>
-        <Button asChild size="3">
-          <NextLink href="/compare">
-            <SvgIcon path={mdiTableLarge} />
-            Compare
+          <NextLink href="/explore">
+            <SvgIcon path={mdiTelescope} />
+            Explore
           </NextLink>
         </Button>
       </Flex>

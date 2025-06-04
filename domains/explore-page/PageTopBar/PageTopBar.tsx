@@ -13,10 +13,6 @@ import { UnstyledSwitch, useUnstyled } from "../../unstyled";
 
 import styles from "./PageTopBar.module.css";
 
-const scrollToTop = () => {
-  document.querySelector("main")?.scrollIntoView();
-};
-
 export const PageTopBar = () => {
   const { framework, setFramework } = useFramework();
   const { search, setSearch } = useSearch();
@@ -26,8 +22,6 @@ export const PageTopBar = () => {
 
   const onSearchChange = (value: string) => {
     setSearch(value);
-
-    scrollToTop();
   };
 
   const onFrameworkChange = (value: string) => {
@@ -36,14 +30,10 @@ export const PageTopBar = () => {
     );
 
     setFramework(framework);
-
-    scrollToTop();
   };
 
   const onUnstyledChange = (checked: boolean) => {
     setUnstyled(checked);
-
-    scrollToTop();
   };
 
   const onSortingChange = (value: string) => {
@@ -52,12 +42,10 @@ export const PageTopBar = () => {
       Sorting.ByName;
 
     setSorting(sorting);
-
-    scrollToTop();
   };
 
   return (
-    <Box className={styles.topBar} p="4" position="sticky" top="0">
+    <Box className={styles.topBar} p="4">
       <Flex
         direction={{
           initial: "column",

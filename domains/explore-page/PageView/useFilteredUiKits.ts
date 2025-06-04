@@ -1,15 +1,11 @@
-"use client";
-
-import { Flex } from "@radix-ui/themes/components/flex";
 import Fuse from "fuse.js";
 import { useMemo } from "react";
 
 import { useFramework } from "../../framework";
 import { useSearch } from "../../search";
 import { Sorting, useSorting } from "../../sorting";
-import { type UiKit, UiKitGrid, UiKitTable, useUiKitView } from "../../ui-kit";
+import { type UiKit } from "../../ui-kit";
 import { useUnstyled } from "../../unstyled";
-import { PageTopBar } from "../PageTopBar";
 
 const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
 
@@ -22,15 +18,7 @@ const sorters: Record<Sorting, (a: UiKit, b: UiKit) => number> = {
     (b.updatedAt?.getTime() ?? 0) - (a.updatedAt?.getTime() ?? 0),
 };
 
-type PageMainProps = {
-  uiKits: UiKit[];
-};
-
-export const PageMain = (props: PageMainProps) => {
-  const { uiKits: uiKitsProp } = props;
-
-  const { uiKitView } = useUiKitView();
-
+export const useFilteredUiKits = (uiKitsProp: UiKit[]) => {
   const { framework } = useFramework();
   const { search } = useSearch();
   const { sorting } = useSorting();
@@ -45,7 +33,7 @@ export const PageMain = (props: PageMainProps) => {
     [uiKitsProp],
   );
 
-  const uiKits = useMemo(() => {
+  return useMemo(() => {
     let uiKits = uiKitsProp;
 
     if (search) {
@@ -66,14 +54,4 @@ export const PageMain = (props: PageMainProps) => {
 
     return uiKits;
   }, [framework, fuse, search, sorting, uiKitsProp, unstyled]);
-
-  return (
-    <Flex asChild direction="column" flexGrow="1" gap="4">
-      <main>
-        <PageTopBar />
-        {uiKitView === "grid" && <UiKitGrid uiKits={uiKits} />}
-        {uiKitView === "table" && <UiKitTable uiKits={uiKits} />}
-      </main>
-    </Flex>
-  );
 };

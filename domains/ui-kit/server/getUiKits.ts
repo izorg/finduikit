@@ -9,7 +9,6 @@ import {
 import { parse } from "yaml";
 
 import { firebaseGetFirestoreUiKitsCollection } from "../../firebase";
-
 import type { UiKit } from "../UiKit";
 import {
   uiKitDynamicDataSchema,
