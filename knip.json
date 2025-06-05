@@ -1,5 +1,4 @@
 {
   "$schema": "node_modules/knip/schema.json",
-  "entry": ["instrumentation-client.ts"],
   "ignoreDependencies": ["eslint-import-resolver-typescript"]
 }
