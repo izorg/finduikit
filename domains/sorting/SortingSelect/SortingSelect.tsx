@@ -1,6 +1,9 @@
+import { mdiSortVariant } from "@mdi/js";
 import { Box } from "@radix-ui/themes/components/box";
+import { Flex } from "@radix-ui/themes/components/flex";
 import * as Select from "@radix-ui/themes/components/select";
 
+import { SvgIcon } from "../../icon";
 import { Sorting } from "../Sorting";
 
 const sortingLabels: Record<Sorting, string> = {
@@ -25,7 +28,10 @@ export const SortingSelect = (
     >
       <Box asChild minWidth={{ initial: "110px", sm: "130px" }}>
         <Select.Trigger aria-label="Sort" {...triggerProps}>
-          {sorting && sortingLabels[sorting]}
+          <Flex align="center" as="span" gap="2">
+            <SvgIcon path={mdiSortVariant} />
+            {sorting && sortingLabels[sorting]}
+          </Flex>
         </Select.Trigger>
       </Box>
       <Select.Content>
