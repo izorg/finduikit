@@ -1,6 +1,4 @@
-import { Box } from "@radix-ui/themes/components/box";
-import { Link } from "@radix-ui/themes/components/link";
-import { Text } from "@radix-ui/themes/components/text";
+import { Box, Link, Text } from "@radix-ui/themes";
 
 export const Footer = () => (
   <Box asChild px="4">

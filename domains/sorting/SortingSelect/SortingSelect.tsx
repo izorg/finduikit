@@ -1,7 +1,5 @@
 import { mdiSortVariant } from "@mdi/js";
-import { Box } from "@radix-ui/themes/components/box";
-import { Flex } from "@radix-ui/themes/components/flex";
-import * as Select from "@radix-ui/themes/components/select";
+import { Box, Flex, Select } from "@radix-ui/themes";
 
 import { SvgIcon } from "../../icon";
 import { Sorting } from "../Sorting";

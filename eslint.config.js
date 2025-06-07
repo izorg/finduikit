@@ -52,21 +52,6 @@ export default ts.config(
     rules: {
       "import/no-cycle": "error",
 
-      "no-restricted-imports": [
-        "error",
-        {
-          paths: [
-            /**
-             * Use direct component imports for better tree-shaking
-             */
-            {
-              message: "Please use `@radix-ui/themes/components/*` instead.",
-              name: "@radix-ui/themes",
-            },
-          ],
-        },
-      ],
-
       "perfectionist/sort-imports": [
         "error",
         {

@@ -1,11 +1,13 @@
-import { Box } from "@radix-ui/themes/components/box";
-import { Card } from "@radix-ui/themes/components/card";
-import { Flex } from "@radix-ui/themes/components/flex";
-import { Heading } from "@radix-ui/themes/components/heading";
-import { Inset } from "@radix-ui/themes/components/inset";
-import { Link } from "@radix-ui/themes/components/link";
-import { Separator } from "@radix-ui/themes/components/separator";
-import { Text } from "@radix-ui/themes/components/text";
+import {
+  Box,
+  Card,
+  Flex,
+  Heading,
+  Inset,
+  Link,
+  Separator,
+  Text,
+} from "@radix-ui/themes";
 import Image from "next/image";
 
 import { Resources } from "../../../resource";

@@ -1,8 +1,5 @@
 import { mdiCheck } from "@mdi/js";
-import { Flex } from "@radix-ui/themes/components/flex";
-import { Link } from "@radix-ui/themes/components/link";
-import * as Table from "@radix-ui/themes/components/table";
-import { Text } from "@radix-ui/themes/components/text";
+import { Flex, Link, Table, Text } from "@radix-ui/themes";
 import type { ComponentProps } from "react";
 import { siFigma, siStorybook } from "simple-icons";
 

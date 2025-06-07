@@ -1,7 +1,6 @@
 "use client";
 
-import { Box } from "@radix-ui/themes/components/box";
-import { Flex } from "@radix-ui/themes/components/flex";
+import { Box, Flex } from "@radix-ui/themes";
 import { useEffect, useRef } from "react";
 
 import {

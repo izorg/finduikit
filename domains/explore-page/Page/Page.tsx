@@ -1,4 +1,4 @@
-import { Flex } from "@radix-ui/themes/components/flex";
+import { Flex } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import { Suspense } from "react";
 

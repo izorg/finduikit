@@ -1,6 +1,4 @@
-import { Box } from "@radix-ui/themes/components/box";
-import { Flex } from "@radix-ui/themes/components/flex";
-import { Grid } from "@radix-ui/themes/components/grid";
+import { Box, Flex, Grid } from "@radix-ui/themes";
 import type { ComponentProps } from "react";
 
 import type { UiKit } from "../../UiKit";

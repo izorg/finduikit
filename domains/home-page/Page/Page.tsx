@@ -1,7 +1,5 @@
 import { mdiTelescope } from "@mdi/js";
-import { Button } from "@radix-ui/themes/components/button";
-import { Flex } from "@radix-ui/themes/components/flex";
-import { Text } from "@radix-ui/themes/components/text";
+import { Button, Flex, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
 

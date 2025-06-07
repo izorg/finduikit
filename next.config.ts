@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true, // Using project root ESLint check
   },
   experimental: {
+    optimizePackageImports: ["@radix-ui/themes", "radix-ui"],
     reactCompiler: true,
     typedRoutes: true,
   },

@@ -1,4 +1,4 @@
-import type { BadgeProps } from "@radix-ui/themes/components/badge";
+import type { BadgeProps } from "@radix-ui/themes";
 
 import { Framework } from "./Framework";
 

@@ -1,11 +1,13 @@
 import { mdiPlus } from "@mdi/js";
-import { Box } from "@radix-ui/themes/components/box";
-import { Button } from "@radix-ui/themes/components/button";
-import * as Dialog from "@radix-ui/themes/components/dialog";
-import { Flex } from "@radix-ui/themes/components/flex";
-import { IconButton } from "@radix-ui/themes/components/icon-button";
-import { TextArea } from "@radix-ui/themes/components/text-area";
-import { Tooltip } from "@radix-ui/themes/components/tooltip";
+import {
+  Box,
+  Button,
+  Dialog,
+  Flex,
+  IconButton,
+  TextArea,
+  Tooltip,
+} from "@radix-ui/themes";
 import { captureFeedback } from "@sentry/nextjs";
 import { useState } from "react";
 

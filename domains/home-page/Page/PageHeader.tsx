@@ -1,5 +1,4 @@
-import { Flex } from "@radix-ui/themes/components/flex";
-import { Text } from "@radix-ui/themes/components/text";
+import { Flex, Text } from "@radix-ui/themes";
 
 type PageHeaderProps = {
   description: string;

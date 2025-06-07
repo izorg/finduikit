@@ -1,9 +1,6 @@
 "use client";
 
-import { Box } from "@radix-ui/themes/components/box";
-import { Flex } from "@radix-ui/themes/components/flex";
-import * as SegmentedControl from "@radix-ui/themes/components/segmented-control";
-import { Text } from "@radix-ui/themes/components/text";
+import { Box, Flex, SegmentedControl, Text } from "@radix-ui/themes";
 
 import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";

@@ -1,8 +1,7 @@
 "use client";
 
 import { mdiClose, mdiMagnify } from "@mdi/js";
-import { IconButton } from "@radix-ui/themes/components/icon-button";
-import * as TextField from "@radix-ui/themes/components/text-field";
+import { IconButton, TextField } from "@radix-ui/themes";
 import { useRef } from "react";
 import { useDebounceCallback } from "usehooks-ts";
 

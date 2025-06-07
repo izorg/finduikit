@@ -1,5 +1,4 @@
-import { Box } from "@radix-ui/themes/components/box";
-import * as Select from "@radix-ui/themes/components/select";
+import { Box, Select } from "@radix-ui/themes";
 
 import { Framework } from "../Framework";
 

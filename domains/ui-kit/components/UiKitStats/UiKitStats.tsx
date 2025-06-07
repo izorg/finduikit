@@ -1,8 +1,5 @@
 import { mdiRecordCircleOutline, mdiStar } from "@mdi/js";
-import { Badge } from "@radix-ui/themes/components/badge";
-import { Flex } from "@radix-ui/themes/components/flex";
-import { Text } from "@radix-ui/themes/components/text";
-import { Tooltip } from "@radix-ui/themes/components/tooltip";
+import { Badge, Flex, Text, Tooltip } from "@radix-ui/themes";
 
 import { SvgIcon } from "../../../icon";
 import type { UiKit } from "../../UiKit";
