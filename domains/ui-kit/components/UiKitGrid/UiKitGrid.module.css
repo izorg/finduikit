@@ -1,3 +1,10 @@
+@supports (padding-left: max(env(safe-area-inset-left), var(--space-4))) {
+  .container {
+    padding-left: max(env(safe-area-inset-left), var(--space-4));
+    padding-right: max(env(safe-area-inset-right), var(--space-4));
+  }
+}
+
 .grid {
   list-style: none;
   margin: 0;

@@ -1,5 +1,6 @@
 import { mdiCheck } from "@mdi/js";
 import { Flex, Link, Table, Text } from "@radix-ui/themes";
+import classNames from "classnames";
 import type { ComponentProps } from "react";
 import { siFigma, siStorybook } from "simple-icons";
 
@@ -15,14 +16,16 @@ type UiKitTableProps = {
 } & ComponentProps<"div">;
 
 export const UiKitTable = (props: UiKitTableProps) => {
-  const { uiKits, ...rest } = props;
+  const { className, uiKits, ...rest } = props;
 
   return (
     <Flex asChild flexGrow="1" overflow="auto">
-      <Table.Root {...rest}>
+      <Table.Root className={classNames(styles.root, className)} {...rest}>
         <Table.Header className={styles.tableHead}>
           <Table.Row>
-            <Table.ColumnHeaderCell>Name</Table.ColumnHeaderCell>
+            <Table.ColumnHeaderCell className={styles.leftCell}>
+              Name
+            </Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell justify="center">
               Framework
             </Table.ColumnHeaderCell>
@@ -32,7 +35,10 @@ export const UiKitTable = (props: UiKitTableProps) => {
             <Table.ColumnHeaderCell justify="center">
               Figma
             </Table.ColumnHeaderCell>
-            <Table.ColumnHeaderCell justify="center">
+            <Table.ColumnHeaderCell
+              className={styles.rightCell}
+              justify="center"
+            >
               Storybook
             </Table.ColumnHeaderCell>
           </Table.Row>
@@ -41,7 +47,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
         <Table.Body>
           {uiKits.map((uiKit) => (
             <Table.Row key={uiKit.name}>
-              <Table.RowHeaderCell>
+              <Table.RowHeaderCell className={styles.leftCell}>
                 <Link asChild color="gray" highContrast>
                   <a href={uiKit.homepage} rel="noreferrer" target="_blank">
                     {uiKit.name}
@@ -72,7 +78,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
                   </Text>
                 )}
               </Table.Cell>
-              <Table.Cell justify="center">
+              <Table.Cell className={styles.rightCell} justify="center">
                 {uiKit.storybook && (
                   <Text asChild color="ruby">
                     <a

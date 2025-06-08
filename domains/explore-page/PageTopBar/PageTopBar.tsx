@@ -46,9 +46,9 @@ export const PageTopBar = () => {
 
       const formData = new FormData(event.currentTarget);
 
-      const searchValue = formData.get("search")?.toString() ?? "";
+      const searchValue = formData.get("search");
 
-      setSearch(searchValue);
+      setSearch(typeof searchValue === "string" ? searchValue : "");
     },
     [setSearch],
   );
@@ -67,7 +67,7 @@ export const PageTopBar = () => {
   }, []);
 
   return (
-    <Container className={styles.topBar} flexGrow="0" p="4" size="3">
+    <Container className={styles.topBar} flexGrow="0" size="3">
       <Flex
         asChild
         direction={{

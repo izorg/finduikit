@@ -4,3 +4,17 @@
   top: 0;
   z-index: 1;
 }
+
+@supports (padding-left: max(env(safe-area-inset-left), var(--table-cell-padding))) {
+  .root {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .leftCell {
+    padding-left: max(env(safe-area-inset-left), var(--table-cell-padding));
+  }
+
+  .rightCell {
+    padding-left: max(env(safe-area-inset-right), var(--table-cell-padding));
+  }
+}

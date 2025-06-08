@@ -1,4 +1,5 @@
 import { Box, Flex, Grid } from "@radix-ui/themes";
+import classNames from "classnames";
 import type { ComponentProps } from "react";
 
 import type { UiKit } from "../../UiKit";
@@ -12,10 +13,16 @@ type UiKitGridProps = {
 } & ComponentProps<"div">;
 
 export const UiKitGrid = (props: UiKitGridProps) => {
-  const { uiKits, ...rest } = props;
+  const { className, uiKits, ...rest } = props;
 
   return (
-    <Box flexGrow="1" overflowY="auto" p="4" {...rest}>
+    <Box
+      className={classNames(styles.container, className)}
+      flexGrow="1"
+      overflowY="auto"
+      p="4"
+      {...rest}
+    >
       <Grid asChild columns="repeat(auto-fill, minmax(240px, 1fr))" gap="4">
         <ul className={styles.grid}>
           {uiKits.map((item) => (

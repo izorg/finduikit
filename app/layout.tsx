@@ -10,6 +10,7 @@ import "./global.css";
 
 export const viewport: Viewport = {
   colorScheme: "light dark",
+  viewportFit: "cover",
 };
 
 const RootLayout = (props: PropsWithChildren) => {
