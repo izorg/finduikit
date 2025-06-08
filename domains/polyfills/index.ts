@@ -5,4 +5,3 @@
  * but for better Developer Experience we provide more of them
  */
 import "core-js/features/array/to-sorted";
-import "core-js/features/object/from-entries";

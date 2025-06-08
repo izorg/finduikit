@@ -1,4 +1,7 @@
 {
   "$schema": "node_modules/knip/schema.json",
-  "ignoreDependencies": ["eslint-import-resolver-typescript"]
+  "ignoreDependencies": [
+    "browserslist-config-baseline",
+    "eslint-import-resolver-typescript"
+  ]
 }

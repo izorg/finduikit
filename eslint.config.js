@@ -78,7 +78,6 @@ export default ts.config(
         typescript: true,
       },
       lintAllEsApis: true,
-      polyfills: ["Array.toSorted", "Object.fromEntries"],
       react: {
         version: "detect",
       },

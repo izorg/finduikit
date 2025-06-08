@@ -18,19 +18,6 @@ export default {
   plugins: ["stylelint-no-unsupported-browser-features", "stylelint-order"],
   rules: {
     "order/properties-alphabetical-order": true,
-
-    "plugin/no-unsupported-browser-features": [
-      true,
-      {
-        ignore: [
-          "css-logical-props",
-
-          /**
-           * Covered by autoprefixer
-           */
-          "css-sticky",
-        ],
-      },
-    ],
+    "plugin/no-unsupported-browser-features": true,
   },
 };
