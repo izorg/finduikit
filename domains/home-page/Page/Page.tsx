@@ -7,8 +7,6 @@ import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
 import { getUiKits } from "../../ui-kit/server";
 
-import { PageHeader } from "./PageHeader";
-
 const title = "UI Kits";
 const description =
   "Discover a curated collection of web UI kits with high-quality components and templates for developers";
@@ -25,7 +23,23 @@ export const Page = async () => {
 
   return (
     <Flex direction="column" gap="6" minHeight="100dvh" py="4">
-      <PageHeader description={description} title={title} />
+      <Flex asChild direction="column" gap="2" px="4">
+        <Text align="center" asChild>
+          <header>
+            <Text
+              asChild
+              size={{
+                initial: "8",
+                sm: "9",
+              }}
+              weight="medium"
+            >
+              <h1>{title}</h1>
+            </Text>
+            <Text as="p">{description}</Text>
+          </header>
+        </Text>
+      </Flex>
       <Flex align="center" asChild direction="column">
         <Text as="p">
           <Text size="8">{uiKitSet.size}</Text>
