@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, SegmentedControl, Text } from "@radix-ui/themes";
+import { Box, Container, Flex, SegmentedControl, Text } from "@radix-ui/themes";
 
 import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
@@ -42,7 +42,7 @@ export const PageTopBar = () => {
   };
 
   return (
-    <Box className={styles.topBar} p="4">
+    <Container className={styles.topBar} flexGrow="0" p="4" size="3">
       <Flex
         direction={{
           initial: "column",
@@ -50,9 +50,6 @@ export const PageTopBar = () => {
         }}
         gapX="4"
         gapY="2"
-        maxWidth="var(--container-3)"
-        mx="auto"
-        width="100%"
         wrap={{
           initial: "wrap",
           sm: "nowrap",
@@ -100,6 +97,6 @@ export const PageTopBar = () => {
           </SegmentedControl.Root>
         </Flex>
       </Flex>
-    </Box>
+    </Container>
   );
 };

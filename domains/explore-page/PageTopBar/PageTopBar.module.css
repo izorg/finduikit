@@ -1,5 +1,4 @@
 .topBar {
-  background-color: var(--color-background);
   box-shadow: var(--shadow-3);
   z-index: 1;
 }
