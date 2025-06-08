@@ -78,7 +78,7 @@ export const PageTopBar = () => {
         gapY="2"
         wrap={{
           initial: "wrap",
-          sm: "nowrap",
+          md: "nowrap",
         }}
       >
         <form onSubmit={onSubmit}>
@@ -91,28 +91,32 @@ export const PageTopBar = () => {
             gapY="2"
             wrap={{
               initial: "wrap",
-              sm: "nowrap",
+              md: "nowrap",
             }}
           >
             <FrameworkSelect
               onValueChange={onFrameworkChange}
-              size={{ initial: "2", sm: "3" }}
+              size={{ initial: "2", md: "3" }}
               value={framework}
             />
-            <Text as="label" size={{ initial: "2", sm: "3" }}>
+            <Text as="label" size={{ initial: "2", md: "3" }}>
               <Flex gap="2">
                 <UnstyledSwitch
                   checked={unstyled}
                   onCheckedChange={onUnstyledChange}
-                  size={{ initial: "1", sm: "2" }}
+                  size={{ initial: "1", md: "2" }}
                 />
                 Unstyled
               </Flex>
             </Text>
-            <SortingSelect onValueChange={onSortingChange} value={sorting} />
+            <SortingSelect
+              onValueChange={onSortingChange}
+              size={{ initial: "2", md: "3" }}
+              value={sorting}
+            />
             <SegmentedControl.Root
               onValueChange={setUiKitView}
-              size={{ initial: "2", sm: "3" }}
+              size={{ initial: "2", md: "3" }}
               value={uiKitView}
             >
               <SegmentedControl.Item value="grid">Grid</SegmentedControl.Item>

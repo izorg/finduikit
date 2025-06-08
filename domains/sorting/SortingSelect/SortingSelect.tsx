@@ -10,22 +10,15 @@ const sortingLabels: Record<Sorting, string> = {
   [Sorting.ByUpdate]: "By update",
 };
 
-export const SortingSelect = (
-  props: Pick<Select.RootProps, "onValueChange" | "value"> &
-    Select.TriggerProps,
-) => {
-  const { onValueChange, value, ...triggerProps } = props;
+export const SortingSelect = (props: Select.RootProps) => {
+  const { value, ...rest } = props;
 
   const sorting = Object.values(Sorting).find((option) => option === value);
 
   return (
-    <Select.Root
-      onValueChange={onValueChange}
-      size={{ initial: "2", sm: "3" }}
-      value={value}
-    >
+    <Select.Root value={value} {...rest}>
       <Box asChild minWidth={{ initial: "110px", sm: "130px" }}>
-        <Select.Trigger aria-label="Sort" {...triggerProps}>
+        <Select.Trigger aria-label="Sort">
           <Flex align="center" as="span" gap="2">
             <SvgIcon path={mdiSortVariant} />
             {sorting && sortingLabels[sorting]}
