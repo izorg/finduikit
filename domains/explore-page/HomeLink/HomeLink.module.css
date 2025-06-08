@@ -1,0 +1,13 @@
+.link {
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  left: -40px;
+  line-height: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  transform-origin: center -8px;
+  width: 80px;
+  z-index: 10;
+}
