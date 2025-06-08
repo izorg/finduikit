@@ -1,39 +1,32 @@
 "use client";
 
 import { mdiClose, mdiMagnify } from "@mdi/js";
+import { composeRefs } from "@radix-ui/react-compose-refs";
 import { IconButton, TextField } from "@radix-ui/themes";
-import { useRef } from "react";
-import { useDebounceCallback } from "usehooks-ts";
+import { type Ref, useRef } from "react";
 
 import { SvgIcon } from "../../icon";
 
 import styles from "./SearchInput.module.css";
 
 type SearchInputProps = {
-  onChange: (value: string) => void;
-} & Omit<TextField.RootProps, "onChange">;
+  ref?: Ref<HTMLInputElement>;
+} & TextField.RootProps;
 
 export const SearchInput = (props: SearchInputProps) => {
-  const { onChange: onChangeProp, ...rest } = props;
+  const { ref: refProp, ...rest } = props;
 
   const ref = useRef<HTMLInputElement>(null);
 
   const placeholder = "Search";
-
-  const onChange = useDebounceCallback(onChangeProp, 200);
 
   return (
     <TextField.Root
       {...rest}
       aria-label={placeholder}
       name="search"
-      onChange={(event) => {
-        const { value } = event.currentTarget;
-
-        onChange(value);
-      }}
       placeholder={placeholder}
-      ref={ref}
+      ref={composeRefs(ref, refProp)}
       type="search"
     >
       <TextField.Slot>
@@ -41,15 +34,15 @@ export const SearchInput = (props: SearchInputProps) => {
       </TextField.Slot>
       <TextField.Slot className={styles.clearSlot}>
         <IconButton
-          onClick={() => {
+          onClick={(event) => {
             if (ref.current) {
               ref.current.value = "";
               ref.current.focus();
             }
 
-            onChange("");
-            onChange.flush();
+            event.currentTarget.closest("form")?.requestSubmit();
           }}
+          type="button"
           variant="ghost"
         >
           <SvgIcon path={mdiClose} />

@@ -7,15 +7,15 @@ export const useSearch = () => {
   const search = searchParams.get(searchKey) ?? undefined;
 
   const setSearch = (search: string) => {
-    const nextSearchParams = new URLSearchParams(searchParams);
+    const url = new URL(document.location.href);
 
     if (search) {
-      nextSearchParams.set(searchKey, search);
+      url.searchParams.set(searchKey, search);
     } else {
-      nextSearchParams.delete(searchKey);
+      url.searchParams.delete(searchKey);
     }
 
-    globalThis.history.pushState({}, "", `?${nextSearchParams.toString()}`);
+    globalThis.history.pushState({}, "", url);
   };
 
   return {

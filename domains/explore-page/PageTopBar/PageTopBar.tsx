@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Container, Flex, SegmentedControl, Text } from "@radix-ui/themes";
+import { type FormEvent, useCallback, useEffect, useRef } from "react";
 
 import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
@@ -17,9 +18,7 @@ export const PageTopBar = () => {
   const { setUnstyled, unstyled } = useUnstyled();
   const { setUiKitView, uiKitView } = useUiKitView();
 
-  const onSearchChange = (value: string) => {
-    setSearch(value);
-  };
+  const searchRef = useRef<HTMLInputElement>(null);
 
   const onFrameworkChange = (value: string) => {
     const framework = Object.values(Framework).find(
@@ -41,9 +40,36 @@ export const PageTopBar = () => {
     setSorting(sorting);
   };
 
+  const onSubmit = useCallback(
+    (event: FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+
+      const formData = new FormData(event.currentTarget);
+
+      const searchValue = formData.get("search")?.toString() ?? "";
+
+      setSearch(searchValue);
+    },
+    [setSearch],
+  );
+
+  useEffect(() => {
+    globalThis.addEventListener("popstate", () => {
+      const searchParams = new URLSearchParams(document.location.search);
+      const search = searchParams.get("search") ?? "";
+
+      const searchEl = searchRef.current;
+
+      if (searchEl && searchEl.value !== search) {
+        searchEl.value = search;
+      }
+    });
+  }, []);
+
   return (
     <Container className={styles.topBar} flexGrow="0" p="4" size="3">
       <Flex
+        asChild
         direction={{
           initial: "column",
           md: "row",
@@ -55,47 +81,45 @@ export const PageTopBar = () => {
           sm: "nowrap",
         }}
       >
-        <Box asChild flexGrow="1">
-          <SearchInput
-            defaultValue={search}
-            onChange={onSearchChange}
-            size="3"
-          />
-        </Box>
-        <Flex
-          align="center"
-          gapX="4"
-          gapY="2"
-          wrap={{
-            initial: "wrap",
-            sm: "nowrap",
-          }}
-        >
-          <FrameworkSelect
-            onValueChange={onFrameworkChange}
-            size={{ initial: "2", sm: "3" }}
-            value={framework}
-          />
-          <Text as="label" size={{ initial: "2", sm: "3" }}>
-            <Flex gap="2">
-              <UnstyledSwitch
-                checked={unstyled}
-                onCheckedChange={onUnstyledChange}
-                size={{ initial: "1", sm: "2" }}
-              />
-              Unstyled
-            </Flex>
-          </Text>
-          <SortingSelect onValueChange={onSortingChange} value={sorting} />
-          <SegmentedControl.Root
-            onValueChange={setUiKitView}
-            size={{ initial: "2", sm: "3" }}
-            value={uiKitView}
+        <form onSubmit={onSubmit}>
+          <Box asChild flexGrow="1">
+            <SearchInput defaultValue={search} ref={searchRef} size="3" />
+          </Box>
+          <Flex
+            align="center"
+            gapX="4"
+            gapY="2"
+            wrap={{
+              initial: "wrap",
+              sm: "nowrap",
+            }}
           >
-            <SegmentedControl.Item value="grid">Grid</SegmentedControl.Item>
-            <SegmentedControl.Item value="table">Table</SegmentedControl.Item>
-          </SegmentedControl.Root>
-        </Flex>
+            <FrameworkSelect
+              onValueChange={onFrameworkChange}
+              size={{ initial: "2", sm: "3" }}
+              value={framework}
+            />
+            <Text as="label" size={{ initial: "2", sm: "3" }}>
+              <Flex gap="2">
+                <UnstyledSwitch
+                  checked={unstyled}
+                  onCheckedChange={onUnstyledChange}
+                  size={{ initial: "1", sm: "2" }}
+                />
+                Unstyled
+              </Flex>
+            </Text>
+            <SortingSelect onValueChange={onSortingChange} value={sorting} />
+            <SegmentedControl.Root
+              onValueChange={setUiKitView}
+              size={{ initial: "2", sm: "3" }}
+              value={uiKitView}
+            >
+              <SegmentedControl.Item value="grid">Grid</SegmentedControl.Item>
+              <SegmentedControl.Item value="table">Table</SegmentedControl.Item>
+            </SegmentedControl.Root>
+          </Flex>
+        </form>
       </Flex>
     </Container>
   );

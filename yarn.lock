@@ -10135,6 +10135,7 @@ __metadata:
     "@next/eslint-plugin-next": "npm:15.3.3"
     "@next/third-parties": "npm:15.3.3"
     "@nodejs-loaders/css-module": "npm:1.1.0"
+    "@radix-ui/react-compose-refs": "npm:1.1.2"
     "@radix-ui/themes": "npm:3.2.1"
     "@sentry/nextjs": "npm:9.27.0"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.0"
@@ -10182,7 +10183,6 @@ __metadata:
     typescript: "npm:5.8.3"
     typescript-eslint: "npm:8.33.1"
     typescript-plugin-css-modules: "npm:5.1.0"
-    usehooks-ts: "npm:3.1.1"
     yaml: "npm:2.8.0"
     zod: "npm:3.25.56"
   languageName: unknown
@@ -12559,13 +12559,6 @@ __metadata:
   version: 4.5.0
   resolution: "lodash.clonedeep@npm:4.5.0"
   checksum: 10/957ed243f84ba6791d4992d5c222ffffca339a3b79dbe81d2eaf0c90504160b500641c5a0f56e27630030b18b8e971ea10b44f928a977d5ced3c8948841b555f
-  languageName: node
-  linkType: hard
-
-"lodash.debounce@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "lodash.debounce@npm:4.0.8"
-  checksum: 10/cd0b2819786e6e80cb9f5cda26b1a8fc073daaf04e48d4cb462fa4663ec9adb3a5387aa22d7129e48eed1afa05b482e2a6b79bfc99b86886364449500cbb00fd
   languageName: node
   linkType: hard
 
@@ -17878,17 +17871,6 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: 10/ddae7c4572511f7f641d6977bd0725340aa7dbeda8250418b54c1a57ec285083d96cf50d1a1acbd6cf729f7a87071b2302c6fbd29310432bf1b21a961a313279
-  languageName: node
-  linkType: hard
-
-"usehooks-ts@npm:3.1.1":
-  version: 3.1.1
-  resolution: "usehooks-ts@npm:3.1.1"
-  dependencies:
-    lodash.debounce: "npm:^4.0.8"
-  peerDependencies:
-    react: ^16.8.0  || ^17 || ^18 || ^19 || ^19.0.0-rc
-  checksum: 10/4f5d6beab003d76f90c6a9b8b0cd5b61f24528fa3dbbf1a6d9c0a509cb80914074af911a92dab0bc07873f14f714771306f5271e1e8f09b94add1722da37debb
   languageName: node
   linkType: hard
 
