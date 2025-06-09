@@ -17,7 +17,7 @@
     "generate-json-schema": "node --import=tsx --import=@nodejs-loaders/css-module domains/ui-kit/scripts/generate-json-schema.ts",
     "graphql-codegen": "graphql-codegen",
     "lint": "yarn lint-unused && yarn lint-format && yarn lint-types && yarn lint-js && yarn lint-css",
-    "lint-css": "stylelint --allow-empty-input --cache \"**/*.css\"",
+    "lint-css": "NODE_OPTIONS=--disable-warning=DEP0179 stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-format": "prettier --cache --check --ignore-unknown .",
     "lint-js": "eslint --cache",
     "lint-types": "tsc",
