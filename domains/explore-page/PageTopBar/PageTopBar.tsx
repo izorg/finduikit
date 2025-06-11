@@ -15,8 +15,8 @@ export const PageTopBar = () => {
   const { framework, setFramework } = useFramework();
   const { search, setSearch } = useSearch();
   const { setSorting, sorting } = useSorting();
-  const { setUnstyled, unstyled } = useUnstyled();
   const { setUiKitView, uiKitView } = useUiKitView();
+  const { setUnstyled, unstyled } = useUnstyled();
 
   const searchRef = useRef<HTMLInputElement>(null);
 
@@ -95,6 +95,7 @@ export const PageTopBar = () => {
             }}
           >
             <FrameworkSelect
+              name="framework"
               onValueChange={onFrameworkChange}
               size={{ initial: "2", md: "3" }}
               value={framework}
@@ -103,13 +104,16 @@ export const PageTopBar = () => {
               <Flex gap="2">
                 <UnstyledSwitch
                   checked={unstyled}
+                  name="unstyled"
                   onCheckedChange={onUnstyledChange}
                   size={{ initial: "1", md: "2" }}
+                  value="true"
                 />
                 Unstyled
               </Flex>
             </Text>
             <SortingSelect
+              name="sort"
               onValueChange={onSortingChange}
               size={{ initial: "2", md: "3" }}
               value={sorting}

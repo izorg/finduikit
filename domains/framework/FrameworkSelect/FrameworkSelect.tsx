@@ -4,24 +4,13 @@ import { Framework } from "../Framework";
 
 const ANY_FRAMEWORK_LABEL = "Any framework";
 
-export const FrameworkSelect = (
-  props: Pick<Select.RootProps, "onValueChange" | "size" | "value"> &
-    Select.TriggerProps,
-) => {
-  const {
-    onValueChange,
-    size,
-    value = ANY_FRAMEWORK_LABEL,
-    ...triggerProps
-  } = props;
+export const FrameworkSelect = (props: Select.RootProps) => {
+  const { value = ANY_FRAMEWORK_LABEL, ...rest } = props;
 
   return (
-    <Select.Root onValueChange={onValueChange} size={size} value={value}>
+    <Select.Root value={value} {...rest}>
       <Box asChild minWidth={{ initial: "140px", sm: "170px" }}>
-        <Select.Trigger
-          aria-label="Select supported framework"
-          {...triggerProps}
-        >
+        <Select.Trigger aria-label="Select supported framework">
           {value}
         </Select.Trigger>
       </Box>
