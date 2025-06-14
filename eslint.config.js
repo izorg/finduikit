@@ -131,6 +131,10 @@ export default ts.config(
     files: ["**/*.css"],
     language: "css/css",
     name: "css",
+    rules: {
+      "css/no-invalid-at-rules": "off",
+      "css/no-invalid-properties": "off",
+    },
   },
   {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
