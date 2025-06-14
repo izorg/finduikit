@@ -2,7 +2,6 @@ import admin from "firebase-admin";
 import { type App, initializeApp } from "firebase-admin/app";
 
 declare global {
-  // eslint-disable-next-line no-var
   var app: App | undefined;
 }
 
