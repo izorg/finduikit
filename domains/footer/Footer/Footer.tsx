@@ -1,9 +1,9 @@
-import { Box, Link, Text } from "@radix-ui/themes";
+import { Box, type BoxProps, Link, Text } from "@radix-ui/themes";
 
-export const Footer = () => (
-  <Box asChild px="4">
-    <footer>
-      <Text align="center" as="p" color="gray" size="2">
+export const Footer = (props: BoxProps) => (
+  <Box asChild px="4" {...props}>
+    <Text align="center" asChild color="gray" size="2">
+      <footer>
         Built by{" "}
         <Link
           color="gray"
@@ -25,7 +25,7 @@ export const Footer = () => (
           GitHub
         </Link>
         .
-      </Text>
-    </footer>
+      </footer>
+    </Text>
   </Box>
 );

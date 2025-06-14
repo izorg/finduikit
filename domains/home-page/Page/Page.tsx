@@ -1,5 +1,5 @@
 import { mdiTelescope } from "@mdi/js";
-import { Button, Flex, Text } from "@radix-ui/themes";
+import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
 
@@ -26,17 +26,19 @@ export const Page = async () => {
       <Flex asChild direction="column" gap="2" px="4">
         <Text align="center" asChild>
           <header>
-            <Text
-              asChild
+            <Heading
+              as="h1"
               size={{
                 initial: "8",
                 sm: "9",
               }}
               weight="medium"
             >
-              <h1>{title}</h1>
+              {title}
+            </Heading>
+            <Text as="p" size="4">
+              {description}
             </Text>
-            <Text as="p">{description}</Text>
           </header>
         </Text>
       </Flex>
@@ -62,7 +64,7 @@ export const Page = async () => {
           </NextLink>
         </Button>
       </Flex>
-      <Footer />
+      <Footer mt="auto" />
     </Flex>
   );
 };
