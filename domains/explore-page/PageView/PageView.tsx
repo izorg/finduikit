@@ -26,7 +26,7 @@ export const PageView = (props: PageViewProps) => {
 
   useEffect(() => {
     if (uiKits && ref.current) {
-      ref.current.scrollIntoView();
+      ref.current.scrollTo({ top: 0 });
     }
   }, [uiKits]);
 
