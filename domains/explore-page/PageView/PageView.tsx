@@ -25,10 +25,19 @@ export const PageView = (props: PageViewProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (uiKits && ref.current) {
-      ref.current.scrollTo({ top: 0 });
+    if (!uiKits) {
+      return;
     }
-  }, [uiKits]);
+
+    const scrollElement =
+      uiKitView === "grid"
+        ? ref.current
+        : ref.current?.querySelector<HTMLDivElement>(
+            "[data-radix-scroll-area-viewport]",
+          );
+
+    scrollElement?.scrollTo({ top: 0 });
+  }, [uiKitView, uiKits]);
 
   if (uiKits.length === 0) {
     return (
