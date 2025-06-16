@@ -101,15 +101,8 @@ export const uiKitRouteUpdate = async (request: Request) => {
 
   const uiKitsSnapshot = await uiKitsCollection.get();
 
-  let checkCache: Partial<Record<string, UiKitDynamicDataSchema>> = {};
-
-  for (const doc of uiKitsSnapshot.docs) {
-    checkCache[doc.id] = doc.data();
-  }
-
-  checkCache = Object.fromEntries(
-    uiKitsSnapshot.docs.map((doc) => [doc.id, doc.data()]),
-  );
+  const checkCache: Partial<Record<string, UiKitDynamicDataSchema>> =
+    Object.fromEntries(uiKitsSnapshot.docs.map((doc) => [doc.id, doc.data()]));
 
   const entries = await fs.promises.readdir(
     path.join(process.cwd(), "ui-kits"),
@@ -136,5 +129,12 @@ export const uiKitRouteUpdate = async (request: Request) => {
     await updateUiKit(checkEntry, uiKitsCollection);
   }
 
-  return Response.json(checkEntries);
+  return new Response(
+    checkEntries.map((dirent) => path.parse(dirent.name).name).join("\n"),
+    {
+      headers: {
+        "Content-Type": "text/plain",
+      },
+    },
+  );
 };
