@@ -53,7 +53,7 @@
     "@next/eslint-plugin-next": "15.3.3",
     "@nodejs-loaders/css-module": "1.1.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.15.31",
+    "@types/node": "22.15.32",
     "@types/react": "19.1.8",
     "babel-plugin-react-compiler": "19.1.0-rc.2",
     "browserslist-config-baseline": "0.4.0",
@@ -76,7 +76,7 @@
     "graphql": "16.11.0",
     "knip": "5.61.0",
     "node-html-parser": "7.0.1",
-    "postcss": "8.5.5",
+    "postcss": "8.5.6",
     "postcss-import": "16.1.0",
     "postcss-preset-env": "10.2.3",
     "prettier": "3.5.3",
@@ -87,9 +87,9 @@
     "stylelint-order": "7.0.0",
     "tsx": "4.20.3",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.34.0",
+    "typescript-eslint": "8.34.1",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.64"
+    "zod": "3.25.65"
   }
 }
