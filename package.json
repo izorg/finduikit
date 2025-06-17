@@ -30,7 +30,7 @@
     "@next/third-parties": "15.3.3",
     "@radix-ui/react-compose-refs": "1.1.2",
     "@radix-ui/themes": "3.2.1",
-    "@sentry/nextjs": "9.29.0",
+    "@sentry/nextjs": "9.30.0",
     "classnames": "2.5.1",
     "core-js": "3.43.0",
     "firebase-admin": "13.4.0",
@@ -74,10 +74,10 @@
     "firebase-tools": "14.7.0",
     "globals": "16.2.0",
     "graphql": "16.11.0",
-    "knip": "5.61.0",
+    "knip": "5.61.1",
     "node-html-parser": "7.0.1",
     "postcss": "8.5.6",
-    "postcss-import": "16.1.0",
+    "postcss-import": "16.1.1",
     "postcss-preset-env": "10.2.3",
     "prettier": "3.5.3",
     "stylelint": "16.20.0",
@@ -90,6 +90,6 @@
     "typescript-eslint": "8.34.1",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.65"
+    "zod": "3.25.67"
   }
 }
