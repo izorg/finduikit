@@ -9,10 +9,13 @@ const frameworkTopicMap = new Map<string, Framework>([
   ["angular", Framework.Angular],
   ["react", Framework.React],
   ["reactjs", Framework.React],
+  ["solid-js", Framework.Solid],
   ["solid", Framework.Solid],
   ["solidjs", Framework.Solid],
   ["svelte", Framework.Svelte],
   ["vue", Framework.Vue],
+  ["vue3", Framework.Vue],
+  ["vuejs", Framework.Vue],
 ]);
 
 const getFrameworksFromTopics = (topics: string[]) => {

@@ -1,0 +1,9 @@
+description: Siemens Industrial Experience is an open-source design system for
+  designers and developers to consistently create the perfect digital experience
+  for partners and customers
+frameworks:
+  - Angular
+  - React
+homepage: https://ix.siemens.io/
+name: Siemens Industrial Experience
+repository: https://github.com/siemens/ix

@@ -3,6 +3,7 @@ description: Unstyled, accessible components for building high-quality design
 frameworks:
   - Angular
 homepage: https://www.radix-ng.com/
+image: https://repository-images.githubusercontent.com/783008024/431469aa-c37e-4e67-86d9-eab8703140c5
 name: Radix Angular
 repository: https://github.com/radix-ng/primitives/
 storybook: https://sb-primitives.radix-ng.com/
