@@ -1,0 +1,11 @@
+description: Amplify UI simplifies building accessible, performant, and
+  beautiful applications with cloud-connected capabilities, building blocks,
+  theming, and utilities.
+figma: https://www.figma.com/community/file/1047600760128127424
+frameworks:
+  - Angular
+  - React
+  - Vue
+homepage: https://ui.docs.amplify.aws/
+name: Amplify UI
+repository: https://github.com/aws-amplify/amplify-ui/

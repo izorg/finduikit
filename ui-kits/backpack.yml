@@ -1,0 +1,8 @@
+description: Backpack is Skyscanner's design system, a collection of guidelines,
+  components and tools for creating intuitive traveller-first experiences
+frameworks:
+  - React
+homepage: https://www.skyscanner.design/
+name: Backpack
+repository: https://github.com/Skyscanner/backpack
+storybook: https://backpack.github.io/storybook/
