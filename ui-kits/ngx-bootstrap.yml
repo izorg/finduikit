@@ -1,0 +1,9 @@
+description: "Bootstrap 5 and Bootstrap 4 widgets for Angular: accordion,
+  alerts, buttons, carousel, collapse, datepicker, dropdowns, modals,
+  pagination, popover, progressbar, rating, sortable, tabs, timepicker, tooltip,
+  typeahead"
+frameworks:
+  - Angular
+homepage: https://valor-software.com/ngx-bootstrap/
+name: ngx-bootstrap
+repository: https://github.com/valor-software/ngx-bootstrap
