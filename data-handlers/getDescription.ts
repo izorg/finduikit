@@ -20,12 +20,12 @@ export const getDescription = ({
   }
 
   const homepageDescription = homepage
-    .querySelector('head > meta[name="description"]')
+    .querySelector('meta[name="description"]')
     ?.getAttribute("content")
     ?.trim();
 
   const homepageOgDescription = homepage
-    .querySelector('head > meta[name="og:description"]')
+    .querySelector('meta[name="og:description"]')
     ?.getAttribute("content")
     ?.trim();
 
