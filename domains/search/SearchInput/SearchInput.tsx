@@ -1,6 +1,6 @@
 "use client";
 
-import { mdiClose, mdiMagnify } from "@mdi/js";
+import { mdiChevronRight, mdiClose, mdiMagnify } from "@mdi/js";
 import { composeRefs } from "@radix-ui/react-compose-refs";
 import { IconButton, TextField } from "@radix-ui/themes";
 import { type Ref, useRef } from "react";
@@ -34,6 +34,7 @@ export const SearchInput = (props: SearchInputProps) => {
       </TextField.Slot>
       <TextField.Slot className={styles.clearSlot}>
         <IconButton
+          aria-label="Clear"
           onClick={(event) => {
             if (ref.current) {
               ref.current.value = "";
@@ -46,6 +47,11 @@ export const SearchInput = (props: SearchInputProps) => {
           variant="ghost"
         >
           <SvgIcon path={mdiClose} />
+        </IconButton>
+      </TextField.Slot>
+      <TextField.Slot className={styles.submitSlot}>
+        <IconButton aria-label="Search" type="submit" variant="soft">
+          <SvgIcon path={mdiChevronRight} />
         </IconButton>
       </TextField.Slot>
     </TextField.Root>
