@@ -1,0 +1,14 @@
+.card {
+  position: relative;
+  width: 10rem;
+}
+
+.cardIllustration {
+  height: 3rem;
+  opacity: .2;
+  position: absolute;
+  right: -.75rem;
+  top: -.75rem;
+  transform: rotate(20deg);
+  width: 3rem;
+}
