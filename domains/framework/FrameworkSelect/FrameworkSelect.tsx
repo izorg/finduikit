@@ -9,7 +9,7 @@ export const FrameworkSelect = (props: Select.RootProps) => {
 
   return (
     <Select.Root value={value} {...rest}>
-      <Box asChild minWidth={{ initial: "140px", sm: "170px" }}>
+      <Box asChild minWidth={{ initial: "140px", md: "170px" }}>
         <Select.Trigger aria-label="Select supported framework">
           {value}
         </Select.Trigger>

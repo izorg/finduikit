@@ -17,7 +17,7 @@ export const SortingSelect = (props: Select.RootProps) => {
 
   return (
     <Select.Root value={value} {...rest}>
-      <Box asChild minWidth={{ initial: "110px", sm: "130px" }}>
+      <Box asChild minWidth={{ initial: "110px", md: "130px" }}>
         <Select.Trigger aria-label="Sort">
           <Flex align="center" as="span" gap="2">
             <SvgIcon path={mdiSortVariant} />

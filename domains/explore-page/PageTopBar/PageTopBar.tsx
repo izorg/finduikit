@@ -11,6 +11,8 @@ import { UnstyledSwitch, useUnstyled } from "../../unstyled";
 
 import styles from "./PageTopBar.module.css";
 
+const secondaryControlSize = { initial: "2", md: "3" } as const;
+
 export const PageTopBar = () => {
   const { framework, setFramework } = useFramework();
   const { search, setSearch } = useSearch();
@@ -97,30 +99,30 @@ export const PageTopBar = () => {
             <FrameworkSelect
               name="framework"
               onValueChange={onFrameworkChange}
-              size={{ initial: "2", md: "3" }}
+              size={secondaryControlSize}
               value={framework}
             />
-            <Text as="label" size={{ initial: "2", md: "3" }}>
-              <Flex gap="2">
+            <Flex asChild gap="2">
+              <Text as="label" size={secondaryControlSize}>
                 <UnstyledSwitch
                   checked={unstyled}
                   name="unstyled"
                   onCheckedChange={onUnstyledChange}
-                  size={{ initial: "1", md: "2" }}
+                  size={secondaryControlSize}
                   value="true"
                 />
                 Unstyled
-              </Flex>
-            </Text>
+              </Text>
+            </Flex>
             <SortingSelect
               name="sort"
               onValueChange={onSortingChange}
-              size={{ initial: "2", md: "3" }}
+              size={secondaryControlSize}
               value={sorting}
             />
             <SegmentedControl.Root
               onValueChange={setUiKitView}
-              size={{ initial: "2", md: "3" }}
+              size={secondaryControlSize}
               value={uiKitView}
             >
               <SegmentedControl.Item value="grid">Grid</SegmentedControl.Item>
