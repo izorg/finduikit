@@ -13,9 +13,11 @@ export const getImage = ({
     return "";
   }
 
-  return github?.openGraphImageUrl?.startsWith(
-    "https://repository-images.githubusercontent.com/",
+  const gitHubImage = github?.openGraphImageUrl.startsWith(
+    "https://opengraph.githubassets.com",
   )
-    ? github.openGraphImageUrl
-    : data.image;
+    ? undefined
+    : github?.openGraphImageUrl;
+
+  return gitHubImage ?? data.image;
 };
