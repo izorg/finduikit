@@ -1,5 +1,5 @@
 import { mdiRhombusSplit, mdiTelescope } from "@mdi/js";
-import { Button, Card, Flex, Heading, Text } from "@radix-ui/themes";
+import { Box, Button, Card, Flex, Heading, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
 import { siFigma, siStorybook } from "simple-icons";
@@ -45,48 +45,64 @@ export const Page = async () => {
           </header>
         </Text>
       </Flex>
-      <Flex gap="4" justify="center" px="4" wrap="wrap">
-        <Card className={styles.card} size="2">
-          <Text asChild color="purple">
-            <SvgIcon
-              className={styles.cardIllustration}
-              path={mdiRhombusSplit}
-            />
-          </Text>
-          <Text as="div" color="gray" size="2">
-            Total UI kits
-          </Text>
-          <Text as="div" size="7" weight="medium">
-            {uiKitSet.size.toLocaleString()}
-          </Text>
-        </Card>
-        <Card className={styles.card} size="2">
-          <Text asChild color="ruby">
-            <SvgIcon
-              className={styles.cardIllustration}
-              path={siStorybook.path}
-            />
-          </Text>
-          <Text as="div" color="gray" size="2">
-            Storybooks
-          </Text>
-          <Text as="div" size="7" weight="medium">
-            {[...uiKitSet]
-              .filter((item) => item.storybook)
-              .length.toLocaleString()}
-          </Text>
-        </Card>
-        <Card className={styles.card} size="2">
-          <Text asChild color="crimson">
-            <SvgIcon className={styles.cardIllustration} path={siFigma.path} />
-          </Text>
-          <Text as="div" color="gray" size="2">
-            Figma files
-          </Text>
-          <Text as="div" size="7" weight="medium">
-            {[...uiKitSet].filter((item) => item.figma).length.toLocaleString()}
-          </Text>
-        </Card>
+      <Flex
+        gap={{ initial: "4", md: "8", sm: "6" }}
+        justify="center"
+        px="4"
+        wrap="wrap"
+      >
+        <Box asChild width={{ initial: "10rem", md: "12rem" }}>
+          <Card className={styles.card} size={{ initial: "2", md: "3" }}>
+            <Text asChild color="purple">
+              <SvgIcon
+                className={styles.cardIllustration}
+                path={mdiRhombusSplit}
+              />
+            </Text>
+            <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
+              Total UI kits
+            </Text>
+            <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
+              {uiKitSet.size.toLocaleString()}
+            </Text>
+          </Card>
+        </Box>
+        <Box asChild width={{ initial: "10rem", md: "12rem" }}>
+          <Card className={styles.card} size={{ initial: "2", md: "3" }}>
+            <Text asChild color="ruby">
+              <SvgIcon
+                className={styles.cardIllustration}
+                path={siStorybook.path}
+              />
+            </Text>
+            <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
+              Storybooks
+            </Text>
+            <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
+              {[...uiKitSet]
+                .filter((item) => item.storybook)
+                .length.toLocaleString()}
+            </Text>
+          </Card>
+        </Box>
+        <Box asChild width={{ initial: "10rem", md: "12rem" }}>
+          <Card className={styles.card} size={{ initial: "2", md: "3" }}>
+            <Text asChild color="crimson">
+              <SvgIcon
+                className={styles.cardIllustration}
+                path={siFigma.path}
+              />
+            </Text>
+            <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
+              Figma files
+            </Text>
+            <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
+              {[...uiKitSet]
+                .filter((item) => item.figma)
+                .length.toLocaleString()}
+            </Text>
+          </Card>
+        </Box>
       </Flex>
       <Flex
         align="center"
