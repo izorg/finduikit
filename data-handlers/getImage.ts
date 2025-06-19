@@ -34,13 +34,5 @@ export const getImage = ({
 
   const homepageOgImage = getHomepageOgImage(homepage);
 
-  if (!gitHubImage && homepageOgImage) {
-    console.log(data.name, {
-      gitHubImage,
-      homepage: data.homepage,
-      homepageOgImage,
-    });
-  }
-
   return gitHubImage ?? homepageOgImage ?? data.image;
 };
