@@ -1,0 +1,38 @@
+import { Box, Card, Text, type TextProps } from "@radix-ui/themes";
+import type { PropsWithChildren } from "react";
+
+import { SvgIcon } from "../../icon";
+
+import styles from "./HomePageStatCard.module.css";
+
+const Label = ({ children }: { children: string }) => (
+  <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
+    {children}
+  </Text>
+);
+
+const Stat = ({ children }: { children: number }) => (
+  <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
+    {children.toLocaleString()}
+  </Text>
+);
+
+const Icon = ({ color, path }: { color: TextProps["color"]; path: string }) => (
+  <Text asChild color={color}>
+    <SvgIcon className={styles.cardIllustration} path={path} />
+  </Text>
+);
+
+export const HomePageStatCard = ({ children }: PropsWithChildren) => {
+  return (
+    <Box asChild width={{ initial: "10rem", md: "12rem" }}>
+      <Card className={styles.card} size={{ initial: "2", md: "3" }}>
+        {children}
+      </Card>
+    </Box>
+  );
+};
+
+HomePageStatCard.Icon = Icon;
+HomePageStatCard.Label = Label;
+HomePageStatCard.Stat = Stat;

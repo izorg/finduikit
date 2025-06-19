@@ -1,5 +1,5 @@
 import { mdiRhombusSplit, mdiTelescope } from "@mdi/js";
-import { Box, Button, Card, Flex, Heading, Text } from "@radix-ui/themes";
+import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
 import { siFigma, siStorybook } from "simple-icons";
@@ -7,8 +7,7 @@ import { siFigma, siStorybook } from "simple-icons";
 import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
 import { getUiKits } from "../../ui-kit/server";
-
-import styles from "./Page.module.css";
+import { HomePageStatCard } from "../HomePageStatCard";
 
 const title = "UI Kits";
 const description =
@@ -51,58 +50,25 @@ export const Page = async () => {
         px="4"
         wrap="wrap"
       >
-        <Box asChild width={{ initial: "10rem", md: "12rem" }}>
-          <Card className={styles.card} size={{ initial: "2", md: "3" }}>
-            <Text asChild color="purple">
-              <SvgIcon
-                className={styles.cardIllustration}
-                path={mdiRhombusSplit}
-              />
-            </Text>
-            <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
-              Total UI kits
-            </Text>
-            <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
-              {uiKitSet.size.toLocaleString()}
-            </Text>
-          </Card>
-        </Box>
-        <Box asChild width={{ initial: "10rem", md: "12rem" }}>
-          <Card className={styles.card} size={{ initial: "2", md: "3" }}>
-            <Text asChild color="ruby">
-              <SvgIcon
-                className={styles.cardIllustration}
-                path={siStorybook.path}
-              />
-            </Text>
-            <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
-              Storybooks
-            </Text>
-            <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
-              {[...uiKitSet]
-                .filter((item) => item.storybook)
-                .length.toLocaleString()}
-            </Text>
-          </Card>
-        </Box>
-        <Box asChild width={{ initial: "10rem", md: "12rem" }}>
-          <Card className={styles.card} size={{ initial: "2", md: "3" }}>
-            <Text asChild color="crimson">
-              <SvgIcon
-                className={styles.cardIllustration}
-                path={siFigma.path}
-              />
-            </Text>
-            <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
-              Figma files
-            </Text>
-            <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
-              {[...uiKitSet]
-                .filter((item) => item.figma)
-                .length.toLocaleString()}
-            </Text>
-          </Card>
-        </Box>
+        <HomePageStatCard>
+          <HomePageStatCard.Icon color="purple" path={mdiRhombusSplit} />
+          <HomePageStatCard.Label>Total UI kits</HomePageStatCard.Label>
+          <HomePageStatCard.Stat>{uiKitSet.size}</HomePageStatCard.Stat>
+        </HomePageStatCard>
+        <HomePageStatCard>
+          <HomePageStatCard.Icon color="ruby" path={siStorybook.path} />
+          <HomePageStatCard.Label>Storybooks</HomePageStatCard.Label>
+          <HomePageStatCard.Stat>
+            {[...uiKitSet].filter((item) => item.storybook).length}
+          </HomePageStatCard.Stat>
+        </HomePageStatCard>
+        <HomePageStatCard>
+          <HomePageStatCard.Icon color="crimson" path={siFigma.path} />
+          <HomePageStatCard.Label>Figma files</HomePageStatCard.Label>
+          <HomePageStatCard.Stat>
+            {[...uiKitSet].filter((item) => item.figma).length}
+          </HomePageStatCard.Stat>
+        </HomePageStatCard>
       </Flex>
       <Flex
         align="center"
