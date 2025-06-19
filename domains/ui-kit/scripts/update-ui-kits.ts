@@ -33,7 +33,7 @@ const updateUiKit = async (dirent: Dirent) => {
       ...data,
       description: getDescription({ data, github, homepage }),
       frameworks: getFrameworks({ data, github }),
-      image: getImage({ data, github }),
+      image: getImage({ data, github, homepage }),
     }),
   );
 

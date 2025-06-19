@@ -1,13 +1,26 @@
+import type { HTMLElement } from "node-html-parser";
+
 import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
+const getHomepageOgImage = (homepage: HTMLElement) => {
+  const ogImage = homepage
+    .querySelector('meta[property="og:image"]')
+    ?.getAttribute("content")
+    ?.trim();
+
+  return ogImage && URL.canParse(ogImage) ? ogImage : undefined;
+};
+
 export const getImage = ({
   data,
   github,
+  homepage,
 }: {
   data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
+  homepage: HTMLElement;
 }) => {
   if (data?.image === "") {
     return "";
@@ -19,5 +32,15 @@ export const getImage = ({
     ? undefined
     : github?.openGraphImageUrl;
 
-  return gitHubImage ?? data.image;
+  const homepageOgImage = getHomepageOgImage(homepage);
+
+  if (!gitHubImage && homepageOgImage) {
+    console.log(data.name, {
+      gitHubImage,
+      homepage: data.homepage,
+      homepageOgImage,
+    });
+  }
+
+  return gitHubImage ?? homepageOgImage ?? data.image;
 };
