@@ -3,6 +3,7 @@ description: The ultimate collection of design-agnostic, flexible and accessible
 frameworks:
   - Angular
 homepage: https://primeng.org/
-image: https://primefaces.org/static/social/primeng-preview.jpg
+image:
+  src: https://primefaces.org/static/social/primeng-preview.jpg
 name: PrimeNG
 repository: https://github.com/primefaces/primeng

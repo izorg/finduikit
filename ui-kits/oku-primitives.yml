@@ -3,7 +3,8 @@ description: Unstyled, accessible components for building high‑quality design
 frameworks:
   - Vue
 homepage: https://primitives.oku-ui.com/
-image: https://repository-images.githubusercontent.com/632969970/c04f6569-0670-4fc3-bcf9-503ddeeffa25
+image:
+  src: https://repository-images.githubusercontent.com/632969970/c04f6569-0670-4fc3-bcf9-503ddeeffa25
 name: Oku Primitives
 repository: https://github.com/oku-ui/primitives
 unstyled: true

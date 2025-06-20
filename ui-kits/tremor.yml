@@ -3,7 +3,8 @@ description: Open-source, accessible React UI components styled with Tailwind
 frameworks:
   - React
 homepage: https://tremor.so/
-image: https://repository-images.githubusercontent.com/777529312/e4d94a6c-d8ca-4e5e-8123-2da5c7d87007
+image:
+  src: https://repository-images.githubusercontent.com/777529312/e4d94a6c-d8ca-4e5e-8123-2da5c7d87007
 name: Tremor
 repository: https://github.com/tremorlabs/tremor
 storybook: https://storybook.tremor.so/

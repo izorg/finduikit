@@ -3,6 +3,7 @@ description: Build your component library with a unique look and feel. Powered
 frameworks:
   - React
 homepage: https://dotui.org/
-image: https://repository-images.githubusercontent.com/768678642/fe5dbdae-a39a-402c-b38b-c5a17c0dc48b
+image:
+  src: https://repository-images.githubusercontent.com/768678642/fe5dbdae-a39a-402c-b38b-c5a17c0dc48b
 name: dotUI
 repository: https://github.com/mehdibha/dotui

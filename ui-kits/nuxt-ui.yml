@@ -5,6 +5,7 @@ figma: https://www.figma.com/community/file/1436401057300493073
 frameworks:
   - Vue
 homepage: https://ui.nuxt.com/
-image: https://ui.nuxt.com/og-image.png
+image:
+  src: https://ui.nuxt.com/og-image.png
 name: Nuxt UI
 repository: https://github.com/nuxt/ui

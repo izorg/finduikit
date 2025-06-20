@@ -1,6 +1,7 @@
 description: UIkit is a lightweight and modular front-end framework for
   developing fast and powerful web interfaces.
 homepage: https://getuikit.com/
-image: https://getuikit.com/images/uikit-meta.png
+image:
+  src: https://getuikit.com/images/uikit-meta.png
 name: UIkit
 repository: https://github.com/uikit/uikit

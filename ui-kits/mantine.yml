@@ -3,6 +3,7 @@ figma: https://www.figma.com/community/file/1293978471602433537
 frameworks:
   - React
 homepage: https://mantine.dev
-image: https://repository-images.githubusercontent.com/327628682/c50bfb71-146d-4070-964c-4a06b5c88c0d
+image:
+  src: https://repository-images.githubusercontent.com/327628682/c50bfb71-146d-4070-964c-4a06b5c88c0d
 name: Mantine
 repository: https://github.com/mantinedev/mantine

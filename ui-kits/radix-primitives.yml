@@ -3,7 +3,8 @@ description: Unstyled, accessible, open source React primitives for high-quality
 frameworks:
   - React
 homepage: https://www.radix-ui.com/primitives
-image: https://repository-images.githubusercontent.com/273499522/81e7eb24-e83c-4f48-9400-e8cd9212cabd
+image:
+  src: https://repository-images.githubusercontent.com/273499522/81e7eb24-e83c-4f48-9400-e8cd9212cabd
 name: Radix Primitives
 repository: https://github.com/radix-ui/primitives
 unstyled: true

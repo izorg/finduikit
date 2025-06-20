@@ -2,6 +2,7 @@ description: Persona - PrivyID's Design System, built on top Nuxt3, Typescript a
 frameworks:
   - Vue
 homepage: https://privy-open-source.github.io/design-system/
-image: https://repository-images.githubusercontent.com/469947229/e34d6499-0d7a-4360-9de7-a294f984e415
+image:
+  src: https://repository-images.githubusercontent.com/469947229/e34d6499-0d7a-4360-9de7-a294f984e415
 name: Persona
 repository: https://github.com/privy-open-source/design-system

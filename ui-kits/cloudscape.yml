@@ -5,6 +5,7 @@ figma: https://www.figma.com/community/file/1448695453848536664
 frameworks:
   - React
 homepage: https://cloudscape.design/
-image: https://cloudscape.design/open-graph.png
+image:
+  src: https://cloudscape.design/open-graph.png
 name: Cloudscape
 repository: https://github.com/cloudscape-design/components

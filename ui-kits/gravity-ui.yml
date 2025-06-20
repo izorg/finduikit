@@ -3,7 +3,8 @@ figma: https://www.figma.com/community/file/1271150067798118027
 frameworks:
   - React
 homepage: https://gravity-ui.com/
-image: https://gravity-ui.com/index-social.png
+image:
+  src: https://gravity-ui.com/index-social.png
 name: Gravity UI
 repository: https://github.com/gravity-ui/uikit
 storybook: https://preview.gravity-ui.com/uikit/

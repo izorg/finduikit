@@ -7,7 +7,8 @@ frameworks:
   - Svelte
   - Vue
 homepage: https://ark-ui.com/
-image: https://ark-ui.com/opengraph-image.png?0b173734bffff5ac
+image:
+  src: https://ark-ui.com/opengraph-image.png?0b173734bffff5ac
 name: Ark UI
 repository: https://github.com/chakra-ui/ark
 unstyled: true

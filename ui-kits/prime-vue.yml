@@ -3,6 +3,7 @@ description: The ultimate collection of design-agnostic, flexible and accessible
 frameworks:
   - Vue
 homepage: https://primevue.org/
-image: https://www.primefaces.org/static/social/primevue-preview.jpg
+image:
+  src: https://www.primefaces.org/static/social/primevue-preview.jpg
 name: PrimeVue
 repository: https://github.com/primefaces/primevue

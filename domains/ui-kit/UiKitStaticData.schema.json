@@ -21,7 +21,21 @@
       "format": "uri"
     },
     "image": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            }
+          },
+          "required": ["src"],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "name": {
       "type": "string"

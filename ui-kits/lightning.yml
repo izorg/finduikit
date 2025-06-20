@@ -1,6 +1,7 @@
 description: Lightning Design System 2 · Design system documentation, made with zeroheight
 homepage: https://www.lightningdesignsystem.com/
-image: https://zeroheight.com/api/styleguide/110611/themes/2856/cover_image
+image:
+  src: https://zeroheight.com/api/styleguide/110611/themes/2856/cover_image
 name: Lightning
 repository: https://github.com/salesforce-ux/design-system
 storybook: https://sds-site-docs-1fea39e7763a.herokuapp.com/

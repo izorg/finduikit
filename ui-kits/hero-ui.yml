@@ -3,7 +3,8 @@ figma: https://www.figma.com/community/file/1267584376234254760
 frameworks:
   - React
 homepage: https://www.heroui.com/
-image: https://repository-images.githubusercontent.com/360522116/0ed308b4-8099-4f12-8903-68267087e808
+image:
+  src: https://repository-images.githubusercontent.com/360522116/0ed308b4-8099-4f12-8903-68267087e808
 name: HeroUI
 repository: https://github.com/heroui-inc/heroui
 storybook: https://storybook.heroui.com/

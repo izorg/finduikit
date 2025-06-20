@@ -3,6 +3,7 @@ description: The ultimate collection of design-agnostic, flexible and accessible
 frameworks:
   - React
 homepage: https://primereact.org/
-image: https://primefaces.org/static/social/primereact-preview.jpg
+image:
+  src: https://primefaces.org/static/social/primereact-preview.jpg
 name: PrimeReact
 repository: https://github.com/primefaces/primereact

@@ -1,5 +1,6 @@
 description: USWDS makes it easier to build accessible, mobile-friendly government websites.
 homepage: https://designsystem.digital.gov/
-image: https://designsystem.digital.gov/img/uswds-logo/lg-black.png
+image:
+  src: https://designsystem.digital.gov/img/uswds-logo/lg-black.png
 name: USWDS
 repository: https://github.com/uswds/uswds

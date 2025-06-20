@@ -3,7 +3,8 @@ figma: https://www.figma.com/community/file/854767373644076713
 frameworks:
   - React
 homepage: https://primer.style/product/getting-started/react/
-image: https://repository-images.githubusercontent.com/121814210/cadffb80-6290-11e9-8815-525c2c886836
+image:
+  src: https://repository-images.githubusercontent.com/121814210/cadffb80-6290-11e9-8815-525c2c886836
 name: Primer React
 repository: https://github.com/primer/react
 storybook: https://primer.style/react/storybook/

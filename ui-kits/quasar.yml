@@ -5,6 +5,7 @@ description: Developer-oriented, front-end framework with VueJS components for
 frameworks:
   - Vue
 homepage: https://quasar.dev/
-image: https://cdn.quasar.dev/logo-v2/social-cover.jpg
+image:
+  src: https://cdn.quasar.dev/logo-v2/social-cover.jpg
 name: Quasar
 repository: https://github.com/quasarframework/quasar

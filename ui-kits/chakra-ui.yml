@@ -3,7 +3,8 @@ figma: https://www.figma.com/community/file/1506648876941130701
 frameworks:
   - React
 homepage: https://chakra-ui.com/
-image: https://repository-images.githubusercontent.com/202890778/3741b89f-38e0-4b88-9433-0cb930b8ac46
+image:
+  src: https://repository-images.githubusercontent.com/202890778/3741b89f-38e0-4b88-9433-0cb930b8ac46
 name: Chakra UI
 repository: https://github.com/chakra-ui/chakra-ui
 storybook: https://storybook.chakra-ui.com/

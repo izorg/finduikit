@@ -5,7 +5,8 @@ figma: https://www.figma.com/community/file/836828295772957889
 frameworks:
   - React
 homepage: https://fluent2.microsoft.design/
-image: https://fluent2websitecdn.azureedge.net/cdn/fluent-logo-metadata.Cwa-_8F7.png
+image:
+  src: https://fluent2websitecdn.azureedge.net/cdn/fluent-logo-metadata.Cwa-_8F7.png
 name: Fluent
 repository: https://github.com/microsoft/fluentui
 storybook: https://react.fluentui.dev/

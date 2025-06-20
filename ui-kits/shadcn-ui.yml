@@ -5,6 +5,7 @@ figma: https://www.figma.com/community/file/1203061493325953101
 frameworks:
   - React
 homepage: https://ui.shadcn.com/
-image: https://repository-images.githubusercontent.com/585146387/5afcd3e9-126b-48c8-b8d1-e17240c10d51
+image:
+  src: https://repository-images.githubusercontent.com/585146387/5afcd3e9-126b-48c8-b8d1-e17240c10d51
 name: shadcn/ui
 repository: https://github.com/shadcn-ui/ui

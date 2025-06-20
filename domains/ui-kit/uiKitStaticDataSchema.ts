@@ -7,7 +7,11 @@ export const uiKitStaticDataSchema = z.object({
   figma: z.url().optional(),
   frameworks: z.array(z.enum(Framework)).optional(),
   homepage: z.url(),
-  image: z.string().optional(),
+  image: z
+    .object({
+      src: z.string(),
+    })
+    .nullish(),
   name: z.string(),
   packages: z
     .array(

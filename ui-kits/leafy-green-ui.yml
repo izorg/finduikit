@@ -2,7 +2,8 @@ description: LeafyGreen UI – LeafyGreen's React UI Kit
 frameworks:
   - React
 homepage: https://www.mongodb.design/
-image: https://github.com/mongodb/leafygreen-ui/raw/main/.storybook/static/leafygreen-ui-banner.png
+image:
+  src: https://github.com/mongodb/leafygreen-ui/raw/main/.storybook/static/leafygreen-ui-banner.png
 name: LeafyGreen UI
 repository: https://github.com/mongodb/leafygreen-ui
 storybook: https://storybook.mongodb.design/

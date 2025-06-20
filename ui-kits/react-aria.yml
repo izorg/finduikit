@@ -2,7 +2,8 @@ description: Craft world-class accessible components with custom styles.
 frameworks:
   - React
 homepage: https://react-spectrum.adobe.com/react-aria/index.html
-image: https://react-spectrum.adobe.com/ReactAriaOpenGraph.6ea0ee74.webp
+image:
+  src: https://react-spectrum.adobe.com/ReactAriaOpenGraph.6ea0ee74.webp
 name: React Aria
 repository: https://github.com/adobe/react-spectrum
 unstyled: true

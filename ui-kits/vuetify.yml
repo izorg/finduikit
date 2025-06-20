@@ -4,6 +4,7 @@ figma: https://www.figma.com/community/file/1266515419060480209
 frameworks:
   - Vue
 homepage: https://vuetifyjs.com/
-image: https://repository-images.githubusercontent.com/67962648/07226cea-10e0-4c94-9909-03e77f4f5966
+image:
+  src: https://repository-images.githubusercontent.com/67962648/07226cea-10e0-4c94-9909-03e77f4f5966
 name: Vuetify
 repository: https://github.com/vuetifyjs/vuetify

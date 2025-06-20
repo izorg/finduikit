@@ -3,7 +3,8 @@ figma: https://www.figma.com/community/file/1157761560874207208
 frameworks:
   - React
 homepage: https://carbondesignsystem.com/
-image: https://repository-images.githubusercontent.com/84835535/fcf20280-73e3-11e9-834d-fd5f5fe83699
+image:
+  src: https://repository-images.githubusercontent.com/84835535/fcf20280-73e3-11e9-834d-fd5f5fe83699
 name: Carbon
 packages:
   - name: "@carbon/react"

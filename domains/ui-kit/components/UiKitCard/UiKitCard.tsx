@@ -54,7 +54,12 @@ export const UiKitCard = (props: UiKitCardProps) => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <Image alt="" className={styles.image} fill src={uiKit.image} />
+                <Image
+                  alt=""
+                  className={styles.image}
+                  fill
+                  src={uiKit.image.src}
+                />
               </a>
             </Box>
           </Inset>

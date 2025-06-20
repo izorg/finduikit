@@ -2,6 +2,7 @@ description: Beautiful UI components and templates to make your landing page loo
 frameworks:
   - React
 homepage: https://magicui.design/
-image: https://magicui.design/og
+image:
+  src: https://magicui.design/og
 name: Magic UI
 repository: https://github.com/magicuidesign/magicui

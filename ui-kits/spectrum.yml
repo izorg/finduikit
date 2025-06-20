@@ -3,7 +3,8 @@ description: Spectrum provides components and tools to help product teams work
 frameworks:
   - React
 homepage: https://spectrum.adobe.com/
-image: https://spectrum.adobe.com/static/landscape.png
+image:
+  src: https://spectrum.adobe.com/static/landscape.png
 name: Spectrum
 repository: https://github.com/adobe/react-spectrum
 storybook: https://opensource.adobe.com/spectrum-css/

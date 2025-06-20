@@ -21,9 +21,10 @@ export const getImage = ({
   data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
   homepage: HTMLElement;
-}) => {
-  if (data?.image === "") {
-    return "";
+}): UiKitStaticDataSchema["image"] => {
+  if (data?.image === null) {
+    // eslint-disable-next-line unicorn/no-null -- null is used to indicate no image
+    return null;
   }
 
   const gitHubImage = github?.openGraphImageUrl.startsWith(
@@ -34,5 +35,14 @@ export const getImage = ({
 
   const homepageOgImage = getHomepageOgImage(homepage);
 
-  return gitHubImage ?? homepageOgImage ?? data.image;
+  const src = gitHubImage ?? homepageOgImage;
+
+  if (!src) {
+    return data.image;
+  }
+
+  return {
+    ...data.image,
+    src,
+  };
 };

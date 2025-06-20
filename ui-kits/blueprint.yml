@@ -2,6 +2,7 @@ description: A React-based UI toolkit for the web
 frameworks:
   - React
 homepage: https://blueprintjs.com/
-image: https://repository-images.githubusercontent.com/71939872/549f5eec-3fa9-437c-81ff-3c8acc1be769
+image:
+  src: https://repository-images.githubusercontent.com/71939872/549f5eec-3fa9-437c-81ff-3c8acc1be769
 name: Blueprint
 repository: https://github.com/palantir/blueprint

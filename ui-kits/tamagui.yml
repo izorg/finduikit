@@ -3,6 +3,7 @@ figma: https://www.figma.com/community/file/1326593766534421119
 frameworks:
   - React
 homepage: https://tamagui.dev/
-image: https://repository-images.githubusercontent.com/304740870/09800717-954e-4bac-bd3c-c8dc7836adbc
+image:
+  src: https://repository-images.githubusercontent.com/304740870/09800717-954e-4bac-bd3c-c8dc7836adbc
 name: Tamagui
 repository: https://github.com/tamagui/tamagui

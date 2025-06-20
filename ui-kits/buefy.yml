@@ -3,6 +3,7 @@ description: Buefy is a lightweight library of responsive UI components for
 frameworks:
   - Vue
 homepage: https://buefy.org/
-image: https://repository-images.githubusercontent.com/86840811/fb263700-7e06-11e9-84c3-75f2f8bed6c9
+image:
+  src: https://repository-images.githubusercontent.com/86840811/fb263700-7e06-11e9-84c3-75f2f8bed6c9
 name: Buefy
 repository: https://github.com/buefy/buefy

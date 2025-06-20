@@ -5,6 +5,7 @@ figma: https://www.figma.com/community/file/912837788133317724
 frameworks:
   - React
 homepage: https://mui.com/
-image: https://repository-images.githubusercontent.com/23083156/b55af535-7ebd-488d-a63a-cc902e0619d3
+image:
+  src: https://repository-images.githubusercontent.com/23083156/b55af535-7ebd-488d-a63a-cc902e0619d3
 name: MUI
 repository: https://github.com/mui/material-ui

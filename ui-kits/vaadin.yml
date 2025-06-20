@@ -3,6 +3,7 @@ description: Vaadin's library of UI components for Java applications is
   50+ components.
 figma: https://www.figma.com/community/file/843042473942860131
 homepage: https://vaadin.com/components
-image: https://repository-images.githubusercontent.com/324593493/d2696a7a-d4a7-4b6c-a260-a7a92d0d5e43
+image:
+  src: https://repository-images.githubusercontent.com/324593493/d2696a7a-d4a7-4b6c-a260-a7a92d0d5e43
 name: Vaadin
 repository: https://github.com/vaadin/web-components

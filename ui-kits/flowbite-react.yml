@@ -4,7 +4,8 @@ description: Flowbite React is an open-source UI component library built with
 frameworks:
   - React
 homepage: https://flowbite-react.com/
-image: https://repository-images.githubusercontent.com/464618881/f1a109d1-c9f0-4f08-8404-655fac70174e
+image:
+  src: https://repository-images.githubusercontent.com/464618881/f1a109d1-c9f0-4f08-8404-655fac70174e
 name: Flowbite React
 repository: https://github.com/themesberg/flowbite-react
 storybook: https://storybook.flowbite-react.com/

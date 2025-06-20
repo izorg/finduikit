@@ -2,7 +2,8 @@ description: Unstyled UI components for building accessible web apps and design 
 frameworks:
   - React
 homepage: https://base-ui.com/
-image: https://repository-images.githubusercontent.com/762289766/2ffed049-9511-44e6-99f6-b01fe84c9ce7
+image:
+  src: https://repository-images.githubusercontent.com/762289766/2ffed049-9511-44e6-99f6-b01fe84c9ce7
 name: Base UI
 repository: https://github.com/mui/base-ui
 unstyled: true

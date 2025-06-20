@@ -3,6 +3,7 @@ figma: https://www.figma.com/community/file/1305760370797950824
 frameworks:
   - Vue
 homepage: https://element-plus.org/
-image: https://element-plus.org/images/element-plus-og-image.png
+image:
+  src: https://element-plus.org/images/element-plus-og-image.png
 name: Element Plus
 repository: https://github.com/element-plus/element-plus

@@ -3,6 +3,7 @@ description: Intent offers customizable, accessible React components with
 frameworks:
   - React
 homepage: https://intentui.com/
-image: https://repository-images.githubusercontent.com/824433284/56dbcb56-258f-43a2-97d0-333d4602647d
+image:
+  src: https://repository-images.githubusercontent.com/824433284/56dbcb56-258f-43a2-97d0-333d4602647d
 name: Intent UI
 repository: https://github.com/irsyadadl/intentui

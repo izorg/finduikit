@@ -2,6 +2,7 @@ description: Vanilla Framework - a simple extensible CSS framework, written in
   Sass, by the Ubuntu Web Team.
 figma: https://www.figma.com/community/file/1435297834108003391
 homepage: https://vanillaframework.io/
-image: https://repository-images.githubusercontent.com/31207344/58405780-8dcb-11e9-84b0-9a98c646a618
+image:
+  src: https://repository-images.githubusercontent.com/31207344/58405780-8dcb-11e9-84b0-9a98c646a618
 name: Vanilla
 repository: https://github.com/canonical/vanilla-framework

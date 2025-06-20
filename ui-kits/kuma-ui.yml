@@ -2,7 +2,8 @@ description: The Modern Headless & Zero Runtime UI Component Library 🐻‍❄�
 frameworks:
   - React
 homepage: https://www.kuma-ui.com/
-image: https://repository-images.githubusercontent.com/621481721/33116785-e75f-434d-8335-e495413792b3
+image:
+  src: https://repository-images.githubusercontent.com/621481721/33116785-e75f-434d-8335-e495413792b3
 name: Kuma UI
 repository: https://github.com/kuma-ui/kuma-ui
 unstyled: true
