@@ -4,10 +4,10 @@
 
 .cardIllustration {
   height: 3rem;
-  opacity: .15;
+  opacity: 0.15;
   position: absolute;
-  right: .5rem;
-  top: .5rem;
+  right: 0.5rem;
+  top: 0.5rem;
   transform: rotate(20deg);
   width: 3rem;
 }

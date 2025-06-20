@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const uiKitsResource = getUiKits();
 
-export const Page = async () => {
+export const HomePage = async () => {
   const uiKitSet = await uiKitsResource;
 
   return (
@@ -44,6 +44,12 @@ export const Page = async () => {
           </header>
         </Text>
       </Flex>
+      <Button asChild size="3">
+        <NextLink href="/explore">
+          <SvgIcon path={mdiTelescope} />
+          Explore
+        </NextLink>
+      </Button>
       <Flex
         gap={{ initial: "4", md: "8", sm: "6" }}
         justify="center"
@@ -69,22 +75,6 @@ export const Page = async () => {
             {[...uiKitSet].filter((item) => item.figma).length}
           </HomePageStatCard.Stat>
         </HomePageStatCard>
-      </Flex>
-      <Flex
-        align="center"
-        direction={{
-          initial: "column",
-          sm: "row",
-        }}
-        gap="4"
-        justify="center"
-      >
-        <Button asChild size="3">
-          <NextLink href="/explore">
-            <SvgIcon path={mdiTelescope} />
-            Explore
-          </NextLink>
-        </Button>
       </Flex>
       <Footer mt="auto" />
     </Flex>
