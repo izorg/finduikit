@@ -17,6 +17,6 @@
   }
 
   .rightCell {
-    padding-left: max(env(safe-area-inset-right), var(--table-cell-padding));
+    padding-right: max(env(safe-area-inset-right), var(--table-cell-padding));
   }
 }
