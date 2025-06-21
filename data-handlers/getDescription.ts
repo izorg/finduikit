@@ -33,7 +33,7 @@ export const getDescription = ({
     .toSorted((a, b) => (b?.length ?? 0) - (a?.length ?? 0))
     .at(0);
 
-  if (["Polaris", "UI5 Web Components"].includes(data.name)) {
+  if (["BaseLayer", "Polaris", "UI5 Web Components"].includes(data.name)) {
     homepageBestDescription = undefined;
   }
 

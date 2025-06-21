@@ -7,6 +7,7 @@ const frameworkCompare = new Intl.Collator("en").compare;
 
 const frameworkTopicMap = new Map<string, Framework>([
   ["angular", Framework.Angular],
+  ["react-aria", Framework.React],
   ["react", Framework.React],
   ["reactjs", Framework.React],
   ["solid-js", Framework.Solid],
