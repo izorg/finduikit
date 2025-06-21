@@ -1,6 +1,6 @@
 "use client";
 
-import { mdiChevronRight, mdiClose, mdiMagnify } from "@mdi/js";
+import { mdiClose, mdiMagnify } from "@mdi/js";
 import { composeRefs } from "@radix-ui/react-compose-refs";
 import { IconButton, TextField } from "@radix-ui/themes";
 import { type Ref, useRef } from "react";
@@ -10,11 +10,12 @@ import { SvgIcon } from "../../icon";
 import styles from "./SearchInput.module.css";
 
 type SearchInputProps = {
+  onClear?: () => void;
   ref?: Ref<HTMLInputElement>;
 } & TextField.RootProps;
 
 export const SearchInput = (props: SearchInputProps) => {
-  const { ref: refProp, ...rest } = props;
+  const { onClear, ref: refProp, ...rest } = props;
 
   const ref = useRef<HTMLInputElement>(null);
 
@@ -35,23 +36,18 @@ export const SearchInput = (props: SearchInputProps) => {
       <TextField.Slot className={styles.clearSlot}>
         <IconButton
           aria-label="Clear"
-          onClick={(event) => {
+          onClick={() => {
             if (ref.current) {
               ref.current.value = "";
               ref.current.focus();
             }
 
-            event.currentTarget.closest("form")?.requestSubmit();
+            onClear?.();
           }}
           type="button"
           variant="ghost"
         >
           <SvgIcon path={mdiClose} />
-        </IconButton>
-      </TextField.Slot>
-      <TextField.Slot className={styles.submitSlot}>
-        <IconButton aria-label="Search" type="submit" variant="soft">
-          <SvgIcon path={mdiChevronRight} />
         </IconButton>
       </TextField.Slot>
     </TextField.Root>

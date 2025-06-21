@@ -1,8 +1,3 @@
-:global(.rt-TextFieldInput:placeholder-shown)
-  ~ :where(.clearSlot, .submitSlot) {
+:global(.rt-TextFieldInput:placeholder-shown) ~ :where(.clearSlot) {
   visibility: hidden;
-}
-
-.submitSlot {
-  padding-inline: var(--space-1);
 }

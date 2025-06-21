@@ -1,7 +1,14 @@
 "use client";
 
 import { Box, Container, Flex, SegmentedControl, Text } from "@radix-ui/themes";
-import { type FormEvent, useCallback, useEffect, useRef } from "react";
+import {
+  type ChangeEvent,
+  type FormEvent,
+  useCallback,
+  useEffect,
+  useRef,
+} from "react";
+import { useDebounceCallback } from "usehooks-ts";
 
 import { Framework, FrameworkSelect, useFramework } from "../../framework";
 import { SearchInput, useSearch } from "../../search";
@@ -20,7 +27,18 @@ export const PageTopBar = () => {
   const { setUiKitView, uiKitView } = useUiKitView();
   const { setUnstyled, unstyled } = useUnstyled();
 
+  const setDebounceSearch = useDebounceCallback(setSearch, 500);
+
   const searchRef = useRef<HTMLInputElement>(null);
+
+  const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setDebounceSearch(event.currentTarget.value);
+  };
+
+  const onSearchClear = () => {
+    setDebounceSearch("");
+    setDebounceSearch.flush();
+  };
 
   const onFrameworkChange = (value: string) => {
     const framework = Object.values(Framework).find(
@@ -44,6 +62,8 @@ export const PageTopBar = () => {
 
   const onSubmit = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
+      setDebounceSearch.cancel();
+
       event.preventDefault();
 
       const formData = new FormData(event.currentTarget);
@@ -52,7 +72,7 @@ export const PageTopBar = () => {
 
       setSearch(typeof searchValue === "string" ? searchValue : "");
     },
-    [setSearch],
+    [setDebounceSearch, setSearch],
   );
 
   useEffect(() => {
@@ -85,7 +105,13 @@ export const PageTopBar = () => {
       >
         <form onSubmit={onSubmit}>
           <Box asChild flexGrow="1">
-            <SearchInput defaultValue={search} ref={searchRef} size="3" />
+            <SearchInput
+              defaultValue={search}
+              onChange={onSearchChange}
+              onClear={onSearchClear}
+              ref={searchRef}
+              size="3"
+            />
           </Box>
           <Flex
             align="center"
