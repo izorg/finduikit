@@ -23,12 +23,16 @@ export const SearchInput = (props: SearchInputProps) => {
 
   return (
     <TextField.Root
-      {...rest}
       aria-label={placeholder}
+      autoCapitalize="off"
+      autoComplete="off"
+      autoCorrect="off"
       name="search"
       placeholder={placeholder}
       ref={composeRefs(ref, refProp)}
+      spellCheck="false"
       type="search"
+      {...rest}
     >
       <TextField.Slot>
         <SvgIcon path={mdiMagnify} />
