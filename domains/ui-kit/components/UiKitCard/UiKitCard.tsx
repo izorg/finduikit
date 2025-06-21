@@ -59,6 +59,9 @@ export const UiKitCard = (props: UiKitCardProps) => {
                   className={styles.image}
                   fill
                   src={uiKit.image.src}
+                  style={{
+                    objectFit: uiKit.image.fit,
+                  }}
                 />
               </a>
             </Box>

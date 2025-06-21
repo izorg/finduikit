@@ -4,6 +4,7 @@ frameworks:
   - Vue
 homepage: https://element-plus.org/
 image:
+  fit: cover
   src: https://element-plus.org/images/element-plus-og-image.png
 name: Element Plus
 repository: https://github.com/element-plus/element-plus

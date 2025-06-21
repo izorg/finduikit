@@ -3,6 +3,7 @@ description: The NSW Digital Design System is a toolkit to help digital product
 figma: https://www.figma.com/design/PVrERKnckLTlJSPk12gbtS/NSW-Digital-Design-System?node-id=18830-13437&p=f&t=WqeWv8acvMd7dvyR-0
 homepage: https://designsystem.nsw.gov.au/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/214297463/30d18ca3-4f7a-402e-a871-94b3487603d6
 name: NSW
 repository: https://github.com/digitalnsw/nsw-design-system

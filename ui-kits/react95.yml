@@ -3,6 +3,7 @@ frameworks:
   - React
 homepage: https://react95.io/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/171368195/48470c00-b0e0-11ea-8020-68d8cedb8186
 name: React95
 repository: https://github.com/react95-io/React95

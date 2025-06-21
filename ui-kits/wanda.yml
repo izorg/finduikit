@@ -3,6 +3,7 @@ frameworks:
   - React
 homepage: https://design.wonderflow.ai/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/446459287/4c4d001e-4566-4976-8d01-87540f6d3719
 name: Wanda
 repository: https://github.com/wonderflow-bv/wanda

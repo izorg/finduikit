@@ -6,6 +6,7 @@ frameworks:
   - React
 homepage: https://cloudscape.design/
 image:
+  fit: cover
   src: https://cloudscape.design/open-graph.png
 name: Cloudscape
 repository: https://github.com/cloudscape-design/components

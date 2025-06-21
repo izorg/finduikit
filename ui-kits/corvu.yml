@@ -3,6 +3,7 @@ frameworks:
   - Solid
 homepage: https://corvu.dev/
 image:
+  fit: cover
   src: https://corvu.dev/banner.jpg
 name: Corvu
 repository: https://github.com/corvudev/corvu/

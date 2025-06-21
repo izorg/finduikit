@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://chakra-ui.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/202890778/3741b89f-38e0-4b88-9433-0cb930b8ac46
 name: Chakra UI
 repository: https://github.com/chakra-ui/chakra-ui

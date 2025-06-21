@@ -3,6 +3,7 @@ description: The Pharos design system is our guiding light toward creating
   curious.
 homepage: https://pharos.jstor.org/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/364246649/8a024500-d40d-11eb-9f83-2c454663c573
 name: Pharos
 repository: https://github.com/ithaka/pharos

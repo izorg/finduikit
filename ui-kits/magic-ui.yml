@@ -3,6 +3,7 @@ frameworks:
   - React
 homepage: https://magicui.design/
 image:
+  fit: cover
   src: https://magicui.design/og
 name: Magic UI
 repository: https://github.com/magicuidesign/magicui

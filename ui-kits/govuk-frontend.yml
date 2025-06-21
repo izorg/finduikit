@@ -1,6 +1,7 @@
 description: Design your service using GOV.UK styles, components and patterns
 homepage: https://design-system.service.gov.uk/
 image:
+  fit: cover
   src: https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png
 name: GOV.UK Frontend
 repository: https://github.com/alphagov/govuk-frontend

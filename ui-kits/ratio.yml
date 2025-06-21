@@ -3,6 +3,7 @@ frameworks:
   - React
 homepage: https://ui-kit.rambler.ru/
 image:
+  fit: cover
   src: https://store.rambler.ru/rambler-ui/v3.30.2/share-ratio.png
 name: Ratio
 repository: https://github.com/rambler-digital-solutions/rambler-ui

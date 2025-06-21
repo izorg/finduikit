@@ -5,6 +5,7 @@ frameworks:
   - React
 homepage: https://flowbite-react.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/464618881/f1a109d1-c9f0-4f08-8404-655fac70174e
 name: Flowbite React
 repository: https://github.com/themesberg/flowbite-react

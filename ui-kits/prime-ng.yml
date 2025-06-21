@@ -4,6 +4,7 @@ frameworks:
   - Angular
 homepage: https://primeng.org/
 image:
+  fit: cover
   src: https://primefaces.org/static/social/primeng-preview.jpg
 name: PrimeNG
 repository: https://github.com/primefaces/primeng

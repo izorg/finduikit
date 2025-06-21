@@ -5,6 +5,7 @@ frameworks:
   - Svelte
 homepage: https://shadcn-svelte.com/
 image:
+  fit: cover
   src: https://shadcn-svelte.com/opengraph-image.png
 name: shadcn-svelte
 repository: https://github.com/huntabyte/shadcn-svelte

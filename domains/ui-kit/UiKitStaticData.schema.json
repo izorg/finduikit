@@ -25,6 +25,10 @@
         {
           "type": "object",
           "properties": {
+            "fit": {
+              "type": "string",
+              "enum": ["contain", "cover"]
+            },
             "src": {
               "type": "string"
             }

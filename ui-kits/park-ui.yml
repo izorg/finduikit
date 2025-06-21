@@ -7,6 +7,7 @@ frameworks:
   - Vue
 homepage: https://park-ui.com/
 image:
+  fit: cover
   src: https://park-ui.com/opengraph-image.png?6ef21ceed77a7a06
 name: Park UI
 repository: https://github.com/cschroeter/park-ui

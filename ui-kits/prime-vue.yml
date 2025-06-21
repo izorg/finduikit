@@ -4,6 +4,7 @@ frameworks:
   - Vue
 homepage: https://primevue.org/
 image:
+  fit: cover
   src: https://www.primefaces.org/static/social/primevue-preview.jpg
 name: PrimeVue
 repository: https://github.com/primefaces/primevue

@@ -5,6 +5,7 @@ frameworks:
   - React
 homepage: https://www.jollyui.dev/
 image:
+  fit: cover
   src: https://jollyui.dev/og.jpg
 name: JollyUI
 repository: https://github.com/jolbol1/jolly-ui

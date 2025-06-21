@@ -5,6 +5,7 @@ frameworks:
   - Svelte
 homepage: https://flowbite-svelte.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/463381114/2fd23b2a-3224-43ed-85f4-2644b01a4c11
 name: Flowbite Svelte
 repository: https://github.com/themesberg/flowbite-svelte

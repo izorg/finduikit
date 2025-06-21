@@ -3,6 +3,7 @@ frameworks:
   - React
 homepage: https://www.mongodb.design/
 image:
+  fit: cover
   src: https://github.com/mongodb/leafygreen-ui/raw/main/.storybook/static/leafygreen-ui-banner.png
 name: LeafyGreen UI
 repository: https://github.com/mongodb/leafygreen-ui

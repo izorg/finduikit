@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://kokonutui.com/
 image:
+  fit: cover
   src: https://kokonutui.com/opengraph-image.png?77d9a952b4fe977f
 name: KokonutUI
 repository: https://github.com/kokonut-labs/kokonutui

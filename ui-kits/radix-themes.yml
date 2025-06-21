@@ -5,6 +5,7 @@ frameworks:
   - React
 homepage: https://www.radix-ui.com/
 image:
+  fit: cover
   src: https://radix-ui.com/social/themes.png
 name: Radix Themes
 repository: https://github.com/radix-ui/themes

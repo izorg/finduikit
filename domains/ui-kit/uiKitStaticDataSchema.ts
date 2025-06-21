@@ -9,6 +9,7 @@ export const uiKitStaticDataSchema = z.object({
   homepage: z.url(),
   image: z
     .object({
+      fit: z.enum(["contain", "cover"]).optional(),
       src: z.string(),
     })
     .nullish(),

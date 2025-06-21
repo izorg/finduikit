@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://spectrum.adobe.com/
 image:
+  fit: cover
   src: https://spectrum.adobe.com/static/landscape.png
 name: Spectrum
 repository: https://github.com/adobe/react-spectrum

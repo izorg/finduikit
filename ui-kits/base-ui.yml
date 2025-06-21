@@ -3,6 +3,7 @@ frameworks:
   - React
 homepage: https://base-ui.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/762289766/2ffed049-9511-44e6-99f6-b01fe84c9ce7
 name: Base UI
 repository: https://github.com/mui/base-ui

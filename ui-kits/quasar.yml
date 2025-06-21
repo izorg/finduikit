@@ -6,6 +6,7 @@ frameworks:
   - Vue
 homepage: https://quasar.dev/
 image:
+  fit: cover
   src: https://cdn.quasar.dev/logo-v2/social-cover.jpg
 name: Quasar
 repository: https://github.com/quasarframework/quasar

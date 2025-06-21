@@ -5,6 +5,7 @@ frameworks:
   - Vue
 homepage: https://reka-ui.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/657119460/c1a7fef8-4bb9-410d-be33-87c5677fc518
 name: Reka UI
 repository: https://github.com/unovue/reka-ui
