@@ -2,11 +2,19 @@ import "../domains/polyfills";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Theme } from "@radix-ui/themes";
-import { type Viewport } from "next";
+import { type Metadata, type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { type PropsWithChildren } from "react";
 
 import "./global.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://finduikit.com",
+  ),
+};
 
 export const viewport: Viewport = {
   colorScheme: "light dark",

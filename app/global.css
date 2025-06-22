@@ -1,6 +1,5 @@
 @import url("@radix-ui/themes/styles.css");
 
 body {
-  background-color: var(--color-background);
   margin: 0;
 }
