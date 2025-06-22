@@ -1,4 +1,5 @@
 @import url("@radix-ui/themes/styles.css");
+@import url("../domains/icon/SvgIcon/SvgIcon.css");
 
 body {
   margin: 0;

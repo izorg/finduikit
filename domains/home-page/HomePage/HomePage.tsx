@@ -7,7 +7,7 @@ import { siFigma, siStorybook } from "simple-icons";
 import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
 import { getUiKits } from "../../ui-kit/server";
-import { HomePageStatCard } from "../HomePageStatCard";
+import { StatCard } from "../StatCard";
 
 const title = "UI Kits";
 const description =
@@ -56,25 +56,25 @@ export const HomePage = async () => {
         px="4"
         wrap="wrap"
       >
-        <HomePageStatCard>
-          <HomePageStatCard.Icon color="purple" path={mdiRhombusSplit} />
-          <HomePageStatCard.Label>Total UI kits</HomePageStatCard.Label>
-          <HomePageStatCard.Stat>{uiKitSet.size}</HomePageStatCard.Stat>
-        </HomePageStatCard>
-        <HomePageStatCard>
-          <HomePageStatCard.Icon color="ruby" path={siStorybook.path} />
-          <HomePageStatCard.Label>Storybooks</HomePageStatCard.Label>
-          <HomePageStatCard.Stat>
+        <StatCard>
+          <StatCard.Icon color="purple" path={mdiRhombusSplit} />
+          <StatCard.Label>Total UI kits</StatCard.Label>
+          <StatCard.Stat>{uiKitSet.size}</StatCard.Stat>
+        </StatCard>
+        <StatCard>
+          <StatCard.Icon color="ruby" path={siStorybook.path} />
+          <StatCard.Label>Storybooks</StatCard.Label>
+          <StatCard.Stat>
             {[...uiKitSet].filter((item) => item.storybook).length}
-          </HomePageStatCard.Stat>
-        </HomePageStatCard>
-        <HomePageStatCard>
-          <HomePageStatCard.Icon color="crimson" path={siFigma.path} />
-          <HomePageStatCard.Label>Figma files</HomePageStatCard.Label>
-          <HomePageStatCard.Stat>
+          </StatCard.Stat>
+        </StatCard>
+        <StatCard>
+          <StatCard.Icon color="crimson" path={siFigma.path} />
+          <StatCard.Label>Figma files</StatCard.Label>
+          <StatCard.Stat>
             {[...uiKitSet].filter((item) => item.figma).length}
-          </HomePageStatCard.Stat>
-        </HomePageStatCard>
+          </StatCard.Stat>
+        </StatCard>
       </Flex>
       <Footer mt="auto" />
     </Flex>

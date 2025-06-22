@@ -3,7 +3,7 @@ import type { PropsWithChildren } from "react";
 
 import { SvgIcon } from "../../icon";
 
-import styles from "./HomePageStatCard.module.css";
+import styles from "./StatCard.module.css";
 
 const Label = ({ children }: { children: string }) => (
   <Text as="div" color="gray" size={{ initial: "2", md: "3" }}>
@@ -23,7 +23,7 @@ const Icon = ({ color, path }: { color: TextProps["color"]; path: string }) => (
   </Text>
 );
 
-export const HomePageStatCard = ({ children }: PropsWithChildren) => {
+export const StatCard = ({ children }: PropsWithChildren) => {
   return (
     <Box asChild width={{ initial: "10rem", md: "12rem" }}>
       <Card className={styles.card} size={{ initial: "2", md: "3" }}>
@@ -33,6 +33,6 @@ export const HomePageStatCard = ({ children }: PropsWithChildren) => {
   );
 };
 
-HomePageStatCard.Icon = Icon;
-HomePageStatCard.Label = Label;
-HomePageStatCard.Stat = Stat;
+StatCard.Icon = Icon;
+StatCard.Label = Label;
+StatCard.Stat = Stat;
