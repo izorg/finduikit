@@ -10,9 +10,9 @@ import "./global.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : "https://finduikit.com",
+    process.env.VERCEL_GIT_BRANCH === "main" || !process.env.VERCEL_URL
+      ? "https://finduikit.com"
+      : `https://${process.env.VERCEL_URL}`,
   ),
 };
 
