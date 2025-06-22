@@ -29,15 +29,8 @@ export const PageView = (props: PageViewProps) => {
       return;
     }
 
-    const scrollElement =
-      uiKitView === "grid"
-        ? ref.current
-        : ref.current?.querySelector<HTMLDivElement>(
-            "[data-radix-scroll-area-viewport]",
-          );
-
-    scrollElement?.scrollTo({ top: 0 });
-  }, [uiKitView, uiKits]);
+    ref.current?.scrollTo({ top: 0 });
+  }, [uiKits]);
 
   if (uiKits.length === 0) {
     return (

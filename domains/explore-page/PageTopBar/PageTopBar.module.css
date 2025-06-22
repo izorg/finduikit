@@ -1,6 +1,9 @@
 .topBar {
-  box-shadow: var(--shadow-3);
   padding: var(--space-4);
+}
+
+.topBarShadow {
+  box-shadow: var(--shadow-3);
   z-index: 1;
 }
 

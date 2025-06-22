@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Container, Flex, SegmentedControl, Text } from "@radix-ui/themes";
+import classNames from "classnames";
 import {
   type ChangeEvent,
   type FormEvent,
@@ -89,7 +90,14 @@ export const PageTopBar = () => {
   }, []);
 
   return (
-    <Container className={styles.topBar} flexGrow="0" size="3">
+    <Container
+      className={classNames(
+        styles.topBar,
+        uiKitView === "grid" && styles.topBarShadow,
+      )}
+      flexGrow="0"
+      size="3"
+    >
       <Flex
         asChild
         direction={{

@@ -2,6 +2,13 @@
   background-color: var(--color-background);
   position: sticky;
   top: 0;
+  z-index: 2;
+}
+
+.leftCell {
+  background-color: var(--color-background);
+  left: 0;
+  position: sticky;
   z-index: 1;
 }
 
