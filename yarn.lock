@@ -2006,9 +2006,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/near-operation-file-preset@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@graphql-codegen/near-operation-file-preset@npm:3.0.1"
+"@graphql-codegen/near-operation-file-preset@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@graphql-codegen/near-operation-file-preset@npm:3.1.0"
   dependencies:
     "@graphql-codegen/add": "npm:^3.2.1"
     "@graphql-codegen/plugin-helpers": "npm:^3.0.0"
@@ -2018,7 +2018,7 @@ __metadata:
     tslib: "npm:^2.8.1"
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 10/b1d36af6f9496de7ed659df1a54bd7b7a995b4bff2dd91deb6622f41e68234a82b28bc645e87eddeb651899daaf7b6c28595311275fdab47fdedb96365c78314
+  checksum: 10/37753188258e8a4b98edb25429aa144e94553134c740bb3a1ab6de6381e88a0b1863514f763e075067a546ba75a01a2daf5f170d5972f8fbd63d1ee38d001d8d
   languageName: node
   linkType: hard
 
@@ -8115,9 +8115,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:9.1.2":
-  version: 9.1.2
-  resolution: "concurrently@npm:9.1.2"
+"concurrently@npm:9.2.0":
+  version: 9.2.0
+  resolution: "concurrently@npm:9.2.0"
   dependencies:
     chalk: "npm:^4.1.2"
     lodash: "npm:^4.17.21"
@@ -8129,7 +8129,7 @@ __metadata:
   bin:
     conc: dist/bin/concurrently.js
     concurrently: dist/bin/concurrently.js
-  checksum: 10/52f20653db53e25950e84026d153177af976d6d0e139b95fc5983c684221cc20ef5548ad5dc8885f146fff2c87bc7f7beb18f5fa54eee3bb62b5e795234d6cbc
+  checksum: 10/fdf5d3b583640b11ef84fab3ffdf77ed9c6878fa0a56f6787b6cd46b7011305c71d9e0067a814ca4fa52bea6f20ddb466bb97a13d61999628e43e550ddad7c93
   languageName: node
   linkType: hard
 
@@ -10231,7 +10231,7 @@ __metadata:
     "@eslint/js": "npm:9.29.0"
     "@eslint/json": "npm:0.12.0"
     "@graphql-codegen/cli": "npm:5.0.7"
-    "@graphql-codegen/near-operation-file-preset": "npm:3.0.1"
+    "@graphql-codegen/near-operation-file-preset": "npm:3.1.0"
     "@graphql-codegen/typescript": "npm:4.1.6"
     "@graphql-codegen/typescript-operations": "npm:4.6.1"
     "@mdi/js": "npm:7.4.47"
@@ -10248,7 +10248,7 @@ __metadata:
     babel-plugin-react-compiler: "npm:19.1.0-rc.2"
     browserslist-config-baseline: "npm:0.4.0"
     classnames: "npm:2.5.1"
-    concurrently: "npm:9.1.2"
+    concurrently: "npm:9.2.0"
     core-js: "npm:3.43.0"
     eslint: "npm:9.29.0"
     eslint-config-flat-gitignore: "npm:2.1.0"
@@ -10278,9 +10278,9 @@ __metadata:
     prettier: "npm:3.5.3"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
-    simple-icons: "npm:15.2.0"
+    simple-icons: "npm:15.3.0"
     stylelint: "npm:16.21.0"
-    stylelint-config-css-modules: "npm:4.4.1"
+    stylelint-config-css-modules: "npm:4.5.0"
     stylelint-config-standard: "npm:38.0.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:7.0.0"
@@ -16392,10 +16392,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:15.2.0":
-  version: 15.2.0
-  resolution: "simple-icons@npm:15.2.0"
-  checksum: 10/8a3d00ffca74fb0fb1468b6309c103e66144a8962bcc988ad7693f440c3048db82d64f917d617d12e4677bb6259641ac9a161dcbaa59fc11a2af0ccac4db544e
+"simple-icons@npm:15.3.0":
+  version: 15.3.0
+  resolution: "simple-icons@npm:15.3.0"
+  checksum: 10/8b92a6de85fd844729c87faf1da064bfe56b4140800d54764c4f38a5c5df97fd30fd7930c591c12fa774c13e8664122c14010b63ec2275c272c57843c8e55349
   languageName: node
   linkType: hard
 
@@ -16909,9 +16909,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-css-modules@npm:4.4.1":
-  version: 4.4.1
-  resolution: "stylelint-config-css-modules@npm:4.4.1"
+"stylelint-config-css-modules@npm:4.5.0":
+  version: 4.5.0
+  resolution: "stylelint-config-css-modules@npm:4.5.0"
   dependencies:
     stylelint-scss: "npm:^6.12.1"
   peerDependencies:
@@ -16919,7 +16919,7 @@ __metadata:
   dependenciesMeta:
     stylelint-scss:
       optional: true
-  checksum: 10/e932a0afa93a87502df209b21b4f7697bc0516cc5d8f3d893e355b8aeca6bbd237e3caa29d978f7a79d5d9fed66c15f9d0e8f456ab7fb4ca37bc867ae367c7fd
+  checksum: 10/c14899a1bbf85f1c134a0722e63eeb924c3cb8681c9eda1b288dc5ae703157ef91679712eba0d86d154bb6d4ff3d73eff792b31d9d48b29388aec5c29be0d41b
   languageName: node
   linkType: hard
 
