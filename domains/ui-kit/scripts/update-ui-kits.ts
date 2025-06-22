@@ -45,6 +45,8 @@ const updateUiKit = async (dirent: Dirent) => {
   });
 
   await fs.promises.writeFile(filePath, formattedOutput);
+
+  console.log(path.parse(dirent.name).name);
 };
 
 const checkUiKits = async () => {

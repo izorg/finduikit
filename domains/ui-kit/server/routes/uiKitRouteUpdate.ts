@@ -125,16 +125,20 @@ export const uiKitRouteUpdate = async (request: Request) => {
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, checkCount);
 
-  for (const checkEntry of checkEntries) {
-    await updateUiKit(checkEntry, uiKitsCollection);
-  }
+  const stream = new ReadableStream({
+    start: async (controller) => {
+      for (const checkEntry of checkEntries) {
+        await updateUiKit(checkEntry, uiKitsCollection);
+        controller.enqueue(`${path.parse(checkEntry.name).name}\n`);
+      }
 
-  return new Response(
-    checkEntries.map((dirent) => path.parse(dirent.name).name).join("\n"),
-    {
-      headers: {
-        "Content-Type": "text/plain",
-      },
+      controller.close();
     },
-  );
+  });
+
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "text/event-stream",
+    },
+  });
 };
