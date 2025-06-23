@@ -111,6 +111,18 @@ export const uiKitRouteUpdate = async (request: Request) => {
     },
   );
 
+  const fileEntries = entries.filter((dirent) => dirent.isFile());
+
+  const staticDataSet = new Set(fileEntries.map((dirent) => dirent.name));
+  const dynamicDataSet = new Set(Object.keys(checkCache));
+
+  await Promise.all(
+    dynamicDataSet
+      .difference(staticDataSet)
+      .values()
+      .map((id) => uiKitsCollection.doc(id).delete()),
+  );
+
   const getSortCacheTime = (dirent: Dirent) =>
     checkCache[dirent.name]?.checkedAt?.getTime() ?? 0;
 
@@ -120,8 +132,7 @@ export const uiKitRouteUpdate = async (request: Request) => {
       10,
     ) || 1;
 
-  const checkEntries = entries
-    .filter((dirent) => dirent.isFile())
+  const checkEntries = fileEntries
     .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, checkCount);
 
