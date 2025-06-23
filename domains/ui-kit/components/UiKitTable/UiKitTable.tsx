@@ -30,6 +30,13 @@ export const UiKitTable = (props: UiKitTableProps) => {
       {...rest}
     >
       <table className="rt-TableRootTable">
+        <colgroup>
+          <col className={styles.nameColumn} />
+          <col className={styles.frameworkColumn} />
+          <col className={styles.styledColumn} />
+          <col className={styles.figmaColumn} />
+          <col className={styles.storybookColumn} />
+        </colgroup>
         <Table.Header className={styles.tableHead}>
           <Table.Row>
             <Table.ColumnHeaderCell className={styles.leftCell}>

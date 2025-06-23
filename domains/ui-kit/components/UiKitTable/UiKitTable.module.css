@@ -5,6 +5,26 @@
   z-index: 2;
 }
 
+.nameColumn {
+  width: 200px;
+}
+
+.frameworkColumn {
+  width: 120px;
+}
+
+.styledColumn {
+  width: 80px;
+}
+
+.figmaColumn {
+  width: 80px;
+}
+
+.storybookColumn {
+  width: 120px;
+}
+
 .leftCell {
   background-color: var(--color-background);
   left: 0;
