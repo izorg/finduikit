@@ -30,7 +30,7 @@
     "@next/third-parties": "15.3.4",
     "@radix-ui/react-compose-refs": "1.1.2",
     "@radix-ui/themes": "3.2.1",
-    "@sentry/nextjs": "9.30.0",
+    "@sentry/nextjs": "9.31.0",
     "classnames": "2.5.1",
     "core-js": "3.43.0",
     "firebase-admin": "13.4.0",
@@ -88,7 +88,7 @@
     "stylelint-order": "7.0.0",
     "tsx": "4.20.3",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.34.1",
+    "typescript-eslint": "8.35.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
     "zod": "3.25.67"
