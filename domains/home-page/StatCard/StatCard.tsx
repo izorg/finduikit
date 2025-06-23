@@ -13,7 +13,7 @@ const Label = ({ children }: { children: string }) => (
 
 const Stat = ({ children }: { children: number }) => (
   <Text as="div" size={{ initial: "7", md: "8" }} weight="medium">
-    {children.toLocaleString()}
+    {children.toLocaleString("en")}
   </Text>
 );
 
