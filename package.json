@@ -33,6 +33,7 @@
     "@sentry/nextjs": "9.31.0",
     "classnames": "2.5.1",
     "core-js": "3.43.0",
+    "emoji-toolkit": "9.0.1",
     "firebase-admin": "13.4.0",
     "fuse.js": "7.1.0",
     "next": "15.3.4",

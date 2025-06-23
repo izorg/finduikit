@@ -9013,6 +9013,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emoji-toolkit@npm:9.0.1":
+  version: 9.0.1
+  resolution: "emoji-toolkit@npm:9.0.1"
+  checksum: 10/e2dd3edda04f3b6c0850512438cca8952a2750f04d884b9939850e08a77c296c36b824a298eca42cdce6cd6027df52684e4753cf3d1856a0e5a24560f084d5ee
+  languageName: node
+  linkType: hard
+
 "emojilib@npm:^2.4.0":
   version: 2.4.0
   resolution: "emojilib@npm:2.4.0"
@@ -10334,6 +10341,7 @@ __metadata:
     classnames: "npm:2.5.1"
     concurrently: "npm:9.2.0"
     core-js: "npm:3.43.0"
+    emoji-toolkit: "npm:9.0.1"
     eslint: "npm:9.29.0"
     eslint-config-flat-gitignore: "npm:2.1.0"
     eslint-config-prettier: "npm:10.1.5"

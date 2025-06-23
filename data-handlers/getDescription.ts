@@ -1,3 +1,4 @@
+import emoji from "emoji-toolkit";
 import { type HTMLElement } from "node-html-parser";
 
 import type { UiKitStaticDataSchema } from "../domains/ui-kit";
@@ -33,13 +34,15 @@ export const getDescription = ({
     .toSorted((a, b) => (b?.length ?? 0) - (a?.length ?? 0))
     .at(0);
 
-  if (["BaseLayer", "Polaris", "UI5 Web Components"].includes(data.name)) {
+  if (["Polaris", "UI5 Web Components"].includes(data.name)) {
     homepageBestDescription = undefined;
   }
 
-  const githubDescription = github?.description
-    ?.replaceAll(/\s+/gu, " ")
-    .trim();
+  let githubDescription = github?.description?.replaceAll(/\s+/gu, " ").trim();
+
+  if (githubDescription) {
+    githubDescription = emoji.shortnameToUnicode(githubDescription);
+  }
 
   return homepageBestDescription ?? githubDescription ?? data.description;
 };
