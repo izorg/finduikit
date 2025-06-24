@@ -1,10 +1,10 @@
-description: MUI provides a simple, customizable, and accessible library of
-  React components. Follow your own design system, or start with Material
-  Design.
+description: Material UI is an open-source React component library that
+  implements Google's Material Design. It's comprehensive and can be used in
+  production out of the box.
 figma: https://www.figma.com/community/file/912837788133317724
 frameworks:
   - React
-homepage: https://mui.com/
+homepage: https://mui.com/material-ui/
 image:
   src: https://repository-images.githubusercontent.com/23083156/b55af535-7ebd-488d-a63a-cc902e0619d3
 name: MUI
