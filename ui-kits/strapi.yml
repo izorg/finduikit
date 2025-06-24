@@ -1,5 +1,8 @@
 description: Strapi.io's design system 🚀
 homepage: https://design-system.strapi.io/
+image:
+  fit: cover
+  src: https://design-system.strapi.io/getting-started/cover.png
 name: Strapi
 repository: https://github.com/strapi/design-system
 storybook: https://design-system.strapi.io/

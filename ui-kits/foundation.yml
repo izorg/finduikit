@@ -2,5 +2,8 @@ description: The most advanced responsive front-end framework in the world.
   Quickly create prototypes and production code for sites that work on any kind
   of device.
 homepage: https://get.foundation/sites.html
+image:
+  fit: cover
+  src: https://get.foundation/assets/img/foundationsites-home-hero2.svg
 name: Foundation
 repository: https://github.com/foundation/foundation-sites
