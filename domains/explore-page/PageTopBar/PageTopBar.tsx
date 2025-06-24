@@ -155,6 +155,7 @@ export const PageTopBar = () => {
               value={sorting}
             />
             <SegmentedControl.Root
+              aria-label="Select view option"
               onValueChange={setUiKitView}
               size={secondaryControlSize}
               value={uiKitView}

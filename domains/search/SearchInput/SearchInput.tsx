@@ -35,7 +35,7 @@ export const SearchInput = (props: SearchInputProps) => {
       {...rest}
     >
       <TextField.Slot>
-        <SvgIcon path={mdiMagnify} />
+        <SvgIcon aria-hidden path={mdiMagnify} />
       </TextField.Slot>
       <TextField.Slot className={styles.clearSlot}>
         <IconButton

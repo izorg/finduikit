@@ -19,15 +19,15 @@ const Stat = ({ children }: { children: number }) => (
 
 const Icon = ({ color, path }: { color: TextProps["color"]; path: string }) => (
   <Text asChild color={color}>
-    <SvgIcon className={styles.cardIllustration} path={path} />
+    <SvgIcon aria-hidden className={styles.cardIllustration} path={path} />
   </Text>
 );
 
 export const StatCard = ({ children }: PropsWithChildren) => {
   return (
     <Box asChild width={{ initial: "10rem", md: "12rem" }}>
-      <Card className={styles.card} size={{ initial: "2", md: "3" }}>
-        {children}
+      <Card asChild className={styles.card} size={{ initial: "2", md: "3" }}>
+        <section>{children}</section>
       </Card>
     </Box>
   );

@@ -9,8 +9,8 @@ import styles from "./HomeLink.module.css";
 export const HomeLink = () => {
   return (
     <IconButton asChild variant="solid">
-      <NextLink className={styles.link} href="/">
-        <SvgIcon path={mdiHome} />
+      <NextLink aria-label="Home" className={styles.link} href="/">
+        <SvgIcon aria-hidden path={mdiHome} />
       </NextLink>
     </IconButton>
   );

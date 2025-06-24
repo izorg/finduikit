@@ -46,7 +46,7 @@ export const HomePage = async () => {
       </Flex>
       <Button asChild size="4">
         <NextLink href="/explore">
-          <SvgIcon path={mdiTelescope} />
+          <SvgIcon aria-hidden path={mdiTelescope} />
           Explore
         </NextLink>
       </Button>
