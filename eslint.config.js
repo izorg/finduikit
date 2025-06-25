@@ -1,6 +1,7 @@
 import css from "@eslint/css";
 import js from "@eslint/js";
 import json from "@eslint/json";
+import markdown from "@eslint/markdown";
 import next from "@next/eslint-plugin-next";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
@@ -25,6 +26,8 @@ export default ts.config(
     ignores: [".yarn"],
     name: "ignore",
   },
+  markdown.configs.processor,
+  markdown.configs.recommended,
   {
     extends: [
       js.configs.recommended,
@@ -138,7 +141,7 @@ export default ts.config(
   },
   {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
-    ignores: ["**/*.css", "**/*.json"],
+    ignores: ["**/*.css", "**/*.json", "**/*.md"],
     name: "json-schema",
     rules: {
       "json-schema-validator/no-invalid": [
