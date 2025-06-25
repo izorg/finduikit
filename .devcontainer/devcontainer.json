@@ -1,0 +1,14 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "forwardPorts": [8088, 9150],
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "name": "Find UI Kit Dev Container",
+  "postCreateCommand": "yarn install"
+}
