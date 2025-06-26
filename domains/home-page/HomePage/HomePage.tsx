@@ -1,4 +1,4 @@
-import { mdiRhombusSplit, mdiTelescope } from "@mdi/js";
+import { mdiMessageOutline, mdiRhombusSplit, mdiTelescope } from "@mdi/js";
 import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
@@ -8,6 +8,7 @@ import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
 import { getUiKits } from "../../ui-kit/server";
 import { StatCard } from "../StatCard";
+import { SupportButton } from "../SupportButton";
 
 const title = "UI Kits";
 const description =
@@ -44,12 +45,18 @@ export const HomePage = async () => {
           </header>
         </Text>
       </Flex>
-      <Button asChild size="4">
-        <NextLink href="/explore">
-          <SvgIcon aria-hidden path={mdiTelescope} />
-          Explore
-        </NextLink>
-      </Button>
+      <Flex gap="4" justify="center" px="4" wrap="wrap">
+        <Button asChild size="4">
+          <NextLink href="/explore">
+            <SvgIcon aria-hidden path={mdiTelescope} />
+            Explore
+          </NextLink>
+        </Button>
+        <SupportButton size="4" variant="soft">
+          <SvgIcon aria-hidden path={mdiMessageOutline} />
+          Support
+        </SupportButton>
+      </Flex>
       <Flex
         gap={{ initial: "4", md: "8", sm: "6" }}
         justify="center"

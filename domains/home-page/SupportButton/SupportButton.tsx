@@ -1,39 +1,31 @@
-import { mdiPlus } from "@mdi/js";
+"use client";
+
 import {
   Box,
   Button,
+  type ButtonProps,
   Dialog,
   Flex,
-  IconButton,
   TextArea,
-  Tooltip,
 } from "@radix-ui/themes";
 import { captureFeedback } from "@sentry/nextjs";
 import { useState } from "react";
 
-import { SvgIcon } from "../../../icon";
+export const SupportButton = (props: ButtonProps) => {
+  const { children, ...rest } = props;
 
-export const UiKitSuggestIconButton = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <Dialog.Root onOpenChange={setOpen} open={open}>
-      <Tooltip content="Suggest a UI kit">
-        <Dialog.Trigger>
-          <IconButton
-            aria-label="Suggest a UI kit"
-            radius="full"
-            size="4"
-            variant="surface"
-          >
-            <SvgIcon path={mdiPlus} />
-          </IconButton>
-        </Dialog.Trigger>
-      </Tooltip>
+      <Dialog.Trigger>
+        <Button {...rest}>{children}</Button>
+      </Dialog.Trigger>
       <Dialog.Content>
-        <Dialog.Title>Suggest a UI kit</Dialog.Title>
+        <Dialog.Title>Support request</Dialog.Title>
         <Dialog.Description mb="2" size="2">
-          Provide details
+          Contact me if you need any support with UI ket selection or have any
+          other questions
         </Dialog.Description>
         <Flex asChild direction="column" gap="4">
           <form
@@ -61,7 +53,7 @@ export const UiKitSuggestIconButton = () => {
                 </Button>
               </Dialog.Close>
               <Box asChild flexGrow="1">
-                <Button type="submit">Submit</Button>
+                <Button type="submit">Send Request</Button>
               </Box>
             </Flex>
           </form>
