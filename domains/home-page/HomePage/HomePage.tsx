@@ -25,7 +25,16 @@ export const HomePage = async () => {
   const uiKitSet = await uiKitsResource;
 
   return (
-    <Flex align="center" direction="column" gap="6" minHeight="100dvh" py="4">
+    <Flex
+      align="center"
+      direction="column"
+      gap={{
+        initial: "6",
+        sm: "9",
+      }}
+      minHeight="100dvh"
+      py="4"
+    >
       <Flex asChild direction="column" gap="2" px="4">
         <Text align="center" asChild>
           <header>
