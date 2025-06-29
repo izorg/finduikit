@@ -24,7 +24,7 @@ export const SupportButton = (props: ButtonProps) => {
       <Dialog.Content>
         <Dialog.Title>Support request</Dialog.Title>
         <Dialog.Description mb="2" size="2">
-          Contact me if you need any support with UI ket selection or have any
+          Contact me if you need any support with UI kit selection or have any
           other questions
         </Dialog.Description>
         <Flex asChild direction="column" gap="4">
