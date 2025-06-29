@@ -1,4 +1,6 @@
-description: Quickly integrate Bootstrap v4 components with Vue.js
+description: BootstrapVue provides one of the most comprehensive implementations
+  of Bootstrap v4 for Vue.js. With extensive and automated WAI-ARIA
+  accessibility markup.
 frameworks:
   - Vue
 homepage: https://bootstrap-vue.github.io/bootstrap-vue/

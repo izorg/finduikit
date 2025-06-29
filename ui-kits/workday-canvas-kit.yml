@@ -1,4 +1,5 @@
-description: A documentation site dedicated to the Workday Canvas Design System
+description: Development kits to implement UI following the Workday Canvas
+  Design System (https://canvas.workday.com/). See our Component Storybook -
 frameworks:
   - React
 homepage: https://canvas.workday.com/

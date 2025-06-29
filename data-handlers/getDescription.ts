@@ -30,19 +30,19 @@ export const getDescription = ({
     ?.getAttribute("content")
     ?.trim();
 
-  let homepageBestDescription = [homepageDescription, homepageOgDescription]
-    .toSorted((a, b) => (b?.length ?? 0) - (a?.length ?? 0))
-    .at(0);
-
-  if (["Polaris", "UI5 Web Components"].includes(data.name)) {
-    homepageBestDescription = undefined;
-  }
-
   let githubDescription = github?.description?.replaceAll(/\s+/gu, " ").trim();
 
   if (githubDescription) {
     githubDescription = emoji.shortnameToUnicode(githubDescription);
   }
 
-  return homepageBestDescription ?? githubDescription ?? data.description;
+  const homepageBestDescription = [
+    homepageDescription,
+    homepageOgDescription,
+    githubDescription,
+  ]
+    .toSorted((a, b) => (b?.length ?? 0) - (a?.length ?? 0))
+    .at(0);
+
+  return homepageBestDescription ?? data.description;
 };

@@ -1,5 +1,6 @@
-description: Vuestic UI is a modern Vue.js UI framework designed to be simple
-  and customizable for applications of any type and scale
+description: Vuestic UI is an open-source Vue 3 component library designed for
+  rapid development, easy maintenance, and high accessibility. Maintained by
+  Epicmax (@epicmaxco).
 frameworks:
   - Vue
 homepage: https://ui.vuestic.dev/

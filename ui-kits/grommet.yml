@@ -1,5 +1,5 @@
-description: Build responsive and accessible mobile-first projects for the web
-  with an easy to use component library.
+description: a react-based framework that provides accessibility, modularity,
+  responsiveness, and theming in a tidy package
 frameworks:
   - React
 homepage: https://v2.grommet.io/

@@ -1,4 +1,7 @@
-description: Design system for Wikimedia
+description: Codex is the Design System for Wikimedia. Codex features a toolkit
+  for building user interfaces, containing design tokens, Vue 3 components and
+  VitePress documentation site packages. This is a mirror from
+  https://gerrit.wikimedia.org/g/design/codex/
 figma: https://www.figma.com/community/file/1448742124788019850
 frameworks:
   - Vue
