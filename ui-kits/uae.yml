@@ -1,0 +1,11 @@
+description: The official design system of the United Arab Emirates. It presents
+  a manual for federal government entities (FGEs) to plan and arrange content on
+  their websites with simplicity and creativity.
+frameworks:
+  - React
+homepage: https://designsystem.gov.ae/
+image:
+  fit: cover
+  src: https://designsystem.gov.ae/assets/opengraph/designsystem-opengraphy_primary_01.png
+name: The UAE Design System
+repository: https://github.com/TDRA-ae/aegov-dls

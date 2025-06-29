@@ -1,0 +1,7 @@
+description: Cedar is REI Co-op's open-source design system for digital products
+  and experiences, based on REI's visual language
+frameworks:
+  - Vue
+homepage: https://cedar.rei.com/
+name: Cedar
+repository: https://github.com/rei/rei-cedar
