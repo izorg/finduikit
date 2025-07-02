@@ -23,10 +23,20 @@ const updateUiKit = async (dirent: Dirent) => {
 
   const data = uiKitStaticDataSchema.parse(parseYaml(buffer.toString()));
 
-  const [github, homepage] = await Promise.all([
-    fetchGitHubRepositoryData(data.repository),
-    fetchHomepageData(data.homepage),
-  ]);
+  let github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
+  let homepage: Awaited<ReturnType<typeof fetchHomepageData>>;
+
+  try {
+    [github, homepage] = await Promise.all([
+      fetchGitHubRepositoryData(data.repository),
+      fetchHomepageData(data.homepage),
+    ]);
+  } catch (error) {
+    console.log(`❌ ${path.parse(dirent.name).name}`);
+    console.error(error);
+
+    return;
+  }
 
   const output = stringifyYaml(
     uiKitStaticDataSchema.parse({
@@ -46,7 +56,7 @@ const updateUiKit = async (dirent: Dirent) => {
 
   await fs.promises.writeFile(filePath, formattedOutput);
 
-  console.log(path.parse(dirent.name).name);
+  console.log(`✅ ${path.parse(dirent.name).name}`);
 };
 
 const checkUiKits = async () => {
