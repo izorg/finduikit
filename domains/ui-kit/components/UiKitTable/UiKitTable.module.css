@@ -25,6 +25,10 @@
   width: 120px;
 }
 
+.aiColumn {
+  width: 100px;
+}
+
 .leftCell {
   background-color: var(--color-background);
   left: 0;

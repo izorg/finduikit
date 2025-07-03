@@ -36,6 +36,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
           <col className={styles.styledColumn} />
           <col className={styles.figmaColumn} />
           <col className={styles.storybookColumn} />
+          <col className={styles.aiColumn} />
         </colgroup>
         <Table.Header className={styles.tableHead}>
           <Table.Row>
@@ -51,11 +52,14 @@ export const UiKitTable = (props: UiKitTableProps) => {
             <Table.ColumnHeaderCell justify="center">
               Figma
             </Table.ColumnHeaderCell>
+            <Table.ColumnHeaderCell justify="center">
+              Storybook
+            </Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell
               className={styles.rightCell}
               justify="center"
             >
-              Storybook
+              AI
             </Table.ColumnHeaderCell>
           </Table.Row>
         </Table.Header>
@@ -94,7 +98,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
                   </Text>
                 )}
               </Table.Cell>
-              <Table.Cell className={styles.rightCell} justify="center">
+              <Table.Cell justify="center">
                 {uiKit.storybook && (
                   <Text asChild color="ruby">
                     <a
@@ -106,6 +110,15 @@ export const UiKitTable = (props: UiKitTableProps) => {
                       <SvgIcon path={siStorybook.path} />
                     </a>
                   </Text>
+                )}
+              </Table.Cell>
+              <Table.Cell className={styles.rightCell} justify="center">
+                {uiKit.ai && (
+                  <Link asChild color="gray" highContrast>
+                    <a href={uiKit.ai.url} rel="noreferrer" target="_blank">
+                      {uiKit.ai.type}
+                    </a>
+                  </Link>
                 )}
               </Table.Cell>
             </Table.Row>
