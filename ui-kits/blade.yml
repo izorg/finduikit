@@ -1,3 +1,6 @@
+ai:
+  type: MCP
+  url: https://blade.razorpay.com/?path=/docs/guides-blade-mcp--docs
 description: Design System that powers Razorpay
 figma: https://www.figma.com/community/file/1341658976127676210
 frameworks:
