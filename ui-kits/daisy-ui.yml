@@ -1,3 +1,6 @@
+ai:
+  type: LLMs.txt
+  url: https://daisyui.com/llms.txt
 description: 🌼 🌼 🌼 🌼 🌼 The most popular, free and open-source Tailwind CSS
   component library
 frameworks: []

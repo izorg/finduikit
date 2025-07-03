@@ -1,8 +1,15 @@
 import { z } from "zod/v4";
 
+import { AiType } from "../ai";
 import { Framework } from "../framework";
 
 export const uiKitStaticDataSchema = z.object({
+  ai: z
+    .object({
+      type: z.enum(AiType),
+      url: z.url(),
+    })
+    .optional(),
   description: z.string().optional(),
   figma: z.url().optional(),
   frameworks: z.array(z.enum(Framework)).optional(),

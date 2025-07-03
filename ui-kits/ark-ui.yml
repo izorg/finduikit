@@ -1,3 +1,6 @@
+ai:
+  type: LLMs.txt
+  url: https://ark-ui.com/docs/overview/llms.txt
 description: A headless UI library with over 45+ components designed to build
   reusable, scalable Design Systems that works for a wide range of JS
   frameworks.

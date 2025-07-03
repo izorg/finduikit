@@ -1,4 +1,4 @@
-import { mdiRecordCircleOutline, mdiStar } from "@mdi/js";
+import { mdiCreation, mdiRecordCircleOutline, mdiStar } from "@mdi/js";
 import { Badge, Flex, Text, Tooltip } from "@radix-ui/themes";
 
 import { SvgIcon } from "../../../icon";
@@ -18,7 +18,7 @@ const starFormatter = new Intl.NumberFormat("en", {
 export const UiKitStats = (props: UiKitStatsProps) => {
   const { uiKit } = props;
 
-  const { issues = 0, stars = 0 } = uiKit;
+  const { ai, issues = 0, stars = 0 } = uiKit;
 
   if ([issues, stars].every((stat) => !stat)) {
     return;
@@ -44,6 +44,18 @@ export const UiKitStats = (props: UiKitStatsProps) => {
                 <Badge color="grass">
                   <SvgIcon path={mdiRecordCircleOutline} />
                   {starFormatter.format(issues)}
+                </Badge>
+              </Tooltip>
+            </li>
+          )}
+          {ai && (
+            <li>
+              <Tooltip content="AI powered">
+                <Badge asChild color="crimson">
+                  <a href={ai.url} rel="noreferrer" target="_blank">
+                    <SvgIcon path={mdiCreation} />
+                    {ai.type}
+                  </a>
                 </Badge>
               </Tooltip>
             </li>

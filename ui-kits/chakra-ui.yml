@@ -1,3 +1,6 @@
+ai:
+  type: LLMs.txt
+  url: https://www.chakra-ui.com/docs/get-started/llms
 description: Chakra UI is a component system for building SaaS products with speed ⚡️
 figma: https://www.figma.com/community/file/1506648876941130701
 frameworks:

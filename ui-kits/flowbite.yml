@@ -1,3 +1,6 @@
+ai:
+  type: LLMs.txt
+  url: https://flowbite.com/docs/getting-started/llm/
 description: Open-source UI component library and front-end development
   framework based on Tailwind CSS
 homepage: https://flowbite.com/

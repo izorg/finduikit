@@ -1,4 +1,9 @@
-import { mdiMessageOutline, mdiRhombusSplit, mdiTelescope } from "@mdi/js";
+import {
+  mdiCreation,
+  mdiMessageOutline,
+  mdiRhombusSplit,
+  mdiTelescope,
+} from "@mdi/js";
 import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
@@ -89,6 +94,13 @@ export const HomePage = async () => {
           <StatCard.Label>Figma files</StatCard.Label>
           <StatCard.Stat>
             {[...uiKitSet].filter((item) => item.figma).length}
+          </StatCard.Stat>
+        </StatCard>
+        <StatCard>
+          <StatCard.Icon color="crimson" path={mdiCreation} />
+          <StatCard.Label>Build with AI</StatCard.Label>
+          <StatCard.Stat>
+            {[...uiKitSet].filter((item) => item.ai).length}
           </StatCard.Stat>
         </StatCard>
       </Flex>
