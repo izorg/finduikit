@@ -7,8 +7,6 @@ import { Sorting, useSorting } from "../../sorting";
 import { type UiKit } from "../../ui-kit";
 import { useUnstyled } from "../../unstyled";
 
-const keys = ["name", "description", "frameworks"] satisfies (keyof UiKit)[];
-
 const nameCompare = new Intl.Collator("en").compare;
 
 const sorters: Record<Sorting, (a: UiKit, b: UiKit) => number> = {
@@ -28,7 +26,7 @@ export const useFilteredUiKits = (uiKitsProp: UiKit[]) => {
     () =>
       new Fuse(uiKitsProp, {
         ignoreLocation: true,
-        keys,
+        keys: ["name", "description", "frameworks", "ai.type"],
       }),
     [uiKitsProp],
   );
