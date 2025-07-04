@@ -68,7 +68,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
           {uiKits.map((uiKit) => (
             <Table.Row key={uiKit.name}>
               <Table.RowHeaderCell className={styles.leftCell}>
-                <Link asChild color="gray" highContrast>
+                <Link asChild color="gray" highContrast wrap="nowrap">
                   <a href={uiKit.homepage} rel="noreferrer" target="_blank">
                     {uiKit.name}
                   </a>
