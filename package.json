@@ -30,7 +30,7 @@
     "@next/third-parties": "15.3.5",
     "@radix-ui/react-compose-refs": "1.1.2",
     "@radix-ui/themes": "3.2.1",
-    "@sentry/nextjs": "9.34.0",
+    "@sentry/nextjs": "9.35.0",
     "classnames": "2.5.1",
     "core-js": "3.43.0",
     "emoji-toolkit": "9.0.1",
@@ -93,6 +93,6 @@
     "typescript-eslint": "8.35.1",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.72"
+    "zod": "3.25.74"
   }
 }
