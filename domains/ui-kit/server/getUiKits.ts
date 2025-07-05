@@ -6,6 +6,7 @@ import {
   type FirestoreDataConverter,
   Timestamp,
 } from "firebase-admin/firestore";
+import { unstable_cacheLife as cacheLife } from "next/cache";
 import { parse } from "yaml";
 
 import { firebaseGetFirestoreUiKitsCollection } from "../../firebase";
@@ -84,6 +85,7 @@ const getUiKitDynamicDataMapFromFirestore = async () => {
 
 export const getUiKits = async () => {
   "use cache";
+  cacheLife("days");
 
   const [uiKitFileDataEntries, uiKitDynamicDataMap] = await Promise.all([
     getUiKitFileDataEntriesFromFiles(),
