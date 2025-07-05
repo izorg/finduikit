@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["@radix-ui/themes", "radix-ui"],
     reactCompiler: true,
     typedRoutes: true,
+    useCache: true,
   },
   images: {
     unoptimized: true,

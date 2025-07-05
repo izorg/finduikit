@@ -83,6 +83,8 @@ const getUiKitDynamicDataMapFromFirestore = async () => {
 };
 
 export const getUiKits = async () => {
+  "use cache";
+
   const [uiKitFileDataEntries, uiKitDynamicDataMap] = await Promise.all([
     getUiKitFileDataEntriesFromFiles(),
     getUiKitDynamicDataMapFromFirestore(),

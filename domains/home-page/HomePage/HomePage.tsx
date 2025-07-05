@@ -24,10 +24,8 @@ export const metadata: Metadata = {
   title,
 };
 
-const uiKitsResource = getUiKits();
-
 export const HomePage = async () => {
-  const uiKitSet = await uiKitsResource;
+  const uiKitSet = await getUiKits();
 
   return (
     <Flex

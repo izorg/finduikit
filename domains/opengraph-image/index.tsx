@@ -12,10 +12,8 @@ export const size = {
 
 export const contentType = "image/png";
 
-const uiKitsResource = getUiKits();
-
 export const OpenGraphImage = async () => {
-  const uiKitSet = await uiKitsResource;
+  const uiKitSet = await getUiKits();
 
   return new ImageResponse(
     (
