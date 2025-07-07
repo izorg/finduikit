@@ -1,7 +1,7 @@
 import { Flex, Text } from "@radix-ui/themes";
 
-import { Framework, frameworkColors, frameworkIcons } from "../../../framework";
-import { SvgIcon } from "../../../icon";
+import { Framework, frameworkColors, frameworkIcons } from "../../framework";
+import { SvgIcon } from "../../icon";
 
 import styles from "./UiKitTableFrameworkList.module.css";
 
@@ -23,10 +23,7 @@ export const UiKitTableFrameworkList = (
               <SvgIcon
                 path={frameworkIcons[framework].path}
                 style={{
-                  opacity:
-                    frameworks && frameworks.includes(framework)
-                      ? undefined
-                      : 0.12,
+                  opacity: frameworks?.includes(framework) ? undefined : 0.12,
                 }}
               />
             </Text>

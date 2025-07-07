@@ -3,13 +3,10 @@
 import { Box, Flex } from "@radix-ui/themes";
 import { useEffect, useRef } from "react";
 
-import {
-  type UiKit,
-  UiKitGrid,
-  UiKitSuggestIconButton,
-  UiKitTable,
-  useUiKitView,
-} from "../../ui-kit";
+import { type UiKit, useUiKitView } from "../../ui-kit";
+import { UiKitGrid } from "../UiKitGrid";
+import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
+import { UiKitTable } from "../UiKitTable";
 
 import { useFilteredUiKits } from "./useFilteredUiKits";
 

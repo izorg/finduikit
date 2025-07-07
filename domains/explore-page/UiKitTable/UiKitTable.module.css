@@ -36,18 +36,16 @@
   z-index: 1;
 }
 
-@supports (
-  padding-left: max(env(safe-area-inset-left), var(--table-cell-padding))
-) {
+@supports (padding-left: max(env(safe-area-inset-left), var(--space-3))) {
   .root {
     padding-bottom: env(safe-area-inset-bottom);
   }
 
   .leftCell {
-    padding-left: max(env(safe-area-inset-left), var(--table-cell-padding));
+    padding-left: max(env(safe-area-inset-left), var(--space-3));
   }
 
   .rightCell {
-    padding-right: max(env(safe-area-inset-right), var(--table-cell-padding));
+    padding-right: max(env(safe-area-inset-right), var(--space-3));
   }
 }

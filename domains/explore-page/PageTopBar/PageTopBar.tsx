@@ -16,6 +16,7 @@ import { SearchInput, useSearch } from "../../search";
 import { Sorting, SortingSelect, useSorting } from "../../sorting";
 import { useUiKitView } from "../../ui-kit";
 import { UnstyledSwitch, useUnstyled } from "../../unstyled";
+import { HomeLink } from "../HomeLink";
 
 import styles from "./PageTopBar.module.css";
 
@@ -98,6 +99,7 @@ export const PageTopBar = () => {
       flexGrow="0"
       size="3"
     >
+      <HomeLink />
       <Flex
         asChild
         direction={{

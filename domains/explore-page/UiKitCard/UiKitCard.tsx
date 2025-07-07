@@ -10,8 +10,8 @@ import {
 } from "@radix-ui/themes";
 import Image from "next/image";
 
-import { Resources } from "../../../resource";
-import type { UiKit } from "../../UiKit";
+import { Resources } from "../../resource";
+import type { UiKit } from "../../ui-kit";
 import { UiKitFrameworkList } from "../UiKitFrameworkList";
 import { UiKitStats } from "../UiKitStats";
 

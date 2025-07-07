@@ -2,7 +2,7 @@ import { Box, Flex, Grid } from "@radix-ui/themes";
 import classNames from "classnames";
 import type { ComponentProps } from "react";
 
-import type { UiKit } from "../../UiKit";
+import type { UiKit } from "../../ui-kit";
 import { UiKitCard } from "../UiKitCard";
 import { UiKitSuggestIconButton } from "../UiKitSuggestIconButton";
 

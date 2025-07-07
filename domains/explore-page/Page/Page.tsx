@@ -3,7 +3,6 @@ import { type Metadata } from "next";
 import { Suspense } from "react";
 
 import { getUiKits } from "../../ui-kit/server";
-import { HomeLink } from "../HomeLink";
 import { PageTopBar } from "../PageTopBar";
 import { PageView } from "../PageView";
 
@@ -21,7 +20,6 @@ export const Page = async () => {
   return (
     <Flex asChild direction="column" height="100dvh">
       <main>
-        <HomeLink />
         <Suspense>
           <PageTopBar />
           <PageView uiKits={uiKits} />

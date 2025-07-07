@@ -4,8 +4,8 @@ import classNames from "classnames";
 import type { Ref } from "react";
 import { siFigma, siStorybook } from "simple-icons";
 
-import { SvgIcon } from "../../../icon";
-import type { UiKit } from "../../UiKit";
+import { SvgIcon } from "../../icon";
+import type { UiKit } from "../../ui-kit";
 
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 

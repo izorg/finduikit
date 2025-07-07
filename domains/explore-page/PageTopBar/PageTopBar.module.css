@@ -1,5 +1,7 @@
 .topBar {
+  overflow: clip;
   padding: var(--space-4);
+  position: relative;
 }
 
 .topBarShadow {

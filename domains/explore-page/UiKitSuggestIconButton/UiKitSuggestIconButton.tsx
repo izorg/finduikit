@@ -11,7 +11,7 @@ import {
 import { captureFeedback } from "@sentry/nextjs";
 import { useState } from "react";
 
-import { SvgIcon } from "../../../icon";
+import { SvgIcon } from "../../icon";
 
 export const UiKitSuggestIconButton = () => {
   const [open, setOpen] = useState(false);
