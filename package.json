@@ -32,7 +32,7 @@
     "@radix-ui/themes": "3.2.1",
     "@sentry/nextjs": "9.35.0",
     "classnames": "2.5.1",
-    "core-js": "3.43.0",
+    "core-js": "3.44.0",
     "emoji-toolkit": "9.0.1",
     "firebase-admin": "13.4.0",
     "fuse.js": "7.1.0",
@@ -40,7 +40,7 @@
     "next-themes": "0.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "simple-icons": "15.4.0",
+    "simple-icons": "15.5.0",
     "usehooks-ts": "3.1.1"
   },
   "devDependencies": {
@@ -90,9 +90,9 @@
     "stylelint-order": "7.0.0",
     "tsx": "4.20.3",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.35.1",
+    "typescript-eslint": "8.36.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.74"
+    "zod": "3.25.75"
   }
 }
