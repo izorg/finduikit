@@ -19,6 +19,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  outputFileTracingIncludes: {
+    "*": ["./ui-kits/*"],
+  },
   typescript: {
     ignoreBuildErrors: true, // Using project root TypeScript check
   },
