@@ -25,7 +25,7 @@ export const UiKitGrid = (props: UiKitGridProps) => {
     >
       <Grid
         asChild
-        columns="repeat(auto-fill, minmax(min(100%, 240px), 1fr))"
+        columns="repeat(auto-fill, minmax(min(100%, 280px), 1fr))"
         gap="4"
       >
         <ul className={styles.grid}>
