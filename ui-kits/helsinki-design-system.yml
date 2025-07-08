@@ -1,0 +1,12 @@
+description: Components, principles, documentation and templates for the City of
+  Helsinki design system.
+figma: https://www.figma.com/community/file/1441694909662533693
+frameworks:
+  - React
+homepage: https://hds.hel.fi/
+image:
+  fit: cover
+  src: https://hds.hel.fi/images/homepage/amos58.jpg
+name: Helsinki Design System
+repository: https://github.com/City-of-Helsinki/helsinki-design-system
+storybook: https://hds.hel.fi/storybook/react/
