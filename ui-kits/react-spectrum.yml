@@ -1,0 +1,12 @@
+description: A React implementation of Spectrum, Adobe’s design system. Spectrum
+  provides adaptive, accessible, and cohesive experiences for all Adobe
+  applications.
+frameworks:
+  - React
+homepage: https://react-spectrum.adobe.com/react-spectrum/index.html
+image:
+  fit: cover
+  src: https://react-spectrum.adobe.com/ReactSpectrum_976x445_2x.4c9ab3ab.png
+name: React Spectrum
+repository: https://github.com/adobe/react-spectrum
+storybook: https://main--5f0dd5ad2b5fc10022a2e320.chromatic.com/
