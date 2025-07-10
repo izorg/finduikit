@@ -30,7 +30,7 @@
     "@next/third-parties": "15.3.5",
     "@radix-ui/react-compose-refs": "1.1.2",
     "@radix-ui/themes": "3.2.1",
-    "@sentry/nextjs": "9.35.0",
+    "@sentry/nextjs": "9.37.0",
     "classnames": "2.5.1",
     "core-js": "3.44.0",
     "emoji-toolkit": "9.0.1",
@@ -56,7 +56,7 @@
     "@next/eslint-plugin-next": "15.3.5",
     "@nodejs-loaders/css-module": "1.1.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.16.0",
+    "@types/node": "22.16.2",
     "@types/react": "19.1.8",
     "babel-plugin-react-compiler": "19.1.0-rc.2",
     "browserslist-config-baseline": "0.4.0",
@@ -74,7 +74,7 @@
     "eslint-plugin-react-hooks": "6.0.0-rc1",
     "eslint-plugin-unicorn": "59.0.1",
     "eslint-plugin-yml": "1.18.0",
-    "firebase-tools": "14.9.0",
+    "firebase-tools": "14.10.0",
     "globals": "16.3.0",
     "graphql": "16.11.0",
     "knip": "5.61.3",
@@ -93,6 +93,6 @@
     "typescript-eslint": "8.36.0",
     "typescript-plugin-css-modules": "5.1.0",
     "yaml": "2.8.0",
-    "zod": "3.25.75"
+    "zod": "3.25.76"
   }
 }
