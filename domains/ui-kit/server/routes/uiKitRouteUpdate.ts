@@ -8,7 +8,7 @@ import {
 } from "firebase-admin/firestore";
 import { notFound } from "next/navigation";
 import { parse as parseYaml } from "yaml";
-import { z } from "zod/v4";
+import { z } from "zod";
 
 import { fetchGitHubRepositoryData } from "../../../../data-handlers/fetchGitHubRepositoryData";
 import { getIssues } from "../../../../data-handlers/getIssues";

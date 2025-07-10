@@ -3,7 +3,7 @@ import path from "node:path";
 
 import { ESLint } from "eslint";
 import { format } from "prettier";
-import { z } from "zod/v4";
+import { z } from "zod";
 
 import { uiKitStaticDataSchema } from "../uiKitStaticDataSchema";
 

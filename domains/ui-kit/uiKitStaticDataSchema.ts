@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 import { AiType } from "../ai";
 import { Framework } from "../framework";
