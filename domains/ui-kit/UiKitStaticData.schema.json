@@ -86,6 +86,10 @@
     },
     "unstyled": {
       "type": "boolean"
+    },
+    "webComponents": {
+      "type": "string",
+      "enum": ["Lit", "Stencil"]
     }
   },
   "required": ["homepage", "name", "repository"],
