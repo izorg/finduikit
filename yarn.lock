@@ -10388,6 +10388,8 @@ __metadata:
     globals: "npm:16.3.0"
     graphql: "npm:16.11.0"
     knip: "npm:5.61.3"
+    linkify-react: "npm:4.3.1"
+    linkifyjs: "npm:4.3.1"
     next: "npm:15.3.5"
     next-themes: "npm:0.4.6"
     node-html-parser: "npm:7.0.1"
@@ -12755,6 +12757,23 @@ __metadata:
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
   checksum: 10/0c37f9f7fa212b38912b7145e1cd16a5f3cd34d782441c3e6ca653485d326f58b3caccda66efce1c5812bde4961bbde3374fae4b0d11bf1226152337f3894aa5
+  languageName: node
+  linkType: hard
+
+"linkify-react@npm:4.3.1":
+  version: 4.3.1
+  resolution: "linkify-react@npm:4.3.1"
+  peerDependencies:
+    linkifyjs: ^4.0.0
+    react: ">= 15.0.0"
+  checksum: 10/a49e6778cdfa3b9cfb50a55fdc53de15120c288b86da0b36f81ad053b0b609546f29b2c742c5468d033b8c8b0d6eff5acbf6d95a2f1ab3fe2dfe6fb19459b063
+  languageName: node
+  linkType: hard
+
+"linkifyjs@npm:4.3.1":
+  version: 4.3.1
+  resolution: "linkifyjs@npm:4.3.1"
+  checksum: 10/0df75a8bd0f10b93e84d6cc5ad4cdfe2d32a31bad1940babdd63d65af633d2e1daaa138539e9d7267f58b5119cf7e6aa27e7dd05e0a163611624c3b74c6ec452
   languageName: node
   linkType: hard
 

@@ -8,6 +8,8 @@ import {
   Separator,
   Text,
 } from "@radix-ui/themes";
+import Linkify from "linkify-react";
+import type { IntermediateRepresentation } from "linkifyjs";
 import Image from "next/image";
 
 import { Resources } from "../../resource";
@@ -16,6 +18,18 @@ import { UiKitFrameworkList } from "../UiKitFrameworkList";
 import { UiKitStats } from "../UiKitStats";
 
 import styles from "./UiKitCard.module.css";
+
+const renderLink = ({ attributes, content }: IntermediateRepresentation) => (
+  <Link
+    color="gray"
+    highContrast
+    rel="noreferrer"
+    target="_blank"
+    {...attributes}
+  >
+    {content}
+  </Link>
+);
 
 type UiKitCardProps = {
   uiKit: UiKit;
@@ -68,7 +82,11 @@ export const UiKitCard = (props: UiKitCardProps) => {
           </Inset>
         )}
         <Box asChild flexGrow="1">
-          <Text size="2">{uiKit.description}</Text>
+          <Text as="p" size="2">
+            <Linkify options={{ render: renderLink }}>
+              {uiKit.description}
+            </Linkify>
+          </Text>
         </Box>
         <UiKitStats uiKit={uiKit} />
         <Separator size="4" />
