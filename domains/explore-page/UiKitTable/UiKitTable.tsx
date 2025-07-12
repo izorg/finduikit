@@ -6,6 +6,7 @@ import { siFigma, siStorybook } from "simple-icons";
 
 import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
+import { webComponentsIcons, webComponentsLinks } from "../../web-components";
 
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 
@@ -29,7 +30,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
       overflow="auto"
       {...rest}
     >
-      <table className="rt-TableRootTable">
+      <table className={classNames(styles.table, "rt-TableRootTable")}>
         <colgroup>
           <col className={styles.nameColumn} />
           <col className={styles.frameworkColumn} />
@@ -37,6 +38,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
           <col className={styles.figmaColumn} />
           <col className={styles.storybookColumn} />
           <col className={styles.aiColumn} />
+          <col className={styles.webComponents} />
         </colgroup>
         <Table.Header className={styles.tableHead}>
           <Table.Row>
@@ -55,11 +57,12 @@ export const UiKitTable = (props: UiKitTableProps) => {
             <Table.ColumnHeaderCell justify="center">
               Storybook
             </Table.ColumnHeaderCell>
+            <Table.ColumnHeaderCell justify="center">AI</Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell
               className={styles.rightCell}
               justify="center"
             >
-              AI
+              Web Components
             </Table.ColumnHeaderCell>
           </Table.Row>
         </Table.Header>
@@ -112,13 +115,31 @@ export const UiKitTable = (props: UiKitTableProps) => {
                   </Text>
                 )}
               </Table.Cell>
-              <Table.Cell className={styles.rightCell} justify="center">
+              <Table.Cell justify="center">
                 {uiKit.ai && (
                   <Link asChild color="gray" highContrast>
                     <a href={uiKit.ai.url} rel="noreferrer" target="_blank">
                       {uiKit.ai.type}
                     </a>
                   </Link>
+                )}
+              </Table.Cell>
+              <Table.Cell className={styles.rightCell} justify="center">
+                {uiKit.webComponents && (
+                  <Flex align="center" asChild gap="1">
+                    <Link asChild color="gray" highContrast>
+                      <a
+                        href={webComponentsLinks[uiKit.webComponents]}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <SvgIcon
+                          path={webComponentsIcons[uiKit.webComponents].path}
+                        />
+                        {uiKit.webComponents}
+                      </a>
+                    </Link>
+                  </Flex>
                 )}
               </Table.Cell>
             </Table.Row>
