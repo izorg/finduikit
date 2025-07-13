@@ -6,5 +6,7 @@ description: Varlet UI is a Material design component library developed based on
 frameworks:
   - Vue
 homepage: https://varletjs.org/
+image:
+  src: https://varletjs.org/varlet_icon.png
 name: Varlet
 repository: https://github.com/varletjs/varlet

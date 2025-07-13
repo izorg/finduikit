@@ -4,5 +4,7 @@ description: "Bootstrap widgets for Angular: autocomplete, accordion, alert,
 frameworks:
   - Angular
 homepage: https://ng-bootstrap.github.io/
+image:
+  src: https://ng-bootstrap.github.io/img/logo.svg
 name: NG Bootstrap
 repository: https://github.com/ng-bootstrap/ng-bootstrap

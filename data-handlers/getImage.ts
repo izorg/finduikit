@@ -4,13 +4,24 @@ import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
-const getHomepageOgImage = (homepage: HTMLElement) => {
+const getHomepageOgImage = (
+  homepage: HTMLElement,
+  data: UiKitStaticDataSchema,
+) => {
   const ogImage = homepage
     .querySelector('meta[property="og:image"]')
     ?.getAttribute("content")
     ?.trim();
 
-  return ogImage && URL.canParse(ogImage) ? ogImage : undefined;
+  if (!ogImage) {
+    return;
+  }
+
+  if (URL.canParse(ogImage)) {
+    return ogImage;
+  }
+
+  return new URL(ogImage, new URL(data.homepage).origin).toString();
 };
 
 export const getImage = ({
@@ -30,10 +41,10 @@ export const getImage = ({
   const gitHubImage = github?.openGraphImageUrl.startsWith(
     "https://opengraph.githubassets.com",
   )
-    ? undefined
+    ? undefined // skip auto generated GitHub OpenGraph images
     : github?.openGraphImageUrl;
 
-  const homepageOgImage = getHomepageOgImage(homepage);
+  const homepageOgImage = getHomepageOgImage(homepage, data);
 
   const src = gitHubImage ?? homepageOgImage;
 
