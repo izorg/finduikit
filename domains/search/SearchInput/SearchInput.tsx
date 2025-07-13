@@ -1,5 +1,3 @@
-"use client";
-
 import { mdiClose, mdiMagnify } from "@mdi/js";
 import { composeRefs } from "@radix-ui/react-compose-refs";
 import { IconButton, TextField } from "@radix-ui/themes";
