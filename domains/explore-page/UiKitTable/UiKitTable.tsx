@@ -8,6 +8,7 @@ import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
 import { webComponentsIcons, webComponentsLinks } from "../../web-components";
 
+import { AiLink } from "./AiLink";
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 
 import styles from "./UiKitTable.module.css";
@@ -116,13 +117,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
                 )}
               </Table.Cell>
               <Table.Cell justify="center">
-                {uiKit.ai && (
-                  <Link asChild color="gray" highContrast>
-                    <a href={uiKit.ai.url} rel="noreferrer" target="_blank">
-                      {uiKit.ai.type}
-                    </a>
-                  </Link>
-                )}
+                {uiKit.ai && <AiLink ai={uiKit.ai} />}
               </Table.Cell>
               <Table.Cell className={styles.rightCell} justify="center">
                 {uiKit.webComponents && (
