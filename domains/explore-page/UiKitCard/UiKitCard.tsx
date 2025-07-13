@@ -87,6 +87,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
           <Text as="p" size="2">
             <Linkify
               options={{
+                defaultProtocol: "https",
                 formatHref: {
                   mention: (href) => `https://github.com${href}`,
                 },
