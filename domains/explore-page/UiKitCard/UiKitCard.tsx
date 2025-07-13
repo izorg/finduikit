@@ -1,3 +1,5 @@
+import "linkify-plugin-mention";
+
 import {
   Box,
   Card,
@@ -83,7 +85,14 @@ export const UiKitCard = (props: UiKitCardProps) => {
         )}
         <Box asChild flexGrow="1">
           <Text as="p" size="2">
-            <Linkify options={{ render: renderLink }}>
+            <Linkify
+              options={{
+                formatHref: {
+                  mention: (href) => `https://github.com${href}`,
+                },
+                render: renderLink,
+              }}
+            >
               {uiKit.description}
             </Linkify>
           </Text>

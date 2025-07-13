@@ -10388,6 +10388,7 @@ __metadata:
     globals: "npm:16.3.0"
     graphql: "npm:16.11.0"
     knip: "npm:5.61.3"
+    linkify-plugin-mention: "npm:4.3.1"
     linkify-react: "npm:4.3.1"
     linkifyjs: "npm:4.3.1"
     next: "npm:15.3.5"
@@ -12757,6 +12758,15 @@ __metadata:
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
   checksum: 10/0c37f9f7fa212b38912b7145e1cd16a5f3cd34d782441c3e6ca653485d326f58b3caccda66efce1c5812bde4961bbde3374fae4b0d11bf1226152337f3894aa5
+  languageName: node
+  linkType: hard
+
+"linkify-plugin-mention@npm:4.3.1":
+  version: 4.3.1
+  resolution: "linkify-plugin-mention@npm:4.3.1"
+  peerDependencies:
+    linkifyjs: ^4.0.0
+  checksum: 10/0317b3d3a962f0a3e423dbe4225622299de89b8a697330dfe9f7aa912d3b31d9621c03f11934861b10dcb0c436c7fb295a359339a831b0b1593b4e58c3257b46
   languageName: node
   linkType: hard
 
