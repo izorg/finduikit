@@ -16,7 +16,7 @@ type UiKitStatsProps = {
 export const UiKitStats = (props: UiKitStatsProps) => {
   const { uiKit } = props;
 
-  const { ai, issues = 0, stars = 0, webComponents } = uiKit;
+  const { ai, issues = 0, repository, stars = 0, webComponents } = uiKit;
 
   if ([issues, stars].every((stat) => !stat)) {
     return;
@@ -33,7 +33,7 @@ export const UiKitStats = (props: UiKitStatsProps) => {
           )}
           {issues > 0 && (
             <li>
-              <IssueBadge issues={issues} />
+              <IssueBadge issues={issues} repository={repository} />
             </li>
           )}
           {ai && (

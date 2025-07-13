@@ -10,13 +10,16 @@ const issueFormatter = new Intl.NumberFormat("en", {
 
 type IssueBadgeProps = {
   issues: number;
+  repository: string;
 };
 
-export const IssueBadge = ({ issues }: IssueBadgeProps) => (
+export const IssueBadge = ({ issues, repository }: IssueBadgeProps) => (
   <Tooltip content="Open issues">
-    <Badge color="grass">
-      <SvgIcon path={mdiRecordCircleOutline} />
-      {issueFormatter.format(issues)}
+    <Badge asChild color="grass">
+      <a href={`${repository}/issues`} rel="noreferrer" target="_blank">
+        <SvgIcon path={mdiRecordCircleOutline} />
+        {issueFormatter.format(issues)}
+      </a>
     </Badge>
   </Tooltip>
 );
