@@ -1,0 +1,10 @@
+description: The Singapore Government Design System was developed to empower
+  teams in creating fast, accessible and mobile-friendly digital services.
+frameworks:
+  - React
+homepage: https://www.designsystem.tech.gov.sg/
+image:
+  src: https://www.designsystem.tech.gov.sg/assets/img/logo-sgds.svg
+name: SGDS React
+repository: https://github.com/GovTechSG/sgds-govtech-react
+storybook: https://react.designsystem.tech.gov.sg/
