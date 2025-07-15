@@ -15,7 +15,7 @@ import { getUiKits } from "../../ui-kit/server";
 import { StatCard } from "../StatCard";
 import { SupportButton } from "../SupportButton";
 
-const title = "UI Kits";
+const title = "Find UI Kit";
 const description =
   "Discover a curated collection of web UI kits with high-quality components and templates for developers";
 
