@@ -1,3 +1,5 @@
+dependencies:
+  - Bulma
 description: Buefy is a lightweight library of responsive UI components for
   Vue.js based on Bulma framework and design.
 frameworks:

@@ -92,7 +92,7 @@
     },
     "styling": {
       "type": "string",
-      "enum": ["Emotion"]
+      "enum": ["Emotion", "Sass", "Tailwind CSS"]
     },
     "unstyled": {
       "type": "boolean"

@@ -1,3 +1,5 @@
+dependencies:
+  - Base UI
 description: Beautiful, customizable components built with Base UI and Tailwind CSS.
 frameworks:
   - React
@@ -7,3 +9,4 @@ image:
   src: https://9ui.dev/og.jpg?v=3
 name: 9ui
 repository: https://github.com/borabaloglu/9ui
+styling: Tailwind CSS

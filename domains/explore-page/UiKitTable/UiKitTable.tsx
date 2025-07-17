@@ -9,6 +9,7 @@ import type { UiKit } from "../../ui-kit";
 import { webComponentsIcons, webComponentsLinks } from "../../web-components";
 
 import { AiLink } from "./AiLink";
+import { StylingLink } from "./StylingLink";
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 
 import styles from "./UiKitTable.module.css";
@@ -38,6 +39,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
           <col className={styles.styledColumn} />
           <col className={styles.figmaColumn} />
           <col className={styles.storybookColumn} />
+          <col className={styles.stylingColumn} />
           <col className={styles.aiColumn} />
           <col className={styles.webComponents} />
         </colgroup>
@@ -57,6 +59,9 @@ export const UiKitTable = (props: UiKitTableProps) => {
             </Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell justify="center">
               Storybook
+            </Table.ColumnHeaderCell>
+            <Table.ColumnHeaderCell justify="center">
+              Styling
             </Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell justify="center">AI</Table.ColumnHeaderCell>
             <Table.ColumnHeaderCell
@@ -115,6 +120,9 @@ export const UiKitTable = (props: UiKitTableProps) => {
                     </a>
                   </Text>
                 )}
+              </Table.Cell>
+              <Table.Cell justify="center">
+                {uiKit.styling && <StylingLink styling={uiKit.styling} />}
               </Table.Cell>
               <Table.Cell justify="center">
                 {uiKit.ai && <AiLink ai={uiKit.ai} />}
