@@ -1,0 +1,11 @@
+description: SumUp's React UI component library
+frameworks:
+  - React
+homepage: https://circuit.sumup.com/
+image:
+  fit: cover
+  src: https://circuit.sumup.com/images/logo-name-brand-light.png
+name: Circuit UI
+repository: https://github.com/sumup-oss/circuit-ui
+storybook: https://circuit.sumup.com/
+styling: Emotion

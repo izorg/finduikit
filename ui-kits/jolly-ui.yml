@@ -1,3 +1,5 @@
+dependencies:
+  - React Aria
 description: shadcn/ui compatible react aria components that you can copy and
   paste into your apps. Accessible. Customizable. Open Source. Formerly known as
   shadcn-aria.

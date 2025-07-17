@@ -1,3 +1,5 @@
+dependencies:
+  - React Aria
 description: Intent UI is a chill set of React components, built on top of React
   Aria Components and Tailwind CSS. Easy to customize and just copy & paste into
   your React projects.

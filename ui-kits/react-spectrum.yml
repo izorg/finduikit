@@ -1,3 +1,5 @@
+dependencies:
+  - React Aria
 description: A React implementation of Spectrum, Adobe’s design system. Spectrum
   provides adaptive, accessible, and cohesive experiences for all Adobe
   applications.
