@@ -17,6 +17,12 @@
       "required": ["type", "url"],
       "additionalProperties": false
     },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "description": {
       "type": "string"
     },
@@ -83,6 +89,10 @@
     "storybook": {
       "type": "string",
       "format": "uri"
+    },
+    "styling": {
+      "type": "string",
+      "enum": ["Emotion"]
     },
     "unstyled": {
       "type": "boolean"

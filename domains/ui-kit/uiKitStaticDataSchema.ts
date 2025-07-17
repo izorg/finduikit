@@ -2,6 +2,7 @@ import { z } from "zod";
 
 import { AiType } from "../ai";
 import { Framework } from "../framework";
+import { Styling } from "../styling";
 import { WebComponentsLibrary } from "../web-components";
 
 export const uiKitStaticDataSchema = z.object({
@@ -11,6 +12,7 @@ export const uiKitStaticDataSchema = z.object({
       url: z.url(),
     })
     .optional(),
+  dependencies: z.array(z.string()).optional(),
   description: z.string().optional(),
   figma: z.url().optional(),
   frameworks: z.array(z.enum(Framework)).optional(),
@@ -32,6 +34,7 @@ export const uiKitStaticDataSchema = z.object({
     .optional(),
   repository: z.url(),
   storybook: z.url().optional(),
+  styling: z.enum(Styling).optional(),
   unstyled: z.boolean().optional(),
   webComponents: z.enum(WebComponentsLibrary).optional(),
 });

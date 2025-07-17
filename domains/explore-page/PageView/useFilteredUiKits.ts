@@ -27,9 +27,14 @@ export const useFilteredUiKits = (uiKitsProp: UiKit[]) => {
       new Fuse(uiKitsProp, {
         ignoreLocation: true,
         keys: [
-          "name",
+          {
+            name: "name",
+            weight: 2,
+          },
           "description",
           "frameworks",
+          "styling",
+          "dependencies",
           {
             getFn: (uiKit) => (uiKit.ai ? ["ai", uiKit.ai.type] : ""),
             name: "ai",
