@@ -12,7 +12,7 @@ export const AiLink = ({ ai }: AiLinkProps) => {
   const icon = aiIcons[ai.type];
 
   return (
-    <Flex align="center" asChild gap="1">
+    <Flex align="center" asChild display="inline-flex" gap="1">
       <Link asChild color="gray" highContrast>
         <a href={ai.url} rel="noreferrer" target="_blank">
           {icon && <SvgIcon path={icon.path} />}

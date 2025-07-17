@@ -121,7 +121,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
               </Table.Cell>
               <Table.Cell className={styles.rightCell} justify="center">
                 {uiKit.webComponents && (
-                  <Flex align="center" asChild gap="1">
+                  <Flex align="center" asChild display="inline-flex" gap="1">
                     <Link asChild color="gray" highContrast>
                       <a
                         href={webComponentsLinks[uiKit.webComponents]}
