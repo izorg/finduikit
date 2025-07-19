@@ -8,3 +8,4 @@ image:
 name: LeafyGreen UI
 repository: https://github.com/mongodb/leafygreen-ui
 storybook: https://storybook.mongodb.design/
+styling: Emotion
