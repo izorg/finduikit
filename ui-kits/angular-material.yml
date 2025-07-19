@@ -12,3 +12,4 @@ name: Angular Material
 packages:
   - name: "@angular/material"
 repository: https://github.com/angular/components
+styling: Sass

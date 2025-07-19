@@ -11,3 +11,5 @@ image:
 name: Fluent
 repository: https://github.com/microsoft/fluentui
 storybook: https://react.fluentui.dev/
+styling: Griffel
+webComponents: FAST

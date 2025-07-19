@@ -6,11 +6,11 @@ import { siFigma, siStorybook } from "simple-icons";
 
 import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
-import { webComponentsIcons, webComponentsLinks } from "../../web-components";
 
 import { AiLink } from "./AiLink";
 import { StylingLink } from "./StylingLink";
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
+import { WebComponentsLink } from "./WebComponentsLink";
 
 import styles from "./UiKitTable.module.css";
 
@@ -25,7 +25,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
   return (
     <Flex
       className={classNames(
-        "rt-TableRoot rt-r-size-2 rt-variant-ghost",
+        "rt-TableRoot rt-r-size-2 rt-variant-ghost md:rt-r-size-3",
         styles.root,
       )}
       flexGrow="1"
@@ -129,20 +129,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
               </Table.Cell>
               <Table.Cell className={styles.rightCell} justify="center">
                 {uiKit.webComponents && (
-                  <Flex align="center" asChild display="inline-flex" gap="1">
-                    <Link asChild color="gray" highContrast>
-                      <a
-                        href={webComponentsLinks[uiKit.webComponents]}
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <SvgIcon
-                          path={webComponentsIcons[uiKit.webComponents].path}
-                        />
-                        {uiKit.webComponents}
-                      </a>
-                    </Link>
-                  </Flex>
+                  <WebComponentsLink webComponents={uiKit.webComponents} />
                 )}
               </Table.Cell>
             </Table.Row>

@@ -10,35 +10,35 @@
 }
 
 .nameColumn {
-  width: 200px;
+  width: 13em;
 }
 
 .frameworkColumn {
-  width: 120px;
+  width: 9em;
 }
 
 .styledColumn {
-  width: 80px;
+  width: 6em;
 }
 
 .figmaColumn {
-  width: 80px;
+  width: 6em;
 }
 
 .storybookColumn {
-  width: 120px;
+  width: 9em;
 }
 
 .stylingColumn {
-  width: 130px;
+  width: 10em;
 }
 
 .aiColumn {
-  width: 100px;
+  width: 8em;
 }
 
 .webComponents {
-  width: 150px;
+  width: 11em;
 }
 
 .leftCell {

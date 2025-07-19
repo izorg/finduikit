@@ -92,14 +92,14 @@
     },
     "styling": {
       "type": "string",
-      "enum": ["Emotion", "Sass", "Tailwind CSS"]
+      "enum": ["Emotion", "Griffel", "Less", "Panda", "Sass", "Tailwind CSS"]
     },
     "unstyled": {
       "type": "boolean"
     },
     "webComponents": {
       "type": "string",
-      "enum": ["Lit", "Stencil"]
+      "enum": ["FAST", "Lit", "Stencil"]
     }
   },
   "required": ["homepage", "name", "repository"],
