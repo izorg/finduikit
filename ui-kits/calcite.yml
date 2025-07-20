@@ -1,7 +1,11 @@
 description: A monorepo containing the packages for Esri's Calcite Design System
 figma: https://www.figma.com/community/file/1360396942288069891
+frameworks:
+  - React
 homepage: https://developers.arcgis.com/calcite-design-system/
 image:
   src: https://repository-images.githubusercontent.com/185709634/3526f491-aefc-4c72-bc1b-71b7ae00c59c
 name: Calcite
 repository: https://github.com/Esri/calcite-design-system
+styling: Sass
+webComponents: Lit
