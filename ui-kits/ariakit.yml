@@ -3,6 +3,9 @@ description: Lower-level component library for building accessible higher-level
 frameworks:
   - React
 homepage: https://ariakit.org/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/104133653/84eea072-7710-4e6c-b8bb-4ae0bee3815e
 name: Ariakit
 repository: https://github.com/ariakit/ariakit
 unstyled: true
