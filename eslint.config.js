@@ -100,6 +100,13 @@ export default ts.config(
     },
   },
   {
+    files: ["**/*.d.ts"],
+    name: "typescript-declaration",
+    rules: {
+      "unicorn/require-module-specifiers": "off",
+    },
+  },
+  {
     files: [
       "data-handlers/**/*.ts",
       "domains/**/routes/*.ts",
