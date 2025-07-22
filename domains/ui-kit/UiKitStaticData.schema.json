@@ -92,7 +92,16 @@
     },
     "styling": {
       "type": "string",
-      "enum": ["Emotion", "Griffel", "Less", "Panda", "Sass", "Tailwind CSS"]
+      "enum": [
+        "CSS",
+        "Emotion",
+        "Griffel",
+        "Less",
+        "Panda",
+        "Sass",
+        "styled-components",
+        "Tailwind CSS"
+      ]
     },
     "unstyled": {
       "type": "boolean"

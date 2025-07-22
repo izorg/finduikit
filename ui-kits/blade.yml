@@ -9,3 +9,4 @@ homepage: https://blade.razorpay.com/
 name: Blade
 repository: https://github.com/razorpay/blade
 storybook: https://blade.razorpay.com/
+styling: styled-components
