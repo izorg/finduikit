@@ -1,7 +1,10 @@
-description: Beautifully designed components built with Radix Vue and Tailwind CSS.
+dependencies:
+  - Reka UI
+description: Beautifully designed components built with Reka UI and Tailwind CSS.
 figma: https://www.figma.com/community/file/1203061493325953101
 frameworks:
   - Vue
 homepage: https://www.shadcn-vue.com/
 name: shadcn/vue
 repository: https://github.com/unovue/shadcn-vue
+styling: Tailwind CSS
