@@ -1,13 +1,15 @@
 import { mdiCheck } from "@mdi/js";
-import { Flex, Link, Table, Text } from "@radix-ui/themes";
+import { Flex, IconButton, Link, Table, Text, Tooltip } from "@radix-ui/themes";
 import classNames from "classnames";
 import type { Ref } from "react";
-import { siFigma, siStorybook } from "simple-icons";
+import { siGithub } from "simple-icons";
 
 import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
 
 import { AiLink } from "./AiLink";
+import { FigmaLink } from "./FigmaLink";
+import { StorybookLink } from "./StorybookLink";
 import { StylingLink } from "./StylingLink";
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 import { WebComponentsLink } from "./WebComponentsLink";
@@ -77,11 +79,29 @@ export const UiKitTable = (props: UiKitTableProps) => {
           {uiKits.map((uiKit) => (
             <Table.Row key={uiKit.name}>
               <Table.RowHeaderCell className={styles.leftCell}>
-                <Link asChild color="gray" highContrast wrap="nowrap">
-                  <a href={uiKit.homepage} rel="noreferrer" target="_blank">
-                    {uiKit.name}
-                  </a>
-                </Link>
+                <Flex align="center" display="inline-flex" gap="2">
+                  <Link asChild color="gray" highContrast wrap="nowrap">
+                    <a href={uiKit.homepage} rel="noreferrer" target="_blank">
+                      {uiKit.name}
+                    </a>
+                  </Link>
+                  <Tooltip content="GitHub">
+                    <IconButton
+                      asChild
+                      color="gray"
+                      highContrast
+                      variant="ghost"
+                    >
+                      <a
+                        href={uiKit.repository}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <SvgIcon path={siGithub.path} />
+                      </a>
+                    </IconButton>
+                  </Tooltip>
+                </Flex>
               </Table.RowHeaderCell>
               <Table.Cell justify="center">
                 <UiKitTableFrameworkList frameworks={uiKit.frameworks} />
@@ -94,31 +114,11 @@ export const UiKitTable = (props: UiKitTableProps) => {
                 )}
               </Table.Cell>
               <Table.Cell justify="center">
-                {uiKit.figma && (
-                  <Text asChild color="crimson">
-                    <a
-                      aria-label="Figma"
-                      href={uiKit.figma}
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      <SvgIcon path={siFigma.path} />
-                    </a>
-                  </Text>
-                )}
+                {uiKit.figma && <FigmaLink figma={uiKit.figma} />}
               </Table.Cell>
               <Table.Cell justify="center">
                 {uiKit.storybook && (
-                  <Text asChild color="ruby">
-                    <a
-                      aria-label="Storybook"
-                      href={uiKit.storybook}
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      <SvgIcon path={siStorybook.path} />
-                    </a>
-                  </Text>
+                  <StorybookLink storybook={uiKit.storybook} />
                 )}
               </Table.Cell>
               <Table.Cell justify="center">
