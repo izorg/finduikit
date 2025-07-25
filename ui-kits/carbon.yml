@@ -11,3 +11,4 @@ packages:
   - name: "@carbon/react"
 repository: https://github.com/carbon-design-system/carbon
 storybook: https://react.carbondesignsystem.com/
+styling: Sass

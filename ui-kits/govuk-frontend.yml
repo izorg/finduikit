@@ -6,3 +6,4 @@ image:
   src: https://design-system.service.gov.uk/assets/rebrand/images/govuk-opengraph-image.png
 name: GOV.UK Frontend
 repository: https://github.com/alphagov/govuk-frontend
+styling: Sass

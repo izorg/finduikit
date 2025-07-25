@@ -8,3 +8,4 @@ image:
 name: Grommet
 repository: https://github.com/grommet/grommet
 storybook: https://storybook.grommet.io/
+styling: styled-components

@@ -5,4 +5,5 @@ homepage: https://opensource.adobe.com/spectrum-web-components/index.html
 name: Spectrum Web Components
 repository: https://github.com/adobe/spectrum-web-components
 storybook: https://opensource.adobe.com/spectrum-web-components/storybook/index.html
+styling: CSS
 webComponents: Lit
