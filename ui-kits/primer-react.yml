@@ -8,3 +8,4 @@ image:
 name: Primer React
 repository: https://github.com/primer/react
 storybook: https://primer.style/react/storybook/
+styling: styled-components

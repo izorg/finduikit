@@ -9,3 +9,4 @@ image:
 name: Backpack
 repository: https://github.com/Skyscanner/backpack
 storybook: https://backpack.github.io/storybook/
+styling: Sass
