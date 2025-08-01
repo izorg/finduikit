@@ -1,4 +1,6 @@
 description: SolidJS components for Bootstrap 5
+frameworks:
+  - Solid
 homepage: https://solid-libs.github.io/solid-bootstrap
 name: Solid-Bootstrap
 repository: https://github.com/solid-libs/solid-bootstrap
