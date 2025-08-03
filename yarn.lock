@@ -10394,7 +10394,7 @@ __metadata:
     prettier: "npm:3.6.2"
     react: "npm:19.1.1"
     react-dom: "npm:19.1.1"
-    simple-icons: "npm:15.8.0"
+    simple-icons: "npm:15.9.0"
     stylelint: "npm:16.23.0"
     stylelint-config-css-modules: "npm:4.5.1"
     stylelint-config-standard: "npm:39.0.0"
@@ -17066,10 +17066,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:15.8.0":
-  version: 15.8.0
-  resolution: "simple-icons@npm:15.8.0"
-  checksum: 10/c715a1eb55d69c640301026114121119c4bdcada8e0d763c5340dc2e92b0b4a5e540f23bfb996ccbfcb805f33e150d28d4bc0fb961a7a319d02028119ca0e651
+"simple-icons@npm:15.9.0":
+  version: 15.9.0
+  resolution: "simple-icons@npm:15.9.0"
+  checksum: 10/f1fb88f5a0968c2c098e2bea25a49a5cdf78deb9464cd77d4a77f07106979cad922a51bb0f8f4daaca7f8467fd3cfdc39f887d5755608bcff41893c5e8e89509
   languageName: node
   linkType: hard
 
