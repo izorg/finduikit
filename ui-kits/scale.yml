@@ -5,3 +5,5 @@ image:
 name: Scale
 repository: https://github.com/telekom/scale
 storybook: https://telekom.github.io/scale/
+styling: CSS
+webComponents: Stencil
