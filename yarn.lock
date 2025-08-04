@@ -2606,13 +2606,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@httptoolkit/esm@npm:^3.3.1":
-  version: 3.3.2
-  resolution: "@httptoolkit/esm@npm:3.3.2"
-  checksum: 10/a2f73e947bcd429f7847f69dbffb20738c72c86a89044d69909058ff9eb46c80879187fee75f8d50098a34d94e084de5d872aaeba392ef737046c5a1e42da9fc
-  languageName: node
-  linkType: hard
-
 "@humanfs/core@npm:^0.19.1":
   version: 0.19.1
   resolution: "@humanfs/core@npm:0.19.1"
@@ -3197,13 +3190,6 @@ __metadata:
   version: 5.7.6
   resolution: "@mdn/browser-compat-data@npm:5.7.6"
   checksum: 10/c1dbbd41f2a600dec8be0b570131e81e26aa2748e19993a87db9edfafdd53ab55a80aca7471435bf60eee8bb7215f0111f99ba6614afa905ddbf6b0ba0efc83f
-  languageName: node
-  linkType: hard
-
-"@mdn/browser-compat-data@npm:^6.0.15":
-  version: 6.0.26
-  resolution: "@mdn/browser-compat-data@npm:6.0.26"
-  checksum: 10/1912abfd880de93c35acba932c6fe36378de38c23470eaaf0234da8684bc5a5ef6e72ed9c8ee6523735221fc2672a15b0fbe49dc58cc9c44fd10257b8bdf1a26
   languageName: node
   linkType: hard
 
@@ -7407,13 +7393,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"baseline-browser-mapping@npm:^2.2.0":
-  version: 2.4.4
-  resolution: "baseline-browser-mapping@npm:2.4.4"
-  dependencies:
-    "@mdn/browser-compat-data": "npm:^6.0.15"
-    web-features: "npm:^2.35.1"
-  checksum: 10/d6f86f28b4301ea8c97d0a40b15bb7d968cd7bf60c445247dcd79601f5e9f39427b1e4583ab3798319cbb6005b9629f3ff359b9a1cee47219fa37307738fd5d8
+"baseline-browser-mapping@npm:^2.5.6":
+  version: 2.5.7
+  resolution: "baseline-browser-mapping@npm:2.5.7"
+  checksum: 10/c25c1626972292bd6346bc4715f9f96577341fc55f3979aecee24096043335acaa0e4ac0a37346e1772b8b5de350596263f3797c7d101d018dac54cd5c908342
   languageName: node
   linkType: hard
 
@@ -7555,14 +7538,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist-config-baseline@npm:0.4.0":
-  version: 0.4.0
-  resolution: "browserslist-config-baseline@npm:0.4.0"
+"browserslist-config-baseline@npm:0.5.0":
+  version: 0.5.0
+  resolution: "browserslist-config-baseline@npm:0.5.0"
   dependencies:
-    "@httptoolkit/esm": "npm:^3.3.1"
-    baseline-browser-mapping: "npm:^2.2.0"
-    compare-versions: "npm:^6.1.1"
-  checksum: 10/00a5c7142f340213eb1ec008d538a49f135319d63364e9b71e5111b6edb597c18731cd7686d563b36d864ed5ce2db453ee008a0ce0192a1228cb0a59a917f288
+    baseline-browser-mapping: "npm:^2.5.6"
+  checksum: 10/7f7a9a5e29f58d6acd2516fcfd5639f6e30b48216e5d12ba39357e5d5c278771a158969673337f46f81f77e81eeb37403ebe8c14d638d3d8f91206b88bf141dc
   languageName: node
   linkType: hard
 
@@ -8207,13 +8188,6 @@ __metadata:
   version: 1.0.1
   resolution: "commondir@npm:1.0.1"
   checksum: 10/4620bc4936a4ef12ce7dfcd272bb23a99f2ad68889a4e4ad766c9f8ad21af982511934d6f7050d4a8bde90011b1c15d56e61a1b4576d9913efbf697a20172d6c
-  languageName: node
-  linkType: hard
-
-"compare-versions@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "compare-versions@npm:6.1.1"
-  checksum: 10/9325c0fadfba81afa0ec17e6fc2ef823ba785c693089698b8d9374e5460509f1916a88591644d4cb4045c9a58e47fafbcc0724fe8bf446d2a875a3d6eeddf165
   languageName: node
   linkType: hard
 
@@ -10442,7 +10416,7 @@ __metadata:
     "@types/node": "npm:22.17.0"
     "@types/react": "npm:19.1.9"
     babel-plugin-react-compiler: "npm:19.1.0-rc.2"
-    browserslist-config-baseline: "npm:0.4.0"
+    browserslist-config-baseline: "npm:0.5.0"
     classnames: "npm:2.5.1"
     concurrently: "npm:9.2.0"
     core-js: "npm:3.45.0"
@@ -18848,13 +18822,6 @@ __metadata:
   dependencies:
     defaults: "npm:^1.0.3"
   checksum: 10/182ebac8ca0b96845fae6ef44afd4619df6987fe5cf552fdee8396d3daa1fb9b8ec5c6c69855acb7b3c1231571393bd1f0a4cdc4028d421575348f64bb0a8817
-  languageName: node
-  linkType: hard
-
-"web-features@npm:^2.35.1":
-  version: 2.40.0
-  resolution: "web-features@npm:2.40.0"
-  checksum: 10/4133c7d92a10561f5e81cc875508f709629f97cd06517b4b066d34e16636c3d4cd575196620ee25d74db869904a481cf391032acab57f413e1a088cff203d060
   languageName: node
   linkType: hard
 
