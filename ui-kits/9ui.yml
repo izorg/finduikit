@@ -6,7 +6,7 @@ frameworks:
 homepage: https://www.9ui.dev/
 image:
   fit: cover
-  src: https://9ui.dev/og.jpg?v=3
+  src: https://www.9ui.dev/og.jpg?v=3
 name: 9ui
 repository: https://github.com/borabaloglu/9ui
 styling: Tailwind CSS
