@@ -100,7 +100,8 @@
         "Panda",
         "Sass",
         "styled-components",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "vanilla-extract"
       ]
     },
     "unstyled": {

@@ -7,6 +7,7 @@ export const Styling = {
   Sass: "Sass",
   "styled-components": "styled-components",
   "Tailwind CSS": "Tailwind CSS",
+  "vanilla-extract": "vanilla-extract",
 } as const;
 
 export type Styling = (typeof Styling)[keyof typeof Styling];
