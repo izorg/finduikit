@@ -8,4 +8,5 @@ frameworks:
 homepage: https://designsystem.porsche.com/
 name: Porsche
 repository: https://github.com/porsche-design-system/porsche-design-system
+styling: Tailwind CSS
 webComponents: Stencil
