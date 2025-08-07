@@ -8,3 +8,4 @@ image:
 name: Tremor
 repository: https://github.com/tremorlabs/tremor
 storybook: https://storybook.tremor.so/
+styling: Tailwind CSS
