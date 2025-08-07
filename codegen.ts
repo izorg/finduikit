@@ -37,7 +37,7 @@ const config: CodegenConfig = {
   schema: {
     "https://api.github.com/graphql": {
       headers: {
-        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        Authorization: `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
         "User-Agent": "Awesome-Octocat-App",
       },
     },
