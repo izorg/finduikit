@@ -6,3 +6,4 @@ image:
 name: Strapi
 repository: https://github.com/strapi/design-system
 storybook: https://design-system.strapi.io/
+styling: styled-components

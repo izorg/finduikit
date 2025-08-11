@@ -10,3 +10,4 @@ image:
 name: Bento DS
 repository: https://github.com/buildo/bento-design-system
 storybook: https://storybook.bento-ds.com/
+styling: vanilla-extract

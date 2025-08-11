@@ -4,3 +4,5 @@ description: mdui is an front-end component library based on Material Design 3,
 homepage: https://www.mdui.org/
 name: MDUI
 repository: https://github.com/zdhxiong/mdui
+styling: Less
+webComponents: Lit
