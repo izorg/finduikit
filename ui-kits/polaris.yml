@@ -9,3 +9,4 @@ image:
 name: Polaris
 repository: https://github.com/Shopify/polaris
 storybook: https://storybook.polaris.shopify.dev/
+styling: CSS

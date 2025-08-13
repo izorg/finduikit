@@ -5,3 +5,4 @@ homepage: https://priceline.github.io/design-system/
 name: Priceline
 repository: https://github.com/priceline/design-system
 storybook: https://main--5a85e56213417800200978ab.chromatic.com/
+styling: styled-components
