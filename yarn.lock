@@ -10456,7 +10456,7 @@ __metadata:
     eslint-plugin-unicorn: "npm:60.0.0"
     eslint-plugin-yml: "npm:1.18.0"
     firebase-admin: "npm:13.4.0"
-    firebase-tools: "npm:14.12.0"
+    firebase-tools: "npm:14.12.1"
     fuse.js: "npm:7.1.0"
     globals: "npm:16.3.0"
     graphql: "npm:16.11.0"
@@ -10514,9 +10514,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:14.12.0":
-  version: 14.12.0
-  resolution: "firebase-tools@npm:14.12.0"
+"firebase-tools@npm:14.12.1":
+  version: 14.12.1
+  resolution: "firebase-tools@npm:14.12.1"
   dependencies:
     "@electric-sql/pglite": "npm:^0.3.3"
     "@electric-sql/pglite-tools": "npm:^0.2.8"
@@ -10594,7 +10594,7 @@ __metadata:
     zod-to-json-schema: "npm:^3.24.5"
   bin:
     firebase: lib/bin/firebase.js
-  checksum: 10/afa289c81660d89bb40cdc87ff1971587d2b96d79865c8fe1a9b5e651d7c4cc01a486b10417fa8e045f0c1bc22293c90e60c2658c862a17132579cc3892f409d
+  checksum: 10/a50359d8ea96fbeb974ec5651cead9cc0e4e7296dd750f9b06027ae95cfe2815b9c572c7eb79602b853d0924e81f182b208cc1f34d28cc68760ae76f94ab5c5c
   languageName: node
   linkType: hard
 
