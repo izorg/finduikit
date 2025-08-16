@@ -178,5 +178,18 @@ export default ts.config(
       "json/sort-keys": "off",
     },
   },
+  {
+    files: [".github/workflows/*.yml"],
+    name: "github-workflows",
+    rules: {
+      "yml/sort-keys": [
+        "error",
+        {
+          order: ["name", "on", "jobs"],
+          pathPattern: "^$",
+        },
+      ],
+    },
+  },
   prettier,
 );
