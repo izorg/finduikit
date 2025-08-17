@@ -33,6 +33,7 @@ jobs:
       - name: Run update task
         run: yarn update-ui-kits
         env:
+          CHECK_COUNT: 200
           GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Detect changes
