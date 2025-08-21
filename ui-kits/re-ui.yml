@@ -9,7 +9,7 @@ frameworks:
 homepage: https://reui.io/
 image:
   fit: cover
-  src: https://reui.io/og.jpg
+  src: https://reui.io/og.png
 name: ReUI
 repository: https://github.com/keenthemes/reui
 styling: Tailwind CSS
