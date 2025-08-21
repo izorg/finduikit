@@ -4,7 +4,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Theme } from "@radix-ui/themes";
 import { type Metadata, type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
-import { type PropsWithChildren } from "react";
 
 import "./global.css";
 
@@ -21,7 +20,7 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-const RootLayout = (props: PropsWithChildren) => {
+const RootLayout = (props: LayoutProps<"/">) => {
   const { children } = props;
 
   return (
