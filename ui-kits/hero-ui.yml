@@ -9,3 +9,4 @@ image:
 name: HeroUI
 repository: https://github.com/heroui-inc/heroui
 storybook: https://storybook.heroui.com/
+styling: Tailwind CSS
