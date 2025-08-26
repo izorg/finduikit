@@ -172,6 +172,12 @@ export default ts.config(
     },
   },
   {
+    files: ["ui-kits/*.yml"],
+    rules: {
+      "yml/no-irregular-whitespace": "off",
+    },
+  },
+  {
     files: ["package.json"],
     name: "package-json",
     rules: {
