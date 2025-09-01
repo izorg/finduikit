@@ -1,6 +1,7 @@
-description: Find all the fundamental UXI guidelines and pattern-based web
-  components to build brand driven, consistent and intuitive designs for digital
-  Porsche products.
+description: The official Porsche Design System repository, offering fundamental
+  UXI guidelines and a library of reusable web components to enable designers
+  and developers to build consistent, intuitive, and high-quality digital
+  products that reflect the Porsche brand.
 frameworks:
   - Angular
   - React
