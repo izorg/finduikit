@@ -133,7 +133,7 @@ export const uiKitRouteUpdate = async (request: Request) => {
     ) || 1;
 
   const checkEntries = fileEntries
-    .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
+    .toSorted((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, checkCount);
 
   const stream = new ReadableStream({

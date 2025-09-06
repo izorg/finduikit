@@ -84,7 +84,7 @@ const checkUiKits = async () => {
 
   const checkEntries = entries
     .filter((dirent) => dirent.isFile())
-    .sort((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
+    .toSorted((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, CHECK_COUNT);
 
   await Promise.all(checkEntries.map((entry) => updateUiKit(entry)));

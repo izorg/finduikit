@@ -23,7 +23,7 @@ const getFrameworksFromTopics = (topics: string[]) => {
   const frameworks = topics
     .map((topic) => frameworkTopicMap.get(topic))
     .filter((framework) => framework !== undefined)
-    .sort(frameworkCompare);
+    .toSorted(frameworkCompare);
 
   return frameworks.length > 0 ? [...new Set(frameworks)] : undefined;
 };
