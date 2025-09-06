@@ -1,6 +1,6 @@
 ai:
-  type: LLMs.txt
-  url: https://flowbite-svelte.com/docs/pages/ai-integration
+  - type: LLMs.txt
+    url: https://flowbite-svelte.com/docs/pages/ai-integration
 description: Flowbite Svelte is an open-source UI component library built with
   Svelte components, Tailwind CSS utility classes and based on the Flowbite
   design system and components.

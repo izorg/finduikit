@@ -1,6 +1,6 @@
 ai:
-  type: MCP
-  url: https://magicui.design/docs/mcp
+  - type: MCP
+    url: https://magicui.design/docs/mcp
 description: UI Library for Design Engineers. Animated components and effects
   you can copy and paste into your apps. Free. Open Source.
 frameworks:

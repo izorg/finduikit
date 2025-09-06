@@ -9,16 +9,30 @@ type AiLinkProps = {
 };
 
 export const AiLink = ({ ai }: AiLinkProps) => {
-  const icon = aiIcons[ai.type];
+  console.log("=== ai ===", ai);
 
   return (
-    <Flex align="center" asChild display="inline-flex" gap="1">
-      <Link asChild color="gray" highContrast>
-        <a href={ai.url} rel="noreferrer" target="_blank">
-          {icon && <SvgIcon path={icon.path} />}
-          {ai.type}
-        </a>
-      </Link>
+    <Flex align="center" direction="column" display="flex" gap="1">
+      {ai.map((item) => {
+        const icon = aiIcons[item.type];
+
+        return (
+          <Flex
+            align="center"
+            asChild
+            display="inline-flex"
+            gap="1"
+            key={item.type}
+          >
+            <Link asChild color="gray" highContrast>
+              <a href={item.url} rel="noreferrer" target="_blank">
+                {icon && <SvgIcon path={icon.path} />}
+                {item.type}
+              </a>
+            </Link>
+          </Flex>
+        );
+      })}
     </Flex>
   );
 };

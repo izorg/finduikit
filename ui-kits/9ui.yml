@@ -1,3 +1,6 @@
+ai:
+  - type: LLMs.txt
+    url: https://www.9ui.dev/docs/getting-started/llms
 dependencies:
   - Base UI
 description: Beautiful, customizable components built with Base UI and Tailwind CSS.

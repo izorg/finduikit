@@ -1,6 +1,6 @@
 ai:
-  type: LLMs.txt
-  url: https://www.chakra-ui.com/docs/get-started/llms
+  - type: LLMs.txt
+    url: https://www.chakra-ui.com/docs/get-started/llms
 dependencies:
   - Ark UI
 description: Chakra UI is a component system for building SaaS products with speed ⚡️

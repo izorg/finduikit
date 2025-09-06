@@ -1,3 +1,6 @@
+ai:
+  - type: LLMs.txt
+    url: https://base-ui.com/llms.txt
 description: Unstyled UI components for building accessible web apps and design
   systems. From the creators of Radix, Floating UI, and Material UI.
 frameworks:

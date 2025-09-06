@@ -1,6 +1,6 @@
 ai:
-  type: LLMs.txt
-  url: https://zagjs.com/overview/llms-txt
+  - type: LLMs.txt
+    url: https://zagjs.com/overview/llms-txt
 description: Build your design system in React, Solid, Vue or Svelte. Powered by
   finite state machines
 frameworks:

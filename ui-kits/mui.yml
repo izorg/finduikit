@@ -1,6 +1,8 @@
 ai:
-  type: MCP
-  url: https://mui.com/material-ui/getting-started/mcp/
+  - type: LLMs.txt
+    url: https://mui.com/material-ui/llms.txt
+  - type: MCP
+    url: https://mui.com/material-ui/getting-started/mcp/
 description: Material UI is an open-source React component library that
   implements Google's Material Design. It's comprehensive and can be used in
   production out of the box.

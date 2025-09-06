@@ -1,6 +1,6 @@
 ai:
-  type: LLMs.txt
-  url: https://tamagui.dev/llms.txt
+  - type: LLMs.txt
+    url: https://tamagui.dev/llms.txt
 description: Style React fast with 100% parity on React Native, an optional UI
   kit, and optimizing compiler.
 figma: https://www.figma.com/community/file/1326593766534421119

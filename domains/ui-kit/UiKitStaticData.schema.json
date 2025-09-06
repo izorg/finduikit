@@ -3,19 +3,22 @@
   "type": "object",
   "properties": {
     "ai": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["LLMs.txt", "MCP"]
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["LLMs.txt", "MCP"]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
         },
-        "url": {
-          "type": "string",
-          "format": "uri"
-        }
-      },
-      "required": ["type", "url"],
-      "additionalProperties": false
+        "required": ["type", "url"],
+        "additionalProperties": false
+      }
     },
     "dependencies": {
       "type": "array",

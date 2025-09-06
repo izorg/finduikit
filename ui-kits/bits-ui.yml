@@ -1,6 +1,6 @@
 ai:
-  type: LLMs.txt
-  url: https://bits-ui.com/docs/llms
+  - type: LLMs.txt
+    url: https://bits-ui.com/docs/llms
 description: Headless components for Svelte - flexible, unstyled, and accessible
   primitives that provide the foundation for building your own high-quality
   component library.

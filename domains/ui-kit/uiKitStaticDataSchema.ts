@@ -7,10 +7,12 @@ import { WebComponentsLibrary } from "../web-components";
 
 export const uiKitStaticDataSchema = z.object({
   ai: z
-    .object({
-      type: z.enum(AiType),
-      url: z.url(),
-    })
+    .array(
+      z.object({
+        type: z.enum(AiType),
+        url: z.url(),
+      }),
+    )
     .optional(),
   dependencies: z.array(z.string()).optional(),
   description: z.string().optional(),

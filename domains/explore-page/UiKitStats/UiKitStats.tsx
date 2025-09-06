@@ -36,11 +36,7 @@ export const UiKitStats = (props: UiKitStatsProps) => {
               <IssueBadge issues={issues} repository={repository} />
             </li>
           )}
-          {ai && (
-            <li>
-              <AiBadge ai={ai} />
-            </li>
-          )}
+          {ai && <AiBadge ai={ai} />}
           {webComponents && (
             <li>
               <WebComponentsBadge webComponents={webComponents} />

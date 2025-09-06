@@ -36,7 +36,8 @@ export const useFilteredUiKits = (uiKitsProp: UiKit[]) => {
           "styling",
           "dependencies",
           {
-            getFn: (uiKit) => (uiKit.ai ? ["ai", uiKit.ai.type] : ""),
+            getFn: (uiKit) =>
+              uiKit.ai ? ["ai", ...uiKit.ai.map(({ type }) => type)] : "",
             name: "ai",
           },
           {

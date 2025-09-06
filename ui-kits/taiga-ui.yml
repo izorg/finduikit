@@ -1,3 +1,6 @@
+ai:
+  - type: LLMs.txt
+    url: https://taiga-ui.dev/ai-support
 description: Angular UI Kit and components library for awesome people
 frameworks:
   - Angular
