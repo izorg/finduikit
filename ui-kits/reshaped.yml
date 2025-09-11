@@ -1,0 +1,13 @@
+description: Reshaped provides professionally crafted component libraries in
+  React and Figma to make your product design and development faster.
+figma: https://www.figma.com/community/file/1546133815088483407
+frameworks:
+  - React
+homepage: https://reshaped.so/
+image:
+  fit: cover
+  src: https://reshaped.so/img/share-image.png
+name: Reshaped
+repository: https://github.com/reshaped-ui/reshaped
+storybook: https://main--5ed400f96e43cc00226d4df6.chromatic.com/
+styling: CSS
