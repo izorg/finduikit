@@ -6,6 +6,7 @@ frameworks:
   - React
 homepage: https://gluestack.io/
 image:
+  fit: cover
   src: https://gluestack.io/images/og-image.png
 name: gluestack-ui
 repository: https://github.com/gluestack/gluestack-ui

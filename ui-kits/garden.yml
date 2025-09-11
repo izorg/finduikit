@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://garden.zendesk.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/132498655/d853b700-15cf-11ea-99d1-f2c340da645a
 name: Garden
 repository: https://github.com/zendeskgarden/react-components

@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://primer.style/product/getting-started/react/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/121814210/cadffb80-6290-11e9-8815-525c2c886836
 name: Primer React
 repository: https://github.com/primer/react

@@ -6,6 +6,7 @@ frameworks:
   - React
 homepage: https://www.bento-ds.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/432209558/667d524b-4324-4c76-b04e-b8f4a34a35c4
 name: Bento DS
 repository: https://github.com/buildo/bento-design-system

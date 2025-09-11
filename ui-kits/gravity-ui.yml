@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://gravity-ui.com/
 image:
+  fit: cover
   src: https://gravity-ui.com/index-social.png
 name: Gravity UI
 repository: https://github.com/gravity-ui/uikit

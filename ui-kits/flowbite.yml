@@ -5,6 +5,7 @@ description: Open-source UI component library and front-end development
   framework based on Tailwind CSS
 homepage: https://flowbite.com/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/390399065/d5cadbe9-84f4-4335-b1ed-baca939bfa6a
 name: Flowbite
 repository: https://github.com/themesberg/flowbite

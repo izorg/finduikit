@@ -7,6 +7,7 @@ frameworks:
   - Vue
 homepage: https://bootstrap-vue.github.io/bootstrap-vue/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/70342215/b48df800-b20e-11e9-97bd-1695ff9ba977
 name: BootstrapVue
 repository: https://github.com/bootstrap-vue/bootstrap-vue

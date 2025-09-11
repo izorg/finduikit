@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://mantine.dev
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/327628682/c50bfb71-146d-4070-964c-4a06b5c88c0d
 name: Mantine
 repository: https://github.com/mantinedev/mantine
