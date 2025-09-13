@@ -59,10 +59,9 @@
     "@next/eslint-plugin-next": "15.5.3",
     "@nodejs-loaders/css-module": "1.1.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.18.1",
-    "@types/react": "19.1.12",
+    "@types/node": "22.18.3",
+    "@types/react": "19.1.13",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
-    "browserslist-config-baseline": "0.5.0",
     "concurrently": "9.2.1",
     "eslint": "9.35.0",
     "eslint-config-flat-gitignore": "2.1.0",
@@ -96,6 +95,6 @@
     "typescript-eslint": "8.43.0",
     "typescript-plugin-css-modules": "5.2.0",
     "yaml": "2.8.1",
-    "zod": "4.1.7"
+    "zod": "4.1.8"
   }
 }

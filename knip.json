@@ -1,4 +1,3 @@
 {
-  "$schema": "node_modules/knip/schema.json",
-  "ignoreDependencies": ["browserslist-config-baseline"]
+  "$schema": "node_modules/knip/schema.json"
 }
