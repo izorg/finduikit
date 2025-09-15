@@ -1,5 +1,3 @@
-import "../domains/polyfills";
-
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Theme } from "@radix-ui/themes";
 import { type Metadata, type Viewport } from "next";
