@@ -117,8 +117,8 @@ const updateReadmeTable = async () => {
   const readmeFilePath = path.join(process.cwd(), "readme.md");
 
   const entries = await getUiKitFileEntries();
-  const readmeBUffer = await fs.promises.readFile(readmeFilePath);
-  let readme = readmeBUffer.toString();
+  const readmeBuffer = await fs.promises.readFile(readmeFilePath);
+  let readme = readmeBuffer.toString();
 
   const tableComment = "<!-- Table -->";
   const startIndex = readme.indexOf(tableComment) + tableComment.length;
