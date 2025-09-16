@@ -1,5 +1,5 @@
 [production]
-baseline widely available
+extends browserslist-config-baseline
 
 [server]
 current node

@@ -7438,7 +7438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"baseline-browser-mapping@npm:^2.8.2":
+"baseline-browser-mapping@npm:^2.5.6, baseline-browser-mapping@npm:^2.8.2":
   version: 2.8.4
   resolution: "baseline-browser-mapping@npm:2.8.4"
   bin:
@@ -7582,6 +7582,15 @@ __metadata:
   dependencies:
     fill-range: "npm:^7.1.1"
   checksum: 10/fad11a0d4697a27162840b02b1fad249c1683cbc510cd5bf1a471f2f8085c046d41094308c577a50a03a579dd99d5a6b3724c4b5e8b14df2c4443844cfcda2c6
+  languageName: node
+  linkType: hard
+
+"browserslist-config-baseline@npm:0.5.0":
+  version: 0.5.0
+  resolution: "browserslist-config-baseline@npm:0.5.0"
+  dependencies:
+    baseline-browser-mapping: "npm:^2.5.6"
+  checksum: 10/7f7a9a5e29f58d6acd2516fcfd5639f6e30b48216e5d12ba39357e5d5c278771a158969673337f46f81f77e81eeb37403ebe8c14d638d3d8f91206b88bf141dc
   languageName: node
   linkType: hard
 
@@ -10472,6 +10481,7 @@ __metadata:
     "@types/node": "npm:22.18.4"
     "@types/react": "npm:19.1.13"
     babel-plugin-react-compiler: "npm:19.1.0-rc.3"
+    browserslist-config-baseline: "npm:0.5.0"
     classnames: "npm:2.5.1"
     concurrently: "npm:9.2.1"
     core-js: "npm:3.45.1"
