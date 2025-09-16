@@ -36,7 +36,11 @@ export const UiKitStats = (props: UiKitStatsProps) => {
               <IssueBadge issues={issues} repository={repository} />
             </li>
           )}
-          {ai && <AiBadge ai={ai} />}
+          {ai?.map((item) => (
+            <li key={item.type}>
+              <AiBadge ai={item} />
+            </li>
+          ))}
           {webComponents && (
             <li>
               <WebComponentsBadge webComponents={webComponents} />

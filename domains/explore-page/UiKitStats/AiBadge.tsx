@@ -6,19 +6,16 @@ import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
 
 type AiBadgeProps = {
-  ai: NonNullable<UiKit["ai"]>;
+  ai: NonNullable<UiKit["ai"]>[number];
 };
 
-export const AiBadge = ({ ai }: AiBadgeProps) =>
-  ai.map((item) => (
-    <li key={item.type}>
-      <Tooltip content="AI powered">
-        <Badge asChild color="crimson">
-          <a href={item.url} rel="noreferrer" target="_blank">
-            <SvgIcon path={aiIcons[item.type]?.path ?? mdiCreation} />
-            {item.type}
-          </a>
-        </Badge>
-      </Tooltip>
-    </li>
-  ));
+export const AiBadge = ({ ai }: AiBadgeProps) => (
+  <Tooltip content="AI powered">
+    <Badge asChild color="crimson">
+      <a href={ai.url} rel="noreferrer" target="_blank">
+        <SvgIcon path={aiIcons[ai.type]?.path ?? mdiCreation} />
+        {ai.type}
+      </a>
+    </Badge>
+  </Tooltip>
+);
