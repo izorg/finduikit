@@ -1,0 +1,10 @@
+description: A lightweight, customizable Vue UI library for mobile web apps.
+frameworks:
+  - Vue
+homepage: https://vant.pro/vant/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/88717215/24a19917-e8c3-404b-abcf-1badadf10927
+name: Vant
+repository: https://github.com/youzan/vant
+styling: Less

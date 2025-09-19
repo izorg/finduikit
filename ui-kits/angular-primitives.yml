@@ -1,0 +1,11 @@
+description: Angular Primitives is a low-level headless UI component library
+  with a focus on accessibility, customization, and developer experience.
+frameworks:
+  - Angular
+homepage: https://angularprimitives.com/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/533838976/604db600-328f-4311-a1ea-d2b78dbfb92b
+name: Angular Primitives
+repository: https://github.com/ng-primitives/ng-primitives
+unstyled: true
