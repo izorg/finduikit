@@ -24,6 +24,8 @@ const getHomepageOgImage = (
   return new URL(ogImage, new URL(data.homepage).origin).toString();
 };
 
+const preservedImages = new Set(["UI5 Web Components"]);
+
 export const getImage = ({
   data,
   github,
@@ -33,6 +35,10 @@ export const getImage = ({
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
   homepage: HTMLElement;
 }): UiKitStaticDataSchema["image"] => {
+  if (preservedImages.has(data.name)) {
+    return data.image;
+  }
+
   if (data?.image === null) {
     // eslint-disable-next-line unicorn/no-null -- null is used to indicate no image
     return null;

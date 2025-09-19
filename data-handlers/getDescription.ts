@@ -5,7 +5,11 @@ import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
-const preservedDescriptions = new Set(["KoliBri", "NG-ZORRO"]);
+const preservedDescriptions = new Set([
+  "KoliBri",
+  "NG-ZORRO",
+  "UI5 Web Components",
+]);
 
 export const getDescription = ({
   data,
