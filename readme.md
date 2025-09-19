@@ -157,7 +157,7 @@ Built with:
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |              [GitHub](https://github.com/TDRA-ae/aegov-dls)              |
 | [Tremor](https://tremor.so/)                                                               |              [GitHub](https://github.com/tremorlabs/tremor)              |
 | [UI Kitten](https://akveo.github.io/react-native-ui-kitten/)                               |        [GitHub](https://github.com/akveo/react-native-ui-kitten)         |
-| [UI5 Web Components](https://sap.github.io/ui5-webcomponents/)                             |            [GitHub](https://github.com/SAP/ui5-webcomponents)            |
+| [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |            [GitHub](https://github.com/SAP/ui5-webcomponents)            |
 | [UIkit](https://getuikit.com/)                                                             |                 [GitHub](https://github.com/uikit/uikit)                 |
 | [USWDS](https://designsystem.digital.gov/)                                                 |                 [GitHub](https://github.com/uswds/uswds)                 |
 | [Vaadin](https://vaadin.com/components)                                                    |            [GitHub](https://github.com/vaadin/web-components)            |
