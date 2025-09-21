@@ -9,6 +9,8 @@ import { PageView } from "../PageView";
 const title = "Explore UI Kits";
 
 export const metadata: Metadata = {
+  description:
+    "Explore 160+ open‑source UI kits & design systems. Search, filter by framework (React, Vue, Angular, Svelte, Solid), sort by stars or updates in grid or table.",
   title,
 };
 
