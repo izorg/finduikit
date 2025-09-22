@@ -152,6 +152,7 @@ Built with:
 | [Stacks](https://stackoverflow.design/)                                                    |            [GitHub](https://github.com/StackExchange/Stacks)             |
 | [Storybook](https://master--5ccbc373887ca40020446347.chromatic.com/)                       |          [GitHub](https://github.com/storybookjs/design-system)          |
 | [Strapi](https://design-system.strapi.io/)                                                 |            [GitHub](https://github.com/strapi/design-system)             |
+| [SUID](https://suid.dev/)                                                                  |                [GitHub](https://github.com/swordev/suid)                 |
 | [System.css](https://sakofchit.github.io/system.css/)                                      |            [GitHub](https://github.com/sakofchit/system.css)             |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |            [GitHub](https://github.com/taiga-family/taiga-ui)            |
 | [Tamagui](https://tamagui.dev/)                                                            |               [GitHub](https://github.com/tamagui/tamagui)               |

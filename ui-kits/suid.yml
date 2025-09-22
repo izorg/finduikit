@@ -1,0 +1,9 @@
+description: A port of Material-UI (MUI) built with SolidJS.
+frameworks:
+  - Solid
+homepage: https://suid.dev/
+image:
+  fit: cover
+  src: https://suid.dev/assets/preview.png
+name: SUID
+repository: https://github.com/swordev/suid
