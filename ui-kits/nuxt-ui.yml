@@ -1,13 +1,18 @@
+ai:
+  - type: LLMs.txt
+    url: https://ui.nuxt.com/docs/getting-started/ai/llms-txt
+  - type: MCP
+    url: https://ui.nuxt.com/docs/getting-started/ai/mcp
 description: Create beautiful, responsive & accessible web apps quickly with Vue
-  or Nuxt. Nuxt UI is an open-source UI library of 50+ customizable components
+  or Nuxt. Nuxt UI is an open-source UI library of 100+ customizable components
   built with Tailwind CSS and Reka UI.
-figma: https://www.figma.com/community/file/1436401057300493073
+figma: https://www.figma.com/community/file/1544369209862884086
 frameworks:
   - Vue
 homepage: https://ui.nuxt.com/
 image:
   fit: cover
-  src: https://ui.nuxt.com/og-image.png
+  src: https://ui4.nuxt.com/og-image.png
 name: Nuxt UI
 repository: https://github.com/nuxt/ui
 styling: Tailwind CSS
