@@ -1,6 +1,6 @@
 description: Customizable design system from Welcome to the jungle (@wttj) with
-  react, typescript, styled-components, ariakit and a lot of love 💛 Here you'll
-  find all the core components you need to create a delightful webapp.
+  react, typescript, tailwindcss, ariakit and a lot of love 💛 Here you'll find
+  all the core components you need to create a delightful webapp.
 frameworks:
   - React
 homepage: https://www.welcome-ui.com/
