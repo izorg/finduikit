@@ -38,7 +38,7 @@ export default ts.config(
       importPlugin.flatConfigs.typescript,
       react.configs.flat.recommended,
       react.configs.flat["jsx-runtime"],
-      reactHooks.configs.recommended,
+      reactHooks.configs["flat/recommended"],
       next.flatConfig.recommended,
       next.flatConfig.coreWebVitals,
       unicorn.configs["recommended"],
