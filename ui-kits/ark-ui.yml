@@ -1,6 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://ark-ui.com/docs/overview/llms.txt
+  - type: MCP
+    url: https://ark-ui.com/docs/ai/mcp-server
 dependencies:
   - Zag
 description: A headless UI library with over 45+ components designed to build
