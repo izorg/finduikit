@@ -1,3 +1,5 @@
+dependencies:
+  - Ariakit
 description: Customizable design system from Welcome to the jungle (@wttj) with
   react, typescript, tailwindcss, ariakit and a lot of love 💛 Here you'll find
   all the core components you need to create a delightful webapp.
