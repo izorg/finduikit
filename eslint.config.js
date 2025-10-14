@@ -14,13 +14,14 @@ import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
 import yml from "eslint-plugin-yml";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 import * as ts from "typescript-eslint";
 
 /**
  * Run `npx @eslint/config-inspector` to visualise the config
  */
-export default ts.config(
+export default defineConfig(
   gitignore(),
   {
     ignores: [".yarn", "next-env.d.ts"],
