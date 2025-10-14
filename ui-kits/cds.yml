@@ -1,0 +1,15 @@
+ai:
+  - type: MCP
+    url: https://cds.coinbase.com/getting-started/mcp-server
+description: Documentation for the Coinbase Design System - A comprehensive
+  collection of components, patterns, and guidelines for building crypto
+  products.
+frameworks:
+  - React
+homepage: https://cds.coinbase.com/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/885460953/8eb12a9d-cb50-4383-98c1-e1fa14952bbf
+name: Coinbase Design System
+repository: https://github.com/coinbase/cds
+storybook: https://cds-storybook.coinbase.com/

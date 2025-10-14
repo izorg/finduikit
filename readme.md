@@ -52,6 +52,7 @@ Built with:
 | [Clarity](https://clarity.design/)                                                         |          [GitHub](https://github.com/vmware-clarity/ng-clarity)          |
 | [Cloudscape](https://cloudscape.design/)                                                   |        [GitHub](https://github.com/cloudscape-design/components)         |
 | [Codex](https://doc.wikimedia.org/codex/latest/)                                           |           [GitHub](https://github.com/wikimedia/design-codex)            |
+| [Coinbase Design System](https://cds.coinbase.com/)                                        |                [GitHub](https://github.com/coinbase/cds)                 |
 | [commercetools UI Kit](https://uikit.commercetools.com/)                                   |            [GitHub](https://github.com/commercetools/ui-kit)             |
 | [Corvu](https://corvu.dev/)                                                                |               [GitHub](https://github.com/corvudev/corvu)                |
 | [daisyUI](https://daisyui.com/)                                                            |              [GitHub](https://github.com/saadeghi/daisyui)               |
