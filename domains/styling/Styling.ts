@@ -5,6 +5,7 @@ export const Styling = {
   Less: "Less",
   Panda: "Panda",
   Sass: "Sass",
+  Stitches: "Stitches",
   "styled-components": "styled-components",
   "Tailwind CSS": "Tailwind CSS",
   "vanilla-extract": "vanilla-extract",
