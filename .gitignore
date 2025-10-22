@@ -18,6 +18,7 @@ node_modules/
 .eslintcache
 .sentryclirc
 .stylelintcache
+next-env.d.ts
 
 # Specific directories & files
 .firebase/

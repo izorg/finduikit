@@ -7,12 +7,9 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 const nextConfig: NextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true, // Using project root ESLint check
-  },
+  cacheComponents: true,
   experimental: {
     optimizePackageImports: ["@radix-ui/themes", "radix-ui"],
-    reactCompiler: true,
     typedEnv: true,
     useCache: true,
   },
@@ -22,9 +19,8 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "*": ["./ui-kits/*"],
   },
-  typescript: {
-    ignoreBuildErrors: true, // Using project root TypeScript check
-  },
+  reactCompiler: true,
+  typedRoutes: true,
 };
 
 const sentryBuildOptions: SentryBuildOptions = {

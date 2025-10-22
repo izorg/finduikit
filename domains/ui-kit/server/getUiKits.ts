@@ -6,7 +6,7 @@ import {
   type FirestoreDataConverter,
   Timestamp,
 } from "firebase-admin/firestore";
-import { unstable_cacheLife as cacheLife } from "next/cache";
+import { cacheLife } from "next/cache";
 import { parse } from "yaml";
 
 import { firebaseGetFirestoreUiKitsCollection } from "../../firebase";
