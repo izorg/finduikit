@@ -1,0 +1,10 @@
+description: The NYS Design System makes it easier to build accessible,
+  mobile-friendly applications and websites for New York State.
+homepage: https://designsystem.ny.gov/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/803818614/1a72505b-b3cd-4adb-8319-7f6ec5bc9fe2
+name: The New York State Design System
+repository: https://github.com/ITS-HCD/nysds
+styling: CSS
+webComponents: Lit

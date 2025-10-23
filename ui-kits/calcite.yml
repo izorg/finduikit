@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://developers.arcgis.com/calcite-design-system/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/185709634/3526f491-aefc-4c72-bc1b-71b7ae00c59c
 name: Calcite
 repository: https://github.com/Esri/calcite-design-system

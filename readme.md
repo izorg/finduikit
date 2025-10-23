@@ -157,6 +157,7 @@ Built with:
 | [System.css](https://sakofchit.github.io/system.css/)                                      |            [GitHub](https://github.com/sakofchit/system.css)             |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |            [GitHub](https://github.com/taiga-family/taiga-ui)            |
 | [Tamagui](https://tamagui.dev/)                                                            |               [GitHub](https://github.com/tamagui/tamagui)               |
+| [The New York State Design System](https://designsystem.ny.gov/)                           |                [GitHub](https://github.com/ITS-HCD/nysds)                |
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |              [GitHub](https://github.com/TDRA-ae/aegov-dls)              |
 | [Tremor](https://tremor.so/)                                                               |              [GitHub](https://github.com/tremorlabs/tremor)              |
 | [UI Kitten](https://akveo.github.io/react-native-ui-kitten/)                               |        [GitHub](https://github.com/akveo/react-native-ui-kitten)         |
