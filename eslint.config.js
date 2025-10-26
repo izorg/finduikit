@@ -24,7 +24,7 @@ import * as ts from "typescript-eslint";
 export default defineConfig(
   gitignore(),
   {
-    ignores: [".yarn", "next-env.d.ts"],
+    ignores: [".yarn"],
     name: "ignore",
   },
   markdown.configs.processor,

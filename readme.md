@@ -20,6 +20,7 @@ Built with:
 | [7.css](https://khang-nd.github.io/7.css/)                                                 |               [GitHub](https://github.com/khang-nd/7.css)                |
 | [98.css](https://jdan.github.io/98.css/)                                                   |                 [GitHub](https://github.com/jdan/98.css)                 |
 | [9ui](https://www.9ui.dev/)                                                                |               [GitHub](https://github.com/borabaloglu/9ui)               |
+| [AgnosticUI](https://www.agnosticui.com/)                                                  |            [GitHub](https://github.com/agnosticui/agnosticui)            |
 | [Amplify UI](https://ui.docs.amplify.aws/)                                                 |           [GitHub](https://github.com/aws-amplify/amplify-ui)            |
 | [Angular Material](https://material.angular.io/)                                           |             [GitHub](https://github.com/angular/components)              |
 | [Angular Primitives](https://angularprimitives.com/)                                       |         [GitHub](https://github.com/ng-primitives/ng-primitives)         |
@@ -88,6 +89,7 @@ Built with:
 | [Kuma UI](https://www.kuma-ui.com/)                                                        |               [GitHub](https://github.com/kuma-ui/kuma-ui)               |
 | [LeafyGreen UI](https://www.mongodb.design/)                                               |            [GitHub](https://github.com/mongodb/leafygreen-ui)            |
 | [Lightning](https://www.lightningdesignsystem.com/)                                        |         [GitHub](https://github.com/salesforce-ux/design-system)         |
+| [M3 Svelte](https://ktibow.github.io/m3-svelte/)                                           |              [GitHub](https://github.com/KTibow/m3-svelte)               |
 | [Magic UI](https://magicui.design/)                                                        |            [GitHub](https://github.com/magicuidesign/magicui)            |
 | [Mantine](https://mantine.dev)                                                             |             [GitHub](https://github.com/mantinedev/mantine)              |
 | [MDB](https://mdbootstrap.com/)                                                            |           [GitHub](https://github.com/mdbootstrap/mdb-ui-kit)            |
@@ -105,6 +107,7 @@ Built with:
 | [Oku Primitives](https://primitives.oku-ui.com/)                                           |              [GitHub](https://github.com/oku-ui/primitives)              |
 | [Orbit](https://orbit.kiwi/)                                                               |                [GitHub](https://github.com/kiwicom/orbit)                |
 | [Palette](https://palette.artsy.net/)                                                      |                [GitHub](https://github.com/artsy/palette)                |
+| [PaperCSS](https://www.getpapercss.com/)                                                   |              [GitHub](https://github.com/papercss/papercss)              |
 | [Park UI](https://park-ui.com/)                                                            |             [GitHub](https://github.com/cschroeter/park-ui)              |
 | [Paste](https://paste.twilio.design/)                                                      |              [GitHub](https://github.com/twilio-labs/paste)              |
 | [PatternFly](https://www.patternfly.org/)                                                  |            [GitHub](https://github.com/patternfly/patternfly)            |

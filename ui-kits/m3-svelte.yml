@@ -1,0 +1,14 @@
+ai:
+  - type: LLMs.txt
+    url: https://ktibow.github.io/m3-svelte/llms.txt
+description: The home of Material 3 Svelte, a library for the M3 design system,
+  with components, animations, and theming.
+frameworks:
+  - Svelte
+homepage: https://ktibow.github.io/m3-svelte/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/579529034/775ed9e9-6b63-4931-ad4e-08d891d2cd93
+name: M3 Svelte
+repository: https://github.com/KTibow/m3-svelte
+styling: CSS

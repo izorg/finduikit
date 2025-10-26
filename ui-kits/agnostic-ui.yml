@@ -1,0 +1,10 @@
+description: AgnosticUI — One branded theme…all the frameworks.
+frameworks:
+  - Angular
+  - React
+  - Svelte
+  - Vue
+homepage: https://www.agnosticui.com/
+name: AgnosticUI
+repository: https://github.com/AgnosticUI/agnosticui
+styling: CSS
