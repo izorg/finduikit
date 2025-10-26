@@ -4,6 +4,7 @@ frameworks:
   - React
 homepage: https://tremor.so/
 image:
+  fit: cover
   src: https://repository-images.githubusercontent.com/777529312/e4d94a6c-d8ca-4e5e-8123-2da5c7d87007
 name: Tremor
 repository: https://github.com/tremorlabs/tremor
