@@ -20,7 +20,7 @@ Built with:
 | [7.css](https://khang-nd.github.io/7.css/)                                                 |               [GitHub](https://github.com/khang-nd/7.css)                |
 | [98.css](https://jdan.github.io/98.css/)                                                   |                 [GitHub](https://github.com/jdan/98.css)                 |
 | [9ui](https://www.9ui.dev/)                                                                |               [GitHub](https://github.com/borabaloglu/9ui)               |
-| [AgnosticUI](https://www.agnosticui.com/)                                                  |            [GitHub](https://github.com/agnosticui/agnosticui)            |
+| [AgnosticUI](https://www.agnosticui.com/)                                                  |            [GitHub](https://github.com/AgnosticUI/agnosticui)            |
 | [Amplify UI](https://ui.docs.amplify.aws/)                                                 |           [GitHub](https://github.com/aws-amplify/amplify-ui)            |
 | [Angular Material](https://material.angular.io/)                                           |             [GitHub](https://github.com/angular/components)              |
 | [Angular Primitives](https://angularprimitives.com/)                                       |         [GitHub](https://github.com/ng-primitives/ng-primitives)         |

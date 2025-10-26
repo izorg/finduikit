@@ -1,4 +1,6 @@
-description: AgnosticUI — One branded theme…all the frameworks.
+description: "AgnosticUI is a set of UI primitives that start their lives in
+  clean HTML and CSS. These standards compliant components are then copied to
+  our framework implementations in: React, Vue 3, Angular, and Svelte."
 frameworks:
   - Angular
   - React

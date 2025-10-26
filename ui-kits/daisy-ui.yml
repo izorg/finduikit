@@ -5,7 +5,8 @@ description: Tailwind CSS Components Library for 2026 - Tailwind CSS components
   examples, Tailwind themes and Tailwind blocks for fast UI development
 frameworks: []
 homepage: https://daisyui.com/
-image: null
+image:
+  src: https://repository-images.githubusercontent.com/316836816/8669468a-cf7c-4c72-927e-2099df444eed
 name: daisyUI
 repository: https://github.com/saadeghi/daisyui
 styling: Tailwind CSS
