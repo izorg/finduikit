@@ -4,7 +4,7 @@
       "version": "21"
     },
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "22"
+      "version": "24"
     }
   },
   "forwardPorts": [8088, 9150],
