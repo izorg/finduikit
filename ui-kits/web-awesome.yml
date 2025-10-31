@@ -2,6 +2,9 @@ description: Build better with Web Awesome, the biggest open-source library of
   meticulously designed, highly customizable, and framework-agnostic UI
   components.
 homepage: https://webawesome.com/
+image:
+  fit: cover
+  src: https://webawesome.com/assets/images/open-graph/default.png
 name: Web Awesome
 repository: https://github.com/shoelace-style/webawesome
 styling: CSS
