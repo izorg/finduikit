@@ -10780,8 +10780,8 @@ __metadata:
     firebase-admin: "npm:13.5.0"
     firebase-tools: "npm:14.23.0"
     fuse.js: "npm:7.1.0"
-    globals: "npm:16.4.0"
-    graphql: "npm:16.11.0"
+    globals: "npm:16.5.0"
+    graphql: "npm:16.12.0"
     knip: "npm:5.66.4"
     linkify-plugin-mention: "npm:4.3.2"
     linkify-react: "npm:4.3.2"
@@ -10795,7 +10795,7 @@ __metadata:
     prettier: "npm:3.6.2"
     react: "npm:19.2.0"
     react-dom: "npm:19.2.0"
-    simple-icons: "npm:15.18.0"
+    simple-icons: "npm:15.19.0"
     stylelint: "npm:16.25.0"
     stylelint-config-css-modules: "npm:4.5.1"
     stylelint-config-standard: "npm:39.0.1"
@@ -11427,10 +11427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:16.4.0, globals@npm:^16.4.0":
-  version: 16.4.0
-  resolution: "globals@npm:16.4.0"
-  checksum: 10/1627a9f42fb4c82d7af6a0c8b6cd616e00110908304d5f1ddcdf325998f3aed45a4b29d8a1e47870f328817805263e31e4f1673f00022b9c2b210552767921cf
+"globals@npm:16.5.0":
+  version: 16.5.0
+  resolution: "globals@npm:16.5.0"
+  checksum: 10/f9e8a2a13f50222c127030a619e283e7bbfe32966316bdde0715af1d15a7e40cb9c24ff52cad59671f97762ed8b515353c2f8674f560c63d9385f19ee26735a6
   languageName: node
   linkType: hard
 
@@ -11445,6 +11445,13 @@ __metadata:
   version: 15.15.0
   resolution: "globals@npm:15.15.0"
   checksum: 10/7f561c87b2fd381b27fc2db7df8a4ea7a9bb378667b8a7193e61fd2ca3a876479174e2a303a74345fbea6e1242e16db48915c1fd3bf35adcf4060a795b425e18
+  languageName: node
+  linkType: hard
+
+"globals@npm:^16.4.0":
+  version: 16.4.0
+  resolution: "globals@npm:16.4.0"
+  checksum: 10/1627a9f42fb4c82d7af6a0c8b6cd616e00110908304d5f1ddcdf325998f3aed45a4b29d8a1e47870f328817805263e31e4f1673f00022b9c2b210552767921cf
   languageName: node
   linkType: hard
 
@@ -11641,10 +11648,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:16.11.0":
-  version: 16.11.0
-  resolution: "graphql@npm:16.11.0"
-  checksum: 10/e3e1633d0b464bbb3fa41283fae938bd3bac801c350555b3f1a129d99fb3cfe157fa69c1389229dba902731942eb08bdea4b29f1271965feee8779576b26ef01
+"graphql@npm:16.12.0":
+  version: 16.12.0
+  resolution: "graphql@npm:16.12.0"
+  checksum: 10/e299bc97cca178e549c8c1ed4cb164f631f07be987d3657f76cdf18c0250040cc0d456d4b6d41c87b855cac97b15a62ed345557527efcb0546492895a893bb87
   languageName: node
   linkType: hard
 
@@ -17548,10 +17555,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:15.18.0":
-  version: 15.18.0
-  resolution: "simple-icons@npm:15.18.0"
-  checksum: 10/e6f025fdbb88e6626e4a9ae4c555b3295144b98156fe7d68d44bb0224ee8f51729d7ea398359c76742e29b11d306218fdb213fb5cdfd6a50d6d6a97f986fd58e
+"simple-icons@npm:15.19.0":
+  version: 15.19.0
+  resolution: "simple-icons@npm:15.19.0"
+  checksum: 10/d834f9681b846488d9668a9fcfe53f82daa2073babd66290d0dc8e3002733fd0eb88476cb2bf06307866325d4e621a4f4545becae42a80058007ee1dcc09d1b7
   languageName: node
   linkType: hard
 
