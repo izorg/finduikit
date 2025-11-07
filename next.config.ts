@@ -9,9 +9,8 @@ const withBundleAnalyzer = bundleAnalyzer({
 const nextConfig: NextConfig = {
   cacheComponents: true,
   experimental: {
-    optimizePackageImports: ["@radix-ui/themes", "radix-ui"],
+    turbopackFileSystemCacheForDev: true,
     typedEnv: true,
-    useCache: true,
   },
   images: {
     unoptimized: true,
