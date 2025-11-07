@@ -1,14 +1,13 @@
 dependencies:
   - React Aria
-description: Intent UI is a chill set of React components, built on top of React
-  Aria Components and Tailwind CSS. Easy to customize and just copy & paste into
-  your React projects.
+description: Intent UI lets developers copy-paste fully-accessible React
+  components, tailor them with Tailwind, and ship production UIs in minutes.
 frameworks:
   - React
 homepage: https://intentui.com/
 image:
   fit: cover
-  src: https://repository-images.githubusercontent.com/824433284/db217106-dc6c-4204-a46b-1f29fecd7629
+  src: https://intentui.com/opengraph-image.png?93de8677d20fb6c5
 name: Intent UI
 repository: https://github.com/irsyadadl/intentui
 styling: Tailwind CSS
