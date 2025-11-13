@@ -3666,14 +3666,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nodejs-loaders/css-module@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@nodejs-loaders/css-module@npm:1.1.0"
+"@nodejs-loaders/chain-utils@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@nodejs-loaders/chain-utils@npm:1.0.0"
+  checksum: 10/3ad3935ef40871e3ae546b055c8b4279c0b1f6827733a221bf16bab61ec222683093ca11e2582f88e87dd80dc9a4b0a1927f39e98b91163467da1dd77cd3e14a
+  languageName: node
+  linkType: hard
+
+"@nodejs-loaders/css-module@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@nodejs-loaders/css-module@npm:1.2.0"
   dependencies:
+    "@nodejs-loaders/chain-utils": "npm:^1.0.0"
     "@nodejs-loaders/parse-filename": "npm:1.0.0"
   peerDependencies:
     postcss: ~8.4.38
-  checksum: 10/df698ed46c51e06e2e88aff91819fbcfb098257ca821601822341c0018da80970cb51f40a2939ff17ef8a2ad090a2224000a8cf9c23f1340b262b3bd1ac9e353
+  checksum: 10/e366f5269fa8f958ac06a0913785d0749b4ac989e538647fdfdd38bdf25c734ee21b3824fa4165d2d498509ea45d1818b9c1e782c531d5eb69c416aa2e3880b6
   languageName: node
   linkType: hard
 
@@ -10876,7 +10884,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:16.0.3"
     "@next/eslint-plugin-next": "npm:16.0.3"
     "@next/third-parties": "npm:16.0.3"
-    "@nodejs-loaders/css-module": "npm:1.1.0"
+    "@nodejs-loaders/css-module": "npm:1.2.0"
     "@radix-ui/react-compose-refs": "npm:1.1.2"
     "@radix-ui/themes": "npm:3.2.1"
     "@sentry/nextjs": "npm:10.25.0"
@@ -10902,7 +10910,7 @@ __metadata:
     eslint-plugin-unicorn: "npm:62.0.0"
     eslint-plugin-yml: "npm:1.19.0"
     firebase-admin: "npm:13.6.0"
-    firebase-tools: "npm:14.24.2"
+    firebase-tools: "npm:14.25.0"
     fuse.js: "npm:7.1.0"
     globals: "npm:16.5.0"
     graphql: "npm:16.12.0"
@@ -10961,9 +10969,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:14.24.2":
-  version: 14.24.2
-  resolution: "firebase-tools@npm:14.24.2"
+"firebase-tools@npm:14.25.0":
+  version: 14.25.0
+  resolution: "firebase-tools@npm:14.25.0"
   dependencies:
     "@apphosting/build": "npm:^0.1.6"
     "@apphosting/common": "npm:^0.0.8"
@@ -11027,7 +11035,7 @@ __metadata:
     sql-formatter: "npm:^15.3.0"
     stream-chain: "npm:^2.2.4"
     stream-json: "npm:^1.7.3"
-    superstatic: "npm:^9.2.0"
+    superstatic: "npm:^10.0.0"
     tar: "npm:^6.1.11"
     tcp-port-used: "npm:^1.0.2"
     tmp: "npm:^0.2.3"
@@ -11043,7 +11051,7 @@ __metadata:
     zod-to-json-schema: "npm:^3.24.5"
   bin:
     firebase: lib/bin/firebase.js
-  checksum: 10/afbc94c67913075d878ef981029a635ddcd6051343d171f9098a5371430abfdbc49e7351a8312116cd8bcb6ed928bccd7915153e2e9cdcdb12be480176a99664
+  checksum: 10/4379008dfccc37d418bb522ab8ed1a9c415d2203060b90001ef42bcb09169efe055c26d36e7a48278fae2bfaca41f1fa5f352e58b6919b07a56b5b59842ecc5c
   languageName: node
   linkType: hard
 
@@ -18509,9 +18517,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"superstatic@npm:^9.2.0":
-  version: 9.2.0
-  resolution: "superstatic@npm:9.2.0"
+"superstatic@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "superstatic@npm:10.0.0"
   dependencies:
     basic-auth-connect: "npm:^1.1.0"
     commander: "npm:^10.0.0"
@@ -18536,7 +18544,7 @@ __metadata:
       optional: true
   bin:
     superstatic: lib/bin/server.js
-  checksum: 10/35bc84f07a5677046baa7c2a15c6da69d48f539fb807ead8bbabefa6d48882cf98388ad5420397bb07c86e8628d2d6d71957ec4d4a3b833512ebdfb01862fb8b
+  checksum: 10/9632820e2544cb85515f65a5f7d6dd7168f8b128221c93f3f980e35a808611116c9a2cc1536db8af94a5160e15d625cb18ed2bd3262123b5bd4785653003e7ec
   languageName: node
   linkType: hard
 
