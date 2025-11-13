@@ -5,7 +5,7 @@ frameworks:
 homepage: https://build.washingtonpost.com/
 image:
   fit: cover
-  src: https://repository-images.githubusercontent.com/415925937/1b78c5cb-88bf-42a0-b595-6367d4da5317
+  src: https://build.washingtonpost.com/img/card.png
 name: WPDS
 repository: https://github.com/washingtonpost/wpds-ui-kit
 storybook: https://wpds-ui-kit-storybook.preview.now.washingtonpost.com/

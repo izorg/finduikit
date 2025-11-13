@@ -1,8 +1,6 @@
 dependencies:
   - Bootstrap
-description: BootstrapVue provides one of the most comprehensive implementations
-  of Bootstrap v4 for Vue.js. With extensive and automated WAI-ARIA
-  accessibility markup.
+description: MOVED to https://github.com/bootstrap-vue-next/bootstrap-vue-next
 frameworks:
   - Vue
 homepage: https://bootstrap-vue.github.io/bootstrap-vue/
