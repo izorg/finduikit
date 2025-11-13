@@ -19,7 +19,7 @@ import globals from "globals";
 import * as ts from "typescript-eslint";
 
 /**
- * Run `npx @eslint/config-inspector` to visualise the config
+ * Run `yarn dlx @eslint/config-inspector` to visualise the config
  */
 export default defineConfig(
   gitignore(),
@@ -149,7 +149,7 @@ export default defineConfig(
   },
   {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
-    ignores: ["**/*.css", "**/*.json", "**/*.md"],
+    files: ["ui-kits/*.yml"],
     name: "json-schema",
     rules: {
       "json-schema-validator/no-invalid": [
