@@ -39,7 +39,7 @@ Built with:
 | [Blueprint](https://blueprintjs.com/)                                                      |             [GitHub](https://github.com/palantir/blueprint)              |
 | [Bold](https://bold.bridge.ufsc.br/)                                                       |           [GitHub](https://github.com/laboratoriobridge/bold)            |
 | [Boostrap](https://getbootstrap.com/)                                                      |               [GitHub](https://github.com/twbs/bootstrap)                |
-| [BootstrapVue](https://bootstrap-vue.github.io/bootstrap-vue/)                             |         [GitHub](https://github.com/bootstrap-vue/bootstrap-vue)         |
+| [BootstrapVueNext](https://bootstrap-vue-next.github.io/bootstrap-vue-next/)               |    [GitHub](https://github.com/bootstrap-vue-next/bootstrap-vue-next)    |
 | [Braid](https://seek-oss.github.io/braid-design-system)                                    |        [GitHub](https://github.com/seek-oss/braid-design-system)         |
 | [Buefy](https://buefy.org/)                                                                |                 [GitHub](https://github.com/buefy/buefy)                 |
 | [Bulma](https://bulma.io/)                                                                 |                [GitHub](https://github.com/jgthms/bulma)                 |
@@ -115,6 +115,7 @@ Built with:
 | [Pharos](https://pharos.jstor.org/)                                                        |                [GitHub](https://github.com/ithaka/pharos)                |
 | [Pico](https://picocss.com/)                                                               |                [GitHub](https://github.com/picocss/pico)                 |
 | [PIE](https://pie.design/)                                                                 |             [GitHub](https://github.com/GetJobber/atlantis)              |
+| [Playbook](https://playbook.powerapp.cloud/)                                               |             [GitHub](https://github.com/powerhome/playbook)              |
 | [Polaris](https://polaris.shopify.com/)                                                    |               [GitHub](https://github.com/Shopify/polaris)               |
 | [Porsche](https://designsystem.porsche.com/)                                               | [GitHub](https://github.com/porsche-design-system/porsche-design-system) |
 | [Preline UI](https://preline.co/)                                                          |         [GitHub](https://github.com/htmlstreamofficial/preline)          |

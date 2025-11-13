@@ -1,0 +1,10 @@
+dependencies:
+  - Bootstrap
+description: With BootstrapVueNext you can build fast, responsive, and ARIA
+  accessible projects on the web using Vue.js and Bootstrap v5.
+frameworks:
+  - Vue
+homepage: https://bootstrap-vue-next.github.io/bootstrap-vue-next/
+name: BootstrapVueNext
+repository: https://github.com/bootstrap-vue-next/bootstrap-vue-next
+styling: Sass
