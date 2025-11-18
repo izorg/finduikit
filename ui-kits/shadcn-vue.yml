@@ -1,10 +1,15 @@
 dependencies:
   - Reka UI
-description: Beautifully designed components built with Reka UI and Tailwind CSS.
+description: A set of beautifully designed components that you can customize,
+  extend, and build on. Start here then make it your own. Open Source. Open
+  Code.
 figma: https://www.figma.com/community/file/1203061493325953101
 frameworks:
   - Vue
 homepage: https://www.shadcn-vue.com/
+image:
+  fit: cover
+  src: https://www.shadcn-vue.com/__og-image__/static/og.png
 name: shadcn/vue
 repository: https://github.com/unovue/shadcn-vue
 styling: Tailwind CSS
