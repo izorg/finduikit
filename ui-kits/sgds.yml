@@ -1,9 +1,0 @@
-description: SGDS is a frontend framework that aims to provide a beautiful
-  common visual language and user experience for visitors of Singapore
-  Government websites.
-homepage: https://www.designsystem.tech.gov.sg/
-image:
-  src: https://www.designsystem.tech.gov.sg/assets/img/logo-sgds.svg
-name: SGDS
-repository: https://github.com/GovTechSG/sgds
-styling: Sass

@@ -142,15 +142,12 @@ Built with:
 | [Sage](https://sage.kajabi.com/)                                                           |               [GitHub](https://github.com/Kajabi/sage-lib)               |
 | [Scale](https://telekom.github.io/scale/)                                                  |                [GitHub](https://github.com/telekom/scale)                |
 | [Semantic UI Next](https://next.semantic-ui.com/)                                          |         [GitHub](https://github.com/Semantic-Org/Semantic-Next)          |
-| [SGDS](https://www.designsystem.tech.gov.sg/)                                              |               [GitHub](https://github.com/GovTechSG/sgds)                |
-| [SGDS React](https://www.designsystem.tech.gov.sg/)                                        |        [GitHub](https://github.com/GovTechSG/sgds-govtech-react)         |
 | [SGDS Web Component](https://www.designsystem.tech.gov.sg/)                                |        [GitHub](https://github.com/GovTechSG/sgds-web-component)         |
 | [shadcn-svelte](https://shadcn-svelte.com/)                                                |           [GitHub](https://github.com/huntabyte/shadcn-svelte)           |
 | [shadcn/ui](https://ui.shadcn.com/)                                                        |                [GitHub](https://github.com/shadcn-ui/ui)                 |
 | [shadcn/vue](https://www.shadcn-vue.com/)                                                  |              [GitHub](https://github.com/unovue/shadcn-vue)              |
 | [Siemens iX](https://ix.siemens.io/)                                                       |                 [GitHub](https://github.com/siemens/ix)                  |
 | [Skin](https://opensource.ebay.com/evo-web/skin/)                                          |                [GitHub](https://github.com/eBay/evo-web)                 |
-| [Solid-Bootstrap](https://solid-libs.github.io/solid-bootstrap)                            |         [GitHub](https://github.com/solid-libs/solid-bootstrap)          |
 | [spartan](https://spartan.ng/)                                                             |             [GitHub](https://github.com/spartan-ng/spartan)              |
 | [Spectrum CSS](https://opensource.adobe.com/spectrum-css/)                                 |             [GitHub](https://github.com/adobe/spectrum-css)              |
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |        [GitHub](https://github.com/adobe/spectrum-web-components)        |
@@ -178,7 +175,6 @@ Built with:
 | [Vuetify](https://vuetifyjs.com/)                                                          |              [GitHub](https://github.com/vuetifyjs/vuetify)              |
 | [Wanda](https://design.wonderflow.ai/)                                                     |             [GitHub](https://github.com/wonderflow-bv/wanda)             |
 | [Web Awesome](https://webawesome.com/)                                                     |          [GitHub](https://github.com/shoelace-style/webawesome)          |
-| [Wedges](https://www.lemonsqueezy.com/wedges)                                              |              [GitHub](https://github.com/lmsqueezy/wedges)               |
 | [Welcome UI](https://www.welcome-ui.com/)                                                  |               [GitHub](https://github.com/WTTJ/welcome-ui)               |
 | [Workday Canvas Kit](https://canvas.workday.com/)                                          |             [GitHub](https://github.com/Workday/canvas-kit)              |
 | [WPDS](https://build.washingtonpost.com/)                                                  |         [GitHub](https://github.com/washingtonpost/wpds-ui-kit)          |
