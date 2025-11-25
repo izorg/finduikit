@@ -1,10 +1,5 @@
-import bundleAnalyzer from "@next/bundle-analyzer";
 import { type SentryBuildOptions, withSentryConfig } from "@sentry/nextjs";
 import { type NextConfig } from "next";
-
-const withBundleAnalyzer = bundleAnalyzer({
-  enabled: process.env.ANALYZE === "true",
-});
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
@@ -37,7 +32,4 @@ const sentryBuildOptions: SentryBuildOptions = {
   widenClientFileUpload: true,
 };
 
-export default withSentryConfig(
-  withBundleAnalyzer(nextConfig),
-  sentryBuildOptions,
-);
+export default withSentryConfig(nextConfig, sentryBuildOptions);
