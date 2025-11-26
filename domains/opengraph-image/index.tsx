@@ -1,7 +1,7 @@
 import { mdiRhombusSplit } from "@mdi/js";
 import { ImageResponse } from "next/og";
 
-import { getUiKits } from "../ui-kit/server";
+import { getUiKitFileEntries } from "../ui-kit/server";
 
 export const alt = "The image shows total amount of UI kits on the site.";
 
@@ -12,8 +12,8 @@ export const size = {
 
 export const contentType = "image/png";
 
-export const OpenGraphImage = async () => {
-  const uiKitSet = await getUiKits();
+export const OpenGraphImage = () => {
+  const total = getUiKitFileEntries().length;
 
   return new ImageResponse(
     (
@@ -43,7 +43,7 @@ export const OpenGraphImage = async () => {
             fontSize: 256,
           }}
         >
-          {uiKitSet.size}
+          {total}
         </div>
         <svg
           fill="#8145B5"

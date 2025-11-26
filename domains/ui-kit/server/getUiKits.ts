@@ -20,29 +20,29 @@ import {
   type UiKitStaticDataSchema,
 } from "../uiKitStaticDataSchema";
 
-const getUiKitFileDataEntriesFromFiles = async () => {
-  const entries = await fs.promises.readdir(
-    path.join(process.cwd(), "ui-kits"),
-    {
+export const getUiKitFileEntries = () =>
+  fs
+    .readdirSync(path.join(process.cwd(), "ui-kits"), {
       withFileTypes: true,
-    },
-  );
+    })
+    .filter((dirent) => dirent.isFile());
+
+const getUiKitFileDataEntriesFromFiles = async () => {
+  const entries = getUiKitFileEntries();
 
   return await Promise.all(
-    entries
-      .filter((dirent) => dirent.isFile())
-      .map(
-        async (dirent): Promise<[key: string, data: UiKitStaticDataSchema]> => {
-          const buffer = await fs.promises.readFile(
-            path.join(dirent.parentPath, dirent.name),
-          );
+    entries.map(
+      async (dirent): Promise<[key: string, data: UiKitStaticDataSchema]> => {
+        const buffer = await fs.promises.readFile(
+          path.join(dirent.parentPath, dirent.name),
+        );
 
-          return [
-            dirent.name,
-            uiKitStaticDataSchema.parse(parse(buffer.toString())),
-          ];
-        },
-      ),
+        return [
+          dirent.name,
+          uiKitStaticDataSchema.parse(parse(buffer.toString())),
+        ];
+      },
+    ),
   );
 };
 
