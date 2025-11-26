@@ -7,7 +7,7 @@ import { siGithub } from "simple-icons";
 import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
 
-import { AiLink } from "./AiLink";
+import { AiLinks } from "./AiLinks";
 import { FigmaLink } from "./FigmaLink";
 import { StorybookLink } from "./StorybookLink";
 import { StylingLink } from "./StylingLink";
@@ -125,7 +125,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
                 {uiKit.styling && <StylingLink styling={uiKit.styling} />}
               </Table.Cell>
               <Table.Cell justify="center">
-                {uiKit.ai && <AiLink ai={uiKit.ai} />}
+                {uiKit.ai && <AiLinks ai={uiKit.ai} />}
               </Table.Cell>
               <Table.Cell className={styles.rightCell} justify="center">
                 {uiKit.webComponents && (
