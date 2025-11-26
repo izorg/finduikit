@@ -11,7 +11,7 @@ import { siFigma, siStorybook } from "simple-icons";
 
 import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
-import { getUiKitFileDataEntriesFromFiles } from "../../ui-kit/server";
+import { getUiKits } from "../../ui-kit/server";
 import { StatCard } from "../StatCard";
 import { SupportButton } from "../SupportButton";
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export const HomePage = async () => {
-  const uiKitEntries = getUiKitFileDataEntriesFromFiles();
+  const uiKitSet = await getUiKits();
 
   return (
     <Container size="3">
@@ -74,27 +74,27 @@ export const HomePage = async () => {
           <StatCard>
             <StatCard.Icon color="purple" path={mdiRhombusSplit} />
             <StatCard.Label>Total UI kits</StatCard.Label>
-            <StatCard.Stat>{uiKitEntries.length}</StatCard.Stat>
+            <StatCard.Stat>{uiKitSet.size}</StatCard.Stat>
           </StatCard>
           <StatCard>
             <StatCard.Icon color="ruby" path={siStorybook.path} />
             <StatCard.Label>Storybooks</StatCard.Label>
             <StatCard.Stat>
-              {uiKitEntries.filter(([, item]) => item.storybook).length}
+              {[...uiKitSet].filter((item) => item.storybook).length}
             </StatCard.Stat>
           </StatCard>
           <StatCard>
             <StatCard.Icon color="crimson" path={siFigma.path} />
             <StatCard.Label>Figma files</StatCard.Label>
             <StatCard.Stat>
-              {uiKitEntries.filter(([, item]) => item.figma).length}
+              {[...uiKitSet].filter((item) => item.figma).length}
             </StatCard.Stat>
           </StatCard>
           <StatCard>
             <StatCard.Icon color="crimson" path={mdiCreation} />
             <StatCard.Label>Build with AI</StatCard.Label>
             <StatCard.Stat>
-              {uiKitEntries.filter(([, item]) => item.ai).length}
+              {[...uiKitSet].filter((item) => item.ai).length}
             </StatCard.Stat>
           </StatCard>
         </Flex>
