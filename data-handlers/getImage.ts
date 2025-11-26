@@ -33,7 +33,7 @@ export const getImage = ({
 }: {
   data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
-  homepage: HTMLElement;
+  homepage?: HTMLElement;
 }): UiKitStaticDataSchema["image"] => {
   if (preservedImages.has(data.name)) {
     return data.image;
@@ -50,7 +50,7 @@ export const getImage = ({
     ? undefined // skip auto generated GitHub OpenGraph images
     : github?.openGraphImageUrl;
 
-  const homepageOgImage = getHomepageOgImage(homepage, data);
+  const homepageOgImage = homepage && getHomepageOgImage(homepage, data);
 
   const src = gitHubImage ?? homepageOgImage;
 

@@ -10,16 +10,18 @@ const urlHeaders: Partial<Record<string, HeadersInit>> = {
 
 export const fetchHomepageData = async (
   homepage: string,
-): Promise<HTMLElement> => {
+): Promise<HTMLElement | undefined> => {
   const response = await fetch(homepage, {
     headers: urlHeaders[homepage],
   });
 
-  const html = await response.text();
-
   if (response.status > 200) {
     console.log(response.status, response.statusText, homepage);
+
+    return;
   }
+
+  const html = await response.text();
 
   return parse(html);
 };
