@@ -27,24 +27,17 @@ export const getUiKitFileEntries = () =>
     })
     .filter((dirent) => dirent.isFile());
 
-const getUiKitFileDataEntriesFromFiles = async () => {
-  const entries = getUiKitFileEntries();
+export const getUiKitFileDataEntriesFromFiles = () =>
+  getUiKitFileEntries().map(
+    (dirent): [key: string, data: UiKitStaticDataSchema] => {
+      const buffer = fs.readFileSync(path.join(dirent.parentPath, dirent.name));
 
-  return await Promise.all(
-    entries.map(
-      async (dirent): Promise<[key: string, data: UiKitStaticDataSchema]> => {
-        const buffer = await fs.promises.readFile(
-          path.join(dirent.parentPath, dirent.name),
-        );
-
-        return [
-          dirent.name,
-          uiKitStaticDataSchema.parse(parse(buffer.toString())),
-        ];
-      },
-    ),
+      return [
+        dirent.name,
+        uiKitStaticDataSchema.parse(parse(buffer.toString())),
+      ];
+    },
   );
-};
 
 const uiKitConverter: FirestoreDataConverter<UiKitDynamicDataSchema, never> = {
   fromFirestore: (snapshot) => {
