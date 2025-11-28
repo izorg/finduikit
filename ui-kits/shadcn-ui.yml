@@ -1,4 +1,6 @@
 ai:
+  - type: LLMs.txt
+    url: https://ui.shadcn.com/llms.txt
   - type: MCP
     url: https://ui.shadcn.com/docs/mcp
 description: A set of beautifully-designed, accessible components and a code

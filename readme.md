@@ -26,6 +26,7 @@ Built with:
 | [Angular Primitives](https://angularprimitives.com/)                                       |         [GitHub](https://github.com/ng-primitives/ng-primitives)         |
 | [Ant Design](https://ant.design/)                                                          |            [GitHub](https://github.com/ant-design/ant-design)            |
 | [Ant Design Vue](https://antdv.com/)                                                       |         [GitHub](https://github.com/vueComponent/ant-design-vue)         |
+| [Apps SDK UI](https://openai.github.io/apps-sdk-ui/)                                       |             [GitHub](https://github.com/openai/apps-sdk-ui)              |
 | [Ariakit](https://ariakit.org/)                                                            |               [GitHub](https://github.com/ariakit/ariakit)               |
 | [Ark UI](https://ark-ui.com/)                                                              |                [GitHub](https://github.com/chakra-ui/ark)                |
 | [Atlantis](https://atlantis.getjobber.com/)                                                |             [GitHub](https://github.com/GetJobber/atlantis)              |
@@ -104,7 +105,6 @@ Built with:
 | [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/)                                 |        [GitHub](https://github.com/valor-software/ngx-bootstrap)         |
 | [NSW](https://designsystem.nsw.gov.au/)                                                    |        [GitHub](https://github.com/digitalnsw/nsw-design-system)         |
 | [Nuxt UI](https://ui.nuxt.com/)                                                            |                   [GitHub](https://github.com/nuxt/ui)                   |
-| [Oku Primitives](https://primitives.oku-ui.com/)                                           |              [GitHub](https://github.com/oku-ui/primitives)              |
 | [Orbit](https://orbit.kiwi/)                                                               |                [GitHub](https://github.com/kiwicom/orbit)                |
 | [Palette](https://palette.artsy.net/)                                                      |                [GitHub](https://github.com/artsy/palette)                |
 | [PaperCSS](https://www.getpapercss.com/)                                                   |              [GitHub](https://github.com/papercss/papercss)              |
@@ -161,7 +161,6 @@ Built with:
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                [GitHub](https://github.com/ITS-HCD/nysds)                |
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |              [GitHub](https://github.com/TDRA-ae/aegov-dls)              |
 | [Tremor](https://tremor.so/)                                                               |              [GitHub](https://github.com/tremorlabs/tremor)              |
-| [UI Kitten](https://akveo.github.io/react-native-ui-kitten/)                               |        [GitHub](https://github.com/akveo/react-native-ui-kitten)         |
 | [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |            [GitHub](https://github.com/SAP/ui5-webcomponents)            |
 | [UIkit](https://getuikit.com/)                                                             |                 [GitHub](https://github.com/uikit/uikit)                 |
 | [USWDS](https://designsystem.digital.gov/)                                                 |                 [GitHub](https://github.com/uswds/uswds)                 |

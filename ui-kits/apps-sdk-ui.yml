@@ -1,0 +1,8 @@
+description: Apps SDK UI is a design system tailored for ChatGPT Apps SDK, providing styling foundations with Tailwind, CSS variable design tokens, and a library of well-crafted, accessible components.
+frameworks:
+  - React
+homepage: https://openai.github.io/apps-sdk-ui/
+name: Apps SDK UI
+repository: https://github.com/openai/apps-sdk-ui
+storybook: https://openai.github.io/apps-sdk-ui/
+styling: Tailwind CSS
