@@ -44,26 +44,48 @@ const updateUiKit = async (dirent: Dirent) => {
     fetchHomepageData(data.homepage),
   ]);
 
-  if (
-    githubResult.status === "rejected" ||
-    homepageResult.status === "rejected"
-  ) {
-    console.log(`❌ ${name}`);
+  // const allFullfilled =
+  //   githubResult.status === "fulfilled" &&
+  //   homepageResult.status === "fulfilled";
 
-    return;
+  // if (
+  //   githubResult.status === "rejected" ||
+  //   homepageResult.status === "rejected"
+  // ) {
+  //   console.log(`❌ ${name}`);
+  //
+  //   return;
+  // }
+
+  // const { value: github } = githubResult;
+  // const { value: homepage } = homepageResult;
+
+  let outputData = globalThis.structuredClone(data);
+
+  if (
+    githubResult.status === "fulfilled" &&
+    homepageResult.status === "fulfilled"
+  ) {
+    const { value: github } = githubResult;
+    const { value: homepage } = homepageResult;
+
+    outputData = {
+      ...outputData,
+      description: getDescription({ data, github, homepage }),
+      image: getImage({ data, github, homepage }),
+    };
   }
 
-  const { value: github } = githubResult;
-  const { value: homepage } = homepageResult;
+  if (githubResult.status === "fulfilled") {
+    const { value: github } = githubResult;
 
-  const output = stringifyYaml(
-    uiKitStaticDataSchema.parse({
-      ...data,
-      description: getDescription({ data, github, homepage }),
+    outputData = {
+      ...outputData,
       frameworks: getFrameworks({ data, github }),
-      image: getImage({ data, github, homepage }),
-    }),
-  );
+    };
+  }
+
+  const output = stringifyYaml(uiKitStaticDataSchema.parse(outputData));
 
   const lintResults = await eslint.lintText(output, { filePath });
   const fixedOutput = lintResults[0].output ?? output;
@@ -74,7 +96,18 @@ const updateUiKit = async (dirent: Dirent) => {
 
   await fs.promises.writeFile(filePath, formattedOutput);
 
-  console.log(`✅ ${name}`);
+  const rejectedDataSources = [
+    ["GitHub", githubResult.status],
+    ["Homepage", homepageResult.status],
+  ]
+    .filter(([, status]) => status === "rejected")
+    .map(([dataSource]) => dataSource);
+
+  if (rejectedDataSources.length > 0) {
+    console.log(`❌ ${name}: ${rejectedDataSources.join(", ")}`);
+  } else {
+    console.log(`✅ ${name}`);
+  }
 };
 
 const checkUiKits = async () => {
