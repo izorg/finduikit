@@ -32,7 +32,7 @@ export default defineConfig(
   {
     extends: [
       js.configs.recommended,
-      ts.configs.recommended,
+      ts.configs.strictTypeChecked,
       compat.configs["flat/recommended"],
       jsxA11y.flatConfigs.recommended,
       importPlugin.flatConfigs.recommended,
@@ -49,6 +49,7 @@ export default defineConfig(
     languageOptions: {
       globals: globals.node,
       parserOptions: {
+        projectService: true,
         warnOnUnsupportedTypeScriptVersion: false,
       },
     },

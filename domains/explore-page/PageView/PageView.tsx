@@ -22,10 +22,6 @@ export const PageView = (props: PageViewProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!uiKits) {
-      return;
-    }
-
     ref.current?.scrollTo({ top: 0 });
   }, [uiKits]);
 

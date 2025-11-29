@@ -1,5 +1,4 @@
 import { Badge, Tooltip } from "@radix-ui/themes";
-import { siWebcomponentsdotorg } from "simple-icons";
 
 import { SvgIcon } from "../../icon";
 import {
@@ -20,9 +19,7 @@ export const WebComponentsBadge = ({ webComponents }: WebComponentsProps) => (
         rel="noreferrer"
         target="_blank"
       >
-        <SvgIcon
-          path={webComponentsIcons[webComponents] ?? siWebcomponentsdotorg.path}
-        />
+        <SvgIcon path={webComponentsIcons[webComponents]} />
         {webComponents}
       </a>
     </Badge>

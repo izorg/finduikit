@@ -82,7 +82,7 @@ const checkUiKits = async () => {
   try {
     const buffer = await fs.promises.readFile(checkCacheFile);
 
-    checkCache = JSON.parse(buffer.toString());
+    checkCache = JSON.parse(buffer.toString()) as Record<string, string>;
   } catch {
     checkCache = {};
   }
@@ -126,10 +126,10 @@ const updateReadmeTable = async () => {
 
   const uiKits = await Promise.all(entries.map((dirent) => getUiKit(dirent)));
 
-  const nameCompare = new Intl.Collator("en").compare;
+  const collator = new Intl.Collator("en");
 
   const tableRows = uiKits
-    .toSorted((a, b) => nameCompare(a.name, b.name))
+    .toSorted((a, b) => collator.compare(a.name, b.name))
     .map(
       (uiKit) =>
         `| [${uiKit.name}](${uiKit.homepage}) | [GitHub](${uiKit.repository}) |`,

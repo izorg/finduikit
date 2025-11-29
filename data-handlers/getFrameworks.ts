@@ -3,7 +3,8 @@ import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
-const frameworkCompare = new Intl.Collator("en").compare;
+const collator = new Intl.Collator("en");
+const frameworkCompare = (a: string, b: string) => collator.compare(a, b);
 
 const frameworkTopicMap = new Map<string, Framework>([
   ["angular", Framework.Angular],

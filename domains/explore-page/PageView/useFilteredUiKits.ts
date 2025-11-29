@@ -7,7 +7,8 @@ import { Sorting, useSorting } from "../../sorting";
 import { type UiKit } from "../../ui-kit";
 import { useUnstyled } from "../../unstyled";
 
-const nameCompare = new Intl.Collator("en").compare;
+const collator = new Intl.Collator("en");
+const nameCompare = (a: string, b: string) => collator.compare(a, b);
 
 const sorters: Record<Sorting, (a: UiKit, b: UiKit) => number> = {
   [Sorting.ByName]: (a, b) => nameCompare(a.name, b.name),

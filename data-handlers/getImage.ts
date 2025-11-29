@@ -39,7 +39,7 @@ export const getImage = ({
     return data.image;
   }
 
-  if (data?.image === null) {
+  if (data.image === null) {
     // eslint-disable-next-line unicorn/no-null -- null is used to indicate no image
     return null;
   }

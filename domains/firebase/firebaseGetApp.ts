@@ -1,4 +1,4 @@
-import admin from "firebase-admin";
+import admin, { type ServiceAccount } from "firebase-admin";
 import { type App, initializeApp } from "firebase-admin/app";
 
 declare global {
@@ -9,7 +9,7 @@ export const firebaseGetApp = () => {
   if (!globalThis.app) {
     globalThis.app = initializeApp({
       credential: admin.credential.cert(
-        JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY),
+        JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY) as ServiceAccount,
       ),
     });
   }

@@ -1,3 +1,5 @@
+import type { GraphQLError } from "graphql";
+
 import type {
   GetGitHubRepositoryQuery,
   GetGitHubRepositoryQueryVariables,
@@ -52,13 +54,15 @@ export const fetchGitHubRepositoryData = async (url: string) => {
     method: "POST",
   });
 
-  const json = await response.json();
+  const json = (await response.json()) as
+    | { data: GetGitHubRepositoryQuery }
+    | { errors: ReadonlyArray<GraphQLError> };
 
-  if (json.errors) {
+  if ("errors" in json) {
     throw new Error(JSON.stringify(json.errors));
   }
 
-  const data = json.data as GetGitHubRepositoryQuery;
+  const data = json.data;
 
   if (data.resource?.__typename === "Repository") {
     return data.resource;
