@@ -1,4 +1,4 @@
-import { type HTMLElement, parse } from "node-html-parser";
+import { parse } from "node-html-parser";
 
 const urlHeaders: Partial<Record<string, HeadersInit>> = {
   "https://canvas.workday.com/": {
@@ -8,17 +8,15 @@ const urlHeaders: Partial<Record<string, HeadersInit>> = {
   },
 };
 
-export const fetchHomepageData = async (
-  homepage: string,
-): Promise<HTMLElement | undefined> => {
+export const fetchHomepageData = async (homepage: string) => {
   const response = await fetch(homepage, {
     headers: urlHeaders[homepage],
   });
 
   if (response.status > 200) {
-    console.log(response.status, response.statusText, homepage);
-
-    return;
+    throw new Error(
+      `Failed to fetch ${homepage}: ${String(response.status)} ${response.statusText}`,
+    );
   }
 
   const html = await response.text();

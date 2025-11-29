@@ -35,23 +35,26 @@ const getUiKitFileEntries = async () => {
 
 const updateUiKit = async (dirent: Dirent) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
+  const { name } = path.parse(dirent.name);
 
   const data = await getUiKit(dirent);
 
-  let github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
-  let homepage: Awaited<ReturnType<typeof fetchHomepageData>>;
+  const [githubResult, homepageResult] = await Promise.allSettled([
+    fetchGitHubRepositoryData(data.repository),
+    fetchHomepageData(data.homepage),
+  ]);
 
-  try {
-    [github, homepage] = await Promise.all([
-      fetchGitHubRepositoryData(data.repository),
-      fetchHomepageData(data.homepage),
-    ]);
-  } catch (error) {
-    console.log(`❌ ${path.parse(dirent.name).name}`);
-    console.error(error);
+  if (
+    githubResult.status === "rejected" ||
+    homepageResult.status === "rejected"
+  ) {
+    console.log(`❌ ${name}`);
 
     return;
   }
+
+  const { value: github } = githubResult;
+  const { value: homepage } = homepageResult;
 
   const output = stringifyYaml(
     uiKitStaticDataSchema.parse({
@@ -71,7 +74,7 @@ const updateUiKit = async (dirent: Dirent) => {
 
   await fs.promises.writeFile(filePath, formattedOutput);
 
-  console.log(`✅ ${path.parse(dirent.name).name}`);
+  console.log(`✅ ${name}`);
 };
 
 const checkUiKits = async () => {
