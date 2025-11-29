@@ -1,6 +1,5 @@
-description: Canvas is an open source design system that consists of reusable UI
-  elements, resources, and guidelines that enable teams to create scalable,
-  unified experiences.
+description: Development kits to implement UI following the Workday Canvas
+  Design System (https://canvas.workday.com/). See our Component Storybook -
 frameworks:
   - React
 homepage: https://canvas.workday.com/
