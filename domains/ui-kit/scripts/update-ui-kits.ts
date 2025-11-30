@@ -116,9 +116,9 @@ const checkUiKits = async () => {
   let checkCache: Record<string, string>;
 
   try {
-    const buffer = await fs.promises.readFile(checkCacheFile);
+    const content = await fs.promises.readFile(checkCacheFile, "utf8");
 
-    checkCache = JSON.parse(buffer.toString()) as Record<string, string>;
+    checkCache = JSON.parse(content) as Record<string, string>;
   } catch {
     checkCache = {};
   }

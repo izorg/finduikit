@@ -11,7 +11,7 @@ import { siFigma, siStorybook } from "simple-icons";
 
 import { Footer } from "../../footer";
 import { SvgIcon } from "../../icon";
-import { getUiKits } from "../../ui-kit/server";
+import { getUiKitFileDataEntriesFromFiles } from "../../ui-kit/server";
 import { StatCard } from "../StatCard";
 import { SupportButton } from "../SupportButton";
 
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   title,
 };
 
-export const HomePage = async () => {
-  const uiKitSet = await getUiKits();
+export const HomePage = () => {
+  const uiKitEntries = getUiKitFileDataEntriesFromFiles();
 
   return (
     <Container size="3">
@@ -84,27 +84,27 @@ export const HomePage = async () => {
               <StatCard>
                 <StatCard.Icon color="purple" path={mdiRhombusSplit} />
                 <StatCard.Label>Total UI kits</StatCard.Label>
-                <StatCard.Stat>{uiKitSet.size}</StatCard.Stat>
+                <StatCard.Stat>{uiKitEntries.length}</StatCard.Stat>
               </StatCard>
               <StatCard>
                 <StatCard.Icon color="ruby" path={siStorybook.path} />
                 <StatCard.Label>Storybooks</StatCard.Label>
                 <StatCard.Stat>
-                  {[...uiKitSet].filter((item) => item.storybook).length}
+                  {uiKitEntries.filter(([, item]) => item.storybook).length}
                 </StatCard.Stat>
               </StatCard>
               <StatCard>
                 <StatCard.Icon color="crimson" path={siFigma.path} />
                 <StatCard.Label>Figma files</StatCard.Label>
                 <StatCard.Stat>
-                  {[...uiKitSet].filter((item) => item.figma).length}
+                  {uiKitEntries.filter(([, item]) => item.figma).length}
                 </StatCard.Stat>
               </StatCard>
               <StatCard>
                 <StatCard.Icon color="crimson" path={mdiCreation} />
                 <StatCard.Label>Build with AI</StatCard.Label>
                 <StatCard.Stat>
-                  {[...uiKitSet].filter((item) => item.ai).length}
+                  {uiKitEntries.filter(([, item]) => item.ai).length}
                 </StatCard.Stat>
               </StatCard>
             </Flex>

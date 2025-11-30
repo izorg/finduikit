@@ -71,8 +71,8 @@ const updateUiKit = async (
   >,
 ) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
-  const buffer = await fs.promises.readFile(filePath);
-  const fileData = uiKitStaticDataSchema.parse(parseYaml(buffer.toString()));
+  const content = await fs.promises.readFile(filePath, "utf8");
+  const fileData = uiKitStaticDataSchema.parse(parseYaml(content));
 
   const github = await fetchGitHubRepositoryData(fileData.repository);
 

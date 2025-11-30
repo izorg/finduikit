@@ -20,6 +20,12 @@ import {
   type UiKitStaticDataSchema,
 } from "../uiKitStaticDataSchema";
 
+declare global {
+  var uiKitFileDataEntries:
+    | [key: string, data: UiKitStaticDataSchema][]
+    | undefined;
+}
+
 export const getUiKitFileEntries = () =>
   fs
     .readdirSync(path.join(process.cwd(), "ui-kits"), {
@@ -27,23 +33,26 @@ export const getUiKitFileEntries = () =>
     })
     .filter((dirent) => dirent.isFile());
 
-const getUiKitFileDataEntriesFromFiles = async () => {
-  const entries = getUiKitFileEntries();
+export const getUiKitFileDataEntriesFromFiles = () => {
+  if (
+    !globalThis.uiKitFileDataEntries ||
+    process.env.NODE_ENV === "development"
+  ) {
+    const entries = getUiKitFileEntries();
 
-  return await Promise.all(
-    entries.map(
-      async (dirent): Promise<[key: string, data: UiKitStaticDataSchema]> => {
-        const buffer = await fs.promises.readFile(
+    globalThis.uiKitFileDataEntries = entries.map(
+      (dirent): [key: string, data: UiKitStaticDataSchema] => {
+        const buffer = fs.readFileSync(
           path.join(dirent.parentPath, dirent.name),
+          "utf8",
         );
 
-        return [
-          dirent.name,
-          uiKitStaticDataSchema.parse(parse(buffer.toString())),
-        ];
+        return [dirent.name, uiKitStaticDataSchema.parse(parse(buffer))];
       },
-    ),
-  );
+    );
+  }
+
+  return globalThis.uiKitFileDataEntries;
 };
 
 const uiKitConverter: FirestoreDataConverter<UiKitDynamicDataSchema, never> = {
@@ -62,6 +71,10 @@ const uiKitConverter: FirestoreDataConverter<UiKitDynamicDataSchema, never> = {
 };
 
 const getUiKitDynamicDataMapFromFirestore = async () => {
+  "use cache";
+
+  cacheLife("days");
+
   const uiKitsCollection =
     firebaseGetFirestoreUiKitsCollection().withConverter(uiKitConverter);
 
@@ -84,14 +97,8 @@ const getUiKitDynamicDataMapFromFirestore = async () => {
 };
 
 export const getUiKits = async () => {
-  "use cache";
-
-  cacheLife("days");
-
-  const [uiKitFileDataEntries, uiKitDynamicDataMap] = await Promise.all([
-    getUiKitFileDataEntriesFromFiles(),
-    getUiKitDynamicDataMapFromFirestore(),
-  ]);
+  const uiKitFileDataEntries = getUiKitFileDataEntriesFromFiles();
+  const uiKitDynamicDataMap = await getUiKitDynamicDataMapFromFirestore();
 
   return new Set<UiKit>(
     uiKitFileDataEntries.map(([key, fileData]) => {
