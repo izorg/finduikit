@@ -9,7 +9,7 @@ type AiLinksProps = {
 };
 
 export const AiLinks = ({ ai }: AiLinksProps) => (
-  <Flex align="center" display="flex" gap="2">
+  <Flex align="center" display="inline-flex" gap="2">
     {ai.map((item) => {
       const icon = aiIcons[item.type];
 
