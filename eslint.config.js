@@ -3,6 +3,7 @@ import js from "@eslint/js";
 import json from "@eslint/json";
 import markdown from "@eslint/markdown";
 import next from "@next/eslint-plugin-next";
+import stylistic from "@stylistic/eslint-plugin";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
@@ -34,15 +35,16 @@ export default defineConfig(
       js.configs.recommended,
       ts.configs.strictTypeChecked,
       compat.configs["flat/recommended"],
-      jsxA11y.flatConfigs.recommended,
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
+      jsxA11y.flatConfigs.recommended,
+      next.configs.recommended,
+      next.configs["core-web-vitals"],
       react.configs.flat.recommended,
       react.configs.flat["jsx-runtime"],
       reactHooks.configs.flat["recommended-latest"],
-      next.configs.recommended,
-      next.configs["core-web-vitals"],
-      unicorn.configs["recommended"],
+      stylistic.configs.recommended,
+      unicorn.configs.recommended,
       perfectionist.configs["recommended-alphabetical"],
     ],
     files: ["**/*.js", "**/*.ts?(x)"],
