@@ -1,4 +1,4 @@
-import fs from "node:fs";
+import fs, { type Dirent } from "node:fs";
 import path from "node:path";
 
 import { captureException } from "@sentry/nextjs";
@@ -24,14 +24,21 @@ declare global {
   var uiKitFileDataEntries:
     | [key: string, data: UiKitStaticDataSchema][]
     | undefined;
+
+  var uiKitFileEntries: Dirent[] | undefined;
 }
 
-export const getUiKitFileEntries = () =>
-  fs
-    .readdirSync(path.join(process.cwd(), "ui-kits"), {
-      withFileTypes: true,
-    })
-    .filter((dirent) => dirent.isFile());
+export const getUiKitFileEntries = () => {
+  if (!globalThis.uiKitFileEntries || process.env.NODE_ENV === "development") {
+    globalThis.uiKitFileEntries = fs
+      .readdirSync(path.join(process.cwd(), "ui-kits"), {
+        withFileTypes: true,
+      })
+      .filter((dirent) => dirent.isFile());
+  }
+
+  return globalThis.uiKitFileEntries;
+};
 
 export const getUiKitFileDataEntriesFromFiles = () => {
   if (
