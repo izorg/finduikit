@@ -45,6 +45,7 @@ Built with:
 | [Buefy](https://buefy.org/)                                                                |                 [GitHub](https://github.com/buefy/buefy)                 |
 | [Bulma](https://bulma.io/)                                                                 |                [GitHub](https://github.com/jgthms/bulma)                 |
 | [Calcite](https://developers.arcgis.com/calcite-design-system/)                            |         [GitHub](https://github.com/Esri/calcite-design-system)          |
+| [CapsuleUI](https://zizigy.github.io/CapsuleUI/)                                           |              [GitHub](https://github.com/ZiZIGY/CapsuleUI)               |
 | [Carbon](https://carbondesignsystem.com/)                                                  |         [GitHub](https://github.com/carbon-design-system/carbon)         |
 | [Cauldron](https://cauldron.dequelabs.com/)                                                |             [GitHub](https://github.com/dequelabs/cauldron)              |
 | [Cedar](https://cedar.rei.com/)                                                            |                [GitHub](https://github.com/rei/rei-cedar)                |
