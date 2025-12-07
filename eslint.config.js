@@ -57,8 +57,6 @@ export default defineConfig(
     },
     name: "javascript-and-typescript",
     rules: {
-      "import/no-cycle": "error",
-
       "perfectionist/sort-imports": [
         "error",
         {
