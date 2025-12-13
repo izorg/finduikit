@@ -14,13 +14,9 @@ const nextConfig: NextConfig = {
   },
   reactCompiler: true,
   typedRoutes: true,
-  typescript: {
-    ignoreBuildErrors: true, // Using project root TypeScript check
-  },
 };
 
 const sentryBuildOptions: SentryBuildOptions = {
-  disableLogger: true,
   org: "viacheslav",
   project: "finduikit",
   silent: true,
