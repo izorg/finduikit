@@ -5,19 +5,19 @@ import {
   Card,
   Flex,
   Heading,
-  Inset,
   Link,
   Separator,
   Text,
 } from "@radix-ui/themes";
 import Linkify from "linkify-react";
 import type { IntermediateRepresentation } from "linkifyjs";
-import Image from "next/image";
 
 import { Resources } from "../../resource";
 import type { UiKit } from "../../ui-kit";
 import { UiKitFrameworkList } from "../UiKitFrameworkList";
 import { UiKitStats } from "../UiKitStats";
+
+import { UiKitCardImage } from "./UiKitCardImage";
 
 import styles from "./UiKitCard.module.css";
 
@@ -53,36 +53,7 @@ export const UiKitCard = (props: UiKitCardProps) => {
           </Heading>
           <UiKitFrameworkList frameworks={uiKit.frameworks} />
         </Flex>
-        {uiKit.image && (
-          <Inset asChild side="x">
-            <Box
-              asChild
-              className={styles.imageContainer}
-              display={{
-                initial: "none",
-                xs: "block",
-              }}
-              position="relative"
-            >
-              <a
-                aria-label={uiKit.name}
-                href={uiKit.homepage}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Image
-                  alt=""
-                  className={styles.image}
-                  fill
-                  src={uiKit.image.src}
-                  style={{
-                    objectFit: uiKit.image.fit,
-                  }}
-                />
-              </a>
-            </Box>
-          </Inset>
-        )}
+        <UiKitCardImage uiKit={uiKit} />
         <Box asChild flexGrow="1">
           <Text as="p" size="2">
             <Linkify

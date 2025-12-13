@@ -1,0 +1,7 @@
+.imageContainer {
+  aspect-ratio: 2 / 1;
+}
+
+.image {
+  object-fit: contain;
+}
