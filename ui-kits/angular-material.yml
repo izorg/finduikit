@@ -1,6 +1,3 @@
-ai:
-  - type: LLMs.txt
-    url: https://angular.dev/ai/develop-with-ai#providing-context-with-llmstxt
 description: UI component infrastructure and Material Design components for
   mobile and desktop Angular web applications.
 frameworks:
