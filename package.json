@@ -18,7 +18,7 @@
     "graphql-codegen": "node --env-file-if-exists=.env.local node_modules/.bin/graphql-codegen",
     "lint": "yarn lint-code && yarn lint-cycle && yarn lint-format && yarn lint-styles && yarn lint-types && yarn lint-unused",
     "lint-code": "eslint --cache",
-    "lint-cycle": "oxlint",
+    "lint-cycle": "oxlint --import-plugin -A all -D import/no-cycle",
     "lint-format": "prettier --cache --check --ignore-unknown .",
     "lint-styles": "stylelint --allow-empty-input --cache \"**/*.css\"",
     "lint-types": "tsc",
