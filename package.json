@@ -10,7 +10,7 @@
   "scripts": {
     "analyze": "next experimental-analyze",
     "build": "next build",
-    "dev": "concurrently --names=\"firebase,next\" \"npm run dev-firebase\" \"npm run dev-next\"",
+    "dev": "concurrently --names=\"firebase,next\" \"yarn run dev-firebase\" \"yarn run dev-next\"",
     "dev-firebase": "firebase emulators:start --export-on-exit --import=.firebase",
     "dev-next": "next dev",
     "format": "prettier --cache --ignore-unknown --write .",
