@@ -78,7 +78,7 @@ export const PageTopBar = () => {
   );
 
   useEffect(() => {
-    globalThis.addEventListener("popstate", () => {
+    const onPopState = () => {
       const searchParams = new URLSearchParams(document.location.search);
       const search = searchParams.get("search") ?? "";
 
@@ -87,7 +87,13 @@ export const PageTopBar = () => {
       if (searchEl && searchEl.value !== search) {
         searchEl.value = search;
       }
-    });
+    };
+
+    globalThis.addEventListener("popstate", onPopState);
+
+    return () => {
+      globalThis.removeEventListener("popstate", onPopState);
+    };
   }, []);
 
   return (
