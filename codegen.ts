@@ -31,7 +31,7 @@ const config: CodegenConfig = {
     },
   },
   hooks: {
-    afterAllFileWrite: ["yarn prettier --write", "yarn run eslint --fix"],
+    afterAllFileWrite: ["yarn prettier --write", "yarn eslint --fix"],
   },
   ignoreNoDocuments: true, // for better experience with the watcher
   schema: {
