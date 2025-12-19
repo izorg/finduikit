@@ -130,9 +130,9 @@ Built with:
 | [Radix Angular](https://www.radix-ng.com/)                                                 |             [GitHub](https://github.com/radix-ng/primitives)             |
 | [Radix Primitives](https://www.radix-ui.com/primitives)                                    |             [GitHub](https://github.com/radix-ui/primitives)             |
 | [Radix Themes](https://www.radix-ui.com/)                                                  |               [GitHub](https://github.com/radix-ui/themes)               |
-| [React Aria](https://react-spectrum.adobe.com/react-aria/index.html)                       |            [GitHub](https://github.com/adobe/react-spectrum)             |
+| [React Aria](https://react-aria.adobe.com/)                                                |            [GitHub](https://github.com/adobe/react-spectrum)             |
 | [React Bootstrap](https://react-bootstrap.github.io/)                                      |       [GitHub](https://github.com/react-bootstrap/react-bootstrap)       |
-| [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html)               |            [GitHub](https://github.com/adobe/react-spectrum)             |
+| [React Spectrum](https://react-spectrum.adobe.com/)                                        |            [GitHub](https://github.com/adobe/react-spectrum)             |
 | [React Suite](https://rsuitejs.com/)                                                       |                [GitHub](https://github.com/rsuite/rsuite)                |
 | [React95](https://react95.io/)                                                             |             [GitHub](https://github.com/react95-io/React95)              |
 | [Reka UI](https://reka-ui.com/)                                                            |               [GitHub](https://github.com/unovue/reka-ui)                |

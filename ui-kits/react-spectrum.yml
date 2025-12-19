@@ -1,10 +1,13 @@
+ai:
+  - type: MCP
+    url: https://react-spectrum.adobe.com/mcp
 dependencies:
   - React Aria
 description: A collection of libraries and tools that help you build adaptive,
   accessible, and robust user experiences.
 frameworks:
   - React
-homepage: https://react-spectrum.adobe.com/react-spectrum/index.html
+homepage: https://react-spectrum.adobe.com/
 image:
   fit: cover
   src: https://react-spectrum.adobe.com/og/index.png

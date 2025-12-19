@@ -1,11 +1,14 @@
+ai:
+  - type: MCP
+    url: https://react-aria.adobe.com/mcp
 description: A collection of libraries and tools that help you build adaptive,
   accessible, and robust user experiences.
 frameworks:
   - React
-homepage: https://react-spectrum.adobe.com/react-aria/index.html
+homepage: https://react-aria.adobe.com/
 image:
   fit: cover
-  src: https://react-spectrum.adobe.com/ReactAriaOpenGraph.6ea0ee74.webp
+  src: https://react-aria.adobe.com/server/ReactAriaOpenGraph.c58014f0.webp
 name: React Aria
 repository: https://github.com/adobe/react-spectrum
 unstyled: true
