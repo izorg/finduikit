@@ -1,6 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://taiga-ui.dev/ai-support
+  - type: MCP
+    url: https://taiga-ui.dev/ai-support
 description: A powerful set of open source components for Angular
 frameworks:
   - Angular
