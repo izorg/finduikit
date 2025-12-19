@@ -120,7 +120,7 @@ export const HomePage = () => {
             </section>
             <section>
               <Heading mb="2" weight="medium">
-                Speed Up Development
+                Speed up Development
               </Heading>
               <Text>
                 Selecting the right UI kit accelerates development by providing
