@@ -10,7 +10,7 @@ import compat from "eslint-plugin-compat";
 import importPlugin from "eslint-plugin-import";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import jsxA11y from "eslint-plugin-jsx-a11y";
-import perfectionist from "eslint-plugin-perfectionist";
+import { configs as perfectionistConfigs } from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
@@ -45,7 +45,7 @@ export default defineConfig(
       reactHooks.configs.flat["recommended-latest"],
       stylistic.configs.recommended,
       unicorn.configs.recommended,
-      perfectionist.configs["recommended-alphabetical"],
+      perfectionistConfigs["recommended-alphabetical"],
     ],
     files: ["**/*.js", "**/*.ts?(x)"],
     languageOptions: {
