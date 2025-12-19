@@ -1,6 +1,10 @@
 {
   "inputs": [],
   "servers": {
+    "chrome-devtools": {
+      "args": ["-y", "chrome-devtools-mcp@latest"],
+      "command": "npx"
+    },
     "next-devtools": {
       "args": ["-y", "next-devtools-mcp@latest"],
       "command": "npx"
