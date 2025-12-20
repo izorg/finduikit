@@ -10469,7 +10469,7 @@ __metadata:
     fuse.js: "npm:7.1.0"
     globals: "npm:16.5.0"
     graphql: "npm:16.12.0"
-    knip: "npm:5.75.2"
+    knip: "npm:5.76.1"
     linkify-plugin-mention: "npm:4.3.2"
     linkify-react: "npm:4.3.2"
     linkifyjs: "npm:4.3.2"
@@ -12717,9 +12717,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knip@npm:5.75.2":
-  version: 5.75.2
-  resolution: "knip@npm:5.75.2"
+"knip@npm:5.76.1":
+  version: 5.76.1
+  resolution: "knip@npm:5.76.1"
   dependencies:
     "@nodelib/fs.walk": "npm:^1.2.3"
     fast-glob: "npm:^3.3.3"
@@ -12739,7 +12739,7 @@ __metadata:
   bin:
     knip: bin/knip.js
     knip-bun: bin/knip-bun.js
-  checksum: 10/dc447c35f0ea810f0a912bcf290077ea7c909f22f03c9fe322b3025297dc2d89df7c14318e4017b770804a2db048dee3391c98959fe9a11ee4503fe29b089b27
+  checksum: 10/03617f338930b9c4233cf51c7df4ddd536c962e98712de414538e0989aa435bf79e1d59b8010a6d565e49c0107dfbe2545afcaa52ef5dae84294ab25509f12fe
   languageName: node
   linkType: hard
 
