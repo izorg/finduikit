@@ -168,14 +168,14 @@ const updateReadmeTable = async () => {
     .toSorted((a, b) => collator.compare(a.name, b.name))
     .map(
       (uiKit) =>
-        `| [${uiKit.name}](${uiKit.homepage}) | [Link](${uiKit.homepage}) | [GitHub](${uiKit.repository}) |`,
+        `| [${uiKit.name}](${uiKit.homepage}) | [GitHub](${uiKit.repository}) |`,
     )
     .join("\n");
 
   const table = `
 
-| UI Kit | Website | Repository |
-| ------ | :-----: | :--------: |
+| UI Kit | Repository |
+| ------ | :--------: |
 ${tableRows}
 
 `;
