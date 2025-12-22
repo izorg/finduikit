@@ -140,7 +140,10 @@ export const uiKitRouteUpdate = async (request: Request) => {
     start: async (controller) => {
       for (const checkEntry of checkEntries) {
         await updateUiKit(checkEntry, uiKitsCollection);
-        controller.enqueue(`${path.parse(checkEntry.name).name}\n`);
+
+        const delimiter = checkEntries.indexOf(checkEntry) === 0 ? "" : ",";
+
+        controller.enqueue(`${delimiter}${path.parse(checkEntry.name).name}`);
       }
 
       controller.close();
