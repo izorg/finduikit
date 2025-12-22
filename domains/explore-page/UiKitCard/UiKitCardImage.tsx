@@ -1,4 +1,5 @@
 import { Box, Inset } from "@radix-ui/themes";
+import { captureException } from "@sentry/nextjs";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -40,7 +41,8 @@ export const UiKitCardImage = (props: UiKitCardImageProps) => {
             alt=""
             className={styles.image}
             fill
-            onError={() => {
+            onError={(event) => {
+              captureException(event);
               setHidden(true);
             }}
             src={uiKit.image.src}
