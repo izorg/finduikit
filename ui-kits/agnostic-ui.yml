@@ -1,6 +1,6 @@
-description: "AgnosticUI is a set of UI primitives that start their lives in
-  clean HTML and CSS. These standards compliant components are then copied to
-  our framework implementations in: React, Vue 3, Angular, and Svelte."
+description: AgnosticUI Local (v2) is a CLI-based UI component library that
+  copies components directly into your project. You own the code, customize it
+  freely, and avoid dependency lock-in.
 frameworks:
   - Angular
   - React
