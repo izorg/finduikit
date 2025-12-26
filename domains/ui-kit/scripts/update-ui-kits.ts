@@ -33,6 +33,33 @@ const getUiKitFileEntries = async () => {
   return entries.filter((dirent) => dirent.isFile());
 };
 
+// Simple semaphore/pool runner to limit concurrency
+const runWithConcurrency = async <T>(
+  items: T[],
+  limit: number,
+  worker: (item: T) => Promise<void>,
+) => {
+  if (items.length === 0 || limit <= 0) {
+    return;
+  }
+
+  let index = 0;
+
+  const runner = async () => {
+    while (index < items.length) {
+      const currentIndex = index++;
+
+      await worker(items[currentIndex]);
+    }
+  };
+
+  const workers = Array.from({ length: Math.min(limit, items.length) }, () =>
+    runner(),
+  );
+
+  await Promise.all(workers);
+};
+
 const updateUiKit = async (dirent: Dirent) => {
   const filePath = path.join(dirent.parentPath, dirent.name);
   const { name } = path.parse(dirent.name);
@@ -118,7 +145,7 @@ const checkUiKits = async () => {
     .toSorted((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, CHECK_COUNT);
 
-  await Promise.all(checkEntries.map((entry) => updateUiKit(entry)));
+  await runWithConcurrency(checkEntries, 5, updateUiKit);
 
   await fs.promises.writeFile(
     checkCacheFile,
