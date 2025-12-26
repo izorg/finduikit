@@ -44,22 +44,6 @@ const updateUiKit = async (dirent: Dirent) => {
     fetchHomepageData(data.homepage),
   ]);
 
-  // const allFullfilled =
-  //   githubResult.status === "fulfilled" &&
-  //   homepageResult.status === "fulfilled";
-
-  // if (
-  //   githubResult.status === "rejected" ||
-  //   homepageResult.status === "rejected"
-  // ) {
-  //   console.log(`❌ ${name}`);
-  //
-  //   return;
-  // }
-
-  // const { value: github } = githubResult;
-  // const { value: homepage } = homepageResult;
-
   let outputData = globalThis.structuredClone(data);
 
   if (
