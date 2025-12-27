@@ -1,0 +1,10 @@
+description: Evo Web is a lightweight, accessible, and responsive front-end
+  framework built with Evo design tokens.
+frameworks:
+  - React
+homepage: https://opensource.ebay.com/evo-web/
+image: null
+name: Evo Web
+repository: https://github.com/eBay/evo-web
+storybook: https://opensource.ebay.com/evo-web/ebayui-core-react/main/
+styling: Sass

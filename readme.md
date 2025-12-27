@@ -60,9 +60,9 @@ Built with:
 | [Corvu](https://corvu.dev/)                                                                |               [GitHub](https://github.com/corvudev/corvu)                |
 | [daisyUI](https://daisyui.com/)                                                            |              [GitHub](https://github.com/saadeghi/daisyui)               |
 | [dotUI](https://dotui.org/)                                                                |               [GitHub](https://github.com/mehdibha/dotui)                |
-| [eBayUI React](https://opensource.ebay.com/evo-web/ebayui-core-react/main/)                |                [GitHub](https://github.com/eBay/evo-web)                 |
 | [Elastic UI](https://eui.elastic.co/)                                                      |                 [GitHub](https://github.com/elastic/eui)                 |
 | [Element Plus](https://element-plus.org/)                                                  |          [GitHub](https://github.com/element-plus/element-plus)          |
+| [Evo Web](https://opensource.ebay.com/evo-web/)                                            |                [GitHub](https://github.com/eBay/evo-web)                 |
 | [Flowbite](https://flowbite.com/)                                                          |             [GitHub](https://github.com/themesberg/flowbite)             |
 | [Flowbite React](https://flowbite-react.com/)                                              |          [GitHub](https://github.com/themesberg/flowbite-react)          |
 | [Flowbite Svelte](https://flowbite-svelte.com/)                                            |         [GitHub](https://github.com/themesberg/flowbite-svelte)          |
@@ -148,7 +148,6 @@ Built with:
 | [shadcn/ui](https://ui.shadcn.com/)                                                        |                [GitHub](https://github.com/shadcn-ui/ui)                 |
 | [shadcn/vue](https://www.shadcn-vue.com/)                                                  |              [GitHub](https://github.com/unovue/shadcn-vue)              |
 | [Siemens iX](https://ix.siemens.io/)                                                       |                 [GitHub](https://github.com/siemens/ix)                  |
-| [Skin](https://opensource.ebay.com/evo-web/skin/)                                          |                [GitHub](https://github.com/eBay/evo-web)                 |
 | [spartan](https://spartan.ng/)                                                             |             [GitHub](https://github.com/spartan-ng/spartan)              |
 | [Spectrum CSS](https://opensource.adobe.com/spectrum-css/)                                 |             [GitHub](https://github.com/adobe/spectrum-css)              |
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |        [GitHub](https://github.com/adobe/spectrum-web-components)        |
