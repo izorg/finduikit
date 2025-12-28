@@ -152,7 +152,6 @@ Built with:
 | [Spectrum CSS](https://opensource.adobe.com/spectrum-css/)                                 |             [GitHub](https://github.com/adobe/spectrum-css)              |
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |        [GitHub](https://github.com/adobe/spectrum-web-components)        |
 | [Stacks](https://stackoverflow.design/)                                                    |            [GitHub](https://github.com/StackExchange/Stacks)             |
-| [Storybook Design System](https://master--5ccbc373887ca40020446347.chromatic.com/)         |          [GitHub](https://github.com/storybookjs/design-system)          |
 | [Strapi](https://design-system.strapi.io/)                                                 |            [GitHub](https://github.com/strapi/design-system)             |
 | [SUID](https://suid.dev/)                                                                  |                [GitHub](https://github.com/swordev/suid)                 |
 | [System.css](https://sakofchit.github.io/system.css/)                                      |            [GitHub](https://github.com/sakofchit/system.css)             |
