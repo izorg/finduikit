@@ -5,6 +5,9 @@ import type { UiKitStaticDataSchema } from "../domains/ui-kit";
 
 import { type fetchGitHubRepositoryData } from "./fetchGitHubRepositoryData";
 
+const descriptionCompare = (a?: string, b?: string) =>
+  (b?.length ?? 0) - (a?.length ?? 0);
+
 const preservedDescriptions = new Set([
   "KoliBri",
   "NG-ZORRO",
@@ -45,7 +48,7 @@ export const getDescription = ({
     homepageOgDescription,
     githubDescription,
   ]
-    .toSorted((a, b) => (b?.length ?? 0) - (a?.length ?? 0))
+    .toSorted(descriptionCompare)
     .at(0);
 
   return homepageBestDescription ?? data.description;
