@@ -9,6 +9,7 @@ const descriptionCompare = (a?: string, b?: string) =>
   (b?.length ?? 0) - (a?.length ?? 0);
 
 const preservedDescriptions = new Set([
+  "Atlantis",
   "KoliBri",
   "NG-ZORRO",
   "UI5 Web Components",
