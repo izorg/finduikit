@@ -1,3 +1,6 @@
+ai:
+  - type: MCP
+    url: https://gluestack.io/ui/docs/mcp-server/mcp-server
 description: A powerful React & React Native component library with customizable
   Tailwind UI components & patterns. Works seamlessly with shadcn React Native
   for web & mobile apps!
