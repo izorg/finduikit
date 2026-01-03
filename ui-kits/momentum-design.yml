@@ -1,10 +1,11 @@
-description: These Components are currently work in progress and are not yet ready for production use.
+description: These Components are currently work in progress and are not yet
+  ready for production use.
 frameworks:
   - React
 homepage: https://momentum.design/en/
 image: null
 name: Momentum Design
-repository: https://github.com/momentum-design/momentum-designs
+repository: https://github.com/momentum-design/momentum-design
 storybook: https://momentum.design/storybook-static/
 styling: CSS
 webComponents: Lit

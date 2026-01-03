@@ -94,18 +94,40 @@
       "format": "uri"
     },
     "styling": {
-      "type": "string",
-      "enum": [
-        "CSS",
-        "Emotion",
-        "Griffel",
-        "Less",
-        "Panda",
-        "Sass",
-        "Stitches",
-        "styled-components",
-        "Tailwind CSS",
-        "vanilla-extract"
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "CSS",
+            "Emotion",
+            "Griffel",
+            "Less",
+            "Panda",
+            "Sass",
+            "Stitches",
+            "styled-components",
+            "Tailwind CSS",
+            "vanilla-extract"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "CSS",
+              "Emotion",
+              "Griffel",
+              "Less",
+              "Panda",
+              "Sass",
+              "Stitches",
+              "styled-components",
+              "Tailwind CSS",
+              "vanilla-extract"
+            ]
+          }
+        }
       ]
     },
     "unstyled": {

@@ -15,3 +15,6 @@ image:
   src: https://repository-images.githubusercontent.com/585146387/5afcd3e9-126b-48c8-b8d1-e17240c10d51
 name: shadcn/ui
 repository: https://github.com/shadcn-ui/ui
+styling:
+  - CSS
+  - Tailwind CSS

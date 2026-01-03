@@ -6,3 +6,6 @@ image:
   src: https://getuikit.com/images/uikit-meta.png
 name: UIkit
 repository: https://github.com/uikit/uikit
+styling:
+  - Less
+  - Sass

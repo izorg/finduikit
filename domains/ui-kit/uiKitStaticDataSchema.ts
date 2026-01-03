@@ -36,7 +36,7 @@ export const uiKitStaticDataSchema = z.object({
     .optional(),
   repository: z.url(),
   storybook: z.url().optional(),
-  styling: z.enum(Styling).optional(),
+  styling: z.union([z.enum(Styling), z.array(z.enum(Styling))]).optional(),
   unstyled: z.boolean().optional(),
   webComponents: z.enum(WebComponentsLibrary).optional(),
 });

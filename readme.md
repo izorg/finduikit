@@ -98,7 +98,7 @@ Built with:
 | [MDUI](https://www.mdui.org/)                                                              |                [GitHub](https://github.com/zdhxiong/mdui)                |
 | [Melt UI](https://www.melt-ui.com/)                                                        |               [GitHub](https://github.com/melt-ui/melt-ui)               |
 | [Metro UI](https://metroui.org.ua/)                                                        |                [GitHub](https://github.com/olton/metroui)                |
-| [Momentum Design](https://momentum.design/en/)                                             |      [GitHub](https://github.com/momentum-design/momentum-designs)       |
+| [Momentum Design](https://momentum.design/en/)                                             |       [GitHub](https://github.com/momentum-design/momentum-design)       |
 | [MUI](https://mui.com/material-ui/)                                                        |               [GitHub](https://github.com/mui/material-ui)               |
 | [Naive UI](https://www.naiveui.com/)                                                       |              [GitHub](https://github.com/tusen-ai/naive-ui)              |
 | [Nebular](https://akveo.github.io/nebular/)                                                |                [GitHub](https://github.com/akveo/nebular)                |
