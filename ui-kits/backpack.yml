@@ -4,7 +4,7 @@ frameworks:
   - React
 homepage: https://www.skyscanner.design/
 image:
-  fit: cover
+  fit: scale-down
   src: https://avatars.githubusercontent.com/u/522811?s=400&v=4
 name: Backpack
 repository: https://github.com/Skyscanner/backpack

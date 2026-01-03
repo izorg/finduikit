@@ -51,7 +51,7 @@
           "properties": {
             "fit": {
               "type": "string",
-              "enum": ["contain", "cover"]
+              "enum": ["contain", "cover", "scale-down"]
             },
             "src": {
               "type": "string"
