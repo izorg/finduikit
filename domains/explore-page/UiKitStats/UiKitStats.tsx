@@ -18,7 +18,7 @@ export const UiKitStats = (props: UiKitStatsProps) => {
 
   const { ai, issues = 0, repository, stars = 0, webComponents } = uiKit;
 
-  if ([issues, stars].every((stat) => !stat)) {
+  if ([issues, stars, ai, webComponents].every((stat) => !stat)) {
     return;
   }
 
