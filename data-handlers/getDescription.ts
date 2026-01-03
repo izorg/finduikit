@@ -11,6 +11,7 @@ const descriptionCompare = (a?: string, b?: string) =>
 const preservedDescriptions = new Set([
   "Atlantis",
   "KoliBri",
+  "Momentum Design",
   "NG-ZORRO",
   "UI5 Web Components",
 ]);
