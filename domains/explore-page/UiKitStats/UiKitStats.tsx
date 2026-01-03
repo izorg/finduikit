@@ -1,4 +1,5 @@
 import { Flex, Text } from "@radix-ui/themes";
+import type { ReactNode } from "react";
 
 import type { UiKit } from "../../ui-kit";
 
@@ -18,7 +19,48 @@ export const UiKitStats = (props: UiKitStatsProps) => {
 
   const { ai, issues = 0, repository, stars = 0, webComponents } = uiKit;
 
-  if ([issues, stars, ai, webComponents].every((stat) => !stat)) {
+  let aiStats: ReactNode;
+  let issueStats: ReactNode;
+  let starStats: ReactNode;
+  let webComponentStats: ReactNode;
+
+  if (ai) {
+    aiStats = ai.map((item) => (
+      <li key={item.type}>
+        <AiBadge ai={item} />
+      </li>
+    ));
+  }
+
+  if (issues) {
+    issueStats = (
+      <li key="issues">
+        <IssueBadge issues={issues} repository={repository} />
+      </li>
+    );
+  }
+
+  if (stars) {
+    starStats = (
+      <li key="stars">
+        <StarBadge stars={stars} />
+      </li>
+    );
+  }
+
+  if (webComponents) {
+    webComponentStats = (
+      <li key="web-components">
+        <WebComponentsBadge webComponents={webComponents} />
+      </li>
+    );
+  }
+
+  const stats = [starStats, issueStats, aiStats, webComponentStats].filter(
+    Boolean,
+  );
+
+  if (stats.length === 0) {
     return;
   }
 
@@ -26,26 +68,7 @@ export const UiKitStats = (props: UiKitStatsProps) => {
     <Flex asChild gap="3">
       <Text asChild size="5">
         <ul aria-label="Statistics and features" className={styles.list}>
-          {stars > 0 && (
-            <li>
-              <StarBadge stars={stars} />
-            </li>
-          )}
-          {issues > 0 && (
-            <li>
-              <IssueBadge issues={issues} repository={repository} />
-            </li>
-          )}
-          {ai?.map((item) => (
-            <li key={item.type}>
-              <AiBadge ai={item} />
-            </li>
-          ))}
-          {webComponents && (
-            <li>
-              <WebComponentsBadge webComponents={webComponents} />
-            </li>
-          )}
+          {stats}
         </ul>
       </Text>
     </Flex>
