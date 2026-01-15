@@ -733,14 +733,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-normalize-display-values@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@csstools/postcss-normalize-display-values@npm:4.0.0"
+"@csstools/postcss-normalize-display-values@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@csstools/postcss-normalize-display-values@npm:4.0.1"
   dependencies:
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10/750093837486da6dd0cc66183fe9909a18485f23610669806b708ab9942c721a773997cde37fd7ee085aca3d6de065ffd5609c77df5e2f303d67af106e53726e
+  checksum: 10/46138f696ddadc0777dc66e97ff3a5f5a4dfa4f25ac396590b22df66dcc46d335c19af4fb4468e35472e1379ff180c858839c3ad51e7763ba3f9d898b00fb8a1
   languageName: node
   linkType: hard
 
@@ -1658,9 +1658,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@graphql-codegen/cli@npm:6.1.0"
+"@graphql-codegen/cli@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@graphql-codegen/cli@npm:6.1.1"
   dependencies:
     "@babel/generator": "npm:^7.18.13"
     "@babel/template": "npm:^7.18.10"
@@ -1707,7 +1707,7 @@ __metadata:
     graphql-code-generator: cjs/bin.js
     graphql-codegen: cjs/bin.js
     graphql-codegen-esm: esm/bin.js
-  checksum: 10/90a7b8f8245b86c26446d8f94c7a17c5db94a0b3fc269085b579abe06040f5671370c44ade9d95d4108a6d3e249e48b5c692abc5ec8edaaa1b1a059639d759de
+  checksum: 10/cdc35e211e3ff9f0b5e5b34d12824dd17f46c1cf5d98b55fe8470bef83e2acbed60da65f3700f6923ef95862f95542ec1608e79912057d4b046ba43d223c6d7f
   languageName: node
   linkType: hard
 
@@ -6290,12 +6290,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24.10.4":
-  version: 24.10.4
-  resolution: "@types/node@npm:24.10.4"
+"@types/node@npm:24.10.7":
+  version: 24.10.7
+  resolution: "@types/node@npm:24.10.7"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10/a0b318b99a97103d151589a10e20d7d3ce93188a0e6466040eb2ce5fae33ca6785306737b4006560fe3152073cbb2b14747b854fa303296275c22afc8a37da2a
+  checksum: 10/4387e03f4e072eb0aa8a71e002cd0aca514b7986d9bd435244a5c8421336bcd28583b95ca2c11bc8bfdeef176d37584c9f3e786df9cb07bbc11ed4d73fd05b28
   languageName: node
   linkType: hard
 
@@ -6371,12 +6371,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.2.7":
-  version: 19.2.7
-  resolution: "@types/react@npm:19.2.7"
+"@types/react@npm:19.2.8":
+  version: 19.2.8
+  resolution: "@types/react@npm:19.2.8"
   dependencies:
     csstype: "npm:^3.2.2"
-  checksum: 10/dc0b756eee2c9782d282ae47eaa8d537b2a569eb889a6808c4b172d70fb690b2b1d8fe6239db451aa1c90d2a947cc21c9b537ce177ba9e6121468e403e4079c5
+  checksum: 10/688e7605876e2729c25fdfd2c131d7080cb8e98db528aedccab89005bcbca097a6149fa6e137ae4f1807bdc44220e0c5c7b4a968b5b681dadb7761968bac6de5
   languageName: node
   linkType: hard
 
@@ -9540,9 +9540,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-json-schema-validator@npm:5.5.0":
-  version: 5.5.0
-  resolution: "eslint-plugin-json-schema-validator@npm:5.5.0"
+"eslint-plugin-json-schema-validator@npm:5.5.1":
+  version: 5.5.1
+  resolution: "eslint-plugin-json-schema-validator@npm:5.5.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.3.0"
     ajv: "npm:^8.0.0"
@@ -9553,12 +9553,12 @@ __metadata:
     jsonc-eslint-parser: "npm:^2.0.0"
     minimatch: "npm:^9.0.0 || ^10.0.0"
     synckit: "npm:^0.11.1"
-    toml-eslint-parser: "npm:^0.10.0"
+    toml-eslint-parser: "npm:^0.12.0"
     tunnel-agent: "npm:^0.6.0"
     yaml-eslint-parser: "npm:^1.0.0"
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: 10/e1230b996c60fe070fe7c026303e1fc70f0c82d904464a5d3b632a90fa8d31074ef53de1b910dd4444384cbf45186488086919cbee26b40f5ff0a689fbba47bb
+  checksum: 10/209b9d9770245a825855f78c98701274c54aa8ce83e612bf0c593337c19a02ed507a21fa99877822a42679adaa915452f34eb89e63ba6d3152d0cf5450f70298
   languageName: node
   linkType: hard
 
@@ -10324,7 +10324,7 @@ __metadata:
     "@eslint/js": "npm:9.39.2"
     "@eslint/json": "npm:0.14.0"
     "@eslint/markdown": "npm:7.5.1"
-    "@graphql-codegen/cli": "npm:6.1.0"
+    "@graphql-codegen/cli": "npm:6.1.1"
     "@graphql-codegen/near-operation-file-preset": "npm:4.0.0"
     "@graphql-codegen/typescript": "npm:5.0.7"
     "@graphql-codegen/typescript-operations": "npm:5.0.7"
@@ -10337,8 +10337,8 @@ __metadata:
     "@sentry/nextjs": "npm:10.32.1"
     "@stylistic/eslint-plugin": "npm:5.7.0"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.1"
-    "@types/node": "npm:24.10.4"
-    "@types/react": "npm:19.2.7"
+    "@types/node": "npm:24.10.7"
+    "@types/react": "npm:19.2.8"
     babel-plugin-react-compiler: "npm:1.0.0"
     classnames: "npm:2.5.1"
     concurrently: "npm:9.2.1"
@@ -10350,7 +10350,7 @@ __metadata:
     eslint-import-resolver-typescript: "npm:4.4.4"
     eslint-plugin-compat: "npm:6.0.2"
     eslint-plugin-import: "npm:2.32.0"
-    eslint-plugin-json-schema-validator: "npm:5.5.0"
+    eslint-plugin-json-schema-validator: "npm:5.5.1"
     eslint-plugin-jsx-a11y: "npm:6.10.2"
     eslint-plugin-perfectionist: "npm:5.3.1"
     eslint-plugin-react: "npm:7.37.5"
@@ -10372,11 +10372,11 @@ __metadata:
     oxlint: "npm:1.38.0"
     postcss: "npm:8.5.6"
     postcss-import: "npm:16.1.1"
-    postcss-preset-env: "npm:10.6.0"
+    postcss-preset-env: "npm:10.6.1"
     prettier: "npm:3.7.4"
     react: "npm:19.2.3"
     react-dom: "npm:19.2.3"
-    simple-icons: "npm:16.4.0"
+    simple-icons: "npm:16.5.0"
     stylelint: "npm:16.26.1"
     stylelint-config-css-modules: "npm:4.5.1"
     stylelint-config-standard: "npm:39.0.1"
@@ -15503,9 +15503,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:10.6.0":
-  version: 10.6.0
-  resolution: "postcss-preset-env@npm:10.6.0"
+"postcss-preset-env@npm:10.6.1":
+  version: 10.6.1
+  resolution: "postcss-preset-env@npm:10.6.1"
   dependencies:
     "@csstools/postcss-alpha-function": "npm:^1.0.1"
     "@csstools/postcss-cascade-layers": "npm:^5.0.2"
@@ -15532,7 +15532,7 @@ __metadata:
     "@csstools/postcss-media-minmax": "npm:^2.0.9"
     "@csstools/postcss-media-queries-aspect-ratio-number-values": "npm:^3.0.5"
     "@csstools/postcss-nested-calc": "npm:^4.0.0"
-    "@csstools/postcss-normalize-display-values": "npm:^4.0.0"
+    "@csstools/postcss-normalize-display-values": "npm:^4.0.1"
     "@csstools/postcss-oklab-function": "npm:^4.0.12"
     "@csstools/postcss-position-area-property": "npm:^1.0.0"
     "@csstools/postcss-progressive-custom-properties": "npm:^4.2.1"
@@ -15580,7 +15580,7 @@ __metadata:
     postcss-selector-not: "npm:^8.0.1"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10/6a9085de08b66393bc50dae4b85a66163714980196795d4a240397e4ad007a45d33c5dc12d20787d933e2bc84f262404b7c0221a3715580a4c654d02537d4fe6
+  checksum: 10/e18aa351e18262a9f086a40ce15de4763f8e9e208cb8b92f05ce15ebeaca740b568409c5309d3289a7f880a81ec51b166644a4fa5a82bb4180a5fb24213a646b
   languageName: node
   linkType: hard
 
@@ -17097,10 +17097,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:16.4.0":
-  version: 16.4.0
-  resolution: "simple-icons@npm:16.4.0"
-  checksum: 10/409ec77455083b080895378ec31cb23a83a2c5062ba3328918c3e68d3a513fdb174dbc49e1484ec970eb1edbe727c4df780e8d24ce7ed56e0d424d4927734a13
+"simple-icons@npm:16.5.0":
+  version: 16.5.0
+  resolution: "simple-icons@npm:16.5.0"
+  checksum: 10/8b115d24c4121525352c80007076300dbe417b634c22aadfa68c3d9ebf2fdad8e2b8154c4556322f58b2ac76c6fb8aab628d750b511826936b9defde57a77eec
   languageName: node
   linkType: hard
 
@@ -18003,12 +18003,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"toml-eslint-parser@npm:^0.10.0":
-  version: 0.10.1
-  resolution: "toml-eslint-parser@npm:0.10.1"
+"toml-eslint-parser@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "toml-eslint-parser@npm:0.12.0"
   dependencies:
     eslint-visitor-keys: "npm:^3.0.0"
-  checksum: 10/b8716ff79ed03fcc843c8392723c32b3847ce3dfe4950abdba31faf3419d94068cd27409b6d91df797d6b925b583bcd003c83f331e611357e1c5861624038a51
+  checksum: 10/55375a38c52a04746b568e04a4bbdee7d690dd0a6ecd9eafdb343e86002171dc534e55a4a41e1150dd282e37a02807007181ddf50bb0eeb0cb29b34ad88e1fd6
   languageName: node
   linkType: hard
 
