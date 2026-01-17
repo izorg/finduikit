@@ -1,0 +1,15 @@
+ai:
+  - type: LLMs.txt
+    url: https://coss.com/ui/llms.txt
+description: coss.com is the new holding company of cal.com, the pioneers of
+  open source scheduling infrastructure and cal.com continues to be the 'google
+  search' of our alphabet.
+frameworks:
+  - React
+homepage: https://coss.com/ui/docs
+image:
+  fit: cover
+  src: https://coss.com/ui/opengraph-image.png?opengraph-image.1246bed5.png
+name: coss ui
+repository: https://github.com/cosscom/coss
+styling: Tailwind CSS

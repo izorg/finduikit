@@ -58,6 +58,7 @@ Built with:
 | [Coinbase Design System](https://cds.coinbase.com/)                                        |                [GitHub](https://github.com/coinbase/cds)                 |
 | [commercetools UI Kit](https://uikit.commercetools.com/)                                   |            [GitHub](https://github.com/commercetools/ui-kit)             |
 | [Corvu](https://corvu.dev/)                                                                |               [GitHub](https://github.com/corvudev/corvu)                |
+| [coss ui](https://coss.com/ui/docs)                                                        |                [GitHub](https://github.com/cosscom/coss)                 |
 | [daisyUI](https://daisyui.com/)                                                            |              [GitHub](https://github.com/saadeghi/daisyui)               |
 | [dotUI](https://dotui.org/)                                                                |               [GitHub](https://github.com/mehdibha/dotui)                |
 | [Elastic UI](https://eui.elastic.co/)                                                      |                 [GitHub](https://github.com/elastic/eui)                 |
