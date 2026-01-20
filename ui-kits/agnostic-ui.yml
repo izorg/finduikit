@@ -7,6 +7,9 @@ frameworks:
   - Svelte
   - Vue
 homepage: https://www.agnosticui.com/
+image:
+  fit: cover
+  src: https://www.agnosticui.com/AG-banner.jpg
 name: AgnosticUI
 repository: https://github.com/AgnosticUI/agnosticui
 styling: CSS
