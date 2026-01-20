@@ -8,13 +8,13 @@ import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
 import importPlugin from "eslint-plugin-import";
-import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
+import { configs as jsonSchemaValidatorConfigs } from "eslint-plugin-json-schema-validator";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import { configs as perfectionistConfigs } from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
-import yml from "eslint-plugin-yml";
+import { configs as ymlConfigs } from "eslint-plugin-yml";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
 import * as ts from "typescript-eslint";
@@ -131,7 +131,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [yml.configs["flat/recommended"], yml.configs["flat/prettier"]],
+    extends: [ymlConfigs["flat/recommended"], ymlConfigs["flat/prettier"]],
     files: ["**/*.y?(a)ml"],
     name: "yaml",
     rules: {
@@ -149,7 +149,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [jsonSchemaValidator.configs["flat/recommended"]],
+    extends: [jsonSchemaValidatorConfigs["flat/recommended"]],
     files: ["ui-kits/*.yml"],
     name: "json-schema",
     rules: {
