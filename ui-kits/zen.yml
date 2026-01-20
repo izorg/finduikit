@@ -1,0 +1,11 @@
+dependencies:
+  - React Aria
+description: Zen is a props-driven React component library built for speed.
+  Build polished interfaces without writing HTML, CSS, or thinking about
+  Tailwind classes.
+frameworks:
+  - React
+homepage: https://zen.umami.is/
+name: Zen
+repository: https://github.com/umami-software/react-zen
+styling: Tailwind CSS
