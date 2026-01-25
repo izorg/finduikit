@@ -1,0 +1,11 @@
+description: Vue implementation of the Carbon Design System
+figma: https://www.figma.com/community/file/1157761560874207208
+frameworks:
+  - Vue
+homepage: https://carbondesignsystem.com/developing/community-frameworks/vue/
+image:
+  src: https://repository-images.githubusercontent.com/154535475/df4ba195-6086-4eab-bd51-433f194618a2
+name: Carbon Vue
+repository: https://github.com/carbon-design-system/carbon-components-vue
+storybook: https://vue.carbondesignsystem.com/
+styling: Sass

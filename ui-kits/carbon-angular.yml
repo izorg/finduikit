@@ -1,0 +1,11 @@
+description: An Angular implementation of the Carbon Design System for IBM.
+figma: https://www.figma.com/community/file/1157761560874207208
+frameworks:
+  - Angular
+homepage: https://carbondesignsystem.com/developing/community-frameworks/angular/
+image:
+  src: https://carbondesignsystem.com/ogimage.png
+name: Carbon Angular
+repository: https://github.com/carbon-design-system/carbon-components-angular
+storybook: https://angular.carbondesignsystem.com/
+styling: Sass

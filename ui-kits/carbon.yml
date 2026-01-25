@@ -12,3 +12,4 @@ packages:
 repository: https://github.com/carbon-design-system/carbon
 storybook: https://react.carbondesignsystem.com/
 styling: Sass
+webComponents: Lit
