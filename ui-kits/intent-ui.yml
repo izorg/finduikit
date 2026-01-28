@@ -1,8 +1,7 @@
 dependencies:
   - React Aria
-description: Intent UI helps developers copy and paste fully accessible React
-  components, customize them with Tailwind, and ship production ready UIs in
-  minutes.
+description: Copy and paste accessible React components built on React Aria and
+  Tailwind CSS. 87+ production-ready components for Next.js and Laravel.
 frameworks:
   - React
 homepage: https://intentui.com/
