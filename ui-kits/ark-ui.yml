@@ -16,7 +16,7 @@ frameworks:
 homepage: https://ark-ui.com/
 image:
   fit: cover
-  src: https://ark-ui.com/opengraph-image.png?0b173734bffff5ac
+  src: https://ark-ui.com/og-image.png
 name: Ark UI
 repository: https://github.com/chakra-ui/ark
 unstyled: true
