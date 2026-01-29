@@ -18,6 +18,7 @@ Built with:
 | UI Kit                                                                                     |                                 Repository                                  |
 | ------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------: |
 | [7.css](https://khang-nd.github.io/7.css/)                                                 |                 [GitHub](https://github.com/khang-nd/7.css)                 |
+| [8bitcn/ui](https://www.8bitcn.com/)                                                       |              [GitHub](https://github.com/TheOrcDev/8bitcn-ui)               |
 | [98.css](https://jdan.github.io/98.css/)                                                   |                  [GitHub](https://github.com/jdan/98.css)                   |
 | [9ui](https://www.9ui.dev/)                                                                |                [GitHub](https://github.com/borabaloglu/9ui)                 |
 | [AgnosticUI](https://www.agnosticui.com/)                                                  |             [GitHub](https://github.com/AgnosticUI/agnosticui)              |
@@ -121,6 +122,7 @@ Built with:
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |
 | [Pico](https://picocss.com/)                                                               |                  [GitHub](https://github.com/picocss/pico)                  |
 | [PIE](https://pie.design/)                                                                 |               [GitHub](https://github.com/GetJobber/atlantis)               |
+| [Plasma UI](https://plasma.sberdevices.ru/ui/)                                             |            [GitHub](https://github.com/salute-developers/plasma)            |
 | [Playbook](https://playbook.powerapp.cloud/)                                               |               [GitHub](https://github.com/powerhome/playbook)               |
 | [Polaris](https://polaris.shopify.com/)                                                    |                [GitHub](https://github.com/Shopify/polaris)                 |
 | [Porsche](https://designsystem.porsche.com/)                                               |  [GitHub](https://github.com/porsche-design-system/porsche-design-system)   |

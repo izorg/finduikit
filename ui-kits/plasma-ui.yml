@@ -1,0 +1,7 @@
+description: Plasma UI – библиотека с открытым исходным кодом,
+frameworks:
+  - React
+homepage: https://plasma.sberdevices.ru/ui/
+name: Plasma UI
+repository: https://github.com/salute-developers/plasma
+styling: styled-components
