@@ -30,7 +30,7 @@
     "@mdi/js": "7.4.47",
     "@next/third-parties": "16.1.6",
     "@radix-ui/react-compose-refs": "1.1.2",
-    "@radix-ui/themes": "3.2.1",
+    "@radix-ui/themes": "3.3.0",
     "@sentry/nextjs": "10.38.0",
     "classnames": "2.5.1",
     "core-js": "3.48.0",
@@ -44,7 +44,7 @@
     "next-themes": "0.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "simple-icons": "16.6.1",
+    "simple-icons": "16.7.0",
     "usehooks-ts": "3.1.1"
   },
   "devDependencies": {
@@ -78,7 +78,7 @@
     "eslint-plugin-unicorn": "62.0.0",
     "eslint-plugin-yml": "3.0.0",
     "firebase-tools": "15.5.1",
-    "globals": "17.2.0",
+    "globals": "17.3.0",
     "graphql": "16.12.0",
     "knip": "5.82.1",
     "node-html-parser": "7.0.2",
