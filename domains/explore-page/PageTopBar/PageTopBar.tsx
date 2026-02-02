@@ -4,7 +4,7 @@ import { Box, Container, Flex, SegmentedControl, Text } from "@radix-ui/themes";
 import classNames from "classnames";
 import {
   type ChangeEvent,
-  type FormEvent,
+  type SubmitEvent,
   useCallback,
   useEffect,
   useRef,
@@ -63,7 +63,7 @@ export const PageTopBar = () => {
   };
 
   const onSubmit = useCallback(
-    (event: FormEvent<HTMLFormElement>) => {
+    (event: SubmitEvent<HTMLFormElement>) => {
       setDebounceSearch.cancel();
 
       event.preventDefault();
