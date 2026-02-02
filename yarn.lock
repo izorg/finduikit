@@ -5557,9 +5557,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/themes@npm:3.2.1":
-  version: 3.2.1
-  resolution: "@radix-ui/themes@npm:3.2.1"
+"@radix-ui/themes@npm:3.3.0":
+  version: 3.3.0
+  resolution: "@radix-ui/themes@npm:3.3.0"
   dependencies:
     "@radix-ui/colors": "npm:^3.0.0"
     classnames: "npm:^2.3.2"
@@ -5575,7 +5575,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/e026d86ce301df296524c0891d2e5fcc30906dda75e5f9aa8de259eab9d2fa8ca58897d0c51077bb55f3344e58bb839bdde88251b400c4d8f0c62eb712b6b8a9
+  checksum: 10/f2126b0bf9d2076a33bb7ace72cfdca30bd005737a46c2e18812b07d8be70c4ab0b5c8d4c975cc7c60d3213de7b95f5b2c676796f34d45dddfcad276358c12b9
   languageName: node
   linkType: hard
 
@@ -10483,7 +10483,7 @@ __metadata:
     "@next/third-parties": "npm:16.1.6"
     "@nodejs-loaders/css-module": "npm:1.2.0"
     "@radix-ui/react-compose-refs": "npm:1.1.2"
-    "@radix-ui/themes": "npm:3.2.1"
+    "@radix-ui/themes": "npm:3.3.0"
     "@sentry/nextjs": "npm:10.38.0"
     "@stylistic/eslint-plugin": "npm:5.7.1"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.1"
@@ -10510,7 +10510,7 @@ __metadata:
     firebase-admin: "npm:13.6.0"
     firebase-tools: "npm:15.5.1"
     fuse.js: "npm:7.1.0"
-    globals: "npm:17.2.0"
+    globals: "npm:17.3.0"
     graphql: "npm:16.12.0"
     knip: "npm:5.82.1"
     linkify-plugin-mention: "npm:4.3.2"
@@ -10526,7 +10526,7 @@ __metadata:
     prettier: "npm:3.8.1"
     react: "npm:19.2.4"
     react-dom: "npm:19.2.4"
-    simple-icons: "npm:16.6.1"
+    simple-icons: "npm:16.7.0"
     stylelint: "npm:17.1.0"
     stylelint-config-css-modules: "npm:4.6.0"
     stylelint-config-standard: "npm:40.0.0"
@@ -11148,10 +11148,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:17.2.0":
-  version: 17.2.0
-  resolution: "globals@npm:17.2.0"
-  checksum: 10/2812d7ae9a2889da33cad5188e6fe7c2d1a615e62d8e2092fbaa76a016536c2fcd72aba25896d8c6112fa0f2d95f005f59bf1dfc81ee014fe1ba54326ce14e57
+"globals@npm:17.3.0":
+  version: 17.3.0
+  resolution: "globals@npm:17.3.0"
+  checksum: 10/44ba2b7db93eb6a2531dfba09219845e21f2e724a4f400eb59518b180b7d5bcf7f65580530e3d3023d7dc2bdbacf5d265fd87c393f567deb9a2b0472b51c9d5e
   languageName: node
   linkType: hard
 
@@ -17267,10 +17267,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:16.6.1":
-  version: 16.6.1
-  resolution: "simple-icons@npm:16.6.1"
-  checksum: 10/e6bc876981933a205316566a4bb94be93dcf69888411aebbde121e1a3afb10db146a5c384ec25241f0961ffd45536f40ed3ddfe0027175f42619d1df29be7830
+"simple-icons@npm:16.7.0":
+  version: 16.7.0
+  resolution: "simple-icons@npm:16.7.0"
+  checksum: 10/cc9fb6345b4d8d320b00021ea0d3d4b1adb685e62ef85db0ca18b56dc74d4687d6babfe1c2144f2523bad6fc95b25253a1d1682cd61df15e351ec9711e0f04c0
   languageName: node
   linkType: hard
 
