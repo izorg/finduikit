@@ -1,13 +1,14 @@
 dependencies:
   - React Aria
-description: Copy and paste accessible React components built on React Aria and
-  Tailwind CSS. 87+ production-ready components for Next.js and Laravel.
+description: Intent UI is a chill set of React components, built on top of React
+  Aria Components and Tailwind CSS. Easy to customize and just copy & paste into
+  your React projects.
 frameworks:
   - React
 homepage: https://intentui.com/
 image:
   fit: cover
-  src: https://intentui.com/opengraph-image-12gd74.png?06407fbb03c20cb7
+  src: https://repository-images.githubusercontent.com/824433284/33c0e699-a892-41a4-a2ca-de1e65986c9c
 name: Intent UI
-repository: https://github.com/irsyadadl/intentui
+repository: https://github.com/intentui/intentui
 styling: Tailwind CSS

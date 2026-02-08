@@ -86,7 +86,7 @@ Built with:
 | [Helsinki Design System](https://hds.hel.fi/)                                              |    [GitHub](https://github.com/City-of-Helsinki/helsinki-design-system)     |
 | [HeroUI](https://www.heroui.com/)                                                          |               [GitHub](https://github.com/heroui-inc/heroui)                |
 | [Instructure UI](https://instructure.design/)                                              |           [GitHub](https://github.com/instructure/instructure-ui)           |
-| [Intent UI](https://intentui.com/)                                                         |               [GitHub](https://github.com/irsyadadl/intentui)               |
+| [Intent UI](https://intentui.com/)                                                         |               [GitHub](https://github.com/intentui/intentui)                |
 | [Intergalactic](https://developer.semrush.com/intergalactic/)                              |             [GitHub](https://github.com/semrush/intergalactic)              |
 | [Ionic](https://ionicframework.com/)                                                       |           [GitHub](https://github.com/ionic-team/ionic-framework)           |
 | [Kaizen](https://cultureamp.design/)                                                       |        [GitHub](https://github.com/cultureamp/kaizen-design-system)         |
