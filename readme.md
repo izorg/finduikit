@@ -61,7 +61,6 @@ Built with:
 | [Codex](https://doc.wikimedia.org/codex/latest/)                                           |             [GitHub](https://github.com/wikimedia/design-codex)             |
 | [Coinbase Design System](https://cds.coinbase.com/)                                        |                  [GitHub](https://github.com/coinbase/cds)                  |
 | [commercetools UI Kit](https://uikit.commercetools.com/)                                   |              [GitHub](https://github.com/commercetools/ui-kit)              |
-| [Corvu](https://corvu.dev/)                                                                |                 [GitHub](https://github.com/corvudev/corvu)                 |
 | [coss ui](https://coss.com/ui/docs)                                                        |                  [GitHub](https://github.com/cosscom/coss)                  |
 | [daisyUI](https://daisyui.com/)                                                            |                [GitHub](https://github.com/saadeghi/daisyui)                |
 | [dotUI](https://dotui.org/)                                                                |                 [GitHub](https://github.com/mehdibha/dotui)                 |
@@ -118,13 +117,11 @@ Built with:
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/cschroeter/park-ui)               |
 | [Paste](https://paste.twilio.design/)                                                      |               [GitHub](https://github.com/twilio-labs/paste)                |
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
-| [Persona](https://privy-open-source.github.io/design-system/)                              |        [GitHub](https://github.com/privy-open-source/design-system)         |
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |
 | [Pico](https://picocss.com/)                                                               |                  [GitHub](https://github.com/picocss/pico)                  |
 | [PIE](https://pie.design/)                                                                 |               [GitHub](https://github.com/GetJobber/atlantis)               |
 | [Plasma UI](https://plasma.sberdevices.ru/ui/)                                             |            [GitHub](https://github.com/salute-developers/plasma)            |
 | [Playbook](https://playbook.powerapp.cloud/)                                               |               [GitHub](https://github.com/powerhome/playbook)               |
-| [Polaris](https://polaris.shopify.com/)                                                    |                [GitHub](https://github.com/Shopify/polaris)                 |
 | [Porsche](https://designsystem.porsche.com/)                                               |  [GitHub](https://github.com/porsche-design-system/porsche-design-system)   |
 | [Preline UI](https://preline.co/)                                                          |           [GitHub](https://github.com/htmlstreamofficial/preline)           |
 | [Priceline](https://priceline.github.io/design-system/)                                    |            [GitHub](https://github.com/priceline/design-system)             |
@@ -160,7 +157,6 @@ Built with:
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |         [GitHub](https://github.com/adobe/spectrum-web-components)          |
 | [Stacks](https://stackoverflow.design/)                                                    |              [GitHub](https://github.com/StackExchange/Stacks)              |
 | [Strapi](https://design-system.strapi.io/)                                                 |              [GitHub](https://github.com/strapi/design-system)              |
-| [SUID](https://suid.dev/)                                                                  |                  [GitHub](https://github.com/swordev/suid)                  |
 | [System.css](https://sakofchit.github.io/system.css/)                                      |              [GitHub](https://github.com/sakofchit/system.css)              |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |             [GitHub](https://github.com/taiga-family/taiga-ui)              |
 | [Tamagui](https://tamagui.dev/)                                                            |                [GitHub](https://github.com/tamagui/tamagui)                 |
@@ -176,7 +172,6 @@ Built with:
 | [Varlet](https://varletjs.org/)                                                            |                [GitHub](https://github.com/varletjs/varlet)                 |
 | [Vibe](https://vibe.monday.com/)                                                           |                 [GitHub](https://github.com/mondaycom/vibe)                 |
 | [VKUI](https://vkcom.github.io/VKUI/)                                                      |                   [GitHub](https://github.com/VKCOM/VKUI)                   |
-| [Vuestic UI](https://ui.vuestic.dev/)                                                      |              [GitHub](https://github.com/epicmaxco/vuestic-ui)              |
 | [Vuetify](https://vuetifyjs.com/)                                                          |               [GitHub](https://github.com/vuetifyjs/vuetify)                |
 | [Wanda](https://design.wonderflow.ai/)                                                     |              [GitHub](https://github.com/wonderflow-bv/wanda)               |
 | [Web Awesome](https://webawesome.com/)                                                     |           [GitHub](https://github.com/shoelace-style/webawesome)            |
@@ -187,6 +182,5 @@ Built with:
 | [Yoga](https://gympass.github.io/yoga/)                                                    |                  [GitHub](https://github.com/gympass/yoga)                  |
 | [Zag](https://zagjs.com/)                                                                  |                 [GitHub](https://github.com/chakra-ui/zag)                  |
 | [Zen](https://zen.umami.is/)                                                               |            [GitHub](https://github.com/umami-software/react-zen)            |
-| [Zent](https://youzan.github.io/zent/)                                                     |                  [GitHub](https://github.com/youzan/zent)                   |
 
 <!-- Table -->
