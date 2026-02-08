@@ -114,7 +114,7 @@ Built with:
 | [Orbit](https://orbit.kiwi/)                                                               |                 [GitHub](https://github.com/kiwicom/orbit)                  |
 | [Palette](https://palette.artsy.net/)                                                      |                 [GitHub](https://github.com/artsy/palette)                  |
 | [PaperCSS](https://www.getpapercss.com/)                                                   |               [GitHub](https://github.com/papercss/papercss)                |
-| [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/cschroeter/park-ui)               |
+| [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |
 | [Paste](https://paste.twilio.design/)                                                      |               [GitHub](https://github.com/twilio-labs/paste)                |
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |
