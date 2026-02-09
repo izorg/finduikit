@@ -1,6 +1,8 @@
 ai:
+  - type: LLMs.txt
+    url: https://react-spectrum.adobe.com/ai#llmstxt
   - type: MCP
-    url: https://react-spectrum.adobe.com/mcp
+    url: https://react-spectrum.adobe.com/ai#mcp-server
 dependencies:
   - React Aria
 description: A collection of libraries and tools that help you build adaptive,
