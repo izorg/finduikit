@@ -163,7 +163,7 @@ Built with:
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                 [GitHub](https://github.com/ITS-HCD/nysds)                  |
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |               [GitHub](https://github.com/TDRA-ae/aegov-dls)                |
 | [Tremor](https://tremor.so/)                                                               |               [GitHub](https://github.com/tremorlabs/tremor)                |
-| [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |             [GitHub](https://github.com/SAP/ui5-webcomponents)              |
+| [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |               [GitHub](https://github.com/UI5/webcomponents)                |
 | [UIkit](https://getuikit.com/)                                                             |                  [GitHub](https://github.com/uikit/uikit)                   |
 | [USWDS](https://designsystem.digital.gov/)                                                 |                  [GitHub](https://github.com/uswds/uswds)                   |
 | [Vaadin](https://vaadin.com/components)                                                    |             [GitHub](https://github.com/vaadin/web-components)              |
