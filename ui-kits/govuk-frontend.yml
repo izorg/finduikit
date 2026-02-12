@@ -3,7 +3,7 @@ description: GOV.UK Frontend contains the code you need to start building a user
 homepage: https://design-system.service.gov.uk/
 image:
   fit: cover
-  src: https://design-system.service.gov.uk/assets/rebrand/images/govuk-opengraph-image.png
+  src: https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png
 name: GOV.UK Frontend
 repository: https://github.com/alphagov/govuk-frontend
 styling: Sass
