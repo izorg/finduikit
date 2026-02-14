@@ -177,7 +177,6 @@ Built with:
 | [Web Awesome](https://webawesome.com/)                                                     |           [GitHub](https://github.com/shoelace-style/webawesome)            |
 | [Welcome UI](https://www.welcome-ui.com/)                                                  |                [GitHub](https://github.com/WTTJ/welcome-ui)                 |
 | [Workday Canvas Kit](https://canvas.workday.com/)                                          |               [GitHub](https://github.com/Workday/canvas-kit)               |
-| [WPDS](https://build.washingtonpost.com/)                                                  |           [GitHub](https://github.com/washingtonpost/wpds-ui-kit)           |
 | [XP.css](https://botoxparty.github.io/XP.css/)                                             |               [GitHub](https://github.com/botoxparty/XP.css)                |
 | [Yoga](https://gympass.github.io/yoga/)                                                    |                  [GitHub](https://github.com/gympass/yoga)                  |
 | [Zag](https://zagjs.com/)                                                                  |                 [GitHub](https://github.com/chakra-ui/zag)                  |
