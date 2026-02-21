@@ -9,7 +9,7 @@ frameworks:
 homepage: https://www.shadcn-vue.com/
 image:
   fit: cover
-  src: https://www.shadcn-vue.com/__og-image__/static/og.png
+  src: https://www.shadcn-vue.com/__og-image__/image/og.png
 name: shadcn/vue
 repository: https://github.com/unovue/shadcn-vue
 styling: Tailwind CSS
