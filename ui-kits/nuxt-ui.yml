@@ -3,6 +3,8 @@ ai:
     url: https://ui.nuxt.com/docs/getting-started/ai/llms-txt
   - type: MCP
     url: https://ui.nuxt.com/docs/getting-started/ai/mcp
+  - type: Skill
+    url: https://ui.nuxt.com/docs/getting-started/ai/skills
 dependencies:
   - Reka UI
 description: A comprehensive Vue UI component library (Nuxt optional) with 125+

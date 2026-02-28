@@ -14,7 +14,7 @@ type StarBadgeProps = {
 
 export const StarBadge = ({ stars }: StarBadgeProps) => (
   <Tooltip content="Stars">
-    <Badge color="amber">
+    <Badge color="amber" size="2">
       <SvgIcon path={mdiStar} />
       {starFormatter.format(stars)}
     </Badge>

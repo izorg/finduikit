@@ -9,7 +9,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["LLMs.txt", "MCP"]
+            "enum": ["LLMs.txt", "MCP", "Skill"]
           },
           "url": {
             "type": "string",

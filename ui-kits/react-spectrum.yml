@@ -3,6 +3,8 @@ ai:
     url: https://react-spectrum.adobe.com/ai#llmstxt
   - type: MCP
     url: https://react-spectrum.adobe.com/ai#mcp-server
+  - type: Skill
+    url: https://react-spectrum.adobe.com/ai#agent-skills
 dependencies:
   - React Aria
 description: A collection of libraries and tools that help you build adaptive,

@@ -25,11 +25,11 @@ export const UiKitStats = (props: UiKitStatsProps) => {
   let webComponentStats: ReactNode;
 
   if (ai) {
-    aiStats = ai.map((item) => (
-      <li key={item.type}>
-        <AiBadge ai={item} />
+    aiStats = (
+      <li key="ai">
+        <AiBadge ai={ai} />
       </li>
-    ));
+    );
   }
 
   if (issues) {
@@ -65,7 +65,7 @@ export const UiKitStats = (props: UiKitStatsProps) => {
   }
 
   return (
-    <Flex asChild gap="3">
+    <Flex asChild gapX="3" gapY="1" wrap="wrap">
       <Text asChild size="5">
         <ul aria-label="Statistics and features" className={styles.list}>
           {stats}
