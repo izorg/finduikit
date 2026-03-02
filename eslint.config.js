@@ -1,3 +1,4 @@
+import { fixupConfigRules } from "@eslint/compat";
 import css from "@eslint/css";
 import js from "@eslint/js";
 import json from "@eslint/json";
@@ -40,8 +41,8 @@ export default defineConfig(
       jsxA11y.flatConfigs.recommended,
       next.configs.recommended,
       next.configs["core-web-vitals"],
-      react.configs.flat.recommended,
-      react.configs.flat["jsx-runtime"],
+      fixupConfigRules(react.configs.flat.recommended),
+      fixupConfigRules(react.configs.flat["jsx-runtime"]),
       reactHooks.configs.flat["recommended-latest"],
       stylistic.configs.recommended,
       unicorn.configs.recommended,
