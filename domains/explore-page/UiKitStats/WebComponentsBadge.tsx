@@ -1,4 +1,4 @@
-import { Badge, Tooltip } from "@radix-ui/themes";
+import { Button, Tooltip } from "@radix-ui/themes";
 
 import { SvgIcon } from "../../icon";
 import {
@@ -7,13 +7,21 @@ import {
   webComponentsLinks,
 } from "../../web-components";
 
+import styles from "./WebComponentsBadge.module.css";
+
 type WebComponentsProps = {
   webComponents: WebComponentsLibrary;
 };
 
 export const WebComponentsBadge = ({ webComponents }: WebComponentsProps) => (
   <Tooltip content="Web Components">
-    <Badge asChild color="blue">
+    <Button
+      asChild
+      className={styles.badge}
+      color="blue"
+      size="1"
+      variant="soft"
+    >
       <a
         href={webComponentsLinks[webComponents]}
         rel="noreferrer"
@@ -22,6 +30,6 @@ export const WebComponentsBadge = ({ webComponents }: WebComponentsProps) => (
         <SvgIcon path={webComponentsIcons[webComponents]} />
         {webComponents}
       </a>
-    </Badge>
+    </Button>
   </Tooltip>
 );
