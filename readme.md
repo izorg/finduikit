@@ -74,7 +74,6 @@ Built with:
 | [Fluent](https://fluent2.microsoft.design/)                                                |               [GitHub](https://github.com/microsoft/fluentui)               |
 | [FlyonUI](https://flyonui.com/)                                                            |             [GitHub](https://github.com/themeselection/flyonui)             |
 | [Forma 36](https://f36.contentful.com/)                                                    |              [GitHub](https://github.com/contentful/forma-36)               |
-| [Foundation](https://get.foundation/sites.html)                                            |          [GitHub](https://github.com/foundation/foundation-sites)           |
 | [Garden](https://garden.zendesk.com/)                                                      |         [GitHub](https://github.com/zendeskgarden/react-components)         |
 | [Gestalt](https://gestalt.pinterest.systems/)                                              |               [GitHub](https://github.com/pinterest/gestalt)                |
 | [gluestack-ui](https://gluestack.io/)                                                      |             [GitHub](https://github.com/gluestack/gluestack-ui)             |
@@ -111,14 +110,12 @@ Built with:
 | [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/)                                 |          [GitHub](https://github.com/valor-software/ngx-bootstrap)          |
 | [NSW](https://designsystem.nsw.gov.au/)                                                    |          [GitHub](https://github.com/digitalnsw/nsw-design-system)          |
 | [Nuxt UI](https://ui.nuxt.com/)                                                            |                    [GitHub](https://github.com/nuxt/ui)                     |
-| [Orbit](https://orbit.kiwi/)                                                               |                 [GitHub](https://github.com/kiwicom/orbit)                  |
 | [Palette](https://palette.artsy.net/)                                                      |                 [GitHub](https://github.com/artsy/palette)                  |
 | [PaperCSS](https://www.getpapercss.com/)                                                   |               [GitHub](https://github.com/papercss/papercss)                |
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |
 | [Paste](https://paste.twilio.design/)                                                      |               [GitHub](https://github.com/twilio-labs/paste)                |
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |
-| [Pico](https://picocss.com/)                                                               |                  [GitHub](https://github.com/picocss/pico)                  |
 | [PIE](https://pie.design/)                                                                 |               [GitHub](https://github.com/GetJobber/atlantis)               |
 | [Plasma UI](https://plasma.sberdevices.ru/ui/)                                             |            [GitHub](https://github.com/salute-developers/plasma)            |
 | [Playbook](https://playbook.powerapp.cloud/)                                               |               [GitHub](https://github.com/powerhome/playbook)               |
@@ -138,7 +135,6 @@ Built with:
 | [React Bootstrap](https://react-bootstrap.github.io/)                                      |        [GitHub](https://github.com/react-bootstrap/react-bootstrap)         |
 | [React Spectrum](https://react-spectrum.adobe.com/)                                        |              [GitHub](https://github.com/adobe/react-spectrum)              |
 | [React Suite](https://rsuitejs.com/)                                                       |                 [GitHub](https://github.com/rsuite/rsuite)                  |
-| [React95](https://react95.io/)                                                             |               [GitHub](https://github.com/react95-io/React95)               |
 | [Reka UI](https://reka-ui.com/)                                                            |                 [GitHub](https://github.com/unovue/reka-ui)                 |
 | [Reshaped](https://reshaped.so/)                                                           |              [GitHub](https://github.com/reshaped-ui/reshaped)              |
 | [Restart UI](https://react-restart.github.io/ui/)                                          |                [GitHub](https://github.com/react-restart/ui)                |
@@ -157,7 +153,6 @@ Built with:
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |         [GitHub](https://github.com/adobe/spectrum-web-components)          |
 | [Stacks](https://stackoverflow.design/)                                                    |              [GitHub](https://github.com/StackExchange/Stacks)              |
 | [Strapi](https://design-system.strapi.io/)                                                 |              [GitHub](https://github.com/strapi/design-system)              |
-| [System.css](https://sakofchit.github.io/system.css/)                                      |              [GitHub](https://github.com/sakofchit/system.css)              |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |             [GitHub](https://github.com/taiga-family/taiga-ui)              |
 | [Tamagui](https://tamagui.dev/)                                                            |                [GitHub](https://github.com/tamagui/tamagui)                 |
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                 [GitHub](https://github.com/ITS-HCD/nysds)                  |
@@ -177,7 +172,6 @@ Built with:
 | [Web Awesome](https://webawesome.com/)                                                     |           [GitHub](https://github.com/shoelace-style/webawesome)            |
 | [Welcome UI](https://www.welcome-ui.com/)                                                  |                [GitHub](https://github.com/WTTJ/welcome-ui)                 |
 | [Workday Canvas Kit](https://canvas.workday.com/)                                          |               [GitHub](https://github.com/Workday/canvas-kit)               |
-| [XP.css](https://botoxparty.github.io/XP.css/)                                             |               [GitHub](https://github.com/botoxparty/XP.css)                |
 | [Yoga](https://gympass.github.io/yoga/)                                                    |                  [GitHub](https://github.com/gympass/yoga)                  |
 | [Zag](https://zagjs.com/)                                                                  |                 [GitHub](https://github.com/chakra-ui/zag)                  |
 | [Zen](https://zen.umami.is/)                                                               |            [GitHub](https://github.com/umami-software/react-zen)            |

@@ -1,9 +1,0 @@
-description: React components of open-source Orbit design system by Kiwi.com
-figma: https://www.figma.com/community/file/996016247181254052
-frameworks:
-  - React
-homepage: https://orbit.kiwi/
-name: Orbit
-repository: https://github.com/kiwicom/orbit
-storybook: https://kiwicom.github.io/orbit/
-styling: Tailwind CSS
