@@ -1,5 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:best-practices", "group:all"],
-  "schedule": ["* * * * 6"]
+  "lockFileMaintenance": {
+    "schedule": ["* 7-8 * * 6"]
+  },
+  "schedule": ["* 7-8 * * 6"],
+  "timezone": "Europe/Berlin"
 }
