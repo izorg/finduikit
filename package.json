@@ -6,7 +6,7 @@
   "sideEffects": [
     "domains/polyfills/**"
   ],
-  "packageManager": "yarn@4.12.0",
+  "packageManager": "yarn@4.13.0",
   "scripts": {
     "analyze": "next experimental-analyze",
     "build": "next build",
