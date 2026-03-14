@@ -20,6 +20,9 @@ const description =
   "Discover a curated collection of web UI kits with high-quality components and templates for developers";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
   description,
   title,
 };
