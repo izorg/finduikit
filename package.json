@@ -59,6 +59,7 @@
     "@graphql-codegen/typescript-operations": "5.0.9",
     "@next/eslint-plugin-next": "16.1.6",
     "@nodejs-loaders/css-module": "1.2.0",
+    "@prettier/plugin-xml": "3.4.2",
     "@stylistic/eslint-plugin": "5.10.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
     "@types/node": "24.12.0",

@@ -23,6 +23,12 @@ const RootLayout = (props: LayoutProps<"/">) => {
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <link
+        href="/opensearch.xml"
+        rel="search"
+        title="Find UI Kit"
+        type="application/opensearchdescription+xml"
+      />
       <body>
         <ThemeProvider attribute="class">
           <Theme accentColor="blue">{children}</Theme>

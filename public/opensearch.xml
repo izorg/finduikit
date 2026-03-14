@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Find UI Kit</ShortName>
+  <Description>Search open-source UI kits and design systems</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <Language>en-us</Language>
+  <Url
+    method="get"
+    template="https://finduikit.com/explore?search={searchTerms}"
+    type="text/html"
+  />
+  <Image height="16" type="image/x-icon" width="16">
+    https://finduikit.com/favicon.ico
+  </Image>
+</OpenSearchDescription>
