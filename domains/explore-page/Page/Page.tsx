@@ -2,19 +2,26 @@ import { Flex } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import { Suspense } from "react";
 
-import { getUiKits } from "../../ui-kit/server";
+import {
+  getUiKitFileDataEntriesFromFiles,
+  getUiKits,
+} from "../../ui-kit/server";
 import { PageTopBar } from "../PageTopBar";
 import { PageView } from "../PageView";
 
 const title = "Explore UI Kits";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/explore",
-  },
-  description:
-    "Explore 160+ open‑source UI kits & design systems. Search, filter by framework (React, Vue, Angular, Svelte, Solid), sort by stars or updates in grid or table.",
-  title,
+export const generateMetadata = (): Metadata => {
+  const uiKitEntries = getUiKitFileDataEntriesFromFiles();
+  const uiKitsCount = uiKitEntries.length;
+
+  return {
+    alternates: {
+      canonical: "/explore",
+    },
+    description: `Explore ${uiKitsCount.toString()} open‑source UI kits & design systems. Search, filter by framework (React, Vue, Angular, Svelte, Solid), sort by stars or updates in grid or table view.`,
+    title,
+  };
 };
 
 export const Page = async () => {

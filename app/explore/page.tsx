@@ -1,1 +1,1 @@
-export { Page as default, metadata } from "../../domains/explore-page";
+export { Page as default, generateMetadata } from "../../domains/explore-page";
