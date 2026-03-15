@@ -1,4 +1,9 @@
 {
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Use `feat` when adding new content to `ui-kits` folder or adding new fields to files in this folder, `fix` when changing existing fields in `ui-kits` files and `chore` for any other changes. If changes are done only for `package.json` and `yarn.lock` always use `chore: upgrade packages` commit message."
+    }
+  ],
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "yaml.schemas": {
     "domains/ui-kit/UiKitStaticData.schema.json": "ui-kits/*.yml"
