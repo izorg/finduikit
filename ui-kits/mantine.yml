@@ -1,3 +1,6 @@
+ai:
+  - type: LLMs.txt
+    url: https://mantine.dev/guides/llms/
 description: A fully featured React components library
 figma: https://www.figma.com/community/file/1293978471602433537
 frameworks:
