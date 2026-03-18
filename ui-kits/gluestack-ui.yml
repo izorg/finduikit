@@ -10,7 +10,7 @@ frameworks:
 homepage: https://gluestack.io/
 image:
   fit: cover
-  src: https://gluestack.io/images/og-image.png
+  src: https://repository-images.githubusercontent.com/587710850/b369bd1b-0670-423d-a860-622636e90c06
 name: gluestack-ui
 repository: https://github.com/gluestack/gluestack-ui
 styling: Tailwind CSS
