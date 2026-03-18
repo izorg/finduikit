@@ -1,3 +1,6 @@
+ai:
+  - type: MCP
+    url: https://www.shadcn-vue.com/docs/mcp
 dependencies:
   - Reka UI
 description: A set of beautifully designed components that you can customize,
