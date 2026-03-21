@@ -1,3 +1,8 @@
+ai:
+  - type: LLMs.txt
+    url: https://angularprimitives.com/getting-started/llms
+  - type: MCP
+    url: https://angularprimitives.com/getting-started/mcp
 description: Angular Primitives is a low-level headless UI component library
   with a focus on accessibility, customization, and developer experience.
 frameworks:

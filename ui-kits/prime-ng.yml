@@ -1,3 +1,8 @@
+ai:
+  - type: LLMs.txt
+    url: https://primeng.org/llms
+  - type: MCP
+    url: https://primeng.org/mcp
 description: The Most Complete Angular UI Component Library
 frameworks:
   - Angular

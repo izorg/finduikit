@@ -1,3 +1,8 @@
+ai:
+  - type: LLMs.txt
+    url: https://rsuitejs.com/guide/llms/
+  - type: MCP
+    url: https://rsuitejs.com/guide/mcp-server/
 description: React Suite is a comprehensive suite of React components for
   building enterprise applications. Features 80+ components, responsive design,
   dark mode, internationalization, accessibility support, and TypeScript-ready.

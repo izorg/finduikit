@@ -1,3 +1,6 @@
+ai:
+  - type: LLMs.txt
+    url: https://reka-ui.com/llms.txt
 description: An open-source library with unstyled, primitive components,
   accompanied by a variety of examples & use cases ready to be integrated into
   your projects.

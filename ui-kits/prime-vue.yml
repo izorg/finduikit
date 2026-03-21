@@ -1,3 +1,8 @@
+ai:
+  - type: LLMs.txt
+    url: https://primevue.org/llms/
+  - type: MCP
+    url: https://primevue.org/mcp/
 description: The ultimate collection of design-agnostic, flexible and accessible
   Vue UI Components.
 frameworks:

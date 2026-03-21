@@ -1,3 +1,6 @@
+ai:
+  - type: LLMs.txt
+    url: https://ng.ant.design/docs/llms/en
 description: Angular Ant Design of Angular Component, An enterprise-class
   Angular UI component library based on Ant Design, all components are open
   source and free.
