@@ -80,7 +80,7 @@ const uiKitConverter: FirestoreDataConverter<UiKitDynamicDataSchema, never> = {
 const getUiKitDynamicDataMapFromFirestore = async () => {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("days");
 
   const uiKitsCollection =
     firebaseGetFirestoreUiKitsCollection().withConverter(uiKitConverter);
