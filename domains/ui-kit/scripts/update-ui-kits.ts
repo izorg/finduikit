@@ -80,10 +80,12 @@ const updateUiKit = async (dirent: Dirent) => {
     const { value: github } = githubResult;
     const { value: homepage } = homepageResult;
 
+    const image = await getImage({ data, github, homepage });
+
     outputData = {
       ...outputData,
       description: getDescription({ data, github, homepage }),
-      image: getImage({ data, github, homepage }),
+      image,
     };
   }
 

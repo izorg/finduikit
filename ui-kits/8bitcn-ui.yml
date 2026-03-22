@@ -3,7 +3,5 @@ description: A set of retro-designed, accessible components and a code
 frameworks:
   - React
 homepage: https://www.8bitcn.com/
-image:
-  src: https://www.8bitcn.com/assets/og-image.png
 name: 8bitcn/ui
 repository: https://github.com/TheOrcDev/8bitcn-ui

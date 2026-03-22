@@ -26,7 +26,7 @@ const getHomepageOgImage = (
 
 const preservedImages = new Set(["UI5 Web Components"]);
 
-export const getImage = ({
+export const getImage = async ({
   data,
   github,
   homepage,
@@ -34,7 +34,7 @@ export const getImage = ({
   data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
   homepage?: HTMLElement;
-}): UiKitStaticDataSchema["image"] => {
+}): Promise<UiKitStaticDataSchema["image"]> => {
   if (preservedImages.has(data.name)) {
     return data.image;
   }
@@ -56,6 +56,12 @@ export const getImage = ({
 
   if (!src) {
     return data.image;
+  }
+
+  const response = await fetch(src);
+
+  if (response.status === 404) {
+    return undefined;
   }
 
   return {
