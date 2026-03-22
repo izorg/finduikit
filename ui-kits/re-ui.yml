@@ -1,15 +1,14 @@
 dependencies:
   - Base UI
   - Radix Primitives
-description: Open-source collection of UI components and animated effects built
-  with React, Typescript, Tailwind CSS, and Motion. Pairs beautifully with
-  shadcn/ui.
+description: 1,000+ free React components and patterns for shadcn/ui. Built with
+  Next.js 16, Tailwind CSS v4, Radix UI and Base UI. Open source.
 frameworks:
   - React
 homepage: https://reui.io/
 image:
   fit: cover
-  src: https://reui.io/og?title=The%20Foundation%20for%20your%20Design%20System&description=A%20set%20of%20beautifully%20designed%20components%20that%20you%20can%20customize%2C%20extend%2C%20and%20build%20on.%20Start%20here%20then%20make%20it%20your%20own.%20Open%20Source.%20Open%20Code.
+  src: https://reui.io/og?title=Shadcn%20UI%20Patterns%20%E2%80%94%201%2C000%2B%20Free%20React%20Components&description=1%2C000%2B%20free%20React%20components%20and%20patterns%20for%20shadcn%2Fui.%20Built%20with%20Next.js%2016%2C%20Tailwind%20CSS%20v4%2C%20Radix%20UI%20and%20Base%20UI.%20Open%20source.
 name: ReUI
 repository: https://github.com/keenthemes/reui
 styling: Tailwind CSS
