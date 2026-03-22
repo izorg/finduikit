@@ -1,13 +1,20 @@
+ai:
+  - type: LLMs.txt
+    url: https://heroui.com/docs/react/getting-started/llms-txt
+  - type: MCP
+    url: https://heroui.com/docs/react/getting-started/mcp-server
+  - type: Skill
+    url: https://heroui.com/docs/react/getting-started/agent-skills
 description: A set of beautiful, customizable components that stay maintained
   and up to date.
-figma: https://www.figma.com/community/file/1267584376234254760
+figma: https://www.figma.com/community/file/1546526812159103429
 frameworks:
   - React
-homepage: https://www.heroui.com/
+homepage: https://heroui.com/
 image:
   fit: cover
   src: https://repository-images.githubusercontent.com/360522116/5a5f8a65-6935-4af9-9b9e-7393da37ae5c
 name: HeroUI
 repository: https://github.com/heroui-inc/heroui
-storybook: https://storybook.heroui.com/
+storybook: https://storybook-v3.heroui.com/
 styling: Tailwind CSS
