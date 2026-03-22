@@ -24,19 +24,19 @@ export const getDescription = ({
 }: {
   data: UiKitStaticDataSchema;
   github: Awaited<ReturnType<typeof fetchGitHubRepositoryData>>;
-  homepage: HTMLElement;
+  homepage?: HTMLElement;
 }) => {
   if (preservedDescriptions.has(data.name)) {
     return data.description;
   }
 
   const homepageDescription = homepage
-    .querySelector('meta[name="description"]')
+    ?.querySelector('meta[name="description"]')
     ?.getAttribute("content")
     ?.trim();
 
   const homepageOgDescription = homepage
-    .querySelector('meta[name="og:description"]')
+    ?.querySelector('meta[name="og:description"]')
     ?.getAttribute("content")
     ?.trim();
 
