@@ -10579,7 +10579,7 @@ __metadata:
     prettier: "npm:3.8.1"
     react: "npm:19.2.4"
     react-dom: "npm:19.2.4"
-    simple-icons: "npm:16.12.0"
+    simple-icons: "npm:16.13.0"
     stylelint: "npm:17.5.0"
     stylelint-config-css-modules: "npm:4.6.0"
     stylelint-config-standard: "npm:40.0.0"
@@ -10590,7 +10590,7 @@ __metadata:
     typescript-eslint: "npm:8.57.1"
     typescript-plugin-css-modules: "npm:5.2.0"
     usehooks-ts: "npm:3.1.1"
-    yaml: "npm:2.8.2"
+    yaml: "npm:2.8.3"
     zod: "npm:4.3.6"
   languageName: unknown
   linkType: soft
@@ -17366,10 +17366,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons@npm:16.12.0":
-  version: 16.12.0
-  resolution: "simple-icons@npm:16.12.0"
-  checksum: 10/e57652c8d803aa355679175ee721aa8411a046295a5b58787d8a130fe0cc0c452dfcbf3635714c88d09dff4928edec3b4d1321d16ea869967ec1b308b1fd6965
+"simple-icons@npm:16.13.0":
+  version: 16.13.0
+  resolution: "simple-icons@npm:16.13.0"
+  checksum: 10/c6dc4e78bc15be8f92285d4ec789d39d0606f046b521c36267f8c54344be7bb72b72054ccf3af5bbbafe3e68937c86a432937d14dc82e935321bdcd611f6ef25
   languageName: node
   linkType: hard
 
@@ -19438,12 +19438,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:2.8.2, yaml@npm:^2.0.0, yaml@npm:^2.2.1, yaml@npm:^2.3.1, yaml@npm:^2.4.1, yaml@npm:^2.8.2":
-  version: 2.8.2
-  resolution: "yaml@npm:2.8.2"
+"yaml@npm:2.8.3":
+  version: 2.8.3
+  resolution: "yaml@npm:2.8.3"
   bin:
     yaml: bin.mjs
-  checksum: 10/4eab0074da6bc5a5bffd25b9b359cf7061b771b95d1b3b571852098380db3b1b8f96e0f1f354b56cc7216aa97cea25163377ccbc33a2e9ce00316fe8d02f4539
+  checksum: 10/ecad41d39d34fae5cc17ea2d4b7f7f55faacd45cbce8983ba22d48d1ed1a92ed242ea49ea813a79ac39a69f75f9c5a03e7b5395fd954d55476f25e21a47c141d
   languageName: node
   linkType: hard
 
@@ -19451,6 +19451,15 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: 10/e088b37b4d4885b70b50c9fa1b7e54bd2e27f5c87205f9deaffd1fb293ab263d9c964feadb9817a7b129a5bf30a06582cb08750f810568ecc14f3cdbabb79cb3
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.0.0, yaml@npm:^2.2.1, yaml@npm:^2.3.1, yaml@npm:^2.4.1, yaml@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "yaml@npm:2.8.2"
+  bin:
+    yaml: bin.mjs
+  checksum: 10/4eab0074da6bc5a5bffd25b9b359cf7061b771b95d1b3b571852098380db3b1b8f96e0f1f354b56cc7216aa97cea25163377ccbc33a2e9ce00316fe8d02f4539
   languageName: node
   linkType: hard
 
