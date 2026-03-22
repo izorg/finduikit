@@ -2,7 +2,7 @@ name: "Update UI Kits"
 
 on:
   schedule:
-    - cron: "0 4 * * 6"
+    - cron: "0 4 * * *"
 
   workflow_dispatch: null
 
@@ -69,4 +69,4 @@ jobs:
             --base "${{ github.event.repository.default_branch }}" \
             --head "update-ui-kits" \
             --title "fix: update UI kits ($(date +'%Y-%m-%d'))" \
-            --body "Automated weekly update triggered by the **Weekly UI Kits Update** workflow."
+            --body "Automated daily update triggered by the **Daily UI Kits Update** workflow."
