@@ -82,7 +82,7 @@ Built with:
 | [Grommet](https://v2.grommet.io/)                                                          |                [GitHub](https://github.com/grommet/grommet)                 |
 | [Headless UI](https://headlessui.com/)                                                     |            [GitHub](https://github.com/tailwindlabs/headlessui)             |
 | [Helsinki Design System](https://hds.hel.fi/)                                              |    [GitHub](https://github.com/City-of-Helsinki/helsinki-design-system)     |
-| [HeroUI](https://www.heroui.com/)                                                          |               [GitHub](https://github.com/heroui-inc/heroui)                |
+| [HeroUI](https://heroui.com/)                                                              |               [GitHub](https://github.com/heroui-inc/heroui)                |
 | [Instructure UI](https://instructure.design/)                                              |           [GitHub](https://github.com/instructure/instructure-ui)           |
 | [Intent UI](https://intentui.com/)                                                         |               [GitHub](https://github.com/intentui/intentui)                |
 | [Intergalactic](https://developer.semrush.com/intergalactic/)                              |             [GitHub](https://github.com/semrush/intergalactic)              |
