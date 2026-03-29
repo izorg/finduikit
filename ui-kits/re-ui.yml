@@ -1,14 +1,14 @@
 dependencies:
   - Base UI
   - Radix Primitives
-description: Discover the free 1000+ open-source shadcn/ui component patterns
-  for React and Tailwind CSS.
+description: Discover the 1000+ free shadcn/ui components and blocks for React
+  and Tailwind CSS.
 frameworks:
   - React
 homepage: https://reui.io/
 image:
   fit: cover
-  src: https://reui.io/og?title=ReUI%20%E2%80%93%20Free%20Shadcn%20UI%20Components%2C%20Patterns%2C%20Blocks%20and%20Extensions&description=Discover%20the%20free%201000%2B%20open-source%20shadcn%2Fui%20component%20patterns%20for%20React%20and%20Tailwind%20CSS.
+  src: https://reui.io/og?title=ReUI%20%E2%80%93%20Shadcn%20UI%20Components%20and%20Blocks&description=Discover%20the%201000%2B%20free%20shadcn%2Fui%20components%20and%20blocks%20for%20React%20and%20Tailwind%20CSS.
 name: ReUI
 repository: https://github.com/keenthemes/reui
 styling: Tailwind CSS
