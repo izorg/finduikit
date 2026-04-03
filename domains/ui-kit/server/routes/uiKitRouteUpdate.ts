@@ -37,6 +37,7 @@ type FirestoreUiKitDataSchema = z.infer<typeof firestoreUiKitDataSchema>;
 
 const uiKitConverter: FirestoreDataConverter<
   UiKitDynamicDataSchema,
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-arguments -- false positive
   FirestoreUiKitDataSchema
 > = {
   fromFirestore: (snapshot) => {
@@ -67,6 +68,7 @@ const updateUiKit = async (
   dirent: Dirent,
   uiKitsCollection: CollectionReference<
     UiKitDynamicDataSchema,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-arguments -- false positive
     FirestoreUiKitDataSchema
   >,
 ) => {
