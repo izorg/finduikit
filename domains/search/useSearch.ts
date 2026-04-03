@@ -8,6 +8,7 @@ export const useSearch = () => {
 
   const setSearch = (search: string) => {
     const url = new URL(document.location.href);
+    const hasSearch = url.searchParams.has(searchKey);
 
     if (search) {
       url.searchParams.set(searchKey, search);
@@ -15,7 +16,11 @@ export const useSearch = () => {
       url.searchParams.delete(searchKey);
     }
 
-    globalThis.history.pushState({}, "", url);
+    if (hasSearch) {
+      globalThis.history.replaceState({}, "", url);
+    } else {
+      globalThis.history.pushState({}, "", url);
+    }
   };
 
   return {
