@@ -166,7 +166,7 @@ Built with:
 | [Vant](https://vant.pro/vant/)                                                             |                  [GitHub](https://github.com/youzan/vant)                   |
 | [Varlet](https://varletjs.org/)                                                            |                [GitHub](https://github.com/varletjs/varlet)                 |
 | [Vibe](https://vibe.monday.com/)                                                           |                 [GitHub](https://github.com/mondaycom/vibe)                 |
-| [VKUI](https://vkcom.github.io/VKUI/)                                                      |                   [GitHub](https://github.com/VKCOM/VKUI)                   |
+| [VKUI](https://vkui.io/)                                                                   |                   [GitHub](https://github.com/VKCOM/VKUI)                   |
 | [Vuetify](https://vuetifyjs.com/)                                                          |               [GitHub](https://github.com/vuetifyjs/vuetify)                |
 | [Wanda](https://design.wonderflow.ai/)                                                     |              [GitHub](https://github.com/wonderflow-bv/wanda)               |
 | [Web Awesome](https://webawesome.com/)                                                     |           [GitHub](https://github.com/shoelace-style/webawesome)            |

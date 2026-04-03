@@ -1,3 +1,8 @@
+ai:
+  - type: LLMs.txt
+    url: https://webawesome.com/docs/resources/llms
+  - type: Skill
+    url: https://webawesome.com/docs/resources/agent-skills
 description: Build better with Web Awesome, the open source library of web
   components from Font Awesome. Upgrade to Pro and ship websites faster!
 homepage: https://webawesome.com/

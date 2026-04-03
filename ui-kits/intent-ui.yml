@@ -1,3 +1,10 @@
+ai:
+  - type: LLMs.txt
+    url: https://intentui.com/docs/getting-started/ai#llmstxt
+  - type: MCP
+    url: https://intentui.com/docs/getting-started/ai#react-aria-mcp
+  - type: Skill
+    url: https://intentui.com/docs/getting-started/ai#skills
 dependencies:
   - React Aria
 description: Intent UI is a chill set of React components, built on top of React

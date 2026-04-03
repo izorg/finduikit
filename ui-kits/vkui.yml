@@ -3,10 +3,10 @@ description: VKUI – это набор React-компонентов, с пом�
 figma: https://www.figma.com/community/file/878586874888565148
 frameworks:
   - React
-homepage: https://vkcom.github.io/VKUI/
+homepage: https://vkui.io/
 image:
   src: https://repository-images.githubusercontent.com/79114815/ce38aa00-318a-11eb-8b89-8f8b6df2476d
 name: VKUI
 repository: https://github.com/VKCOM/VKUI
-storybook: https://vkcom.github.io/VKUI/playground/
+storybook: https://vkui.io/playground/
 styling: CSS
