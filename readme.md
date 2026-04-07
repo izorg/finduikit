@@ -110,6 +110,7 @@ Built with:
 | [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/)                                 |          [GitHub](https://github.com/valor-software/ngx-bootstrap)          |
 | [NSW](https://designsystem.nsw.gov.au/)                                                    |          [GitHub](https://github.com/digitalnsw/nsw-design-system)          |
 | [Nuxt UI](https://ui.nuxt.com/)                                                            |                    [GitHub](https://github.com/nuxt/ui)                     |
+| [Oat](https://oat.ink/)                                                                    |                   [GitHub](https://github.com/knadh/oat)                    |
 | [Palette](https://palette.artsy.net/)                                                      |                 [GitHub](https://github.com/artsy/palette)                  |
 | [PaperCSS](https://www.getpapercss.com/)                                                   |               [GitHub](https://github.com/papercss/papercss)                |
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |

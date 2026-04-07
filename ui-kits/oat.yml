@@ -1,0 +1,9 @@
+description: Ultra-lightweight, zero dependency, semantic HTML, CSS, JS UI
+  library. ~8KB min+gz.
+homepage: https://oat.ink/
+image:
+  fit: cover
+  src: https://oat.ink/thumb.png
+name: Oat
+repository: https://github.com/knadh/oat
+styling: CSS
