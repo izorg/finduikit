@@ -44,7 +44,7 @@ export const UiKitCardImage = (props: UiKitCardImageProps) => {
             onError={() => {
               captureException(
                 new Error(`Failed to load image for ${uiKit.name}`),
-                { contexts: { uiKit } },
+                { contexts: { "UI Kit": uiKit } },
               );
               setHidden(true);
             }}
