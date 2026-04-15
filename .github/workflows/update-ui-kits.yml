@@ -10,6 +10,9 @@ jobs:
   update-ui-kits:
     runs-on: ubuntu-latest
 
+    env:
+      BRANCH: update-ui-kits
+
     permissions:
       contents: write
       pull-requests: write
@@ -54,19 +57,30 @@ jobs:
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
-          BRANCH="update-ui-kits"
           git checkout -B "$BRANCH"
           git add -A
           git commit -m "fix: update UI kits"
           git push --force origin "$BRANCH"
 
-      - name: Create Pull Request with GitHub CLI
+      - name: Create or update Pull Request with GitHub CLI
         if: steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          gh pr create \
+          TITLE="fix: update UI kits ($(date +'%Y-%m-%d'))"
+          PR_NUMBER="$(gh pr list \
             --base "${{ github.event.repository.default_branch }}" \
-            --head "update-ui-kits" \
-            --title "fix: update UI kits ($(date +'%Y-%m-%d'))" \
-            --body "Automated daily update triggered by the **Daily UI Kits Update** workflow."
+            --head "$BRANCH" \
+            --state open \
+            --json number \
+            --jq '.[0].number')"
+
+          if [[ -n "$PR_NUMBER" ]]; then
+            gh pr edit "$PR_NUMBER" --title "$TITLE"
+          else
+            gh pr create \
+              --base "${{ github.event.repository.default_branch }}" \
+              --head "$BRANCH" \
+              --title "$TITLE" \
+              --body "Automated daily update triggered by the **Daily UI Kits Update** workflow."
+          fi
