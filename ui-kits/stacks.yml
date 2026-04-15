@@ -2,9 +2,6 @@ description: Stack Overflow’s Design System
 frameworks:
   - Svelte
 homepage: https://stackoverflow.design/
-image:
-  fit: cover
-  src: https://stackoverflow.design/assets/img/open-graph.jpg?1775840373233000000
 name: Stacks
 repository: https://github.com/StackExchange/Stacks
 storybook: https://beta.svelte.stackoverflow.design/
