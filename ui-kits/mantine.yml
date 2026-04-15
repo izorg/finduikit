@@ -1,7 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://mantine.dev/guides/llms/
-description: A fully featured React components library
+description: A fully featured React components library with 120+ customizable
+  components, hooks, and utilities. Build accessible web applications faster.
 figma: https://www.figma.com/community/file/1293978471602433537
 frameworks:
   - React
