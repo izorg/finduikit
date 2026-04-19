@@ -1,4 +1,6 @@
 description: Cloudflare's component library for building modern web applications.
+frameworks:
+  - React
 homepage: https://kumo-ui.com/
 name: Kumo
 repository: https://github.com/cloudflare/kumo
