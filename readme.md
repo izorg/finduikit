@@ -92,6 +92,7 @@ Built with:
 | [KoliBri](https://public-ui.github.io/en/)                                                 |               [GitHub](https://github.com/public-ui/kolibri)                |
 | [Kontur UI](https://tech.skbkontur.ru/kontur-ui/)                                          |              [GitHub](https://github.com/skbkontur/retail-ui)               |
 | [Kuma UI](https://www.kuma-ui.com/)                                                        |                [GitHub](https://github.com/kuma-ui/kuma-ui)                 |
+| [Kumo](https://kumo-ui.com/)                                                               |                [GitHub](https://github.com/cloudflare/kumo)                 |
 | [LeafyGreen UI](https://www.mongodb.design/)                                               |             [GitHub](https://github.com/mongodb/leafygreen-ui)              |
 | [Lightning](https://www.lightningdesignsystem.com/)                                        |          [GitHub](https://github.com/salesforce-ux/design-system)           |
 | [M3 Svelte](https://ktibow.github.io/m3-svelte/)                                           |                [GitHub](https://github.com/KTibow/m3-svelte)                |
