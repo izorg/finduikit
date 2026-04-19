@@ -1,4 +1,3 @@
-import { fixupConfigRules } from "@eslint/compat";
 import css from "@eslint/css";
 import js from "@eslint/js";
 import json from "@eslint/json";
@@ -8,11 +7,8 @@ import stylistic from "@stylistic/eslint-plugin";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
-import importPlugin from "eslint-plugin-import";
 import { configs as jsonSchemaValidatorConfigs } from "eslint-plugin-json-schema-validator";
-import jsxA11y from "eslint-plugin-jsx-a11y";
 import { configs as perfectionistConfigs } from "eslint-plugin-perfectionist";
-import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
 import { configs as ymlConfigs } from "eslint-plugin-yml";
@@ -36,13 +32,8 @@ export default defineConfig(
       js.configs.recommended,
       ts.configs.strictTypeChecked,
       compat.configs["flat/recommended"],
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
-      jsxA11y.flatConfigs.recommended,
       next.configs.recommended,
       next.configs["core-web-vitals"],
-      fixupConfigRules(react.configs.flat.recommended),
-      fixupConfigRules(react.configs.flat["jsx-runtime"]),
       reactHooks.configs.flat["recommended-latest"],
       stylistic.configs.recommended,
       unicorn.configs.recommended,
@@ -79,10 +70,6 @@ export default defineConfig(
       "unicorn/prevent-abbreviations": "off",
     },
     settings: {
-      "import/resolver": {
-        node: true,
-        typescript: true,
-      },
       lintAllEsApis: true,
       react: {
         version: "detect",
