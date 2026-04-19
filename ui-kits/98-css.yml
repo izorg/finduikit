@@ -1,9 +1,0 @@
-description: A design system for building faithful recreations of old UIs
-homepage: https://jdan.github.io/98.css/
-image:
-  src: https://github.com/jdan/98.css/raw/main/docs/window.png?raw=true
-name: 98.css
-packages:
-  - name: 98.css
-repository: https://github.com/jdan/98.css
-styling: CSS

@@ -19,7 +19,6 @@ Built with:
 | ------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------: |
 | [7.css](https://khang-nd.github.io/7.css/)                                                 |                 [GitHub](https://github.com/khang-nd/7.css)                 |
 | [8bitcn/ui](https://www.8bitcn.com/)                                                       |              [GitHub](https://github.com/TheOrcDev/8bitcn-ui)               |
-| [98.css](https://jdan.github.io/98.css/)                                                   |                  [GitHub](https://github.com/jdan/98.css)                   |
 | [9ui](https://www.9ui.dev/)                                                                |                [GitHub](https://github.com/borabaloglu/9ui)                 |
 | [AgnosticUI](https://www.agnosticui.com/)                                                  |             [GitHub](https://github.com/AgnosticUI/agnosticui)              |
 | [Amplify UI](https://ui.docs.amplify.aws/)                                                 |             [GitHub](https://github.com/aws-amplify/amplify-ui)             |
@@ -100,7 +99,6 @@ Built with:
 | [Mantine](https://mantine.dev)                                                             |               [GitHub](https://github.com/mantinedev/mantine)               |
 | [MDB](https://mdbootstrap.com/)                                                            |             [GitHub](https://github.com/mdbootstrap/mdb-ui-kit)             |
 | [MDUI](https://www.mdui.org/)                                                              |                 [GitHub](https://github.com/zdhxiong/mdui)                  |
-| [Melt UI](https://www.melt-ui.com/)                                                        |                [GitHub](https://github.com/melt-ui/melt-ui)                 |
 | [Metro UI](https://metroui.org.ua/)                                                        |                 [GitHub](https://github.com/olton/metroui)                  |
 | [Momentum Design](https://momentum.design/en/)                                             |        [GitHub](https://github.com/momentum-design/momentum-design)         |
 | [MUI](https://mui.com/material-ui/)                                                        |                [GitHub](https://github.com/mui/material-ui)                 |
@@ -113,7 +111,6 @@ Built with:
 | [Nuxt UI](https://ui.nuxt.com/)                                                            |                    [GitHub](https://github.com/nuxt/ui)                     |
 | [Oat](https://oat.ink/)                                                                    |                   [GitHub](https://github.com/knadh/oat)                    |
 | [Palette](https://palette.artsy.net/)                                                      |                 [GitHub](https://github.com/artsy/palette)                  |
-| [PaperCSS](https://www.getpapercss.com/)                                                   |               [GitHub](https://github.com/papercss/papercss)                |
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |
 | [Paste](https://paste.twilio.design/)                                                      |               [GitHub](https://github.com/twilio-labs/paste)                |
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
@@ -159,7 +156,6 @@ Built with:
 | [Tamagui](https://tamagui.dev/)                                                            |                [GitHub](https://github.com/tamagui/tamagui)                 |
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                 [GitHub](https://github.com/ITS-HCD/nysds)                  |
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |               [GitHub](https://github.com/TDRA-ae/aegov-dls)                |
-| [Tremor](https://tremor.so/)                                                               |               [GitHub](https://github.com/tremorlabs/tremor)                |
 | [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |               [GitHub](https://github.com/UI5/webcomponents)                |
 | [UIkit](https://getuikit.com/)                                                             |                  [GitHub](https://github.com/uikit/uikit)                   |
 | [USWDS](https://designsystem.digital.gov/)                                                 |                  [GitHub](https://github.com/uswds/uswds)                   |
