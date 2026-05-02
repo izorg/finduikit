@@ -1,6 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://coss.com/ui/llms.txt
+  - type: Skill
+    url: https://coss.com/ui/docs/skills
 description: coss.com is the new holding company of cal.com, the pioneers of
   open source scheduling infrastructure and cal.com continues to be the 'google
   search' of our alphabet.

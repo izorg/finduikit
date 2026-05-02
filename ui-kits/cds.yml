@@ -1,6 +1,8 @@
 ai:
   - type: MCP
-    url: https://cds.coinbase.com/getting-started/mcp-server
+    url: https://cds.coinbase.com/getting-started/ai-overview#mcp-server
+  - type: Skill
+    url: https://cds.coinbase.com/getting-started/ai-overview#agent-skills
 description: Documentation for the Coinbase Design System - A comprehensive
   collection of components, patterns, and guidelines for building crypto
   products.

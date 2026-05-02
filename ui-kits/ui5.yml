@@ -1,3 +1,8 @@
+ai:
+  - type: MCP
+    url: https://ui5.github.io/webcomponents/docs/MCP-Server/
+  - type: Skill
+    url: https://ui5.github.io/webcomponents/docs/Skills/
 description: UI5 Web Components - the enterprise-flavored sugar on top of native
   APIs! Build SAP Fiori user interfaces with the technology of your choice.
 homepage: https://ui5.github.io/webcomponents/

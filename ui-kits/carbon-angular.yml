@@ -4,6 +4,7 @@ frameworks:
   - Angular
 homepage: https://carbondesignsystem.com/developing/community-frameworks/angular/
 image:
+  fit: cover
   src: https://carbondesignsystem.com/ogimage.png
 name: Carbon Angular
 repository: https://github.com/carbon-design-system/carbon-components-angular
