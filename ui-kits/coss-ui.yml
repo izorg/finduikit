@@ -3,9 +3,8 @@ ai:
     url: https://coss.com/ui/llms.txt
   - type: Skill
     url: https://coss.com/ui/docs/skills
-description: coss.com is the new holding company of cal.com, the pioneers of
-  open source scheduling infrastructure and cal.com continues to be the 'google
-  search' of our alphabet.
+description: A new, modern UI component library built on top of Base UI. Built
+  for developers and AI.
 frameworks:
   - React
 homepage: https://coss.com/ui/docs
