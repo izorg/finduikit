@@ -38,6 +38,7 @@ export const SearchInput = (props: SearchInputProps) => {
       <TextField.Slot className={styles.clearSlot}>
         <IconButton
           aria-label="Clear"
+          color="gray"
           onClick={() => {
             if (ref.current) {
               ref.current.value = "";
