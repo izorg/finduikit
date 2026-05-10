@@ -1,0 +1,11 @@
+description: Bklit UI is a component library built on top of shadcn/ui to help
+  you build charts and data visualizations more easily.
+frameworks:
+  - React
+homepage: https://ui.bklit.com/
+image:
+  fit: cover
+  src: https://ui.bklit.com/opengraph-image.png?2f2528f867ccb940
+name: Bklit UI
+repository: https://github.com/bklit/bklit-ui
+styling: CSS

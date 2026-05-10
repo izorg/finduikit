@@ -36,6 +36,7 @@ Built with:
 | [Bento DS](https://www.bento-ds.com/)                                                      |           [GitHub](https://github.com/buildo/bento-design-system)           |
 | [Biings](https://biings.design/)                                                           |                [GitHub](https://github.com/Biings/biings-ds)                |
 | [Bits UI](https://bits-ui.com/)                                                            |               [GitHub](https://github.com/huntabyte/bits-ui)                |
+| [Bklit UI](https://ui.bklit.com/)                                                          |                 [GitHub](https://github.com/bklit/bklit-ui)                 |
 | [Blade](https://blade.razorpay.com/)                                                       |                 [GitHub](https://github.com/razorpay/blade)                 |
 | [Blueprint](https://blueprintjs.com/)                                                      |               [GitHub](https://github.com/palantir/blueprint)               |
 | [Bold](https://bold.bridge.ufsc.br/)                                                       |             [GitHub](https://github.com/laboratoriobridge/bold)             |
