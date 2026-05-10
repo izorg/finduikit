@@ -7,14 +7,14 @@ import stylistic from "@stylistic/eslint-plugin";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
 import compat from "eslint-plugin-compat";
-import { configs as jsonSchemaValidatorConfigs } from "eslint-plugin-json-schema-validator";
-import { configs as perfectionistConfigs } from "eslint-plugin-perfectionist";
+import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
+import perfectionist from "eslint-plugin-perfectionist";
 import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
-import { configs as ymlConfigs } from "eslint-plugin-yml";
+import yml from "eslint-plugin-yml";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
-import * as ts from "typescript-eslint";
+import ts from "typescript-eslint";
 
 /**
  * Run `yarn dlx @eslint/config-inspector` to visualise the config
@@ -37,9 +37,9 @@ export default defineConfig(
       reactHooks.configs.flat["recommended-latest"],
       stylistic.configs.recommended,
       unicorn.configs.recommended,
-      perfectionistConfigs["recommended-alphabetical"],
+      perfectionist.configs["recommended-alphabetical"],
     ],
-    files: ["**/*.js", "**/*.ts?(x)"],
+    files: ["**/*.js", "**/*.ts", "**/*.tsx"],
     languageOptions: {
       globals: globals.node,
       parserOptions: {
@@ -77,7 +77,7 @@ export default defineConfig(
     },
   },
   {
-    files: ["**/*.ts?(x)"],
+    files: ["**/*.ts", "**/*.tsx"],
     name: "typescript",
     rules: {
       "@typescript-eslint/consistent-type-imports": [
@@ -119,7 +119,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [ymlConfigs["flat/recommended"], ymlConfigs["flat/prettier"]],
+    extends: [yml.configs["flat/recommended"], yml.configs["flat/prettier"]],
     files: ["**/*.y?(a)ml"],
     name: "yaml",
     rules: {
@@ -137,7 +137,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [jsonSchemaValidatorConfigs["flat/recommended"]],
+    extends: [jsonSchemaValidator.configs["flat/recommended"]],
     files: ["ui-kits/*.yml"],
     name: "json-schema",
     rules: {
@@ -163,6 +163,7 @@ export default defineConfig(
   },
   {
     files: ["ui-kits/*.yml"],
+    name: "ui-kits",
     rules: {
       "yml/no-irregular-whitespace": "off",
     },
