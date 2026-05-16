@@ -3771,9 +3771,9 @@ __metadata:
   linkType: hard
 
 "@opentelemetry/semantic-conventions@npm:^1.27.0, @opentelemetry/semantic-conventions@npm:^1.28.0, @opentelemetry/semantic-conventions@npm:^1.29.0, @opentelemetry/semantic-conventions@npm:^1.30.0, @opentelemetry/semantic-conventions@npm:^1.33.0, @opentelemetry/semantic-conventions@npm:^1.33.1, @opentelemetry/semantic-conventions@npm:^1.34.0, @opentelemetry/semantic-conventions@npm:^1.36.0, @opentelemetry/semantic-conventions@npm:^1.40.0":
-  version: 1.40.0
-  resolution: "@opentelemetry/semantic-conventions@npm:1.40.0"
-  checksum: 10/edb58894590e42e631006a9f5741955fad248e3589aa334a5e59080c535ead44ee9f376c444ef2be094d1e6c1a2e596538c1df0a31a04508551e91b1a5d5c93c
+  version: 1.41.1
+  resolution: "@opentelemetry/semantic-conventions@npm:1.41.1"
+  checksum: 10/3b80fba5b0f28884326966a7b0dfc228c55698531db08834ece2c0ef7537aaaa83cba3f933731c14ffa6b0162b72cc14fee4a0ba68a1858837a590b49be23ee5
   languageName: node
   linkType: hard
 
@@ -8958,9 +8958,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.353
-  resolution: "electron-to-chromium@npm:1.5.353"
-  checksum: 10/b9672c7b21234c6eca94ed7395319e6c1029be59b0ce2c8346b7787fd1f21f4ddfebf857adf4ea8e2db85a5afc7b92357d04f943c43d20a6da62caf797840e3b
+  version: 1.5.354
+  resolution: "electron-to-chromium@npm:1.5.354"
+  checksum: 10/7da615ccaefcf07b8e99849bfbb7b96a0838634aa73d72873ecc146339cac94e6ad90cb6aed84beb22e20fe082559a58c8035caf5a3a8ebeac93c51a8bca2c67
   languageName: node
   linkType: hard
 
@@ -11308,7 +11308,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"install-artifact-from-github@npm:^1.4.0":
+"install-artifact-from-github@npm:^1.6.0":
   version: 1.6.0
   resolution: "install-artifact-from-github@npm:1.6.0"
   bin:
@@ -13338,12 +13338,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:^2.26.2":
-  version: 2.26.2
-  resolution: "nan@npm:2.26.2"
+"nan@npm:^2.27.0":
+  version: 2.27.0
+  resolution: "nan@npm:2.27.0"
   dependencies:
     node-gyp: "npm:latest"
-  checksum: 10/d978ab0f1c959688289163678fd3dee640c63060ff27dbc73dc507f883508a7cb887f247212aabea9846d413f1016e5496ff9b80720e737a05bed8a5df8cc836
+  checksum: 10/bdce0630e417740501394c412bd9f0ed1c287825e3b8f9b7efb95cc3acd3ef69de60479b5f00a2d039b79321e5ce29b672b0b263cfe0e4d8f47c8f810a24a5ee
   languageName: node
   linkType: hard
 
@@ -13566,7 +13566,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^12.2.0, node-gyp@npm:latest":
+"node-gyp@npm:^12.3.0, node-gyp@npm:latest":
   version: 12.3.0
   resolution: "node-gyp@npm:12.3.0"
   dependencies:
@@ -15033,8 +15033,8 @@ __metadata:
   linkType: hard
 
 "protobufjs@npm:^7.2.5, protobufjs@npm:^7.2.6, protobufjs@npm:^7.3.2, protobufjs@npm:^7.4.0, protobufjs@npm:^7.5.3, protobufjs@npm:^7.5.5":
-  version: 7.5.7
-  resolution: "protobufjs@npm:7.5.7"
+  version: 7.5.8
+  resolution: "protobufjs@npm:7.5.8"
   dependencies:
     "@protobufjs/aspromise": "npm:^1.1.2"
     "@protobufjs/base64": "npm:^1.1.2"
@@ -15048,7 +15048,7 @@ __metadata:
     "@protobufjs/utf8": "npm:^1.1.1"
     "@types/node": "npm:>=13.7.0"
     long: "npm:^5.0.0"
-  checksum: 10/283c24ca23c9d37f2a612416cd73cb1202d2232199b7b7cfad8d64d83482d0176ba1fa49073e556d52eab41c1a89ef5d31c9db38472085457eb91de651628f26
+  checksum: 10/2beb69b88a5c0a8420d0d5934f2358d417ecd6446f4c0d7c8a9ba5fc0e62ec1631938c0ab083258c14f15b87d39d559b49b398779638df57b2f3a3238cc0be1c
   languageName: node
   linkType: hard
 
@@ -15269,13 +15269,13 @@ __metadata:
   linkType: hard
 
 "re2@npm:^1.17.7":
-  version: 1.24.0
-  resolution: "re2@npm:1.24.0"
+  version: 1.24.1
+  resolution: "re2@npm:1.24.1"
   dependencies:
-    install-artifact-from-github: "npm:^1.4.0"
-    nan: "npm:^2.26.2"
-    node-gyp: "npm:^12.2.0"
-  checksum: 10/5c1d4824ae6345d3c1e24180321c2fa68865e986ec0ff8899ac2ff3e486b5ffc349190567d55e76776fcd66d38e52e12f26b91f70b44d0f53336d96cfedb8203
+    install-artifact-from-github: "npm:^1.6.0"
+    nan: "npm:^2.27.0"
+    node-gyp: "npm:^12.3.0"
+  checksum: 10/4ba7ce3561a261ca5ee5ce708549930298bcd544ced6ca53d8ed47e35e1f5c8899dd35c62fa542eec6cee4e4caea7b9f1e996f415fb93cf348bee45bc42cfab8
   languageName: node
   linkType: hard
 
@@ -16268,14 +16268,14 @@ __metadata:
   linkType: hard
 
 "sql-formatter@npm:^15.3.0":
-  version: 15.7.3
-  resolution: "sql-formatter@npm:15.7.3"
+  version: 15.7.4
+  resolution: "sql-formatter@npm:15.7.4"
   dependencies:
     argparse: "npm:^2.0.1"
     nearley: "npm:^2.20.1"
   bin:
     sql-formatter: bin/sql-formatter-cli.cjs
-  checksum: 10/095e04bc03e1ad8023577fafa81a1cd54d8ba37f8c45b8353c78e1db3ea85edaa90e51271258a7f588e2a8f6989bdab4acc817302f2617fc6f17787cf1dedb66
+  checksum: 10/a24c30cf02799760894fb8e546e0e074f322cf042364cf0f59680392ba71344eceecba8c0b539878f261426210663447bca589dc48579ea704ef89fb436559d3
   languageName: node
   linkType: hard
 
@@ -17310,12 +17310,12 @@ __metadata:
   linkType: hard
 
 "universal-analytics@npm:^0.5.3":
-  version: 0.5.3
-  resolution: "universal-analytics@npm:0.5.3"
+  version: 0.5.4
+  resolution: "universal-analytics@npm:0.5.4"
   dependencies:
     debug: "npm:^4.3.1"
-    uuid: "npm:^8.0.0"
-  checksum: 10/d402d72c6b3f346617ed06d4950bf529e0dbdb3c9813ddb8ba1d41a79fcb4f70aeaf7167ff7b8e9bf75aae5e73eab5e23eb2581d0d7348903bb24d7f0381b1f2
+    uuid: "npm:^14.0.0"
+  checksum: 10/c9bbc71bd3c2eb8853ca8c86ae02e5601238456d4d105bb4497d17462c3eecae795713ca3767c9fe4bb7506b10f9cf538b220e70ba96ff73b851b0a32ebec29c
   languageName: node
   linkType: hard
 
@@ -17548,6 +17548,15 @@ __metadata:
   bin:
     uuid: dist/esm/bin/uuid
   checksum: 10/16411d3dc12a08d6691616c09a75e66a7f900ba1beef6628a76fe0602f82fae2ee537b564d0b7bc95c24f58d059ca9b58c75a1e806118efb50e17822ff00ddd2
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "uuid@npm:14.0.0"
+  bin:
+    uuid: dist-node/bin/uuid
+  checksum: 10/8ee9b98f9650e25555515f7a28d3c3ae9364e72f7bb19b9e08b681bc135338beba5509b2830f6ae1cfaba4d45401da0d16d4d109b977097bc3d6ba0c5583341b
   languageName: node
   linkType: hard
 
@@ -17847,8 +17856,8 @@ __metadata:
   linkType: hard
 
 "ws@npm:^8.18.3, ws@npm:^8.20.0":
-  version: 8.20.0
-  resolution: "ws@npm:8.20.0"
+  version: 8.20.1
+  resolution: "ws@npm:8.20.1"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ">=5.0.2"
@@ -17857,7 +17866,7 @@ __metadata:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 10/b7ab934b21ffdea9f25a5af5097e8c1ec7625db553bca026c5a23e35b7c236f3fb89782f2b57fab9da553864512f9aa7d245827ef998d26ffa1b2187a19a6d10
+  checksum: 10/8c4d2b06dc65381b6bfab1f2e584275dabd30a99a5ce058b4dc76f3d03fad1921cef3a21d8f53127d30a808cfd1864aa2fe6890a5d43359f682457315baec873
   languageName: node
   linkType: hard
 
