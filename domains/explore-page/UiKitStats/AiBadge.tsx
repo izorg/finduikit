@@ -16,7 +16,7 @@ export const AiBadge = ({ ai }: AiBadgeProps) => {
     const [item] = ai;
 
     return (
-      <Tooltip content="AI for Agents">
+      <Tooltip content="AI Tools">
         <Button
           asChild
           className={styles.badge}
@@ -25,7 +25,10 @@ export const AiBadge = ({ ai }: AiBadgeProps) => {
           variant="soft"
         >
           <a href={item.url} rel="noreferrer" target="_blank">
-            <SvgIcon path={aiIcons[item.type]?.path ?? mdiCreation} />
+            <SvgIcon
+              aria-hidden
+              path={aiIcons[item.type]?.path ?? mdiCreation}
+            />
             {item.type}
           </a>
         </Button>
@@ -43,7 +46,7 @@ export const AiBadge = ({ ai }: AiBadgeProps) => {
           variant="soft"
         >
           <SvgIcon path={mdiCreation} />
-          AI for Agents
+          AI Tools
           <DropdownMenu.TriggerIcon />
         </Button>
       </DropdownMenu.Trigger>
