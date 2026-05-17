@@ -7,6 +7,7 @@ import {
 import { Button, Container, Flex, Heading, Text } from "@radix-ui/themes";
 import { type Metadata } from "next";
 import NextLink from "next/link";
+import type { CSSProperties } from "react";
 import { siFigma, siStorybook } from "simple-icons";
 
 import { Footer } from "../../footer";
@@ -51,6 +52,11 @@ export const HomePage = () => {
                   initial: "8",
                   sm: "9",
                 }}
+                style={
+                  {
+                    "--heading-font-family": "var(--quote-font-family)",
+                  } as CSSProperties
+                }
                 weight="medium"
               >
                 {title}
@@ -112,7 +118,15 @@ export const HomePage = () => {
               </StatCard>
             </Flex>
             <section>
-              <Heading mb="2" weight="medium">
+              <Heading
+                mb="2"
+                style={
+                  {
+                    "--heading-font-family": "var(--quote-font-family)",
+                  } as CSSProperties
+                }
+                weight="medium"
+              >
                 Choose Tech with UI Kits
               </Heading>
               <Text>
@@ -122,7 +136,15 @@ export const HomePage = () => {
               </Text>
             </section>
             <section>
-              <Heading mb="2" weight="medium">
+              <Heading
+                mb="2"
+                style={
+                  {
+                    "--heading-font-family": "var(--quote-font-family)",
+                  } as CSSProperties
+                }
+                weight="medium"
+              >
                 Speed up Development
               </Heading>
               <Text>
