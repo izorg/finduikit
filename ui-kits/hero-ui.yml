@@ -5,8 +5,9 @@ ai:
     url: https://heroui.com/docs/react/getting-started/mcp-server
   - type: Skill
     url: https://heroui.com/docs/react/getting-started/agent-skills
-description: A set of beautiful, customizable components that stay maintained
-  and up to date.
+description: Beautiful, accessible React UI components built on React Aria and
+  Tailwind CSS v4. The modern alternative to MUI, Chakra UI, and shadcn/ui for
+  building production-ready applications.
 figma: https://www.figma.com/community/file/1546526812159103429
 frameworks:
   - React
