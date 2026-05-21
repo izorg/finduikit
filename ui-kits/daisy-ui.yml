@@ -1,8 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://daisyui.com/llms.txt
-description: Tailwind CSS Components Library for 2026 - Tailwind CSS components
-  examples, Tailwind themes and Tailwind blocks for fast UI development
+description: Tailwind CSS component library by daisyUI. Build faster with
+  semantic components, built-in themes, and reusable UI blocks.
 frameworks: []
 homepage: https://daisyui.com/
 image:
