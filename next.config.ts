@@ -6,6 +6,17 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackFileSystemCacheForDev: true,
   },
+  headers: () => [
+    {
+      headers: [
+        {
+          key: "no-vary-search",
+          value: "params",
+        },
+      ],
+      source: "/:path*",
+    },
+  ],
   images: {
     unoptimized: true,
   },
