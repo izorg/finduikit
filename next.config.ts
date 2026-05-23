@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
           value: "params",
         },
       ],
-      source: "/:path*",
+      source: "/:path((?!api/).*)",
     },
   ],
   images: {
