@@ -1,7 +1,9 @@
-description: A set of retro-designed, accessible components and a code
-  distribution platform. Open Source. Open Code.
+description: A retro UI library of 8-bit styled shadcn/ui components, blocks,
+  and game-ready interfaces for modern React apps.
 frameworks:
   - React
 homepage: https://www.8bitcn.com/
+image:
+  src: https://8bitcn.com/og-image.png
 name: 8bitcn/ui
 repository: https://github.com/TheOrcDev/8bitcn-ui
