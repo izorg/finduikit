@@ -1,0 +1,10 @@
+description: 📘 Accelerate your development with flexible UI components and
+  tools that work everywhere.
+homepage: https://blueprintui.dev/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/40678349/725fb8dd-2939-4ae5-9794-ed42686ccbdf
+name: BlueprintUI
+repository: https://github.com/blueprintui/blueprintui
+styling: CSS
+webComponents: Lit

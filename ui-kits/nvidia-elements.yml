@@ -1,0 +1,17 @@
+ai:
+  - type: MCP
+    url: https://nvidia.github.io/elements/docs/mcp/
+  - type: Skill
+    url: https://nvidia.github.io/elements/docs/skills/
+description: "NVIDIA Elements Design System: framework-agnostic Web Components,
+  design tokens, CLI, MCP, skills, and lint tooling for AI infrastructure,
+  robotics, and autonomous vehicle UI."
+frameworks: []
+homepage: https://nvidia.github.io/elements/
+image:
+  fit: cover
+  src: https://nvidia.github.io/elements/static/images/social-card.png
+name: NVIDIA Elements
+repository: https://github.com/NVIDIA/elements
+styling: CSS
+webComponents: Lit

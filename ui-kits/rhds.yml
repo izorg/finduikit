@@ -1,0 +1,12 @@
+description: This is Red Hat's design system. Using Red Hat brand standards and
+  PatternFly as our foundational design language, we enable designers and
+  developers to concurrently build branded experiences across redhat.com, Red
+  Hat Customer Portal, and beyond.
+homepage: https://ux.redhat.com/
+image:
+  fit: cover
+  src: https://ux.redhat.com/assets/opengraph.png
+name: Red Hat Design System
+repository: https://github.com/RedHat-UX/red-hat-design-system
+styling: CSS
+webComponents: Lit

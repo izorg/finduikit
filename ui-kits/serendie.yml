@@ -1,0 +1,16 @@
+ai:
+  - type: MCP
+    url: https://serendie.design/ai/mcp-server/
+  - type: Skill
+    url: https://serendie.design/ai/agent-skills/
+description: Adaptive UI component library as part of Serendie Design System by
+  Mitsubishi Electric
+frameworks:
+  - React
+homepage: https://serendie.design/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/917602935/a11f1aae-9403-42da-910a-695cc30f6d06
+name: Serendie
+repository: https://github.com/serendie/serendie
+styling: Panda

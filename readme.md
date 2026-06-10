@@ -39,6 +39,7 @@ Built with:
 | [Bklit UI](https://ui.bklit.com/)                                                          |                 [GitHub](https://github.com/bklit/bklit-ui)                 |
 | [Blade](https://blade.razorpay.com/)                                                       |                 [GitHub](https://github.com/razorpay/blade)                 |
 | [Blueprint](https://blueprintjs.com/)                                                      |               [GitHub](https://github.com/palantir/blueprint)               |
+| [BlueprintUI](https://blueprintui.dev/)                                                    |            [GitHub](https://github.com/blueprintui/blueprintui)             |
 | [Bold](https://bold.bridge.ufsc.br/)                                                       |             [GitHub](https://github.com/laboratoriobridge/bold)             |
 | [Boostrap](https://getbootstrap.com/)                                                      |                 [GitHub](https://github.com/twbs/bootstrap)                 |
 | [BootstrapVueNext](https://bootstrap-vue-next.github.io/bootstrap-vue-next/)               |     [GitHub](https://github.com/bootstrap-vue-next/bootstrap-vue-next)      |
@@ -99,6 +100,7 @@ Built with:
 | [M3 Svelte](https://ktibow.github.io/m3-svelte/)                                           |                [GitHub](https://github.com/KTibow/m3-svelte)                |
 | [Magic UI](https://magicui.design/)                                                        |             [GitHub](https://github.com/magicuidesign/magicui)              |
 | [Mantine](https://mantine.dev)                                                             |               [GitHub](https://github.com/mantinedev/mantine)               |
+| [Material Web](https://material-web.dev/)                                                  |        [GitHub](https://github.com/material-components/material-web)        |
 | [MDB](https://mdbootstrap.com/)                                                            |             [GitHub](https://github.com/mdbootstrap/mdb-ui-kit)             |
 | [MDUI](https://www.mdui.org/)                                                              |                 [GitHub](https://github.com/zdhxiong/mdui)                  |
 | [Metro UI](https://metroui.org.ua/)                                                        |                 [GitHub](https://github.com/olton/metroui)                  |
@@ -111,6 +113,7 @@ Built with:
 | [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/)                                 |          [GitHub](https://github.com/valor-software/ngx-bootstrap)          |
 | [NSW](https://designsystem.nsw.gov.au/)                                                    |          [GitHub](https://github.com/digitalnsw/nsw-design-system)          |
 | [Nuxt UI](https://ui.nuxt.com/)                                                            |                    [GitHub](https://github.com/nuxt/ui)                     |
+| [NVIDIA Elements](https://nvidia.github.io/elements/)                                      |                [GitHub](https://github.com/NVIDIA/elements)                 |
 | [Oat](https://oat.ink/)                                                                    |                   [GitHub](https://github.com/knadh/oat)                    |
 | [Palette](https://palette.artsy.net/)                                                      |                 [GitHub](https://github.com/artsy/palette)                  |
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |
@@ -136,6 +139,7 @@ Built with:
 | [React Bootstrap](https://react-bootstrap.github.io/)                                      |        [GitHub](https://github.com/react-bootstrap/react-bootstrap)         |
 | [React Spectrum](https://react-spectrum.adobe.com/)                                        |              [GitHub](https://github.com/adobe/react-spectrum)              |
 | [React Suite](https://rsuitejs.com/)                                                       |                 [GitHub](https://github.com/rsuite/rsuite)                  |
+| [Red Hat Design System](https://ux.redhat.com/)                                            |        [GitHub](https://github.com/RedHat-UX/red-hat-design-system)         |
 | [Reka UI](https://reka-ui.com/)                                                            |                 [GitHub](https://github.com/unovue/reka-ui)                 |
 | [Reshaped](https://reshaped.so/)                                                           |              [GitHub](https://github.com/reshaped-ui/reshaped)              |
 | [Restart UI](https://react-restart.github.io/ui/)                                          |                [GitHub](https://github.com/react-restart/ui)                |
@@ -144,6 +148,7 @@ Built with:
 | [Sage](https://sage.kajabi.com/)                                                           |                [GitHub](https://github.com/Kajabi/sage-lib)                 |
 | [Scale](https://telekom.github.io/scale/)                                                  |                 [GitHub](https://github.com/telekom/scale)                  |
 | [Semantic UI Next](https://next.semantic-ui.com/)                                          |           [GitHub](https://github.com/Semantic-Org/Semantic-Next)           |
+| [Serendie](https://serendie.design/)                                                       |               [GitHub](https://github.com/serendie/serendie)                |
 | [SGDS Web Component](https://www.designsystem.tech.gov.sg/)                                |          [GitHub](https://github.com/GovTechSG/sgds-web-component)          |
 | [shadcn-svelte](https://shadcn-svelte.com/)                                                |            [GitHub](https://github.com/huntabyte/shadcn-svelte)             |
 | [shadcn/ui](https://ui.shadcn.com/)                                                        |                  [GitHub](https://github.com/shadcn-ui/ui)                  |
@@ -154,6 +159,7 @@ Built with:
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |         [GitHub](https://github.com/adobe/spectrum-web-components)          |
 | [Stacks](https://stackoverflow.design/)                                                    |              [GitHub](https://github.com/StackExchange/Stacks)              |
 | [Strapi](https://design-system.strapi.io/)                                                 |              [GitHub](https://github.com/strapi/design-system)              |
+| [Synergy](https://synergy-design-system.github.io/)                                        |  [GitHub](https://github.com/synergy-design-system/synergy-design-system)   |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |             [GitHub](https://github.com/taiga-family/taiga-ui)              |
 | [Tamagui](https://tamagui.dev/)                                                            |                [GitHub](https://github.com/tamagui/tamagui)                 |
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                 [GitHub](https://github.com/ITS-HCD/nysds)                  |

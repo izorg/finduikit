@@ -1,0 +1,10 @@
+ai:
+  - type: MCP
+    url: https://synergy-design-system.github.io/?path=/docs/packages-mcp--docs
+description: Monorepo for the Synergy Design System.
+homepage: https://synergy-design-system.github.io/
+name: Synergy
+repository: https://github.com/synergy-design-system/synergy-design-system
+storybook: https://synergy-design-system.github.io/
+styling: CSS
+webComponents: Lit
