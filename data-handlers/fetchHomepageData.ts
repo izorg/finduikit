@@ -2,7 +2,7 @@ import { parse } from "node-html-parser";
 
 const ignoredHomepages = new Set(["https://atlantis.getjobber.com/"]);
 
-const urlHeaders: Partial<Record<string, HeadersInit>> = {
+const urlHeaders: Partial<Record<string, Record<string, string>>> = {
   "https://canvas.workday.com/": {
     // Workaround for some sites that block requests without a user agent, example `Workday Canvas Kit`
     "User-Agent":
@@ -16,7 +16,10 @@ export const fetchHomepageData = async (homepage: string) => {
   }
 
   const response = await fetch(homepage, {
-    headers: urlHeaders[homepage],
+    headers: {
+      "Accept-Language": "en-US,en;q=0.9",
+      ...urlHeaders[homepage],
+    },
   });
 
   if (response.status > 200) {
