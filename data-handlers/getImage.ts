@@ -21,7 +21,7 @@ const getHomepageOgImage = (
     return ogImage;
   }
 
-  return new URL(ogImage, new URL(data.homepage).origin).toString();
+  return new URL(ogImage, new URL(data.homepage).origin).href;
 };
 
 const preservedImages = new Set(["UI5 Web Components"]);

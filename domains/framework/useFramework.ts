@@ -23,7 +23,7 @@ export const useFramework = () => {
       nextSearchParams.delete(frameworkKey);
     }
 
-    globalThis.history.pushState({}, "", `?${nextSearchParams.toString()}`);
+    history.pushState({}, "", `?${nextSearchParams.toString()}`);
   };
 
   return {

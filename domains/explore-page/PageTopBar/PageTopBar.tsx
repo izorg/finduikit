@@ -89,10 +89,10 @@ export const PageTopBar = () => {
       }
     };
 
-    globalThis.addEventListener("popstate", onPopState);
+    addEventListener("popstate", onPopState);
 
     return () => {
-      globalThis.removeEventListener("popstate", onPopState);
+      removeEventListener("popstate", onPopState);
     };
   }, []);
 

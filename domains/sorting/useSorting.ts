@@ -16,7 +16,7 @@ export const useSorting = () => {
     const nextSearchParams = new URLSearchParams(searchParams);
     nextSearchParams.set(sortingKey, sorting);
 
-    globalThis.history.pushState({}, "", `?${nextSearchParams.toString()}`);
+    history.pushState({}, "", `?${nextSearchParams.toString()}`);
   };
 
   return {

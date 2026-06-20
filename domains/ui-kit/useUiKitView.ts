@@ -18,7 +18,7 @@ export const useUiKitView = () => {
     const nextSearchParams = new URLSearchParams(searchParams);
     nextSearchParams.set(uiKitViewKey, uiKitView);
 
-    globalThis.history.pushState({}, "", `?${nextSearchParams.toString()}`);
+    history.pushState({}, "", `?${nextSearchParams.toString()}`);
   };
 
   return {

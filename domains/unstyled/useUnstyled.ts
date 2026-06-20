@@ -13,7 +13,7 @@ export const useUnstyled = () => {
 
     nextSearchParams.set(unstyledKey, String(unstyled));
 
-    globalThis.history.pushState({}, "", `?${nextSearchParams.toString()}`);
+    history.pushState({}, "", `?${nextSearchParams.toString()}`);
   };
 
   return {

@@ -127,9 +127,10 @@ export const uiKitRouteUpdate = async (request: Request) => {
     checkCache[dirent.name]?.checkedAt?.getTime() ?? 0;
 
   const checkCount =
-    Number.parseInt(
-      url.searchParams.get("check-count") ?? process.env.CHECK_COUNT ?? "",
-      10,
+    Math.trunc(
+      Number(
+        url.searchParams.get("check-count") ?? process.env.CHECK_COUNT ?? "",
+      ),
     ) || 1;
 
   const checkEntries = fileEntries

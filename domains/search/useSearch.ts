@@ -17,9 +17,9 @@ export const useSearch = () => {
     }
 
     if (hasSearch) {
-      globalThis.history.replaceState({}, "", url);
+      history.replaceState({}, "", url);
     } else {
-      globalThis.history.pushState({}, "", url);
+      history.pushState({}, "", url);
     }
   };
 
