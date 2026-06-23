@@ -5,7 +5,7 @@ frameworks:
 homepage: https://spartan.ng/
 image:
   fit: cover
-  src: https://spartan.ng/assets/og-image.png
+  src: https://www.spartan.ng/assets/og-image.png
 name: spartan
 repository: https://github.com/spartan-ng/spartan
 styling: Tailwind CSS
