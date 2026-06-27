@@ -10,7 +10,7 @@ frameworks:
 homepage: https://coss.com/ui/docs
 image:
   fit: cover
-  src: https://coss.com/ui/opengraph-image.png?opengraph-image.0xa1qes_4_px0.png
+  src: https://coss.com/ui/opengraph-image.png
 name: coss ui
 repository: https://github.com/cosscom/coss
 styling: Tailwind CSS

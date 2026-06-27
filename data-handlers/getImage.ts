@@ -17,11 +17,15 @@ const getHomepageOgImage = (
     return;
   }
 
-  if (URL.canParse(ogImage)) {
-    return ogImage;
-  }
+  try {
+    const url = new URL(ogImage, data.homepage);
 
-  return new URL(ogImage, new URL(data.homepage).origin).href;
+    url.search = "";
+
+    return url.href;
+  } catch {
+    return;
+  }
 };
 
 const preservedImages = new Set(["UI5 Web Components"]);
