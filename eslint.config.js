@@ -69,6 +69,7 @@ export default defineConfig(
       "unicorn/consistent-boolean-name": "off",
       "unicorn/filename-case": "off",
       "unicorn/max-nested-calls": "off",
+      "unicorn/name-replacements": "off",
       "unicorn/no-computed-property-existence-check": "off",
       "unicorn/no-global-object-property-assignment": "off",
       "unicorn/no-top-level-side-effects": "off",
