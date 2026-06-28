@@ -5,7 +5,7 @@ ai:
     url: https://nvidia.github.io/elements/docs/skills/
 description: "NVIDIA Elements Design System: framework-agnostic Web Components,
   design tokens, CLI, MCP, skills, and lint tooling for AI infrastructure,
-  robotics, and autonomous vehicle UI."
+  robotics, and."
 frameworks: []
 homepage: https://nvidia.github.io/elements/
 image:
