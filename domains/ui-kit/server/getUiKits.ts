@@ -22,8 +22,7 @@ import {
 
 declare global {
   var uiKitFileDataEntries:
-    | [key: string, data: UiKitStaticDataSchema][]
-    | undefined;
+    [key: string, data: UiKitStaticDataSchema][] | undefined;
 
   var uiKitFileEntries: Dirent[] | undefined;
 }
