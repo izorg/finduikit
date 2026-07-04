@@ -1,0 +1,9 @@
+description: Fundamental white label web components for building your design system
+homepage: https://lion.js.org/
+image:
+  fit: cover
+  src: https://lion.js.org/57d1759b.png
+name: Lion
+repository: https://github.com/ing-bank/lion
+styling: CSS
+webComponents: Lit

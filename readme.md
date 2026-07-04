@@ -97,6 +97,7 @@ Built with:
 | [LeafyGreen UI](https://www.mongodb.design/)                                               |             [GitHub](https://github.com/mongodb/leafygreen-ui)              |
 | [Lightning Design System](https://www.lightningdesignsystem.com/)                          |          [GitHub](https://github.com/salesforce-ux/design-system)           |
 | [Lightning Web Components](https://lwc.dev/)                                               |                 [GitHub](https://github.com/salesforce/lwc)                 |
+| [Lion](https://lion.js.org/)                                                               |                 [GitHub](https://github.com/ing-bank/lion)                  |
 | [M3 Svelte](https://ktibow.github.io/m3-svelte/)                                           |                [GitHub](https://github.com/KTibow/m3-svelte)                |
 | [Magic UI](https://magicui.design/)                                                        |             [GitHub](https://github.com/magicuidesign/magicui)              |
 | [Mantine](https://mantine.dev)                                                             |               [GitHub](https://github.com/mantinedev/mantine)               |

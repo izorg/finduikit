@@ -17,15 +17,25 @@ const getHomepageOgImage = (
     return;
   }
 
+  let url: URL;
+
   try {
-    const url = new URL(ogImage, data.homepage);
-
-    url.search = "";
-
-    return url.href;
+    url = new URL(ogImage, data.homepage);
   } catch {
     return;
   }
+
+  url.search = "";
+
+  // Resolve wrong OG image URL issue for `lion.yml`
+  if (url.hostname === "localhost") {
+    url = new URL(
+      url.href.slice(url.origin.length),
+      new URL(data.homepage).origin,
+    );
+  }
+
+  return url.href;
 };
 
 const preservedImages = new Set(["UI5 Web Components"]);
