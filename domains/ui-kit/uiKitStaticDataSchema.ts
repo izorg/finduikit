@@ -20,11 +20,14 @@ export const uiKitStaticDataSchema = z.object({
   frameworks: z.array(z.enum(Framework)).optional(),
   homepage: z.url(),
   image: z
-    .object({
-      fit: z.enum(["contain", "cover", "scale-down"]).optional(),
-      src: z.string(),
-    })
-    .nullish(),
+    .union([
+      z.object({
+        fit: z.enum(["contain", "cover", "scale-down"]).optional(),
+        src: z.string(),
+      }),
+      z.literal(false),
+    ])
+    .optional(),
   name: z.string(),
   packages: z
     .array(

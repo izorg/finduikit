@@ -53,9 +53,8 @@ export const getImage = async ({
     return data.image;
   }
 
-  if (data.image === null) {
-    // eslint-disable-next-line unicorn/no-null -- null is used to indicate no image
-    return null;
+  if (data.image === false) {
+    return false;
   }
 
   const gitHubImage = github?.openGraphImageUrl.startsWith(
