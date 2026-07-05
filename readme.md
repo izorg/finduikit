@@ -99,6 +99,7 @@ Built with:
 | [Lightning Web Components](https://lwc.dev/)                                               |                 [GitHub](https://github.com/salesforce/lwc)                 |
 | [Lion](https://lion.js.org/)                                                               |                 [GitHub](https://github.com/ing-bank/lion)                  |
 | [M3 Svelte](https://ktibow.github.io/m3-svelte/)                                           |                [GitHub](https://github.com/KTibow/m3-svelte)                |
+| [M3E](https://matraic.github.io/m3e/)                                                      |                  [GitHub](https://github.com/matraic/m3e)                   |
 | [Magic UI](https://magicui.design/)                                                        |             [GitHub](https://github.com/magicuidesign/magicui)              |
 | [Mantine](https://mantine.dev)                                                             |               [GitHub](https://github.com/mantinedev/mantine)               |
 | [Material Web](https://material-web.dev/)                                                  |        [GitHub](https://github.com/material-components/material-web)        |
@@ -120,6 +121,7 @@ Built with:
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |
 | [Paste](https://paste.twilio.design/)                                                      |               [GitHub](https://github.com/twilio-labs/paste)                |
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
+| [PatternFly Elements](https://patternflyelements.org/)                                     |         [GitHub](https://github.com/patternfly/patternfly-elements)         |
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |
 | [PIE](https://pie.design/)                                                                 |               [GitHub](https://github.com/GetJobber/atlantis)               |
 | [Plasma UI](https://plasma.sberdevices.ru/ui/)                                             |            [GitHub](https://github.com/salute-developers/plasma)            |
@@ -167,6 +169,7 @@ Built with:
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |               [GitHub](https://github.com/TDRA-ae/aegov-dls)                |
 | [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |               [GitHub](https://github.com/UI5/webcomponents)                |
 | [UIkit](https://getuikit.com/)                                                             |                  [GitHub](https://github.com/uikit/uikit)                   |
+| [Umbraco UI](https://uui.umbraco.com/)                                                     |               [GitHub](https://github.com/umbraco/Umbraco.UI)               |
 | [USWDS](https://designsystem.digital.gov/)                                                 |                  [GitHub](https://github.com/uswds/uswds)                   |
 | [Vaadin](https://vaadin.com/components)                                                    |             [GitHub](https://github.com/vaadin/web-components)              |
 | [Vanilla](https://vanillaframework.io/)                                                    |          [GitHub](https://github.com/canonical/vanilla-framework)           |

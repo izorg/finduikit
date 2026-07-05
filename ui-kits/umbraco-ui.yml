@@ -1,0 +1,12 @@
+description: The starting point for working with Umbraco UI Library.  A place
+  that holds the documentation, and showcases different use scenarios of our UI
+  components.
+homepage: https://uui.umbraco.com/
+image:
+  fit: cover
+  src: https://repository-images.githubusercontent.com/315865767/d02ce978-efc5-40c7-83ed-5e2bdf2da8d3
+name: Umbraco UI
+repository: https://github.com/umbraco/Umbraco.UI
+storybook: https://uui.umbraco.com/
+styling: CSS
+webComponents: Lit
