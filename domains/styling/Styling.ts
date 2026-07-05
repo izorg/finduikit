@@ -7,6 +7,7 @@ export const Styling = {
   Sass: "Sass",
   Stitches: "Stitches",
   "styled-components": "styled-components",
+  StyleX: "StyleX",
   "Tailwind CSS": "Tailwind CSS",
   "vanilla-extract": "vanilla-extract",
 } as const;

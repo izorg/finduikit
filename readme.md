@@ -29,6 +29,7 @@ Built with:
 | [Apps SDK UI](https://openai.github.io/apps-sdk-ui/)                                       |               [GitHub](https://github.com/openai/apps-sdk-ui)               |
 | [Ariakit](https://ariakit.org/)                                                            |                [GitHub](https://github.com/ariakit/ariakit)                 |
 | [Ark UI](https://ark-ui.com/)                                                              |                 [GitHub](https://github.com/chakra-ui/ark)                  |
+| [Astryx](https://astryx.atmeta.com/)                                                       |                [GitHub](https://github.com/facebook/astryx)                 |
 | [Atlantis](https://atlantis.getjobber.com/)                                                |               [GitHub](https://github.com/GetJobber/atlantis)               |
 | [Backpack](https://www.skyscanner.design/)                                                 |              [GitHub](https://github.com/Skyscanner/backpack)               |
 | [Base UI](https://base-ui.com/)                                                            |                  [GitHub](https://github.com/mui/base-ui)                   |

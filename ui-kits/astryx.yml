@@ -1,0 +1,13 @@
+ai:
+  - type: MCP
+    url: https://astryx.atmeta.com/docs/working-with-ai#mcp-server
+description: An open source design system that is fully customizable and agent ready.
+frameworks:
+  - React
+homepage: https://astryx.atmeta.com/
+image:
+  fit: cover
+  src: https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png
+name: Astryx
+repository: https://github.com/facebook/astryx
+styling: StyleX

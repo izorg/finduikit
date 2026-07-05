@@ -8,6 +8,7 @@ export const stylingLinks: Record<Styling, string> = {
   [Styling.Panda]: "https://panda-css.com/",
   [Styling.Sass]: "https://sass-lang.com/",
   [Styling.Stitches]: "https://stitches.dev/",
+  [Styling.StyleX]: "https://stylexjs.com/",
   [Styling["styled-components"]]: "https://styled-components.com/",
   [Styling["Tailwind CSS"]]: "https://tailwindcss.com/",
   [Styling["vanilla-extract"]]: "https://vanilla-extract.style/",
