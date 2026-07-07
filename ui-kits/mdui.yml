@@ -3,9 +3,9 @@ ai:
     url: https://www.mdui.org/en/docs/2/ai/llms
   - type: MCP
     url: https://www.mdui.org/en/docs/2/ai/mcp
-description: mdui is an front-end component library based on Material Design 3,
-  using Web Components, supporting dynamic colors, dark mode, and lightweight
-  efficiency.
+description: mdui is an open-source Material Design 3 library built on Web
+  Components. With dynamic color and dark mode, it helps build beautiful,
+  modern, and consistent web apps.
 homepage: https://www.mdui.org/
 name: MDUI
 repository: https://github.com/zdhxiong/mdui
