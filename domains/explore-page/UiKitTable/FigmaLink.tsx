@@ -12,7 +12,7 @@ export const FigmaLink = ({ figma }: FigmaLinkProps) => (
     <Tooltip content="Figma">
       <IconButton asChild color="crimson" variant="ghost">
         <a aria-label="Figma" href={figma} rel="noreferrer" target="_blank">
-          <SvgIcon path={siFigma.path} />
+          <SvgIcon aria-hidden path={siFigma.path} />
         </a>
       </IconButton>
     </Tooltip>

@@ -1,8 +1,7 @@
 import { mdiCheck } from "@mdi/js";
-import { Flex, IconButton, Link, Table, Text, Tooltip } from "@radix-ui/themes";
+import { Flex, Table, Text } from "@radix-ui/themes";
 import classNames from "classnames";
 import type { Ref } from "react";
-import { siGithub } from "simple-icons";
 
 import { SvgIcon } from "../../icon";
 import type { UiKit } from "../../ui-kit";
@@ -11,6 +10,7 @@ import { AiLinks } from "./AiLinks";
 import { FigmaLink } from "./FigmaLink";
 import { StorybookLink } from "./StorybookLink";
 import { StylingLink } from "./StylingLink";
+import { UiKitName } from "./UiKitName";
 import { UiKitTableFrameworkList } from "./UiKitTableFrameworkList";
 import { WebComponentsLink } from "./WebComponentsLink";
 
@@ -79,29 +79,7 @@ export const UiKitTable = (props: UiKitTableProps) => {
           {uiKits.map((uiKit) => (
             <Table.Row key={uiKit.name}>
               <Table.RowHeaderCell className={styles.leftCell}>
-                <Flex align="center" display="inline-flex" gap="2">
-                  <Link asChild color="gray" highContrast wrap="nowrap">
-                    <a href={uiKit.homepage} rel="noreferrer" target="_blank">
-                      {uiKit.name}
-                    </a>
-                  </Link>
-                  <Tooltip content="GitHub">
-                    <IconButton
-                      asChild
-                      color="gray"
-                      highContrast
-                      variant="ghost"
-                    >
-                      <a
-                        href={uiKit.repository}
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <SvgIcon path={siGithub.path} />
-                      </a>
-                    </IconButton>
-                  </Tooltip>
-                </Flex>
+                <UiKitName uiKit={uiKit} />
               </Table.RowHeaderCell>
               <Table.Cell justify="center">
                 <UiKitTableFrameworkList frameworks={uiKit.frameworks} />
