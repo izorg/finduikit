@@ -1,0 +1,7 @@
+description: Collection of Svelte components to build highly interactive applications.
+frameworks:
+  - Svelte
+homepage: https://svelte-ux.techniq.dev/
+name: Svelte UX
+repository: https://github.com/techniq/svelte-ux
+styling: Tailwind CSS

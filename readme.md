@@ -163,6 +163,7 @@ Built with:
 | [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/index.html) |         [GitHub](https://github.com/adobe/spectrum-web-components)          |
 | [Stacks](https://stackoverflow.design/)                                                    |              [GitHub](https://github.com/StackExchange/Stacks)              |
 | [Strapi](https://design-system.strapi.io/)                                                 |              [GitHub](https://github.com/strapi/design-system)              |
+| [Svelte UX](https://svelte-ux.techniq.dev/)                                                |               [GitHub](https://github.com/techniq/svelte-ux)                |
 | [Synergy](https://synergy-design-system.github.io/)                                        |  [GitHub](https://github.com/synergy-design-system/synergy-design-system)   |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |             [GitHub](https://github.com/taiga-family/taiga-ui)              |
 | [Tamagui](https://tamagui.dev/)                                                            |                [GitHub](https://github.com/tamagui/tamagui)                 |
