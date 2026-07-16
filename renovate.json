@@ -4,6 +4,14 @@
   "lockFileMaintenance": {
     "schedule": ["* 7-8 * * 6"]
   },
+  "packageRules": [
+    {
+      "description": "Prevent TypeScript major version 7 upgrade",
+      "enabled": false,
+      "matchDepNames": ["typescript"],
+      "matchUpdateTypes": ["major"]
+    }
+  ],
   "schedule": ["* 7-8 * * 6"],
   "timezone": "Europe/Berlin"
 }
