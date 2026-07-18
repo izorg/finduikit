@@ -77,7 +77,6 @@ Built with:
 | [FlyonUI](https://flyonui.com/)                                                            |             [GitHub](https://github.com/themeselection/flyonui)             |
 | [Forma 36](https://f36.contentful.com/)                                                    |              [GitHub](https://github.com/contentful/forma-36)               |
 | [Garden](https://garden.zendesk.com/)                                                      |         [GitHub](https://github.com/zendeskgarden/react-components)         |
-| [Gestalt](https://gestalt.pinterest.systems/)                                              |               [GitHub](https://github.com/pinterest/gestalt)                |
 | [gluestack-ui](https://gluestack.io/)                                                      |             [GitHub](https://github.com/gluestack/gluestack-ui)             |
 | [GOV.UK Frontend](https://design-system.service.gov.uk/)                                   |            [GitHub](https://github.com/alphagov/govuk-frontend)             |
 | [Gravity UI](https://gravity-ui.com/)                                                      |                [GitHub](https://github.com/gravity-ui/uikit)                |
@@ -146,7 +145,6 @@ Built with:
 | [Red Hat Design System](https://ux.redhat.com/)                                            |        [GitHub](https://github.com/RedHat-UX/red-hat-design-system)         |
 | [Reka UI](https://reka-ui.com/)                                                            |                 [GitHub](https://github.com/unovue/reka-ui)                 |
 | [Reshaped](https://reshaped.so/)                                                           |              [GitHub](https://github.com/reshaped-ui/reshaped)              |
-| [Restart UI](https://react-restart.github.io/ui/)                                          |                [GitHub](https://github.com/react-restart/ui)                |
 | [ReUI](https://reui.io/)                                                                   |                [GitHub](https://github.com/keenthemes/reui)                 |
 | [Ring UI](https://jetbrains.github.io/ring-ui/master/)                                     |               [GitHub](https://github.com/JetBrains/ring-ui)                |
 | [Sage](https://sage.kajabi.com/)                                                           |                [GitHub](https://github.com/Kajabi/sage-lib)                 |
