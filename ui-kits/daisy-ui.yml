@@ -1,6 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://daisyui.com/llms.txt
+  - type: Skill
+    url: https://daisyui.com/docs/skill/
 description: Tailwind CSS component library by daisyUI. Build faster with
   semantic components, built-in themes, and reusable UI blocks.
 frameworks: []
