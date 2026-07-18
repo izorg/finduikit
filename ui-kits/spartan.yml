@@ -1,3 +1,8 @@
+ai:
+  - type: MCP
+    url: https://spartan.ng/documentation/mcp
+  - type: Skill
+    url: https://spartan.ng/documentation/skills
 description: Build next-level, full-stack applications with AnalogJs and the
   spartan/stack. Make them accessible and look incredible with spartan/ui.
 frameworks:
