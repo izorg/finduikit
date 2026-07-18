@@ -16,7 +16,7 @@ export const UiKitCardImage = (props: UiKitCardImageProps) => {
 
   const [hidden, setHidden] = useState(false);
 
-  if (!uiKit.image || hidden) {
+  if (hidden || !uiKit.image) {
     return;
   }
 
