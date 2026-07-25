@@ -39,6 +39,7 @@ const config: CodegenConfig = {
   ignoreNoDocuments: true, // for better experience with the watcher
   schema: {
     "https://api.github.com/graphql": {
+      assumeValid: true,
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
         "User-Agent": "Awesome-Octocat-App",
