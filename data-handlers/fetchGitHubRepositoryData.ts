@@ -5,6 +5,22 @@ import type {
   GetGitHubRepositoryQueryVariables,
 } from "./fetchGitHubRepositoryData.generated";
 
+const getLegacyOpenGraphImageUrl = (openGraphImageUrl: string) => {
+  const imageUrl = new URL(openGraphImageUrl);
+
+  if (
+    imageUrl.origin !== "https://repository-images.githubusercontent.com" ||
+    !imageUrl.pathname.startsWith("/github-production-repository-image-")
+  ) {
+    return openGraphImageUrl;
+  }
+
+  imageUrl.pathname = `/${imageUrl.pathname.split("/").slice(2).join("/")}`;
+  imageUrl.search = "";
+
+  return imageUrl.href;
+};
+
 export const fetchGitHubRepositoryData = async (url: string) => {
   const query = /* GraphQL */ `
     query getGitHubRepository($url: URI!) {
@@ -65,6 +81,13 @@ export const fetchGitHubRepositoryData = async (url: string) => {
   const data = json.data;
 
   if (data.resource?.__typename === "Repository") {
-    return data.resource;
+    const openGraphImageUrl = getLegacyOpenGraphImageUrl(
+      data.resource.openGraphImageUrl,
+    );
+
+    return {
+      ...data.resource,
+      openGraphImageUrl,
+    };
   }
 };
