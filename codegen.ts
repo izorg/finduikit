@@ -30,12 +30,6 @@ const config: CodegenConfig = {
       plugins: ["typescript"],
     },
   },
-  hooks: {
-    afterAllFileWrite: [
-      "yarn prettier --cache --write",
-      "yarn eslint --cache --fix",
-    ],
-  },
   ignoreNoDocuments: true, // for better experience with the watcher
   schema: {
     "https://api.github.com/graphql": {
