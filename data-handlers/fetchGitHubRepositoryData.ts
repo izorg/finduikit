@@ -15,7 +15,7 @@ const getLegacyOpenGraphImageUrl = (openGraphImageUrl: string) => {
     return openGraphImageUrl;
   }
 
-  imageUrl.pathname = `/${imageUrl.pathname.split("/").slice(2).join("/")}`;
+  imageUrl.pathname = imageUrl.pathname.split("/").slice(2).join("/");
   imageUrl.search = "";
 
   return imageUrl.href;
