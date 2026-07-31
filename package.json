@@ -23,7 +23,7 @@
     "dev-next": "next dev",
     "format": "prettier --cache --ignore-unknown --write .",
     "generate-json-schema": "node --import=tsx --import=@nodejs-loaders/css-module domains/ui-kit/scripts/generate-json-schema.ts",
-    "graphql-codegen": "node --env-file-if-exists=.env.local node_modules/.bin/graphql-codegen",
+    "graphql-codegen": "node --env-file-if-exists=.env.local node_modules/@graphql-codegen/cli/esm/bin.js",
     "next-typegen": "next typegen",
     "start": "next start",
     "update-ui-kits": "node --env-file-if-exists=.env.local --import=tsx --import=@nodejs-loaders/css-module domains/ui-kit/scripts/update-ui-kits.ts"
