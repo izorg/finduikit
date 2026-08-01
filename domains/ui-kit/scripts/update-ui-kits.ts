@@ -80,7 +80,7 @@ const updateUiKit = async (dirent: Dirent) => {
     const { value: github } = githubResult;
     const { value: homepage } = homepageResult;
 
-    const image = await getImage({ data, github, homepage });
+    const image = await getImage({ data, github, homepage, name });
 
     outputData = {
       ...outputData,
@@ -147,7 +147,7 @@ const checkUiKits = async () => {
     .toSorted((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
     .slice(0, CHECK_COUNT);
 
-  await runWithConcurrency(checkEntries, 5, updateUiKit);
+  await runWithConcurrency(checkEntries, 1, updateUiKit);
 
   await fs.promises.writeFile(
     checkCacheFile,
