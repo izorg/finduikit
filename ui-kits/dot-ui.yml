@@ -1,7 +1,8 @@
 dependencies:
   - React Aria
-description: Build your design system, not someone else's. Compose beautiful,
-  accessible React components and export them as code you own.
+description: The design system studio for the web. Every design decision is
+  yours — build on real components, then install with the shadcn CLI or export
+  to v0.
 frameworks:
   - React
 homepage: https://dotui.org/
