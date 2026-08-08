@@ -1,7 +1,9 @@
 description: Paste is a design system for designing and building consistent
-  experiences at Twilio.
+  experiences at Twilio. - twilio-labs/paste
 figma: https://www.figma.com/community/file/1207476064127503112
 homepage: https://paste.twilio.design/
+image:
+  src: https://opengraph.githubassets.com/e4ad7261218ac1fde051136ed6ffb00dc423965e731c5b7f1827b212fdca4cc6/twilio-labs/paste
 name: Paste
 repository: https://github.com/twilio-labs/paste
 storybook: https://paste-storybook.twilio.design/

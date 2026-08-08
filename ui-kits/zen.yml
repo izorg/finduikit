@@ -1,8 +1,6 @@
 dependencies:
   - React Aria
-description: Zen is a props-driven React component library built for speed.
-  Build polished interfaces without writing HTML, CSS, or thinking about
-  Tailwind classes.
+description: The design system and React components used by Umami.
 frameworks:
   - React
 homepage: https://zen.umami.is/
