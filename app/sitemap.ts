@@ -1,7 +1,3 @@
-export const dynamic = "force-static";
-
-export const revalidate = false;
-
 import type { MetadataRoute } from "next";
 
 const lastModified = new Date();
