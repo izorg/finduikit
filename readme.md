@@ -119,7 +119,6 @@ Built with:
 | [Oat](https://oat.ink/)                                                                    |                   [GitHub](https://github.com/knadh/oat)                    |
 | [Palette](https://palette.artsy.net/)                                                      |                 [GitHub](https://github.com/artsy/palette)                  |
 | [Park UI](https://park-ui.com/)                                                            |               [GitHub](https://github.com/chakra-ui/park-ui)                |
-| [Paste](https://paste.twilio.design/)                                                      |               [GitHub](https://github.com/twilio-labs/paste)                |
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
 | [PatternFly Elements](https://patternflyelements.org/)                                     |         [GitHub](https://github.com/patternfly/patternfly-elements)         |
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |

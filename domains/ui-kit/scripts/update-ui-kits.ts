@@ -141,7 +141,7 @@ const checkUiKits = async () => {
   const getSortCacheTime = (dirent: Dirent) =>
     dirent.name in checkCache ? new Date(checkCache[dirent.name]).getTime() : 0;
 
-  const CHECK_COUNT = Math.trunc(Number(process.env.CHECK_COUNT ?? "")) || 1;
+  const CHECK_COUNT = Math.trunc(Number(process.env.CHECK_COUNT ?? "1"));
 
   const checkEntries = entries
     .toSorted((a, b) => getSortCacheTime(a) - getSortCacheTime(b))
