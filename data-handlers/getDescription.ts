@@ -15,6 +15,7 @@ const preservedDescriptions = new Set([
   "KoliBri",
   "Momentum Design",
   "NG-ZORRO",
+  "Synergy",
   "UI5 Web Components",
 ]);
 
