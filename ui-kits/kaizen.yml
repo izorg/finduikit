@@ -2,6 +2,8 @@ description: Culture Amp's Kaizen Design System 🌱
 frameworks:
   - React
 homepage: https://cultureamp.design/
+image:
+  src: https://cultureamp.design/static/media/kaizen-badge.svg
 name: Kaizen
 repository: https://github.com/cultureamp/kaizen-design-system
 storybook: https://cultureamp.design/

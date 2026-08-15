@@ -1,3 +1,6 @@
+ai:
+  - type: MCP
+    url: https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs/mcp
 dependencies:
   - Bootstrap
 description: With BootstrapVueNext you can build fast, responsive, and ARIA
