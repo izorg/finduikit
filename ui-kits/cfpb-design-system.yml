@@ -1,6 +1,8 @@
-description: CFPB's work-in-progress design system
+description: The Design System is an open-source resource for teams at the Consumer Financial Protection Bureau (CFPB). It's intended to help teams produce consistent, effective, and accessible products for the American public.
 figma: https://www.figma.com/community/file/1487539003249310850
 homepage: https://cfpb.github.io/design-system/
+image:
+  src: https://cfpb.github.io/design-system/images/uploads/cfpb_ds_home.png
 name: CFPB Design System
 repository: https://github.com/cfpb/design-system
 styling: Sass

@@ -10,6 +10,7 @@ const descriptionCompare = (a?: string, b?: string) =>
 
 const preservedDescriptions = new Set([
   "Atlantis",
+  "CFPB Design System",
   "commercetools UI Kit",
   "KoliBri",
   "Momentum Design",
