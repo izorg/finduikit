@@ -30,7 +30,6 @@ Built with:
 | [Ariakit](https://ariakit.org/)                                                            |                [GitHub](https://github.com/ariakit/ariakit)                 |
 | [Ark UI](https://ark-ui.com/)                                                              |                 [GitHub](https://github.com/chakra-ui/ark)                  |
 | [Astryx](https://astryx.atmeta.com/)                                                       |                [GitHub](https://github.com/facebook/astryx)                 |
-| [Atlantis](https://atlantis.getjobber.com/)                                                |               [GitHub](https://github.com/GetJobber/atlantis)               |
 | [Backpack](https://www.skyscanner.design/)                                                 |              [GitHub](https://github.com/Skyscanner/backpack)               |
 | [Base UI](https://base-ui.com/)                                                            |                  [GitHub](https://github.com/mui/base-ui)                   |
 | [Basecoat](https://basecoatui.com/)                                                        |               [GitHub](https://github.com/hunvreus/basecoat)                |
@@ -122,7 +121,7 @@ Built with:
 | [PatternFly](https://www.patternfly.org/)                                                  |             [GitHub](https://github.com/patternfly/patternfly)              |
 | [PatternFly Elements](https://patternflyelements.org/)                                     |         [GitHub](https://github.com/patternfly/patternfly-elements)         |
 | [Pharos](https://pharos.jstor.org/)                                                        |                 [GitHub](https://github.com/ithaka/pharos)                  |
-| [PIE](https://pie.design/)                                                                 |               [GitHub](https://github.com/GetJobber/atlantis)               |
+| [PIE](https://pie.design/)                                                                 |              [GitHub](https://github.com/justeattakeaway/pie)               |
 | [Plasma UI](https://plasma.sberdevices.ru/ui/)                                             |            [GitHub](https://github.com/salute-developers/plasma)            |
 | [Playbook](https://playbook.powerapp.cloud/)                                               |               [GitHub](https://github.com/powerhome/playbook)               |
 | [Porsche](https://designsystem.porsche.com/)                                               |  [GitHub](https://github.com/porsche-design-system/porsche-design-system)   |
@@ -183,6 +182,6 @@ Built with:
 | [Workday Canvas Kit](https://canvas.workday.com/)                                          |               [GitHub](https://github.com/Workday/canvas-kit)               |
 | [Yoga](https://gympass.github.io/yoga/)                                                    |                  [GitHub](https://github.com/gympass/yoga)                  |
 | [Zag](https://zagjs.com/)                                                                  |                 [GitHub](https://github.com/chakra-ui/zag)                  |
-| [Zen](https://zen.umami.is/)                                                               |            [GitHub](https://github.com/umami-software/react-zen)            |
+| [Zen](https://zen.umami.is/)                                                               |               [GitHub](https://github.com/umami-software/zen)               |
 
 <!-- Table -->

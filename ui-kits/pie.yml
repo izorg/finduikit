@@ -6,9 +6,9 @@ description: PIE is the global design system for Just Eat Takeaway.com, powering
 homepage: https://pie.design/
 image:
   fit: cover
-  src: https://www.pie.design/assets/img/social/landing_home.png
+  src: https://repository-images.githubusercontent.com/500784681/78708acb-ae1f-42a5-83be-7d1416fb3bc2
 name: PIE
-repository: https://github.com/GetJobber/atlantis
+repository: https://github.com/justeattakeaway/pie
 storybook: https://webc.pie.design/
 styling: Sass
 webComponents: Lit
