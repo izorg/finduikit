@@ -13,6 +13,7 @@ const preservedDescriptions = new Set([
   "CFPB Design System",
   "commercetools UI Kit",
   "KoliBri",
+  "M3E",
   "Momentum Design",
   "NG-ZORRO",
   "Synergy",
