@@ -1,6 +1,6 @@
 [production]
 baseline widely available
-current node
+node 24
 
 [server]
-current node
+node 24
