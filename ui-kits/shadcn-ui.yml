@@ -5,9 +5,9 @@ ai:
     url: https://ui.shadcn.com/docs/mcp
   - type: Skill
     url: https://ui.shadcn.com/docs/skills
-description: A set of beautifully-designed, accessible components and a code
-  distribution platform. Works with your favorite frameworks. Open Source. Open
-  Code.
+description: Composable, accessible components with thoughtful defaults. Build
+  your own component library with code you can customize, extend, and make your
+  own.
 figma: https://www.figma.com/community/file/1203061493325953101
 frameworks:
   - React
