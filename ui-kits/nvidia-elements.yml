@@ -10,7 +10,7 @@ frameworks: []
 homepage: https://nvidia.github.io/elements/
 image:
   fit: cover
-  src: https://nvidia.github.io/elements/static/images/social-card.png
+  src: https://repository-images.githubusercontent.com/1170974915/eb8e922b-98ef-488e-b179-da4147eb587e
 name: NVIDIA Elements
 repository: https://github.com/NVIDIA/elements
 styling: CSS
