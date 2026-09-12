@@ -6,7 +6,9 @@ description: Build faster with Preline UI, a free and open-source Tailwind CSS
   and Figma.
 figma: https://www.figma.com/community/file/1179068859697769656
 homepage: https://preline.co/
-image: false
+image:
+  fit: cover
+  src: https://preline.co/assets/img/og-image.png
 name: Preline UI
 repository: https://github.com/htmlstreamofficial/preline
 styling: Tailwind CSS
