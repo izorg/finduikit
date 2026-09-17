@@ -16,7 +16,7 @@ frameworks:
 homepage: https://ui.nuxt.com/
 image:
   fit: cover
-  src: https://ui.nuxt.com/og-image.png
+  src: https://ui.nuxt.com/_og/s/c_Home.takumi,lead_The+Intuitive,accent_Vue+UI+Library,description_~QWNjZXNzaWJsZSwgdHlwZWQgY29tcG9uZW50cyBidWlsdCBvbiBSZWthIFVJIGFuZCBUYWlsd2luZCBDU1Mu.png
 name: Nuxt UI
 repository: https://github.com/nuxt/ui
 styling: Tailwind CSS
