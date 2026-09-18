@@ -2,8 +2,8 @@ dependencies:
   - Base UI
   - Radix Primitives
 description: Free Shadcn UI components and pro blocks for React and Tailwind
-  CSS. Hand-crafted icons, templates, and a hosted MCP server so coding agents
-  build with the shadcn CLI.
+  CSS, plus hand-crafted icons, templates and a hosted MCP server for coding
+  agents.
 frameworks:
   - React
 homepage: https://reui.io/
