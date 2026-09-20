@@ -42,6 +42,14 @@ export const useFilteredUiKits = (uiKitsProp: UiKit[]) => {
             name: "ai",
           },
           {
+            getFn: (uiKit) => (uiKit.figma ? ["figma"] : ""),
+            name: "figma",
+          },
+          {
+            getFn: (uiKit) => (uiKit.storybook ? ["storybook"] : ""),
+            name: "storybook",
+          },
+          {
             getFn: (uiKit) =>
               uiKit.webComponents
                 ? ["web components", uiKit.webComponents]
