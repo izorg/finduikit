@@ -8832,6 +8832,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-cssicorn@npm:0.1.0":
+  version: 0.1.0
+  resolution: "eslint-cssicorn@npm:0.1.0"
+  dependencies:
+    "@eslint/css-tree": "npm:^4.1.1"
+  peerDependencies:
+    "@eslint/css": ">=2"
+    eslint: ">=10.4"
+  checksum: 10/8de887e5ee14d979d872ee1d3ecd5c0d5beefc2a3959372d91988140a7d611f763cdca39aab4ddf8a6266d7b0ba1c06fc4c99e7b6525ca18fc33db61d10fb2cc
+  languageName: node
+  linkType: hard
+
 "eslint-import-context@npm:^0.1.8":
   version: 0.1.9
   resolution: "eslint-import-context@npm:0.1.9"
@@ -9639,6 +9651,7 @@ __metadata:
     eslint: "npm:10.12.0"
     eslint-config-flat-gitignore: "npm:2.4.0"
     eslint-config-prettier: "npm:10.1.8"
+    eslint-cssicorn: "npm:0.1.0"
     eslint-import-resolver-typescript: "npm:4.4.5"
     eslint-plugin-compat: "npm:7.0.2"
     eslint-plugin-json-schema-validator: "npm:6.3.1"

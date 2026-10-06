@@ -6,6 +6,7 @@ import next from "@next/eslint-plugin-next";
 import stylistic from "@stylistic/eslint-plugin";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
+import cssicorn from "eslint-cssicorn";
 import compat from "eslint-plugin-compat";
 import jsonSchemaValidator from "eslint-plugin-json-schema-validator";
 import perfectionist from "eslint-plugin-perfectionist";
@@ -70,6 +71,7 @@ export default defineConfig(
       "unicorn/filename-case": "off",
       "unicorn/max-nested-calls": "off",
       "unicorn/name-replacements": "off",
+      "unicorn/no-asterisk-prefix-in-documentation-comments": "off",
       "unicorn/no-computed-property-existence-check": "off",
       "unicorn/no-global-object-property-assignment": "off",
       "unicorn/no-top-level-side-effects": "off",
@@ -135,7 +137,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [css.configs.recommended],
+    extends: [css.configs.recommended, cssicorn.configs.recommended],
     files: ["**/*.css"],
     language: "css/css",
     name: "css",

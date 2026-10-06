@@ -80,14 +80,16 @@ export const fetchGitHubRepositoryData = async (url: string) => {
 
   const data = json.data;
 
-  if (data.resource?.__typename === "Repository") {
-    const openGraphImageUrl = getLegacyOpenGraphImageUrl(
-      data.resource.openGraphImageUrl,
-    );
-
-    return {
-      ...data.resource,
-      openGraphImageUrl,
-    };
+  if (data.resource?.__typename !== "Repository") {
+    return;
   }
+
+  const openGraphImageUrl = getLegacyOpenGraphImageUrl(
+    data.resource.openGraphImageUrl,
+  );
+
+  return {
+    ...data.resource,
+    openGraphImageUrl,
+  };
 };
