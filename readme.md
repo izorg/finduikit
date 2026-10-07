@@ -47,7 +47,6 @@ Built with:
 | [Buefy](https://buefy.org/)                                                                |                  [GitHub](https://github.com/buefy/buefy)                   |
 | [Bulma](https://bulma.io/)                                                                 |                  [GitHub](https://github.com/jgthms/bulma)                  |
 | [Calcite](https://developers.arcgis.com/calcite-design-system/)                            |           [GitHub](https://github.com/Esri/calcite-design-system)           |
-| [CapsuleUI](https://zizigy.github.io/CapsuleUI/)                                           |                [GitHub](https://github.com/ZiZIGY/CapsuleUI)                |
 | [Carbon](https://carbondesignsystem.com/)                                                  |          [GitHub](https://github.com/carbon-design-system/carbon)           |
 | [Carbon Angular](https://carbondesignsystem.com/developing/community-frameworks/angular/)  | [GitHub](https://github.com/carbon-design-system/carbon-components-angular) |
 | [Carbon Svelte](https://svelte.carbondesignsystem.com/)                                    | [GitHub](https://github.com/carbon-design-system/carbon-components-svelte)  |
@@ -104,11 +103,9 @@ Built with:
 | [Material Web](https://material-web.dev/)                                                  |        [GitHub](https://github.com/material-components/material-web)        |
 | [MDB](https://mdbootstrap.com/)                                                            |             [GitHub](https://github.com/mdbootstrap/mdb-ui-kit)             |
 | [MDUI](https://www.mdui.org/)                                                              |                 [GitHub](https://github.com/zdhxiong/mdui)                  |
-| [Metro UI](https://metroui.org.ua/)                                                        |                 [GitHub](https://github.com/olton/metroui)                  |
 | [Momentum Design](https://momentum.design/en/)                                             |        [GitHub](https://github.com/momentum-design/momentum-design)         |
 | [MUI](https://mui.com/material-ui/)                                                        |                [GitHub](https://github.com/mui/material-ui)                 |
 | [Naive UI](https://www.naiveui.com/)                                                       |               [GitHub](https://github.com/tusen-ai/naive-ui)                |
-| [Nebular](https://akveo.github.io/nebular/)                                                |                 [GitHub](https://github.com/akveo/nebular)                  |
 | [NG Bootstrap](https://ng-bootstrap.github.io/)                                            |           [GitHub](https://github.com/ng-bootstrap/ng-bootstrap)            |
 | [NG-ZORRO](https://ng.ant.design/)                                                         |             [GitHub](https://github.com/NG-ZORRO/ng-zorro-antd)             |
 | [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/)                                 |          [GitHub](https://github.com/valor-software/ngx-bootstrap)          |
@@ -163,6 +160,8 @@ Built with:
 | [Synergy](https://synergy-design-system.github.io/)                                        |  [GitHub](https://github.com/synergy-design-system/synergy-design-system)   |
 | [Taiga UI](https://taiga-ui.dev/)                                                          |             [GitHub](https://github.com/taiga-family/taiga-ui)              |
 | [Tamagui](https://tamagui.dev/)                                                            |                [GitHub](https://github.com/tamagui/tamagui)                 |
+| [TDesign React](https://tdesign.tencent.com/react/getting-started-en)                      |             [GitHub](https://github.com/Tencent/tdesign-react)              |
+| [TDesign Vue Next](https://tdesign.tencent.com/vue-next/getting-started-en)                |            [GitHub](https://github.com/Tencent/tdesign-vue-next)            |
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                 [GitHub](https://github.com/ITS-HCD/nysds)                  |
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |               [GitHub](https://github.com/TDRA-ae/aegov-dls)                |
 | [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |               [GitHub](https://github.com/UI5/webcomponents)                |

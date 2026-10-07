@@ -1,0 +1,11 @@
+ai:
+  - type: MCP
+    url: https://tdesign.tencent.com/react/mcp-en
+description: A React UI components lib for TDesign.
+figma: https://www.figma.com/community/file/1053279236128724321/tdesign-for-web
+frameworks:
+  - React
+homepage: https://tdesign.tencent.com/react/getting-started-en
+name: TDesign React
+repository: https://github.com/Tencent/tdesign-react
+styling: Less
