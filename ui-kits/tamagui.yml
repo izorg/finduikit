@@ -1,8 +1,8 @@
 ai:
   - type: LLMs.txt
     url: https://tamagui.dev/llms.txt
-description: Style React fast with 100% parity on React Native, an optional UI
-  kit, and optimizing compiler.
+description: Type-safe styles for React and React Native, with an optimizing
+  compiler and Tailwind compatibility.
 figma: https://www.figma.com/community/file/1326593766534421119
 frameworks:
   - React
