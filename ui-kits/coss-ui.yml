@@ -12,5 +12,5 @@ image:
   fit: cover
   src: https://coss.com/ui/opengraph-image.png
 name: coss ui
-repository: https://github.com/cosscom/coss
+repository: https://github.com/cosscom/ui
 styling: Tailwind CSS
