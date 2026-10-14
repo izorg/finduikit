@@ -26,6 +26,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "*": ["./ui-kits/*"],
   },
+  partialPrefetching: true,
   reactCompiler: true,
   typedRoutes: true,
   typescript: {
