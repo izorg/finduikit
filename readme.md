@@ -61,7 +61,7 @@ Built with:
 | [Codex](https://doc.wikimedia.org/codex/latest/)                                           |             [GitHub](https://github.com/wikimedia/design-codex)             |
 | [Coinbase Design System](https://cds.coinbase.com/)                                        |                  [GitHub](https://github.com/coinbase/cds)                  |
 | [commercetools UI Kit](https://uikit.commercetools.com/)                                   |              [GitHub](https://github.com/commercetools/ui-kit)              |
-| [coss ui](https://coss.com/ui/docs)                                                        |                  [GitHub](https://github.com/cosscom/coss)                  |
+| [coss ui](https://coss.com/ui/docs)                                                        |                   [GitHub](https://github.com/cosscom/ui)                   |
 | [daisyUI](https://daisyui.com/)                                                            |                [GitHub](https://github.com/saadeghi/daisyui)                |
 | [dotUI](https://dotui.org/)                                                                |                 [GitHub](https://github.com/mehdibha/dotui)                 |
 | [Elastic UI](https://eui.elastic.co/)                                                      |                  [GitHub](https://github.com/elastic/eui)                   |
