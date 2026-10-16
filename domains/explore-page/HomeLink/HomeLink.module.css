@@ -5,8 +5,8 @@
   left: -40px;
   line-height: 0;
   position: absolute;
+  rotate: -45deg;
   top: 8px;
-  transform: rotate(-45deg);
   transform-origin: center -8px;
   width: 80px;
   z-index: 10;

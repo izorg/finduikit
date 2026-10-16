@@ -17,10 +17,7 @@
   width: 9em;
 }
 
-.styledColumn {
-  width: 6em;
-}
-
+.styledColumn,
 .figmaColumn {
   width: 6em;
 }

@@ -27,7 +27,6 @@ export default defineConfig(
     name: "ignore",
   },
   markdown.configs.processor,
-  markdown.configs.recommended,
   {
     extends: [
       js.configs.recommended,
@@ -100,13 +99,6 @@ export default defineConfig(
     },
   },
   {
-    files: ["**/*.d.ts"],
-    name: "typescript-declaration",
-    rules: {
-      "unicorn/require-module-specifiers": "off",
-    },
-  },
-  {
     files: [
       "data-handlers/**/*.ts",
       "domains/**/routes/*.ts",
@@ -120,16 +112,21 @@ export default defineConfig(
     },
   },
   {
-    extends: [json.configs.recommended],
+    extends: [json.configs.recommended, unicorn.configs["recommended-json"]],
     files: ["**/*.json"],
     language: "json/json",
     name: "json",
     rules: {
       "json/sort-keys": "error",
+      "unicorn/filename-case": "off",
     },
   },
   {
-    extends: [yml.configs["flat/recommended"], yml.configs["flat/prettier"]],
+    extends: [
+      yml.configs["flat/recommended"],
+      yml.configs["flat/prettier"],
+      unicorn.configs["recommended-yaml"],
+    ],
     files: ["**/*.y?(a)ml"],
     name: "yaml",
     rules: {
@@ -137,14 +134,28 @@ export default defineConfig(
     },
   },
   {
-    extends: [css.configs.recommended, cssicorn.configs.recommended],
+    extends: [
+      css.configs.recommended,
+      cssicorn.configs.recommended,
+      unicorn.configs["recommended-css"],
+    ],
     files: ["**/*.css"],
     language: "css/css",
     name: "css",
     rules: {
       "css/no-invalid-at-rules": "off",
       "css/no-invalid-properties": "off",
+      "cssicorn/no-ineffective-supports-conditions": "off",
+      "unicorn/filename-case": "off",
     },
+  },
+  {
+    extends: [
+      markdown.configs.recommended,
+      unicorn.configs["recommended-markdown"],
+    ],
+    files: ["**/*.md"],
+    name: "markdown",
   },
   {
     extends: [jsonSchemaValidator.configs["flat/recommended"]],
@@ -175,6 +186,7 @@ export default defineConfig(
     files: ["ui-kits/*.yml"],
     name: "ui-kits",
     rules: {
+      "unicorn/name-replacements": "off",
       "yml/no-irregular-whitespace": "off",
     },
   },
