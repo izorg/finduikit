@@ -28,6 +28,13 @@ const nextConfig: NextConfig = {
   },
   partialPrefetching: true,
   reactCompiler: true,
+  redirects: () => [
+    {
+      destination: "/",
+      permanent: true,
+      source: "/explore",
+    },
+  ],
   typedRoutes: true,
   typescript: {
     ignoreBuildErrors: true, // Using project root TypeScript check

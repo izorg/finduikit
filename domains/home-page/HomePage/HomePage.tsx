@@ -1,20 +1,12 @@
-import {
-  mdiCreation,
-  mdiMessageOutline,
-  mdiRhombusSplit,
-  mdiTelescope,
-} from "@mdi/js";
-import { Button, Container, Flex, Heading, Text } from "@radix-ui/themes";
+import { Heading, Link, Text } from "@astryxdesign/core";
+import { spacingVars } from "@astryxdesign/core/theme/tokens.stylex";
+import * as stylex from "@stylexjs/stylex";
 import { type Metadata } from "next";
-import NextLink from "next/link";
-import type { CSSProperties } from "react";
-import { siFigma, siStorybook } from "simple-icons";
+import { Suspense } from "react";
 
-import { Footer } from "../../footer";
-import { SvgIcon } from "../../icon";
-import { getUiKitFileDataEntriesFromFiles } from "../../ui-kit/server";
-import { StatCard } from "../StatCard";
-import { SupportButton } from "../SupportButton";
+import { getUiKits } from "../../ui-kit/server";
+
+import { Main } from "./Main";
 
 const title = "Find UI Kit";
 const description =
@@ -28,135 +20,66 @@ export const metadata: Metadata = {
   title,
 };
 
-export const HomePage = () => {
-  const uiKitEntries = getUiKitFileDataEntriesFromFiles();
+const styles = stylex.create({
+  container: {
+    minHeight: "100dvh",
+  },
+  containerPadding: {
+    paddingInline: spacingVars["--spacing-4"],
+  },
+  footer: {
+    marginTop: spacingVars["--spacing-8"],
+  },
+  header: {
+    marginBottom: spacingVars["--spacing-8"],
+  },
+});
+
+export const HomePage = async () => {
+  const uiKitSet = await getUiKits();
+
+  const uiKits = [...uiKitSet];
 
   return (
-    <Container size="3">
-      <Flex
-        align="center"
-        direction="column"
-        gap={{
-          initial: "6",
-          sm: "9",
-        }}
-        minHeight="100dvh"
-        p="4"
-      >
-        <Flex asChild direction="column" gap="2">
-          <Text align="center" asChild>
-            <header>
-              <Heading
-                as="h1"
-                size={{
-                  initial: "8",
-                  sm: "9",
-                }}
-                style={
-                  {
-                    "--heading-font-family": "var(--quote-font-family)",
-                  } as CSSProperties
-                }
-                weight="medium"
-              >
-                {title}
-              </Heading>
-              <Text as="p" size="4">
-                {description}
-              </Text>
-            </header>
+    <>
+      <div {...stylex.props(styles.container)}>
+        <header {...stylex.props(styles.header, styles.containerPadding)}>
+          <Heading justify="center" level={1} type="display-1">
+            {title}
+          </Heading>
+          <Text as="p" display="block" justify="center" size="lg">
+            {description}
           </Text>
-        </Flex>
-        <Flex
-          align="center"
-          asChild
-          direction="column"
-          gap={{
-            initial: "6",
-            sm: "9",
-          }}
-        >
-          <main>
-            <Flex gap="4" justify="center" wrap="wrap">
-              <Button asChild size="4">
-                <NextLink href="/explore">
-                  <SvgIcon aria-hidden path={mdiTelescope} />
-                  Explore
-                </NextLink>
-              </Button>
-              <SupportButton size="4" variant="soft">
-                <SvgIcon aria-hidden path={mdiMessageOutline} />
-                Support
-              </SupportButton>
-            </Flex>
-            <Flex gap="4" justify="center" wrap="wrap">
-              <StatCard>
-                <StatCard.Icon color="purple" path={mdiRhombusSplit} />
-                <StatCard.Label>Total UI kits</StatCard.Label>
-                <StatCard.Stat>{uiKitEntries.length}</StatCard.Stat>
-              </StatCard>
-              <StatCard>
-                <StatCard.Icon color="ruby" path={siStorybook.path} />
-                <StatCard.Label>Storybooks</StatCard.Label>
-                <StatCard.Stat>
-                  {uiKitEntries.filter(([, item]) => item.storybook).length}
-                </StatCard.Stat>
-              </StatCard>
-              <StatCard>
-                <StatCard.Icon color="crimson" path={siFigma.path} />
-                <StatCard.Label>Figma files</StatCard.Label>
-                <StatCard.Stat>
-                  {uiKitEntries.filter(([, item]) => item.figma).length}
-                </StatCard.Stat>
-              </StatCard>
-              <StatCard>
-                <StatCard.Icon color="crimson" path={mdiCreation} />
-                <StatCard.Label>Build with AI</StatCard.Label>
-                <StatCard.Stat>
-                  {uiKitEntries.filter(([, item]) => item.ai).length}
-                </StatCard.Stat>
-              </StatCard>
-            </Flex>
-            <section>
-              <Heading
-                mb="2"
-                style={
-                  {
-                    "--heading-font-family": "var(--quote-font-family)",
-                  } as CSSProperties
-                }
-                weight="medium"
-              >
-                Choose Tech with UI Kits
-              </Heading>
-              <Text>
-                Knowing UI kits helps teams pick the best tools for business. It
-                keeps designs consistent, and improves teamwork between
-                designers and developers.
-              </Text>
-            </section>
-            <section>
-              <Heading
-                mb="2"
-                style={
-                  {
-                    "--heading-font-family": "var(--quote-font-family)",
-                  } as CSSProperties
-                }
-                weight="medium"
-              >
-                Speed up Development
-              </Heading>
-              <Text>
-                Selecting the right UI kit accelerates development by providing
-                ready-made components, reducing repetitive work, and allowing
-                teams to focus on building unique features.
-              </Text>
-            </section>
-          </main>
-        </Flex>
-        <Footer mt="auto" />
-      </Flex>
-    </Container>
+        </header>
+        <Suspense>
+          <Main uiKits={uiKits} />
+        </Suspense>
+      </div>
+      <footer {...stylex.props(styles.footer, styles.containerPadding)}>
+        <Text as="p" display="block" justify="center">
+          Built by{" "}
+          <Link
+            color="inherit"
+            hasUnderline
+            href="https://www.linkedin.com/in/izorg/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Viacheslav Zavoruev
+          </Link>
+          . The source code is available on{" "}
+          <Link
+            color="inherit"
+            hasUnderline
+            href="https://github.com/izorg/finduikit"
+            rel="noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </Link>
+          .
+        </Text>
+      </footer>
+    </>
   );
 };

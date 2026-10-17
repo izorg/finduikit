@@ -3,6 +3,7 @@ import js from "@eslint/js";
 import json from "@eslint/json";
 import markdown from "@eslint/markdown";
 import next from "@next/eslint-plugin-next";
+import stylex from "@stylexjs/eslint-plugin";
 import stylistic from "@stylistic/eslint-plugin";
 import gitignore from "eslint-config-flat-gitignore";
 import prettier from "eslint-config-prettier/flat";
@@ -48,7 +49,19 @@ export default defineConfig(
       },
     },
     name: "javascript-and-typescript",
+    plugins: {
+      "@stylexjs": stylex,
+    },
     rules: {
+      "@stylexjs/enforce-extension": "error",
+      "@stylexjs/no-conflicting-props": "error",
+      "@stylexjs/no-legacy-contextual-styles": "error",
+      "@stylexjs/no-lookahead-selectors": "error",
+      "@stylexjs/no-nonstandard-styles": "error",
+      "@stylexjs/no-unused": "error",
+      "@stylexjs/valid-shorthands": "error",
+      "@stylexjs/valid-styles": "error",
+
       "perfectionist/sort-imports": [
         "error",
         {

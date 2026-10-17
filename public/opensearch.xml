@@ -7,7 +7,7 @@
   <Language>en-us</Language>
   <Url
     method="get"
-    template="https://finduikit.com/explore?search={searchTerms}"
+    template="https://finduikit.com?search={searchTerms}"
     type="text/html"
   />
   <Image height="16" type="image/x-icon" width="16">

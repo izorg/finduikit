@@ -1,6 +1,8 @@
-@import url("@radix-ui/themes/styles.css");
-@import url("../domains/icon/SvgIcon/SvgIcon.css");
+@import url("@astryxdesign/core/reset.css");
+@import url("@astryxdesign/core/astryx.css");
+@import url("@astryxdesign/theme-neutral/theme.css");
 
-body {
-  margin: 0;
-}
+/* StyleX app styles are injected here. The postcss plugin declares
+reset, astryx-base, and astryx-theme as layersBefore so the full layer order
+is: reset < astryx-base < astryx-theme < stylex app layers. */
+@stylex;

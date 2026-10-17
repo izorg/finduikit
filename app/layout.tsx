@@ -1,7 +1,8 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Theme } from "@radix-ui/themes";
+import * as stylex from "@stylexjs/stylex";
 import { type Metadata, type Viewport } from "next";
-import { ThemeProvider } from "next-themes";
+
+import { AstryxProvider } from "../domains/astryx";
 
 import "./global.css";
 
@@ -18,11 +19,17 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+const styles = stylex.create({
+  html: {
+    scrollbarGutter: "stable both-edges",
+  },
+});
+
 const RootLayout = (props: LayoutProps<"/">) => {
   const { children } = props;
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" {...stylex.props(styles.html)}>
       <link
         href="/opensearch.xml"
         rel="search"
@@ -30,9 +37,7 @@ const RootLayout = (props: LayoutProps<"/">) => {
         type="application/opensearchdescription+xml"
       />
       <body>
-        <ThemeProvider attribute="class">
-          <Theme accentColor="blue">{children}</Theme>
-        </ThemeProvider>
+        <AstryxProvider>{children}</AstryxProvider>
       </body>
       {process.env.NODE_ENV === "production" && (
         <GoogleAnalytics gaId="G-58PGJQJFHL" />
