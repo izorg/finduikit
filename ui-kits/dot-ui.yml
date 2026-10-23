@@ -1,8 +1,8 @@
 dependencies:
   - React Aria
-description: The design system studio for the web. Every design decision is
-  yours — build on real components, then install with the shadcn CLI or export
-  to v0.
+description: The design system studio for humans and agents. Every design
+  decision is yours — build on real components, then install with the shadcn CLI
+  or...
 frameworks:
   - React
 homepage: https://dotui.org/
