@@ -2,6 +2,7 @@ ai:
   - type: MCP
     url: https://astryx.atmeta.com/docs/working-with-ai#mcp-server
 description: An open source design system that is fully customizable and agent ready.
+figma: https://www.figma.com/community/file/1659998707120781098/astryx-library-community
 frameworks:
   - React
 homepage: https://astryx.atmeta.com/
