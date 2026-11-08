@@ -1,9 +1,11 @@
-description: Canvas is an open source design system that consists of reusable UI
-  elements, resources, and guidelines that enable teams to create scalable,
-  unified experiences.
+description: Development kits to implement UI following the Workday Sana Canvas
+  Design System (https://design.workday.com/design-system). See our Component
+  Storybook -
 frameworks:
   - React
 homepage: https://canvas.workday.com/
+image:
+  src: https://design.workday.com/sana-canvas-site-preview.png
 name: Workday Canvas Kit
 repository: https://github.com/Workday/canvas-kit
 storybook: https://workday.github.io/canvas-kit/
