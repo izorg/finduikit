@@ -25,4 +25,4 @@ export const firebaseGetGoogleAuth = () => {
   }
 
   return globalThis.googleAuth;
-}
+};
