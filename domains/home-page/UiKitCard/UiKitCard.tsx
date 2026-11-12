@@ -1,23 +1,14 @@
 import "linkify-plugin-mention";
 
-import {
-  Card,
-  Divider,
-  Heading,
-  HStack,
-  Icon,
-  Link,
-  Text,
-  VStack,
-} from "@astryxdesign/core";
+import { Card, Divider, Heading, Link, Text, VStack } from "@astryxdesign/core";
 import * as stylex from "@stylexjs/stylex";
-import { IconBrandGithub, IconWorld } from "@tabler/icons-react";
 import Linkify from "linkify-react";
 import type { IntermediateRepresentation } from "linkifyjs";
 
 import type { UiKit } from "../../ui-kit";
 
 import { UiKitCardImage } from "./UiKitCardImage";
+import { UiKitCardResources } from "./UiKitCardResources";
 
 const styles = stylex.create({
   container: {
@@ -68,17 +59,7 @@ export const UiKitCard = ({ uiKit }: UiKitCardProps) => {
           </Linkify>
         </Text>
         <Divider />
-        <Heading accessibilityLevel={3} level={4} weight="medium">
-          Resources
-        </Heading>
-        <HStack gap={2}>
-          <Link href={uiKit.homepage} target="_blank" tooltip="Homepage">
-            <Icon icon={IconWorld} />
-          </Link>
-          <Link href={uiKit.repository} target="_blank" tooltip="GitHub">
-            <Icon icon={IconBrandGithub} />
-          </Link>
-        </HStack>
+        <UiKitCardResources uiKit={uiKit} />
       </VStack>
     </Card>
   );
