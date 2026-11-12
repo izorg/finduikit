@@ -37,9 +37,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astryxdesign/cli@npm:0.7.14":
-  version: 0.7.14
-  resolution: "@astryxdesign/cli@npm:0.7.14"
+"@astryxdesign/cli@npm:0.7.15":
+  version: 0.7.15
+  resolution: "@astryxdesign/cli@npm:0.7.15"
   dependencies:
     "@babel/core": "npm:7.29.7"
     "@babel/parser": "npm:7.29.8"
@@ -48,6 +48,7 @@ __metadata:
     "@stylexjs/babel-plugin": "npm:^0.19.1"
     ast-types: "npm:0.16.3"
     commander: "npm:^12.1.0"
+    css-tree: "npm:3.2.1"
     ignore: "npm:^7.0.14"
     jiti: "npm:^2.7.0"
     jscodeshift: "npm:^17.4.0"
@@ -65,32 +66,32 @@ __metadata:
   bin:
     astryx: ./clients/cli/bin/astryx.mjs
     cli: ./clients/cli/bin/astryx.mjs
-  checksum: 10/ca52f41a96be71d7a931a6e23ddec97e5348590cd6c081e4c63fa28a6f9ff117ec312b9e23fa7c91be9b40a09df6b8c14505b86e722b7d68b61ebb9a6ea3a729
+  checksum: 10/5040468a055304defdc8fbfbfb869fb5445c5deb8bc2d053dcbdc28bf9ef6454a20db29fad8d80b96e661f79469bb90673cf97ef63e1b47ce4e10502dc559d9a
   languageName: node
   linkType: hard
 
-"@astryxdesign/core@npm:0.7.14":
-  version: 0.7.14
-  resolution: "@astryxdesign/core@npm:0.7.14"
+"@astryxdesign/core@npm:0.7.15":
+  version: 0.7.15
+  resolution: "@astryxdesign/core@npm:0.7.15"
   dependencies:
     intl-messageformat: "npm:^11.2.9"
   peerDependencies:
     "@stylexjs/stylex": ^0.19.0
     react: ">=19.0.0"
     react-dom: ">=19.0.0"
-  checksum: 10/0fd9f1d8987e0573dfedfacc0a6deabc787d80b991d87e197effde73b1c68b120d82d61e7aada2523a288d8a81618157f80f12ec2d5ccdec93e22428b41cb897
+  checksum: 10/576c96d4e05ee6f63f2888a3d57a39d585592eabe29995295119edfd2f4216bef8ed7f76ce503160a11498ec360f61706903378db99699bfc7929b3608fb9f8e
   languageName: node
   linkType: hard
 
-"@astryxdesign/theme-neutral@npm:0.7.14":
-  version: 0.7.14
-  resolution: "@astryxdesign/theme-neutral@npm:0.7.14"
+"@astryxdesign/theme-neutral@npm:0.7.15":
+  version: 0.7.15
+  resolution: "@astryxdesign/theme-neutral@npm:0.7.15"
   dependencies:
     lucide-react: "npm:^1.66.0"
   peerDependencies:
-    "@astryxdesign/core": 0.7.14
+    "@astryxdesign/core": 0.7.15
     react: ">=19"
-  checksum: 10/bfaf046a39fff3274876f04389181fe54ec357ae9a3c496abf72f8eda3015113ddb26f5b8c52ca254bc35103c9644e66d6780491914b87f0b0616118f06ef918
+  checksum: 10/5ec6384bfa2b6dddd88d441b045d83d59d37851295cc3aaf246e2f613c6c868bae9fcbe339203c5b934edd08d4772373bf6ea80a88da87cc92df52beae5da32f
   languageName: node
   linkType: hard
 
@@ -1802,19 +1803,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/near-operation-file-preset@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@graphql-codegen/near-operation-file-preset@npm:6.0.0"
+"@graphql-codegen/near-operation-file-preset@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@graphql-codegen/near-operation-file-preset@npm:6.0.1"
   dependencies:
     "@graphql-codegen/add": "npm:^8.0.0"
     "@graphql-codegen/plugin-helpers": "npm:^8.0.0"
     "@graphql-codegen/visitor-plugin-common": "npm:^8.0.0"
-    "@graphql-tools/utils": "npm:^11.0.0"
+    "@graphql-tools/utils": "npm:^13.2.2"
     parse-filepath: "npm:^1.0.2"
     tslib: "npm:^2.8.1"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10/3507d79699e2de50963db98d741cea32057bb640f793f3569b236d348a246ab17a44c0ca1a9cff0011a58a9de95949514dfcb10b267881bd32b620ced6505511
+  checksum: 10/f89afbf6ca71dc0259d24136e09bf6a7ef5472ff61a5eee6a734a9661065e31d598316f4c7aa52cf2a889ca2438a9b0bef1eac79807879e6bcfca4213e5a8648
   languageName: node
   linkType: hard
 
@@ -2340,20 +2341,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:^11.0.0":
-  version: 11.2.2
-  resolution: "@graphql-tools/utils@npm:11.2.2"
-  dependencies:
-    "@graphql-typed-document-node/core": "npm:^3.1.1"
-    "@whatwg-node/promise-helpers": "npm:^1.0.0"
-    cross-inspect: "npm:1.0.1"
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10/b33ddad55bd5a701f0c7554fba4aefc6b12178c8e5f14574f48528eef6dc7174b171f2421aefe9f25faeb7fa543501542bcee08c4ca787cfd0b93f98a329e67a
-  languageName: node
-  linkType: hard
-
 "@graphql-tools/utils@npm:^12.0.1, @graphql-tools/utils@npm:^12.1.0":
   version: 12.1.0
   resolution: "@graphql-tools/utils@npm:12.1.0"
@@ -2378,6 +2365,19 @@ __metadata:
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
   checksum: 10/f57f9ceedf743df7f20618b7b56da11be6d74acc1beec6930b6f82c802d796039468509c388ad5b62569d2747d0e9be283b6c31c4010b6e1570172dd5e6b66b4
+  languageName: node
+  linkType: hard
+
+"@graphql-tools/utils@npm:^13.2.2":
+  version: 13.2.2
+  resolution: "@graphql-tools/utils@npm:13.2.2"
+  dependencies:
+    "@graphql-typed-document-node/core": "npm:^3.2.0"
+    "@whatwg-node/promise-helpers": "npm:^2.0.1"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    graphql: ^16.0.0 || ^17.0.0
+  checksum: 10/4539927f538f6e4e32e47ff51d8ab603d06fd4bee54a1f1db50c28286c62902889a71d3200607675ecb7c6f97d2c79342e821dd6ba042ef722925f624ba1a57e
   languageName: node
   linkType: hard
 
@@ -6183,7 +6183,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylexjs/babel-plugin@npm:0.19.1, @stylexjs/babel-plugin@npm:^0.19.1":
+"@stylexjs/babel-plugin@npm:0.19.2":
+  version: 0.19.2
+  resolution: "@stylexjs/babel-plugin@npm:0.19.2"
+  dependencies:
+    "@babel/core": "npm:^7.26.8"
+    "@babel/helper-module-imports": "npm:^7.25.9"
+    "@babel/traverse": "npm:^7.26.8"
+    "@babel/types": "npm:^7.26.8"
+    "@dual-bundle/import-meta-resolve": "npm:^4.1.0"
+    "@stylexjs/shared": "npm:0.19.2"
+    "@stylexjs/stylex": "npm:0.19.2"
+    postcss-value-parser: "npm:^4.1.0"
+  checksum: 10/2f3e9aac9b996c177b915b2f02e43b5699e9630fdac4b07134f08907c38d8d8140bc69fffffce7f36740d778cbc27976f8f70b7e009e2f8f8fbde8ad99b4b8cc
+  languageName: node
+  linkType: hard
+
+"@stylexjs/babel-plugin@npm:^0.19.1":
   version: 0.19.1
   resolution: "@stylexjs/babel-plugin@npm:0.19.1"
   dependencies:
@@ -6199,29 +6215,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylexjs/eslint-plugin@npm:0.19.1":
-  version: 0.19.1
-  resolution: "@stylexjs/eslint-plugin@npm:0.19.1"
+"@stylexjs/eslint-plugin@npm:0.19.2":
+  version: 0.19.2
+  resolution: "@stylexjs/eslint-plugin@npm:0.19.2"
   dependencies:
     "@csstools/css-tokenizer": "npm:^3.0.3"
-    "@stylexjs/shared": "npm:0.19.1"
+    "@stylexjs/shared": "npm:0.19.2"
     micromatch: "npm:^4.0.5"
     postcss-value-parser: "npm:^4.2.0"
-  checksum: 10/9776874e0283b78eef677b3ac6d12b301aaa6632995e3ed5b5701d41eb8b4373e75798cef226823e2cc047ec9b8df4f9186c7c4444d31411a6d4747e4185b720
+  checksum: 10/7c8fe0384fb8275aaa01a18cd621a58fc618e12fb8ece9dbf81a50f52587c9be46a339f798c5c35ea6fbffca4d75ffd26a11aa01de2255481829a78a04fb471f
   languageName: node
   linkType: hard
 
-"@stylexjs/postcss-plugin@npm:0.19.1":
-  version: 0.19.1
-  resolution: "@stylexjs/postcss-plugin@npm:0.19.1"
+"@stylexjs/postcss-plugin@npm:0.19.2":
+  version: 0.19.2
+  resolution: "@stylexjs/postcss-plugin@npm:0.19.2"
   dependencies:
     "@babel/core": "npm:^7.26.8"
-    "@stylexjs/babel-plugin": "npm:0.19.1"
+    "@stylexjs/babel-plugin": "npm:0.19.2"
     fast-glob: "npm:^3.3.2"
     glob-parent: "npm:^6.0.2"
     is-glob: "npm:^4.0.3"
     postcss: "npm:^8.5.10"
-  checksum: 10/48331555720965304d06da18fb7b625dd4dcf36e171645c2cc45615d519ed6bd8ce54e58273cf2ad12d5f018ae7b0133e038d8af9bfd0d2e1962998ab76326b1
+  checksum: 10/a52505fe965a3d0e9bf877dcc2653cd856bee0d1d7e6c22cff6ee4c160e15a0197018a03ec99def05c474de6d16f22510e6832de83c9a639c5f3d919ee2834ac
   languageName: node
   linkType: hard
 
@@ -6229,6 +6245,13 @@ __metadata:
   version: 0.19.1
   resolution: "@stylexjs/shared@npm:0.19.1"
   checksum: 10/e27a076a06a3c64a18ec7c589bbd3a2673818b52cb1dc7f2f0520efe000ee0efd9c48f01cfed38820391b681d99a82fd6ad4f88e49db59f944a4b50f997d1a13
+  languageName: node
+  linkType: hard
+
+"@stylexjs/shared@npm:0.19.2":
+  version: 0.19.2
+  resolution: "@stylexjs/shared@npm:0.19.2"
+  checksum: 10/60bc061e1760eb2d82a9baecb3df34e3ad0e0d7df2d2a6f897ae33e509b60f54fec9d3a2bbf207681f07fc0e6639dcad0e910a5f36a74dffa60e8ac67cd9e4e0
   languageName: node
   linkType: hard
 
@@ -6240,6 +6263,15 @@ __metadata:
     invariant: "npm:^2.2.4"
     styleq: "npm:0.2.1"
   checksum: 10/c505ab5bb54c9b9a947d7e9cde4af5f2830d92fdae214dfb0e3081037040912d690e18e2b004b941b14ae1eaf0dd817dde71ba916a992270ac9fbdc051e9bd0b
+  languageName: node
+  linkType: hard
+
+"@stylexjs/stylex@npm:0.19.2":
+  version: 0.19.2
+  resolution: "@stylexjs/stylex@npm:0.19.2"
+  dependencies:
+    styleq: "npm:0.2.1"
+  checksum: 10/17f0ea305da354a9ccdb6cf5a36b31f299a125f704eb4c91fb03bb7d9104cff73b2236d1e14988f91f7b008f073c7ad18b32bec219d1df2d7835ee7777c21ce5
   languageName: node
   linkType: hard
 
@@ -8356,7 +8388,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-tree@npm:^3.2.1":
+"css-tree@npm:3.2.1, css-tree@npm:^3.2.1":
   version: 3.2.1
   resolution: "css-tree@npm:3.2.1"
   dependencies:
@@ -9890,15 +9922,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "finduikit@workspace:."
   dependencies:
-    "@astryxdesign/cli": "npm:0.7.14"
-    "@astryxdesign/core": "npm:0.7.14"
-    "@astryxdesign/theme-neutral": "npm:0.7.14"
+    "@astryxdesign/cli": "npm:0.7.15"
+    "@astryxdesign/core": "npm:0.7.15"
+    "@astryxdesign/theme-neutral": "npm:0.7.15"
     "@eslint/css": "npm:2.0.1"
     "@eslint/js": "npm:10.0.1"
     "@eslint/json": "npm:2.1.1"
     "@eslint/markdown": "npm:8.0.3"
     "@graphql-codegen/cli": "npm:8.0.0"
-    "@graphql-codegen/near-operation-file-preset": "npm:6.0.0"
+    "@graphql-codegen/near-operation-file-preset": "npm:6.0.1"
     "@graphql-codegen/typescript": "npm:7.0.1"
     "@graphql-codegen/typescript-operations": "npm:7.0.1"
     "@mdi/js": "npm:7.4.47"
@@ -9909,10 +9941,10 @@ __metadata:
     "@radix-ui/react-compose-refs": "npm:1.1.5"
     "@radix-ui/themes": "npm:3.3.0"
     "@sentry/nextjs": "npm:11.12.0"
-    "@stylexjs/babel-plugin": "npm:0.19.1"
-    "@stylexjs/eslint-plugin": "npm:0.19.1"
-    "@stylexjs/postcss-plugin": "npm:0.19.1"
-    "@stylexjs/stylex": "npm:0.19.1"
+    "@stylexjs/babel-plugin": "npm:0.19.2"
+    "@stylexjs/eslint-plugin": "npm:0.19.2"
+    "@stylexjs/postcss-plugin": "npm:0.19.2"
+    "@stylexjs/stylex": "npm:0.19.2"
     "@stylistic/eslint-plugin": "npm:5.10.0"
     "@tabler/icons-react": "npm:3.51.0"
     "@types/node": "npm:26.6.6"
@@ -9932,8 +9964,8 @@ __metadata:
     eslint-plugin-react-hooks: "npm:7.1.1"
     eslint-plugin-unicorn: "npm:79.0.0"
     eslint-plugin-yml: "npm:3.10.0"
-    firebase-admin: "npm:14.5.0"
-    firebase-tools: "npm:15.35.0"
+    firebase-admin: "npm:14.5.1"
+    firebase-tools: "npm:15.36.0"
     fuse.js: "npm:7.5.0"
     globals: "npm:17.14.0"
     google-auth-library: "npm:11.3.4"
@@ -9947,7 +9979,7 @@ __metadata:
     node-html-parser: "npm:9.0.7"
     oxlint: "npm:1.93.0"
     postcss: "npm:8.5.32"
-    prettier: "npm:3.10.0"
+    prettier: "npm:3.10.1"
     react: "npm:19.3.1"
     react-dom: "npm:19.3.1"
     simple-icons: "npm:16.37.0"
@@ -9966,9 +9998,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"firebase-admin@npm:14.5.0":
-  version: 14.5.0
-  resolution: "firebase-admin@npm:14.5.0"
+"firebase-admin@npm:14.5.1":
+  version: 14.5.1
+  resolution: "firebase-admin@npm:14.5.1"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^2.1.4"
@@ -9984,13 +10016,13 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10/30edc5b95f62bbda3652914b65ac588e4c059fd205524b9c7ead82420cb2bbe11bb1a3b7b453a8c0a11784862ebf1d8f64dd554dd772ce4b9e325fe0bca2c7e5
+  checksum: 10/06a558397482b1d612f4ec592fb05a8b65c275dc0e42a3a2ea8a411c022585dc1d6ddf68a596127fe5ce397f4105f6ef564fbac90abfee7dc5d1ca48e3181cf1
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:15.35.0":
-  version: 15.35.0
-  resolution: "firebase-tools@npm:15.35.0"
+"firebase-tools@npm:15.36.0":
+  version: 15.36.0
+  resolution: "firebase-tools@npm:15.36.0"
   dependencies:
     "@electric-sql/pglite": "npm:^0.3.3"
     "@electric-sql/pglite-tools": "npm:^0.2.8"
@@ -10060,7 +10092,7 @@ __metadata:
     zod: "npm:^4.0.0"
   bin:
     firebase: lib/bin/firebase.js
-  checksum: 10/21cd0a9a72315f57497e55654eae6e990a8e96c2671e086314d42d562c23c1e2eb8b015a33e93355bdd89c06f92e6b9f5b852fa077a5da3f855db95efe90aae7
+  checksum: 10/6fb411d55d860f0bfc713b9710b3554738012571c74a9a2ac31dac4f28979563027cd7c2fdb7692ae815ea1c882cecf6092e3f5a7cd6a56caa9804b17d4ef5f9
   languageName: node
   linkType: hard
 
@@ -14477,12 +14509,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.10.0":
-  version: 3.10.0
-  resolution: "prettier@npm:3.10.0"
+"prettier@npm:3.10.1":
+  version: 3.10.1
+  resolution: "prettier@npm:3.10.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10/c87442be0b480bc968cbd44d5984fd2ccf1d0b2a94aa3f35ffccc8751cf25751360adce3884d08b0f52c403fa75bfdf64bacdd2802d9fc1e0efee7456cf4ef36
+  checksum: 10/ab4fc7bbee5823eb99200f89172e1dc360a8225facc19db336f30aa4e089bd8576f141ca8e129ce6ce850f1d7beb4d6e8b7630c2522b3b2fdc62330114f828b2
   languageName: node
   linkType: hard
 
