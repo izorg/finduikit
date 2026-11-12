@@ -6,6 +6,8 @@ figma: https://www.figma.com/community/file/1341658976127676210
 frameworks:
   - React
 homepage: https://blade.razorpay.com/
+image:
+  src: https://avatars.githubusercontent.com/u/7713209?s=400&v=4
 name: Blade
 repository: https://github.com/razorpay/blade
 storybook: https://blade.razorpay.com/
