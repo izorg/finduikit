@@ -163,6 +163,7 @@ Built with:
 | [TDesign Vue Next](https://tdesign.tencent.com/vue-next/getting-started-en)                |            [GitHub](https://github.com/Tencent/tdesign-vue-next)            |
 | [The New York State Design System](https://designsystem.ny.gov/)                           |                 [GitHub](https://github.com/ITS-HCD/nysds)                  |
 | [The UAE Design System](https://designsystem.gov.ae/)                                      |               [GitHub](https://github.com/TDRA-ae/aegov-dls)                |
+| [UI SDK](https://ui-sdk.dev/)                                                              |                 [GitHub](https://github.com/vercel-labs/ui)                 |
 | [UI5 Web Components](https://ui5.github.io/webcomponents/)                                 |               [GitHub](https://github.com/UI5/webcomponents)                |
 | [UIkit](https://getuikit.com/)                                                             |                  [GitHub](https://github.com/uikit/uikit)                   |
 | [Umbraco UI](https://uui.umbraco.com/)                                                     |               [GitHub](https://github.com/umbraco/Umbraco.UI)               |

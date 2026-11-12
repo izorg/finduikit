@@ -1,0 +1,17 @@
+ai:
+  - type: Skill
+    url: https://ui-sdk.dev/docs/agents/skills
+description: A library of behaviors for agents to build the next generation of
+  user interfaces.
+frameworks:
+  - React
+  - Solid
+  - Svelte
+  - Vue
+homepage: https://ui-sdk.dev/
+image:
+  fit: cover
+  src: https://ui-sdk.dev/opengraph-image
+name: UI SDK
+repository: https://github.com/vercel-labs/ui
+unstyled: true
