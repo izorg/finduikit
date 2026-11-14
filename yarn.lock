@@ -37,14 +37,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astryxdesign/cli@npm:0.7.15":
-  version: 0.7.15
-  resolution: "@astryxdesign/cli@npm:0.7.15"
+"@astryxdesign/cli@npm:0.7.16":
+  version: 0.7.16
+  resolution: "@astryxdesign/cli@npm:0.7.16"
   dependencies:
     "@babel/core": "npm:7.29.7"
     "@babel/parser": "npm:7.29.8"
     "@babel/plugin-transform-typescript": "npm:7.29.7"
     "@babel/types": "npm:7.29.8"
+    "@csstools/css-syntax-patches-for-csstree": "npm:1.1.6"
     "@stylexjs/babel-plugin": "npm:^0.19.1"
     ast-types: "npm:0.16.3"
     commander: "npm:^12.1.0"
@@ -66,32 +67,32 @@ __metadata:
   bin:
     astryx: ./clients/cli/bin/astryx.mjs
     cli: ./clients/cli/bin/astryx.mjs
-  checksum: 10/5040468a055304defdc8fbfbfb869fb5445c5deb8bc2d053dcbdc28bf9ef6454a20db29fad8d80b96e661f79469bb90673cf97ef63e1b47ce4e10502dc559d9a
+  checksum: 10/846bc47cc4532b9744391a25c17241c38391337669a3570fe822f9cb8099fd3fea37886dca5afa31d023743937d35e901eb21e8a11325eb2bc1d35a7a3f67933
   languageName: node
   linkType: hard
 
-"@astryxdesign/core@npm:0.7.15":
-  version: 0.7.15
-  resolution: "@astryxdesign/core@npm:0.7.15"
+"@astryxdesign/core@npm:0.7.16":
+  version: 0.7.16
+  resolution: "@astryxdesign/core@npm:0.7.16"
   dependencies:
     intl-messageformat: "npm:^11.2.9"
   peerDependencies:
     "@stylexjs/stylex": ^0.19.0
     react: ">=19.0.0"
     react-dom: ">=19.0.0"
-  checksum: 10/576c96d4e05ee6f63f2888a3d57a39d585592eabe29995295119edfd2f4216bef8ed7f76ce503160a11498ec360f61706903378db99699bfc7929b3608fb9f8e
+  checksum: 10/3db13ee2aa33e472160303114d82f5f6ae3efa4d993f0635eef0f35ac20002f8b974558ff63b34115ba39c2ce0ebdc45ab521617a1f21c175fc3f8f44854601c
   languageName: node
   linkType: hard
 
-"@astryxdesign/theme-neutral@npm:0.7.15":
-  version: 0.7.15
-  resolution: "@astryxdesign/theme-neutral@npm:0.7.15"
+"@astryxdesign/theme-neutral@npm:0.7.16":
+  version: 0.7.16
+  resolution: "@astryxdesign/theme-neutral@npm:0.7.16"
   dependencies:
     lucide-react: "npm:^1.66.0"
   peerDependencies:
-    "@astryxdesign/core": 0.7.15
+    "@astryxdesign/core": 0.7.16
     react: ">=19"
-  checksum: 10/5ec6384bfa2b6dddd88d441b045d83d59d37851295cc3aaf246e2f613c6c868bae9fcbe339203c5b934edd08d4772373bf6ea80a88da87cc92df52beae5da32f
+  checksum: 10/5be5f45d991eaa2d5aa79f9ca9cb13da0f775c5420545171a0a65b6f0438e84da829a2407a3a2a38c3861a957178b3c2d02a6b02aae4b84211e4fc2ab83da08b
   languageName: node
   linkType: hard
 
@@ -868,6 +869,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/css-syntax-patches-for-csstree@npm:1.1.6":
+  version: 1.1.6
+  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.1.6"
+  peerDependencies:
+    css-tree: ^3.2.1
+  peerDependenciesMeta:
+    css-tree:
+      optional: true
+  checksum: 10/8747268b42f1afbe450d38b7f388a4983c810883f8c0716fa24f5b1eef0f9cbaa3a0f4ea72d1e5cbd015dc4fd5af9cc96ade42792912ed2dcc1d4054de102163
+  languageName: node
+  linkType: hard
+
 "@csstools/css-syntax-patches-for-csstree@npm:^1.1.15":
   version: 1.1.16
   resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.1.16"
@@ -1250,14 +1263,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-array@npm:^0.23.5":
-  version: 0.23.5
-  resolution: "@eslint/config-array@npm:0.23.5"
+"@eslint/config-array@npm:^0.23.6":
+  version: 0.23.6
+  resolution: "@eslint/config-array@npm:0.23.6"
   dependencies:
     "@eslint/object-schema": "npm:^3.0.5"
     debug: "npm:^4.3.1"
-    minimatch: "npm:^10.2.4"
-  checksum: 10/0e05be2b5c8b9f9fb8094948fd2d35591a32091b9d39205181f2ed9bec0e2c8b2969f019f40a0388755a025408b98929e2d0beccb4fbd6609c1c0d6c9e9a14f0
+    minimatch: "npm:^11.0.5"
+  checksum: 10/090cbcfcd0de25c6ae8c1542a0a5a042806c52166e8e687b54dd317967c9fd9dabcaaa090ab62f68db8449e7916681a1d9d3a82ffd4e4b5b229ce0335edbcaf6
   languageName: node
   linkType: hard
 
@@ -6275,19 +6288,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin@npm:5.10.0":
-  version: 5.10.0
-  resolution: "@stylistic/eslint-plugin@npm:5.10.0"
+"@stylistic/eslint-plugin@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@stylistic/eslint-plugin@npm:6.0.0"
   dependencies:
-    "@eslint-community/eslint-utils": "npm:^4.9.1"
-    "@typescript-eslint/types": "npm:^8.56.0"
-    eslint-visitor-keys: "npm:^4.2.1"
-    espree: "npm:^10.4.0"
-    estraverse: "npm:^5.3.0"
-    picomatch: "npm:^4.0.3"
+    "@eslint-community/eslint-utils": "npm:^4.10.1"
+    "@typescript-eslint/types": "npm:^8.72.2"
+    "@typescript-eslint/visitor-keys": "npm:^8.72.2"
+    espree: "npm:^11.2.0"
+    picomatch: "npm:^4.0.7"
   peerDependencies:
     eslint: ^9.0.0 || ^10.0.0
-  checksum: 10/d55706b09a55defbc5afbfc251c4ecc0acfcbc3e741c34bec461365b399d2c9d89a6cafac069356ea03e231f3b12d5cc9550e66603ac343c29e07f2b2cd30464
+    oxlint: ^1.55.0
+  peerDependenciesMeta:
+    eslint:
+      optional: true
+    oxlint:
+      optional: true
+  checksum: 10/64df1f3f2ec1e10d98355461be2e6d3b4656bc1bcf1192a83886fd17d694619833f7da6777ee09fdaae349d25462f45bec1b704beeb89d530a10a0851a575e8c
   languageName: node
   linkType: hard
 
@@ -6595,7 +6613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:8.72.1, @typescript-eslint/types@npm:^8.56.0, @typescript-eslint/types@npm:^8.71.2, @typescript-eslint/types@npm:^8.72.1":
+"@typescript-eslint/types@npm:8.72.1, @typescript-eslint/types@npm:^8.71.2, @typescript-eslint/types@npm:^8.72.1":
   version: 8.72.1
   resolution: "@typescript-eslint/types@npm:8.72.1"
   checksum: 10/5df4d298766f25b95beae1ca2374d0a01719b3ac12f5f6a9977241d5ac7808064a72d07002b09bcdc6876453fb3a1bc8bc4988cd10ff2d07b4fb4fbcf71bd706
@@ -6687,7 +6705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/visitor-keys@npm:8.72.2":
+"@typescript-eslint/visitor-keys@npm:8.72.2, @typescript-eslint/visitor-keys@npm:^8.72.2":
   version: 8.72.2
   resolution: "@typescript-eslint/visitor-keys@npm:8.72.2"
   dependencies:
@@ -6980,7 +6998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.15.0, acorn@npm:^8.16.0, acorn@npm:^8.5.0":
+"acorn@npm:^8.16.0, acorn@npm:^8.5.0":
   version: 8.19.0
   resolution: "acorn@npm:8.19.0"
   bin:
@@ -9318,13 +9336,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "eslint-visitor-keys@npm:4.2.1"
-  checksum: 10/3ee00fc6a7002d4b0ffd9dc99e13a6a7882c557329e6c25ab254220d71e5c9c4f89dca4695352949ea678eb1f3ba912a18ef8aac0a7fe094196fd92f441bfce2
-  languageName: node
-  linkType: hard
-
 "eslint-visitor-keys@npm:^5.0.0, eslint-visitor-keys@npm:^5.0.1":
   version: 5.0.1
   resolution: "eslint-visitor-keys@npm:5.0.1"
@@ -9332,13 +9343,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:10.14.0":
-  version: 10.14.0
-  resolution: "eslint@npm:10.14.0"
+"eslint@npm:10.15.0":
+  version: 10.15.0
+  resolution: "eslint@npm:10.15.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
-    "@eslint/config-array": "npm:^0.23.5"
+    "@eslint/config-array": "npm:^0.23.6"
     "@eslint/config-helpers": "npm:^0.7.0"
     "@eslint/core": "npm:^1.2.1"
     "@eslint/plugin-kit": "npm:^0.7.3"
@@ -9363,7 +9374,7 @@ __metadata:
     imurmurhash: "npm:^0.1.4"
     is-glob: "npm:^4.0.0"
     json-stable-stringify-without-jsonify: "npm:^1.0.1"
-    minimatch: "npm:^10.2.6"
+    minimatch: "npm:^11.0.5"
     natural-compare: "npm:^1.4.0"
     optionator: "npm:^0.9.3"
   peerDependencies:
@@ -9373,18 +9384,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10/66743528bfef3961deb3141fc6893e1f137f2ed2602ee36482107cdd49b1a14a1c3da9bb9824fd3530003a23f041b6854f28c20306e99d9b7222a825998e8ed9
-  languageName: node
-  linkType: hard
-
-"espree@npm:^10.4.0":
-  version: 10.4.0
-  resolution: "espree@npm:10.4.0"
-  dependencies:
-    acorn: "npm:^8.15.0"
-    acorn-jsx: "npm:^5.3.2"
-    eslint-visitor-keys: "npm:^4.2.1"
-  checksum: 10/9b355b32dbd1cc9f57121d5ee3be258fab87ebeb7c83fc6c02e5af1a74fc8c5ba79fe8c663e69ea112c3e84a1b95e6a2067ac4443ee7813bb85ac7581acb8bf9
+  checksum: 10/210e852590cd25dd45192bd69861801f2ad692ff1ab60fcee88c9a5a7482b1626b052b0e12801301be55a811fb1aa5361b4632957848fb3bce5453833053df9e
   languageName: node
   linkType: hard
 
@@ -9427,7 +9427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"estraverse@npm:^5.1.0, estraverse@npm:^5.2.0, estraverse@npm:^5.3.0":
+"estraverse@npm:^5.1.0, estraverse@npm:^5.2.0":
   version: 5.3.0
   resolution: "estraverse@npm:5.3.0"
   checksum: 10/37cbe6e9a68014d34dbdc039f90d0baf72436809d02edffcc06ba3c2a12eb298048f877511353b130153e532aac8d68ba78430c0dd2f44806ebc7c014b01585e
@@ -9922,9 +9922,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "finduikit@workspace:."
   dependencies:
-    "@astryxdesign/cli": "npm:0.7.15"
-    "@astryxdesign/core": "npm:0.7.15"
-    "@astryxdesign/theme-neutral": "npm:0.7.15"
+    "@astryxdesign/cli": "npm:0.7.16"
+    "@astryxdesign/core": "npm:0.7.16"
+    "@astryxdesign/theme-neutral": "npm:0.7.16"
     "@eslint/css": "npm:2.0.1"
     "@eslint/js": "npm:10.0.1"
     "@eslint/json": "npm:2.1.1"
@@ -9945,7 +9945,7 @@ __metadata:
     "@stylexjs/eslint-plugin": "npm:0.19.2"
     "@stylexjs/postcss-plugin": "npm:0.19.2"
     "@stylexjs/stylex": "npm:0.19.2"
-    "@stylistic/eslint-plugin": "npm:5.10.0"
+    "@stylistic/eslint-plugin": "npm:6.0.0"
     "@tabler/icons-react": "npm:3.51.0"
     "@types/node": "npm:26.6.6"
     "@types/react": "npm:19.3.0"
@@ -9953,7 +9953,7 @@ __metadata:
     classnames: "npm:2.5.1"
     concurrently: "npm:10.0.7"
     emoji-toolkit: "npm:11.0.0"
-    eslint: "npm:10.14.0"
+    eslint: "npm:10.15.0"
     eslint-config-flat-gitignore: "npm:2.4.0"
     eslint-config-prettier: "npm:10.1.8"
     eslint-cssicorn: "npm:0.3.0"
@@ -9978,7 +9978,7 @@ __metadata:
     next-themes: "npm:0.4.6"
     node-html-parser: "npm:9.0.7"
     oxlint: "npm:1.93.0"
-    postcss: "npm:8.5.32"
+    postcss: "npm:8.5.33"
     prettier: "npm:3.10.1"
     react: "npm:19.3.1"
     react-dom: "npm:19.3.1"
@@ -13040,7 +13040,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^10.0.0, minimatch@npm:^10.2.2, minimatch@npm:^10.2.4, minimatch@npm:^10.2.6":
+"minimatch@npm:^10.0.0, minimatch@npm:^10.2.2":
   version: 10.2.6
   resolution: "minimatch@npm:10.2.6"
   dependencies:
@@ -14296,7 +14296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^4.0.2, picomatch@npm:^4.0.3, picomatch@npm:^4.0.4, picomatch@npm:^4.0.7":
+"picomatch@npm:^4.0.2, picomatch@npm:^4.0.4, picomatch@npm:^4.0.7":
   version: 4.0.7
   resolution: "picomatch@npm:4.0.7"
   checksum: 10/66e1df34bc39c72fa3756be4069f7887ea3e35e94bba1c3f6167763007698cb04b8a0a365161d186fda6e9571a2d3efb606b2966eb6a7dea6252911224dc2f48
@@ -14461,7 +14461,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.32, postcss@npm:^8.0.0, postcss@npm:^8.4.32, postcss@npm:^8.5.10, postcss@npm:^8.5.23, postcss@npm:^8.5.28, postcss@npm:^8.5.31, postcss@npm:^8.5.6":
+"postcss@npm:8.5.33":
+  version: 8.5.33
+  resolution: "postcss@npm:8.5.33"
+  dependencies:
+    nanoid: "npm:^3.3.20"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.2"
+  checksum: 10/89136a68865e151c06635707d04e147d0e13d61210927246acfef1ff189663dc6fdb77341a167bf0ac235c0683e7c2af21ac43672660795d22d759cb66134406
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.0.0, postcss@npm:^8.4.32, postcss@npm:^8.5.10, postcss@npm:^8.5.23, postcss@npm:^8.5.28, postcss@npm:^8.5.31, postcss@npm:^8.5.6":
   version: 8.5.32
   resolution: "postcss@npm:8.5.32"
   dependencies:

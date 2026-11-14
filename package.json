@@ -29,8 +29,8 @@
     "update-ui-kits": "node --env-file-if-exists=.env.local --import=tsx --import=@nodejs-loaders/css-module domains/ui-kit/scripts/update-ui-kits.ts"
   },
   "dependencies": {
-    "@astryxdesign/core": "0.7.15",
-    "@astryxdesign/theme-neutral": "0.7.15",
+    "@astryxdesign/core": "0.7.16",
+    "@astryxdesign/theme-neutral": "0.7.16",
     "@mdi/js": "7.4.47",
     "@next/third-parties": "16.4.6",
     "@radix-ui/react-compose-refs": "1.1.5",
@@ -53,7 +53,7 @@
     "usehooks-ts": "3.1.1"
   },
   "devDependencies": {
-    "@astryxdesign/cli": "0.7.15",
+    "@astryxdesign/cli": "0.7.16",
     "@eslint/css": "2.0.1",
     "@eslint/js": "10.0.1",
     "@eslint/json": "2.1.1",
@@ -69,12 +69,12 @@
     "@stylexjs/eslint-plugin": "0.19.2",
     "@stylexjs/postcss-plugin": "0.19.2",
     "@stylexjs/stylex": "0.19.2",
-    "@stylistic/eslint-plugin": "5.10.0",
+    "@stylistic/eslint-plugin": "6.0.0",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "babel-plugin-react-compiler": "1.0.0",
     "concurrently": "10.0.7",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "eslint-config-flat-gitignore": "2.4.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-cssicorn": "0.3.0",
@@ -91,7 +91,7 @@
     "knip": "6.45.1",
     "node-html-parser": "9.0.7",
     "oxlint": "1.93.0",
-    "postcss": "8.5.32",
+    "postcss": "8.5.33",
     "prettier": "3.10.1",
     "stylelint": "18.0.0",
     "stylelint-config-css-modules": "4.6.0",
