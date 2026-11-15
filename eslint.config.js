@@ -36,6 +36,7 @@ export default defineConfig(
       next.configs.recommended,
       next.configs["core-web-vitals"],
       reactHooks.configs.flat["recommended-latest"],
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access -- false positive
       stylistic.configs.recommended,
       unicorn.configs.recommended,
       perfectionist.configs["recommended-alphabetical"],
@@ -61,6 +62,8 @@ export default defineConfig(
       "@stylexjs/no-unused": "error",
       "@stylexjs/valid-shorthands": "error",
       "@stylexjs/valid-styles": "error",
+
+      "@stylistic/list-style": "off",
 
       "perfectionist/sort-imports": [
         "error",
