@@ -3,9 +3,7 @@ description: Bklit UI is a component library built on top of shadcn/ui to help
 frameworks:
   - React
 homepage: https://ui.bklit.com/
-image:
-  fit: cover
-  src: https://bklit.com/api/og/home
+image: false
 name: Bklit UI
 repository: https://github.com/bklit/bklit-ui
 styling: CSS
