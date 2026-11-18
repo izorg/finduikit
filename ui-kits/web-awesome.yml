@@ -3,9 +3,8 @@ ai:
     url: https://webawesome.com/docs/resources/llms
   - type: Skill
     url: https://webawesome.com/docs/resources/agent-skills
-description: Build better with Web Awesome, the biggest open source library of
-  meticulously designed, highly customizable, and framework-agnostic UI
-  components.
+description: The open-source UI toolkit from the team behind Font Awesome. Built
+  on web standards, so it works with any framework and matches any brand.
 homepage: https://webawesome.com/
 image:
   fit: cover
