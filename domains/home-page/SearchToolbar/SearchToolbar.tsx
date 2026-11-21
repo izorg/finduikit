@@ -8,13 +8,10 @@ import {
 import type { StyleXStyles } from "@stylexjs/stylex";
 import { IconFilter2 } from "@tabler/icons-react";
 
+import { Framework, useFramework } from "../../framework";
 import { Sorting, useSorting } from "../../sorting";
 import { useUiKitView } from "../../ui-kit";
 import { UiKitView } from "../../ui-kit/UiKitView";
-
-type SearchToolbarProps = {
-  xstyle?: StyleXStyles;
-};
 
 type SortingOption = {
   label: string;
@@ -27,9 +24,22 @@ const sortingOptions: SortingOption[] = [
   { label: "By update", value: Sorting.ByUpdate },
 ];
 
+type SearchToolbarProps = {
+  xstyle?: StyleXStyles;
+};
+
 export const SearchToolbar = (props: SearchToolbarProps) => {
+  const { framework, setFramework } = useFramework();
   const { setSorting, sorting } = useSorting();
   const { setUiKitView, uiKitView } = useUiKitView();
+
+  const onFrameworkChange = (value: null | string) => {
+    const framework = Object.values(Framework).find(
+      (option) => option === value,
+    );
+
+    setFramework(framework);
+  };
 
   const onSortingChange = (value: string) => {
     const sorting =
@@ -57,6 +67,15 @@ export const SearchToolbar = (props: SearchToolbarProps) => {
           <SelectorOption icon={IconFilter2} label={option.label} />
         )}
         value={sorting}
+      />
+      <Selector
+        hasClear
+        isLabelHidden
+        label="Framework"
+        onChange={onFrameworkChange}
+        options={Object.values(Framework)}
+        value={framework ?? null}
+        width={130}
       />
       <SegmentedControl
         label="Select view option"
