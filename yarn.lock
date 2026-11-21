@@ -1846,9 +1846,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/near-operation-file-preset@npm:6.0.1":
-  version: 6.0.1
-  resolution: "@graphql-codegen/near-operation-file-preset@npm:6.0.1"
+"@graphql-codegen/near-operation-file-preset@npm:6.0.2":
+  version: 6.0.2
+  resolution: "@graphql-codegen/near-operation-file-preset@npm:6.0.2"
   dependencies:
     "@graphql-codegen/add": "npm:^8.0.0"
     "@graphql-codegen/plugin-helpers": "npm:^8.0.0"
@@ -1858,7 +1858,7 @@ __metadata:
     tslib: "npm:^2.8.1"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10/f89afbf6ca71dc0259d24136e09bf6a7ef5472ff61a5eee6a734a9661065e31d598316f4c7aa52cf2a889ca2438a9b0bef1eac79807879e6bcfca4213e5a8648
+  checksum: 10/b0b4882c5e21b694d0ca6e4b435eeeebf2404ee1a439f7b7fbb871606b70486f5cdb35273bd2a8ac12759f6f3632c318d424a04fc009392f174e04738e92a3c4
   languageName: node
   linkType: hard
 
@@ -9970,7 +9970,7 @@ __metadata:
     "@eslint/json": "npm:2.1.1"
     "@eslint/markdown": "npm:9.0.0"
     "@graphql-codegen/cli": "npm:8.0.0"
-    "@graphql-codegen/near-operation-file-preset": "npm:6.0.1"
+    "@graphql-codegen/near-operation-file-preset": "npm:6.0.2"
     "@graphql-codegen/typescript": "npm:7.0.1"
     "@graphql-codegen/typescript-operations": "npm:7.0.1"
     "@mdi/js": "npm:7.4.47"
