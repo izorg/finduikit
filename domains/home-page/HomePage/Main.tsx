@@ -3,12 +3,13 @@
 import { spacingVars } from "@astryxdesign/core/theme/tokens.stylex";
 import * as stylex from "@stylexjs/stylex";
 
-import { useFilteredUiKits } from "../../explore-page/PageView/useFilteredUiKits";
 import { type UiKit, useUiKitView } from "../../ui-kit";
 import { UiKitView } from "../../ui-kit/UiKitView";
 import { SearchToolbar } from "../SearchToolbar";
 import { UiKitGrid } from "../UiKitGrid";
 import { UiKitTable } from "../UiKitTable";
+
+import { useFilteredUiKits } from "./useFilteredUiKits";
 
 const styles = stylex.create({
   containerPadding: {

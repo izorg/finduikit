@@ -1,3 +1,0 @@
-:global(.rt-TextFieldInput:placeholder-shown) ~ :where(.clearSlot) {
-  visibility: hidden;
-}
