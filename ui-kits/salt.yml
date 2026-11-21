@@ -1,0 +1,10 @@
+description: Salt is J.P. Morgan's open-source design system, providing
+  accessible components and extensive design resources to create exceptional
+  digital experiences across lines of business.
+frameworks:
+  - React
+homepage: https://www.saltdesignsystem.com/salt/index
+name: Salt
+repository: https://github.com/jpmorganchase/salt-ds
+storybook: https://storybook.saltdesignsystem.com/
+styling: CSS

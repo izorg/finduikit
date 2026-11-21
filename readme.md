@@ -142,6 +142,7 @@ Built with:
 | [ReUI](https://reui.io/)                                                                   |                [GitHub](https://github.com/keenthemes/reui)                 |
 | [Ring UI](https://jetbrains.github.io/ring-ui/master/)                                     |               [GitHub](https://github.com/JetBrains/ring-ui)                |
 | [Sage](https://sage.kajabi.com/)                                                           |                [GitHub](https://github.com/Kajabi/sage-lib)                 |
+| [Salt](https://www.saltdesignsystem.com/salt/index)                                        |             [GitHub](https://github.com/jpmorganchase/salt-ds)              |
 | [Scale](https://telekom.github.io/scale/)                                                  |                 [GitHub](https://github.com/telekom/scale)                  |
 | [Semantic UI Next](https://next.semantic-ui.com/)                                          |           [GitHub](https://github.com/Semantic-Org/Semantic-Next)           |
 | [Serendie](https://serendie.design/)                                                       |               [GitHub](https://github.com/serendie/serendie)                |
