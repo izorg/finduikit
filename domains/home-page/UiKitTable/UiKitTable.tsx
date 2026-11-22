@@ -64,7 +64,7 @@ const columns: TableColumn<UiKit>[] = [
     width: pixel(280),
   },
   {
-    filter: 'frameworks',
+    filter: "frameworks",
     header: "Frameworks",
     key: "frameworks",
     renderCell: (uiKit) => uiKit.frameworks?.join(", "),
@@ -149,7 +149,7 @@ export const UiKitTable = ({ uiKits, ...rest }: UiKitTableProps) => {
       frameworks: framework,
     },
     onFilterChange: (columnKey, value) => {
-      if (columnKey !== 'frameworks') {
+      if (columnKey !== "frameworks") {
         return;
       }
 

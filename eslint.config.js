@@ -88,7 +88,7 @@ export default defineConfig(
       "unicorn/no-asterisk-prefix-in-documentation-comments": "off",
       "unicorn/no-computed-property-existence-check": "off",
       "unicorn/no-global-object-property-assignment": "off",
-      'unicorn/no-null': 'off',
+      "unicorn/no-null": "off",
       "unicorn/no-top-level-side-effects": "off",
       "unicorn/prefer-smaller-scope": [
         "error",
