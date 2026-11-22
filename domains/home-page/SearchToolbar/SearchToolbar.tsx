@@ -74,6 +74,7 @@ export const SearchToolbar = (props: SearchToolbarProps) => {
         label="Framework"
         onChange={onFrameworkChange}
         options={Object.values(Framework)}
+        placeholder="Framework"
         value={framework ?? null}
         width={130}
       />

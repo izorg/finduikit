@@ -4,6 +4,8 @@ import {
   pixel,
   Table,
   type TableColumn,
+  usePowerSearchConfig,
+  useTableFiltering,
   useTableStickyColumns,
 } from "@astryxdesign/core";
 import { type StyleXStyles } from "@stylexjs/stylex";
@@ -15,6 +17,7 @@ import {
   IconCheck,
 } from "@tabler/icons-react";
 
+import { Framework, useFramework } from "../../framework";
 import type { UiKit } from "../../ui-kit";
 
 const styles = stylex.create({
@@ -61,8 +64,9 @@ const columns: TableColumn<UiKit>[] = [
     width: pixel(280),
   },
   {
-    header: "Framework",
-    key: "framework",
+    filter: 'frameworks',
+    header: "Frameworks",
+    key: "frameworks",
     renderCell: (uiKit) => uiKit.frameworks?.join(", "),
     width: pixel(220),
   },
@@ -118,12 +122,46 @@ const columns: TableColumn<UiKit>[] = [
   },
 ];
 
+const fieldDefs = [
+  {
+    enumValues: Object.values(Framework).map((framework) => ({
+      label: framework,
+      value: framework,
+    })),
+    key: "frameworks",
+    label: "Framework",
+    type: "enum",
+  },
+] as const;
+
 type UiKitTableProps = {
   uiKits: UiKit[];
   xstyle?: StyleXStyles;
 };
 
 export const UiKitTable = ({ uiKits, ...rest }: UiKitTableProps) => {
+  const { framework, setFramework } = useFramework();
+
+  const { config } = usePowerSearchConfig(fieldDefs);
+
+  const filter = useTableFiltering<UiKit>({
+    filters: {
+      frameworks: framework,
+    },
+    onFilterChange: (columnKey, value) => {
+      if (columnKey !== 'frameworks') {
+        return;
+      }
+
+      const framework = Object.values(Framework).find(
+        (option) => option === value,
+      );
+
+      setFramework(framework);
+    },
+    searchConfig: config,
+  });
+
   const stickyColumns = useTableStickyColumns<UiKit>({
     startKeys: ["name"],
   });
@@ -133,7 +171,7 @@ export const UiKitTable = ({ uiKits, ...rest }: UiKitTableProps) => {
       columns={columns}
       data={uiKits}
       idKey="name"
-      plugins={{ stickyColumns }}
+      plugins={{ filter, stickyColumns }}
       {...rest}
     />
   );
