@@ -1,9 +1,11 @@
 import {
+  HStack,
   Icon,
   Link,
   pixel,
   Table,
   type TableColumn,
+  Tooltip,
   usePowerSearchConfig,
   useTableFiltering,
   useTableStickyColumns,
@@ -17,10 +19,16 @@ import {
   IconCheck,
 } from "@tabler/icons-react";
 
-import { Framework, useFramework } from "../../framework";
+import { Framework, frameworkIcons, useFramework } from "../../framework";
 import type { UiKit } from "../../ui-kit";
 
 const styles = stylex.create({
+  frameworkIcon: {
+    flexShrink: 0,
+  },
+  frameworkIconDisabled: {
+    opacity: 0.2,
+  },
   homepageLink: {
     display: "inline",
   },
@@ -64,11 +72,31 @@ const columns: TableColumn<UiKit>[] = [
     width: pixel(280),
   },
   {
+    align: "center",
     filter: "frameworks",
     header: "Frameworks",
     key: "frameworks",
-    renderCell: (uiKit) => uiKit.frameworks?.join(", "),
-    width: pixel(220),
+    renderCell: (uiKit) => (
+      <HStack gap={1} justify="center">
+        {Object.values(Framework).map((framework) => {
+          const Icon = frameworkIcons[framework];
+
+          const supported = uiKit.frameworks?.includes(framework);
+
+          return (
+            <Tooltip content={framework} key={framework}>
+              <Icon
+                {...stylex.props(
+                  styles.frameworkIcon,
+                  !supported && styles.frameworkIconDisabled,
+                )}
+              />
+            </Tooltip>
+          );
+        })}
+      </HStack>
+    ),
+    width: pixel(160),
   },
   {
     align: "center",

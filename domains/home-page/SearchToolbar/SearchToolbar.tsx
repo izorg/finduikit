@@ -8,7 +8,7 @@ import {
 import type { StyleXStyles } from "@stylexjs/stylex";
 import { IconFilter2 } from "@tabler/icons-react";
 
-import { Framework, useFramework } from "../../framework";
+import { Framework, FrameworkSelector, useFramework } from "../../framework";
 import { Sorting, useSorting } from "../../sorting";
 import { useUiKitView } from "../../ui-kit";
 import { UiKitView } from "../../ui-kit/UiKitView";
@@ -68,15 +68,14 @@ export const SearchToolbar = (props: SearchToolbarProps) => {
         )}
         value={sorting}
       />
-      <Selector
+      <FrameworkSelector
         hasClear
         isLabelHidden
         label="Framework"
         onChange={onFrameworkChange}
-        options={Object.values(Framework)}
-        placeholder="Framework"
+        placeholder="Any framework"
         value={framework ?? null}
-        width={130}
+        width={160}
       />
       <SegmentedControl
         label="Select view option"

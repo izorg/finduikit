@@ -1,18 +1,21 @@
 import {
-  siAngular,
-  type SimpleIcon,
-  siReact,
-  siSolid,
-  siSvelte,
-  siVuedotjs,
-} from "simple-icons";
+  IconBrandAngular,
+  IconBrandReact,
+  IconBrandSolidjs,
+  IconBrandSvelte,
+  IconBrandVue,
+} from "@tabler/icons-react";
+import type { ComponentType, SVGProps } from "react";
 
 import { Framework } from "./Framework";
 
-export const frameworkIcons: Record<Framework, SimpleIcon> = {
-  [Framework.Angular]: siAngular,
-  [Framework.React]: siReact,
-  [Framework.Solid]: siSolid,
-  [Framework.Svelte]: siSvelte,
-  [Framework.Vue]: siVuedotjs,
+export const frameworkIcons: Record<
+  Framework,
+  ComponentType<SVGProps<SVGSVGElement>>
+> = {
+  [Framework.Angular]: IconBrandAngular,
+  [Framework.React]: IconBrandReact,
+  [Framework.Solid]: IconBrandSolidjs,
+  [Framework.Svelte]: IconBrandSvelte,
+  [Framework.Vue]: IconBrandVue,
 };
