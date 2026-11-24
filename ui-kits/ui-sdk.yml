@@ -1,8 +1,8 @@
 ai:
   - type: Skill
     url: https://ui-sdk.dev/docs/agents/skills
-description: A library of behaviors for agents to build the next generation of
-  user interfaces.
+description: A library of behaviors for agents to build and drive the next
+  generation of user interfaces.
 frameworks:
   - React
   - Solid
