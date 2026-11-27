@@ -1905,13 +1905,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-operations@npm:7.0.2":
-  version: 7.0.2
-  resolution: "@graphql-codegen/typescript-operations@npm:7.0.2"
+"@graphql-codegen/typescript-operations@npm:7.0.3":
+  version: 7.0.3
+  resolution: "@graphql-codegen/typescript-operations@npm:7.0.3"
   dependencies:
     "@graphql-codegen/plugin-helpers": "npm:^8.0.0"
     "@graphql-codegen/schema-ast": "npm:^7.0.0"
-    "@graphql-codegen/visitor-plugin-common": "npm:^8.0.2"
+    "@graphql-codegen/visitor-plugin-common": "npm:^8.0.3"
     auto-bind: "npm:^5.0.0"
     tslib: "npm:^2.8.0"
   peerDependencies:
@@ -1920,7 +1920,7 @@ __metadata:
   peerDependenciesMeta:
     graphql-sock:
       optional: true
-  checksum: 10/02cbfbf14909eac576ac5f9373e66e7d4c309296f45d79ae11279e7dd2d3fc1872caf54b663282ff6957f7920855ab9708d53a15b0b88198fe457f29982759d3
+  checksum: 10/00e58b688bd340a71b016709ddccc5a2376d58e583629c2eb448db98f5fc52360af674098c5dc8b30ea41d756b9a177ebeb0a1c4d470e793a4629bb9a16cd856
   languageName: node
   linkType: hard
 
@@ -2013,9 +2013,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/visitor-plugin-common@npm:^8.0.2":
-  version: 8.0.2
-  resolution: "@graphql-codegen/visitor-plugin-common@npm:8.0.2"
+"@graphql-codegen/visitor-plugin-common@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@graphql-codegen/visitor-plugin-common@npm:8.0.3"
   dependencies:
     "@graphql-codegen/plugin-helpers": "npm:^8.0.0"
     "@graphql-tools/optimize": "npm:^3.0.0"
@@ -2029,7 +2029,7 @@ __metadata:
     tslib: "npm:^2.8.0"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10/4cc6554d49639da75534ef34533ad4ff1462999a99e0071efea0cef0134a9bcece850c04555980e7468067ffa8e80eae989d3aeb2c236eb620dddc129ff8aa6e
+  checksum: 10/3ef79d436c20397060d407c56c9c73b11a3856130a3071f9b9ac49ea047d2b9111de9153c9bef4973f69d9fb927421f82f1c32af79d3763b8e9bc8299ee1aead
   languageName: node
   linkType: hard
 
@@ -6011,36 +6011,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/browser-utils@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/browser-utils@npm:11.18.0"
+"@sentry/browser-utils@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/browser-utils@npm:11.19.0"
   dependencies:
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
+    "@sentry/core": "npm:11.19.0"
     web-vitals: "npm:^6.2.3"
-  checksum: 10/beedb922c5370e3b87577e067b69cc3888685925f8fe1c4aef3db8a7bf5706a253c8c2e8dadeaaef5f43e63ffae301c6452fee3a40bdeb6bbd7629545a5b6396
+  checksum: 10/5ffb775631de98b177c034b25d8f9574d8a7107014a50b2e5c678d4319a5ad4af1c982566ece0cde53d14154b4d8089bb9822b7c965bb8736c8c073600a08421
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/browser@npm:11.18.0"
+"@sentry/browser@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/browser@npm:11.19.0"
   dependencies:
-    "@sentry/browser-utils": "npm:11.18.0"
+    "@sentry/browser-utils": "npm:11.19.0"
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/feedback": "npm:11.18.0"
-    "@sentry/replay": "npm:11.18.0"
-    "@sentry/replay-canvas": "npm:11.18.0"
-  checksum: 10/11655ad215ba8136cb8c08b921e4dd1e5cdc723b69cbef934c8ee34511e20cd780430eae49d80fd23d38f042f8fa0a76b307a0239b58ca5766c34f2c34ba65ec
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/feedback": "npm:11.19.0"
+    "@sentry/replay": "npm:11.19.0"
+    "@sentry/replay-canvas": "npm:11.19.0"
+  checksum: 10/30ec50e68a508594639f75b84fe2b514996801c2371dbde718885a2825f8ca871a68d77d653dce4bba8074b8474ec939b7ca2cdd1de0a9be4b2d4306d628c426
   languageName: node
   linkType: hard
 
-"@sentry/bundler-plugins@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/bundler-plugins@npm:11.18.0"
+"@sentry/bundler-plugins@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/bundler-plugins@npm:11.19.0"
   dependencies:
-    "@sentry/core": "npm:11.18.0"
+    "@sentry/core": "npm:11.19.0"
     dotenv: "npm:^17.4.2"
     glob: "npm:^14.0.3"
     magic-string: "npm:~0.30.8 || ^1.0.0"
@@ -6054,19 +6054,19 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: 10/0aa9078938e6b7e6276a6bca96ddc955201c22f9212dab6f829a431fe385bd320aceab2e6f5dc12bb3789c602012872c05646a6eb9798588e0ddcdc1fdb95c7c
+  checksum: 10/e58e94a5e8bffaa11ee92ed95503d7a7ca9b47ddcc7bed51050d621f1329e3d12cc2a3c3beb1aaa15a9268d1702c05c018b7482b71d10a72bd2beed02ebbe6c0
   languageName: node
   linkType: hard
 
-"@sentry/cloudflare@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/cloudflare@npm:11.18.0"
+"@sentry/cloudflare@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/cloudflare@npm:11.19.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.1"
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/opentelemetry": "npm:11.18.0"
-    "@sentry/server-utils": "npm:11.18.0"
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/opentelemetry": "npm:11.19.0"
+    "@sentry/server-utils": "npm:11.19.0"
     magic-string: "npm:~0.30.21"
   peerDependencies:
     "@cloudflare/workers-types": ^4.x || ^5.x
@@ -6079,7 +6079,7 @@ __metadata:
       optional: true
     wrangler:
       optional: true
-  checksum: 10/83916277a6235aff3544a0df63c6d08dea084e3de0cd44cd573bd6636243b8df21be8c7c3c9322335483c6b5a8f451a61e7b89a3989fde24e6395b935c871722
+  checksum: 10/e6ded37477bf78251f257e841484f8a78461de26f144c9a9aee82ba311d2764091195b8e578b373c395357fb1b245f2244e846b2c0d38d0db03a22f51087a2e7
   languageName: node
   linkType: hard
 
@@ -6090,149 +6090,149 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/core@npm:11.18.0"
+"@sentry/core@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/core@npm:11.19.0"
   dependencies:
     "@sentry/conventions": "npm:^0.36.0"
-  checksum: 10/13f42a43e36028c3d6c05e7c882be6ec7ad8e93621e238e818f56ac8ddbafc3857b71aea96e86b9b5e1da8dff6de639df8cfe7005ddb5a2463ded9a629317789
+  checksum: 10/8532d747481161e83b50a0ba9554c71ebd92eb5cbfab4a810a2975d7d4e3a219d8a59dda3e777bfd6f4e0597f4514a0307b1784e68d37e268d3568ce5036ba19
   languageName: node
   linkType: hard
 
-"@sentry/feedback@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/feedback@npm:11.18.0"
+"@sentry/feedback@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/feedback@npm:11.19.0"
   dependencies:
-    "@sentry/core": "npm:11.18.0"
-  checksum: 10/7c4c036151a37cc8f9c88d1875cafbcbde9025fddc33dc24b311a270240b263d8c2d0ec43fd44c22076a26094d475ffba8ee5c053dece5da0c5e22eaee818881
+    "@sentry/core": "npm:11.19.0"
+  checksum: 10/1b83a06e282822c17764480ca435f54aa36067580e036ca7a3925f63205c146d4696ea84b3c372af19a7b3e742a54d17eb8724b682f5fc8414b5a32202db4e70
   languageName: node
   linkType: hard
 
-"@sentry/nextjs@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/nextjs@npm:11.18.0"
+"@sentry/nextjs@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/nextjs@npm:11.19.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.1"
     "@rollup/plugin-commonjs": "npm:28.0.1"
-    "@sentry/browser-utils": "npm:11.18.0"
-    "@sentry/bundler-plugins": "npm:11.18.0"
-    "@sentry/cloudflare": "npm:11.18.0"
+    "@sentry/browser-utils": "npm:11.19.0"
+    "@sentry/bundler-plugins": "npm:11.19.0"
+    "@sentry/cloudflare": "npm:11.19.0"
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/node": "npm:11.18.0"
-    "@sentry/opentelemetry": "npm:11.18.0"
-    "@sentry/react": "npm:11.18.0"
-    "@sentry/server-runtime-injection": "npm:11.18.0"
-    "@sentry/server-utils": "npm:11.18.0"
-    "@sentry/vercel-edge": "npm:11.18.0"
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/node": "npm:11.19.0"
+    "@sentry/opentelemetry": "npm:11.19.0"
+    "@sentry/react": "npm:11.19.0"
+    "@sentry/server-runtime-injection": "npm:11.19.0"
+    "@sentry/server-utils": "npm:11.19.0"
+    "@sentry/vercel-edge": "npm:11.19.0"
     rollup: "npm:^4.60.3"
     stacktrace-parser: "npm:^0.1.11"
   peerDependencies:
-    "@sentry/bun": 11.18.0
-    "@sentry/deno": 11.18.0
+    "@sentry/bun": 11.19.0
+    "@sentry/deno": 11.19.0
     next: ^14.0 || ^15.0.0-rc.0 || ^16.0.0-0
   peerDependenciesMeta:
     "@sentry/bun":
       optional: true
     "@sentry/deno":
       optional: true
-  checksum: 10/cbd71bcef415497181e60e39b2985630a05fc14e6a818737f7d3f6a35b2b852696427ac3cb35272cb863075487961fb376eed22c211ed878846db13060319682
+  checksum: 10/b0e9ddffdcae0dd2a31e5547e7be3244fc4d42d0ed3d109ae01983270447bbccc8e505342c38a3fb2c019a6eb537ebf3364849489721ff83a1fca86234e3fd68
   languageName: node
   linkType: hard
 
-"@sentry/node@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/node@npm:11.18.0"
+"@sentry/node@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/node@npm:11.19.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.1"
-    "@sentry/bundler-plugins": "npm:11.18.0"
+    "@sentry/bundler-plugins": "npm:11.19.0"
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/opentelemetry": "npm:11.18.0"
-    "@sentry/server-runtime-injection": "npm:11.18.0"
-    "@sentry/server-utils": "npm:11.18.0"
-  checksum: 10/35bfaeb3a7012394a21d8e03d3a36448c3cb018594e6585eed4813b27647b0c4e170deecb3b63a5fbfe51a9e4089bcca31782fb1e16330bedc0c1f3b0e04fed5
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/opentelemetry": "npm:11.19.0"
+    "@sentry/server-runtime-injection": "npm:11.19.0"
+    "@sentry/server-utils": "npm:11.19.0"
+  checksum: 10/6460cafea184a2206e2c7dfa40a285d1f853ebd70b37f6cedf059cc9c8fa24a8cd52198020867cc9f94904e3b383879da9c33e3888bf3fcdbf68ca49259bcbcd
   languageName: node
   linkType: hard
 
-"@sentry/opentelemetry@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/opentelemetry@npm:11.18.0"
+"@sentry/opentelemetry@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/opentelemetry@npm:11.19.0"
   dependencies:
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
+    "@sentry/core": "npm:11.19.0"
   peerDependencies:
     "@opentelemetry/api": ^1.9.0
-  checksum: 10/e23208a19777b63f32e4aebead08dd1e38b546d847a921a51705f5b872865255d2c1b5547c7dc2e842850488f11152c4ff9d84a6c4c2be9a47412afa2272fa65
+  checksum: 10/62bf0dce95165e57370ca65c183ff08eb9e33add9d142dcaf1d6df6fb6c0c21e9d9ce3f730dfff5c49abc0be4d452a12341e693fb03bc071f758b45abb1994ec
   languageName: node
   linkType: hard
 
-"@sentry/react@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/react@npm:11.18.0"
+"@sentry/react@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/react@npm:11.19.0"
   dependencies:
-    "@sentry/browser": "npm:11.18.0"
+    "@sentry/browser": "npm:11.19.0"
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
+    "@sentry/core": "npm:11.19.0"
   peerDependencies:
     react: 17.x || 18.x || 19.x
     react-router: 6.x || 7.x || 8.x
   peerDependenciesMeta:
     react-router:
       optional: true
-  checksum: 10/45fc75c9cc8efb45cd3caaca557ffa7af652f5038d21f7ebb74a052a5eb4e645f876e9b51426cba6e9e1cf57b6e01efcac07eb42ba947898e2b08d952ea31268
+  checksum: 10/c87fd7b524c653bd5ed8da3978b8ac81fe867af69b2e1632796bcc1fa8c578bdb7b92eadef855b54ec0fbbcd28d99bd62bc8c18fa0cf3a2b668ee9429386351c
   languageName: node
   linkType: hard
 
-"@sentry/replay-canvas@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/replay-canvas@npm:11.18.0"
+"@sentry/replay-canvas@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/replay-canvas@npm:11.19.0"
   dependencies:
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/replay": "npm:11.18.0"
-  checksum: 10/1b03868fba3a2324e06ada6aeccc48aa5826df0dd407ede3bb90db47a4d65041a6aaa1591396afa20fe4f5ba14c3bd615d6ef0ec20511fab73fdd5d457a85770
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/replay": "npm:11.19.0"
+  checksum: 10/b07ac2653312849bdedff1ca48bf9386b0119f3d0bbd512a9c4844e69c3ba126e1e2f71a83aa92f030de744f8516e462898eefbd6d6b5d67646816c50d2bb56d
   languageName: node
   linkType: hard
 
-"@sentry/replay@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/replay@npm:11.18.0"
+"@sentry/replay@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/replay@npm:11.19.0"
   dependencies:
-    "@sentry/browser-utils": "npm:11.18.0"
-    "@sentry/core": "npm:11.18.0"
-  checksum: 10/90717e18011e4585af851e7f47de95b5f1faa90c0134495d4044e922e3f5253a128c62b58ff0f1390b7bf7686cc11f503c11cf37b0df4d91996d270bf58287b3
+    "@sentry/browser-utils": "npm:11.19.0"
+    "@sentry/core": "npm:11.19.0"
+  checksum: 10/b26b2fd1003142174e8216b5eaa26097ce231ebc6ed4e22f9fc12f36e03d10f400dd0e281376e97e041f293bd66181c8d70b8d9a94a6df052c372256a360eee0
   languageName: node
   linkType: hard
 
-"@sentry/server-runtime-injection@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/server-runtime-injection@npm:11.18.0"
+"@sentry/server-runtime-injection@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/server-runtime-injection@npm:11.19.0"
   dependencies:
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/server-utils": "npm:11.18.0"
-  checksum: 10/8805f5097d97c121ac95228b54d8156fa2ae5d829ae2cd85e2fb6a4033c24eb3125af404a5aa8e7de20eeab78872d3dbfb5c781568f89ce76633fd14181aef0a
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/server-utils": "npm:11.19.0"
+  checksum: 10/becf12585506383d8c21e0283c46b31738c8a4666b2e4cb759141961c01a2a9bfc13a99c78c58dde90595a60ba135f72b09b627782e5af52c23bbed81e7622bc
   languageName: node
   linkType: hard
 
-"@sentry/server-utils@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/server-utils@npm:11.18.0"
+"@sentry/server-utils@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/server-utils@npm:11.19.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.1"
     "@sentry/conventions": "npm:^0.36.0"
-    "@sentry/core": "npm:11.18.0"
-  checksum: 10/6d3fbf836077f321770cadcd2dee38e00ab5a58dba3f71e718ebaf75271b318fdb6791f3db2f796e955b25867b4b20a05481c366b919a236ae8ec79c522fbaa0
+    "@sentry/core": "npm:11.19.0"
+  checksum: 10/a322b12e9c0977b177a4ff6da955056776d0902bacc4100d53c7a04f59c2a9fd734248a1928e55d3b4e793a5d81dcea4264421063c106043e4914c88a5038a22
   languageName: node
   linkType: hard
 
-"@sentry/vercel-edge@npm:11.18.0":
-  version: 11.18.0
-  resolution: "@sentry/vercel-edge@npm:11.18.0"
+"@sentry/vercel-edge@npm:11.19.0":
+  version: 11.19.0
+  resolution: "@sentry/vercel-edge@npm:11.19.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.1"
-    "@sentry/core": "npm:11.18.0"
-    "@sentry/server-utils": "npm:11.18.0"
-  checksum: 10/aaef17ca0a44cf98079e372d2bdbedae1da1844ad5496a6aba5e59c973292e0656d39ef6580e029147c1b85156b5e0c521fe2cff3f878b638a58685c07772131
+    "@sentry/core": "npm:11.19.0"
+    "@sentry/server-utils": "npm:11.19.0"
+  checksum: 10/cf9237888c2769538d8f117ded04ac1a57d2c528d0fabe900c094221cb6130c3667807bd734f790114a35286caf9355274b07c761810c86f3b723fdc7e0ca0e3
   languageName: node
   linkType: hard
 
@@ -10001,14 +10001,14 @@ __metadata:
     "@graphql-codegen/cli": "npm:8.0.0"
     "@graphql-codegen/near-operation-file-preset": "npm:6.0.2"
     "@graphql-codegen/typescript": "npm:7.0.1"
-    "@graphql-codegen/typescript-operations": "npm:7.0.2"
+    "@graphql-codegen/typescript-operations": "npm:7.0.3"
     "@mdi/js": "npm:7.4.47"
     "@next/eslint-plugin-next": "npm:16.4.6"
     "@next/third-parties": "npm:16.4.6"
     "@nodejs-loaders/css-module": "npm:1.2.1"
     "@prettier/plugin-xml": "npm:3.4.2"
     "@radix-ui/themes": "npm:3.3.0"
-    "@sentry/nextjs": "npm:11.18.0"
+    "@sentry/nextjs": "npm:11.19.0"
     "@stylexjs/babel-plugin": "npm:0.19.2"
     "@stylexjs/eslint-plugin": "npm:0.19.2"
     "@stylexjs/postcss-plugin": "npm:0.19.2"
