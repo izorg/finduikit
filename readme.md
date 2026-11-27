@@ -56,6 +56,7 @@ Built with:
 | [Chakra UI](https://chakra-ui.com/)                                                        |              [GitHub](https://github.com/chakra-ui/chakra-ui)               |
 | [Circuit UI](https://circuit.sumup.com/)                                                   |              [GitHub](https://github.com/sumup-oss/circuit-ui)              |
 | [Clarity](https://clarity.design/)                                                         |           [GitHub](https://github.com/vmware-clarity/ng-clarity)            |
+| [clio.css](https://surfine.github.io/clio.css/)                                            |                [GitHub](https://github.com/surfine/clio.css)                |
 | [Cloudscape](https://cloudscape.design/)                                                   |          [GitHub](https://github.com/cloudscape-design/components)          |
 | [Codex](https://doc.wikimedia.org/codex/latest/)                                           |             [GitHub](https://github.com/wikimedia/design-codex)             |
 | [Coinbase Design System](https://cds.coinbase.com/)                                        |                  [GitHub](https://github.com/coinbase/cds)                  |
@@ -71,7 +72,6 @@ Built with:
 | [Flowbite Svelte](https://flowbite-svelte.com/)                                            |           [GitHub](https://github.com/themesberg/flowbite-svelte)           |
 | [Flowbite Vue](https://flowbite-vue.com/)                                                  |            [GitHub](https://github.com/themesberg/flowbite-vue)             |
 | [Fluent](https://fluent2.microsoft.design/)                                                |               [GitHub](https://github.com/microsoft/fluentui)               |
-| [FlyonUI](https://flyonui.com/)                                                            |             [GitHub](https://github.com/themeselection/flyonui)             |
 | [Forma 36](https://f36.contentful.com/)                                                    |              [GitHub](https://github.com/contentful/forma-36)               |
 | [Garden](https://garden.zendesk.com/)                                                      |         [GitHub](https://github.com/zendeskgarden/react-components)         |
 | [gluestack-ui](https://gluestack.io/)                                                      |             [GitHub](https://github.com/gluestack/gluestack-ui)             |

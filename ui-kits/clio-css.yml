@@ -1,0 +1,14 @@
+ai:
+  - type: LLMs.txt
+    url: https://surfine.github.io/clio.css/#for-agents
+description: "Classic Mac OS and NeXTSTEP in CSS: System 6, System 7, Drawing
+  Board, Mac OS 9 Platinum and NeXTSTEP 3.3 windows, menus and controls,
+  measured from real pixels. MIT."
+frameworks:
+  - React
+homepage: https://surfine.github.io/clio.css/
+image:
+  src: https://repository-images.githubusercontent.com/1456644568/9053ad8a-61a5-4927-943a-713ce332ac1a
+name: clio.css
+repository: https://github.com/surfine/clio.css
+styling: CSS
