@@ -56,7 +56,7 @@ export const SearchToolbar = (props: SearchToolbarProps) => {
   };
 
   return (
-    <HStack gap={2} justify="center" {...props}>
+    <HStack gap={2} justify="center" wrap="wrap" {...props}>
       <Selector<SortingOption>
         isLabelHidden
         label="Sort"
