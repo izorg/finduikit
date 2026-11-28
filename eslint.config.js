@@ -36,9 +36,9 @@ export default defineConfig(
       next.configs.recommended,
       next.configs["core-web-vitals"],
       reactHooks.configs.flat["recommended-latest"],
+      perfectionist.configs["recommended-alphabetical"],
       stylistic.configs.recommended,
       unicorn.configs.recommended,
-      perfectionist.configs["recommended-alphabetical"],
     ],
     files: ["**/*.js", "**/*.ts", "**/*.tsx"],
     languageOptions: {

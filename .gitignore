@@ -18,7 +18,6 @@ node_modules/
 .env*.local
 .eslintcache
 .sentryclirc
-.stylelintcache
 next-env.d.ts
 skills-lock.json
 
