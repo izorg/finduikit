@@ -100,7 +100,6 @@ Built with:
 | [Magic UI](https://magicui.design/)                                                        |             [GitHub](https://github.com/magicuidesign/magicui)              |
 | [Mantine](https://mantine.dev)                                                             |               [GitHub](https://github.com/mantinedev/mantine)               |
 | [Material Web](https://material-web.dev/)                                                  |        [GitHub](https://github.com/material-components/material-web)        |
-| [MDB](https://mdbootstrap.com/)                                                            |             [GitHub](https://github.com/mdbootstrap/mdb-ui-kit)             |
 | [MDUI](https://www.mdui.org/)                                                              |                 [GitHub](https://github.com/zdhxiong/mdui)                  |
 | [Momentum Design](https://momentum.design/en/)                                             |        [GitHub](https://github.com/momentum-design/momentum-design)         |
 | [MUI](https://mui.com/material-ui/)                                                        |                [GitHub](https://github.com/mui/material-ui)                 |
@@ -130,7 +129,6 @@ Built with:
 | [Quasar](https://quasar.dev/)                                                              |             [GitHub](https://github.com/quasarframework/quasar)             |
 | [Radix Angular](https://www.radix-ng.com/)                                                 |              [GitHub](https://github.com/radix-ng/primitives)               |
 | [Radix Primitives](https://www.radix-ui.com/primitives)                                    |              [GitHub](https://github.com/radix-ui/primitives)               |
-| [Radix Themes](https://www.radix-ui.com/)                                                  |                [GitHub](https://github.com/radix-ui/themes)                 |
 | [React Aria](https://react-aria.adobe.com/)                                                |              [GitHub](https://github.com/adobe/react-spectrum)              |
 | [React Bootstrap](https://react-bootstrap.github.io/)                                      |        [GitHub](https://github.com/react-bootstrap/react-bootstrap)         |
 | [React Spectrum](https://react-spectrum.adobe.com/)                                        |              [GitHub](https://github.com/adobe/react-spectrum)              |
