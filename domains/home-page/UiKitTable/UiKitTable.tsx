@@ -12,15 +12,12 @@ import {
 } from "@astryxdesign/core";
 import { type StyleXStyles } from "@stylexjs/stylex";
 import * as stylex from "@stylexjs/stylex";
-import {
-  IconBrandFigma,
-  IconBrandGithub,
-  IconBrandStorybook,
-  IconCheck,
-} from "@tabler/icons-react";
+import { IconCheck } from "@tabler/icons-react";
 
 import { Framework, frameworkIcons, useFramework } from "../../framework";
 import type { UiKit } from "../../ui-kit";
+
+import { uiKitTableRenderResourcesCell } from "./uiKitTableRenderResourcesCell";
 
 const styles = stylex.create({
   frameworkIcon: {
@@ -32,12 +29,6 @@ const styles = stylex.create({
   homepageLink: {
     display: "inline",
   },
-  repositoryLink: {
-    verticalAlign: "middle",
-  },
-  repositoryLinkWrapper: {
-    whiteSpace: "nowrap",
-  },
   styledIcon: {
     display: "inline-block",
   },
@@ -48,28 +39,17 @@ const columns: TableColumn<UiKit>[] = [
     header: "Name",
     key: "name",
     renderCell: (uiKit) => (
-      <>
-        <Link
-          href={uiKit.homepage}
-          target="_blank"
-          xstyle={styles.homepageLink}
-        >
-          {uiKit.name}
-        </Link>
-        <span {...stylex.props(styles.repositoryLinkWrapper)}>
-          {"\u{A0}"}
-          <Link
-            href={uiKit.repository}
-            target="_blank"
-            tooltip="GitHub"
-            xstyle={styles.repositoryLink}
-          >
-            <Icon icon={IconBrandGithub} />
-          </Link>
-        </span>
-      </>
+      <Link href={uiKit.homepage} target="_blank" xstyle={styles.homepageLink}>
+        {uiKit.name}
+      </Link>
     ),
     width: pixel(280),
+  },
+  {
+    header: "Resources",
+    key: "resources",
+    renderCell: uiKitTableRenderResourcesCell,
+    width: pixel(120),
   },
   {
     align: "center",
@@ -105,30 +85,6 @@ const columns: TableColumn<UiKit>[] = [
     renderCell: (uiKit) =>
       !uiKit.unstyled && <Icon icon={IconCheck} xstyle={styles.styledIcon} />,
     width: pixel(100),
-  },
-  {
-    align: "center",
-    header: "Figma",
-    key: "figma",
-    renderCell: (uiKit) =>
-      uiKit.figma && (
-        <Link href={uiKit.figma} target="_blank" tooltip="Figma">
-          <Icon icon={IconBrandFigma} />
-        </Link>
-      ),
-    width: pixel(100),
-  },
-  {
-    align: "center",
-    header: "Storybook",
-    key: "storybook",
-    renderCell: (uiKit) =>
-      uiKit.storybook && (
-        <Link href={uiKit.storybook} target="_blank" tooltip="Storybook">
-          <Icon icon={IconBrandStorybook} />
-        </Link>
-      ),
-    width: pixel(120),
   },
   {
     header: "Styling",
