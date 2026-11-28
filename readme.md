@@ -92,7 +92,6 @@ Built with:
 | [Kuma UI](https://www.kuma-ui.com/)                                                        |                [GitHub](https://github.com/kuma-ui/kuma-ui)                 |
 | [Kumo](https://kumo-ui.com/)                                                               |                [GitHub](https://github.com/cloudflare/kumo)                 |
 | [LeafyGreen UI](https://www.mongodb.design/)                                               |             [GitHub](https://github.com/mongodb/leafygreen-ui)              |
-| [Lightning Design System](https://www.lightningdesignsystem.com/)                          |          [GitHub](https://github.com/salesforce-ux/design-system)           |
 | [Lightning Web Components](https://lwc.dev/)                                               |                 [GitHub](https://github.com/salesforce/lwc)                 |
 | [Lion](https://lion.js.org/)                                                               |                 [GitHub](https://github.com/ing-bank/lion)                  |
 | [M3 Svelte](https://ktibow.github.io/m3-svelte/)                                           |                [GitHub](https://github.com/KTibow/m3-svelte)                |
